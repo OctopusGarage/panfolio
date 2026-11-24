@@ -5,6 +5,7 @@ export type IconName =
   | "settings"
   | "chevron"
   | "back"
+  | "paste"
   | "copy"
   | "heart"
   | "close"
@@ -34,6 +35,7 @@ const paths: Record<IconName, string[]> = {
   ],
   chevron: ["m9 6 6 6-6 6"],
   back: ["m14 5-7 7 7 7"],
+  paste: ["M9 4H5v17h14V4h-4", "M9 3h6v4H9zM8 12h8m-8 4h8"],
   copy: ["M9 8h10v13H9Z", "M15 8V3H4v13h5"],
   heart: [
     "M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z",

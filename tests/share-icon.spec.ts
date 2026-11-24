@@ -37,7 +37,11 @@ for (const language of ["zh", "en"] as const) {
       .raw()
       .toBuffer({ resolveWithObject: true });
     const code = jsQR(new Uint8ClampedArray(data), info.width, info.height);
-    expect(code?.data).toBe("https://octopusgarage.github.io/panfolio/");
+    const link = await page
+      .getByLabel(language === "en" ? "App home link" : "应用首页链接")
+      .inputValue();
+    expect(link).toMatch(/^https:\/\/octopusgarage\.github\.io\/s\/#[-\w]+$/);
+    expect(code?.data).toBe(link);
     const reduced = await sharp(Buffer.from(bytes))
       .resize({ width: 360 })
       .ensureAlpha()
@@ -49,7 +53,7 @@ for (const language of ["zh", "en"] as const) {
         reduced.info.width,
         reduced.info.height,
       )?.data,
-    ).toBe("https://octopusgarage.github.io/panfolio/");
+    ).toBe(link);
     const points = code!.location;
     const centerX = (points.topLeftCorner.x + points.bottomRightCorner.x) / 2;
     const centerY = (points.topLeftCorner.y + points.bottomRightCorner.y) / 2;

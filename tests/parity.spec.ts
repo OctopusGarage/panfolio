@@ -16,7 +16,7 @@ test("bilingual settings, persistent choice and clean sharing link", async ({
   await page.getByRole("button", { name: "Share app", exact: true }).click();
   await expect(page.getByRole("dialog")).toBeVisible();
   await expect(page.getByLabel("App home link")).toHaveValue(
-    "http://127.0.0.1:4173/",
+    /^https:\/\/octopusgarage\.github\.io\/s\/#[-\w]+$/,
   );
   await expect(
     page.getByRole("link", { name: "Download share card" }),
@@ -81,7 +81,9 @@ test("offline sharing and export exclude private notes from app links", async ({
   await expect(
     page.getByRole("link", { name: "Download share card" }),
   ).toBeVisible();
-  await expect(page.getByLabel("App home link")).not.toHaveValue(/PRIVATE|#/);
+  await expect(page.getByLabel("App home link")).not.toHaveValue(
+    /PRIVATE|private=value/,
+  );
   await page.keyboard.press("Escape");
   await context.setOffline(true);
   await page.reload();

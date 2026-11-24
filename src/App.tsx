@@ -16,6 +16,8 @@ import { UpdateBanner } from "./UpdateBanner";
 import { useAppFrame } from "./useAppFrame";
 import { useRightEdgeBack } from "./useRightEdgeBack";
 import { createClipboardWriter } from "./clipboard-writer";
+import { createShareUrl } from "./protected-share";
+import { ShareInbox } from "./ShareInbox";
 import { AppShare } from "./AppShare";
 import { Settings } from "./Settings";
 import { InfoDialog } from "./InfoDialog";
@@ -80,6 +82,10 @@ export default function App() {
     ),
     [checking, setChecking] = useState(false),
     [copying, setCopying] = useState(false),
+    [recipeShare, setRecipeShare] = useState<{
+      id: string;
+      url: string;
+    } | null>(null),
     [searchActive, setSearchActive] = useState(false),
     [showTop, setShowTop] = useState(false);
   const [filters, setFilters] = useState({
@@ -416,11 +422,22 @@ export default function App() {
       );
     }
   }
-  function shareRecipe() {
-    const url = new URL("./", location.href);
-    url.hash = encodeURIComponent(recipe!.id);
+  async function shareRecipe() {
+    if (!recipe) return;
+    const id = recipe.id;
+    const pageUrl = location.href;
+    let url: string;
+    try {
+      url = recipeShare?.id === id ? recipeShare.url : await createShareUrl(id);
+    } catch {
+      if (location.href === pageUrl)
+        setMessage(s("无法生成分享链接。", "Could not create the share link."));
+      return;
+    }
+    if (location.href !== pageUrl) return;
+    setRecipeShare({ id, url });
     void writer.write({
-      text: url.href,
+      text: url,
       onSuccess: () =>
         setMessage(
           s(
@@ -521,6 +538,20 @@ export default function App() {
               ? s("随时翻开你的菜谱", "Your kitchen, close at hand")
               : s("离线模式", "Offline mode")}
           </span>
+          <ShareInbox
+            installed={installed}
+            locale={locale}
+            recipes={recipes}
+            onOpen={(id) => {
+              if (!id) {
+                location.hash = "library";
+                return;
+              }
+              if (recipe?.id === id) return;
+              location.hash = encodeURIComponent(id);
+              history.replaceState({ panfolioRecipe: id }, "", location.href);
+            }}
+          />
           {share("header")}
           <button
             className="icon-button"
@@ -604,24 +635,16 @@ export default function App() {
                     {s("分享菜谱链接", "Copy recipe link")}
                   </button>
                 </div>
-                <details className="recipe-share">
-                  <summary>
-                    {s(
-                      "菜谱链接（不含个人笔记）",
-                      "Recipe link (no personal notes)",
-                    )}
-                  </summary>
-                  <input
-                    readOnly
-                    aria-label={s("菜谱链接", "Recipe link")}
-                    value={
-                      new URL("./", location.href).href +
-                      "#" +
-                      encodeURIComponent(recipe.id)
-                    }
-                    onFocus={(e) => e.target.select()}
-                  />
-                </details>
+                {recipeShare?.id === recipe.id && (
+                  <div className="recipe-share">
+                    <input
+                      readOnly
+                      aria-label={s("菜谱链接", "Recipe link")}
+                      value={recipeShare.url}
+                      onFocus={(e) => e.target.select()}
+                    />
+                  </div>
+                )}
                 {cooking ? (
                   <section className="cooking">
                     <p className="eyebrow">

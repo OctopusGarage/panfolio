@@ -2,6 +2,7 @@ import { useEffect, useId, useRef, useState } from "react";
 import type { ClipboardWriter } from "./clipboard-writer";
 import type { Locale } from "./types";
 import type { ShareCardCopy } from "./share-card";
+import { createShareUrl } from "./protected-share";
 import { Icon } from "./Icon";
 
 interface Card {
@@ -42,7 +43,21 @@ export function AppShareDialog({
   const [cardError, setCardError] = useState(false);
   const [attempt, setAttempt] = useState(0);
   const id = useId();
-  const url = new URL("./", location.href).href;
+  const [url, setUrl] = useState("");
+  const [linkError, setLinkError] = useState(false);
+  useEffect(() => {
+    let disposed = false;
+    void createShareUrl()
+      .then((link) => {
+        if (!disposed) setUrl(link);
+      })
+      .catch(() => {
+        if (!disposed) setLinkError(true);
+      });
+    return () => {
+      disposed = true;
+    };
+  }, []);
   useEffect(() => {
     alive.current = true;
     const element = dialog.current!;
@@ -55,6 +70,7 @@ export function AppShareDialog({
   }, [writer]);
   useEffect(() => {
     let disposed = false;
+    if (!url) return;
     let objectUrl: string | undefined;
     setCard(null);
     setCardError(false);
@@ -187,7 +203,7 @@ export function AppShareDialog({
           <button
             type="button"
             className="app-share-primary"
-            disabled={sharing}
+            disabled={sharing || !url}
             onClick={() => void share()}
           >
             {s("分享应用链接", "Share app link")}
@@ -196,7 +212,7 @@ export function AppShareDialog({
         <button
           type="button"
           className="app-share-secondary"
-          disabled={copying}
+          disabled={copying || !url}
           onClick={copy}
         >
           {s("复制应用链接", "Copy app link")}
@@ -213,7 +229,9 @@ export function AppShareDialog({
         onFocus={(event) => event.currentTarget.select()}
       />
       <p className="app-share-feedback" role="status">
-        {feedback}
+        {linkError
+          ? s("无法生成分享链接。", "Could not create the share link.")
+          : feedback}
       </p>
       <section
         className="app-share-card-section"
@@ -222,7 +240,7 @@ export function AppShareDialog({
         <h3 id={`${id}-card-title`}>
           {s("二维码分享卡片", "QR sharing card")}
         </h3>
-        {!card && !cardError && (
+        {!card && !cardError && !linkError && (
           <p role="status">{s("正在生成卡片…", "Creating your card…")}</p>
         )}
         {cardError && (
