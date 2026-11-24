@@ -5,6 +5,14 @@ import { resolve } from "node:path";
 import { createHash } from "node:crypto";
 let config: ResolvedConfig;
 export default defineConfig({
+  define: {
+    __APP_VERSION__: JSON.stringify(
+      JSON.parse(readFileSync("package.json", "utf8")).version,
+    ),
+    __BUILD_ID__: JSON.stringify(
+      process.env.GITHUB_SHA?.slice(0, 7) || "local",
+    ),
+  },
   base: process.env.BASE_PATH || "./",
   plugins: [
     react(),
@@ -14,7 +22,14 @@ export default defineConfig({
         config = resolved;
       },
       generateBundle(_, bundle) {
-        const publicFiles = ["./manifest.webmanifest", "./icon.svg", "./icon-192.png", "./icon-512.png"];
+        const publicFiles = [
+          "./recover.html",
+          "./apple-touch-icon.png",
+          "./manifest.webmanifest",
+          "./icon.svg",
+          "./icon-192.png",
+          "./icon-512.png",
+        ];
         const files = [
           "./",
           ...publicFiles,

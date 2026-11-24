@@ -1,1 +1,153 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#203f36"><meta name="description" content="Panfolio — your personal recipe collection and kitchen notebook."><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg"><title>Panfolio · 我的厨房手记</title></head><body><div id="root"></div><script type="module" src="/src/main.tsx"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#f3f5f1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Panfolio" />
+    <meta
+      name="description"
+      content="Panfolio 厨房手记：收藏喜欢的菜谱，记录做菜心得，离线翻阅厨房手记。"
+    />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <title>Panfolio 厨房手记 · 你的随身菜谱</title>
+  </head>
+  <body>
+    <div id="boot-fallback" class="startup" role="status">
+      <h1>Panfolio</h1>
+      <p id="boot-message">正在打开厨房手记…</p>
+      <button id="boot-retry" type="button" hidden>重新加载</button>
+      <noscript><p>Please enable JavaScript to use Panfolio.</p></noscript>
+    </div>
+    <style>
+      .startup {
+        max-width: 480px;
+        margin: 12vh auto;
+        padding: 28px;
+        font-family: system-ui, sans-serif;
+        color: #234e41;
+        line-height: 1.7;
+      }
+      .startup h1 {
+        font-size: 28px;
+        margin: 0 0 16px;
+      }
+      .startup button {
+        background: #234e41;
+        color: #fff;
+        border: 0;
+        border-radius: 9px;
+        padding: 14px 22px;
+        font: inherit;
+        cursor: pointer;
+      }
+      .startup[hidden],
+      .startup button[hidden] {
+        display: none;
+      }
+    </style>
+    <script>
+      (function () {
+        var ready = false;
+        var panel = document.getElementById("boot-fallback");
+        var message = document.getElementById("boot-message");
+        var retry = document.getElementById("boot-retry");
+        var english = !/^zh/i.test(navigator.language || "");
+        try {
+          var preference = localStorage.getItem("panfolio:locale");
+          if (preference) english = preference === "en";
+        } catch (_) {}
+        message.textContent = english
+          ? "Opening your recipe collection…"
+          : "正在打开厨房手记…";
+        retry.textContent = english ? "Reload app" : "重新加载";
+        function failed() {
+          panel.hidden = false;
+          message.textContent = english
+            ? "The app could not finish loading. Reload to refresh its cached files. Your favorites and notes will stay saved."
+            : "页面未能完成加载。重新加载可刷新缓存文件，收藏与笔记会保留。";
+          retry.hidden = false;
+        }
+        window.addEventListener("panfolio:ready", function () {
+          ready = true;
+          panel.hidden = true;
+        });
+        window.addEventListener("panfolio:failed", failed);
+        window.addEventListener(
+          "error",
+          function (event) {
+            if (
+              !ready &&
+              (event.error ||
+                (event.target && event.target.tagName === "SCRIPT"))
+            )
+              failed();
+          },
+          true,
+        );
+        setTimeout(function () {
+          if (!ready) failed();
+        }, 8000);
+        retry.addEventListener("click", function () {
+          retry.disabled = true;
+          var jobs = [];
+          if ("serviceWorker" in navigator)
+            jobs.push(
+              navigator.serviceWorker
+                .getRegistrations()
+                .then(function (registrations) {
+                  var scope = new URL("./", location.href).href;
+                  return Promise.all(
+                    registrations
+                      .filter(function (registration) {
+                        return registration.scope === scope;
+                      })
+                      .map(function (registration) {
+                        return registration.unregister();
+                      }),
+                  );
+                }),
+            );
+          if ("caches" in window)
+            jobs.push(
+              caches.keys().then(function (keys) {
+                return Promise.all(
+                  keys
+                    .filter(function (key) {
+                      return (
+                        key.indexOf(
+                          "panfolio-scope-" +
+                            encodeURIComponent(
+                              new URL("./", location.href).href,
+                            ) +
+                            "-",
+                        ) === 0
+                      );
+                    })
+                    .map(function (key) {
+                      return caches.delete(key);
+                    }),
+                );
+              }),
+            );
+          Promise.all(jobs)
+            .catch(function () {})
+            .then(function () {
+              var url = new URL(location.href);
+              url.searchParams.set("refresh", String(Date.now()));
+              location.replace(url.href);
+            });
+        });
+      })();
+    </script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
