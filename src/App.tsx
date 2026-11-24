@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useLayoutEffect, useRef, useMemo } from "react";
 import Markdown from "react-markdown";
 import recipes from "./recipes.json";
 import { matches, parseBackup } from "./core";
@@ -193,7 +193,7 @@ export default function App() {
       detailTrigger.current = null;
     }
   }, [hash]);
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!recipe) return;
     const close = (e: KeyboardEvent) => {
       if (e.key === "Escape") {

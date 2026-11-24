@@ -152,6 +152,9 @@ test("recipe close restores shelf filters, position and focus", async ({
   await page.getByRole("searchbox").fill("Nikujaga");
   const link = page.locator(".card h3 a");
   await link.click();
+  await expect(
+    page.getByRole("button", { name: "开始做这道菜 →" }),
+  ).toBeVisible();
   await page.keyboard.press("Escape");
   await expect(page.getByRole("searchbox")).toHaveValue("Nikujaga");
   await expect(link).toBeFocused();
