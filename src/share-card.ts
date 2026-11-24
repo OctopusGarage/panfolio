@@ -73,6 +73,12 @@ export async function renderShareCard(
   locale: Locale,
 ): Promise<Blob> {
   await document.fonts.ready;
+  const icon = new Image();
+  icon.src = new URL(
+    `${import.meta.env.BASE_URL}icon-192.png`,
+    location.href,
+  ).href;
+  await icon.decode();
   const copy = shareCardCopy[locale];
   const canvas = document.createElement("canvas");
   canvas.width = 1080;
@@ -124,11 +130,7 @@ export async function renderShareCard(
     return y;
   }
 
-  // The leaf mark continues the app's growing-sprout identity without obscuring the code.
-  ctx.fillStyle = colors.green;
-  ctx.beginPath();
-  ctx.ellipse(105, 76, 19, 10, -Math.PI / 4, 0, Math.PI * 2);
-  ctx.fill();
+  ctx.drawImage(icon, 88, 54, 40, 40);
   text(copy.brand, 142, 60, 30, 650, colors.green);
   let y = 136;
   for (const line of copy.headline) {
@@ -137,7 +139,7 @@ export async function renderShareCard(
   }
   y = wrapped(copy.description, y + 12, 32, 44, colors.muted) + 28;
 
-  const matrix = QRCode.create(url, { errorCorrectionLevel: "M" }).modules;
+  const matrix = QRCode.create(url, { errorCorrectionLevel: "H" }).modules;
   const moduleSize = Math.floor(560 / (matrix.size + 8));
   if (moduleSize < 2)
     throw new Error("App URL is too long for a readable card");
@@ -157,6 +159,27 @@ export async function renderShareCard(
           moduleSize,
         );
     }
+  // Keep the quiet zone intact and cover only a small, module-aligned center area.
+  const logoModules = Math.max(5, Math.floor(matrix.size * 0.17) | 1);
+  const plateModules = logoModules + 2;
+  const centerX = qrX + qrSize / 2;
+  const centerY = qrY + qrSize / 2;
+  const plateSize = plateModules * moduleSize;
+  const logoSize = logoModules * moduleSize;
+  ctx.fillStyle = colors.white;
+  ctx.fillRect(
+    centerX - plateSize / 2,
+    centerY - plateSize / 2,
+    plateSize,
+    plateSize,
+  );
+  ctx.drawImage(
+    icon,
+    centerX - logoSize / 2,
+    centerY - logoSize / 2,
+    logoSize,
+    logoSize,
+  );
   y = qrY + qrSize + 28;
   ctx.font = `650 34px ${font}`;
   text(

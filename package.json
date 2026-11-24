@@ -1,6 +1,6 @@
 {
   "name": "panfolio",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -31,6 +31,7 @@
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "jsqr": "^1.4.0",
     "prettier": "^3.10.1",
     "sharp": "^0.35.5",
     "tsx": "^4.20.0",
