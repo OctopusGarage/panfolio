@@ -35,11 +35,9 @@ pnpm dev
 
 Production assets support subdirectory hosting. GitHub Actions validates tests and builds before deploying to GitHub Pages. Updates wait for the user to select the update action.
 
-## Content provenance
+## Recipe content
 
-Initial content was retrieved on 2026-11-24 from [CodeFarmer’s Recipe](https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe). Each entry retains its source URL and original recipe text, including original video references. The instant-noodle entry is a collection of preparations. Missing measurements, servings and nutritional values are not invented. Search operates on original text; simplified/traditional Chinese variants are not automatically normalized.
-
-Third-party recipe text and images remain the property of their respective authors. No blanket license is asserted for them; the application's MIT license covers original application code only. Review source permissions before redistributing content elsewhere. Images remain externally hosted rather than copied into this repository.
+The recipe collection belongs to the project owner and was migrated from their existing cookbook. Original recipe text and video references are retained. Missing measurements, servings and nutritional values are not invented. Images remain externally hosted. Search does not automatically normalize simplified/traditional Chinese variants.
 
 The interface supports Chinese and English, with English recipe titles and bilingual navigation, guides, installation, sharing and update feedback. Original recipe instructions remain Chinese. On-device installation and actual iPhone home-screen behavior should be checked on physical devices; WebKit automation is not a substitute for device testing.
 

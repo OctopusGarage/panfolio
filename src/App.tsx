@@ -641,15 +641,6 @@ export default function App() {
                     )}
                   </p>
                 </details>
-                <details>
-                  <summary>{s("关于菜谱来源", "Recipe sources")}</summary>
-                  <p>
-                    {s(
-                      "首版来自 CodeFarmer’s Recipe，保留原始中文正文与来源链接。不推测缺失用量、份数、耗时或营养信息。",
-                      "The initial collection comes from CodeFarmer’s Recipe. Original Chinese text and source links are retained. Missing quantities, servings, duration and nutrition are not invented.",
-                    )}
-                  </p>
-                </details>
               </section>
             ) : (
               <>
@@ -840,13 +831,6 @@ export default function App() {
             )}
             <footer>
               <strong>Panfolio</strong>
-              <span>
-                {s("菜谱整理自", "Recipes from")}{" "}
-                <a href="https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe">
-                  CodeFarmer’s Recipe
-                </a>{" "}
-                · {s("内容版权归原作者所有", "Content belongs to its authors")}
-              </span>
               <span>
                 {s(
                   "不需要账号 · 数据留在你的设备",

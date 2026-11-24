@@ -25,7 +25,7 @@ Baseline: TalkSprout commit `462e7c041115b4c32e19fc1b8e2c597523d0f31c` (2026-11-
 | Strict typing, unit tests, Chromium/WebKit release gates  | Partial                                  | Additional lifecycle, cache, sharing, persistence, accessibility and shell regressions                                                 |
 | Pull-request CI and separated deployment permissions      | Missing                                  | Validation runs for PRs; deployment restricted to main with separate Pages permissions                                                 |
 | Content evaluation                                        | Missing                                  | Recipe-source, English-title, unsafe-link, IDs and source-text integrity evaluation; no fabricated model evidence                      |
-| Documentation and repository conventions                  | Partial                                  | English README, provenance/license boundary, audit, AGENTS and contributor commands                                                    |
+| Documentation and repository conventions                  | Partial                                  | English README, content ownership/license boundary, audit, AGENTS and contributor commands                                             |
 
 ## Domain mapping
 
@@ -35,7 +35,7 @@ TalkSprout's English coaches, 160 scenarios, spoken prompts, review cards, inter
 
 Original recipe bodies remain Chinese and external images/videos require internet access. Search includes English recipe titles; source ingredient text is not automatically translated. Installation availability depends on the browser. Physical iPhone home-screen behavior is not established by automated WebKit tests. No cloud synchronization is offered. When IndexedDB is unavailable, the fallback uses localStorage with Web Locks where supported; browsers without either serialized storage mechanism cannot guarantee atomic simultaneous writes.
 
-Source attribution: shared infrastructure is adapted from the MIT-licensed OctopusGarage/talksprout project. Third-party recipe text and media remain outside the application code license.
+Source attribution: shared infrastructure is adapted from the MIT-licensed OctopusGarage/talksprout project. The project owner’s recipe collection is separate from the application code license.
 
 ## Verification evidence
 
