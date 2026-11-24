@@ -2,7 +2,7 @@
 
 Add entries to `src/recipes.json`; there is no fixed collection size. Keep existing IDs unchanged so saved recipes and notes continue to work.
 
-Each entry has `id`, simplified-Chinese `title` and `body`. Optional fields are `titleEn`, a concise `description`, an `image` path and a `source` URL. Keep translations with their entries. Place local photos in `public/recipes/`; the build automatically includes them in the offline cache.
+Each entry has `id`, simplified-Chinese `title` and `body`. Optional fields are `titleEn`, a concise `description`, an `image` path and a `source` URL. Keep translations with their entries. Use 1536 × 1024 (3:2) recipe illustrations in the watercolor/gouache style described in [Visual direction](visual-style.md). Place image assets in `public/recipes/`; the build automatically includes them in the offline cache.
 
 Use this Markdown structure:
 

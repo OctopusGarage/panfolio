@@ -2,17 +2,17 @@
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
     "Microsoft YaHei", sans-serif;
-  color: #182b46;
-  background: #f5f7fb;
+  color: #344d45;
+  background: #f7faf9;
   font-synthesis: none;
   line-height: 1.7;
-  --ink: #182b46;
-  --green: #b4412c;
-  --canvas: #f5f7fb;
+  --ink: #344d45;
+  --green: #356354;
+  --canvas: #f7faf9;
   --surface: #fff;
-  --muted: #596779;
-  --border: #dce2eb;
-  --accent-soft: #faeee8;
+  --muted: #52675a;
+  --border: #e0e8e3;
+  --accent-soft: #edf4ef;
 }
 * {
   box-sizing: border-box;
@@ -67,7 +67,7 @@ button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 3px solid #b4412c;
+  outline: 3px solid #356354;
   outline-offset: 4px;
 }
 h1,
@@ -85,13 +85,13 @@ p {
   grid-template-columns: 220px minmax(0, 1fr);
 }
 .app-sidebar {
-  background: #182b46;
+  background: #344d45;
   color: #fff;
   padding: 36px 20px;
   display: flex;
   flex-direction: column;
   gap: 48px;
-  border-right: 1px solid #263b58;
+  border-right: 1px solid #e0e8e3;
 }
 .brand {
   font:
@@ -105,7 +105,7 @@ p {
   display: block;
   font: 11px system-ui;
   letter-spacing: 2px;
-  color: #c6d1e1;
+  color: #52675a;
   margin-top: 7px;
 }
 .app-nav {
@@ -121,17 +121,17 @@ p {
   border-radius: 10px;
   text-decoration: none;
   font-size: 14px;
-  color: #d5deec;
+  color: #52685e;
 }
 .app-nav a[aria-current="page"] {
   background: #fff;
-  color: #182b46;
+  color: #344d45;
   font-weight: 700;
 }
 .sidebar-note {
   margin-top: auto;
   font-size: 12px;
-  color: #c6d1e1;
+  color: #52675a;
   padding: 0 12px;
 }
 .app-main {
@@ -306,15 +306,15 @@ h3 {
     border-color 0.18s;
 }
 .card:hover {
-  border-color: #b9c5d5;
-  box-shadow: 0 8px 22px #182b4610;
+  border-color: #cfddd4;
+  box-shadow: 0 8px 22px #344d4510;
 }
 .card-image {
   display: block;
-  aspect-ratio: 16/10;
+  aspect-ratio: 3/2;
   margin: 0 -20px 15px;
   overflow: hidden;
-  background: #e5eaf1;
+  background: #f0f5f2;
 }
 .card-image img {
   width: 100%;
@@ -351,7 +351,7 @@ h3 {
   top: 12px;
   background: #fff;
   color: var(--green);
-  box-shadow: 0 2px 8px #182b461a;
+  box-shadow: 0 2px 8px #344d451a;
   border: 0;
 }
 .card-top button[aria-pressed="true"] {
@@ -380,7 +380,7 @@ h3 {
   justify-content: space-between;
   margin-top: auto;
   padding-top: 12px;
-  border-top: 1px solid #edf0f5;
+  border-top: 1px solid #edf2ee;
   text-decoration: none;
   font-size: 12px;
   font-weight: 650;
@@ -465,7 +465,7 @@ article {
   border-radius: 18px;
   overflow: hidden;
   position: relative;
-  background: #e5eaf1;
+  background: #f0f5f2;
 }
 .recipe-cover img {
   width: 100%;
@@ -573,9 +573,9 @@ article {
 }
 .ingredients-panel li {
   padding: 10px 0;
-  border-bottom: 1px solid #edf0f5;
+  border-bottom: 1px solid #edf2ee;
   font-size: 13px;
-  color: #34475f;
+  color: #465c51;
   line-height: 1.8;
 }
 .ingredients-panel li:last-child {
@@ -598,7 +598,7 @@ article {
 .method-panel li {
   font-size: 14px;
   line-height: 1.95;
-  color: #34475f;
+  color: #465c51;
 }
 .method-panel p {
   margin-bottom: 22px;
@@ -610,7 +610,7 @@ article {
   margin-bottom: 8px;
 }
 .recipe-extra {
-  background: #edf1f8;
+  background: #f0f5f2;
   border-radius: 10px;
   padding: 20px 22px;
 }
@@ -624,7 +624,7 @@ article {
   padding-left: 18px;
   margin: 0;
   font-size: 13px;
-  color: #34475f;
+  color: #465c51;
 }
 .recipe-extra li + li {
   margin-top: 8px;
@@ -821,7 +821,7 @@ dialog::backdrop {
   color: #fff;
   padding: 14px 18px;
   border-radius: 12px;
-  box-shadow: 0 6px 25px #182b4630;
+  box-shadow: 0 6px 25px #344d4530;
   z-index: 10;
   font-size: 13px;
 }
@@ -842,13 +842,13 @@ dialog::backdrop {
 .app-banner {
   margin: 0;
   padding: 12px 24px;
-  background: #faeee8;
+  background: #edf4ef;
   color: var(--ink);
   display: flex;
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
-  border-bottom: 1px solid #edcfc4;
+  border-bottom: 1px solid #dce8de;
 }
 .update-copy {
   flex: 1;
@@ -867,7 +867,7 @@ dialog::backdrop {
 .update-spinner {
   width: 20px;
   height: 20px;
-  border: 2px solid #b4412c44;
+  border: 2px solid #35635444;
   border-top-color: var(--green);
   border-radius: 50%;
   animation: spin 1s linear infinite;
@@ -987,7 +987,7 @@ dialog::backdrop {
   }
   .card-image {
     margin: 0 -15px 14px;
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/2;
   }
   .card h3 {
     font-size: 17px;
@@ -1095,7 +1095,7 @@ dialog::backdrop {
     grid-template-columns: 1fr;
   }
   .card-image {
-    aspect-ratio: 16/9;
+    aspect-ratio: 3/2;
   }
   .card h3 {
     font-size: 20px;
@@ -1190,9 +1190,403 @@ dialog::backdrop {
     height: 190px;
   }
 }
+/* Quiet sage palette and airy surfaces. */
+.app-sidebar {
+  background: #f1f6f2;
+  color: var(--ink);
+  border-right: 1px solid var(--border);
+  padding-top: 32px;
+  gap: 40px;
+}
+.brand {
+  font-size: 30px;
+  font-weight: 600;
+}
+.app-nav a {
+  color: #52685e;
+  font-size: 13px;
+  font-weight: 500;
+}
+.app-nav a[aria-current="page"] {
+  background: #e0ede4;
+  color: #294f3d;
+  font-weight: 600;
+}
+.app-header {
+  background: #ffffffb8;
+  border-bottom-color: #e8eeea;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.app-header h1 {
+  font-size: 17px;
+  font-weight: 600;
+}
+.app-header .eyebrow {
+  color: #52675a;
+  font-weight: 500;
+}
+.intro {
+  border: 0;
+  margin-bottom: 8px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.intro > .eyebrow {
+  color: #52675a;
+  font-size: 9px;
+  letter-spacing: 2.4px;
+}
+.intro h2 {
+  font-size: 28px;
+  font-weight: 550;
+  letter-spacing: 0;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.intro p {
+  font-size: 13px;
+}
+.first-guide {
+  border: 0;
+  background: #edf4ef;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+.first-guide p {
+  color: #536c5c;
+}
+.first-guide button {
+  border: 0;
+  background: transparent;
+  color: #356354;
+  font-weight: 500;
+}
+.library-heading h2 {
+  font-size: 19px;
+  font-weight: 600;
+}
+.search input {
+  border: 1px solid #e3ebe5;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #344d4503;
+  padding: 16px 18px;
+}
+.filters {
+  gap: 8px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.filters button {
+  background: transparent;
+  border-color: transparent;
+  font-size: 12px;
+  min-height: 38px;
+  font-weight: 500;
+  color: #52685e;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.filters button[aria-pressed="true"] {
+  background: #e2efe6;
+  color: #294f3d;
+  border-color: transparent;
+}
+.primary,
+button[aria-pressed="true"] {
+  background: #e0eee4;
+  color: #294f3d;
+  border-color: #d5e5d9;
+}
+.primary:hover {
+  background: #d5e7db;
+}
+.icon-button {
+  background: #fff;
+  border: 1px solid #e3ebe5;
+  border-radius: 14px;
+  color: #526e5e;
+}
+.grid {
+  gap: 24px;
+}
+.card {
+  border: 1px solid #e9efea;
+  border-radius: 18px;
+  box-shadow: 0 3px 18px #344d4503;
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s,
+    border-color 0.25s;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px #344d4508;
+  border-color: #d9e5dc;
+}
+.card-image {
+  aspect-ratio: 3/2;
+  background: #f7faf9;
+  margin-bottom: 15px;
+}
 .card-image img,
 .recipe-cover img {
-  height: 145%;
-  object-fit: cover;
-  object-position: 50% 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.card > p {
+  color: #52675a;
+  font-size: 12px;
+}
+.card-top > span {
+  background: #f0f5f1;
+  color: #54705f;
+  font-weight: 500;
+  border-radius: 6px;
+}
+.card-top button {
+  box-shadow: none;
+  border: 1px solid #e5ede6;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  font-size: 21px;
+  color: #52675a;
+  background: #ffffffdb;
+}
+.card-top button[aria-pressed="true"] {
+  background: #e0eee4;
+  color: #294f3d;
+}
+.read {
+  font-weight: 500;
+  color: #526e5e;
+}
+.read span {
+  color: #52675a;
+}
+.connection {
+  color: #52675a;
+}
+.recipe-cover {
+  height: auto;
+  aspect-ratio: 3/2;
+  background: #f7faf9;
+  border-radius: 18px;
+  float: right;
+  width: 44%;
+  margin: 0 0 24px 28px;
+}
+.recipe-cover figcaption {
+  display: none;
+}
+.detail-title {
+  padding-top: 16px;
+}
+.detail-title h2 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.recipe-description {
+  color: #52675a;
+  line-height: 1.9;
+}
+.detail-title > button {
+  border-color: #e0e8e3;
+  background: #fff;
+  color: #526e5e;
+  font-weight: 500;
+}
+.recipe-body {
+  clear: both;
+  padding-top: 24px;
+}
+.ingredients-panel {
+  background: #fff;
+  border-color: #e3ebe5;
+  border-radius: 16px;
+}
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #d5e2d8;
+  padding-bottom: 14px;
+}
+.method-panel h4 {
+  font-weight: 600;
+  color: #344d45;
+  font-size: 16px;
+}
+.recipe-extra {
+  background: #edf4ef;
+  border-radius: 14px;
+}
+.notes textarea {
+  border-radius: 16px;
+  border-color: #e0e8e3;
+}
+.notes h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.actions button {
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 13px;
+}
+.recent-links a {
+  border-radius: 10px;
+  border-color: #e3ebe5;
+}
+.toast {
+  background: #344d45;
+}
+.app-banner {
+  background: #edf4ef;
+  border-color: #dce8de;
+}
+.app-share-primary {
+  background: #e0eee4;
+  color: #294f3d;
+  border-color: #d5e5d9;
+}
+.app-share-secondary {
+  color: #526e5e;
+  border-color: #e0e8e3;
+}
+.app-share-dialog {
+  border-radius: 22px;
+}
+.guides details,
+.settings-page fieldset {
+  border-radius: 16px;
+  border-color: #e3ebe5;
+}
+.settings-actions > button {
+  border-radius: 14px;
+}
+.cooking {
+  border-radius: 18px;
+  border-color: #e0e8e3;
+}
+.sidebar-note {
+  font-size: 11px;
+}
+.app-nav svg {
+  stroke-width: 1.5;
+}
+.app-share-heading {
+  background: #f7faf9;
+}
+button {
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+footer {
+  border-top-color: #e5ece7;
+  font-size: 10px;
+}
+@media (max-width: 760px) {
+  .app-sidebar {
+    background: #ffffffed;
+    padding: 0 10px env(safe-area-inset-bottom);
+    gap: 0;
+    backdrop-filter: blur(16px);
+  }
+  .app-nav a {
+    font-size: 10px;
+  }
+  .app-nav a[aria-current="page"] {
+    background: transparent;
+    color: #356354;
+    box-shadow: none;
+  }
+  .app-nav a[aria-current="page"] svg {
+    background: #e0eee4;
+    box-sizing: content-box;
+    padding: 4px 14px;
+    border-radius: 16px;
+    margin-top: -4px;
+    margin-bottom: -4px;
+  }
+  .app-header {
+    padding: 14px 20px;
+  }
+  .intro h2 {
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  .intro {
+    padding-top: 22px;
+    padding-bottom: 16px;
+  }
+  .workspace {
+    padding: 0 20px;
+  }
+  .grid {
+    gap: 18px;
+  }
+  .card-image {
+    aspect-ratio: 3/2;
+  }
+  .recipe-cover {
+    float: none;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/2;
+    margin: 0 0 18px;
+  }
+  .detail-title {
+    padding-top: 0;
+  }
+  .detail-title h2 {
+    font-size: 27px;
+  }
+  .recipe-body {
+    padding-top: 12px;
+  }
+  .library-heading h2 {
+    font-size: 18px;
+  }
+  .first-guide {
+    border-radius: 12px;
+  }
+  .card h3 {
+    font-size: 18px;
+  }
+  .app-nav a {
+    padding: 9px 2px;
+  }
+  .keyboard-open .app-sidebar {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+  .card:hover {
+    transform: none;
+  }
+}
+.card-image {
+  width: calc(100% + 40px);
+  flex-shrink: 0;
+}
+@media (max-width: 760px) {
+  .card-image {
+    width: calc(100% + 30px);
+  }
 }

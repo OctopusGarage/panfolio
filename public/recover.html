@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#182b46" />
+    <meta name="theme-color" content="#344d45" />
     <title>Panfolio · Reload</title>
     <style>
       body {
         max-width: 440px;
         margin: 12vh auto;
         padding: 28px;
-        background: #f5f7fb;
-        color: #182b46;
+        background: #f7faf9;
+        color: #344d45;
         font:
           16px/1.8 system-ui,
           sans-serif;
@@ -23,7 +23,7 @@
         border: 0;
         border-radius: 9px;
         padding: 14px 22px;
-        background: #182b46;
+        background: #344d45;
         color: white;
         font: inherit;
         cursor: pointer;
@@ -74,7 +74,13 @@
                 return Promise.all(
                   keys
                     .filter(function (key) {
-                      return key.indexOf("panfolio-scope-" + encodeURIComponent(root.href) + "-") === 0;
+                      return (
+                        key.indexOf(
+                          "panfolio-scope-" +
+                            encodeURIComponent(root.href) +
+                            "-",
+                        ) === 0
+                      );
                     })
                     .map(function (key) {
                       return caches.delete(key);
