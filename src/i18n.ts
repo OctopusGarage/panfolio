@@ -35,25 +35,3 @@ export function useLocale() {
     s: (zh: string, en: string) => (locale === "en" ? en : zh),
   };
 }
-export const englishTitles = [
-  "Japanese beef and potato stew (Nikujaga)",
-  "Ajian-style egg fried rice",
-  "Shrimp and egg fried rice",
-  "Egg-fried rice vermicelli",
-  "Charred pepper and century egg fried rice",
-  "Braised eggplant",
-  "Singapore-style fried rice vermicelli",
-  "Seafood glass noodle casserole",
-  "Eggplant and scrambled eggs",
-  "Ten ways to upgrade instant noodles",
-  "Steamed yellow croaker",
-  "Cold houttuynia salad",
-  "Steamed pork ribs with black bean sauce",
-  "Spinach and scrambled eggs",
-  "Silky scrambled eggs with shrimp",
-  "Garlic and cumin pork ribs",
-  "Stir-fried shrimp and broccoli",
-  "Pan-seared sablefish",
-  "Smashed cucumber with all-purpose sauce",
-  "Water spinach with fermented bean curd and chili",
-];

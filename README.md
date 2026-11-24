@@ -2,7 +2,7 @@
 
 Your personal recipe collection and kitchen notebook.
 
-Browse 20 Chinese recipe entries and collections, search names and ingredient text, save favorites, write personal notes, and read recipes section by section while cooking. Install the app on your home screen and revisit bundled recipe text offline after successful caching. External images and videos require a connection.
+Browse your growing collection of recipes, search names and ingredient text, save favorites, write personal notes, and read recipes section by section while cooking. Install the app on your home screen and revisit bundled recipe text offline after successful caching. External images and videos require a connection.
 
 ## App features
 
@@ -37,7 +37,7 @@ Production assets support subdirectory hosting. GitHub Actions validates tests a
 
 ## Recipe content
 
-The recipe collection belongs to the project owner and was migrated from their existing cookbook. Original recipe text and video references are retained. Missing measurements, servings and nutritional values are not invented. Images remain externally hosted. Search does not automatically normalize simplified/traditional Chinese variants.
+Add recipes to `src/recipes.json` as your collection grows. Each entry has a stable `id`, `title`, `body` (Markdown), optional `titleEn` and optional `source` URL. Keep English titles with their recipes so reordering entries does not mix up translations. There is no fixed recipe count. Search, categories, totals and offline content update automatically when the app is rebuilt. Images may be externally hosted.
 
 The interface supports Chinese and English, with English recipe titles and bilingual navigation, guides, installation, sharing and update feedback. Original recipe instructions remain Chinese. On-device installation and actual iPhone home-screen behavior should be checked on physical devices; WebKit automation is not a substitute for device testing.
 

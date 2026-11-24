@@ -2,13 +2,9 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { parseBackup, matches } from "../src/core";
 import recipes from "../src/recipes.json";
-test("source collection has 20 unique entries and source links", () => {
-  assert.equal(recipes.length, 20);
-  assert.equal(new Set(recipes.map((r) => r.id)).size, 20);
-  for (const r of recipes) {
-    assert.ok(r.body.length > 50);
-    assert.ok(r.source.startsWith("https://"));
-  }
+import { validateRecipes } from "../src/recipe-validation";
+test("recipe collection has unique IDs and valid content", () => {
+  assert.doesNotThrow(() => validateRecipes(recipes));
 });
 test("search finds ingredient text", () => {
   assert.ok(matches({ title: "Dinner", body: "potato and beef" }, " potato "));

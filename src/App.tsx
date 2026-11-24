@@ -1,8 +1,10 @@
 import { useState, useEffect, useLayoutEffect, useRef, useMemo } from "react";
 import Markdown from "react-markdown";
-import recipes from "./recipes.json";
+import recipeData from "./recipes.json";
+import type { Recipe } from "./recipe-validation";
+const recipes: Recipe[] = recipeData;
 import { matches, parseBackup } from "./core";
-import { useLocale, englishTitles } from "./i18n";
+import { useLocale } from "./i18n";
 import { useSavedRecipes } from "./useSavedRecipes";
 import { useAppUpdate } from "./useAppUpdate";
 import { UpdateBanner } from "./UpdateBanner";
@@ -118,7 +120,7 @@ export default function App() {
     [],
   );
   const title = (r: (typeof recipes)[number]) =>
-    locale === "en" ? englishTitles[recipes.indexOf(r)] || r.title : r.title;
+    locale === "en" ? r.titleEn || r.title : r.title;
   const categoryLabel = (c: Category) =>
     ({
       all: s("全部", "All"),
@@ -132,7 +134,7 @@ export default function App() {
   const list = recipes.filter(
     (r) =>
       matches(
-        { ...r, title: r.title + " " + englishTitles[recipes.indexOf(r)] },
+        { ...r, title: r.title + " " + (r.titleEn || "") },
         filter.query,
       ) &&
       (page !== "saved" || data.favorites.includes(r.id)) &&
@@ -494,9 +496,11 @@ export default function App() {
                   <button disabled={copying} onClick={shareRecipe}>
                     {s("分享菜谱链接", "Copy recipe link")}
                   </button>
-                  <a href={recipe.source} target="_blank" rel="noreferrer">
-                    {s("查看原始菜谱 ↗", "Original recipe ↗")}
-                  </a>
+                  {recipe.source && (
+                    <a href={recipe.source} target="_blank" rel="noreferrer">
+                      {s("查看原始菜谱 ↗", "Original recipe ↗")}
+                    </a>
+                  )}
                 </div>
                 <details className="recipe-share">
                   <summary>
@@ -518,8 +522,8 @@ export default function App() {
                 </details>
                 <p className="hint">
                   {s(
-                    "按原文保留用量与步骤；原文未注明的份量不作推测。外部图片与视频需要联网。",
-                    "Original recipe text is in Chinese. Missing quantities are not estimated. External images and videos require a connection.",
+                    "图片与视频需要联网查看。",
+                    "Recipe instructions are in Chinese. Images and videos need a connection.",
                   )}
                 </p>
                 {cooking ? (

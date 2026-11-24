@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import recipes from "../src/recipes.json" with { type: "json" };
 test("a failed application script shows a working recovery screen instead of white", async ({
   page,
 }) => {
@@ -10,7 +11,7 @@ test("a failed application script shows a working recovery screen instead of whi
   ).toBeVisible();
   await page.unroute("**/assets/*.js");
   await page.getByRole("button", { name: "重新加载", exact: true }).click();
-  await expect(page.locator(".card")).toHaveCount(20);
+  await expect(page.locator(".card")).toHaveCount(recipes.length);
   await expect(page.locator("#boot-fallback")).toBeHidden();
 });
 
@@ -42,7 +43,7 @@ test("standalone recovery preserves favorites and unrelated site caches", async 
     );
   });
   await page.getByRole("button", { name: "重新打开", exact: true }).click();
-  await expect(page.locator(".card")).toHaveCount(20);
+  await expect(page.locator(".card")).toHaveCount(recipes.length);
   expect(
     await page.evaluate(
       () => JSON.parse(localStorage.getItem("panfolio-data") || "{}").favorites,
