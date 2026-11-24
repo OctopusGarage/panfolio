@@ -4,9 +4,7 @@ test("search, favorites, notes, cooking and offline navigation", async ({
   context,
 }) => {
   await page.goto("/");
-  await expect(
-    page.getByRole("heading", { name: "今天，做点什么？" }),
-  ).toBeVisible();
+  await expect(page.getByRole("heading", { name: "菜谱一览" })).toBeVisible();
   await page.getByRole("searchbox").fill("Nikujaga");
   await expect(page.locator(".card")).toHaveCount(1);
   await page.locator(".card-top button").click();

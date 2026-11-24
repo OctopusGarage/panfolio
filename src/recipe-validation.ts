@@ -3,6 +3,8 @@ export interface Recipe {
   title: string;
   body: string;
   titleEn?: string;
+  description?: string;
+  image?: string;
   source?: string;
 }
 export function validateRecipes(recipes: Recipe[]) {

@@ -76,8 +76,8 @@ export function Settings({
       <p role="status">
         {offlineStatus === "ready"
           ? s(
-              "离线内容已就绪。菜谱正文和分享卡片可离线使用，外部图片与视频需要联网。",
-              "Offline content is ready. Recipe text and sharing cards work offline. External images and videos need a connection.",
+              "离线内容已就绪。菜谱正文和分享卡片可离线使用，视频需要联网。",
+              "Offline content is ready. Recipe text and sharing cards work offline. Videos need a connection.",
             )
           : offlineStatus === "installing"
             ? s(

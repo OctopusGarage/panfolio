@@ -1,142 +1,182 @@
 [
   {
     "id": "01.-ri-shi-ma-ling-shu-dun-rou",
-    "title": "日式馬鈴薯燉肉（Nikujaga）",
+    "title": "日式土豆炖肉",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/01.-ri-shi-ma-ling-shu-dun-rou",
-    "body": "# 日式馬鈴薯燉肉（Nikujaga）\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-24c217e3ffd6c4ab23aa0fc58b308cb6768bd8c7%2F01.%E6%97%A5%E5%BC%8F%E9%A6%AC%E9%88%B4%E8%96%AF%E7%87%89%E8%82%89.jpg?alt=media)\n\n#### ✅ **日式馬鈴薯燉肉（Nikujaga）烹飪步驟**\n\n**1. 材料準備：**\n\n* 馬鈴薯：建議切大塊一點，煮起來形狀漂亮不易爛。\n* 洋蔥：順紋切絲，有助於炒香不易融爛。\n* 牛肉：選用牛小排（油脂豐富），但一般用薄切牛肉也行。\n* 調味料：糖、醬油、清酒或味醂、水等。\n\n***\n\n**2. 炒製步驟：**\n\n* **炒洋蔥**：熱鍋加少量油，將洋蔥炒至微焦、呈現咖啡色，釋放甜味。\n* **炒牛肉**：加入牛肉，炒至無紅色、油脂釋放出香氣。\n* **加糖提味**：牛肉炒好後加糖拌炒。\n\n***\n\n**3. 燉煮階段：**\n\n* **加入馬鈴薯**。\n* **加調味液與水**：調味液（如醬油、味醂等）混合後加入，並加水至與食材齊高。\n* **使用落蓋（紙蓋）**：用一張剪成鍋子大小的紙蓋（或鋁箔紙）覆蓋食材，使水分循環集中於食材上方，幫助入味。\n\n***\n\n**4. 燉煮時間與火力：**\n\n* **中小火燉煮約 25 分鐘**。\n* **煮至馬鈴薯軟透、湯汁收濃**，可用筷子戳馬鈴薯確認是否熟透。\n\n***\n\n**5. 完成與建議食用：**\n\n* 燉到馬鈴薯與肉都軟綿、入味。\n* 搭配白飯、小菜（如漬物）、魚或炒青菜即可是一頓日式家庭餐。\n\n***\n\n**来源**\n\n* <https://www.youtube.com/watch?v=1UfWOyM6rNc>\n",
-    "titleEn": "Japanese beef and potato stew (Nikujaga)"
+    "body": "## 食材\n\n- 土豆：切大块\n- 洋葱：顺纹切丝\n- 牛小排或薄切牛肉\n- 糖、酱油、清酒或味醂、食用油、水\n\n## 做法\n\n### 1. 炒香洋葱\n\n热锅加少量油，放入洋葱，炒至边缘微焦、呈咖啡色。\n\n### 2. 煸炒牛肉\n\n加入牛肉，炒至表面无红色、油脂释出，再加糖炒匀。\n\n### 3. 加入土豆\n\n放入土豆，倒入酱油、清酒或味醂等调味液，加水至与食材齐平。\n\n### 4. 加盖慢炖\n\n用剪成锅口大小的烘焙纸或铝箔纸作落盖，盖在食材上。中小火炖约 25 分钟。\n\n### 5. 收汁出锅\n\n炖至牛肉和土豆软烂、汤汁收浓。用筷子轻戳土豆，确认熟透后出锅。\n\n## 小贴士\n\n- 土豆切大块，炖煮后更容易保持形状。\n- 落盖能帮助汤汁循环，使食材均匀入味。\n- 可搭配米饭、腌菜或炒青菜。\n\n## 参考链接\n\n- [查看视频](https://www.youtube.com/watch?v=1UfWOyM6rNc)\n",
+    "titleEn": "Japanese beef and potato stew (Nikujaga)",
+    "description": "洋葱炒出甜味，牛肉与土豆慢炖入味。",
+    "image": "./recipes/01.-ri-shi-ma-ling-shu-dun-rou.jpg"
   },
   {
     "id": "02.ajian-ban-dan-chao-fan",
-    "title": "阿見版蛋炒饭",
+    "title": "阿见版蛋炒饭",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/02.ajian-ban-dan-chao-fan",
-    "body": "# 阿見版蛋炒饭\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-08cfcdbda3d44c4fcadaaa2f6d6c79827bca7e11%2F02.%E9%98%BF%E8%A6%8B%E7%89%88%E8%9B%8B%E7%82%92%E9%A5%AD.jpg?alt=media)\n\n#### 🍳【阿剑版蛋炒饭做法总结】\n\n**🧾 材料准备：**\n\n* 米饭（新鲜煮好，提前搅散）\n* 鸡蛋（3个，蛋白蛋黄分开）\n* 火腿肠（切丁）\n* 黄瓜（去瓤切丁）\n* 培根（切小丁）\n* 玉米粒（新鲜剥下或罐头）\n* 甜豆\n* 小葱（切成葱花）\n\n***\n\n**🔪 步骤分解：**\n\n1. **处理米饭**\n   * 将米饭搅散，确保炒的时候不会黏在一起。\n   * 米饭推荐用稍硬的，煮时水量少一些以便颗粒分明。\n2. **处理鸡蛋**\n   * 蛋黄打散后混入米饭中搅拌，使米饭粒粒包裹蛋液。\n   * 蛋白单独搅拌备用。\n3. **处理辅料**\n   * 火腿肠、黄瓜、培根、玉米等全部切丁。\n   * 葱切成葱花备用。\n4. **焯水食材**\n   * 烧水，加盐和油，焯甜豆和玉米粒，煮至浮起后捞出备用。\n5. **煸炒辅料**\n   * 锅中加油，先炒火腿肠、玉米丁，炒出香味后盛出备用。\n6. **炒蛋白**\n   * 锅中留底油，小火炒蛋白至凝固，铲成小块。\n7. **炒饭**\n   * 加入蛋黄拌过的米饭，大火翻炒，使其干爽、分明、不粘锅。\n8. **合炒所有配料**\n   * 加入炒好的火腿肠、黄瓜丁、焯水蔬菜、培根丁等一起翻炒均匀。\n9. **调味**\n   * 加少量盐和白胡椒粉调底味（不需重口）。\n   * 最后撒入葱花快速翻炒均匀。\n10. **出锅装盘**\n    * 关火装盘，即可享用。\n\n***\n\n#### ✅ 成品特点：\n\n* **色香味俱全**：五彩斑斓、米饭粒粒分明。\n* **营养丰富**：蔬菜 + 蛋白 + 主食一锅端。\n* **不油腻、孩子爱吃**。\n\n***\n\n\\*\\* 来源 \\*\\*\n\n* <https://www.youtube.com/watch?v=VCELAeG3lyI>\n",
-    "titleEn": "Ajian-style egg fried rice"
+    "body": "## 食材\n\n- 米饭：提前搅散\n- 鸡蛋 3 个：蛋黄、蛋白分开\n- 火腿肠、黄瓜、培根：切丁，黄瓜去瓤\n- 玉米粒、甜豆、小葱\n- 盐、白胡椒粉、食用油\n\n## 做法\n\n### 1. 处理米饭\n\n将米饭搅散。蛋黄打散后倒入米饭，拌至饭粒均匀裹上蛋液；蛋白单独搅散备用。\n\n### 2. 准备配料\n\n火腿肠、黄瓜、培根切丁，小葱切葱花。玉米粒和甜豆放入加盐、加油的沸水中，焯至浮起后捞出。\n\n### 3. 煸炒辅料\n\n锅中加油，放入火腿肠和玉米粒炒香，盛出备用。\n\n### 4. 炒蛋白\n\n锅中留底油，小火炒蛋白至凝固，用锅铲分成小块。\n\n### 5. 炒散米饭\n\n加入拌好蛋黄的米饭，大火翻炒，炒至饭粒干爽、不粘锅。\n\n### 6. 合炒调味\n\n加入火腿肠、黄瓜、玉米、甜豆和培根丁，翻炒均匀。加少量盐和白胡椒粉，撒葱花炒匀后出锅。\n\n## 小贴士\n\n- 米饭煮得稍硬一些，炒时更容易粒粒分明。\n- 配料较多，调味宜清淡。\n\n## 参考链接\n\n- [查看视频](https://www.youtube.com/watch?v=VCELAeG3lyI)\n",
+    "titleEn": "Ajian-style egg fried rice",
+    "description": "蛋黄裹饭、蛋白单炒，搭配多种蔬菜和肉类配料。",
+    "image": "./recipes/02.ajian-ban-dan-chao-fan.jpg"
   },
   {
     "id": "03.-xia-ren-dan-chao-fan",
-    "title": "蝦仁蛋炒飯",
+    "title": "虾仁蛋炒饭",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/03.-xia-ren-dan-chao-fan",
-    "body": "# 蝦仁蛋炒飯\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-1b62a20dd92161165a80da39cfc28f80bfdcf191%2F03.%E8%9D%A6%E4%BB%81%E8%9B%8B%E7%82%92%E9%A3%AF.jpg?alt=media)\n\n这道炒饭的烹饪步骤可以总结为以下几步：\n\n1. **准备材料：**\n   * 蝦子（使用带壳蝦）\n   * 蔥、蛋、冷饭\n   * 蝦壳（用来做蝦油和蝦湯）\n2. **制作蝦油和蝦湯：**\n   * 将蝦壳先炒至全熟，直到香味释放，蝦壳变成炸蝦的味道。\n   * 将炒熟的蝦壳压碎，加入适量水煮出蝦湯。\n   * 过滤掉蝦壳，留下蝦湯用于炒饭。\n3. **炒蝦：**\n   * 在锅中加油，先炒蝦子，加入少量水和蝦油，让蝦子表面有烙锅的香气。\n   * 如果不想麻烦，可以直接跳过这步，直接与蛋一起炒。\n4. **炒饭：**\n   * 在另一个锅中加入少量蝦油，炒葱，再加入蛋。\n   * 加入冷饭，用铲子把饭炒散，使每一粒饭分明且干燥。\n   * 逐渐加入蝦湯，使饭粒更具风味，但不一次加入太多，分次加入，确保饭粒吸收足够的湯汁。\n5. **调味：**\n   * 加入适量盐和蝦汁，根据口味调整。\n   * 继续炒至饭粒干爽且吸收足够的蝦味。\n6. **完成：**\n   * 最后加入一些蝦油，为炒饭增添香味。\n   * 炒好的蝦仁炒饭色泽诱人，蝦味十足，外脆内嫩。\n\n这道炒饭的特色在于用蝦油和蝦湯增添了浓郁的蝦味，做出来的炒饭不仅香气扑鼻，而且每一口都能吃到饱满的蝦风味。\n\n***\n\n**来源**\n\n* <https://www.youtube.com/watch?v=5SuekA2ucsU>\n",
-    "titleEn": "Shrimp and egg fried rice"
+    "body": "## 食材\n\n- 带壳虾：虾肉、虾壳分开处理\n- 冷米饭、鸡蛋、葱\n- 盐、食用油、水\n\n## 做法\n\n### 1. 熬虾汤\n\n虾壳入锅炒至熟透、香味释出，压碎后加适量水煮出虾汤，过滤备用。虾油留作炒制使用。\n\n### 2. 炒虾\n\n锅中加油，放入虾肉，加少量水和虾油煎炒，炒出香气。也可省略单独炒虾，改为与鸡蛋一起炒。\n\n### 3. 炒蛋炒饭\n\n另起锅加少量虾油，放葱炒香，再加入鸡蛋和冷米饭，用锅铲炒散。\n\n### 4. 分次加汤\n\n少量、多次加入虾汤，边加边炒，让饭粒吸收汤汁，避免一次倒入过多。\n\n### 5. 调味出锅\n\n加入盐和虾汁，炒至饭粒干爽。最后补少量虾油，炒匀出锅。\n\n## 小贴士\n\n- 虾汤要分次加入，避免米饭变湿、结团。\n\n## 参考链接\n\n- [查看视频](https://www.youtube.com/watch?v=5SuekA2ucsU)\n",
+    "titleEn": "Shrimp and egg fried rice",
+    "description": "用虾壳熬出虾汤，分次加入米饭，突出鲜虾风味。",
+    "image": "./recipes/03.-xia-ren-dan-chao-fan.jpg"
   },
   {
     "id": "04.-ji-dan-chao-mi-fen",
     "title": "鸡蛋炒米粉",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/04.-ji-dan-chao-mi-fen",
-    "body": "# 鸡蛋炒米粉\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-67d2703a88bd724ab7a9a8b9ed2f6ee4c750691f%2F04.%E9%B8%A1%E8%9B%8B%E7%82%92%E7%B1%B3%E7%B2%89.jpg?alt=media)\n\n这道 **鸡蛋炒米粉** 的烹饪步骤可以总结为以下几个环节：\n\n***\n\n#### 一、准备米粉（核心技法：打米粉）\n\n1. **烧开水**：锅中加水，烧开后加入少量 **食用油** 和 **盐**（防止粘连并增底味）。\n2. **下米粉**：放入米粉（这里用的是“阿里加香米粉”），略微搅散。\n3. **短时间焯煮**：大约 **2分钟**，水再次沸腾时捞出。\n4. **控水焖发**：将米粉倒入盆中，盖上盖子，用余温“打米粉”：\n   * 第一次焖 3 分钟。\n   * 翻面后再焖 3 分钟。\n   * 焖发后的米粉干爽有弹性，不湿不粘，可随时炒。\n\n***\n\n#### 二、准备配料\n\n1. **预处理食材**：豆芽洗净、控水，葱切段，葱头切两刀。\n2. **鸡蛋处理**：打一个鸡蛋，加入适量盐，搅散备用。\n\n***\n\n#### 三、炒制米粉\n\n1. **炒鸡蛋**：锅中热油，先下鸡蛋，稍成型后盛出。\n2. **炒米粉**：\n   * 原锅加油，下米粉煸炒。\n   * 用锅铲翻面后改用筷子抖散米粉，炒至有米香、焦香味。\n3. **加回鸡蛋与配料**：\n   * 先下鸡蛋 → 葱白 → 豆芽。\n   * 加入 **生抽** 提味增香。\n   * 最后下葱叶，关火翻炒均匀。\n\n***\n\n#### 四、装盘享用\n\n* 米粉炒好后干爽不油腻，盘底清爽。\n* 成品香气扑鼻，口感 **Q 弹爽脆**。\n* 若能搭配一碗白果粥，更加完美（略带调侃）。\n\n***\n\n是否需要我把这些步骤整理成一份图文菜谱格式？\n\n***\n\n**来源**\n\n* <https://www.youtube.com/watch?v=uw4tSDT-ElU>\n",
-    "titleEn": "Egg-fried rice vermicelli"
+    "body": "## 食材\n\n- 米粉（原做法使用阿里加香米粉）\n- 鸡蛋 1 个\n- 豆芽、葱白、葱叶、葱头\n- 盐、生抽、食用油\n\n## 做法\n\n### 1. 焯煮米粉\n\n锅中水烧开，加少量油和盐，放入米粉搅散。煮约 2 分钟，水再次沸腾时捞出。\n\n### 2. 焖发米粉\n\n米粉控水后放入盆中，加盖焖 3 分钟，翻面后再焖 3 分钟。\n\n### 3. 准备配料\n\n豆芽洗净沥干，葱切段，葱头切开。鸡蛋加适量盐打散。\n\n### 4. 炒鸡蛋\n\n热锅加油，倒入蛋液，炒至刚成形后盛出。\n\n### 5. 炒香米粉\n\n原锅加油，下米粉稍煎并翻面，再用筷子抖散，炒出米香和微微焦香。\n\n### 6. 合炒调味\n\n依次加入鸡蛋、葱白和豆芽，加生抽炒匀。最后加入葱叶，关火拌匀出锅。\n\n## 小贴士\n\n- 焖发后的米粉应干爽、有弹性，不湿黏。\n- 炒米粉时配合使用锅铲和筷子，更容易抖散。\n\n## 参考链接\n\n- [查看视频](https://www.youtube.com/watch?v=uw4tSDT-ElU)\n",
+    "titleEn": "Egg-fried rice vermicelli",
+    "description": "先焖发再炒制，让米粉干爽有弹性。",
+    "image": "./recipes/04.-ji-dan-chao-mi-fen.jpg"
   },
   {
     "id": "05.-shao-jiao-pi-dan-chao-fan",
-    "title": "燒椒皮蛋炒飯",
+    "title": "烧椒皮蛋炒饭",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/05.-shao-jiao-pi-dan-chao-fan",
-    "body": "# 燒椒皮蛋炒飯\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-b05ce235d394cb9e7ac946e40d59fd2dca80fa34%2F05.%E7%87%92%E6%A4%92%E7%9A%AE%E8%9B%8B%E7%82%92%E9%A3%AF.jpg?alt=media)\n\n***\n\n#### 🔥 **燒焦皮蛋炒飯 - 製作步驟整理**\n\n**一、製作皮蛋辣椒醬**\n\n1. **準備辣椒**：\n   * 綠辣椒（較辣）2根\n   * 糯米椒（不太辣）3根\n   * 可用烤、炸、煮等方式處理，這裡採用**炙烤**方式製作焦香味。\n2. **烤辣椒**：\n   * 烤至表皮焦黑後放入碗中。\n   * **覆蓋保鮮膜悶一下**，待皮變軟、有水氣後剝皮（留少許皮增添香味）。\n3. **處理皮蛋**：\n   * 去殼（可用紙巾或湯匙協助），切碎或壓碎。\n   * 加入剝皮後的辣椒、蔥花、花椒油、醬油（或醬油膏）、白胡椒、香油等調味。\n4. **完成皮蛋辣椒醬**：\n   * 可用來拌麵、火鍋沾醬或炒飯。\n\n***\n\n**二、製作炒飯本體**\n\n1. **起鍋燒熱**，下油熱鍋（鑊氣要夠）。\n2. **打蛋入鍋**，蛋白蛋黃分離後不要急著翻，讓蛋香先出來。\n3. **加入白飯**，與蛋炒散，炒乾水分。\n4. **放入蔥花**，提香。\n5. **加入皮蛋辣椒醬**（約1匙即可）。\n6. **視口味補充調味**：\n   * 加醬油提香、鹽補鹹、白胡椒補香（量少即可）。\n\n***\n\n**✅ 小提醒**\n\n* **皮蛋的甜味**可替代味精，能提鮮。\n* 若覺得炒飯皮蛋味道不夠濃，搭配一點**皮蛋醬拌著吃**，風味會更突出。\n* 此皮蛋炒飯的靈魂：**炒飯本體 + 焦香皮蛋辣椒醬的搭配食用**。\n\n***\n\n**来源**\n\n* <https://www.youtube.com/watch?v=kItDG3GaLSk>\n",
-    "titleEn": "Charred pepper and century egg fried rice"
+    "body": "## 食材\n\n- 绿辣椒 2 根、糯米椒 3 根\n- 皮蛋、鸡蛋、米饭、葱花\n- 花椒油、酱油或酱油膏、白胡椒粉、香油\n- 盐、食用油\n\n## 做法\n\n### 1. 烤辣椒\n\n将辣椒烤至表皮焦黑，放入碗中，盖保鲜膜焖至表皮变软，再剥皮。可留少许焦皮增加香气。\n\n### 2. 拌皮蛋酱\n\n皮蛋去壳压碎，与辣椒、葱花、花椒油、酱油、白胡椒粉和香油拌匀。\n\n### 3. 炒蛋炒饭\n\n锅烧热后加油，打入鸡蛋，先让蛋液受热出香，再加入米饭炒散、炒干水分。\n\n### 4. 加入酱料\n\n放入葱花，再加约 1 匙皮蛋辣椒酱，翻炒均匀。\n\n### 5. 调味出锅\n\n根据口味补少量酱油、盐和白胡椒粉，炒匀出锅。\n\n## 小贴士\n\n- 皮蛋酱也可用于拌面或作蘸酱。\n- 想增加皮蛋风味，可在装盘后搭配少量皮蛋酱。\n\n## 参考链接\n\n- [查看视频](https://www.youtube.com/watch?v=kItDG3GaLSk)\n",
+    "titleEn": "Charred pepper and century egg fried rice",
+    "description": "焦香辣椒拌入皮蛋酱，再与蛋炒饭合炒。",
+    "image": "./recipes/05.-shao-jiao-pi-dan-chao-fan.jpg"
   },
   {
     "id": "06.-hong-shao-qie-zi",
     "title": "红烧茄子",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/06.-hong-shao-qie-zi",
-    "body": "# 红烧茄子\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-078bd956fd2dabd73fb4d58d49d814f761f9243e%2F06.%E7%BA%A2%E7%83%A7%E8%8C%84%E5%AD%90.jpg?alt=media)\n\n这道菜是“家常红烧茄子”，特点是不炸不油腻、做法简单、非常下饭。以下是烹饪的**简要步骤总结**：\n\n***\n\n#### 🍆 一、准备食材\n\n* **茄子**数根（紫皮，8毛钱一斤）\n* **瘦肉**适量，剁成肉末\n* **青龙椒**切斜片\n* **蒜子**拍碎切末\n\n***\n\n#### 🧂 二、处理茄子\n\n1. **清洗**：用淡盐水将茄子洗净表皮\n2. **切块**：去蒂，切滚刀块\n3. **腌制**：加食盐和白醋拌匀，腌制10分钟\n4. **去水**：腌好后洗净盐分，挤干水分（越干越好）\n\n***\n\n#### 🍳 三、调酱料汁\n\n调料碗中加入：\n\n* 食盐\n* 蒜蓉鲜（调味料）\n* 胡椒粉\n* 白糖\n* 老抽、生抽\n* 食用油\\\n  搅拌均匀备用\n\n另备水淀粉（玉米淀粉 + 清水）\n\n***\n\n#### 🔥 四、分步骤炒制\n\n1. **炒茄子**：锅中热油，放入茄子炒软、炒至变色，盛出备用\n2. **炒肉末**：锅留底油，加入肉末和蒜末，炒至肉变色、出香味\n3. **调味收汁**：加入青椒片、调好的料汁，大火翻炒烧开\n4. **混合茄子**：放回炒好的茄子，继续翻炒均匀\n5. **勾芡收汁**：加入水淀粉翻炒至汤汁包裹茄子即可\n\n***\n\n#### 🍽 五、装盘享用\n\n盛入碗中，酱香浓郁、软嫩入味，堪比红烧肉，非常下饭！\n\n***\n\n**来源**\n\n* <https://www.youtube.com/watch?v=x6Uit9bmN-g>\n",
-    "titleEn": "Braised eggplant"
+    "body": "## 食材\n\n- 紫皮茄子数根、瘦肉适量\n- 青龙椒、蒜\n- 盐、白醋、蒜蓉鲜调味料、胡椒粉、白糖\n- 老抽、生抽、食用油\n- 玉米淀粉、水\n\n## 做法\n\n### 1. 处理茄子\n\n茄子用淡盐水洗净，去蒂切滚刀块。加盐和白醋拌匀，腌 10 分钟，再洗去盐分，充分挤干水分。\n\n### 2. 准备配料\n\n瘦肉剁成肉末，青椒切斜片，蒜拍碎切末。\n\n### 3. 调料汁\n\n将盐、蒜蓉鲜、胡椒粉、白糖、老抽、生抽和食用油拌匀。另用玉米淀粉和水调成水淀粉。\n\n### 4. 炒软茄子\n\n热锅加油，放入茄子，炒软、炒至变色后盛出。\n\n### 5. 炒香肉末\n\n锅留底油，放入肉末和蒜末，炒至肉末变色、香味释出。\n\n### 6. 合炒收汁\n\n加入青椒和料汁，大火烧开，放回茄子炒匀。倒入水淀粉，炒至汤汁包裹茄子后出锅。\n\n## 小贴士\n\n- 茄子腌后尽量挤干水分，炒制时更容易入味。\n\n## 参考链接\n\n- [查看视频](https://www.youtube.com/watch?v=x6Uit9bmN-g)\n",
+    "titleEn": "Braised eggplant",
+    "description": "茄子先腌后炒，配肉末和酱汁烧至软嫩入味。",
+    "image": "./recipes/06.-hong-shao-qie-zi.jpg"
   },
   {
     "id": "07.-xing-zhou-chao-mi-fen",
     "title": "星洲炒米粉",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/07.-xing-zhou-chao-mi-fen",
-    "body": "# 星洲炒米粉\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-45cab92b5734392a8eb2a3e05a97389698703795%2F07.%E6%98%9F%E6%B4%B2%E7%82%92%E7%B1%B3%E7%B2%89.jpg?alt=media)\n\n这道“**新洲炒米粉**”的烹饪步骤可以归纳为以下几个阶段：\n\n***\n\n#### 🥢 一、准备食材\n\n1. **打米粉**：\n   * 准备一锅水，加盐（3-5克）和油（8-10克）。\n   * 放入150克排米粉，稍微搅散，一两分钟煮到略软即可捞出备用，不需完全煮熟。\n   * 用锅盖或器皿盖住，让其余热闷软。\n2. **焯水处理**：\n   * 盐制虾焯水约10秒。\n   * 约100克叉烧焯水，去除表面糖分，避免炒制时粘锅。\n3. **切配料**：\n   * 切条：青红椒、洋葱。\n   * 切段：葱白、葱叶、韭黄（30-50克）。\n   * 切条或片：叉烧。\n   * 豆芽约100克。\n   * 打两个鸡蛋备用。\n4. **调咖喱酱**：\n   * 咖喱胆/油咖喱 20克 + 姜黄粉 5克 + 桂林辣椒酱 10克。\n   * 拌匀后如太稠，可加水或料酒 15克调至流动状态备用。\n\n***\n\n#### 🔥 二、分段炒制\n\n1. **炒鸡蛋**：\n   * 热锅下油（约10克），炒熟蛋液至成小块盛出。\n2. **炒虾仁**：\n   * 大火炒虾仁半分钟左右，出锅备用。\n3. **炒配料**：\n   * 下油（约5克），依次放入：\n     * 洋葱炒香 → 青红椒翻炒 → 加盐 2克调味 → 豆芽炒至略软。\n   * 全部炒好后盛出摊开冷却。\n\n***\n\n#### 🍜 三、炒米粉\n\n1. **干炒米粉**：\n   * 热锅下油（5-6克），放米粉铺平稍煎。\n   * 翻面继续炒至略焦、干香（如锅底发白冒烟则转小火）。\n   * 可用锅铲剪断过长的米粉。\n2. **加酱料**：\n   * 关火，加咖喱酱翻拌均匀（可用碗刮干净）。\n   * 再次开火，炒出香味。\n3. **混合炒制**：\n   * 加入葱头 → 再加入之前炒香的配菜（鸡蛋、虾仁、叉烧等） → 快速翻炒。\n   * 加入葱段与韭黄，利用余温炒熟。\n\n***\n\n#### 🍽 四、装盘 & 食用\n\n* 装盘可摆上几只虾仁做装饰。\n* 成品色泽偏暗但香气浓郁。\n* 口感应为：米粉干香弹牙、虾仁爽脆、酱香浓郁、略带辣味。\n\n***\n\n**来源**\n\n* <https://www.youtube.com/watch?v=wgZPifWWNmc>\n",
-    "titleEn": "Singapore-style fried rice vermicelli"
+    "body": "## 食材\n\n- 排米粉 150 克、叉烧约 100 克\n- 虾、鸡蛋 2 个、豆芽约 100 克\n- 韭黄 30～50 克、青红椒、洋葱、葱白、葱叶\n- 油咖喱 20 克、姜黄粉 5 克、桂林辣椒酱 10 克\n- 水或料酒 15 克（调酱用）\n- 盐、食用油\n\n## 做法\n\n### 1. 处理米粉\n\n水中加盐 3～5 克、油 8～10 克，放入米粉，煮 1～2 分钟至略软后捞出，加盖利用余温焖软。\n\n### 2. 准备配料\n\n盐渍虾焯水约 10 秒。叉烧焯水去除表面糖分，切条或片。青红椒和洋葱切条，葱和韭黄切段，鸡蛋打散。\n\n### 3. 调咖喱酱\n\n油咖喱、姜黄粉和桂林辣椒酱拌匀；如太稠，加水或料酒 15 克调至可流动。\n\n### 4. 分别炒配料\n\n锅中加约 10 克油，炒熟鸡蛋后盛出。虾仁大火炒约半分钟，盛出。再加约 5 克油，炒香洋葱，加入青红椒、盐 2 克和豆芽，炒至略软后盛出摊凉。\n\n### 5. 炒香米粉\n\n锅中加油 5～6 克，放入米粉铺平稍煎，翻面炒至略焦、干香。米粉过长时可用锅铲切断。\n\n### 6. 拌酱合炒\n\n关火，加入咖喱酱拌匀，再开火炒香。加入葱头和炒好的配料，包括叉烧，快速翻炒。\n\n### 7. 收尾出锅\n\n加入葱段和韭黄，利用余温炒熟后装盘。\n\n## 小贴士\n\n- 米粉不必在焯煮时完全煮熟。\n- 锅底发白、冒烟时转小火，避免炒焦。\n- 叉烧先焯水，有助于减少炒制时粘锅。\n\n## 参考链接\n\n- [查看视频](https://www.youtube.com/watch?v=wgZPifWWNmc)\n",
+    "titleEn": "Singapore-style fried rice vermicelli",
+    "description": "咖喱酱拌匀米粉，搭配虾仁、叉烧和蔬菜。",
+    "image": "./recipes/07.-xing-zhou-chao-mi-fen.jpg"
   },
   {
     "id": "08.-hai-xian-fen-si-bao",
     "title": "海鲜粉丝煲",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/08.-hai-xian-fen-si-bao",
-    "body": "# 海鲜粉丝煲\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-5d7147eb99d3402be7f40fe8a0790f8580729fdf%2F08.%E6%B5%B7%E9%B2%9C%E7%B2%89%E4%B8%9D%E7%85%B2.jpg?alt=media)\n\n这道菜是“干烧海鲜粉丝煲”，主料为粉丝和大虾，调味丰富，带有浓郁的海鲜香。以下是完整的烹饪步骤总结：\n\n***\n\n#### ✅ **食材准备**\n\n1. **粉丝处理**：\n   * 粉丝用开水泡20秒断生；\n   * 捞出立即放入冷水中泡10分钟，回弹；\n   * 沥干水分，用剪刀剪成段；\n   * 加1/3勺老抽、两勺生抽，拌匀上色备用（仅为上色，不看味道）。\n2. **调制碗汁**：\n   * 白胡椒粉适量；\n   * 两勺生抽；\n   * 一勺蚝油；\n   * 拌匀备用。\n3. **处理大虾**：\n   * 去虾头、剥壳（保留尾巴）、开背去虾线；\n   * 虾头留用，炸出虾油。\n\n***\n\n#### ✅ **正式烹饪**\n\n1. **炸虾头**：\n   * 热锅下油，小火慢煎虾头；\n   * 炸至金黄酥脆，虾香溢出后捞出；\n   * 留虾油备用。\n2. **炒蛋炒菜**：\n   * 虾油中加蒜末，打入一颗鸡蛋炒散；\n   * 加入切好的配菜（如青椒丝、胡萝卜丝等）炒至八成熟。\n3. **炒粉丝**：\n   * 放入泡好调味的粉丝，用筷子炒拌；\n   * 一分钟后加入处理好的大虾；\n   * 倒入调好的碗汁，快速翻炒防止结块；\n   * 出锅前撒入葱花，再翻炒几下。\n4. **装锅完成**：\n   * 将炒好的粉丝倒入提前预热的砂锅中；\n   * 上桌即可。\n\n***\n\n整道菜重点是**粉丝断生+回弹处理**、**虾油提鲜**和**碗汁调味均匀入味**。粉丝干香，大虾鲜嫩，非常适合搭配热气腾腾的砂锅上桌。\n\n***\n\n**来源**\n\n* <https://www.youtube.com/watch?v=k5ed5oJ7g4w>\n\n***\n",
-    "titleEn": "Seafood glass noodle casserole"
+    "body": "## 食材\n\n- 粉丝、大虾\n- 鸡蛋 1 个、蒜末、葱花\n- 青椒丝、胡萝卜丝等配菜\n- 老抽 1/3 勺、生抽 4 勺（分两次使用）\n- 蚝油 1 勺、白胡椒粉适量、食用油\n\n## 做法\n\n### 1. 处理粉丝\n\n粉丝用开水泡 20 秒，捞出后立即放冷水中泡 10 分钟。沥干、剪段，加老抽 1/3 勺和生抽 2 勺拌匀。\n\n### 2. 准备虾和碗汁\n\n大虾去头、去壳，保留虾尾，开背去虾线。虾头留用。生抽 2 勺、蚝油 1 勺和白胡椒粉拌成碗汁。\n\n### 3. 煎虾油\n\n热锅加油，小火煎虾头至金黄酥脆，捞出虾头，保留虾油。\n\n### 4. 炒蛋和配菜\n\n虾油中加入蒜末，打入鸡蛋炒散，再下青椒丝、胡萝卜丝等配菜，炒至八成熟。\n\n### 5. 合炒粉丝和虾\n\n放入粉丝，用筷子炒拌约 1 分钟，加入虾肉。倒入碗汁，快速翻炒，出锅前撒葱花。\n\n### 6. 装入砂锅\n\n将炒好的粉丝装入提前预热的砂锅，即可上桌。\n\n## 小贴士\n\n- 粉丝先短泡、再过冷水，有助于保持弹性。\n- 粉丝入锅后及时抖散，避免结块。\n\n## 参考链接\n\n- [查看视频](https://www.youtube.com/watch?v=k5ed5oJ7g4w)\n",
+    "titleEn": "Seafood glass noodle casserole",
+    "description": "虾头煎出虾油，粉丝吸足鲜味后装入热砂锅。",
+    "image": "./recipes/08.-hai-xian-fen-si-bao.jpg"
   },
   {
     "id": "09.-qie-zi-chao-ji-dan",
-    "title": "茄子炒雞蛋",
+    "title": "茄子炒鸡蛋",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/09.-qie-zi-chao-ji-dan",
-    "body": "# 茄子炒雞蛋\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-2bd44ff989e87bf636a42f61ae6150fc8424accd%2F09.%E8%8C%84%E5%AD%90%E7%82%92%E9%9B%9E%E8%9B%8B.jpg?alt=media)\n\n这道 **茄子炒鸡蛋** 的做法虽然啰嗦了一点，但步骤其实很清晰，下面是总结后的烹饪流程：\n\n***\n\n#### ✅ 材料准备：\n\n* 茄子 2 根\n* 鸡蛋 2 个\n* 大蒜、生姜、小米辣\n* 青椒、西红柿\n* 调料：食盐、鸡精、胡椒粉、蚝油、生抽、玉米淀粉、水\n\n***\n\n#### 🍳 烹饪步骤：\n\n**1. 处理茄子**\n\n* 茄子去蒂，切成约 1cm 的小方块。\n* 加盐抓匀，腌制 20 分钟出水。\n* 腌好后冲洗 2 遍，充分沥干水分备用。\n\n**2. 准备配料**\n\n* 蒜、姜切成细末，小米辣切圈。\n* 青椒、西红柿切小块备用。\n\n**3. 调好料汁**\n\n* 一小碗中混合：食盐、鸡精、胡椒粉、蚝油、生抽、玉米淀粉和清水，搅拌均匀备用。\n\n**4. 打蛋液**\n\n* 鸡蛋打散，加胡椒粉顺一个方向搅匀。\n\n**5. 煎炒鸡蛋**\n\n* 热锅少油，小火煎炒鸡蛋至成块，盛出备用。\n\n**6. 炒茄子**\n\n* 起锅少油，加入茄子，慢火慢煎至成块，翻炒均匀，炒熟后盛出。\n\n**7. 炒配菜**\n\n* 锅中加油，爆香蒜姜辣椒。\n* 加入西红柿炒出汁水，再加青椒快速翻炒。\n\n**8. 合炒入味**\n\n* 把鸡蛋、茄子一起回锅，倒入调好的料汁。\n* 大火快速翻炒均匀，让酱汁裹匀所有食材。\n\n**9. 出锅装盘**\n\n* 炒匀即可出锅，一道鲜香入味的茄子炒鸡蛋完成！\n\n***\n\n这做法融合了煎蛋、焖茄子、爆香料的精华，比传统做法更入味也更有层次。\n\n***\n\n**来源**\n\n* <https://www.youtube.com/watch?v=Gw22Gjk4LEI>\n\n***\n",
-    "titleEn": "Eggplant and scrambled eggs"
+    "body": "## 食材\n\n- 茄子 2 根、鸡蛋 2 个\n- 蒜、姜、小米辣、青椒、番茄\n- 盐、鸡精、胡椒粉、蚝油、生抽\n- 玉米淀粉、水、食用油\n\n## 做法\n\n### 1. 处理茄子\n\n茄子去蒂，切约 1 厘米的小方块，加盐抓匀，腌 20 分钟。冲洗 2 遍，充分沥干。\n\n### 2. 准备配料和料汁\n\n蒜姜切末，小米辣切圈，青椒和番茄切小块。盐、鸡精、胡椒粉、蚝油、生抽、玉米淀粉和水拌成料汁。\n\n### 3. 炒鸡蛋\n\n鸡蛋加胡椒粉，顺一个方向搅匀。热锅加少量油，小火煎炒成块后盛出。\n\n### 4. 炒熟茄子\n\n另加少量油，放入茄子，慢火煎炒至熟，盛出备用。\n\n### 5. 炒香配菜\n\n锅中加油，爆香蒜末、姜末和小米辣，放入番茄炒出汁，再加青椒快速翻炒。\n\n### 6. 合炒出锅\n\n鸡蛋和茄子回锅，倒入料汁，大火炒匀，待酱汁均匀裹住食材后出锅。\n\n## 参考链接\n\n- [查看视频](https://www.youtube.com/watch?v=Gw22Gjk4LEI)\n",
+    "titleEn": "Eggplant and scrambled eggs",
+    "description": "茄子和鸡蛋分别煎炒，再与番茄、青椒合炒。",
+    "image": "./recipes/09.-qie-zi-chao-ji-dan.jpg"
   },
   {
     "id": "10.-rang-pao-mian-hao-chi-fan-bei-de-10-zhong-zuo-fa",
-    "title": "让泡面好吃翻倍的10种做法",
+    "title": "泡面的 10 种做法",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/10.-rang-pao-mian-hao-chi-fan-bei-de-10-zhong-zuo-fa",
-    "body": "# 让泡面好吃翻倍的10种做法\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-f53ade3f8c08d6936bd9adbe9cd65d79d3ed2de6%2F10.%E8%AE%A9%E6%B3%A1%E9%9D%A2%E5%A5%BD%E5%90%83%E7%BF%BB%E5%80%8D%E7%9A%8410%E7%A7%8D%E5%81%9A%E6%B3%95.jpg?alt=media)\n\n这期内容其实不是一道菜，而是**10种让泡面变好吃的升级做法合集**，每种做法都很简单、只需一个锅，适合快速操作。下面我将为你**整理出10种泡面的烹饪方法及其步骤要点**，方便你实操或者总结成图文内容发布：\n\n***\n\n#### ✅ 1. 人生泡面：牛肉丸泡面\n\n**步骤**：\n\n1. 冷水中加入朝上牛肉丸（无需解冻），煮至沸腾\n2. 加入泡面和粉包\n3. 快煮熟时加入两条青菜\n4. 出锅前加葱油包、生抽拉调味\n\n> ✅ 关键：牛肉丸煮出清汤，汤头浓郁鲜美\n\n***\n\n#### ✅ 2. 沙茶花生牛奶泡面（2.0版本）\n\n**步骤**：\n\n1. 热锅加2勺沙茶酱炒香\n2. 加入开水，放1小勺花生酱 + 半杯牛奶\n3. 加泡面（粉包可少放）\n\n> ✅ 关键：快速做出浓郁沙茶锅底，也适合火锅底料\n\n***\n\n#### ✅ 3. 广式姜葱拌面\n\n**步骤**：\n\n1. 碗中放姜丝葱花\n2. 烧热花生油泼在上面\n3. 加入鸡味泡面调料粉拌匀成酱\n4. 煮面沥水后拌入酱料\n5. 剩余粉包兑点热水变成清汤搭配\n\n> ✅ 关键：自制姜葱油，香气逼人\n\n***\n\n#### ✅ 4. 雞蛋羹泡面\n\n**步骤**：\n\n1. 把蛋液打入碗中，倒入少量泡面汤搅拌\n2. 撇去气泡，微波炉小火1分半\n3. 撒芝麻油和酱油\n\n> ✅ 关键：利用泡面汤蒸蛋，鲜味融合\n\n***\n\n#### ✅ 5. 煎蛋火腿香辣泡面\n\n**步骤**：\n\n1. 锅里煎鸡蛋和火腿肠至焦香\n2. 加水煮沸，放泡面和调料包\n\n> ✅ 关键：焦香底油+辣汤，香气扑鼻\n\n***\n\n#### ✅ 6. 旋转水煮蛋泡面\n\n**步骤**：\n\n1. 水烧开，加调料粉搅拌\n2. 转小火，快速搅出旋涡，打入鸡蛋\n3. 鸡蛋中心定型，再下泡面\n\n> ✅ 关键：旋转让蛋浮起不粘底，吸味十足\n\n***\n\n#### ✅ 7. 鹹蛋黃火腿湯泡面\n\n**步骤**：\n\n1. 热锅加油炒姜片，加入鹹蛋黃炒出沙感\n2. 加入火腿肠、热水、泡面\n3. 加白菜、豆腐等剩菜\n\n> ✅ 关键：鹹蛋黃增厚汤底，粉包慎用避免过咸\n\n***\n\n#### ✅ 8. 皮蛋香菜泡面\n\n**步骤**：\n\n1. 炒香姜片、皮蛋、火腿肠末\n2. 加开水和泡面粉包\n3. 最后撒入香菜\n\n> ✅ 关键：皮蛋+香菜是老广经典组合，汤底清香\n\n***\n\n#### ✅ 9. 咖哩土豆泡面\n\n**步骤**：\n\n1. 土豆煎透，加咖喱块炒香\n2. 加适量热水，放入泡面（粉包可省）\n\n> ✅ 关键：自制咖喱汤底，年初感十足，适合清汤口味泡面\n\n***\n\n#### ✅ 10. 番茄炒泡面（超級加倍）\n\n**步骤**：\n\n1. 番茄去皮切碎，炒蒜爆香后炒番茄\n2. 加番茄泡面调味包和热水\n3. 回锅加鸡蛋、泡面\n\n> ✅ 变体：加入豆豉辣酱炒豆腐/腊肠也可形成重口味版本\\\n> ✅ 关键：酸甜番茄融合蛋香，超级下饭\n\n***\n\n**来源**\n\n* <https://www.youtube.com/watch?v=m7adV4qL2KE>\n\n***\n",
-    "titleEn": "Ten ways to upgrade instant noodles"
+    "body": "## 做法\n\n### 1. 牛肉丸泡面\n\n1. 冷水中放入牛肉丸，无需解冻，煮至沸腾。\n2. 加入泡面和粉包。\n3. 面快熟时加入两条青菜，出锅前加入葱油包和生抽调味。\n\n小贴士：牛肉丸煮出的汤汁可作为面汤。\n\n### 2. 沙茶花生牛奶泡面\n\n1. 锅中放 2 勺沙茶酱炒香。\n2. 加入开水、1 小勺花生酱和半杯牛奶。\n3. 放入泡面煮熟，粉包按口味少量加入。\n\n小贴士：沙茶酱、花生酱和牛奶共同构成浓郁汤底。\n\n### 3. 广式姜葱拌面\n\n1. 碗中放姜丝和葱花，淋上热花生油。\n2. 加入鸡味泡面调料粉，拌成酱汁。\n3. 泡面煮熟沥水，与酱汁拌匀。剩余粉包可兑热水作汤。\n\n小贴士：姜葱油在拌面前调好。\n\n### 4. 鸡蛋羹泡面\n\n1. 鸡蛋打散，倒入少量泡面汤拌匀。\n2. 撇去泡沫，放入微波炉，低火加热 1 分 30 秒。\n3. 淋少量芝麻油和酱油。\n\n小贴士：加热效果随微波炉功率和蛋液用量变化，以蛋液凝固为准。\n\n### 5. 煎蛋火腿香辣泡面\n\n1. 锅中煎鸡蛋和火腿肠，煎至表面焦香。\n2. 加水煮沸，放入泡面和调料包，煮熟即可。\n\n小贴士：先煎后煮，让汤底带上煎蛋和火腿的香味。\n\n### 6. 旋涡荷包蛋泡面\n\n1. 水烧开，加入调料粉搅匀。\n2. 转小火，搅出旋涡，打入鸡蛋。\n3. 等鸡蛋中心定形，再下泡面煮熟。\n\n小贴士：鸡蛋定形前不要急着翻动。\n\n### 7. 咸蛋黄火腿汤泡面\n\n1. 热锅加油，炒香姜片，放入咸蛋黄，炒至起沙。\n2. 加入火腿肠、热水和泡面。\n3. 可加入白菜、豆腐等配菜，煮熟即可。\n\n小贴士：咸蛋黄本身有咸味，粉包酌量添加。\n\n### 8. 皮蛋香菜泡面\n\n1. 锅中炒香姜片、皮蛋和火腿肠末。\n2. 加入开水和泡面粉包，放入泡面煮熟。\n3. 最后撒入香菜。\n\n小贴士：香菜在出锅前加入。\n\n### 9. 咖喱土豆泡面\n\n1. 土豆煎透，加入咖喱块炒香。\n2. 倒入适量热水，放入泡面煮熟。\n\n小贴士：咖喱块已有调味，可不加粉包。\n\n### 10. 番茄炒泡面\n\n1. 番茄去皮切碎。锅中炒香蒜末，加入番茄炒出汁。\n2. 加入番茄泡面调味包和热水。\n3. 加入鸡蛋和泡面，炒煮至熟。\n\n小贴士：也可另配豆豉辣酱炒豆腐或腊肠。\n\n## 参考链接\n\n- [查看视频](https://www.youtube.com/watch?v=m7adV4qL2KE)\n",
+    "titleEn": "Ten ways to upgrade instant noodles",
+    "description": "从清汤到拌面，换一种做法吃泡面。",
+    "image": "./recipes/10.-rang-pao-mian-hao-chi-fan-bei-de-10-zhong-zuo-fa.jpg"
   },
   {
     "id": "11.-qing-zheng-huang-hua-yu",
     "title": "清蒸黄花鱼",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/11.-qing-zheng-huang-hua-yu",
-    "body": "# 清蒸黄花鱼\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-0f18711c506945644629edd3e152391ff7697390%2F11.%E6%B8%85%E8%92%B8%E9%BB%84%E8%8A%B1%E9%B1%BC.jpg?alt=media)\n\n***\n\n#### ✅ 材料准备：\n\n* 黄花鱼 1 条\n* 蒜 3\\~4 瓣（切蓉）\n* 葱、姜（切丝）\n* 小指椒 2\\~3 个（切粒）\n* 蒸鱼豉油 2 汤勺（可用李锦记）\n* 料酒 1 茶勺\n* 盐 适量\n* 热油 1\\~2 汤勺\n\n***\n\n#### 🍽️ 做法步骤：\n\n1. **处理鱼身**\\\n   黄花鱼去鳞、内脏、鳃，冲洗干净，控干水分；鱼身两侧每隔半厘米切斜刀。\n2. **腌制去腥**\\\n   蒜蓉加盐拌匀，抹在鱼身及刀口处，腌制 20 分钟。\n3. **准备蒸制**\\\n   鱼身铺上葱姜丝，淋料酒；将鱼放入蒸锅，同时放一小碗蒸鱼豉油。\n4. **蒸鱼**\\\n   水开后上锅，大火蒸 8 分钟，转小火虚蒸 2\\~3 分钟；取出鱼，去掉葱姜。\n5. **调味提香**\\\n   鱼身撒上新切葱姜丝与小指椒粒，淋上热好的蒸鱼豉油；再浇一勺烧至八九成热的热油提香。\n\n***\n\n**来源**\n\n* <https://www.xiachufang.com/recipe/128601/>\n\n***\n",
-    "titleEn": "Steamed yellow croaker"
+    "body": "## 食材\n\n- 黄花鱼 1 条\n- 蒜 3～4 瓣：切末\n- 葱、姜：切丝；小米椒 2～3 个：切粒\n- 蒸鱼豉油 2 汤匙、料酒 1 茶匙\n- 盐适量、热油 1～2 汤匙\n\n## 做法\n\n### 1. 处理鱼身\n\n黄花鱼去鳞、内脏和鳃，洗净沥干，两侧每隔约半厘米划一刀。\n\n### 2. 腌鱼\n\n将蒜末和盐拌匀，抹在鱼身和刀口处，腌 20 分钟。\n\n### 3. 准备蒸制\n\n鱼身铺葱姜丝，淋料酒。另用小碗盛蒸鱼豉油，与鱼一起入锅。\n\n### 4. 蒸鱼\n\n水开后上锅，大火蒸 8 分钟，再转小火蒸 2～3 分钟。取出后去掉原来的葱姜。\n\n### 5. 淋油调味\n\n撒上新鲜葱姜丝和小米椒，淋热蒸鱼豉油，再浇八九成热的油。\n\n## 参考链接\n\n- [查看做法](https://www.xiachufang.com/recipe/128601/)\n",
+    "titleEn": "Steamed yellow croaker",
+    "description": "姜葱、蒸鱼豉油和热油，突出鱼肉的鲜味。",
+    "image": "./recipes/11.-qing-zheng-huang-hua-yu.jpg"
   },
   {
     "id": "12.-liang-ban-zhe-er-gen",
     "title": "凉拌折耳根",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/12.-liang-ban-zhe-er-gen",
-    "body": "# 凉拌折耳根\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-398a1eacf1919f1fc143aac8f27a4cd50327ed86%2F12.%E5%87%89%E6%8B%8C%E6%8A%98%E8%80%B3%E6%A0%B9.jpg?alt=media)\n\n***\n\n#### ✅ 材料准备：\n\n* 折耳根（洗净去泥）\n* 蒜泥\n* 姜末\n* 葱花\n* 生抽、醋、香油、花椒油、油辣椒\n* 盐（适量）\n\n***\n\n#### 🥗 做法步骤：\n\n1. **清洗折耳根**\\\n   多次清洗去泥沙，用冷水浸泡 10 分钟，控干水分备用。\n2. **准备调料**\\\n   切好姜末、蒜泥，葱切葱花。\n3. **调拌入味**\\\n   将折耳根放入大碗中，加入盐、姜末、蒜泥、生抽、醋、香油、花椒油、油辣椒拌匀。\n4. **装盘享用**\\\n   撒上葱花，即可食用，酸辣脆爽，开胃解腻。\n\n***\n\n**来源**\n\n* <https://www.xiachufang.com/recipe/1012651/>\n",
-    "titleEn": "Cold houttuynia salad"
+    "body": "## 食材\n\n- 折耳根、蒜末、姜末、葱花\n- 生抽、醋、香油、花椒油、油辣椒\n- 盐适量\n\n## 做法\n\n### 1. 洗净折耳根\n\n反复洗去泥沙，放冷水中浸泡 10 分钟，捞出沥干。\n\n### 2. 准备配料\n\n姜蒜切末，小葱切葱花。\n\n### 3. 拌入料汁\n\n折耳根放入大碗，加盐、姜末、蒜末、生抽、醋、香油、花椒油和油辣椒，充分拌匀。\n\n### 4. 装盘\n\n撒上葱花，即可食用。\n\n## 参考链接\n\n- [查看做法](https://www.xiachufang.com/recipe/1012651/)\n",
+    "titleEn": "Cold houttuynia salad",
+    "description": "姜蒜和酸辣料汁拌匀，保留折耳根的脆爽口感。",
+    "image": "./recipes/12.-liang-ban-zhe-er-gen.jpg"
   },
   {
     "id": "13.-dou-chi-zheng-pai-gu",
     "title": "豆豉蒸排骨",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/13.-dou-chi-zheng-pai-gu",
-    "body": "# 豆豉蒸排骨\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-838589c5d5515576536718cb0244dfa63d2e3dae%2F13.%E8%B1%86%E8%B1%89%E8%92%B8%E6%8E%92%E9%AA%A8.jpg?alt=media)\n\n当然，以下是**广式豆豉蒸排骨**的简明烹饪步骤总结：\n\n***\n\n#### ✅ 材料准备：\n\n* 猪肋排 500 克\n* 土豆 1 个（切片）\n* 蒜末 2 勺\n* 豆豉 半勺\n* 生抽 2 勺\n* 蚝油 1 勺\n* 白糖、盐 少许\n* 生粉 1 勺\n* 面粉（清洗排骨用）\n\n***\n\n#### 🍲 做法步骤：\n\n1. **清洗排骨**\\\n   排骨加面粉和清水反复抓洗 2 分钟，洗出血水和杂质，再用清水冲洗干净，控水备用。\n2. **调酱激香**\\\n   碗中放蒜末、豆豉，淋热油激发香味，加入生抽、蚝油、白糖、盐调味，搅匀。\n3. **腌制入味**\\\n   将酱料倒入排骨中，加生粉抓拌均匀，腌制约 30 分钟。\n4. **准备蒸制**\\\n   蒸盘底铺上土豆片，将腌好的排骨铺在上面。\n5. **蒸排骨**\\\n   水开后上锅，大火蒸 25 分钟。\n6. **完成享用**\\\n   出锅即可，排骨嫩滑入味，豆豉香浓，土豆也吸足了肉汁，非常下饭！\n\n***\n\n**来源**\n\n* <https://www.xiachufang.com/recipe/106804588/>\n\n***\n",
-    "titleEn": "Steamed pork ribs with black bean sauce"
+    "body": "## 食材\n\n- 猪肋排 500 克、土豆 1 个：切片\n- 蒜末 2 勺、豆豉半勺\n- 生抽 2 勺、蚝油 1 勺、生粉 1 勺\n- 白糖、盐少许、食用油\n- 面粉、水：清洗排骨用\n\n## 做法\n\n### 1. 清洗排骨\n\n排骨加面粉和水，反复抓洗 2 分钟，再用清水冲净，沥干。\n\n### 2. 调豆豉酱\n\n蒜末和豆豉放碗中，淋热油激香，再加生抽、蚝油、白糖和盐拌匀。\n\n### 3. 腌排骨\n\n酱料倒入排骨，加生粉抓匀，腌约 30 分钟。\n\n### 4. 铺盘\n\n蒸盘底部铺土豆片，再均匀铺上排骨。\n\n### 5. 蒸熟出锅\n\n水开后入锅，大火蒸 25 分钟，蒸熟后取出。\n\n## 参考链接\n\n- [查看做法](https://www.xiachufang.com/recipe/106804588/)\n",
+    "titleEn": "Steamed pork ribs with black bean sauce",
+    "description": "排骨腌入豆豉蒜香，土豆铺底吸收肉汁。",
+    "image": "./recipes/13.-dou-chi-zheng-pai-gu.jpg"
   },
   {
     "id": "14.-bo-cai-chao-ji-dan",
     "title": "菠菜炒鸡蛋",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/14.-bo-cai-chao-ji-dan",
-    "body": "# 菠菜炒鸡蛋\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-9a890a7828f8bfbac61c26be44187a6b38c9764d%2F14.%E8%8F%A0%E8%8F%9C%E7%82%92%E9%B8%A1%E8%9B%8B.jpg?alt=media)\n\n***\n\n#### ✅ 材料准备：\n\n* 菠菜 1 把\n* 鸡蛋 4 个\n* 小葱 适量（切末）\n* 盐 半勺\n* 食用油 适量\n\n***\n\n#### 🍳 做法步骤：\n\n1. **焯菠菜**\\\n   水烧开，加少许盐，焯菠菜至颜色翠绿，捞出过冷水；完全冷却后攥干水分，切几刀备用。\n2. **备配料**\\\n   鸡蛋打散，小葱切末。\n3. **炒鸡蛋**\\\n   热锅下油，油温八成热时倒入蛋液炒熟，盛出备用。\n4. **炒菠菜**\\\n   原锅转小火，爆香葱花，加入菠菜翻炒，炒至略出水。\n5. **合炒调味**\\\n   倒入炒好的鸡蛋，加盐，大火快速翻炒均匀即可出锅。\n\n***\n\n**来源**\n\n* <https://www.xiachufang.com/recipe/106014471/>\n",
-    "titleEn": "Spinach and scrambled eggs"
+    "body": "## 食材\n\n- 菠菜 1 把、鸡蛋 4 个\n- 小葱适量：切末\n- 盐半勺、食用油适量\n\n## 做法\n\n### 1. 焯菠菜\n\n水烧开，加少许盐，放菠菜焯至翠绿。捞出过冷水，冷却后攥干，切段。\n\n### 2. 备蛋液\n\n鸡蛋打散，小葱切末。\n\n### 3. 炒鸡蛋\n\n热锅加油，油温八成热时倒入蛋液，炒熟后盛出。\n\n### 4. 炒菠菜\n\n原锅转小火，爆香葱花，加入菠菜炒至略出水。\n\n### 5. 合炒调味\n\n倒回鸡蛋，加盐，大火快速炒匀后出锅。\n\n## 参考链接\n\n- [查看做法](https://www.xiachufang.com/recipe/106014471/)\n",
+    "titleEn": "Spinach and scrambled eggs",
+    "description": "菠菜先焯水，鸡蛋单独炒熟，再合炒调味。",
+    "image": "./recipes/14.-bo-cai-chao-ji-dan.jpg"
   },
   {
     "id": "15.-xia-ren-hua-dan",
     "title": "虾仁滑蛋",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/15.-xia-ren-hua-dan",
-    "body": "# 虾仁滑蛋\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-42239c9cc5bdc758711c05601702c27d62633e9f%2F15.%E8%99%BE%E4%BB%81%E6%BB%91%E8%9B%8B.jpg?alt=media)\n\n***\n\n#### ✅ 材料准备：\n\n* 鸡蛋 4 个\n* 虾仁 200 克\n* 小葱 适量（切葱花）\n* 调料：料酒 2 茶匙、盐 1.5 茶匙、淀粉 2 茶匙（加水调成水淀粉）\n\n***\n\n#### 🍳 做法步骤：\n\n1. **处理虾仁**\\\n   虾仁洗净擦干，加 2 茶匙料酒和 1 茶匙盐腌制片刻。\n2. **炒虾仁**\\\n   热锅热油，下虾仁大火快炒至变色熟透，连汤带油盛出放凉备用。\n3. **调蛋液**\\\n   4 个鸡蛋加入 0.5 茶匙盐打散，不需打太久，蛋白蛋黄混合即可。\n4. **混合蛋液**\\\n   将虾仁连汤汁、油、水淀粉一起倒入蛋液中搅拌均匀。\n5. **滑蛋炒制**\\\n   热锅多油烧至冒烟后关火，立刻倒入蛋液，用余温快速翻炒，边缘凝固后打散搅拌。\n6. **炒至刚熟**\\\n   蛋液无明显流动状态时即可关火出锅，撒上葱花增香。\n\n***\n\n**来源**\n\n* <https://www.xiachufang.com/recipe/103468406/>\n",
-    "titleEn": "Silky scrambled eggs with shrimp"
+    "body": "## 食材\n\n- 鸡蛋 4 个、虾仁 200 克\n- 小葱适量：切葱花\n- 料酒 2 茶匙、盐 1.5 茶匙（分两次使用）\n- 淀粉 2 茶匙：加水调成水淀粉\n- 食用油\n\n## 做法\n\n### 1. 腌虾仁\n\n虾仁洗净擦干，加料酒 2 茶匙、盐 1 茶匙，腌制片刻。\n\n### 2. 炒熟虾仁\n\n热锅加油，虾仁大火快炒至变色、熟透，连同汤汁和油一起盛出放凉。\n\n### 3. 调蛋液\n\n鸡蛋加剩余的盐 0.5 茶匙打散，蛋白和蛋黄混合即可，不必过度搅打。\n\n### 4. 拌入虾仁\n\n将虾仁、汤汁、油和水淀粉倒入蛋液，拌匀。\n\n### 5. 余温炒蛋\n\n锅中多放些油，烧至冒烟后关火，倒入蛋液，用余温快速翻炒。边缘凝固时轻轻推散。\n\n### 6. 出锅\n\n蛋液刚好不流动时出锅，撒上葱花。\n\n## 参考链接\n\n- [查看做法](https://www.xiachufang.com/recipe/103468406/)\n",
+    "titleEn": "Silky scrambled eggs with shrimp",
+    "description": "虾仁先炒熟放凉，再与蛋液混合，用余温炒出嫩滑口感。",
+    "image": "./recipes/15.-xia-ren-hua-dan.jpg"
   },
   {
     "id": "16.-suan-xiang-zi-ran-pai-gu",
     "title": "蒜香孜然排骨",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/16.-suan-xiang-zi-ran-pai-gu",
-    "body": "# 蒜香孜然排骨\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-5a45c27163cb794e13b062c0485d03223907fb95%2F16.%E8%92%9C%E9%A6%99%E5%AD%9C%E7%84%B6%E6%8E%92%E9%AA%A8.jpg?alt=media)\n\n***\n\n#### ✅ 材料准备：\n\n* 排骨（适量）\n* 洋葱（1个，切碎）\n* 蒜末、小米辣、葱段（适量）\n* 辣椒粉、孜然粉、烧烤粉（各适量）\n* 生抽（2勺）\n* 盐、白糖（少许）\n\n***\n\n#### 🍳 做法步骤：\n\n1. **焯水煮排骨**\\\n   排骨加葱姜料酒煮至八分熟，捞出沥干。\n2. **炸排骨**\\\n   热锅倒油，下排骨炸至表面金黄酥香，捞出备用。\n3. **炒香配料**\\\n   锅中留底油，放蒜末、洋葱、小米辣翻炒爆香。\n4. **加干料炒香**\\\n   加入辣椒粉、孜然粉、烧烤粉，翻炒均匀。\n5. **调味炒制**\\\n   倒入炸好的排骨，加 2 勺生抽，少许盐和白糖翻炒入味。\n6. **出锅装盘**\\\n   放入葱段，快速翻炒均匀后出锅即可。\n\n外酥里嫩、香辣孜然味十足，特别适合下饭或当做下酒菜！\n\n***\n\n**来源**\n\n* <https://www.xiachufang.com/recipe/107245103/>\n",
-    "titleEn": "Garlic and cumin pork ribs"
+    "body": "## 食材\n\n- 排骨适量、洋葱 1 个：切碎\n- 蒜末、小米辣、葱段适量\n- 姜、料酒：煮排骨用\n- 辣椒粉、孜然粉、烧烤粉各适量\n- 生抽 2 勺，盐、白糖少许\n- 食用油\n\n## 做法\n\n### 1. 煮排骨\n\n排骨加葱、姜和料酒，煮至八分熟，捞出沥干。\n\n### 2. 炸排骨\n\n锅中加油，放入排骨，炸至表面金黄酥香，捞出。\n\n### 3. 炒香配料\n\n锅留底油，放入蒜末、洋葱和小米辣炒香。\n\n### 4. 加入香料\n\n放入辣椒粉、孜然粉和烧烤粉，翻炒均匀。\n\n### 5. 合炒调味\n\n倒回排骨，加生抽 2 勺、少许盐和白糖，翻炒入味。\n\n### 6. 出锅\n\n放入葱段，快速炒匀后出锅。\n\n## 参考链接\n\n- [查看做法](https://www.xiachufang.com/recipe/107245103/)\n",
+    "titleEn": "Garlic and cumin pork ribs",
+    "description": "排骨先煮后炸，再裹上蒜香与孜然调味。",
+    "image": "./recipes/16.-suan-xiang-zi-ran-pai-gu.jpg"
   },
   {
     "id": "17.-xia-ren-chao-xi-lan-hua",
     "title": "虾仁炒西兰花",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/17.-xia-ren-chao-xi-lan-hua",
-    "body": "# 虾仁炒西兰花\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-38b946e6c29da2841b891e98a107791721aa0f22%2F17.%E8%99%BE%E4%BB%81%E7%82%92%E8%A5%BF%E5%85%B0%E8%8A%B1.jpg?alt=media)\n\n***\n\n这道菜是健康快手菜 **虾仁炒西兰花**，色彩鲜艳、口感清爽，适合日常营养均衡饮食。以下是烹饪步骤总结：\n\n***\n\n#### 📝 虾仁炒西兰花：烹饪步骤总结\n\n1. **处理西兰花**\\\n   西兰花洗净，头朝下用淡盐水浸泡 30 分钟，去农残。\n2. **处理虾仁**\\\n   虾仁解冻、去虾线，加入酱油和生粉腌制约 10 分钟。\n3. **焯西兰花**\\\n   西兰花切小朵，沸水加盐焯水至八成熟，捞出沥干备用。\n4. **备料**\\\n   蒜拍碎备用。\n5. **炒虾仁**\\\n   热锅少油，下蒜末炒香，加入虾仁翻炒至变色。\n6. **合炒出锅**\\\n   加入西兰花翻炒均匀，加少许鸡精和盐调味即可出锅。\n7. **装饰点缀（可选）**\\\n   摆盘时可加小番茄点缀，搭配海南辣椒酱食用更有风味。\n\n***\n\n**来源**\n\n* <https://www.xiachufang.com/recipe/100551182/>\n",
-    "titleEn": "Stir-fried shrimp and broccoli"
+    "body": "## 食材\n\n- 西兰花、虾仁、蒜\n- 酱油、生粉、鸡精、盐、食用油\n- 小番茄、海南辣椒酱：可选\n\n## 做法\n\n### 1. 处理西兰花\n\n西兰花洗净，用淡盐水浸泡 30 分钟，再洗净切小朵。\n\n### 2. 腌虾仁\n\n虾仁解冻、去虾线，加酱油和生粉，腌约 10 分钟。\n\n### 3. 焯西兰花\n\n沸水中加盐，放入西兰花焯至八成熟，捞出沥干。\n\n### 4. 炒虾仁\n\n蒜拍碎。热锅加少量油，炒香蒜末，加入虾仁炒至变色。\n\n### 5. 合炒出锅\n\n加入西兰花炒匀，加少许鸡精和盐调味，炒熟后出锅。\n\n## 小贴士\n\n- 可用小番茄点缀，按喜好搭配海南辣椒酱。\n\n## 参考链接\n\n- [查看做法](https://www.xiachufang.com/recipe/100551182/)\n",
+    "titleEn": "Stir-fried shrimp and broccoli",
+    "description": "西兰花先焯水，再与蒜香虾仁快速合炒。",
+    "image": "./recipes/17.-xia-ren-chao-xi-lan-hua.jpg"
   },
   {
     "id": "18.-xiang-jian-yin-xue-yu",
     "title": "香煎银鳕鱼",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/18.-xiang-jian-yin-xue-yu",
-    "body": "# 香煎银鳕鱼\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-c2c96ddc871072d794a4a6eedd47f58c0ef51b26%2F18.%E9%A6%99%E7%85%8E%E9%93%B6%E9%B3%95%E9%B1%BC.jpg?alt=media)\n\n***\n\n以下是这道【香煎银鳕鱼】的简明烹饪步骤总结：\n\n***\n\n#### 🐟 香煎银鳕鱼：烹饪步骤总结\n\n1. **准备食材**\\\n   小葱切段，生姜、大蒜切片；银鳕鱼擦干表面水分，鱼皮中间剪一刀防卷曲。\n2. **煎鱼**\\\n   热锅融化黄油，放入银鳕鱼煎至两面金黄。\n3. **调味煎制**\\\n   加入蚝油、生抽和少量水混合液，再放入葱段、姜片和蒜片，小火煎至汤汁收浓。\n4. **出锅装盘**\\\n   汁浓味香，即可出锅享用。\n\n***\n\n**来源**\n\n* <https://www.xiachufang.com/recipe/104699264/>\n",
-    "titleEn": "Pan-seared sablefish"
+    "body": "## 食材\n\n- 银鳕鱼、黄油\n- 小葱、生姜、蒜\n- 蚝油、生抽、少量水\n\n## 做法\n\n### 1. 准备食材\n\n小葱切段，姜蒜切片。银鳕鱼擦干水分，在鱼皮中间剪一刀，减少受热卷曲。\n\n### 2. 煎鱼\n\n热锅融化黄油，放入银鳕鱼，煎至两面金黄。\n\n### 3. 加入酱汁\n\n蚝油、生抽和少量水混合后倒入锅中，再加入葱段、姜片和蒜片。\n\n### 4. 收汁出锅\n\n小火煎至鱼肉熟透、汤汁收浓后装盘。\n\n## 参考链接\n\n- [查看做法](https://www.xiachufang.com/recipe/104699264/)\n",
+    "titleEn": "Pan-seared sablefish",
+    "description": "黄油煎香鱼肉，加入姜葱和酱汁，小火收浓。",
+    "image": "./recipes/18.-xiang-jian-yin-xue-yu.jpg"
   },
   {
     "id": "19.-wan-neng-tiao-liao-zhi-pai-huang-gua",
-    "title": "万能调料汁拍黄瓜",
+    "title": "万能料汁拍黄瓜",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/19.-wan-neng-tiao-liao-zhi-pai-huang-gua",
-    "body": "# 万能调料汁拍黄瓜\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-43807094704e3e40b2dd41d53c7b32b2e8586d86%2F19.%E4%B8%87%E8%83%BD%E8%B0%83%E6%96%99%E6%B1%81%E6%8B%8D%E9%BB%84%E7%93%9C.jpg?alt=media)\n\n***\n\n1. **准备食材**\\\n   黄瓜洗净拍碎切小块；蒜切末，小米辣切圈，香菜切段，熟芝麻备用。\n2. **制作辣油**\\\n   碗中放蒜末、小米辣、熟芝麻、1勺辣椒面，淋入一大勺热油激香。\n3. **调配万能汁**\\\n   加入：\n   * 生抽 2勺\n   * 蚝油 1勺\n   * 陈醋 2勺\n   * 盐 半勺\n   * 糖 少许\n   * 香油 少许\n4. **拌匀出菜**\\\n   把调料汁和香菜、花生米一起拌入黄瓜中，拌匀即可。\n\n**来源**\n\n* <https://www.xiachufang.com/recipe/106918418/>\n",
-    "titleEn": "Smashed cucumber with all-purpose sauce"
+    "body": "## 食材\n\n- 黄瓜、蒜、小米辣、香菜、熟芝麻、花生米\n- 辣椒面 1 勺、热油 1 大勺\n- 生抽 2 勺、蚝油 1 勺、陈醋 2 勺\n- 盐半勺，白糖、香油少许\n\n## 做法\n\n### 1. 准备食材\n\n黄瓜洗净拍碎，切小块。蒜切末，小米辣切圈，香菜切段。\n\n### 2. 制作辣油\n\n碗中放蒜末、小米辣、熟芝麻和辣椒面，淋入热油激香。\n\n### 3. 调料汁\n\n加入生抽、蚝油、陈醋、盐、白糖和香油，搅拌均匀。\n\n### 4. 拌匀装盘\n\n将料汁、香菜和花生米倒入黄瓜，充分拌匀即可。\n\n## 参考链接\n\n- [查看做法](https://www.xiachufang.com/recipe/106918418/)\n",
+    "titleEn": "Smashed cucumber with all-purpose sauce",
+    "description": "热油激香蒜末与辣椒，再调成酸香料汁拌黄瓜。",
+    "image": "./recipes/19.-wan-neng-tiao-liao-zhi-pai-huang-gua.jpg"
   },
   {
     "id": "20.-jiao-si-fu-ru-chao-kong-xin-cai",
     "title": "椒丝腐乳炒空心菜",
     "source": "https://codefarmer2024s-organization.gitbook.io/codefarmers-recipe/20.-jiao-si-fu-ru-chao-kong-xin-cai",
-    "body": "# 椒丝腐乳炒空心菜\n\n![](https://3043684091-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FjgG5VV3IaCw24RVteAAg%2Fuploads%2Fgit-blob-810af8e3191711698ed31339dd13be36cca30332%2F20.%E6%A4%92%E4%B8%9D%E8%85%90%E4%B9%B3%E7%82%92%E7%A9%BA%E5%BF%83%E8%8F%9C.jpg?alt=media)\n\n***\n\n#### 🌶️ 椒丝腐乳炒空心菜：烹饪步骤总结\n\n1. **准备食材**\\\n   空心菜洗净切段；蒜切蓉，红椒切丝；腐乳与腐乳汁捣成酱。\n2. **焯水处理**\\\n   水烧开后加少许油、1茶匙糖、1茶匙盐，下空心菜焯水至断生，捞出备用。\n3. **炒香调料**\\\n   热锅下油，炒香蒜蓉、红椒丝和腐乳酱。\n4. **合炒空心菜**\\\n   下焯好空心菜，大火翻炒1分钟，加盐调味，淋入少许生粉水勾芡，再加少许花生油炒匀即可出锅。\n\n***\n\n**来源**\n\n* <https://www.xiachufang.com/recipe/104413738/>\n",
-    "titleEn": "Water spinach with fermented bean curd and chili"
+    "body": "## 食材\n\n- 空心菜、蒜、红椒\n- 腐乳、腐乳汁\n- 糖 1 茶匙、盐 1 茶匙：焯水用\n- 盐、生粉水、食用油、花生油\n\n## 做法\n\n### 1. 准备食材\n\n空心菜洗净切段，蒜切末，红椒切丝。腐乳与腐乳汁捣成酱。\n\n### 2. 焯空心菜\n\n水烧开，加少许油、糖 1 茶匙和盐 1 茶匙，放入空心菜，焯至断生后捞出。\n\n### 3. 炒香酱料\n\n热锅加油，炒香蒜末、椒丝和腐乳酱。\n\n### 4. 合炒出锅\n\n放入空心菜，大火翻炒 1 分钟，加盐调味。淋少许生粉水勾芡，再加少许花生油炒匀出锅。\n\n## 参考链接\n\n- [查看做法](https://www.xiachufang.com/recipe/104413738/)\n",
+    "titleEn": "Water spinach with fermented bean curd and chili",
+    "description": "腐乳捣成酱，配蒜蓉和椒丝，大火快炒。",
+    "image": "./recipes/20.-jiao-si-fu-ru-chao-kong-xin-cai.jpg"
   }
 ]

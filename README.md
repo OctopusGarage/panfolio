@@ -2,7 +2,7 @@
 
 Your personal recipe collection and kitchen notebook.
 
-Browse your growing collection of recipes, search names and ingredient text, save favorites, write personal notes, and read recipes section by section while cooking. Install the app on your home screen and revisit bundled recipe text offline after successful caching. External images and videos require a connection.
+Browse your growing collection of recipes, search names and ingredient text, save favorites, write personal notes, and read recipes section by section while cooking. Install the app on your home screen and revisit bundled recipe text offline after successful caching. Bundled recipe photos work offline; external videos require a connection.
 
 ## App features
 
@@ -37,9 +37,9 @@ Production assets support subdirectory hosting. GitHub Actions validates tests a
 
 ## Recipe content
 
-Add recipes to `src/recipes.json` as your collection grows. Each entry has a stable `id`, `title`, `body` (Markdown), optional `titleEn` and optional `source` URL. Keep English titles with their recipes so reordering entries does not mix up translations. There is no fixed recipe count. Search, categories, totals and offline content update automatically when the app is rebuilt. Images may be externally hosted.
+Add recipes to `src/recipes.json` as your collection grows. Each entry has a stable `id`, `title`, `body` (Markdown), optional `titleEn`, `description`, `image` and `source` URL. Keep English titles with their recipes so reordering entries does not mix up translations. There is no fixed recipe count. Search, categories, totals and offline content update automatically when the app is rebuilt. Use local recipe photos in `public/recipes/` to include them in the offline cache.
 
-The interface supports Chinese and English, with English recipe titles and bilingual navigation, guides, installation, sharing and update feedback. Original recipe instructions remain Chinese. On-device installation and actual iPhone home-screen behavior should be checked on physical devices; WebKit automation is not a substitute for device testing.
+The interface supports Chinese and English, with English recipe titles and bilingual navigation, guides, installation, sharing and update feedback. Recipe instructions use simplified Chinese and consistent ingredient, method and tip sections. On-device installation and actual iPhone home-screen behavior should be checked on physical devices; WebKit automation is not a substitute for device testing.
 
 ## Shared infrastructure
 

@@ -33,7 +33,7 @@ TalkSprout's English coaches, 160 scenarios, spoken prompts, review cards, inter
 
 ## Limits
 
-Original recipe bodies remain Chinese and external images/videos require internet access. Search includes English recipe titles; source ingredient text is not automatically translated. Installation availability depends on the browser. Physical iPhone home-screen behavior is not established by automated WebKit tests. No cloud synchronization is offered. When IndexedDB is unavailable, the fallback uses localStorage with Web Locks where supported; browsers without either serialized storage mechanism cannot guarantee atomic simultaneous writes.
+Recipe bodies use simplified Chinese and a consistent ingredient/method/tip format. Bundled photos work offline; external videos require internet access. Search includes English recipe titles; source ingredient text is not automatically translated. Installation availability depends on the browser. Physical iPhone home-screen behavior is not established by automated WebKit tests. No cloud synchronization is offered. When IndexedDB is unavailable, the fallback uses localStorage with Web Locks where supported; browsers without either serialized storage mechanism cannot guarantee atomic simultaneous writes.
 
 Source attribution: shared infrastructure is adapted from the MIT-licensed OctopusGarage/talksprout project. The project owner’s recipe collection is separate from the application code license.
 

@@ -1,5 +1,7 @@
 import { useState, useEffect, useLayoutEffect, useRef, useMemo } from "react";
 import Markdown from "react-markdown";
+import { RecipeContent } from "./RecipeContent";
+import { cookingSections } from "./recipe-content";
 import recipeData from "./recipes.json";
 import type { Recipe } from "./recipe-validation";
 const recipes: Recipe[] = recipeData;
@@ -140,10 +142,7 @@ export default function App() {
       (page !== "saved" || data.favorites.includes(r.id)) &&
       (filter.category === "all" || group(r.title) === filter.category),
   );
-  const steps =
-    recipe?.body
-      .split(/\n(?:\*\*\*|---)\s*\n/)
-      .filter((x) => x.trim() && !/^\s*\*\*来源/.test(x)) || [];
+  const steps = recipe ? cookingSections(recipe.body) : [];
   useEffect(() => {
     const fn = () => {
       const next = readHash();
@@ -188,7 +187,13 @@ export default function App() {
         ? trigger
         : Array.from(
             document.querySelectorAll<HTMLElement>(
-              trigger.closest(".card") ? ".card a" : ".recent-links a",
+              trigger.closest(".card")
+                ? trigger.closest("h3")
+                  ? ".card h3 a"
+                  : trigger.classList.contains("card-image")
+                    ? ".card-image"
+                    : ".card .read"
+                : ".recent-links a",
             ),
           ).find((element) => element.getAttribute("href") === href);
       restored?.focus({ preventScroll: true });
@@ -464,12 +469,23 @@ export default function App() {
                 <button className="back" onClick={back}>
                   ← {s("返回菜谱", "Back to recipes")}
                 </button>
+                {recipe.image && (
+                  <figure className="recipe-cover">
+                    <img src={recipe.image} alt="" />
+                    <figcaption>
+                      {categoryLabel(group(recipe.title))}
+                    </figcaption>
+                  </figure>
+                )}
                 <div className="detail-title">
                   <div>
                     <p className="eyebrow">
                       {categoryLabel(group(recipe.title))}
                     </p>
                     <h2>{title(recipe)}</h2>
+                    {locale === "zh" && recipe.description && (
+                      <p className="recipe-description">{recipe.description}</p>
+                    )}
                     {locale === "en" && <p>{recipe.title}</p>}
                   </div>
                   <button
@@ -496,11 +512,6 @@ export default function App() {
                   <button disabled={copying} onClick={shareRecipe}>
                     {s("分享菜谱链接", "Copy recipe link")}
                   </button>
-                  {recipe.source && (
-                    <a href={recipe.source} target="_blank" rel="noreferrer">
-                      {s("查看原始菜谱 ↗", "Original recipe ↗")}
-                    </a>
-                  )}
                 </div>
                 <details className="recipe-share">
                   <summary>
@@ -520,11 +531,8 @@ export default function App() {
                     onFocus={(e) => e.target.select()}
                   />
                 </details>
-                <p className="hint">
-                  {s(
-                    "图片与视频需要联网查看。",
-                    "Recipe instructions are in Chinese. Images and videos need a connection.",
-                  )}
+                <p className="hint" hidden={locale === "zh"}>
+                  {s("", "Recipe instructions are in Chinese.")}
                 </p>
                 {cooking ? (
                   <section className="cooking">
@@ -551,14 +559,14 @@ export default function App() {
                     </div>
                     <p className="hint">
                       {s(
-                        "按原文段落阅读；合集中的多种做法请分别选择参考。",
-                        "Read by original sections. Collections may contain multiple separate recipes.",
+                        "按步骤完成，再继续下一步。",
+                        "Finish each section before moving on.",
                       )}
                     </p>
                   </section>
                 ) : (
                   <div className="recipe-body" lang="zh">
-                    <Markdown>{recipe.body}</Markdown>
+                    <RecipeContent body={recipe.body} />
                   </div>
                 )}
                 <section className="notes">
@@ -649,27 +657,18 @@ export default function App() {
             ) : (
               <>
                 <section className="intro">
-                  <p className="eyebrow">
-                    A LITTLE COLLECTION, A LOT OF FLAVOR
-                  </p>
+                  <p className="eyebrow">THE EVERYDAY COOKBOOK</p>
                   <h2>
-                    {s("把喜欢的味道，", "Keep your favorite flavors,")}
+                    {s("今天想吃什么？", "Something good")}
                     <br />
-                    {s("留在自己的厨房。", "in your own kitchen.")}
+                    {s("从这里开始。", "is on the menu.")}
                   </h2>
                   <p>
                     {s(
-                      "从一道家常菜开始，慢慢攒下你的拿手好菜。",
+                      "收藏喜欢的菜，记下每一次做饭的灵感。",
                       "Start with a favorite dish. Build a collection that feels like home.",
                     )}
                   </p>
-                  <div className="intro-label">
-                    {recipes.length}{" "}
-                    {s(
-                      "篇菜谱与合集 · 随时翻阅",
-                      "recipes & collections · always close at hand",
-                    )}
-                  </div>
                 </section>
                 {!guideDismissed && (
                   <section className="first-guide">
@@ -731,7 +730,7 @@ export default function App() {
                     <h2>
                       {page === "saved"
                         ? s("我的收藏", "Saved recipes")
-                        : s("今天，做点什么？", "What shall we cook today?")}
+                        : s("菜谱一览", "Recipe collection")}
                     </h2>
                     <span>
                       {list.length} {s("篇", "recipes")}
@@ -775,6 +774,20 @@ export default function App() {
                   <div className="grid">
                     {list.map((r) => (
                       <section className="card" key={r.id}>
+                        {r.image && (
+                          <a
+                            className="card-image"
+                            tabIndex={-1}
+                            aria-hidden="true"
+                            href={"#" + encodeURIComponent(r.id)}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              openRecipe(r, e.currentTarget);
+                            }}
+                          >
+                            <img src={r.image} alt="" loading="lazy" />
+                          </a>
+                        )}
                         <div className="card-top">
                           <span>{categoryLabel(group(r.title))}</span>
                           <button
@@ -797,10 +810,10 @@ export default function App() {
                           </a>
                         </h3>
                         <p>
-                          {/10种/.test(r.title)
+                          {/10\s*种/.test(r.title)
                             ? s("多种做法合集", "A collection of preparations")
                             : s(
-                                "食材准备 · 烹饪步骤 · 实用心得",
+                                r.description || "食材 · 做法 · 小贴士",
                                 "Ingredients · Instructions · Notes",
                               )}
                         </p>

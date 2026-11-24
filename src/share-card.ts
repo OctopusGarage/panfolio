@@ -57,11 +57,11 @@ export const shareCardCopy: Record<Locale, ShareCardCopy> = {
 };
 
 const colors = {
-  background: "#f3f5f1",
-  ink: "#223e34",
-  green: "#285a46",
-  muted: "#596d60",
-  border: "#d6dfd3",
+  background: "#f5f7fb",
+  ink: "#182b46",
+  green: "#b4412c",
+  muted: "#596779",
+  border: "#dce2eb",
   white: "#ffffff",
 };
 const font =

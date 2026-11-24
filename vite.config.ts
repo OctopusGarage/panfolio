@@ -1,6 +1,6 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig, type ResolvedConfig } from "vite";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import { createHash } from "node:crypto";
 let config: ResolvedConfig;
@@ -29,6 +29,9 @@ export default defineConfig({
           "./icon.svg",
           "./icon-192.png",
           "./icon-512.png",
+          ...readdirSync(resolve(config.publicDir, "recipes"))
+            .sort()
+            .map((name) => "./recipes/" + name),
         ];
         const files = [
           "./",
