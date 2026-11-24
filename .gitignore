@@ -2,3 +2,8 @@ node_modules/
 dist/
 test-results/
 playwright-report/
+
+# Responsive derivatives are generated from committed originals.
+public/recipes/*.480.jpg
+public/recipes/*.768.jpg
+public/recipes/*.1200.jpg

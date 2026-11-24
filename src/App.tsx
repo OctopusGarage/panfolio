@@ -1,5 +1,8 @@
 import { useState, useEffect, useLayoutEffect, useRef, useMemo } from "react";
 import Markdown from "react-markdown";
+import { recipeBody, recipeDescription } from "./recipe-language";
+import { usePwaGestures } from "./usePwaGestures";
+import { RecipeImage } from "./RecipeImage";
 import { RecipeContent } from "./RecipeContent";
 import { cookingSections } from "./recipe-content";
 import recipeData from "./recipes.json";
@@ -76,7 +79,9 @@ export default function App() {
         !!(navigator as Navigator & { standalone?: boolean }).standalone,
     ),
     [checking, setChecking] = useState(false),
-    [copying, setCopying] = useState(false);
+    [copying, setCopying] = useState(false),
+    [searchActive, setSearchActive] = useState(false),
+    [showTop, setShowTop] = useState(false);
   const [filters, setFilters] = useState({
     library: { query: "", category: "all" as Category },
     saved: { query: "", category: "all" as Category },
@@ -110,6 +115,87 @@ export default function App() {
       ? "about"
       : null;
   const frame = useAppFrame(recipe ? `recipe:${recipe.id}` : page);
+  usePwaGestures(installed);
+  const searchInput = useRef<HTMLInputElement>(null);
+  const searchScroll = useRef(0);
+  const searching = useRef(false);
+  const searchOrigin = useRef<HTMLElement | null>(null);
+  const topFrame = useRef(0);
+  function closeSearch() {
+    if (!searching.current) return;
+    searching.current = false;
+    setSearchActive(false);
+    searchInput.current?.blur();
+    requestAnimationFrame(() => {
+      if (frame.scrollRef.current)
+        frame.scrollRef.current.scrollTop = searchScroll.current;
+      searchOrigin.current?.focus({ preventScroll: true });
+    });
+  }
+  function cancelSearch() {
+    if (history.state?.panfolioSearch) history.back();
+    else closeSearch();
+  }
+  function beginSearch() {
+    if (searching.current) return;
+    searching.current = true;
+    setSearchActive(true);
+    searchScroll.current = frame.scrollRef.current?.scrollTop || 0;
+    searchOrigin.current = document.getElementById("content-heading");
+    history.pushState(
+      { ...history.state, panfolioSearch: true },
+      "",
+      location.href,
+    );
+    requestAnimationFrame(() =>
+      frame.scrollRef.current?.scrollTo({
+        top: 0,
+        behavior: "instant" as ScrollBehavior,
+      }),
+    );
+  }
+  useEffect(() => {
+    const pop = () => {
+      if (history.state?.panfolioSearch) {
+        searching.current = true;
+        setSearchActive(true);
+      } else closeSearch();
+    };
+    window.addEventListener("popstate", pop);
+    return () => window.removeEventListener("popstate", pop);
+  }, []);
+  useEffect(() => {
+    if (recipe || dialog || page === "settings" || page === "guides") {
+      searching.current = false;
+      setSearchActive(false);
+      searchInput.current?.blur();
+    }
+    setShowTop(false);
+  }, [hash]);
+  useEffect(() => {
+    if (!searchActive) return;
+    const escape = (event: KeyboardEvent) => {
+      if (
+        event.key === "Escape" &&
+        !event.defaultPrevented &&
+        !document.querySelector("dialog[open]")
+      ) {
+        event.preventDefault();
+        cancelSearch();
+      }
+    };
+    window.addEventListener("keydown", escape);
+    return () => window.removeEventListener("keydown", escape);
+  }, [searchActive]);
+  function onPageScroll() {
+    frame.onScroll();
+    cancelAnimationFrame(topFrame.current);
+    topFrame.current = requestAnimationFrame(() =>
+      setShowTop((frame.scrollRef.current?.scrollTop || 0) > 500),
+    );
+  }
+  useEffect(() => () => cancelAnimationFrame(topFrame.current), []);
+
   const context = useRef("");
   context.current = hash + ":" + locale;
   const writer = useMemo(
@@ -136,13 +222,17 @@ export default function App() {
   const list = recipes.filter(
     (r) =>
       matches(
-        { ...r, title: r.title + " " + (r.titleEn || "") },
+        {
+          ...r,
+          title: r.title + " " + (r.titleEn || ""),
+          body: r.body + " " + (r.bodyEn || ""),
+        },
         filter.query,
       ) &&
       (page !== "saved" || data.favorites.includes(r.id)) &&
       (filter.category === "all" || group(r.title) === filter.category),
   );
-  const steps = recipe ? cookingSections(recipe.body) : [];
+  const steps = recipe ? cookingSections(recipeBody(recipe, locale)) : [];
   useEffect(() => {
     const fn = () => {
       const next = readHash();
@@ -203,7 +293,7 @@ export default function App() {
   useLayoutEffect(() => {
     if (!recipe) return;
     const close = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
+      if (e.key === "Escape" && !document.querySelector("dialog[open]")) {
         e.preventDefault();
         back();
       }
@@ -366,7 +456,9 @@ export default function App() {
           ? s("我的收藏", "Saved recipes")
           : s("全部菜谱", "Recipes");
   return (
-    <div className={`app-shell${frame.keyboardOpen ? " keyboard-open" : ""}`}>
+    <div
+      className={`app-shell${frame.keyboardOpen ? " keyboard-open" : ""}${searchActive ? " search-active" : ""}`}
+    >
       <a
         className="skip"
         href="#content-heading"
@@ -451,7 +543,7 @@ export default function App() {
           className="page-scroll"
           data-testid="page-scroll"
           ref={frame.scrollRef}
-          onScroll={frame.onScroll}
+          onScroll={onPageScroll}
           aria-label={s("页面内容", "Page content")}
           tabIndex={0}
         >
@@ -471,7 +563,7 @@ export default function App() {
                 </button>
                 {recipe.image && (
                   <figure className="recipe-cover">
-                    <img src={recipe.image} alt="" />
+                    <RecipeImage src={recipe.image} kind="cover" />
                     <figcaption>
                       {categoryLabel(group(recipe.title))}
                     </figcaption>
@@ -483,10 +575,9 @@ export default function App() {
                       {categoryLabel(group(recipe.title))}
                     </p>
                     <h2>{title(recipe)}</h2>
-                    {locale === "zh" && recipe.description && (
-                      <p className="recipe-description">{recipe.description}</p>
-                    )}
-                    {locale === "en" && <p>{recipe.title}</p>}
+                    <p className="recipe-description">
+                      {recipeDescription(recipe, locale)}
+                    </p>
                   </div>
                   <button
                     onClick={() => saved.favorite(recipe.id)}
@@ -531,16 +622,13 @@ export default function App() {
                     onFocus={(e) => e.target.select()}
                   />
                 </details>
-                <p className="hint" hidden={locale === "zh"}>
-                  {s("", "Recipe instructions are in Chinese.")}
-                </p>
                 {cooking ? (
                   <section className="cooking">
                     <p className="eyebrow">
                       {s("烹饪阅读", "COOKING READER")} · {step + 1} /{" "}
                       {steps.length}
                     </p>
-                    <div lang="zh">
+                    <div lang={locale === "en" ? "en" : "zh-CN"}>
                       <Markdown>{steps[step]}</Markdown>
                     </div>
                     <div className="actions">
@@ -565,8 +653,11 @@ export default function App() {
                     </p>
                   </section>
                 ) : (
-                  <div className="recipe-body" lang="zh">
-                    <RecipeContent body={recipe.body} />
+                  <div
+                    className="recipe-body"
+                    lang={locale === "en" ? "en" : "zh-CN"}
+                  >
+                    <RecipeContent body={recipeBody(recipe, locale)} />
                   </div>
                 )}
                 <section className="notes">
@@ -736,25 +827,62 @@ export default function App() {
                       {list.length} {s("篇", "recipes")}
                     </span>
                   </div>
-                  <label className="search">
-                    <span>
-                      {s("搜索菜名或食材", "Search names or ingredients")}
-                    </span>
-                    <input
-                      type="search"
-                      placeholder={s(
-                        "试试：虾仁、土豆、炒饭…",
-                        "Try: shrimp, potato, fried rice…",
-                      )}
-                      value={filter.query}
-                      onChange={(e) =>
-                        setFilters({
-                          ...filters,
-                          [listKey]: { ...filter, query: e.target.value },
-                        })
-                      }
-                    />
-                  </label>
+                  <div className="search-toolbar">
+                    <label className="search">
+                      <span>
+                        {s("搜索菜名或食材", "Search names or ingredients")}
+                      </span>
+                      <input
+                        type="search"
+                        aria-label={s(
+                          "搜索菜名或食材",
+                          "Search names or ingredients",
+                        )}
+                        ref={searchInput}
+                        onFocus={beginSearch}
+                        enterKeyHint="search"
+                        onKeyDown={(e) => {
+                          if (
+                            e.key === "Escape" &&
+                            !document.querySelector("dialog[open]")
+                          ) {
+                            e.preventDefault();
+                            cancelSearch();
+                          }
+                          if (e.key === "Enter") e.currentTarget.blur();
+                        }}
+                        placeholder={s(
+                          "试试：虾仁、土豆、炒饭…",
+                          "Try: shrimp, potato, fried rice…",
+                        )}
+                        value={filter.query}
+                        onChange={(e) =>
+                          setFilters({
+                            ...filters,
+                            [listKey]: { ...filter, query: e.target.value },
+                          })
+                        }
+                      />
+                    </label>
+                    {searchActive && (
+                      <button className="search-cancel" onClick={cancelSearch}>
+                        {s("取消", "Cancel")}
+                      </button>
+                    )}
+                  </div>
+                  {searchActive && (
+                    <p className="search-results-count" role="status">
+                      {filter.query
+                        ? s(
+                            `找到 ${list.length} 篇菜谱`,
+                            `${list.length} recipes found`,
+                          )
+                        : s(
+                            "输入菜名或食材",
+                            "Type a recipe name or ingredient",
+                          )}
+                    </p>
+                  )}
                   <div className="filters">
                     {categories.map((c) => (
                       <button
@@ -785,7 +913,7 @@ export default function App() {
                               openRecipe(r, e.currentTarget);
                             }}
                           >
-                            <img src={r.image} alt="" loading="lazy" />
+                            <RecipeImage src={r.image} kind="card" />
                           </a>
                         )}
                         <div className="card-top">
@@ -812,10 +940,7 @@ export default function App() {
                         <p>
                           {/10\s*种/.test(r.title)
                             ? s("多种做法合集", "A collection of preparations")
-                            : s(
-                                r.description || "食材 · 做法 · 小贴士",
-                                "Ingredients · Instructions · Notes",
-                              )}
+                            : recipeDescription(r, locale)}
                         </p>
                         <a
                           className="read"
@@ -869,6 +994,23 @@ export default function App() {
           e.target.value = "";
         }}
       />
+      {showTop && !dialog && !frame.keyboardOpen && (
+        <button
+          className="back-to-top"
+          aria-label={s("回到顶部", "Back to top")}
+          onClick={() => {
+            frame.scrollRef.current?.scrollTo({
+              top: 0,
+              behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+                ? "auto"
+                : "smooth",
+            });
+          }}
+        >
+          <span aria-hidden="true">↑</span>
+          <span>{s("顶部", "Top")}</span>
+        </button>
+      )}
       {message && (
         <div className="toast" role="status">
           {message}
@@ -916,8 +1058,8 @@ export default function App() {
               </p>
               <p>
                 {s(
-                  "界面支持中英文，原始菜谱正文保留中文。",
-                  "The interface supports Chinese and English. Original recipe text remains in Chinese.",
+                  "菜谱与操作界面支持中英文，可随时切换。",
+                  "Recipes and the interface support Chinese and English. Switch languages at any time.",
                 )}
               </p>
               <p>

@@ -8,9 +8,9 @@ export function RecipeContent({ body }: { body: string }) {
         <section
           key={section.title}
           className={
-            section.title === "食材"
+            ["食材", "Ingredients"].includes(section.title)
               ? "ingredients-panel"
-              : section.title === "做法"
+              : ["做法", "Method"].includes(section.title)
                 ? "method-panel"
                 : "recipe-extra"
           }

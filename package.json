@@ -1,11 +1,11 @@
 {
   "name": "panfolio",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
-    "build": "tsc --noEmit && vite build",
+    "dev": "pnpm images:build && vite --host 0.0.0.0",
+    "build": "pnpm images:build && tsc --noEmit && vite build",
     "test": "tsx --test tests/*.test.ts",
     "test:e2e": "playwright test",
     "preview": "vite preview",
@@ -13,7 +13,9 @@
     "typecheck": "tsc --noEmit",
     "test:webkit": "playwright test --project=webkit",
     "format": "prettier --write src tests scripts *.ts *.json *.html *.md .github/workflows/*.yml",
-    "format:check": "prettier --check src tests scripts *.ts *.json *.html *.md .github/workflows/*.yml"
+    "format:check": "prettier --check src tests scripts *.ts *.json *.html *.md .github/workflows/*.yml",
+    "images:build": "tsx scripts/recipe-images.ts",
+    "eval:report": "tsx scripts/eval.ts --report"
   },
   "dependencies": {
     "qrcode": "^1.5.4",
@@ -30,6 +32,7 @@
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.0.0",
     "prettier": "^3.10.1",
+    "sharp": "^0.35.5",
     "tsx": "^4.20.0",
     "typescript": "^5.9.0",
     "vite": "^7.0.0"

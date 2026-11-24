@@ -47,8 +47,8 @@ export function Settings({
         ))}
         <p>
           {s(
-            "操作界面支持中英文，原始菜谱正文保留中文。",
-            "The interface is bilingual. Original recipe instructions remain in Chinese.",
+            "菜谱与操作界面会随语言设置一起切换。",
+            "Recipes and the interface follow your selected language.",
           )}
         </p>
       </fieldset>
@@ -76,8 +76,8 @@ export function Settings({
       <p role="status">
         {offlineStatus === "ready"
           ? s(
-              "离线内容已就绪。菜谱正文和分享卡片可离线使用，视频需要联网。",
-              "Offline content is ready. Recipe text and sharing cards work offline. Videos need a connection.",
+              "菜谱正文和分享卡片已可离线使用，浏览过的图片会按需缓存。视频需要联网。",
+              "Recipe text and sharing cards are ready offline. Viewed images are cached on demand. Videos need a connection.",
             )
           : offlineStatus === "installing"
             ? s(

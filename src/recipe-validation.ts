@@ -3,6 +3,8 @@ export interface Recipe {
   title: string;
   body: string;
   titleEn?: string;
+  bodyEn?: string;
+  descriptionEn?: string;
   description?: string;
   image?: string;
   source?: string;

@@ -4,7 +4,7 @@ Baseline: TalkSprout commit `462e7c041115b4c32e19fc1b8e2c597523d0f31c` (2026-11-
 
 | Capability                                                | Initial Panfolio                         | Resolution                                                                                                                             |
 | --------------------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| Chinese/English interface, persisted preference, shortcut | Missing                                  | Bilingual operations, English recipe titles and search, persisted locale; original source instructions explicitly remain Chinese       |
+| Chinese/English interface, persisted preference, shortcut | Missing                                  | Bilingual operations, English recipe titles and search, persisted locale; full recipe instructions switch between Chinese and English  |
 | Desktop sidebar, mobile bottom navigation                 | Missing                                  | Recipe, saved, kitchen guides and settings tabs                                                                                        |
 | Content-only scroll and mobile keyboard handling          | Missing                                  | Adapted `useAppFrame`, safe-area layout and per-view scroll restoration                                                                |
 | Back, Escape, right-edge gesture, focus return            | Partial                                  | Recipe and information navigation with direct-link fallback, adapted gesture and modal focus restoration                               |
@@ -24,7 +24,7 @@ Baseline: TalkSprout commit `462e7c041115b4c32e19fc1b8e2c597523d0f31c` (2026-11-
 | Apple metadata and icons                                  | Partial                                  | Apple touch icon and standalone metadata                                                                                               |
 | Strict typing, unit tests, Chromium/WebKit release gates  | Partial                                  | Additional lifecycle, cache, sharing, persistence, accessibility and shell regressions                                                 |
 | Pull-request CI and separated deployment permissions      | Missing                                  | Validation runs for PRs; deployment restricted to main with separate Pages permissions                                                 |
-| Content evaluation                                        | Missing                                  | Recipe-source, English-title, unsafe-link, IDs and source-text integrity evaluation; no fabricated model evidence                      |
+| Content evaluation                                        | Missing                                  | Independent bilingual AI-agent review plus structural, numeric, measured-unit, reference and terminology regressions                   |
 | Documentation and repository conventions                  | Partial                                  | English README, content ownership/license boundary, audit, AGENTS and contributor commands                                             |
 
 ## Domain mapping
@@ -33,7 +33,7 @@ TalkSprout's English coaches, 160 scenarios, spoken prompts, review cards, inter
 
 ## Limits
 
-Recipe bodies use simplified Chinese and a consistent ingredient/method/tip format. Bundled photos work offline; external videos require internet access. Search includes English recipe titles; source ingredient text is not automatically translated. Installation availability depends on the browser. Physical iPhone home-screen behavior is not established by automated WebKit tests. No cloud synchronization is offered. When IndexedDB is unavailable, the fallback uses localStorage with Web Locks where supported; browsers without either serialized storage mechanism cannot guarantee atomic simultaneous writes.
+Recipe bodies support simplified Chinese and English in a consistent ingredient/method/tip format. Viewed photos are cached on demand at responsive sizes; external videos require internet access. Search includes titles and ingredient text in both languages. Installation availability depends on the browser. Physical iPhone home-screen behavior is not established by automated WebKit tests. No cloud synchronization is offered. When IndexedDB is unavailable, the fallback uses localStorage with Web Locks where supported; browsers without either serialized storage mechanism cannot guarantee atomic simultaneous writes.
 
 Source attribution: shared infrastructure is adapted from the MIT-licensed OctopusGarage/talksprout project. The project owner’s recipe collection is separate from the application code license.
 

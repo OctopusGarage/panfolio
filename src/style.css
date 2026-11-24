@@ -1590,3 +1590,164 @@ footer {
     width: calc(100% + 30px);
   }
 }
+.card-image picture,
+.recipe-cover picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.search-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search-toolbar .search {
+  flex: 1;
+  min-width: 0;
+}
+.search-cancel {
+  border: 0;
+  background: transparent;
+  color: #356354;
+  flex-shrink: 0;
+  padding: 10px 4px;
+  min-width: 48px;
+}
+.search-results-count {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 12px 0 0;
+}
+.search-active .intro,
+.search-active .first-guide,
+.search-active .recent,
+.search-active .library-heading {
+  display: none;
+}
+.search-active .library {
+  padding-top: 16px;
+}
+.search-active .search-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: var(--canvas);
+  padding: 8px 0 12px;
+  margin-top: -8px;
+}
+.search-active .search > span {
+  display: none;
+}
+.search-active .filters {
+  margin-top: 12px;
+}
+.search-active .page-scroll {
+  scroll-behavior: auto;
+}
+.search-active .card {
+  animation: search-enter 0.18s ease-out;
+}
+.back-to-top {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  width: 52px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border-radius: 18px;
+  background: #ffffffed;
+  border: 1px solid #dbe7de;
+  color: #356354;
+  box-shadow: 0 4px 18px #344d4510;
+  backdrop-filter: blur(12px);
+  z-index: 4;
+  padding: 5px;
+}
+.back-to-top span:first-child {
+  font-size: 22px;
+  line-height: 1.2;
+}
+.back-to-top span:last-child {
+  font-size: 10px;
+}
+html[data-standalone="true"],
+html[data-standalone="true"] body {
+  touch-action: pan-y;
+  -webkit-text-size-adjust: 100%;
+}
+.card-image,
+.recipe-cover,
+button,
+a {
+  touch-action: manipulation;
+}
+@keyframes search-enter {
+  from {
+    opacity: 0.7;
+    transform: translateY(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 760px) {
+  input,
+  textarea,
+  select,
+  .search input,
+  .notes textarea,
+  .app-share-dialog input {
+    font-size: 16px;
+  }
+  .search-active .app-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .search-active .app-header .eyebrow,
+  .search-active .connection {
+    display: none;
+  }
+  .search-active .library {
+    padding-top: 10px;
+  }
+  .back-to-top {
+    right: 20px;
+    bottom: calc(88px + env(safe-area-inset-bottom));
+    width: 48px;
+    height: 56px;
+    border-radius: 16px;
+  }
+  .search-active .search-toolbar {
+    padding-bottom: 10px;
+  }
+  .search-active .search input {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .search-active .card {
+    animation: none;
+  }
+}
+.app-shell:has(dialog[open]) .back-to-top {
+  display: none;
+}
+button,
+.app-nav,
+.brand {
+  -webkit-user-select: none;
+  user-select: none;
+}
+html[data-standalone="true"],
+html[data-standalone="true"] body {
+  overscroll-behavior: none;
+}
+.back-to-top {
+  right: max(20px, env(safe-area-inset-right));
+}

@@ -16,14 +16,20 @@ export function recipeSections(body: string): RecipeSection[] {
 }
 export function cookingSections(body: string): string[] {
   const sections = recipeSections(body);
-  const ingredients = sections.find((section) => section.title === "食材");
-  const method = sections.find((section) => section.title === "做法");
+  const ingredients = sections.find((section) =>
+    ["食材", "Ingredients"].includes(section.title),
+  );
+  const method = sections.find((section) =>
+    ["做法", "Method"].includes(section.title),
+  );
   if (!method) return [body];
   const steps = method.content
     .split(/(?=^### )/m)
     .filter((value) => value.trim());
   return [
-    ...(ingredients ? ["## 食材\n\n" + ingredients.content] : []),
+    ...(ingredients
+      ? ["## " + ingredients.title + "\n\n" + ingredients.content]
+      : []),
     ...steps,
   ];
 }

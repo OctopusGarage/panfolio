@@ -28,7 +28,7 @@ test("all recipe illustrations have uniform natural size and display ratio", asy
   const dimensions = await page.evaluate(async () => {
     const urls = Array.from(
       document.querySelectorAll<HTMLImageElement>(".card-image img"),
-    ).map((image) => image.src);
+    ).map((image) => image.src.replace(/\.(480|768|1200)\.jpg$/, ".jpg"));
     return Promise.all(
       urls.map(
         (src) =>

@@ -2,7 +2,7 @@
 
 Your personal recipe collection and kitchen notebook.
 
-Browse your growing collection of recipes, search names and ingredient text, save favorites, write personal notes, and read recipes section by section while cooking. Install the app on your home screen and revisit bundled recipe text offline after successful caching. Bundled recipe photos work offline; external videos require a connection.
+Browse your growing collection of recipes, search names and ingredient text, save favorites, write personal notes, and read recipes section by section while cooking. Install the app on your home screen and revisit bundled recipe text offline after successful caching. Recipe photos are downloaded at responsive sizes and cached as viewed; external videos require a connection.
 
 ## App features
 
@@ -37,10 +37,14 @@ Production assets support subdirectory hosting. GitHub Actions validates tests a
 
 ## Recipe content
 
-Add recipes to `src/recipes.json` as your collection grows. Each entry has a stable `id`, `title`, `body` (Markdown), optional `titleEn`, `description`, `image` and `source` URL. Keep English titles with their recipes so reordering entries does not mix up translations. There is no fixed recipe count. Search, categories, totals and offline content update automatically when the app is rebuilt. Use local recipe photos in `public/recipes/` to include them in the offline cache.
+Add recipes to `src/recipes.json` as your collection grows. Each entry has a stable `id`, `title`, `body` (Markdown), `titleEn`, `bodyEn`, `description`, `descriptionEn`, plus optional `image` and `source` URL. Keep English titles with their recipes so reordering entries does not mix up translations. There is no fixed recipe count. Search, categories, totals and offline content update automatically when the app is rebuilt. Keep full-size images in `public/recipes/`. Build generates 480, 768 and 1200 pixel derivatives. Mobile image candidates are capped at 768 pixels, including high-density phones. Only requested image variants enter the bounded runtime cache; image files are not bulk-precached.
 
-The interface supports Chinese and English, with English recipe titles and bilingual navigation, guides, installation, sharing and update feedback. Recipe instructions use simplified Chinese and consistent ingredient, method and tip sections. On-device installation and actual iPhone home-screen behavior should be checked on physical devices; WebKit automation is not a substitute for device testing.
+The interface supports Chinese and English, with English recipe titles and bilingual navigation, guides, installation, sharing and update feedback. Recipe instructions switch between simplified Chinese and English, with matching ingredient, method and tip sections. See [independent AI review](docs/english-ai-review.md) and [translation evaluation evidence](evals/recipe-translations.json). `pnpm eval` checks bilingual structure, numbers, measured units, references and known terminology regressions. This combines an actual independent native AI-agent review and deterministic regression checks; it does not claim live API benchmarking. On-device installation and actual iPhone home-screen behavior should be checked on physical devices; WebKit automation is not a substitute for device testing.
 
 ## Shared infrastructure
 
 PWA lifecycle, offline checks, sharing, clipboard coordination, app frame and gesture modules are adapted from [TalkSprout](https://github.com/OctopusGarage/talksprout) under the MIT License.
+
+## App interactions
+
+Search enters a compact app state without remounting the input; Cancel and browser Back leave search and preserve shelf state. Mobile inputs use a 16px minimum to avoid focus zoom. Installed PWA windows suppress page pinch gestures while ordinary browser tabs retain zoom. Long pages expose a floating Back to top control, with reduced-motion support and clearance above mobile navigation.
