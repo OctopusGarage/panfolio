@@ -20,6 +20,7 @@
     <title>Panfolio 厨房手记 · 你的随身菜谱</title>
   </head>
   <body>
+    <div class="pwa-status-bar-surface" aria-hidden="true"></div>
     <div id="boot-fallback" class="startup" role="status">
       <h1>Panfolio</h1>
       <p id="boot-message">正在打开厨房手记…</p>
@@ -27,6 +28,30 @@
       <noscript><p>Please enable JavaScript to use Panfolio.</p></noscript>
     </div>
     <style>
+      /* WebKit standalone top-edge sampling workaround; not a visible overlay.
+         Keep outside React so it exists during startup and navigation.
+         Evidence and limits: docs/pwa-header-research.md. */
+      body {
+        background-color: #f7faf9;
+      }
+      .pwa-status-bar-surface {
+        display: none;
+      }
+      @supports (-webkit-touch-callout: none) and (background-clip: text) {
+        @media (display-mode: standalone) {
+          .pwa-status-bar-surface {
+            display: block;
+            position: fixed;
+            inset: 0 0 auto;
+            height: 11px;
+            z-index: 100;
+            pointer-events: none;
+            background-color: inherit;
+            -webkit-background-clip: text;
+            background-clip: text;
+          }
+        }
+      }
       .startup {
         max-width: 480px;
         margin: 12vh auto;

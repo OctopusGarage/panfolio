@@ -41,3 +41,36 @@ Validation: reviewed the requested source files and final CSS overrides; primary
 Header top and inline padding now respect UA safe-area insets while retaining ordinary minimum spacing. Search keeps the same protection when it reduces its ordinary top spacing. The exposed desktop/landscape sidebar also reserves safe-area padding. Header background is opaque to reduce visual interference; this is presentation hardening, not a proven cure for the reported blurriness. Viewport/status-bar metadata and viewport JavaScript are unchanged.
 
 Chromium and WebKit geometry regressions cover portrait top insets, search focus/cancel, asymmetric landscape side insets and enlarged long-title wrapping without action overlap. Insets are injected through CSS custom properties whose production defaults use `env()`. These tests demonstrate layout policy; they do not emulate iPhone hardware cutouts or establish the original physical-device root cause.
+
+## Screenshot follow-up (2026-11-25)
+
+The user's screenshot shows a vertically fading blur: PANFOLIO and the top of
+both header action buttons are softened, while the page heading below remains
+sharp. The screenshot does not show the title colliding with an icon. The earlier
+safe-area geometry tests cannot detect a system compositor effect; v0.4.2 was not
+sufficient to address the reported symptom.
+
+The app applies no filter, mask, or backdrop filter to the header. The remaining
+leading hypothesis is iOS standalone top-edge compositing, consistent with this
+[first-person report](https://github.com/HKUDS/nanobot/issues/5772) and its
+[merged workaround with native iOS simulator evidence](https://github.com/HKUDS/nanobot/pull/5942).
+This is evidence from another project, not an Apple guarantee or a Panfolio device
+reproduction. The user's OS version has not been established.
+
+Version 0.4.3 adds an empty, noninteractive, viewport-fixed 11px color surface
+outside the React root, present from initial HTML. It inherits an explicit body
+background and clips that background to empty text so it paints no overlay. CSS
+gates it on standalone display mode and WebKit touch-callout/text-clip support.
+Ordinary browser tabs retain a hidden element. Existing safe-area padding,
+viewport metadata, header layout, zoom behavior and stored data remain intact.
+The implementation follows the upstream compatibility technique; 11px exceeds
+its documented thin-border sampling threshold. This is a browser workaround,
+not a supported API for disabling iOS effects.
+
+The regression checks verify that the surface exists outside the app root,
+remains empty/accessibility-hidden, stays inactive in normal browser tabs, and
+survives language changes and navigation without blocking controls. Existing
+header tests check geometry separately. Desktop Playwright does not reproduce
+the native iOS blur. This machine has no available `simctl`; physical-iPhone
+verification after a cold relaunch is still required before calling the visual
+symptom resolved.
