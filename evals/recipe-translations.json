@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "08760c482e6ba4334b9405868e786ab6076beb93d217f34ea5f606c948325f2f",
+  "sourceSha256": "ca70bcf6ce585712688c916fda4f8176f8650e46988244a732ea958251124491",
   "checks": [
     "bilingual completeness",
     "section parity",
@@ -174,6 +174,61 @@
     {
       "id": "samukichi-fried-rice",
       "title": "蒜香彩椒蛋炒饭",
+      "issues": []
+    },
+    {
+      "id": "ali-coconut-sago",
+      "title": "椰汁西米露",
+      "issues": []
+    },
+    {
+      "id": "awei-one-pot-rice",
+      "title": "阿伟的六款电饭锅焖饭",
+      "issues": []
+    },
+    {
+      "id": "rosalina-tomato-beef",
+      "title": "萝洁塔的番茄炖牛肉与意面",
+      "issues": []
+    },
+    {
+      "id": "magic-lamb-pilaf",
+      "title": "小高姐羊肉手抓饭与基础白饭",
+      "issues": []
+    },
+    {
+      "id": "ali-scallion-meat-pancakes",
+      "title": "阿栗葱香千层肉饼",
+      "issues": []
+    },
+    {
+      "id": "liuyi-stir-fried-noodles",
+      "title": "留意美食家常炒面",
+      "issues": []
+    },
+    {
+      "id": "feng-night-market-vermicelli",
+      "title": "冯小厨牛肉炒米粉",
+      "issues": []
+    },
+    {
+      "id": "ajian-scallion-pork-chops",
+      "title": "阿见葱盐猪排",
+      "issues": []
+    },
+    {
+      "id": "ali-sauced-noodles",
+      "title": "葱香凉拌面",
+      "issues": []
+    },
+    {
+      "id": "remus-shrimp-eggs",
+      "title": "杰少滑蛋虾仁",
+      "issues": []
+    },
+    {
+      "id": "ting-soy-sauce-noodles",
+      "title": "鼎爷豉油王炒面",
       "issues": []
     }
   ]

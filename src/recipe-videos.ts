@@ -36,14 +36,19 @@ export function videosForRecipe(id: string): SourceVideo[] {
   return catalog.find((entry) => entry.recipeId === id)?.videos || [];
 }
 export function videosForReference(recipeIds: string[], sources: string[]) {
-  return recipeIds
-    .flatMap(videosForRecipe)
-    .filter(
-      (video, index, videos) =>
-        (video.platform === "bilibili" ||
-          sources.includes(videoPageUrl(video))) &&
-        videos.findIndex(
-          (other) => other.platform === video.platform && other.id === video.id,
-        ) === index,
-    );
+  const directSources: SourceVideo[] = sources.flatMap((source) => {
+    const match =
+      /^https:\/\/www\.youtube\.com\/watch\?v=([A-Za-z0-9_-]{11})$/.exec(
+        source,
+      );
+    return match ? [{ platform: "youtube", id: match[1] }] : [];
+  });
+  return [...recipeIds.flatMap(videosForRecipe), ...directSources].filter(
+    (video, index, videos) =>
+      (video.platform === "bilibili" ||
+        sources.includes(videoPageUrl(video))) &&
+      videos.findIndex(
+        (other) => other.platform === video.platform && other.id === video.id,
+      ) === index,
+  );
 }

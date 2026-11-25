@@ -1,10 +1,18 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, type Page } from "@playwright/test";
+async function openSettings(page: Page, en = true) {
+  await page
+    .getByRole("link", { name: en ? "My kitchen" : "我的厨房", exact: true })
+    .click();
+  await page
+    .getByRole("link", { name: en ? "Preferences" : "偏好设置", exact: true })
+    .click();
+}
 test("bilingual settings, persistent choice and clean sharing link", async ({
   page,
 }) => {
   await page.goto("/?private=value");
   await page.getByRole("button", { name: "English", exact: true }).click();
-  await page.getByRole("link", { name: "Settings", exact: true }).click();
+  await openSettings(page);
   await expect(
     page.getByRole("heading", { name: "Settings", exact: true }),
   ).toBeVisible();
@@ -42,11 +50,12 @@ test("English shelves, guides, install help and accessibility", async ({
   await page.getByRole("button", { name: "English", exact: true }).click();
   for (const name of [
     "Recipes",
-    "Saved recipes",
+    "My kitchen",
     "Kitchen essentials",
-    "Settings",
+    "Preferences",
   ]) {
-    await page.getByRole("link", { name, exact: true }).click();
+    if (name === "Preferences") await openSettings(page);
+    else await page.getByRole("link", { name, exact: true }).click();
     expect(
       (await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze())
         .violations,
@@ -136,7 +145,7 @@ test("valid import merges and downloaded backup retains personal notes", async (
   await expect(page.getByLabel("这次的调整，下次的灵感")).toHaveValue(
     "imported note",
   );
-  await page.getByRole("link", { name: "设置", exact: true }).click();
+  await openSettings(page, false);
   const download = page.waitForEvent("download");
   await page.getByRole("button", { name: "导出收藏与笔记" }).click();
   const downloaded = await download;
@@ -160,6 +169,8 @@ test("recipe close restores shelf filters, position and focus", async ({
   await page.keyboard.press("Escape");
   await expect(page.getByRole("searchbox")).toHaveValue("Nikujaga");
   await expect(link).toBeFocused();
-  await page.getByRole("link", { name: "我的收藏", exact: true }).click();
-  await expect(page.getByRole("searchbox")).toHaveValue("");
+  await page.getByRole("link", { name: "我的厨房", exact: true }).click();
+  await expect(page.locator(".my-kitchen")).toBeVisible();
+  await page.getByRole("link", { name: "全部菜谱", exact: true }).click();
+  await expect(page.getByRole("searchbox")).toHaveValue("Nikujaga");
 });

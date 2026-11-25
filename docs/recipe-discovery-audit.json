@@ -1,0 +1,2874 @@
+{
+  "reviewDate": "2026-11-25",
+  "scope": "Current recipe/reference text audited for discovery design, not a new full original-video fidelity audit. Ingredient lists here are candidate discovery signals, not exhaustive allergen/dietary indexes.",
+  "sourceHashes": {
+    "src/recipes.json": "ca70bcf6ce585712688c916fda4f8176f8650e46988244a732ea958251124491",
+    "src/kitchen-essentials.json": "b7dc463bda2ca7d4dc8234514f6c832dd86357bcc69969c1fdff4a8c051cceff"
+  },
+  "counts": {
+    "recipeEntries": 44,
+    "references": 31,
+    "recipeEntriesWithReferences": 19,
+    "standaloneReferences": 4
+  },
+  "recipes": [
+    {
+      "id": "01.-ri-shi-ma-ling-shu-dun-rou",
+      "title": "日式土豆炖肉",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["beef", "potato", "onion"],
+      "supportingIngredients": ["soy sauce", "sake or mirin", "sugar"],
+      "techniques": ["stir-fry", "simmer", "reduce"],
+      "equipment": ["pan", "drop lid"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["main dish"],
+      "flavor": ["savory", "sweet"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "25 min simmer; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "beef",
+        "potato",
+        "onion",
+        "stir-fry",
+        "simmer",
+        "reduce",
+        "japanese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "02.ajian-ban-dan-chao-fan",
+      "title": "阿见版蛋炒饭",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["rice", "egg"],
+      "supportingIngredients": [
+        "ham sausage",
+        "bacon",
+        "cucumber",
+        "corn",
+        "peas",
+        "scallion"
+      ],
+      "techniques": ["blanch", "stir-fry", "scramble"],
+      "equipment": ["pan", "pot"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["staple", "one-dish meal"],
+      "flavor": ["savory"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "rice",
+        "egg",
+        "blanch",
+        "stir-fry",
+        "scramble",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "03.-xia-ren-dan-chao-fan",
+      "title": "虾仁蛋炒饭",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["rice", "shrimp", "egg"],
+      "supportingIngredients": ["shrimp shells", "scallion"],
+      "techniques": ["broth making", "stir-fry"],
+      "equipment": ["pan", "strainer"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["staple", "one-dish meal"],
+      "flavor": ["savory", "shrimp-rich"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "rice",
+        "shrimp",
+        "egg",
+        "broth making",
+        "stir-fry",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "04.-ji-dan-chao-mi-fen",
+      "title": "鸡蛋炒米粉",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["rice vermicelli", "egg"],
+      "supportingIngredients": ["bean sprouts", "scallion", "congtou"],
+      "techniques": ["boil", "covered rest", "stir-fry"],
+      "equipment": ["pan", "pot", "chopsticks"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["staple"],
+      "flavor": ["savory"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "2 min boil; 3 + 3 min covered rest; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "rice vermicelli",
+        "egg",
+        "boil",
+        "covered rest",
+        "stir-fry",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "05.-shao-jiao-pi-dan-chao-fan",
+      "title": "烧椒皮蛋炒饭",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["rice", "egg", "century egg", "green pepper"],
+      "supportingIngredients": [
+        "Sichuan pepper oil",
+        "sesame oil",
+        "soy sauce"
+      ],
+      "techniques": ["char", "peel", "stir-fry"],
+      "equipment": ["pan", "covered bowl"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["staple", "relish"],
+      "flavor": ["charred", "peppery"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "rice",
+        "egg",
+        "century egg",
+        "green pepper",
+        "char",
+        "peel",
+        "stir-fry",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "06.-hong-shao-qie-zi",
+      "title": "红烧茄子",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["eggplant", "unspecified lean meat"],
+      "supportingIngredients": [
+        "green pepper",
+        "garlic",
+        "garlic seasoning",
+        "soy sauce",
+        "cornstarch"
+      ],
+      "techniques": ["salt and drain", "stir-fry", "thicken"],
+      "equipment": ["pan"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["main dish"],
+      "flavor": ["savory", "garlicky"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "10 min salting; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "eggplant",
+        "unspecified lean meat",
+        "salt and drain",
+        "stir-fry",
+        "thicken",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "07.-xing-zhou-chao-mi-fen",
+      "title": "星洲炒米粉",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": [
+        "rice vermicelli",
+        "char siu pork",
+        "salted shrimp",
+        "egg"
+      ],
+      "supportingIngredients": [
+        "bean sprouts",
+        "yellow garlic chives",
+        "peppers",
+        "onion",
+        "congtou",
+        "curry paste",
+        "turmeric",
+        "chili sauce"
+      ],
+      "techniques": ["blanch", "stir-fry"],
+      "equipment": ["pan", "pot"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["staple", "one-dish meal"],
+      "flavor": ["curry", "spicy"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "1–2 min noodle boil; 10 sec shrimp blanch; half min shrimp fry; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "rice vermicelli",
+        "char siu pork",
+        "salted shrimp",
+        "egg",
+        "blanch",
+        "stir-fry",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "08.-hai-xian-fen-si-bao",
+      "title": "海鲜粉丝煲",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["glass noodles", "shrimp", "egg"],
+      "supportingIngredients": [
+        "green pepper",
+        "carrot",
+        "garlic",
+        "oyster sauce"
+      ],
+      "techniques": ["soak", "shrimp oil extraction", "stir-fry"],
+      "equipment": ["pan", "clay pot", "chopsticks"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["staple", "one-dish meal"],
+      "flavor": ["savory", "shrimp-rich"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "20 sec hot soak; 10 min cold soak; about 1 min noodle fry; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "glass noodles",
+        "shrimp",
+        "egg",
+        "soak",
+        "shrimp oil extraction",
+        "stir-fry",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "09.-qie-zi-chao-ji-dan",
+      "title": "茄子炒鸡蛋",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["eggplant", "egg"],
+      "supportingIngredients": [
+        "tomato",
+        "green pepper",
+        "chili",
+        "garlic",
+        "ginger",
+        "chicken bouillon",
+        "oyster sauce"
+      ],
+      "techniques": ["salt and drain", "pan-fry", "stir-fry", "thicken"],
+      "equipment": ["pan"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["main dish"],
+      "flavor": ["savory", "spicy"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "20 min salting; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "eggplant",
+        "egg",
+        "salt and drain",
+        "pan-fry",
+        "stir-fry",
+        "thicken",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "10.-rang-pao-mian-hao-chi-fan-bei-de-10-zhong-zuo-fa",
+      "title": "泡面的 10 种做法",
+      "unitType": "multi",
+      "variants": [
+        {
+          "name": "Beef-ball noodle soup",
+          "ingredients": "1. Put frozen beef balls straight into cold water and bring to a boil.\n2. Add the instant noodles and seasoning powder.\n3. When the noodles are nearly cooked, add two leafy greens. Add the scallion oil sachet and light soy sauce before serving.",
+          "techniques": "Read variant operations; do not union with sibling preparations",
+          "occasionSuggestions": ["Everyday meal (editorial)"],
+          "evidenceNotes": "Full method retained here as ingredient/operation evidence. Optional tofu/cured sausage remains optional; shacha, milk, seasoning sachets require component checks."
+        },
+        {
+          "name": "Shacha, peanut and milk noodles",
+          "ingredients": "1. Fry 2 spoonfuls shacha sauce until fragrant.\n2. Add boiling water, 1 small spoonful peanut butter and half a cup of milk.\n3. Add the noodles and cook through. Add only a little seasoning powder to taste.",
+          "techniques": "Read variant operations; do not union with sibling preparations",
+          "occasionSuggestions": ["Everyday meal (editorial)"],
+          "evidenceNotes": "Full method retained here as ingredient/operation evidence. Optional tofu/cured sausage remains optional; shacha, milk, seasoning sachets require component checks."
+        },
+        {
+          "name": "Cantonese ginger-scallion tossed noodles",
+          "ingredients": "1. Put shredded ginger and chopped scallions in a bowl and pour hot peanut oil over them.\n2. Mix in chicken-flavored instant-noodle seasoning powder to make a sauce.\n3. Cook and drain the noodles, then toss with the sauce. Any remaining seasoning powder can be dissolved in hot water for soup.",
+          "techniques": "Read variant operations; do not union with sibling preparations",
+          "occasionSuggestions": ["Everyday meal (editorial)"],
+          "evidenceNotes": "Full method retained here as ingredient/operation evidence. Optional tofu/cured sausage remains optional; shacha, milk, seasoning sachets require component checks."
+        },
+        {
+          "name": "Egg custard with noodle broth",
+          "ingredients": "1. Beat the egg and mix in a little instant-noodle broth.\n2. Skim off the bubbles and microwave on low power for 1 minute 30 seconds.\n3. Drizzle with a little sesame oil and soy sauce.",
+          "techniques": "Read variant operations; do not union with sibling preparations",
+          "occasionSuggestions": ["Everyday meal (editorial)"],
+          "evidenceNotes": "Full method retained here as ingredient/operation evidence. Optional tofu/cured sausage remains optional; shacha, milk, seasoning sachets require component checks."
+        },
+        {
+          "name": "Fried egg and ham spicy noodles",
+          "ingredients": "1. Pan-fry the egg and ham sausage until lightly browned and fragrant.\n2. Add water and bring to a boil. Add the noodles and seasoning sachets and cook through.",
+          "techniques": "Read variant operations; do not union with sibling preparations",
+          "occasionSuggestions": ["Everyday meal (editorial)"],
+          "evidenceNotes": "Full method retained here as ingredient/operation evidence. Optional tofu/cured sausage remains optional; shacha, milk, seasoning sachets require component checks."
+        },
+        {
+          "name": "Swirled poached-egg noodles",
+          "ingredients": "1. Bring water to a boil and stir in the seasoning powder.\n2. Lower the heat, stir a vortex into the water and crack in the egg.\n3. Wait for the center of the egg to set, then add the noodles and cook through.",
+          "techniques": "Read variant operations; do not union with sibling preparations",
+          "occasionSuggestions": ["Everyday meal (editorial)"],
+          "evidenceNotes": "Full method retained here as ingredient/operation evidence. Optional tofu/cured sausage remains optional; shacha, milk, seasoning sachets require component checks."
+        },
+        {
+          "name": "Salted egg yolk and ham noodle soup",
+          "ingredients": "1. Heat oil, fry the ginger until fragrant, then add salted egg yolk and cook until grainy.\n2. Add ham sausage, hot water and the noodles.\n3. Add vegetables such as Chinese cabbage or tofu if desired and cook through.",
+          "techniques": "Read variant operations; do not union with sibling preparations",
+          "occasionSuggestions": ["Everyday meal (editorial)"],
+          "evidenceNotes": "Full method retained here as ingredient/operation evidence. Optional tofu/cured sausage remains optional; shacha, milk, seasoning sachets require component checks."
+        },
+        {
+          "name": "Century egg and cilantro noodles",
+          "ingredients": "1. Fry ginger, century egg and finely chopped ham sausage until fragrant.\n2. Add boiling water and seasoning powder, then cook the noodles in the broth.\n3. Scatter with cilantro at the end.",
+          "techniques": "Read variant operations; do not union with sibling preparations",
+          "occasionSuggestions": ["Everyday meal (editorial)"],
+          "evidenceNotes": "Full method retained here as ingredient/operation evidence. Optional tofu/cured sausage remains optional; shacha, milk, seasoning sachets require component checks."
+        },
+        {
+          "name": "Curry and potato noodles",
+          "ingredients": "1. Pan-fry the potatoes until cooked through, then add a curry block and fry until fragrant.\n2. Add hot water and cook the noodles in the broth.",
+          "techniques": "Read variant operations; do not union with sibling preparations",
+          "occasionSuggestions": ["Everyday meal (editorial)"],
+          "evidenceNotes": "Full method retained here as ingredient/operation evidence. Optional tofu/cured sausage remains optional; shacha, milk, seasoning sachets require component checks."
+        },
+        {
+          "name": "Tomato stir-fried instant noodles",
+          "ingredients": "1. Peel and finely chop the tomatoes. Fry garlic until fragrant, then add the tomatoes and cook until juicy.\n2. Add tomato-flavored noodle seasoning and hot water.\n3. Add egg and noodles and cook, stirring, until done.",
+          "techniques": "Read variant operations; do not union with sibling preparations",
+          "occasionSuggestions": ["Everyday meal (editorial)"],
+          "evidenceNotes": "Full method retained here as ingredient/operation evidence. Optional tofu/cured sausage remains optional; shacha, milk, seasoning sachets require component checks."
+        }
+      ],
+      "mainIngredients": ["instant noodles"],
+      "supportingIngredients": ["variant-specific ingredients"],
+      "techniques": ["boil", "pan-fry", "microwave", "poach", "stir-fry"],
+      "equipment": ["pan", "pot", "microwave (custard only)"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["staple", "one-dish meal", "custard"],
+      "flavor": ["variant-specific"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "custard 1 min 30 sec microwave only; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "instant noodles",
+        "boil",
+        "pan-fry",
+        "microwave",
+        "poach",
+        "stir-fry",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status. The egg-custard preparation contains noodle broth rather than a portion of noodles. Do not inherit the parent noodle-main tag into every variant.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "11.-qing-zheng-huang-hua-yu",
+      "title": "清蒸黄花鱼",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["yellow croaker"],
+      "supportingIngredients": [
+        "garlic",
+        "ginger",
+        "scallion",
+        "chili",
+        "steamed-fish soy sauce"
+      ],
+      "techniques": ["marinate", "steam", "hot oil finishing"],
+      "equipment": ["steamer", "plate"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["main dish"],
+      "flavor": ["savory", "aromatic"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "20 min marinade; 8 min high + 2–3 min low steaming; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "yellow croaker",
+        "marinate",
+        "steam",
+        "hot oil finishing",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "12.-liang-ban-zhe-er-gen",
+      "title": "凉拌折耳根",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["houttuynia roots"],
+      "supportingIngredients": [
+        "garlic",
+        "ginger",
+        "scallion",
+        "vinegar",
+        "sesame oil",
+        "Sichuan pepper oil",
+        "chili oil"
+      ],
+      "techniques": ["cold toss", "soak"],
+      "equipment": ["bowl"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["side dish", "cold dish"],
+      "flavor": ["sour", "spicy", "numbing"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "10 min soak; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "houttuynia roots",
+        "cold toss",
+        "soak",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "13.-dou-chi-zheng-pai-gu",
+      "title": "豆豉蒸排骨",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["pork ribs", "potato"],
+      "supportingIngredients": [
+        "fermented black beans",
+        "garlic",
+        "oyster sauce",
+        "starch",
+        "flour"
+      ],
+      "techniques": ["marinate", "steam", "hot oil infusion"],
+      "equipment": ["steamer", "plate"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["main dish"],
+      "flavor": ["savory", "garlicky"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "2 min cleaning; 30 min marinade; 25 min steam; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "pork ribs",
+        "potato",
+        "marinate",
+        "steam",
+        "hot oil infusion",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "14.-bo-cai-chao-ji-dan",
+      "title": "菠菜炒鸡蛋",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["spinach", "egg"],
+      "supportingIngredients": ["scallion"],
+      "techniques": ["blanch", "scramble", "stir-fry"],
+      "equipment": ["pan", "pot"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["side dish"],
+      "flavor": ["savory"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "spinach",
+        "egg",
+        "blanch",
+        "scramble",
+        "stir-fry",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "15.-xia-ren-hua-dan",
+      "title": "虾仁滑蛋",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["shrimp", "egg"],
+      "supportingIngredients": ["scallion", "cooking wine", "starch"],
+      "techniques": ["marinate", "stir-fry", "residual heat cooking"],
+      "equipment": ["pan"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["main dish"],
+      "flavor": ["savory", "tender"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "shrimp",
+        "egg",
+        "marinate",
+        "stir-fry",
+        "residual heat cooking",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "16.-suan-xiang-zi-ran-pai-gu",
+      "title": "蒜香孜然排骨",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["ribs (species unspecified)"],
+      "supportingIngredients": [
+        "onion",
+        "garlic",
+        "chili",
+        "cumin",
+        "barbecue seasoning"
+      ],
+      "techniques": ["boil", "fry", "stir-fry"],
+      "equipment": ["pot", "pan"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["main dish"],
+      "flavor": ["spicy", "cumin", "garlicky"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "ribs (species unspecified)",
+        "boil",
+        "fry",
+        "stir-fry",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "17.-xia-ren-chao-xi-lan-hua",
+      "title": "虾仁炒西兰花",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["broccoli", "shrimp"],
+      "supportingIngredients": [
+        "garlic",
+        "chicken bouillon",
+        "soy sauce; optional cherry tomato",
+        "Hainan chili sauce"
+      ],
+      "techniques": ["soak", "marinate", "blanch", "stir-fry"],
+      "equipment": ["pan", "pot"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["main dish"],
+      "flavor": ["savory; optional spicy condiment"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "30 min broccoli soak; 10 min shrimp marinade; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "broccoli",
+        "shrimp",
+        "soak",
+        "marinate",
+        "blanch",
+        "stir-fry",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "18.-xiang-jian-yin-xue-yu",
+      "title": "香煎银鳕鱼",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["yin xue yu fish"],
+      "supportingIngredients": [
+        "butter",
+        "oyster sauce",
+        "soy sauce",
+        "scallion",
+        "ginger",
+        "garlic"
+      ],
+      "techniques": ["pan-sear", "reduce"],
+      "equipment": ["frying pan"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["main dish"],
+      "flavor": ["savory", "buttery"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "yin xue yu fish",
+        "pan-sear",
+        "reduce",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "19.-wan-neng-tiao-liao-zhi-pai-huang-gua",
+      "title": "万能料汁拍黄瓜",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["cucumber"],
+      "supportingIngredients": [
+        "peanuts",
+        "sesame",
+        "garlic",
+        "chili",
+        "cilantro",
+        "oyster sauce",
+        "vinegar"
+      ],
+      "techniques": ["smash", "hot oil infusion", "cold toss"],
+      "equipment": ["bowl", "knife"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["side dish", "cold dish"],
+      "flavor": ["sour", "spicy"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "cucumber",
+        "smash",
+        "hot oil infusion",
+        "cold toss",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "20.-jiao-si-fu-ru-chao-kong-xin-cai",
+      "title": "椒丝腐乳炒空心菜",
+      "unitType": "single",
+      "variants": [],
+      "mainIngredients": ["water spinach"],
+      "supportingIngredients": [
+        "fermented bean curd",
+        "garlic",
+        "red pepper",
+        "peanut oil",
+        "starch"
+      ],
+      "techniques": ["blanch", "stir-fry", "thicken"],
+      "equipment": ["pan", "pot"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["side dish"],
+      "flavor": ["savory", "fermented"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "1 min final stir-fry; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "water spinach",
+        "blanch",
+        "stir-fry",
+        "thicken",
+        "chinese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "samukichi-salmon",
+      "title": "脆皮香煎三文鱼",
+      "unitType": "multi",
+      "variants": [
+        {
+          "name": "Pan-seared salmon",
+          "ingredients": ["salmon", "butter; optional soy sauce", "lemon"],
+          "techniques": ["pan-sear"],
+          "occasionSuggestions": ["Everyday meal (editorial)"],
+          "evidenceNotes": "AND filters must match this preparation, including shared base; do not join sibling variants."
+        },
+        {
+          "name": "Bonus salmon rice bowl",
+          "ingredients": ["cooked salmon", "rice", "soy-milk miso sauce"],
+          "techniques": ["assemble"],
+          "occasionSuggestions": ["Everyday meal (editorial)"],
+          "evidenceNotes": "AND filters must match this preparation, including shared base; do not join sibling variants."
+        }
+      ],
+      "mainIngredients": ["salmon"],
+      "supportingIngredients": [
+        "butter",
+        "salt; optional soy sauce",
+        "lemon; bonus rice",
+        "soy-milk miso sauce"
+      ],
+      "techniques": [
+        "dry",
+        "salt",
+        "pan-sear",
+        "residual heat butter finishing"
+      ],
+      "equipment": ["frying pan"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["main dish; bonus rice bowl"],
+      "flavor": ["savory", "buttery; optional citrus"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "10 min advance salting; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "salmon",
+        "dry",
+        "salt",
+        "pan-sear",
+        "residual heat butter finishing",
+        "japanese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status. The rice-bowl item is an incomplete serving idea, not an independently cookable recipe; do not publish it as a complete child result.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "samukichi-broccoli",
+      "title": "脆嫩西兰花与两种风味",
+      "unitType": "multi",
+      "variants": [
+        {
+          "name": "Garlic broccoli",
+          "ingredients": [
+            "broccoli",
+            "olive oil",
+            "garlic",
+            "salt",
+            "soy sauce",
+            "black pepper"
+          ],
+          "techniques": ["blanch", "chill", "pan-sear"],
+          "occasionSuggestions": ["Everyday meal (editorial)"],
+          "evidenceNotes": "AND filters must match this preparation, including shared base; do not join sibling variants."
+        },
+        {
+          "name": "Miso-cheese broccoli",
+          "ingredients": [
+            "broccoli",
+            "miso",
+            "red and yellow bell peppers",
+            "cheese",
+            "olive oil"
+          ],
+          "techniques": ["blanch", "chill", "oven grill", "torch"],
+          "occasionSuggestions": ["Everyday meal (editorial)"],
+          "evidenceNotes": "AND filters must match this preparation, including shared base; do not join sibling variants."
+        }
+      ],
+      "mainIngredients": ["broccoli"],
+      "supportingIngredients": [
+        "garlic",
+        "olive oil",
+        "soy sauce",
+        "black pepper OR miso",
+        "bell peppers",
+        "cheese"
+      ],
+      "techniques": [
+        "blanch",
+        "chill",
+        "drain",
+        "pan-sear OR oven grill",
+        "torch"
+      ],
+      "equipment": ["pot", "colander", "frying pan OR oven", "torch"],
+      "occasionSuggestions": [
+        "Everyday meal (editorial suggestion, not source fact)"
+      ],
+      "dishRoles": ["side dish"],
+      "flavor": ["garlicky OR miso-cheese"],
+      "seasonNotes": "No seasonal or geographic restriction established.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "40–60 sec blanch; 2–3 min oven grill variant only; complete active and total times are not supplied."
+      },
+      "suitableFilterLabels": [
+        "broccoli",
+        "blanch",
+        "chill",
+        "drain",
+        "pan-sear OR oven grill",
+        "torch",
+        "japanese"
+      ],
+      "mustNotAssert": [
+        "Complete duration",
+        "Nutrition/health suitability",
+        "Dietary suitability without checking all condiments",
+        "Geographic seasonality"
+      ],
+      "classificationNotes": "Tags describe ingredients and operations in full body; occasion and dish-role labels are editorial suggestions. Optional ingredients must retain optional status.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "samukichi-chicken",
+      "title": "冷锅脆皮鸡腿",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "Cold-pan crispy chicken thigh",
+          "ingredients": ["chicken thigh"],
+          "techniques": ["cold-pan rendering", "pan-frying", "marinating"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["chicken thigh"],
+      "supportingIngredients": ["garlic", "olive oil"],
+      "techniques": ["cold-pan rendering", "marinating", "pan-frying"],
+      "equipment": ["pan", "thermometer"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main"],
+      "flavor": ["savory", "garlic"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "30 min short marinade or 6 hours–overnight;3–5 min rest; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "samukichi-asparagus",
+      "title": "香煎芦笋与五花肉卷",
+      "unitType": "multi",
+      "variants": [
+        {
+          "name": "Basic seared asparagus",
+          "ingredients": ["asparagus"],
+          "techniques": ["searing", "brief steaming"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        },
+        {
+          "name": "Pork asparagus rolls",
+          "ingredients": ["asparagus", "pork belly"],
+          "techniques": ["wrapping", "searing", "reducing"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["asparagus", "pork belly"],
+      "supportingIngredients": [
+        "balsamic vinegar",
+        "butter",
+        "garlic oil",
+        "soy sauce"
+      ],
+      "techniques": ["brief steaming", "reducing", "searing", "wrapping"],
+      "equipment": ["pan"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["side", "main or side"],
+      "flavor": ["buttery", "tangy", "garlic"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "10 second steam only; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "samukichi-cauliflower",
+      "title": "焦香烤花椰菜与奶酪变化",
+      "unitType": "multi",
+      "variants": [
+        {
+          "name": "Basic roast",
+          "ingredients": ["cauliflower"],
+          "techniques": ["roasting"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        },
+        {
+          "name": "Cheese finish",
+          "ingredients": ["cauliflower", "mozzarella", "Parmesan"],
+          "techniques": ["roasting", "broiling"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["Parmesan", "cauliflower", "mozzarella"],
+      "supportingIngredients": ["lemon", "oil"],
+      "techniques": ["broiling", "roasting"],
+      "equipment": ["broiler", "oven", "tray"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["side", "side"],
+      "flavor": ["roasted", "lemon", "cheesy"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "12 min first roast + about 5 min after turn;adjustments and preheat excluded; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "samukichi-yakisoba",
+      "title": "焦香猪肉蔬菜炒面",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "Toasty pork and vegetable yakisoba",
+          "ingredients": ["noodles", "pork", "cabbage", "carrot", "onion"],
+          "techniques": ["separate noodle browning", "stir-frying"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["cabbage", "carrot", "noodles", "onion", "pork"],
+      "supportingIngredients": [
+        "Worcestershire",
+        "green onion",
+        "ketchup",
+        "oyster sauce",
+        "soy sauce"
+      ],
+      "techniques": ["separate noodle browning", "stir-frying"],
+      "equipment": ["microwave or steamer", "wok"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main"],
+      "flavor": ["savory", "sweet-tangy"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "none; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "samukichi-mushrooms",
+      "title": "蒜香黄油酱油煎蘑菇",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "Golden mushrooms with garlic, butter and soy",
+          "ingredients": ["button mushrooms"],
+          "techniques": ["water-first moisture release", "searing"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["button mushrooms"],
+      "supportingIngredients": ["butter", "garlic", "lemon", "soy sauce"],
+      "techniques": ["searing", "water-first moisture release"],
+      "equipment": ["pan"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["side"],
+      "flavor": ["garlic", "buttery", "umami"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "none; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "samukichi-tuna",
+      "title": "金枪鱼罐头三吃：嫩蛋、番茄吐司与酱油炒饭",
+      "unitType": "multi",
+      "variants": [
+        {
+          "name": "Soft tuna eggs",
+          "ingredients": ["tuna", "egg"],
+          "techniques": ["gentle scrambling"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        },
+        {
+          "name": "Tuna tomato garlic toast",
+          "ingredients": ["tuna", "bread", "tomato"],
+          "techniques": ["toasting", "baking", "assembling"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        },
+        {
+          "name": "Soy sauce tuna fried rice",
+          "ingredients": ["tuna", "rice"],
+          "techniques": ["stir-frying"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["bread", "egg", "rice", "tomato", "tuna"],
+      "supportingIngredients": [
+        "butter",
+        "garlic",
+        "green onion",
+        "lemon",
+        "mayonnaise",
+        "soy sauce"
+      ],
+      "techniques": [
+        "assembling",
+        "baking",
+        "gentle scrambling",
+        "stir-frying",
+        "toasting"
+      ],
+      "equipment": ["oven", "pan", "toaster"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main or light meal", "light meal", "main"],
+      "flavor": ["soft", "buttery", "tangy", "garlic", "savory", "garlic"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "none; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "samukichi-garlic-shrimp",
+      "title": "去虾线与蒜香黄油虾",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "Deveining shrimp and garlic butter shrimp",
+          "ingredients": ["shrimp"],
+          "techniques": ["deveining", "pan-frying"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["shrimp"],
+      "supportingIngredients": [
+        "butter",
+        "chili",
+        "garlic oil",
+        "soy sauce",
+        "wine or sake"
+      ],
+      "techniques": ["deveining", "pan-frying"],
+      "equipment": ["pan", "toothpick or skewer"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main or side"],
+      "flavor": ["garlic", "buttery", "chili"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "none; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "samukichi-caramelized-onions",
+      "title": "深色焦糖洋葱与浓郁洋葱汤",
+      "unitType": "multi",
+      "variants": [
+        {
+          "name": "Caramelized onion component",
+          "ingredients": ["onion"],
+          "techniques": ["caramelizing", "deglazing"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        },
+        {
+          "name": "Onion soup",
+          "ingredients": ["onion"],
+          "techniques": ["simmering", "residual-heat finish"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["onion"],
+      "supportingIngredients": ["chicken bouillon", "garlic", "oil", "salt"],
+      "techniques": [
+        "caramelizing",
+        "deglazing",
+        "residual-heat finish",
+        "simmering"
+      ],
+      "equipment": ["pan", "pot"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["component", "soup"],
+      "flavor": ["sweet-savory", "savory"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "30–40 min caramelization;not complete soup total; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "samukichi-steak",
+      "title": "芥末奶油酱煎牛排",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "Pan-seared steak with mustard cream sauce",
+          "ingredients": ["beef steak"],
+          "techniques": ["searing", "deglazing", "pan sauce"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["beef steak"],
+      "supportingIngredients": ["butter", "cream", "mustard", "wine or water"],
+      "techniques": ["deglazing", "pan sauce", "searing"],
+      "equipment": ["pan", "thermometer"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main"],
+      "flavor": ["creamy", "mustard"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "optional >=45 min salting;>=3 min rest;no complete total; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "samukichi-chicken-breast",
+      "title": "糖盐腌低温鸡胸肉",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "Gently poached salt-and-sugar chicken breast",
+          "ingredients": ["chicken breast"],
+          "techniques": ["seasoning", "gentle poaching", "searing"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["chicken breast"],
+      "supportingIngredients": ["butter", "salt", "sugar"],
+      "techniques": ["gentle poaching", "searing", "seasoning"],
+      "equipment": ["optional heat-safe bag", "pan", "pot", "thermometer"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main"],
+      "flavor": ["savory", "buttery"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "10–20 min seasoning;23–25 min first check;not guaranteed finish; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "samukichi-fried-rice",
+      "title": "蒜香彩椒蛋炒饭",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "Garlic, pepper and egg fried rice",
+          "ingredients": ["rice", "egg", "bell peppers"],
+          "techniques": ["stir-frying", "moisture evaporation"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["bell peppers", "egg", "rice"],
+      "supportingIngredients": ["garlic", "soy sauce"],
+      "techniques": ["moisture evaporation", "stir-frying"],
+      "equipment": ["pan"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main"],
+      "flavor": ["savory", "garlic"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "none; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "ali-coconut-sago",
+      "title": "椰汁西米露",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "Coconut milk sago dessert",
+          "ingredients": [
+            "tapioca pearls",
+            "coconut milk",
+            "milk",
+            "condensed milk",
+            "fruit"
+          ],
+          "techniques": [
+            "boiling",
+            "covered resting",
+            "cool rinsing",
+            "assembling"
+          ],
+          "occasionSuggestions": ["dessert (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": [
+        "coconut milk",
+        "condensed milk",
+        "fruit",
+        "milk",
+        "tapioca pearls"
+      ],
+      "supportingIngredients": ["sugar only for refrigerated pearls"],
+      "techniques": [
+        "assembling",
+        "boiling",
+        "cool rinsing",
+        "covered resting"
+      ],
+      "equipment": ["pot", "strainer"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["dessert"],
+      "flavor": ["sweet", "coconut"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "small pearls 20–30 min checks;large pearls up to 90 min cumulative checks;not total; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "awei-one-pot-rice",
+      "title": "阿伟的六款电饭锅焖饭",
+      "unitType": "multi",
+      "variants": [
+        {
+          "name": "Chestnut and pork rib rice",
+          "ingredients": [
+            "rice",
+            "pork ribs",
+            "chestnut",
+            "shiitake",
+            "carrot"
+          ],
+          "techniques": ["frying", "rice-cooker cooking"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        },
+        {
+          "name": "Chinese sausage and potato rice",
+          "ingredients": [
+            "rice",
+            "Chinese sausage",
+            "potato",
+            "corn",
+            "peas",
+            "carrot"
+          ],
+          "techniques": ["frying", "rice-cooker cooking"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        },
+        {
+          "name": "Taro and chestnut rice",
+          "ingredients": [
+            "rice",
+            "pork belly",
+            "taro",
+            "chestnut",
+            "dried shiitake"
+          ],
+          "techniques": ["rendering", "pan-frying", "rice-cooker cooking"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        },
+        {
+          "name": "Pumpkin and beef rice",
+          "ingredients": [
+            "rice",
+            "beef",
+            "pumpkin",
+            "carrot",
+            "peas",
+            "dried shiitake"
+          ],
+          "techniques": ["searing", "rice-cooker cooking"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        },
+        {
+          "name": "Sausage, egg and vegetable rice",
+          "ingredients": [
+            "rice",
+            "Chinese sausage",
+            "egg",
+            "greens",
+            "carrot",
+            "corn"
+          ],
+          "techniques": ["rice-cooker cooking"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        },
+        {
+          "name": "Curry chicken rice",
+          "ingredients": [
+            "rice",
+            "chicken",
+            "potato",
+            "carrot",
+            "shiitake",
+            "onion"
+          ],
+          "techniques": ["marinating", "browning", "rice-cooker cooking"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": [
+        "Chinese sausage",
+        "beef",
+        "carrot",
+        "chestnut",
+        "chicken",
+        "corn",
+        "dried shiitake",
+        "egg",
+        "greens",
+        "onion",
+        "peas",
+        "pork belly",
+        "pork ribs",
+        "potato",
+        "pumpkin",
+        "rice",
+        "shiitake",
+        "taro"
+      ],
+      "supportingIngredients": [
+        "curry roux",
+        "ginger",
+        "krill or tiny dried shrimp",
+        "milk or coconut milk",
+        "oyster sauce",
+        "scallion",
+        "sesame oil",
+        "soy sauce",
+        "soy sauces"
+      ],
+      "techniques": [
+        "browning",
+        "frying",
+        "marinating",
+        "pan-frying",
+        "rendering",
+        "rice-cooker cooking",
+        "searing"
+      ],
+      "equipment": ["pan", "rice cooker"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main"],
+      "flavor": ["savory", "savory", "savory", "savory", "savory", "curry"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "40 min rice program per variant;prep extra;egg variant 20+20 min; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "rosalina-tomato-beef",
+      "title": "萝洁塔的番茄炖牛肉与意面",
+      "unitType": "multi",
+      "variants": [
+        {
+          "name": "Beef stew served alone",
+          "ingredients": ["beef", "tomato sauce", "onion"],
+          "techniques": ["rendering", "batch browning", "simmering"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        },
+        {
+          "name": "Beef stew with pasta",
+          "ingredients": ["beef", "tomato sauce", "onion", "pasta"],
+          "techniques": [
+            "rendering",
+            "batch browning",
+            "simmering",
+            "pasta cooking"
+          ],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["beef", "onion", "pasta", "tomato sauce"],
+      "supportingIngredients": [
+        "garlic",
+        "herbs",
+        "optional fresh tomatoes",
+        "paprika"
+      ],
+      "techniques": [
+        "batch browning",
+        "pasta cooking",
+        "rendering",
+        "simmering"
+      ],
+      "equipment": ["pot"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main", "main"],
+      "flavor": ["tomato", "smoky"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "60 min simmer only; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Current Chinese shelf obscures Western-style stew/pasta; practical shelf must not be represented as cuisine. Pasta is a serving accompaniment without a supplied pasta-cooking procedure; preserve it as a serving idea rather than claiming a complete independent child recipe.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "magic-lamb-pilaf",
+      "title": "小高姐羊肉手抓饭与基础白饭",
+      "unitType": "multi",
+      "variants": [
+        {
+          "name": "Basic white rice",
+          "ingredients": ["basmati rice"],
+          "techniques": ["covered rice cooking"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        },
+        {
+          "name": "Lamb pilaf",
+          "ingredients": ["basmati rice", "lamb", "carrot", "onion"],
+          "techniques": [
+            "marinating",
+            "browning",
+            "braising",
+            "covered rice cooking"
+          ],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["basmati rice", "carrot", "lamb", "onion"],
+      "supportingIngredients": [
+        "cumin",
+        "optional coriander seed",
+        "raisins",
+        "water"
+      ],
+      "techniques": [
+        "braising",
+        "browning",
+        "covered rice cooking",
+        "marinating"
+      ],
+      "equipment": ["tight-lidded pot"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["staple", "main"],
+      "flavor": ["plain", "cumin", "savory"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "white rice 12 min simmer +5 rest;pilaf 15 marinade+30 braise+15 rice+5 rest excludes prep/boil; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "ali-scallion-meat-pancakes",
+      "title": "阿栗葱香千层肉饼",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "Ali’s layered scallion meat pancakes",
+          "ingredients": ["flour", "pork or beef", "scallion"],
+          "techniques": [
+            "partial scald dough",
+            "resting",
+            "stretching",
+            "layering",
+            "pan-frying",
+            "freezing option"
+          ],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["flour", "pork or beef", "scallion"],
+      "supportingIngredients": [
+        "Sichuan pepper",
+        "five-spice",
+        "ginger",
+        "sesame"
+      ],
+      "techniques": [
+        "freezing option",
+        "layering",
+        "pan-frying",
+        "partial scald dough",
+        "resting",
+        "stretching"
+      ],
+      "equipment": ["pan"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main or snack"],
+      "flavor": ["scallion", "spiced"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "20+60+15 min rests;two 3–5 min kneads;5–6 min fry excludes other work; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "liuyi-stir-fried-noodles",
+      "title": "留意美食家常炒面",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "LiuYi’s home-style stir-fried noodles",
+          "ingredients": [
+            "noodles",
+            "egg",
+            "ham sausage",
+            "greens",
+            "carrot",
+            "onion"
+          ],
+          "techniques": ["parboiling", "cool rinsing", "stir-frying"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": [
+        "carrot",
+        "egg",
+        "greens",
+        "ham sausage",
+        "noodles",
+        "onion"
+      ],
+      "supportingIngredients": [
+        "garlic",
+        "mala seasoning",
+        "sesame oil",
+        "soy sauce"
+      ],
+      "techniques": ["cool rinsing", "parboiling", "stir-frying"],
+      "equipment": ["pot", "wok"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main"],
+      "flavor": ["mala", "garlic"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "40 sec partial noodle cook;not total; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "feng-night-market-vermicelli",
+      "title": "冯小厨牛肉炒米粉",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "Feng’s beef rice vermicelli",
+          "ingredients": [
+            "rice vermicelli",
+            "beef",
+            "egg",
+            "cabbage",
+            "carrot",
+            "bean sprouts"
+          ],
+          "techniques": ["soaking", "draining", "stir-frying"],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": [
+        "bean sprouts",
+        "beef",
+        "cabbage",
+        "carrot",
+        "egg",
+        "rice vermicelli"
+      ],
+      "supportingIngredients": [
+        "lard",
+        "onion",
+        "oyster sauce",
+        "scallion",
+        "soy sauce"
+      ],
+      "techniques": ["draining", "soaking", "stir-frying"],
+      "equipment": ["chopsticks", "iron wok"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main"],
+      "flavor": ["savory"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "10 min noodle soak only; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "ajian-scallion-pork-chops",
+      "title": "阿见葱盐猪排",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "Ajian’s scallion-salt pork chops",
+          "ingredients": ["pork collar"],
+          "techniques": [
+            "tenderizing",
+            "marinating",
+            "starch coating",
+            "pan-frying"
+          ],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["pork collar"],
+      "supportingIngredients": [
+        "garlic",
+        "oyster sauce",
+        "scallion",
+        "sesame",
+        "soy sauce",
+        "sweet potato starch"
+      ],
+      "techniques": [
+        "marinating",
+        "pan-frying",
+        "starch coating",
+        "tenderizing"
+      ],
+      "equipment": ["pan"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main"],
+      "flavor": ["garlic", "scallion", "savory"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "10 min marinade only; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "ali-sauced-noodles",
+      "title": "葱香凉拌面",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "Scallion-scented cold noodles",
+          "ingredients": ["noodles", "cucumber", "peanuts"],
+          "techniques": [
+            "scallion oil infusion",
+            "hot-oil blooming",
+            "boiling",
+            "cool rinsing",
+            "tossing"
+          ],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["cucumber", "noodles", "peanuts"],
+      "supportingIngredients": [
+        "Sichuan pepper",
+        "chicken bouillon",
+        "chili",
+        "cilantro",
+        "garlic",
+        "scallion",
+        "soy sauce"
+      ],
+      "techniques": [
+        "boiling",
+        "cool rinsing",
+        "hot-oil blooming",
+        "scallion oil infusion",
+        "tossing"
+      ],
+      "equipment": ["mixing bowl", "pan", "pot"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main"],
+      "flavor": ["chili", "Sichuan pepper", "scallion"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "none; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "remus-shrimp-eggs",
+      "title": "杰少滑蛋虾仁",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "Remus’s silky eggs with shrimp",
+          "ingredients": ["shrimp", "egg"],
+          "techniques": [
+            "marinating",
+            "stir-frying",
+            "draining",
+            "residual-heat egg setting"
+          ],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": ["egg", "shrimp"],
+      "supportingIngredients": [
+        "scallion",
+        "sesame oil",
+        "soy sauce",
+        "starch"
+      ],
+      "techniques": [
+        "draining",
+        "marinating",
+        "residual-heat egg setting",
+        "stir-frying"
+      ],
+      "equipment": ["strainer", "wok"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main or side"],
+      "flavor": ["savory", "soft"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "none; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    },
+    {
+      "id": "ting-soy-sauce-noodles",
+      "title": "鼎爷豉油王炒面",
+      "unitType": "single",
+      "variants": [
+        {
+          "name": "Ting’s soy-sauce fried noodles",
+          "ingredients": [
+            "noodles",
+            "Chinese chives",
+            "bean sprouts",
+            "red onion"
+          ],
+          "techniques": [
+            "separate vegetable stir-fry",
+            "noodle frying",
+            "lifting and separating"
+          ],
+          "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+          "evidenceNotes": "Reviewed complete ingredient, method and tips sections; alternatives and optional additions must remain scoped to this preparation."
+        }
+      ],
+      "mainIngredients": [
+        "Chinese chives",
+        "bean sprouts",
+        "noodles",
+        "red onion"
+      ],
+      "supportingIngredients": ["sesame garnish", "soy sauces"],
+      "techniques": [
+        "lifting and separating",
+        "noodle frying",
+        "separate vegetable stir-fry"
+      ],
+      "equipment": ["long chopsticks", "wok"],
+      "occasionSuggestions": ["everyday meal (editorial suggestion)"],
+      "dishRoles": ["main"],
+      "flavor": ["soy-savory"],
+      "seasonNotes": "No season restriction supported. Produce season depends on region; cold serving does not establish summer-only use.",
+      "timeEvidence": {
+        "active": null,
+        "total": null,
+        "unknownNotes": "none; complete active/elapsed duration not established"
+      },
+      "suitableFilterLabels": [
+        "ingredients at variant level",
+        "technique",
+        "equipment",
+        "dish role"
+      ],
+      "mustNotAssert": [
+        "complete cook-time bucket from a partial step",
+        "nutrition or low-carb",
+        "vegetarian/vegan/gluten-free from title or absent meat",
+        "fixed season",
+        "optional ingredient is required"
+      ],
+      "classificationNotes": "Match combined facets within one variant; substitutions are choices, not simultaneous ingredients.",
+      "status": "proposed discovery metadata; not runtime tags or dietary certification",
+      "seasonBasis": "Editorial serving suggestions require explicit curation; no geographically universal harvest season is inferred."
+    }
+  ],
+  "references": [
+    {
+      "id": "wash-broccoli",
+      "title": "西兰花清洗与分切",
+      "taskGroup": "prep",
+      "topics": ["washing", "floret cutting"],
+      "ingredients": ["broccoli"],
+      "stages": ["preparation"],
+      "recipeIds": ["samukichi-broccoli"],
+      "scopeConstraint": "Broccoli-only preparation; size follows the intended cooking method.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "peel-asparagus",
+      "title": "芦笋根部削皮与斜切",
+      "taskGroup": "prep",
+      "topics": ["peeling", "diagonal cutting"],
+      "ingredients": ["asparagus"],
+      "stages": ["preparation"],
+      "recipeIds": ["samukichi-asparagus"],
+      "scopeConstraint": "Plain searing uses cut pieces; rolls retain the whole spear until wrapping.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "trim-chicken",
+      "title": "鸡腿修整与厚度调整",
+      "taskGroup": "prep",
+      "topics": ["trimming", "even thickness"],
+      "ingredients": ["chicken thigh"],
+      "stages": ["preparation"],
+      "recipeIds": ["samukichi-chicken"],
+      "scopeConstraint": "Skin-on boneless thigh; do not apply this trimming operation to every chicken cut.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "dry-before-searing",
+      "title": "煎制前擦干水分",
+      "taskGroup": "prep",
+      "topics": ["surface moisture", "browning"],
+      "ingredients": [
+        "salmon",
+        "chicken thigh",
+        "asparagus",
+        "shrimp",
+        "steak",
+        "chicken breast"
+      ],
+      "stages": ["preparation"],
+      "recipeIds": [
+        "samukichi-salmon",
+        "samukichi-chicken",
+        "samukichi-asparagus",
+        "samukichi-garlic-shrimp",
+        "samukichi-steak",
+        "samukichi-chicken-breast"
+      ],
+      "scopeConstraint": "Surface drying before searing; chicken breast drying occurs after its water bath.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "salt-salmon",
+      "title": "三文鱼提前盐渍",
+      "taskGroup": "prep",
+      "topics": ["advance salting", "surface moisture"],
+      "ingredients": ["salmon"],
+      "stages": ["preparation"],
+      "recipeIds": ["samukichi-salmon"],
+      "scopeConstraint": "The 10-minute salting instruction belongs to this salmon method.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "cold-or-hot-pan",
+      "title": "冷锅起煎与预热下锅",
+      "taskGroup": "heat",
+      "topics": ["pan temperature", "skin rendering"],
+      "ingredients": ["chicken thigh", "salmon", "asparagus"],
+      "stages": ["cooking"],
+      "recipeIds": [
+        "samukichi-chicken",
+        "samukichi-salmon",
+        "samukichi-asparagus"
+      ],
+      "scopeConstraint": "Cold-pan thigh and preheated fish/asparagus are different conditions.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "contact-and-turning",
+      "title": "轻压贴锅与翻面时机",
+      "taskGroup": "heat",
+      "topics": ["pan contact", "turning", "sticking"],
+      "ingredients": ["salmon", "chicken thigh", "steak"],
+      "stages": ["cooking"],
+      "recipeIds": ["samukichi-salmon", "samukichi-chicken", "samukichi-steak"],
+      "scopeConstraint": "Initial undisturbed contact and later regular steak turns are distinct stages.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "blanch-chill-drain",
+      "title": "西兰花短焯、冷却与沥干",
+      "taskGroup": "heat",
+      "topics": ["blanching", "chilling", "draining"],
+      "ingredients": ["broccoli"],
+      "stages": ["preparation"],
+      "recipeIds": ["samukichi-broccoli"],
+      "scopeConstraint": "Broccoli timings are not universal vegetable blanching times.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "sear-then-steam",
+      "title": "芦笋先煎后短蒸",
+      "taskGroup": "heat",
+      "topics": ["searing", "brief steaming"],
+      "ingredients": ["asparagus"],
+      "stages": ["cooking"],
+      "recipeIds": ["samukichi-asparagus"],
+      "scopeConstraint": "The short steaming stage applies to diagonal asparagus pieces.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "soy-sauce-pan",
+      "title": "酱油接触热锅面增香",
+      "taskGroup": "season",
+      "topics": ["hot-pan soy aroma", "seasoning"],
+      "ingredients": [
+        "soy sauce",
+        "broccoli",
+        "asparagus",
+        "mushrooms",
+        "rice"
+      ],
+      "stages": ["cooking"],
+      "recipeIds": [
+        "samukichi-broccoli",
+        "samukichi-asparagus",
+        "samukichi-salmon",
+        "samukichi-mushrooms",
+        "samukichi-tuna",
+        "samukichi-fried-rice"
+      ],
+      "scopeConstraint": "Salmon is linked as an off-heat exception; not every source association is a positive hot-pan example.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "butter-timing",
+      "title": "黄油的加入时机与淋浇",
+      "taskGroup": "season",
+      "topics": ["butter", "basting", "finishing"],
+      "ingredients": [
+        "butter",
+        "salmon",
+        "asparagus",
+        "chicken thigh",
+        "steak",
+        "chicken breast"
+      ],
+      "stages": ["cooking"],
+      "recipeIds": [
+        "samukichi-salmon",
+        "samukichi-asparagus",
+        "samukichi-chicken",
+        "samukichi-steak",
+        "samukichi-chicken-breast"
+      ],
+      "scopeConstraint": "Store case-specific timings; initial steak butter does not override off-heat sauce butter.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "garlic-oil",
+      "title": "蒜油缓慢出香",
+      "taskGroup": "season",
+      "topics": ["garlic infusion", "aromatics"],
+      "ingredients": [
+        "garlic",
+        "oil",
+        "broccoli",
+        "asparagus",
+        "onion",
+        "rice"
+      ],
+      "stages": ["cooking"],
+      "recipeIds": [
+        "samukichi-broccoli",
+        "samukichi-asparagus",
+        "samukichi-caramelized-onions",
+        "samukichi-fried-rice"
+      ],
+      "scopeConstraint": "Immediate cooking only; never tag as garlic-oil storage.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "roast-cauliflower-browning",
+      "title": "花椰菜怎样烤出焦褐色",
+      "taskGroup": "heat",
+      "topics": ["roasting", "browning", "tray spacing"],
+      "ingredients": ["cauliflower"],
+      "stages": ["cooking"],
+      "recipeIds": ["samukichi-cauliflower"],
+      "scopeConstraint": "Oven and floret-size dependent; cheese is an optional finish.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "yakisoba-moisture-order",
+      "title": "炒面怎样保持焦香不软烂",
+      "taskGroup": "heat",
+      "topics": ["noodle separation", "moisture", "browning"],
+      "ingredients": ["steamed wheat noodles"],
+      "stages": ["preparation", "cooking"],
+      "recipeIds": ["samukichi-yakisoba"],
+      "scopeConstraint": "Steamed yakisoba handling is not a raw-noodle boiling method.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "mushrooms-water-before-oil",
+      "title": "煎蘑菇先出水，再收干加油",
+      "taskGroup": "heat",
+      "topics": ["moisture release", "evaporation", "searing"],
+      "ingredients": ["button mushrooms"],
+      "stages": ["cooking"],
+      "recipeIds": ["samukichi-mushrooms"],
+      "scopeConstraint": "Water is deliberate in the first pan stage; evaporate before browning.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "canned-tuna-oil-and-heat",
+      "title": "金枪鱼罐头留油与短时加热",
+      "taskGroup": "heat",
+      "topics": ["canned fish oil", "short heating"],
+      "ingredients": ["oil-packed tuna"],
+      "stages": ["preparation", "cooking"],
+      "recipeIds": ["samukichi-tuna"],
+      "scopeConstraint": "Oil retention concerns oil-packed cans; egg, toast and rice each have their own sequence.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "devein-shrimp",
+      "title": "轻挑虾线与轻柔清洗",
+      "taskGroup": "prep",
+      "topics": ["deveining", "rinsing"],
+      "ingredients": ["shrimp"],
+      "stages": ["preparation"],
+      "recipeIds": ["samukichi-garlic-shrimp"],
+      "scopeConstraint": "Large visible veins and small-shrimp exceptions; preserve gentle handling.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "caramelize-onions",
+      "title": "洋葱慢炒与锅底焦香回融",
+      "taskGroup": "heat",
+      "topics": ["caramelizing", "deglazing", "browning"],
+      "ingredients": ["onion"],
+      "stages": ["cooking"],
+      "recipeIds": ["samukichi-caramelized-onions"],
+      "scopeConstraint": "Brown fond and bitter black residue are different; ordinary onion frying need not reach this endpoint.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "store-caramelized-onions",
+      "title": "焦糖洋葱薄层分装备用",
+      "taskGroup": "storage",
+      "topics": ["portioning", "refrigeration", "freezing"],
+      "ingredients": ["cooked caramelized onion"],
+      "stages": ["after cooking"],
+      "recipeIds": ["samukichi-caramelized-onions"],
+      "scopeConstraint": "Storage durations apply to this prepared component, not the completed soup.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "chicken-poaching-temperature",
+      "title": "鸡胸肉水温与中心温度分开测",
+      "taskGroup": "heat",
+      "topics": ["water temperature", "center temperature", "gentle poaching"],
+      "ingredients": ["chicken breast"],
+      "stages": ["preparation", "cooking"],
+      "recipeIds": ["samukichi-chicken-breast"],
+      "scopeConstraint": "Time is an initial check; source-required internal-temperature confirmation remains in the cooking steps.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "loosen-and-sear-fried-rice",
+      "title": "炒饭先松散，再摊煎收干",
+      "taskGroup": "heat",
+      "topics": ["rice separation", "moisture", "browning"],
+      "ingredients": ["short-grain cooked rice", "egg"],
+      "stages": ["cooking"],
+      "recipeIds": ["samukichi-fried-rice"],
+      "scopeConstraint": "The added water belongs to this short-grain rice quantity and must evaporate afterward.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "cook-sago-pearls",
+      "title": "大小西米的煮焖与透心判断",
+      "taskGroup": "heat",
+      "topics": ["boiling", "covered resting", "core check"],
+      "ingredients": ["tapioca sago pearls"],
+      "stages": ["preparation", "cooking"],
+      "recipeIds": ["ali-coconut-sago"],
+      "scopeConstraint": "Small and large pearls have different checks; sago is not a rice ingredient alias.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "store-cooked-sago",
+      "title": "熟西米冲凉、拌糖与冷藏",
+      "taskGroup": "storage",
+      "topics": ["rinsing", "separation", "refrigeration"],
+      "ingredients": ["cooked sago pearls"],
+      "stages": ["after cooking"],
+      "recipeIds": ["ali-coconut-sago"],
+      "scopeConstraint": "Sugar aids separation; the holding period does not cover the dairy-fruit dessert.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "basmati-broth-liquid",
+      "title": "印度香米焖饭的汤水计量与散气",
+      "taskGroup": "heat",
+      "topics": ["liquid measurement", "covered cooking", "steam release"],
+      "ingredients": ["basmati rice", "lamb broth"],
+      "stages": ["cooking"],
+      "recipeIds": ["magic-lamb-pilaf"],
+      "scopeConstraint": "Measure broth as part of total liquid; scope is this rice and preparation.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "onion-along-fibers",
+      "title": "洋葱顺纹切丝",
+      "taskGroup": "prep",
+      "topics": ["knife skills", "along-fiber slicing"],
+      "ingredients": ["onion"],
+      "stages": ["preparation"],
+      "recipeIds": [],
+      "scopeConstraint": "Shape-retaining onion slices; brief soaking is not preservation.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "carrot-fine-julienne",
+      "title": "胡萝卜薄片切细丝",
+      "taskGroup": "prep",
+      "topics": ["knife skills", "thin slices", "stacked julienne"],
+      "ingredients": ["carrot"],
+      "stages": ["preparation"],
+      "recipeIds": [],
+      "scopeConstraint": "Stacked slices, not inferred katsuramuki; drain after any brief soak.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "potato-julienne",
+      "title": "土豆切薄片再切均匀细丝",
+      "taskGroup": "prep",
+      "topics": ["knife grip", "vertical cuts", "julienne", "starch rinsing"],
+      "ingredients": ["potato"],
+      "stages": ["preparation"],
+      "recipeIds": [],
+      "scopeConstraint": "Does not justify a fixed long storage period; no association to potato-chunk dishes.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "peppers-fine-slices",
+      "title": "甜椒切细丝与青椒切片",
+      "taskGroup": "prep",
+      "topics": [
+        "knife skills",
+        "pith trimming",
+        "pulling cut",
+        "downward cut"
+      ],
+      "ingredients": ["bell pepper", "small green pepper"],
+      "stages": ["preparation"],
+      "recipeIds": [],
+      "scopeConstraint": "Different pepper forms have different cut directions and soaking applicability.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "drain-noodles-before-stir-frying",
+      "title": "炒面炒粉前先冷却沥干",
+      "taskGroup": "prep",
+      "topics": ["parboiling", "soaking", "draining", "stir-fry preparation"],
+      "ingredients": ["fresh alkaline noodles", "Hsinchu rice vermicelli"],
+      "stages": ["preparation"],
+      "recipeIds": ["liuyi-stir-fried-noodles", "feng-night-market-vermicelli"],
+      "scopeConstraint": "Keep the two product-specific preparations separate.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "drain-shrimp-before-eggs",
+      "title": "虾仁沥水后再合蛋液",
+      "taskGroup": "heat",
+      "topics": ["draining", "separated eggs", "residual heat"],
+      "ingredients": ["shrimp", "egg"],
+      "stages": ["preparation", "cooking"],
+      "recipeIds": ["remus-shrimp-eggs"],
+      "scopeConstraint": "This separated-egg recipe does not establish a universal egg-mixing rule.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    },
+    {
+      "id": "rice-cooker-meal-liquid",
+      "title": "电饭锅焖饭先算汤水",
+      "taskGroup": "heat",
+      "topics": ["liquid measurement", "rice-cooker preparation"],
+      "ingredients": ["rice", "broth", "milk"],
+      "stages": ["preparation", "cooking"],
+      "recipeIds": ["awei-one-pot-rice"],
+      "scopeConstraint": "Each of six meals is independent; midway topping has a different sequence.",
+      "season": "not applicable to technique discovery",
+      "occasion": "inherit no meal suitability from a linked recipe",
+      "status": "proposed discovery metadata"
+    }
+  ]
+}

@@ -54,3 +54,20 @@ test("reference video associations are deduplicated and retain known YouTube ori
       assert.ok(entry.sources.includes(videoPageUrl(video)));
   }
 });
+
+test("standalone kitchen techniques retain direct source videos without fabricated recipe associations", () => {
+  assert.deepEqual(
+    videosForReference([], ["https://www.youtube.com/watch?v=W5GM33NabB0"]),
+    [{ platform: "youtube", id: "W5GM33NabB0" }],
+  );
+  assert.deepEqual(
+    videosForReference(
+      [],
+      [
+        "https://example.com/watch?v=W5GM33NabB0",
+        "https://www.youtube.com/watch?v=invalid",
+      ],
+    ),
+    [],
+  );
+});

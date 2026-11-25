@@ -1,0 +1,1157 @@
+[
+  {
+    "id": "ingredient:meat",
+    "facet": "ingredient",
+    "label": "肉类",
+    "labelEn": "Meat",
+    "aliases": ["肉类", "Meat", "meat"]
+  },
+  {
+    "id": "ingredient:beef",
+    "facet": "ingredient",
+    "label": "牛肉",
+    "labelEn": "Beef",
+    "aliases": ["牛肉", "Beef", "beef"]
+  },
+  {
+    "id": "ingredient:vegetables",
+    "facet": "ingredient",
+    "label": "蔬菜",
+    "labelEn": "Vegetables",
+    "aliases": ["蔬菜", "Vegetables", "vegetables"]
+  },
+  {
+    "id": "ingredient:potato",
+    "facet": "ingredient",
+    "label": "土豆",
+    "labelEn": "Potato",
+    "aliases": ["土豆", "Potato", "马铃薯", "馬鈴薯", "potatoes", "potato"]
+  },
+  {
+    "id": "ingredient:onion",
+    "facet": "ingredient",
+    "label": "洋葱",
+    "labelEn": "Onion",
+    "aliases": ["洋葱", "Onion", "onion"]
+  },
+  {
+    "id": "method:stir-fry",
+    "facet": "method",
+    "label": "炒",
+    "labelEn": "Stir-fry",
+    "aliases": ["炒", "Stir-fry", "stir fry"]
+  },
+  {
+    "id": "method:braise",
+    "facet": "method",
+    "label": "炖煮",
+    "labelEn": "Braise",
+    "aliases": ["炖煮", "Braise"]
+  },
+  {
+    "id": "equipment:pot",
+    "facet": "equipment",
+    "label": "锅",
+    "labelEn": "Pot",
+    "aliases": ["锅", "Pot"]
+  },
+  {
+    "id": "occasion:main",
+    "facet": "occasion",
+    "label": "日常主餐",
+    "labelEn": "Everyday main meal",
+    "aliases": ["日常主餐", "Everyday main meal"]
+  },
+  {
+    "id": "style:japanese",
+    "facet": "style",
+    "label": "日式",
+    "labelEn": "Japanese",
+    "aliases": ["日式", "Japanese"]
+  },
+  {
+    "id": "season:autumn",
+    "facet": "season",
+    "label": "秋季",
+    "labelEn": "Autumn",
+    "aliases": ["秋季", "Autumn"]
+  },
+  {
+    "id": "season:winter",
+    "facet": "season",
+    "label": "冬季",
+    "labelEn": "Winter",
+    "aliases": ["冬季", "Winter"]
+  },
+  {
+    "id": "source:original-collection",
+    "facet": "source",
+    "label": "原始食谱集",
+    "labelEn": "Original collection",
+    "aliases": ["原始食谱集", "Original collection"]
+  },
+  {
+    "id": "ingredient:grains",
+    "facet": "ingredient",
+    "label": "谷物与面食",
+    "labelEn": "Grains and noodles",
+    "aliases": ["谷物与面食", "Grains and noodles", "grains", "谷物"]
+  },
+  {
+    "id": "ingredient:rice",
+    "facet": "ingredient",
+    "label": "米饭",
+    "labelEn": "Rice",
+    "aliases": ["米饭", "Rice", "rice"]
+  },
+  {
+    "id": "ingredient:eggs",
+    "facet": "ingredient",
+    "label": "蛋类",
+    "labelEn": "Eggs",
+    "aliases": ["蛋类", "Eggs", "eggs"]
+  },
+  {
+    "id": "ingredient:egg",
+    "facet": "ingredient",
+    "label": "鸡蛋",
+    "labelEn": "Egg",
+    "aliases": ["鸡蛋", "Egg", "egg"]
+  },
+  {
+    "id": "equipment:wok",
+    "facet": "equipment",
+    "label": "炒锅",
+    "labelEn": "Wok",
+    "aliases": ["炒锅", "Wok"]
+  },
+  {
+    "id": "occasion:breakfast",
+    "facet": "occasion",
+    "label": "早餐",
+    "labelEn": "Breakfast",
+    "aliases": ["早餐", "Breakfast"]
+  },
+  {
+    "id": "style:chinese",
+    "facet": "style",
+    "label": "中式",
+    "labelEn": "Chinese",
+    "aliases": ["中式", "Chinese"]
+  },
+  {
+    "id": "season:spring",
+    "facet": "season",
+    "label": "春季",
+    "labelEn": "Spring",
+    "aliases": ["春季", "Spring"]
+  },
+  {
+    "id": "season:summer",
+    "facet": "season",
+    "label": "夏季",
+    "labelEn": "Summer",
+    "aliases": ["夏季", "Summer"]
+  },
+  {
+    "id": "ingredient:seafood",
+    "facet": "ingredient",
+    "label": "鱼虾海鲜",
+    "labelEn": "Seafood",
+    "aliases": ["鱼虾海鲜", "Seafood", "seafood", "海鲜"]
+  },
+  {
+    "id": "ingredient:shrimp",
+    "facet": "ingredient",
+    "label": "虾",
+    "labelEn": "Shrimp",
+    "aliases": ["虾", "Shrimp", "shrimp"]
+  },
+  {
+    "id": "method:boil",
+    "facet": "method",
+    "label": "煮",
+    "labelEn": "Boil",
+    "aliases": ["煮", "Boil", "boil"]
+  },
+  {
+    "id": "ingredient:rice-vermicelli",
+    "facet": "ingredient",
+    "label": "米粉",
+    "labelEn": "Rice vermicelli",
+    "aliases": ["米粉", "Rice vermicelli", "rice vermicelli"]
+  },
+  {
+    "id": "ingredient:century-egg",
+    "facet": "ingredient",
+    "label": "皮蛋",
+    "labelEn": "Century egg",
+    "aliases": ["皮蛋", "Century egg"]
+  },
+  {
+    "id": "ingredient:green-pepper",
+    "facet": "ingredient",
+    "label": "青椒",
+    "labelEn": "Green pepper",
+    "aliases": ["青椒", "Green pepper", "green pepper"]
+  },
+  {
+    "id": "method:roast",
+    "facet": "method",
+    "label": "烤",
+    "labelEn": "Roast",
+    "aliases": ["烤", "Roast", "roast"]
+  },
+  {
+    "id": "ingredient:eggplant",
+    "facet": "ingredient",
+    "label": "茄子",
+    "labelEn": "Eggplant",
+    "aliases": ["茄子", "Eggplant"]
+  },
+  {
+    "id": "ingredient:pork",
+    "facet": "ingredient",
+    "label": "猪肉",
+    "labelEn": "Pork",
+    "aliases": ["猪肉", "Pork"]
+  },
+  {
+    "id": "ingredient:glass-noodles",
+    "facet": "ingredient",
+    "label": "粉丝",
+    "labelEn": "Glass noodles",
+    "aliases": ["粉丝", "Glass noodles"]
+  },
+  {
+    "id": "method:pan-fry",
+    "facet": "method",
+    "label": "煎",
+    "labelEn": "Pan-fry",
+    "aliases": ["煎", "Pan-fry", "pan fry", "香煎"]
+  },
+  {
+    "id": "ingredient:fish",
+    "facet": "ingredient",
+    "label": "鱼",
+    "labelEn": "Fish",
+    "aliases": ["鱼", "Fish"]
+  },
+  {
+    "id": "ingredient:yellow-croaker",
+    "facet": "ingredient",
+    "label": "黄花鱼",
+    "labelEn": "Yellow croaker",
+    "aliases": ["黄花鱼", "Yellow croaker"]
+  },
+  {
+    "id": "method:steam",
+    "facet": "method",
+    "label": "蒸",
+    "labelEn": "Steam",
+    "aliases": ["蒸", "Steam", "steam"]
+  },
+  {
+    "id": "equipment:steamer",
+    "facet": "equipment",
+    "label": "蒸锅",
+    "labelEn": "Steamer",
+    "aliases": ["蒸锅", "Steamer"]
+  },
+  {
+    "id": "ingredient:houttuynia",
+    "facet": "ingredient",
+    "label": "折耳根",
+    "labelEn": "Houttuynia roots",
+    "aliases": ["折耳根", "Houttuynia roots"]
+  },
+  {
+    "id": "method:cold-toss",
+    "facet": "method",
+    "label": "凉拌",
+    "labelEn": "Cold toss",
+    "aliases": ["凉拌", "Cold toss"]
+  },
+  {
+    "id": "occasion:side",
+    "facet": "occasion",
+    "label": "配菜",
+    "labelEn": "Side dish",
+    "aliases": ["配菜", "Side dish"]
+  },
+  {
+    "id": "ingredient:spinach",
+    "facet": "ingredient",
+    "label": "菠菜",
+    "labelEn": "Spinach",
+    "aliases": ["菠菜", "Spinach"]
+  },
+  {
+    "id": "ingredient:ribs",
+    "facet": "ingredient",
+    "label": "排骨",
+    "labelEn": "Ribs",
+    "aliases": ["排骨", "Ribs"]
+  },
+  {
+    "id": "method:deep-fry",
+    "facet": "method",
+    "label": "炸",
+    "labelEn": "Deep-fry",
+    "aliases": ["炸", "Deep-fry"]
+  },
+  {
+    "id": "ingredient:broccoli",
+    "facet": "ingredient",
+    "label": "西兰花",
+    "labelEn": "Broccoli",
+    "aliases": ["西兰花", "Broccoli", "broccoli"]
+  },
+  {
+    "id": "ingredient:yin-xue-yu",
+    "facet": "ingredient",
+    "label": "银鳕鱼",
+    "labelEn": "Yin xue yu fish",
+    "aliases": ["银鳕鱼", "Yin xue yu fish"]
+  },
+  {
+    "id": "equipment:pan",
+    "facet": "equipment",
+    "label": "平底锅",
+    "labelEn": "Pan",
+    "aliases": ["平底锅", "Pan"]
+  },
+  {
+    "id": "ingredient:cucumber",
+    "facet": "ingredient",
+    "label": "黄瓜",
+    "labelEn": "Cucumber",
+    "aliases": ["黄瓜", "Cucumber"]
+  },
+  {
+    "id": "ingredient:water-spinach",
+    "facet": "ingredient",
+    "label": "空心菜",
+    "labelEn": "Water spinach",
+    "aliases": ["空心菜", "Water spinach"]
+  },
+  {
+    "id": "ingredient:salmon",
+    "facet": "ingredient",
+    "label": "三文鱼",
+    "labelEn": "Salmon",
+    "aliases": ["三文鱼", "Salmon", "salmon"]
+  },
+  {
+    "id": "style:mixed",
+    "facet": "style",
+    "label": "融合风格",
+    "labelEn": "Mixed",
+    "aliases": ["融合风格", "Mixed"]
+  },
+  {
+    "id": "source:samukichi",
+    "facet": "source",
+    "label": "SAMUKICHI",
+    "labelEn": "SAMUKICHI",
+    "aliases": ["SAMUKICHI", "samukichi", "さむ吉"]
+  },
+  {
+    "id": "ingredient:instant-noodles",
+    "facet": "ingredient",
+    "label": "泡面",
+    "labelEn": "Instant noodles",
+    "aliases": ["泡面", "Instant noodles"]
+  },
+  {
+    "id": "ingredient:milk",
+    "facet": "ingredient",
+    "label": "牛奶",
+    "labelEn": "Milk",
+    "aliases": ["牛奶", "Milk", "milk"]
+  },
+  {
+    "id": "method:microwave",
+    "facet": "method",
+    "label": "微波加热",
+    "labelEn": "Microwave",
+    "aliases": ["微波加热", "Microwave"]
+  },
+  {
+    "id": "equipment:microwave",
+    "facet": "equipment",
+    "label": "微波炉",
+    "labelEn": "Microwave",
+    "aliases": ["微波炉", "Microwave"]
+  },
+  {
+    "id": "ingredient:salted-egg-yolk",
+    "facet": "ingredient",
+    "label": "咸蛋黄",
+    "labelEn": "Salted egg yolk",
+    "aliases": ["咸蛋黄", "Salted egg yolk"]
+  },
+  {
+    "id": "ingredient:tofu",
+    "facet": "ingredient",
+    "label": "豆腐",
+    "labelEn": "Tofu",
+    "aliases": ["豆腐", "Tofu"]
+  },
+  {
+    "id": "ingredient:chinese-cabbage",
+    "facet": "ingredient",
+    "label": "白菜",
+    "labelEn": "Chinese cabbage",
+    "aliases": ["白菜", "Chinese cabbage"]
+  },
+  {
+    "id": "ingredient:tomato",
+    "facet": "ingredient",
+    "label": "番茄",
+    "labelEn": "Tomato",
+    "aliases": ["番茄", "Tomato"]
+  },
+  {
+    "id": "ingredient:cured-sausage",
+    "facet": "ingredient",
+    "label": "腊肠",
+    "labelEn": "Cured sausage",
+    "aliases": ["腊肠", "Cured sausage"]
+  },
+  {
+    "id": "ingredient:bell-pepper",
+    "facet": "ingredient",
+    "label": "甜椒",
+    "labelEn": "Bell pepper",
+    "aliases": ["甜椒", "Bell pepper", "bell pepper"]
+  },
+  {
+    "id": "ingredient:cheese",
+    "facet": "ingredient",
+    "label": "芝士",
+    "labelEn": "Cheese",
+    "aliases": ["芝士", "Cheese"]
+  },
+  {
+    "id": "equipment:oven",
+    "facet": "equipment",
+    "label": "烤箱",
+    "labelEn": "Oven",
+    "aliases": ["烤箱", "Oven"]
+  },
+  {
+    "id": "equipment:torch",
+    "facet": "equipment",
+    "label": "烹饪喷枪",
+    "labelEn": "Cooking torch",
+    "aliases": ["烹饪喷枪", "Cooking torch"]
+  },
+  {
+    "id": "ingredient:chicken",
+    "facet": "ingredient",
+    "label": "鸡肉",
+    "labelEn": "Chicken",
+    "aliases": []
+  },
+  {
+    "id": "occasion:prep-ahead",
+    "facet": "occasion",
+    "label": "提前备料",
+    "labelEn": "Prepare ahead",
+    "aliases": []
+  },
+  {
+    "id": "equipment:thermometer",
+    "facet": "equipment",
+    "label": "食物温度计",
+    "labelEn": "Food thermometer",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:asparagus",
+    "facet": "ingredient",
+    "label": "芦笋",
+    "labelEn": "Asparagus",
+    "aliases": ["asparagus", "芦笋"]
+  },
+  {
+    "id": "ingredient:cauliflower",
+    "facet": "ingredient",
+    "label": "花椰菜",
+    "labelEn": "Cauliflower",
+    "aliases": ["cauliflower", "花椰菜"]
+  },
+  {
+    "id": "style:western",
+    "facet": "style",
+    "label": "西式",
+    "labelEn": "Western",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:noodles",
+    "facet": "ingredient",
+    "label": "面条",
+    "labelEn": "Noodles",
+    "aliases": ["noodles", "面条"]
+  },
+  {
+    "id": "ingredient:cabbage",
+    "facet": "ingredient",
+    "label": "卷心菜",
+    "labelEn": "Cabbage",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:carrot",
+    "facet": "ingredient",
+    "label": "胡萝卜",
+    "labelEn": "Carrot",
+    "aliases": ["carrot", "胡萝卜"]
+  },
+  {
+    "id": "ingredient:mushroom",
+    "facet": "ingredient",
+    "label": "蘑菇",
+    "labelEn": "Mushrooms",
+    "aliases": ["mushroom", "mushrooms", "蘑菇", "香菇", "shiitake"]
+  },
+  {
+    "id": "ingredient:tuna",
+    "facet": "ingredient",
+    "label": "金枪鱼",
+    "labelEn": "Tuna",
+    "aliases": ["tuna", "金枪鱼"]
+  },
+  {
+    "id": "ingredient:bread",
+    "facet": "ingredient",
+    "label": "面包",
+    "labelEn": "Bread",
+    "aliases": []
+  },
+  {
+    "id": "occasion:snack",
+    "facet": "occasion",
+    "label": "小食",
+    "labelEn": "Snack",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:cream",
+    "facet": "ingredient",
+    "label": "淡奶油",
+    "labelEn": "Cream",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:sago",
+    "facet": "ingredient",
+    "label": "西米",
+    "labelEn": "Sago",
+    "aliases": ["sago", "西米"]
+  },
+  {
+    "id": "ingredient:coconut-milk",
+    "facet": "ingredient",
+    "label": "椰浆",
+    "labelEn": "Coconut milk",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:fruit",
+    "facet": "ingredient",
+    "label": "水果",
+    "labelEn": "Fruit",
+    "aliases": []
+  },
+  {
+    "id": "occasion:dessert",
+    "facet": "occasion",
+    "label": "甜品",
+    "labelEn": "Dessert",
+    "aliases": []
+  },
+  {
+    "id": "source:ali-sago",
+    "facet": "source",
+    "label": "阿李厨房",
+    "labelEn": "Ali Kitchen",
+    "aliases": ["ali sago", "阿里西米"]
+  },
+  {
+    "id": "ingredient:chestnut",
+    "facet": "ingredient",
+    "label": "板栗",
+    "labelEn": "Chestnut",
+    "aliases": []
+  },
+  {
+    "id": "method:rice-cooker",
+    "facet": "method",
+    "label": "电饭锅焖煮",
+    "labelEn": "Rice-cooker meal",
+    "aliases": []
+  },
+  {
+    "id": "equipment:rice-cooker",
+    "facet": "equipment",
+    "label": "电饭锅",
+    "labelEn": "Rice cooker",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:sausage",
+    "facet": "ingredient",
+    "label": "香肠",
+    "labelEn": "Sausage",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:corn",
+    "facet": "ingredient",
+    "label": "玉米",
+    "labelEn": "Corn",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:peas",
+    "facet": "ingredient",
+    "label": "青豆",
+    "labelEn": "Peas",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:taro",
+    "facet": "ingredient",
+    "label": "芋头",
+    "labelEn": "Taro",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:pumpkin",
+    "facet": "ingredient",
+    "label": "南瓜",
+    "labelEn": "Pumpkin",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:leafy-greens",
+    "facet": "ingredient",
+    "label": "青菜",
+    "labelEn": "Leafy greens",
+    "aliases": []
+  },
+  {
+    "id": "source:awei",
+    "facet": "source",
+    "label": "阿伟",
+    "labelEn": "Awei",
+    "aliases": ["awei", "阿伟"]
+  },
+  {
+    "id": "source:rosalina",
+    "facet": "source",
+    "label": "萝洁塔",
+    "labelEn": "Rosalina",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:lamb",
+    "facet": "ingredient",
+    "label": "羊肉",
+    "labelEn": "Lamb",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:raisins",
+    "facet": "ingredient",
+    "label": "葡萄干",
+    "labelEn": "Raisins",
+    "aliases": []
+  },
+  {
+    "id": "source:magic-ingredients",
+    "facet": "source",
+    "label": "小高姐",
+    "labelEn": "Magic Ingredients",
+    "aliases": ["magic ingredients", "小高姐"]
+  },
+  {
+    "id": "ingredient:flour",
+    "facet": "ingredient",
+    "label": "面粉",
+    "labelEn": "Flour",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:scallion",
+    "facet": "ingredient",
+    "label": "小葱",
+    "labelEn": "Scallion",
+    "aliases": []
+  },
+  {
+    "id": "source:ali-pancakes",
+    "facet": "source",
+    "label": "阿栗",
+    "labelEn": "Ali",
+    "aliases": []
+  },
+  {
+    "id": "source:liuyi",
+    "facet": "source",
+    "label": "留意美食",
+    "labelEn": "LiuYi",
+    "aliases": ["liuyi", "六一"]
+  },
+  {
+    "id": "ingredient:bean-sprouts",
+    "facet": "ingredient",
+    "label": "豆芽",
+    "labelEn": "Bean sprouts",
+    "aliases": []
+  },
+  {
+    "id": "source:feng",
+    "facet": "source",
+    "label": "冯小厨",
+    "labelEn": "Feng",
+    "aliases": ["feng", "冯小厨"]
+  },
+  {
+    "id": "source:ajian",
+    "facet": "source",
+    "label": "阿见",
+    "labelEn": "Ajian",
+    "aliases": []
+  },
+  {
+    "id": "ingredient:peanut",
+    "facet": "ingredient",
+    "label": "花生",
+    "labelEn": "Peanut",
+    "aliases": []
+  },
+  {
+    "id": "source:ali-recipes",
+    "facet": "source",
+    "label": "阿李",
+    "labelEn": "Ali Recipes",
+    "aliases": []
+  },
+  {
+    "id": "source:remus",
+    "facet": "source",
+    "label": "杰少",
+    "labelEn": "Remus",
+    "aliases": ["remus", "杰少"]
+  },
+  {
+    "id": "ingredient:chives",
+    "facet": "ingredient",
+    "label": "韭菜",
+    "labelEn": "Chinese chives",
+    "aliases": []
+  },
+  {
+    "id": "source:ting-tvb",
+    "facet": "source",
+    "label": "鼎爷",
+    "labelEn": "Ting",
+    "aliases": []
+  },
+  {
+    "id": "task:prep",
+    "facet": "task",
+    "label": "食材处理",
+    "labelEn": "Prep",
+    "aliases": ["prep", "食材处理"]
+  },
+  {
+    "id": "stage:preparation",
+    "facet": "stage",
+    "label": "准备",
+    "labelEn": "Preparation",
+    "aliases": ["preparation", "准备"]
+  },
+  {
+    "id": "topic:cleaning",
+    "facet": "topic",
+    "label": "清洗",
+    "labelEn": "Cleaning",
+    "aliases": ["cleaning", "清洗"]
+  },
+  {
+    "id": "topic:slicing",
+    "facet": "topic",
+    "label": "切分",
+    "labelEn": "Slicing",
+    "aliases": ["slicing", "切分"]
+  },
+  {
+    "id": "topic:peeling",
+    "facet": "topic",
+    "label": "削皮",
+    "labelEn": "Peeling",
+    "aliases": ["peeling", "削皮"]
+  },
+  {
+    "id": "ingredient:chicken-thigh",
+    "facet": "ingredient",
+    "label": "鸡腿",
+    "labelEn": "Chicken Thigh",
+    "aliases": ["chicken thigh", "鸡腿"]
+  },
+  {
+    "id": "topic:trimming",
+    "facet": "topic",
+    "label": "修整",
+    "labelEn": "Trimming",
+    "aliases": ["trimming", "修整"]
+  },
+  {
+    "id": "topic:even-thickness",
+    "facet": "topic",
+    "label": "厚度调整",
+    "labelEn": "Even Thickness",
+    "aliases": ["even thickness", "厚度调整"]
+  },
+  {
+    "id": "ingredient:chicken-breast",
+    "facet": "ingredient",
+    "label": "鸡胸肉",
+    "labelEn": "Chicken Breast",
+    "aliases": ["chicken breast", "鸡胸肉"]
+  },
+  {
+    "id": "topic:moisture",
+    "facet": "topic",
+    "label": "水分",
+    "labelEn": "Moisture",
+    "aliases": ["moisture", "水分"]
+  },
+  {
+    "id": "topic:browning",
+    "facet": "topic",
+    "label": "上色",
+    "labelEn": "Browning",
+    "aliases": ["browning", "上色"]
+  },
+  {
+    "id": "topic:salting",
+    "facet": "topic",
+    "label": "盐渍",
+    "labelEn": "Salting",
+    "aliases": ["salting", "盐渍"]
+  },
+  {
+    "id": "task:heat",
+    "facet": "task",
+    "label": "火候与熟度",
+    "labelEn": "Heat",
+    "aliases": ["heat", "火候与熟度"]
+  },
+  {
+    "id": "stage:cooking",
+    "facet": "stage",
+    "label": "烹饪",
+    "labelEn": "Cooking",
+    "aliases": ["cooking", "烹饪"]
+  },
+  {
+    "id": "topic:pan-temperature",
+    "facet": "topic",
+    "label": "锅温",
+    "labelEn": "Pan Temperature",
+    "aliases": ["pan temperature", "锅温"]
+  },
+  {
+    "id": "topic:rendering",
+    "facet": "topic",
+    "label": "逼油",
+    "labelEn": "Rendering",
+    "aliases": ["rendering", "逼油"]
+  },
+  {
+    "id": "topic:pan-contact",
+    "facet": "topic",
+    "label": "贴锅",
+    "labelEn": "Pan Contact",
+    "aliases": ["pan contact", "贴锅"]
+  },
+  {
+    "id": "topic:turning",
+    "facet": "topic",
+    "label": "翻面",
+    "labelEn": "Turning",
+    "aliases": ["turning", "翻面"]
+  },
+  {
+    "id": "topic:sticking",
+    "facet": "topic",
+    "label": "防粘",
+    "labelEn": "Sticking",
+    "aliases": ["sticking", "防粘"]
+  },
+  {
+    "id": "topic:blanching",
+    "facet": "topic",
+    "label": "焯水",
+    "labelEn": "Blanching",
+    "aliases": ["blanching", "焯水"]
+  },
+  {
+    "id": "topic:chilling",
+    "facet": "topic",
+    "label": "冷却",
+    "labelEn": "Chilling",
+    "aliases": ["chilling", "冷却"]
+  },
+  {
+    "id": "topic:draining",
+    "facet": "topic",
+    "label": "沥水",
+    "labelEn": "Draining",
+    "aliases": ["draining", "沥水"]
+  },
+  {
+    "id": "topic:doneness",
+    "facet": "topic",
+    "label": "熟度",
+    "labelEn": "Doneness",
+    "aliases": ["doneness", "熟度"]
+  },
+  {
+    "id": "task:season",
+    "facet": "task",
+    "label": "调味与增香",
+    "labelEn": "Season",
+    "aliases": ["season", "调味与增香"]
+  },
+  {
+    "id": "ingredient:soy-sauce",
+    "facet": "ingredient",
+    "label": "酱油",
+    "labelEn": "Soy Sauce",
+    "aliases": ["soy sauce", "酱油"]
+  },
+  {
+    "id": "topic:seasoning",
+    "facet": "topic",
+    "label": "调味",
+    "labelEn": "Seasoning",
+    "aliases": ["seasoning", "调味"]
+  },
+  {
+    "id": "topic:aromatics",
+    "facet": "topic",
+    "label": "增香",
+    "labelEn": "Aromatics",
+    "aliases": ["aromatics", "增香"]
+  },
+  {
+    "id": "ingredient:butter",
+    "facet": "ingredient",
+    "label": "黄油",
+    "labelEn": "Butter",
+    "aliases": ["butter", "黄油"]
+  },
+  {
+    "id": "topic:basting",
+    "facet": "topic",
+    "label": "淋浇",
+    "labelEn": "Basting",
+    "aliases": ["basting", "淋浇"]
+  },
+  {
+    "id": "topic:finishing",
+    "facet": "topic",
+    "label": "收尾",
+    "labelEn": "Finishing",
+    "aliases": ["finishing", "收尾"]
+  },
+  {
+    "id": "ingredient:garlic",
+    "facet": "ingredient",
+    "label": "大蒜",
+    "labelEn": "Garlic",
+    "aliases": ["garlic", "大蒜"]
+  },
+  {
+    "id": "ingredient:oil",
+    "facet": "ingredient",
+    "label": "食用油",
+    "labelEn": "Oil",
+    "aliases": ["oil", "食用油"]
+  },
+  {
+    "id": "topic:spacing",
+    "facet": "topic",
+    "label": "间距",
+    "labelEn": "Spacing",
+    "aliases": ["spacing", "间距"]
+  },
+  {
+    "id": "topic:separation",
+    "facet": "topic",
+    "label": "松散",
+    "labelEn": "Separation",
+    "aliases": ["separation", "松散"]
+  },
+  {
+    "id": "topic:oil-retention",
+    "facet": "topic",
+    "label": "留油",
+    "labelEn": "Oil Retention",
+    "aliases": ["oil retention", "留油"]
+  },
+  {
+    "id": "topic:heating",
+    "facet": "topic",
+    "label": "加热",
+    "labelEn": "Heating",
+    "aliases": ["heating", "加热"]
+  },
+  {
+    "id": "topic:deveining",
+    "facet": "topic",
+    "label": "去虾线",
+    "labelEn": "Deveining",
+    "aliases": ["deveining", "去虾线"]
+  },
+  {
+    "id": "topic:caramelizing",
+    "facet": "topic",
+    "label": "焦糖化",
+    "labelEn": "Caramelizing",
+    "aliases": ["caramelizing", "焦糖化"]
+  },
+  {
+    "id": "topic:deglazing",
+    "facet": "topic",
+    "label": "去焦回融",
+    "labelEn": "Deglazing",
+    "aliases": ["deglazing", "去焦回融"]
+  },
+  {
+    "id": "task:storage",
+    "facet": "task",
+    "label": "保存",
+    "labelEn": "Storage",
+    "aliases": ["storage", "保存"]
+  },
+  {
+    "id": "stage:after-cooking",
+    "facet": "stage",
+    "label": "烹饪后",
+    "labelEn": "After Cooking",
+    "aliases": ["after cooking", "烹饪后"]
+  },
+  {
+    "id": "topic:storage",
+    "facet": "topic",
+    "label": "保存",
+    "labelEn": "Storage",
+    "aliases": ["storage", "保存"]
+  },
+  {
+    "id": "topic:portioning",
+    "facet": "topic",
+    "label": "分装",
+    "labelEn": "Portioning",
+    "aliases": ["portioning", "分装"]
+  },
+  {
+    "id": "topic:refrigeration",
+    "facet": "topic",
+    "label": "冷藏",
+    "labelEn": "Refrigeration",
+    "aliases": ["refrigeration", "冷藏"]
+  },
+  {
+    "id": "topic:freezing",
+    "facet": "topic",
+    "label": "冷冻",
+    "labelEn": "Freezing",
+    "aliases": ["freezing", "冷冻"]
+  },
+  {
+    "id": "topic:temperature",
+    "facet": "topic",
+    "label": "温度",
+    "labelEn": "Temperature",
+    "aliases": ["temperature", "温度"]
+  },
+  {
+    "id": "topic:resting",
+    "facet": "topic",
+    "label": "静置",
+    "labelEn": "Resting",
+    "aliases": ["resting", "静置"]
+  },
+  {
+    "id": "ingredient:broth",
+    "facet": "ingredient",
+    "label": "汤汁",
+    "labelEn": "Broth",
+    "aliases": ["broth", "汤汁"]
+  },
+  {
+    "id": "topic:liquid-measurement",
+    "facet": "topic",
+    "label": "汤水计量",
+    "labelEn": "Liquid Measurement",
+    "aliases": ["liquid measurement", "汤水计量"]
+  },
+  {
+    "id": "topic:steam-release",
+    "facet": "topic",
+    "label": "散气",
+    "labelEn": "Steam Release",
+    "aliases": ["steam release", "散气"]
+  },
+  {
+    "id": "topic:knife-skills",
+    "facet": "topic",
+    "label": "刀工",
+    "labelEn": "Knife Skills",
+    "aliases": ["knife skills", "刀工"]
+  },
+  {
+    "id": "topic:julienne",
+    "facet": "topic",
+    "label": "切丝",
+    "labelEn": "Julienne",
+    "aliases": ["julienne", "切丝"]
+  },
+  {
+    "id": "topic:starch-rinsing",
+    "facet": "topic",
+    "label": "洗去淀粉",
+    "labelEn": "Starch Rinsing",
+    "aliases": ["starch rinsing", "洗去淀粉"]
+  },
+  {
+    "id": "source:wang-gang",
+    "facet": "source",
+    "label": "王刚",
+    "labelEn": "Wang Gang",
+    "aliases": ["wang gang", "王刚"]
+  },
+  {
+    "id": "topic:soaking",
+    "facet": "topic",
+    "label": "浸泡",
+    "labelEn": "Soaking",
+    "aliases": ["soaking", "浸泡"]
+  },
+  {
+    "id": "topic:residual-heat",
+    "facet": "topic",
+    "label": "余温",
+    "labelEn": "Residual Heat",
+    "aliases": ["residual heat", "余温"]
+  }
+]

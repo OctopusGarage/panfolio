@@ -7,13 +7,24 @@ import { SourceVideo } from "./SourceVideo";
 import { videosForRecipe } from "./recipe-videos";
 import { KitchenEssentials } from "./KitchenEssentials";
 import { essentials, essentialsForRecipe } from "./kitchen-essentials";
-import { JapaneseSeries } from "./JapaneseSeries";
+import { recipeCategories } from "./recipe-categories";
+import { DiscoveryBrowser } from "./DiscoveryBrowser";
+import { MyKitchen } from "./MyKitchen";
+import {
+  emptyDiscoveryState,
+  recipeDiscovery,
+  preparationFor,
+  discoveryTags,
+} from "./discovery";
+import { bodyForPreparation } from "./preparation-content";
+import type { DiscoveryState } from "./discovery-types";
+import "./discovery-app.css";
 import { RecipeContent } from "./RecipeContent";
 import { cookingSections } from "./recipe-content";
 import recipeData from "./recipes.json";
 import type { Recipe } from "./recipe-validation";
 const recipes: Recipe[] = recipeData;
-import { matches, parseBackup } from "./core";
+import { parseBackup } from "./core";
 import { useLocale } from "./i18n";
 import { useSavedRecipes } from "./useSavedRecipes";
 import { useAppUpdate } from "./useAppUpdate";
@@ -29,17 +40,6 @@ import { InfoDialog } from "./InfoDialog";
 import { Icon, type IconName } from "./Icon";
 interface InstallEvent extends Event {
   prompt: () => Promise<void>;
-}
-const categories = ["all", "staples", "vegetables", "eggs", "meat"] as const;
-type Category = (typeof categories)[number];
-function group(title: string): Category {
-  return /饭|米粉|泡面|粉丝|炒面/.test(title)
-    ? "staples"
-    : /鸡蛋|滑蛋/.test(title)
-      ? "eggs"
-      : /菜|茄子|黄瓜|耳根|芦笋|蘑菇|洋葱/.test(title)
-        ? "vegetables"
-        : "meat";
 }
 function readRecent() {
   try {
@@ -72,14 +72,6 @@ export default function App() {
     [cooking, setCooking] = useState(false),
     [step, setStep] = useState(0),
     [recent, setRecent] = useState(readRecent),
-    [showAllRecent, setShowAllRecent] = useState(false),
-    [guideDismissed, setGuideDismissed] = useState(() => {
-      try {
-        return localStorage.getItem("panfolio:guide-dismissed") === "yes";
-      } catch {
-        return false;
-      }
-    }),
     [online, setOnline] = useState(navigator.onLine),
     [installed, setInstalled] = useState(
       matchMedia("(display-mode: standalone)").matches ||
@@ -93,11 +85,16 @@ export default function App() {
     } | null>(null),
     [searchActive, setSearchActive] = useState(false),
     [showTop, setShowTop] = useState(false);
-  const [filters, setFilters] = useState({
-    library: { query: "", category: "all" as Category },
-    series: { query: "", category: "all" as Category },
-    saved: { query: "", category: "all" as Category },
+  const [myKitchenQuery, setMyKitchenQuery] = useState("");
+  const [discoveryStates, setDiscoveryStates] = useState({
+    library: emptyDiscoveryState("recipes"),
+    series: emptyDiscoveryState("recipes"),
+    references: emptyDiscoveryState("references"),
   });
+  const [preparationId, setPreparationId] = useState<string | undefined>(
+    () => history.state?.panfolioPreparation || undefined,
+  );
+  const cookingPositions = useRef(new Map<string, number>());
   const install = useRef<InstallEvent | null>(null),
     file = useRef<HTMLInputElement>(null),
     lastList = useRef("library"),
@@ -124,7 +121,7 @@ export default function App() {
       ? "settings"
       : hash === "guides"
         ? "guides"
-        : hash === "saved"
+        : hash === "saved" || hash === "mine"
           ? "saved"
           : "library";
   const dialog = hash.endsWith("?info=install")
@@ -195,6 +192,7 @@ export default function App() {
       recipe ||
       dialog ||
       isEssentials ||
+      page === "saved" ||
       page === "settings" ||
       page === "guides"
     ) {
@@ -241,41 +239,48 @@ export default function App() {
   );
   const title = (r: (typeof recipes)[number]) =>
     locale === "en" ? r.titleEn || r.title : r.title;
-  const categoryLabel = (c: Category) =>
-    ({
-      all: s("全部", "All"),
-      staples: s("主食", "Rice & noodles"),
-      vegetables: s("蔬菜", "Vegetables"),
-      eggs: s("蛋类", "Eggs"),
-      meat: s("肉与海鲜", "Meat & seafood"),
-    })[c];
-  const listKey = series ? "series" : page === "saved" ? "saved" : "library";
-  const filter = filters[listKey];
-  const list = recipes.filter(
-    (r) =>
-      matches(
-        {
-          ...r,
-          title: r.title + " " + (r.titleEn || ""),
-          body: r.body + " " + (r.bodyEn || ""),
-        },
-        filter.query,
-      ) &&
-      (!series || r.collection === "japanese-chef") &&
-      (page !== "saved" || data.favorites.includes(r.id)) &&
-      (filter.category === "all" || group(r.title) === filter.category),
-  );
-  const steps = recipe ? cookingSections(recipeBody(recipe, locale)) : [];
+  const categoryLabel = (id: string | undefined) => {
+    const category = recipeCategories.find((category) => category.id === id);
+    return category ? s(category.zh, category.en) : "";
+  };
+  const listKey = isEssentials ? "references" : series ? "series" : "library";
+  const discoveryState = discoveryStates[listKey];
+  const updateDiscovery = (next: DiscoveryState) =>
+    setDiscoveryStates((previous) => ({ ...previous, [listKey]: next }));
+  const preparations =
+    recipeDiscovery.find((entry) => entry.id === recipe?.id)?.preparations ||
+    [];
+  const selectedPreparation =
+    recipe && preparationId
+      ? preparationFor(recipe.id, preparationId)
+      : undefined;
+  const readingBody = recipe
+    ? bodyForPreparation(recipe, selectedPreparation, locale)
+    : "";
+  const steps = recipe ? cookingSections(readingBody) : [];
+  const choosePreparation = (id: string | undefined) => {
+    setPreparationId(id);
+    setCooking(false);
+    setStep(0);
+    history.replaceState(
+      { ...history.state, panfolioPreparation: id || null },
+      "",
+      location.href,
+    );
+  };
   useEffect(() => {
     const fn = () => {
       const next = readHash();
       setHash(next);
       setCooking(false);
       setStep(0);
+      setPreparationId(history.state?.panfolioPreparation || undefined);
       setMessage("");
       writer.invalidate();
     };
     window.addEventListener("hashchange", fn);
+    // A fragment navigation can occur between initial render and effect registration.
+    if (readHash() !== hash) fn();
     return () => window.removeEventListener("hashchange", fn);
   }, [writer]);
   useEffect(() => {
@@ -307,23 +312,26 @@ export default function App() {
     return () => window.removeEventListener("storage", sync);
   }, []);
   useEffect(() => {
-    if (recipe || dialog) return;
+    if (recipe || dialog || essentialId) return;
     const trigger = detailTrigger.current;
     if (trigger) {
       const href = trigger.getAttribute("href");
+      const cardId =
+        trigger.closest<HTMLElement>("[data-recipe-id]")?.dataset.recipeId;
       const restored = trigger.isConnected
         ? trigger
         : Array.from(
             document.querySelectorAll<HTMLElement>(
-              trigger.closest(".card")
-                ? trigger.closest("h3")
-                  ? ".card h3 a"
-                  : trigger.classList.contains("card-image")
-                    ? ".card-image"
-                    : ".card .read"
-                : ".recent-links a",
+              ".card a, .essential-card a, .my-kitchen .card > button",
             ),
-          ).find((element) => element.getAttribute("href") === href);
+          ).find((element) =>
+            href
+              ? element.getAttribute("href") === href &&
+                element.textContent === trigger.textContent
+              : cardId ===
+                element.closest<HTMLElement>("[data-recipe-id]")?.dataset
+                  .recipeId,
+          );
       restored?.focus({ preventScroll: true });
       detailTrigger.current = null;
     }
@@ -362,18 +370,37 @@ export default function App() {
   }, []);
   function back() {
     if (
-      history.state?.panfolioRecipe === recipe?.id ||
-      history.state?.panfolioInfo === dialog
+      (recipe && history.state?.panfolioRecipe === recipe.id) ||
+      (dialog && history.state?.panfolioInfo === dialog) ||
+      (essentialId !== undefined &&
+        history.state?.panfolioReference === essentialId)
     )
       history.back();
     else location.hash = lastList.current;
   }
-  useRightEdgeBack(recipe || dialog ? back : null, hash);
-  function openRecipe(r: (typeof recipes)[number], trigger: HTMLElement) {
+  useRightEdgeBack(
+    recipe || dialog || essentialId
+      ? () => {
+          if (document.querySelector("dialog[open]")) return;
+          back();
+        }
+      : null,
+    hash,
+  );
+  function openRecipe(
+    r: (typeof recipes)[number],
+    trigger: HTMLElement,
+    selected?: string,
+  ) {
     detailTrigger.current = trigger;
     history.replaceState(history.state, "", location.href);
     location.hash = encodeURIComponent(r.id);
-    history.replaceState({ panfolioRecipe: r.id }, "", location.href);
+    history.replaceState(
+      { panfolioRecipe: r.id, panfolioPreparation: selected || null },
+      "",
+      location.href,
+    );
+    setPreparationId(selected);
   }
   function info(kind: "install" | "about") {
     location.hash = `${page}?info=${kind}`;
@@ -434,7 +461,12 @@ export default function App() {
       const ids = new Set(recipes.map((r) => r.id));
       if (
         next.favorites.some((x) => !ids.has(x)) ||
-        Object.keys(next.notes).some((x) => !ids.has(x))
+        Object.keys(next.notes).some((x) => !ids.has(x)) ||
+        [
+          ...(next.kitchen?.tried || []),
+          ...(next.kitchen?.repeat || []),
+          ...Object.keys(next.kitchen?.tags || {}),
+        ].some((x) => !ids.has(x))
       )
         throw Error();
       saved.merge(next);
@@ -508,13 +540,13 @@ export default function App() {
         : page === "guides"
           ? s("使用指南", "User guide")
           : page === "saved"
-            ? s("我的收藏", "Saved recipes")
+            ? s("我的厨房", "My kitchen")
             : series
               ? s("日厨系列", "Japanese chef series")
               : s("全部菜谱", "Recipes");
   return (
     <div
-      className={`app-shell${frame.keyboardOpen ? " keyboard-open" : ""}${searchActive ? " search-active" : ""}`}
+      className={`app-shell discovery-app${frame.keyboardOpen ? " keyboard-open" : ""}${searchActive ? " search-active" : ""}`}
     >
       <a
         className="skip"
@@ -535,19 +567,14 @@ export default function App() {
             [
               { key: "library", icon: "book", label: s("全部菜谱", "Recipes") },
               {
-                key: "saved",
-                icon: "heart",
-                label: s("我的收藏", "Saved recipes"),
-              },
-              {
                 key: "essentials",
                 icon: "help",
                 label: s("厨房基础", "Kitchen essentials"),
               },
               {
-                key: "settings",
-                icon: "settings",
-                label: s("设置", "Settings"),
+                key: "saved",
+                icon: "heart",
+                label: s("我的厨房", "My kitchen"),
               },
             ] as { key: string; icon: IconName; label: string }[]
           ).map((item) => (
@@ -603,6 +630,13 @@ export default function App() {
               history.replaceState({ panfolioRecipe: id }, "", location.href);
             }}
           />
+          <a
+            className="icon-button header-settings"
+            href="#settings"
+            aria-label={s("设置", "Settings")}
+          >
+            <Icon name="settings" />
+          </a>
           {share("header")}
           <button
             className="icon-button"
@@ -637,6 +671,7 @@ export default function App() {
             ![
               "library",
               "saved",
+              "mine",
               "guides",
               "settings",
               "japanese-chef",
@@ -645,8 +680,12 @@ export default function App() {
                 <h2>{s("没有找到这道菜", "Recipe not found")}</h2>
                 <a href="#library">{s("返回菜谱", "Back to recipes")}</a>
               </section>
-            ) : isEssentials ? (
-              <KitchenEssentials id={essentialId} locale={locale} />
+            ) : isEssentials && essentialId ? (
+              <KitchenEssentials
+                id={essentialId}
+                locale={locale}
+                onBack={history.state?.panfolioReference ? back : undefined}
+              />
             ) : recipe ? (
               <article>
                 <button className="back" onClick={back}>
@@ -655,9 +694,7 @@ export default function App() {
                 {recipe.image && (
                   <figure className="recipe-cover">
                     <RecipeImage src={recipe.image} kind="cover" />
-                    <figcaption>
-                      {categoryLabel(group(recipe.title))}
-                    </figcaption>
+                    <figcaption>{categoryLabel(recipe.category)}</figcaption>
                   </figure>
                 )}
                 {recipe.collection === "japanese-chef" && (
@@ -667,9 +704,7 @@ export default function App() {
                 )}
                 <div className="detail-title">
                   <div>
-                    <p className="eyebrow">
-                      {categoryLabel(group(recipe.title))}
-                    </p>
+                    <p className="eyebrow">{categoryLabel(recipe.category)}</p>
                     <h2>{title(recipe)}</h2>
                     <p className="recipe-description">
                       {recipeDescription(recipe, locale)}
@@ -684,17 +719,67 @@ export default function App() {
                       : s("☆ 收藏", "☆ Save")}
                   </button>
                 </div>
+                {preparations.length > 1 && (
+                  <div className="preparation-chooser">
+                    <label htmlFor="preparation-choice">
+                      {s("选择这次要做的做法", "Choose a preparation")}
+                    </label>
+                    <select
+                      id="preparation-choice"
+                      value={preparationId || ""}
+                      onChange={(event) =>
+                        choosePreparation(event.target.value || undefined)
+                      }
+                    >
+                      <option value="">
+                        {s("查看全部做法", "View all preparations")}
+                      </option>
+                      {preparations.map((prep) => (
+                        <option key={prep.id} value={prep.id}>
+                          {locale === "en" ? prep.titleEn : prep.title}
+                        </option>
+                      ))}
+                    </select>
+                    {selectedPreparation && (
+                      <button onClick={() => choosePreparation(undefined)}>
+                        {s("查看完整菜谱", "View the complete recipe")}
+                      </button>
+                    )}
+                  </div>
+                )}
+                <div className="recipe-discovery-tags">
+                  {Object.values(
+                    (selectedPreparation || preparations[0])?.facets || {},
+                  )
+                    .flat()
+                    .slice(0, 6)
+                    .map((id) => {
+                      const tag = discoveryTags.find((tag) => tag.id === id);
+                      return tag ? (
+                        <span key={id}>
+                          {locale === "en" ? tag.labelEn : tag.label}
+                        </span>
+                      ) : null;
+                    })}
+                </div>
                 <div className="actions">
                   <button
                     className="primary"
+                    disabled={preparations.length > 1 && !selectedPreparation}
                     onClick={() => {
                       setCooking(!cooking);
-                      setStep(0);
+                      setStep(
+                        cookingPositions.current.get(
+                          `${recipe.id}:${preparationId || "main"}`,
+                        ) || 0,
+                      );
                     }}
                   >
                     {cooking
                       ? s("退出烹饪模式", "Exit cooking mode")
-                      : s("开始做这道菜 →", "Start cooking →")}
+                      : preparations.length > 1 && !selectedPreparation
+                        ? s("选择做法后开始", "Choose a preparation to start")
+                        : s("开始做这道菜 →", "Start cooking →")}
                   </button>
                   <button disabled={copying} onClick={shareRecipe}>
                     {s("分享菜谱链接", "Copy recipe link")}
@@ -727,13 +812,25 @@ export default function App() {
                     <div className="actions">
                       <button
                         disabled={step === 0}
-                        onClick={() => setStep(step - 1)}
+                        onClick={() => {
+                          setStep(step - 1);
+                          cookingPositions.current.set(
+                            `${recipe.id}:${preparationId || "main"}`,
+                            step - 1,
+                          );
+                        }}
                       >
                         {s("上一段", "Previous section")}
                       </button>
                       <button
                         disabled={step === steps.length - 1}
-                        onClick={() => setStep(step + 1)}
+                        onClick={() => {
+                          setStep(step + 1);
+                          cookingPositions.current.set(
+                            `${recipe.id}:${preparationId || "main"}`,
+                            step + 1,
+                          );
+                        }}
                       >
                         {s("下一段 →", "Next section →")}
                       </button>
@@ -750,7 +847,7 @@ export default function App() {
                     className="recipe-body"
                     lang={locale === "en" ? "en" : "zh-CN"}
                   >
-                    <RecipeContent body={recipeBody(recipe, locale)} />
+                    <RecipeContent body={readingBody} />
                   </div>
                 )}
                 {essentialsForRecipe(recipe.id).length > 0 && (
@@ -758,13 +855,46 @@ export default function App() {
                     <h2>{s("相关厨房基础", "Related kitchen essentials")}</h2>
                     <div className="recent-links">
                       {essentialsForRecipe(recipe.id).map((item) => (
-                        <a key={item.id} href={`#essentials/${item.id}`}>
+                        <a
+                          key={item.id}
+                          href={`#essentials/${item.id}`}
+                          onClick={(event) => {
+                            event.preventDefault();
+                            location.hash = `essentials/${item.id}`;
+                            history.replaceState(
+                              { panfolioReference: item.id },
+                              "",
+                              location.href,
+                            );
+                          }}
+                        >
                           {locale === "en" ? item.titleEn : item.title}
                         </a>
                       ))}
                     </div>
                   </section>
                 )}
+                <section
+                  className="recipe-personal-actions"
+                  aria-label={s("我的做菜记录", "My cooking record")}
+                >
+                  <button
+                    aria-pressed={
+                      data.kitchen?.tried.includes(recipe.id) || false
+                    }
+                    onClick={() => saved.toggleTried(recipe.id)}
+                  >
+                    {s("做过这道菜", "I've made this")}
+                  </button>
+                  <button
+                    aria-pressed={
+                      data.kitchen?.repeat.includes(recipe.id) || false
+                    }
+                    onClick={() => saved.toggleRepeat(recipe.id)}
+                  >
+                    {s("加入常做", "Make again")}
+                  </button>
+                </section>
                 <section className="notes">
                   <h2>{s("我的厨房笔记", "My cooking notes")}</h2>
                   <label htmlFor="note">
@@ -852,241 +982,130 @@ export default function App() {
               </section>
             ) : (
               <>
-                {series ? (
-                  <JapaneseSeries expanded locale={locale} />
+                {page === "saved" ? (
+                  <MyKitchen
+                    locale={locale}
+                    saved={saved}
+                    recentIds={recent}
+                    query={myKitchenQuery}
+                    onQueryChange={setMyKitchenQuery}
+                    onOpenRecipe={(id, trigger) => {
+                      const entry = recipes.find((recipe) => recipe.id === id);
+                      if (entry) openRecipe(entry, trigger);
+                    }}
+                    onApplySearch={(state, collection) => {
+                      setDiscoveryStates((previous) => ({
+                        ...previous,
+                        [collection ? "series" : "library"]: state,
+                      }));
+                      location.hash = collection || "library";
+                    }}
+                  />
                 ) : (
-                  <section className="intro">
-                    <p className="eyebrow">THE EVERYDAY COOKBOOK</p>
-                    <h2>
-                      {s("今天想吃什么？", "Something good")}
-                      <br />
-                      {s("从这里开始。", "is on the menu.")}
-                    </h2>
-                    <p>
-                      {s(
-                        "收藏喜欢的菜，记下每一次做饭的灵感。",
-                        "Start with a favorite dish. Build a collection that feels like home.",
-                      )}
-                    </p>
-                  </section>
-                )}
-                {page === "library" && !series && (
-                  <JapaneseSeries locale={locale} />
-                )}
-                {!guideDismissed && !series && (
-                  <section className="first-guide">
-                    <h2>
-                      {s("你的第一道拿手菜", "Your first signature dish")}
-                    </h2>
-                    <p>
-                      {s(
-                        "找一道想做的菜 → 点星标收藏 → 开始烹饪 → 记下自己的调整。",
-                        "Find a recipe → save it → start cooking → note your own adjustments.",
-                      )}
-                    </p>
-                    <button
-                      onClick={() => {
-                        setGuideDismissed(true);
-                        try {
-                          localStorage.setItem(
-                            "panfolio:guide-dismissed",
-                            "yes",
-                          );
-                        } catch {}
-                      }}
-                    >
-                      {s("知道了", "Got it")}
-                    </button>
-                  </section>
-                )}
-                {page === "library" && !series && recent.length > 0 && (
-                  <section className="recent">
-                    <h2>{s("最近浏览", "Recently viewed")}</h2>
-                    <div className="recent-links">
-                      {recent.slice(0, showAllRecent ? 12 : 3).map((id) => {
-                        const r = recipes.find((r) => r.id === id)!;
-                        return (
-                          <a
-                            key={id}
-                            href={"#" + encodeURIComponent(id)}
-                            onClick={(e) => {
-                              e.preventDefault();
-                              openRecipe(r, e.currentTarget);
-                            }}
-                          >
-                            {title(r)}
-                          </a>
-                        );
-                      })}
-                    </div>
-                    {recent.length > 3 && (
-                      <button onClick={() => setShowAllRecent(!showAllRecent)}>
-                        {showAllRecent
-                          ? s("收起", "Show less")
-                          : s("展开全部", "Show all")}
-                      </button>
-                    )}
-                  </section>
-                )}
-                <section className="library">
-                  <div className="library-heading">
-                    <h2>
-                      {page === "saved"
-                        ? s("我的收藏", "Saved recipes")
-                        : series
-                          ? s("日常厨房练习", "Everyday kitchen lessons")
-                          : s("菜谱一览", "Recipe collection")}
-                    </h2>
-                    <span>
-                      {list.length} {s("篇", "recipes")}
-                    </span>
-                  </div>
-                  <div className="search-toolbar">
-                    <label className="search">
-                      <span>
-                        {s("搜索菜名或食材", "Search names or ingredients")}
-                      </span>
-                      <input
-                        type="search"
-                        aria-label={s(
-                          "搜索菜名或食材",
-                          "Search names or ingredients",
-                        )}
-                        ref={searchInput}
-                        onFocus={beginSearch}
-                        enterKeyHint="search"
-                        onKeyDown={(e) => {
-                          if (
-                            e.key === "Escape" &&
-                            !document.querySelector("dialog[open]")
-                          ) {
-                            e.preventDefault();
-                            cancelSearch();
-                          }
-                          if (e.key === "Enter") e.currentTarget.blur();
-                        }}
-                        placeholder={s(
-                          "试试：虾仁、土豆、炒饭…",
-                          "Try: shrimp, potato, fried rice…",
-                        )}
-                        value={filter.query}
-                        onChange={(e) =>
-                          setFilters({
-                            ...filters,
-                            [listKey]: { ...filter, query: e.target.value },
-                          })
-                        }
-                      />
-                    </label>
-                    {searchActive && (
-                      <button className="search-cancel" onClick={cancelSearch}>
-                        {s("取消", "Cancel")}
-                      </button>
-                    )}
-                  </div>
-                  {searchActive && (
-                    <p className="search-results-count" role="status">
-                      {filter.query
-                        ? s(
-                            `找到 ${list.length} 篇菜谱`,
-                            `${list.length} recipes found`,
-                          )
-                        : s(
-                            "输入菜名或食材",
-                            "Type a recipe name or ingredient",
-                          )}
-                    </p>
-                  )}
-                  <div className="filters">
-                    {categories.map((c) => (
-                      <button
-                        key={c}
-                        aria-pressed={c === filter.category}
-                        onClick={() =>
-                          setFilters({
-                            ...filters,
-                            [listKey]: { ...filter, category: c },
-                          })
-                        }
-                      >
-                        {categoryLabel(c)}
-                      </button>
-                    ))}
-                  </div>
-                  <div className="grid">
-                    {list.map((r) => (
-                      <section className="card" key={r.id}>
-                        {r.image && (
-                          <a
-                            className="card-image"
-                            tabIndex={-1}
-                            aria-hidden="true"
-                            href={"#" + encodeURIComponent(r.id)}
-                            onClick={(e) => {
-                              e.preventDefault();
-                              openRecipe(r, e.currentTarget);
-                            }}
-                          >
-                            <RecipeImage src={r.image} kind="card" />
-                          </a>
-                        )}
-                        <div className="card-top">
-                          <span>
-                            {r.collection === "japanese-chef"
-                              ? s("日厨系列", "Japanese chef series")
-                              : categoryLabel(group(r.title))}
-                          </span>
-                          <button
-                            aria-label={`${data.favorites.includes(r.id) ? s("取消收藏", "Unsave") : s("收藏", "Save")} ${title(r)}`}
-                            aria-pressed={data.favorites.includes(r.id)}
-                            onClick={() => saved.favorite(r.id)}
-                          >
-                            {data.favorites.includes(r.id) ? "★" : "☆"}
-                          </button>
-                        </div>
-                        <h3>
-                          <a
-                            href={"#" + encodeURIComponent(r.id)}
-                            onClick={(e) => {
-                              e.preventDefault();
-                              openRecipe(r, e.currentTarget);
-                            }}
-                          >
-                            {title(r)}
-                          </a>
-                        </h3>
-                        <p>
-                          {/10\s*种/.test(r.title)
-                            ? s("多种做法合集", "A collection of preparations")
-                            : recipeDescription(r, locale)}
-                        </p>
-                        <a
-                          className="read"
-                          href={"#" + encodeURIComponent(r.id)}
-                          onClick={(e) => {
-                            e.preventDefault();
-                            openRecipe(r, e.currentTarget);
-                          }}
-                        >
-                          {s("翻开菜谱", "Open recipe")} <span>↗</span>
+                  <section
+                    className={`discovery-page${isEssentials ? " essentials-index" : ""}`}
+                  >
+                    <div className="discovery-page-heading">
+                      <h2>
+                        {isEssentials
+                          ? s("需要时，随手查。", "Know what to do next.")
+                          : series
+                            ? s("日厨系列", "Japanese chef series")
+                            : s(
+                                "今天，做点喜欢的。",
+                                "Something good to cook.",
+                              )}
+                      </h2>
+                      <p>
+                        {isEssentials
+                          ? s(
+                              "食材处理、火候、调味与保存。",
+                              "Preparation, heat, seasoning and storage.",
+                            )
+                          : s(
+                              "按食材和场景，找到想做的菜。",
+                              "Find a recipe by ingredient or occasion.",
+                            )}
+                      </p>
+                      {isEssentials && (
+                        <a href="#guides">
+                          {s(
+                            "使用指南：收藏、离线与备份",
+                            "User guide: saving, offline use and backups",
+                          )}{" "}
+                          ↗
                         </a>
-                      </section>
-                    ))}
-                  </div>
-                  {list.length === 0 && (
-                    <p className="empty">
-                      {page === "saved"
-                        ? s(
-                            "还没有匹配的收藏，去发现喜欢的菜吧。",
-                            "No matching saved recipes yet. Find a dish you love.",
-                          )
-                        : s(
-                            "没有找到匹配的菜谱，换个关键词试试。",
-                            "No recipes found. Try another keyword.",
-                          )}
-                    </p>
-                  )}
-                </section>
+                      )}
+                    </div>
+                    <DiscoveryBrowser
+                      key={listKey}
+                      defaultScope={isEssentials ? "references" : "recipes"}
+                      locale={locale}
+                      state={discoveryState}
+                      onChange={updateDiscovery}
+                      recipeIds={
+                        series
+                          ? recipes
+                              .filter(
+                                (recipe) =>
+                                  recipe.collection === "japanese-chef",
+                              )
+                              .map((recipe) => recipe.id)
+                          : undefined
+                      }
+                      favorites={data.favorites}
+                      onFavorite={saved.favorite}
+                      onOpenRecipe={(id, selected, trigger) => {
+                        const entry = recipes.find(
+                          (recipe) => recipe.id === id,
+                        );
+                        if (entry) openRecipe(entry, trigger, selected);
+                      }}
+                      onOpenReference={(id, trigger) => {
+                        detailTrigger.current = trigger;
+                        location.hash = `essentials/${id}`;
+                        history.replaceState(
+                          { panfolioReference: id },
+                          "",
+                          location.href,
+                        );
+                      }}
+                      onSaveSearch={(state) => {
+                        const labels = Object.values(state.selected)
+                          .flat()
+                          .map((id) => {
+                            const tag = discoveryTags.find(
+                              (tag) => tag.id === id,
+                            );
+                            return tag
+                              ? locale === "en"
+                                ? tag.labelEn
+                                : tag.label
+                              : id;
+                          });
+                        const name =
+                          [state.query, ...labels]
+                            .filter(Boolean)
+                            .join(" · ") || s("全部菜谱", "All recipes");
+                        saved.saveSearch(
+                          name,
+                          state,
+                          series ? "japanese-chef" : undefined,
+                        );
+                        setMessage(
+                          s(
+                            "筛选已保存在我的厨房。",
+                            "Search saved in My kitchen.",
+                          ),
+                        );
+                      }}
+                      inputRef={searchInput}
+                      searchActive={searchActive}
+                      onSearchFocus={beginSearch}
+                      onSearchCancel={cancelSearch}
+                    />
+                  </section>
+                )}
               </>
             )}
             <footer>

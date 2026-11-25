@@ -2,6 +2,7 @@
 
 - Use pnpm, React and strict TypeScript. Keep shared infrastructure separate from recipe content.
 - Support Chinese and English for every interface action, feedback message and accessibility label. New or substantially revised recipes and kitchen references must provide complete Chinese and English content.
+- Follow [Discovery maintenance](docs/discovery-guide.md) when changing tags, preparations, search or filters.
 - Preserve stable recipe IDs and source URLs. Never fabricate quantities, nutrition, timing or attribution.
 - Keep personal notes out of URLs, sharing cards and telemetry. No analytics or remote account is required.
 - Scope service workers, recovery and cache cleanup to this deployment. Never remove another app's data or clear local notes during recovery.
@@ -17,5 +18,5 @@ Before adding or revising recipes, extracting cooking knowledge, or generating r
 - Keep extraction commentary and missing-source disclaimers out of reader-facing recipes. Preserve uncertainty in editorial records without inventing facts.
 - Extract reusable knowledge into Kitchen essentials while retaining complete recipe steps and tips. State applicability and exceptions.
 - Reader-facing references for the video-derived workflow use the corresponding original YouTube videos only. Preserve source provenance and stable IDs in the underlying records.
-- New recipe entries should include a matching source-informed watercolor/gouache cover, using the existing image pipeline. Reuse suitable existing covers during text-only revisions.
+- New recipe entries should include a matching source-informed photographic cover with natural food texture, using the existing image pipeline. Reuse suitable existing covers during text-only revisions.
 - Finish authorized implementation and verification without asking users to reconfirm these defaults. Deployment requires authorization from the current task or an already established instruction; do not infer it from content editing alone.

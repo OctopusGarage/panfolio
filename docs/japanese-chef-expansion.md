@@ -1,5 +1,7 @@
 # Japanese chef expansion — nine videos
 
+The initial cover notes below are historical. The user subsequently requested photographic regeneration; see [Cover fidelity refresh](cover-fidelity-refresh.md) and the current [Visual direction](visual-style.md).
+
 Reviewed on 2026-11-25. This adds nine bilingual recipe entries to the Japanese chef collection, including three separate tuna preparations within one entry. Existing IDs remain stable. All nine have source-informed watercolor/gouache covers, original YouTube references, both video-provider associations and relevant kitchen-reference links.
 
 ## Evidence boundaries

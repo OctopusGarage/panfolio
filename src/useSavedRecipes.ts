@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { parseBackup, type Backup } from "./core";
+import { parseBackup, emptyKitchen, mergeKitchen, type Backup } from "./core";
+import type { DiscoveryState } from "./discovery-types";
 import { createSavedSnapshot } from "./saved-snapshot";
 const key = "panfolio-data";
 const empty: Backup = { version: 1, favorites: [], notes: {} };
@@ -110,6 +111,21 @@ export function useSavedRecipes(onError: () => void) {
       }
     });
   }
+  function toggleStatus(field: "tried" | "repeat", id: string) {
+    const selected = !current.current.kitchen?.[field].includes(id);
+    mutate((v) => {
+      const kitchen = v.kitchen ?? emptyKitchen();
+      return {
+        ...v,
+        kitchen: {
+          ...kitchen,
+          [field]: selected
+            ? [...new Set([...kitchen[field], id])]
+            : kitchen[field].filter((x) => x !== id),
+        },
+      };
+    });
+  }
   return {
     data,
     favorite(id: string) {
@@ -124,9 +140,60 @@ export function useSavedRecipes(onError: () => void) {
     note(id: string, text: string) {
       mutate((v) => ({ ...v, notes: { ...v.notes, [id]: text } }));
     },
-    merge(backup: Backup) {
+    toggleTried(id: string) {
+      toggleStatus("tried", id);
+    },
+    toggleRepeat(id: string) {
+      toggleStatus("repeat", id);
+    },
+    setPrivateTags(id: string, tags: string[]) {
       mutate((v) => ({
         ...v,
+        kitchen: {
+          ...(v.kitchen ?? emptyKitchen()),
+          tags: {
+            ...v.kitchen?.tags,
+            [id]: [...new Set(tags.map((t) => t.trim()).filter(Boolean))],
+          },
+        },
+      }));
+    },
+    saveSearch(
+      name: string,
+      state: DiscoveryState,
+      collection?: "japanese-chef",
+    ) {
+      const entry = {
+        id: crypto.randomUUID(),
+        name: name.trim(),
+        ...(collection ? { collection } : {}),
+        state: structuredClone(state),
+      };
+      if (!entry.name) return;
+      mutate((v) => ({
+        ...v,
+        kitchen: {
+          ...(v.kitchen ?? emptyKitchen()),
+          searches: [...(v.kitchen?.searches ?? []), entry],
+        },
+      }));
+    },
+    removeSearch(id: string) {
+      mutate((v) => ({
+        ...v,
+        kitchen: {
+          ...(v.kitchen ?? emptyKitchen()),
+          searches: (v.kitchen?.searches ?? []).filter((s) => s.id !== id),
+        },
+      }));
+    },
+    merge(backup: Backup) {
+      backup = parseBackup(JSON.stringify(backup));
+      mutate((v) => ({
+        ...v,
+        ...(v.kitchen || backup.kitchen
+          ? { kitchen: mergeKitchen(v.kitchen, backup.kitchen) }
+          : {}),
         favorites: [...new Set([...v.favorites, ...backup.favorites])],
         notes: { ...backup.notes, ...v.notes },
       }));

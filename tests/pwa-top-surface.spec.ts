@@ -12,7 +12,8 @@ test("top-edge compatibility surface survives navigation without covering browse
   await expect(surface).toBeHidden();
   await page.getByRole("button", { name: "English", exact: true }).click();
   await expect(page.locator("#content-heading")).toHaveText("Recipes");
-  await page.getByRole("link", { name: "Settings", exact: true }).click();
+  await page.getByRole("link", { name: "My kitchen", exact: true }).click();
+  await page.getByRole("link", { name: "Preferences", exact: true }).click();
   await expect(surface).toHaveCount(1);
   await expect(surface).toBeHidden();
 });

@@ -116,7 +116,7 @@ test("silent activation reloads once, preserves the route and acknowledges reope
     page.waitForEvent("framenavigated", (frame) => frame === page.mainFrame()),
     page.clock.fastForward(500),
   ]);
-  await expect(page.locator("#content-heading")).toHaveText("我的收藏");
+  await expect(page.locator("#content-heading")).toHaveText("我的厨房");
   await expect(page.locator("#update-bar")).toContainText("更新完成");
   expect(await page.evaluate(() => sessionStorage.getItem("test:loads"))).toBe(
     "2",

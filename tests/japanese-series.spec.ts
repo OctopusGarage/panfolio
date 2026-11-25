@@ -4,7 +4,7 @@ test("Japanese chef collection supports discovery, translation and cooking", asy
   page,
 }) => {
   await page.goto("/");
-  await page.getByRole("button", { name: "主食", exact: true }).click();
+  await page.getByRole("button", { name: "中餐", exact: true }).click();
   await page.getByRole("link", { name: "探索日厨系列" }).click();
   await expect(page.locator(".grid .card")).toHaveCount(13);
   expect(
@@ -23,5 +23,7 @@ test("Japanese chef collection supports discovery, translation and cooking", asy
   await expect(page.locator(".cooking")).toContainText("Ingredients");
   await page.goto("/#japanese-chef");
   await expect(page.locator(".grid .card")).toHaveCount(13);
-  await expect(page.locator(".chef-series")).toContainText("Everyday dishes");
+  await expect(page.locator(".discovery-page-heading")).toContainText(
+    "Japanese chef series",
+  );
 });

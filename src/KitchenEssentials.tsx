@@ -8,9 +8,11 @@ import recipeData from "./recipes.json";
 export function KitchenEssentials({
   id,
   locale,
+  onBack,
 }: {
   id?: string;
   locale: Locale;
+  onBack?: () => void;
 }) {
   const s = (zh: string, en: string) => (locale === "en" ? en : zh);
   const [query, setQuery] = useState("");
@@ -55,12 +57,19 @@ export function KitchenEssentials({
         className="essential-detail"
         lang={locale === "en" ? "en" : "zh-CN"}
       >
-        <a className="back" href="#essentials">
+        <a
+          className="back"
+          href="#essentials"
+          onClick={(event) => {
+            if (onBack) {
+              event.preventDefault();
+              onBack();
+            }
+          }}
+        >
           ← {s("返回厨房基础", "Back to kitchen essentials")}
         </a>
-        <p className="eyebrow">
-          {s("日厨系列", "Japanese chef series")} · SAMUKICHI
-        </p>
+        <p className="eyebrow">{s("厨房基础", "Kitchen essentials")}</p>
         <h2>{localized(entry.title, entry.titleEn)}</h2>
         <p className="essential-lead">
           {localized(entry.summary, entry.summaryEn)}
@@ -92,29 +101,33 @@ export function KitchenEssentials({
             </section>
           ))}
         </div>
-        <section className="essential-related">
-          <h3>{s("用到这些技巧的菜谱", "Recipes using these techniques")}</h3>
-          <div className="recent-links">
-            {entry.recipeIds.map((recipeId) => {
-              const recipe = recipeData.find((item) => item.id === recipeId)!;
-              return (
-                <a key={recipeId} href={`#${encodeURIComponent(recipeId)}`}>
-                  {localized(recipe.title, recipe.titleEn)}
-                </a>
-              );
-            })}
-          </div>
-        </section>
+        {entry.recipeIds.length > 0 && (
+          <section className="essential-related">
+            <h3>{s("用到这些技巧的菜谱", "Recipes using these techniques")}</h3>
+            <div className="recent-links">
+              {entry.recipeIds.map((recipeId) => {
+                const recipe = recipeData.find((item) => item.id === recipeId)!;
+                return (
+                  <a key={recipeId} href={`#${encodeURIComponent(recipeId)}`}>
+                    {localized(recipe.title, recipe.titleEn)}
+                  </a>
+                );
+              })}
+            </div>
+          </section>
+        )}
         <section>
           <h3>{s("参考链接", "References")}</h3>
           <ul>
             {entry.sources.map((url) => (
               <li key={url}>
                 <a href={url}>
-                  YouTube · SAMUKICHI ·{" "}
+                  YouTube ·{" "}
                   {localized(
-                    recipeData.find((r) => r.body.includes(url))!.title,
-                    recipeData.find((r) => r.body.includes(url))!.titleEn,
+                    recipeData.find((r) => r.body.includes(url))?.title ||
+                      entry.title,
+                    recipeData.find((r) => r.body.includes(url))?.titleEn ||
+                      entry.titleEn,
                   )}
                 </a>
               </li>
@@ -181,10 +194,7 @@ export function KitchenEssentials({
       </div>
       <p className="hint" role="status">
         {visible.length
-          ? s(
-              `${visible.length} 篇 · 日厨系列`,
-              `${visible.length} references · Japanese chef series`,
-            )
+          ? s(`${visible.length} 篇参考`, `${visible.length} references`)
           : s(
               "没有找到相关内容，试试其他食材或技巧。",
               "No matching references. Try another ingredient or technique.",

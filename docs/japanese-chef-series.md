@@ -1,5 +1,7 @@
 # Japanese chef series
 
+The initial cover notes below are historical. The user subsequently requested photographic regeneration; see [Cover fidelity refresh](cover-fidelity-refresh.md) and the current [Visual direction](visual-style.md).
+
 The `japanese-chef` collection groups thirteen SAMUKICHI videos under `#japanese-chef`. Existing recipe IDs remain unchanged. New recipes use stable `samukichi-` IDs and the normal bilingual renderer, saved recipes, notes and cooking reader.
 
 The nine-video expansion and its evidence boundaries are documented in [Japanese chef expansion](japanese-chef-expansion.md).

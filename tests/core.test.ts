@@ -20,3 +20,16 @@ test("backup rejects malformed data before changing storage", () => {
     { version: 1, favorites: ["one"], notes: { one: "less salt" } },
   );
 });
+
+test("backup rejects malformed kitchen metadata", () => {
+  assert.throws(() =>
+    parseBackup(
+      JSON.stringify({
+        version: 1,
+        favorites: [],
+        notes: {},
+        kitchen: { tried: [1], repeat: [], tags: {}, searches: [] },
+      }),
+    ),
+  );
+});

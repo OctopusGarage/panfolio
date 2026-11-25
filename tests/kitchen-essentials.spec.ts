@@ -1,11 +1,18 @@
 import { test, expect } from "@playwright/test";
+import { readFileSync } from "node:fs";
+const essentials: { category: string }[] = JSON.parse(
+  readFileSync(
+    new URL("../src/kitchen-essentials.json", import.meta.url),
+    "utf8",
+  ),
+);
 
 test("kitchen essentials supports lookup, translation and recipe round trips", async ({
   page,
   browserName,
 }) => {
   await page.goto("/#essentials");
-  await expect(page.locator(".essential-card")).toHaveCount(21);
+  await expect(page.locator(".essential-card")).toHaveCount(essentials.length);
   await page.getByRole("searchbox", { name: "搜索厨房基础" }).fill("酱油");
   await page
     .getByRole("link", { name: "酱油接触热锅面增香", exact: true })
@@ -29,10 +36,16 @@ test("kitchen essentials supports lookup, translation and recipe round trips", a
   await expect(page.locator(".essential-detail")).toBeVisible();
   await page.goto("/#essentials");
   await page.getByRole("searchbox").fill("");
-  await page
-    .getByRole("button", { name: "Ingredient preparation", exact: true })
-    .click();
-  await expect(page.locator(".essential-card")).toHaveCount(6);
+  const mobile = (page.viewportSize()?.width || 0) <= 760;
+  if (mobile)
+    await page.getByRole("button", { name: "Filters", exact: true }).click();
+  await (mobile ? page.getByRole("dialog") : page.locator(".discovery-sidebar"))
+    .getByRole("checkbox", { name: /^Prep / })
+    .check();
+  if (mobile) await page.getByRole("button", { name: /^Show results/ }).click();
+  await expect(page.locator(".essential-card")).toHaveCount(
+    essentials.filter((entry) => entry.category === "prep").length,
+  );
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
@@ -42,7 +55,12 @@ test("kitchen essentials supports lookup, translation and recipe round trips", a
     path: `/tmp/panfolio-essentials-${browserName}.png`,
   });
   await page.getByRole("searchbox").fill("zzzzzz");
-  await expect(page.getByRole("status")).toContainText("No matching");
+  await expect(
+    page.getByText(
+      "No results match. Remove a filter or clear all to try again.",
+      { exact: true },
+    ),
+  ).toBeVisible();
 });
 
 test("all kitchen cards fill aligned grid tracks without inherited article margins", async ({

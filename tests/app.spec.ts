@@ -4,7 +4,9 @@ test("search, favorites, notes, cooking and offline navigation", async ({
   context,
 }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "菜谱一览" })).toBeVisible();
+  await expect(
+    page.getByRole("heading", { name: "今天，做点喜欢的。" }),
+  ).toBeVisible();
   await page.getByRole("searchbox").fill("Nikujaga");
   await expect(page.locator(".card")).toHaveCount(1);
   await page.locator(".card-top button").click();
@@ -35,7 +37,7 @@ test("search, favorites, notes, cooking and offline navigation", async ({
   await expect(
     page.getByRole("heading", { name: "我的厨房笔记" }),
   ).toBeVisible();
-  await page.getByRole("link", { name: "我的收藏", exact: true }).click();
+  await page.getByRole("link", { name: "我的厨房", exact: true }).click();
   await expect(page.locator(".card")).toHaveCount(1);
   expect(
     await page.evaluate(
@@ -45,10 +47,11 @@ test("search, favorites, notes, cooking and offline navigation", async ({
 });
 test("invalid backup does not overwrite notes", async ({ page }) => {
   await page.goto("/");
+  await page.goto("/#settings");
   await page.locator("input[type=file]").setInputFiles({
     name: "bad.json",
     mimeType: "application/json",
     buffer: Buffer.from('{"version":1,"favorites":[2],"notes":{}}'),
   });
-  await expect(page.getByRole("status")).toContainText("无法导入");
+  await expect(page.locator(".toast")).toContainText("无法导入");
 });

@@ -945,5 +945,411 @@
     "tags": ["炒饭", "米饭", "打散", "fried rice", "rice", "pan contact"],
     "recipeIds": ["samukichi-fried-rice"],
     "sources": ["https://www.youtube.com/watch?v=0loSYanxAfE"]
+  },
+  {
+    "id": "cook-sago-pearls",
+    "category": "heat",
+    "title": "大小西米的煮焖与透心判断",
+    "titleEn": "Boiling, resting and checking sago pearls",
+    "summary": "干西米下沸水，短煮后加盖焖；大颗粒分段回煮，以中心通透为准。",
+    "summaryEn": "Start dry pearls in boiling water and rest covered; reboil large pearls in stages and check for translucent centers.",
+    "scope": "木薯淀粉制成的干小西米、大西米，准备做西米露等甜品。",
+    "scopeEn": "Dry small and large tapioca-starch sago pearls for coconut sago and similar desserts.",
+    "steps": [
+      "先烧一大锅沸水，干西米不经冷水清洗或浸泡，直接下锅。",
+      "小西米煮 1 分钟后关火加盖，焖约 20 分钟搅动检查，有白心则继续焖至约 30 分钟再看。",
+      "大西米也先煮 1 分钟；在累计焖至 30、60 分钟时检查，有白心就重新煮沸、关火加盖，约 90 分钟再确认中心。",
+      "煮透后用凉水反复冲洗，至不黏手、水清凉，再沥水。"
+    ],
+    "stepsEn": [
+      "Bring a large pot of water to a boil. Add dry pearls directly, without cold washing or soaking.",
+      "Boil small pearls for 1 minute, then turn off the heat and cover. Stir and check at about 20 minutes; if white cores remain, continue resting and check at about 30 minutes.",
+      "Boil large pearls for 1 minute too. Check at cumulative resting times of 30 and 60 minutes; if white cores remain, reboil, turn off the heat and cover. Check the centers again at about 90 minutes.",
+      "Rinse cooked pearls repeatedly with cool water until no longer sticky and the water is clear and cold, then drain."
+    ],
+    "reasons": [
+      "干西米遇冷水可能散开；沸水让外层先糊化成形。",
+      "透心需要热量，也需要吸水时间。大锅水和锅盖帮助保温，大西米分段回煮补回下降的水温。"
+    ],
+    "reasonsEn": [
+      "Dry pearls can disintegrate in cold water; boiling water helps the outside gelatinize and set first.",
+      "Cooking through requires heat and time to absorb water. A large volume and a lid retain heat; staged reboiling restores heat as large pearls rest."
+    ],
+    "mistakes": [
+      "把“煮 1 分钟”当成总制作时间，或看到表面透明就不再检查白心。",
+      "把小西米的焖制时间直接套给大西米，或把熟后冲洗误用到干西米上。"
+    ],
+    "mistakesEn": [
+      "Treating the 1-minute boil as the whole preparation, or judging only the transparent outside without checking the core.",
+      "Using the small-pearl resting time for large pearls, or applying cooked-pearl rinsing to dry pearls."
+    ],
+    "boundary": "时间是这份大小西米做法的检查参考，最终看中心是否通透；不直接套用于其他淀粉珍珠或不同配方产品。",
+    "boundaryEn": "These are checkpoints for the demonstrated small and large pearls; judge by center translucency. Do not transfer the method unchanged to other starch pearls or differently formulated products.",
+    "tags": ["西米", "木薯淀粉", "透心", "白心", "sago", "tapioca"],
+    "recipeIds": ["ali-coconut-sago"],
+    "sources": ["https://www.youtube.com/watch?v=rY3lcAk2Ne8"]
+  },
+  {
+    "id": "store-cooked-sago",
+    "category": "storage",
+    "title": "熟西米冲凉、拌糖与冷藏",
+    "titleEn": "Rinsing, sweetening and refrigerating cooked sago",
+    "summary": "先洗去黏液、冲凉沥水；需要冷藏时拌糖，单独保存熟西米。",
+    "summaryEn": "Rinse away surface starch, cool and drain; mix in sugar when refrigerating the cooked pearls separately.",
+    "scope": "煮透后暂不立即食用、尚未混入奶和水果的熟西米。",
+    "scopeEn": "Fully cooked pearls being kept for later, before mixing with dairy and fruit.",
+    "steps": [
+      "用凉水反复冲洗煮透的西米，至不黏手、水清凉，然后沥水。",
+      "给这批熟西米加一大勺砂糖拌匀，封好保鲜膜，放进冰箱冷藏。",
+      "最好在 3 天内吃完；取出后简单搅动，使颗粒松散，再组合甜品。"
+    ],
+    "stepsEn": [
+      "Rinse fully cooked pearls repeatedly in cool water until no longer sticky and the water is clear and cold, then drain.",
+      "Mix one large spoonful of granulated sugar into the cooked batch, cover with plastic wrap and refrigerate.",
+      "Preferably use within 3 days. Stir briefly after removing from the refrigerator to loosen the pearls, then assemble the dessert."
+    ],
+    "reasons": [
+      "冲洗能带走表面黏液，减少颗粒黏连。",
+      "拌糖后的熟西米冷藏一夜，简单搅动更容易松开；作用是改善松散度。"
+    ],
+    "reasonsEn": [
+      "Rinsing removes surface starch and reduces sticking.",
+      "Cooked pearls mixed with sugar are easier to loosen after a night in the refrigerator; the purpose is separation."
+    ],
+    "mistakes": [
+      "省略冲洗和沥水，直接把黏稠的熟西米堆放。",
+      "把糖当作防腐措施，或把熟西米的保存时间套用于加奶、加水果后的成品。"
+    ],
+    "mistakesEn": [
+      "Skipping rinsing and draining, leaving sticky cooked pearls piled together.",
+      "Treating sugar as a preservative or applying the pearl-storage period to the assembled dessert with dairy and fruit."
+    ],
+    "boundary": "砂糖一大勺对应这批备料，没有固定干西米重量比例；冷藏建议只针对单独熟西米，加糖不能代替冷藏。",
+    "boundaryEn": "The large spoonful belongs to the demonstrated batch, without a fixed dry-pearl weight ratio. Refrigeration guidance concerns the cooked pearls alone; sugar does not replace refrigeration.",
+    "tags": ["西米", "冷藏", "拌糖", "黏连", "sago", "storage"],
+    "recipeIds": ["ali-coconut-sago"],
+    "sources": ["https://www.youtube.com/watch?v=rY3lcAk2Ne8"]
+  },
+  {
+    "id": "basmati-broth-liquid",
+    "category": "heat",
+    "title": "印度香米焖饭的汤水计量与散气",
+    "titleEn": "Measuring broth and releasing steam for basmati rice",
+    "summary": "把肉汤计入总水量，煮后焖透，再轻翻散气。",
+    "summaryEn": "Count broth toward total liquid, rest covered after simmering and release steam gently.",
+    "scope": "本例印度香米白饭与羊肉抓饭。",
+    "scopeEn": "The demonstrated basmati white rice and lamb pilaf.",
+    "steps": [
+      "汤汁加清水达到所用印度香米需要的总液体量，不把汤汁当作额外水分。",
+      "盖好小火煮，关火不开盖焖，再开盖轻翻米饭释放底部水汽。"
+    ],
+    "stepsEn": [
+      "Top broth up with water to the total liquid needed for the basmati; do not treat broth as extra liquid.",
+      "Simmer covered on low, rest covered off heat, then uncover and turn gently to release steam from the bottom."
+    ],
+    "reasons": [
+      "肉汤也是煮饭用水的一部分；多加完整份量的水会改变水米比。",
+      "刚熟的长米粒柔软易断，轻翻有助散气而不反复折断米粒。"
+    ],
+    "reasonsEn": [
+      "Broth contributes to cooking liquid; adding a full separate portion of water changes the rice-to-liquid ratio.",
+      "Freshly cooked long grains are fragile; gentle turning releases steam without repeatedly breaking grains."
+    ],
+    "mistakes": ["不扣除肉汤水量。", "煮饭中途开盖搅拌，或熟后反复翻搅。"],
+    "mistakesEn": [
+      "Failing to count broth toward the liquid total.",
+      "Opening and stirring during simmering, or stirring repeatedly after cooking."
+    ],
+    "boundary": "水量和煮制时间随米种与锅具而变；不要把本例比例与时间用于所有米。",
+    "boundaryEn": "Liquid and cooking time depend on rice and cookware; do not apply this example universally.",
+    "tags": ["印度香米", "焖饭", "汤汁", "basmati", "broth"],
+    "recipeIds": ["magic-lamb-pilaf"],
+    "sources": ["https://www.youtube.com/watch?v=2VRRTq7FhEA"]
+  },
+  {
+    "id": "onion-along-fibers",
+    "category": "prep",
+    "title": "洋葱顺纹切丝",
+    "titleEn": "Slicing onion along the fibers",
+    "summary": "用于希望加热后保形、有口感的洋葱丝。",
+    "summaryEn": "Onion slices intended to retain shape and texture after heating.",
+    "scope": "用于希望加热后保形、有口感的洋葱丝。",
+    "scopeEn": "Onion slices intended to retain shape and texture after heating.",
+    "steps": [
+      "洋葱对半切，去除根芯，沿纤维方向切薄片。",
+      "刀稍向前推，扶菜手手指弯曲，用指关节轻抵刀面控制厚度，手指避开刀刃。",
+      "需要改善生食口感时，短暂浸水后沥干。"
+    ],
+    "stepsEn": [
+      "Halve the onion, remove the core and slice thinly along the fibers.",
+      "Push the knife slightly forward. Curl the guiding fingers and lightly guide the blade side with a knuckle to control thickness, keeping fingertips clear of the edge.",
+      "For a crisper raw texture, briefly soak in water and drain."
+    ],
+    "reasons": ["顺纹切有助于加热后保持形状和口感，适合炒菜、汤等。"],
+    "reasonsEn": [
+      "Cutting along the fibers helps preserve shape and texture when heated, useful for stir-fries and soups."
+    ],
+    "mistakes": ["没有按纤维方向下刀，就不能指望相同的保形效果。"],
+    "mistakesEn": [
+      "Cutting in a different direction will not give the same shape retention."
+    ],
+    "boundary": "顺纹切适合保留口感；短暂浸水是生食口感处理，不是储存方法。",
+    "boundaryEn": "Use this direction when retaining texture matters; brief soaking is a raw-texture treatment, not a storage method.",
+    "tags": ["洋葱", "刀工", "onion", "slicing"],
+    "recipeIds": [],
+    "sources": ["https://www.youtube.com/watch?v=W5GM33NabB0"]
+  },
+  {
+    "id": "carrot-fine-julienne",
+    "category": "prep",
+    "title": "胡萝卜薄片切细丝",
+    "titleEn": "Fine carrot julienne from thin slices",
+    "summary": "先切薄片再叠齐切丝，适合沙拉等用途。",
+    "summaryEn": "Thinly slice, align and julienne carrots for salads and other dishes.",
+    "scope": "先切薄片再叠齐切丝，适合沙拉等用途。",
+    "scopeEn": "Thinly slice, align and julienne carrots for salads and other dishes.",
+    "steps": [
+      "胡萝卜去皮去蒂，先切出平面，再将平面朝下放稳，切薄片。",
+      "薄片横向错开并整齐叠放，向前推刀切细丝；扶菜手弯曲，指尖避开刀刃。",
+      "可短暂浸水改善口感，然后充分沥干。"
+    ],
+    "stepsEn": [
+      "Peel and trim the carrot. Make a flat surface, place it flat-side down and cut thin slices.",
+      "Offset the slices sideways and stack neatly, then push the knife forward to cut fine strips. Curl the guiding hand and keep fingertips clear of the edge.",
+      "Optionally soak briefly in water for texture, then drain well."
+    ],
+    "reasons": [
+      "平面朝下更稳；薄片的厚度决定最后细丝的粗细，叠齐有助于粗细一致。"
+    ],
+    "reasonsEn": [
+      "A flat base is more stable. Slice thickness determines the fineness of the strips, and neatly aligned slices help produce an even finish."
+    ],
+    "mistakes": [
+      "薄片厚薄不一或叠放杂乱，会使细丝不均匀。",
+      "不要长时间泡水，以免营养成分流失。"
+    ],
+    "mistakesEn": [
+      "Uneven slices or a disordered stack produce uneven strips.",
+      "Avoid prolonged soaking, which can leach nutrients."
+    ],
+    "boundary": "适用于需要均匀细丝的沙拉等做法；浸水只需短暂，使用前充分沥干。",
+    "boundaryEn": "Use for salads and other dishes needing even fine strips. Soak only briefly and drain thoroughly before use.",
+    "tags": ["胡萝卜", "切丝", "carrot", "julienne"],
+    "recipeIds": [],
+    "sources": ["https://www.youtube.com/watch?v=W5GM33NabB0"]
+  },
+  {
+    "id": "potato-julienne",
+    "category": "prep",
+    "title": "土豆切薄片再切均匀细丝",
+    "titleEn": "Slicing potatoes into even fine strips",
+    "summary": "握稳薄菜刀，刀身保持垂直；薄片铺平后切丝，切好洗去表面淀粉。",
+    "summaryEn": "Hold a thin slicing cleaver steadily and keep it vertical; lay slices flat before cutting strips, then rinse away surface starch.",
+    "scope": "用薄菜刀手切土豆丝，适用于需要粗细均匀土豆丝的后续烹调。",
+    "scopeEn": "Hand-cutting potato strips with a thin Chinese slicing cleaver for dishes requiring even julienne.",
+    "steps": [
+      "先握稳刀：无名指和小指握住刀柄，拇指与中指夹稳刀身，食指辅助控制。握刀重心和发力方向保持一致，不要只把手指并拢抓着刀柄，让刀左右扭动。",
+      "切下一小片土豆，贴在刀身右侧，作为辅助分离后续切片的隔片，再继续切。",
+      "切薄片时让刀身垂直于砧板，厚薄尽量一致。把切好的片推开、错叠，铺得尽量平整，不要堆成高高一摞。",
+      "扶稳铺好的土豆片，保持刀身垂直，均匀切成细丝。先慢切、切匀，再逐渐提高速度。",
+      "需要批量处理且已经熟练时，可把两份分别切好、铺平的土豆片叠合后一起切；每层仍要平整，刀身不能倾斜。",
+      "切好的丝放入清水中，减少接触空气后的变色。反复换水清洗表面淀粉，直到水清澈，再按后续菜肴要求处理。"
+    ],
+    "stepsEn": [
+      "Establish a steady grip: hold the handle with the ring and little fingers, pinch the blade with the thumb and middle finger, and use the index finger for support. Keep the grip balanced and aligned with the cutting force rather than bunching the fingers around the handle and allowing the blade to twist.",
+      "Cut a small potato slice and place it on the right side of the blade as a spacer to help separate subsequent slices, then continue slicing.",
+      "Keep the blade perpendicular to the board while making thin slices of even thickness. Spread and overlap the slices as flat as possible instead of building a tall stack.",
+      "Steady the arranged slices and cut evenly into fine strips with the blade still vertical. Start slowly and evenly before increasing speed.",
+      "For batch work after gaining confidence, overlap two separately sliced and flattened portions and cut them together. Keep each layer flat and the blade upright.",
+      "Put the strips in water to reduce discoloration from contact with air. Change the water and rinse away surface starch repeatedly until the water is clear, then prepare for the intended dish."
+    ],
+    "reasons": [
+      "握刀不稳会让刀身扭动。切片和切丝都保持垂直，才容易让厚度与宽度接近，切出截面方正、粗细一致的丝。",
+      "薄片铺得平，刀刃经过各片时角度更一致；堆得高又倾斜，会让土豆丝粗细不均。",
+      "刀侧的土豆隔片有助于减少后续薄片贴刀。切丝后清水隔绝空气，换水洗去表面淀粉，避免一直泡在浑浊的淀粉水里。"
+    ],
+    "reasonsEn": [
+      "An unstable grip lets the blade twist. Keeping it upright for both slicing and shredding makes slice thickness and strip width more consistent, producing even strips with a square cross-section.",
+      "Flat, overlapping slices meet the blade at a more consistent angle. A tall, tilted stack produces uneven strips.",
+      "The potato spacer helps keep subsequent slices from clinging to the blade. Water limits air exposure after cutting; changing it removes surface starch instead of leaving the strips in cloudy starch water."
+    ],
+    "mistakes": [
+      "只求快，刀身向一侧歪，既影响粗细，也容易切到扶菜的手。",
+      "片还没铺平就切丝，或初学时一次叠太多。",
+      "把刚切好的丝一直放在浑浊水里，不换水清洗。"
+    ],
+    "mistakesEn": [
+      "Chasing speed while tilting the blade makes uneven strips and can bring the edge toward the guiding hand.",
+      "Shredding before flattening the slices, or stacking too many portions as a beginner.",
+      "Leaving freshly cut strips in cloudy water without changing it and rinsing."
+    ],
+    "boundary": "这是一份手切刀工与下锅前清水处理的方法。批量叠切要以能稳定控制为前提，泡水不能当作长期保鲜方法。",
+    "boundaryEn": "This covers hand-cutting and water treatment before cooking. Stack portions only when you can control them steadily; soaking is not a long-term preservation method.",
+    "tags": [
+      "土豆",
+      "土豆丝",
+      "切丝",
+      "刀工",
+      "薄片",
+      "粘刀",
+      "王刚",
+      "potato",
+      "julienne",
+      "knife skills",
+      "starch"
+    ],
+    "recipeIds": [],
+    "sources": ["https://www.youtube.com/watch?v=EhyQom5jiTE"]
+  },
+  {
+    "id": "peppers-fine-slices",
+    "category": "prep",
+    "title": "甜椒切细丝与青椒切片",
+    "titleEn": "Fine bell pepper strips and green pepper slices",
+    "summary": "甜椒细丝与小青椒切片采用不同下刀方式。",
+    "summaryEn": "Bell pepper strips and smaller green pepper slices use different blade movements.",
+    "scope": "甜椒细丝与小青椒切片采用不同下刀方式。",
+    "scopeEn": "Bell pepper strips and smaller green pepper slices use different blade movements.",
+    "steps": [
+      "甜椒纵向对半切，手掰去蒂和籽，再切成四瓣。削去内侧白瓤；要更细薄的成品可多削一些，要保留口感则留下较厚椒肉。",
+      "将甜椒固定稳，指尖避开刀刃，以刀尖向自己方向拉切细丝。切好可短暂浸水，使口感更爽脆、椒丝卷曲，便于装饰，随后沥干。",
+      "小青椒用手指按压蒂部，让蒂籽与椒肉分开。轻扶椒身，以向下压刀方式切片。"
+    ],
+    "stepsEn": [
+      "Halve bell peppers lengthwise, break out the stems and seeds by hand, then quarter. Pare away inner pith; trim more deeply for thinner results or leave thicker flesh for more texture.",
+      "Hold the pepper securely with fingertips clear of the edge and use the blade tip in a pulling cut toward you to make fine strips. Brief soaking can crisp and curl the strips for decoration; drain afterward.",
+      "Press the stem of a smaller green pepper inward to separate the stem and seeds from the flesh. Hold lightly and slice with a downward pressing cut."
+    ],
+    "reasons": ["修整内侧厚度会改变细丝的薄厚与口感。小刀方便修整甜椒内侧。"],
+    "reasonsEn": [
+      "Trimming the inner thickness changes the fineness and texture of the strips. A petty knife is useful for trimming the interior."
+    ],
+    "mistakes": ["不要把甜椒拉切细丝和小青椒向下压切混为同一方法。"],
+    "mistakesEn": [
+      "Do not treat the pulling cut for bell pepper strips and the downward cut for green peppers as the same method."
+    ],
+    "boundary": "青椒切片适合披萨配料、汤和沙拉；短暂浸水用于甜椒装饰，不是保鲜流程。",
+    "boundaryEn": "Green pepper slices suit pizza toppings, soups and salads. Brief soaking is for decorative bell pepper strips, not a preservation process.",
+    "tags": ["甜椒", "青椒", "刀工", "pepper", "slicing"],
+    "recipeIds": [],
+    "sources": ["https://www.youtube.com/watch?v=W5GM33NabB0"]
+  },
+  {
+    "id": "drain-noodles-before-stir-frying",
+    "category": "prep",
+    "title": "炒面炒粉前先冷却沥干",
+    "titleEn": "Cooling and draining noodles before stir-frying",
+    "summary": "鲜碱面先短煮，干米粉先泡软；冷却后处理好水分，再拌油下锅。",
+    "summaryEn": "Parboil fresh alkaline noodles or soak dry rice vermicelli, then cool, drain and coat with oil before stir-frying.",
+    "scope": "这两份家常炒面的鲜碱面条与新竹米粉；分别按各自方法预处理。",
+    "scopeEn": "Fresh alkaline noodles and Hsinchu rice vermicelli in these two home stir-fries, each with its own preparation.",
+    "steps": [
+      "鲜碱面保持大火短煮，期间分两到三次加冷水，约 40 秒至七成熟；过冷水放凉，充分沥干，拌油与老抽。",
+      "新竹米粉温水泡 10 分钟后过凉水，攥干水分，再抓入少许食用油。",
+      "配菜和蛋先分别处理，面或粉入锅后再合炒，避免带着大量表面水分下锅。"
+    ],
+    "stepsEn": [
+      "Parboil fresh alkaline noodles over high heat, adding cold water in two or three additions, for about 40 seconds until roughly seven-tenths cooked. Cool in cold water, drain thoroughly and coat with oil and dark soy sauce.",
+      "Soak Hsinchu rice vermicelli in warm water for 10 minutes, rinse cold, squeeze dry and toss with a little cooking oil.",
+      "Prepare the vegetables and eggs separately before combining with the noodles, keeping excess surface water out of the pan."
+    ],
+    "reasons": [
+      "家用灶火力有限，表面水分过多更难快速炒散、炒干；沥水和适量拌油有助于减少粘连。",
+      "两种面粉制品的吸水与预熟方法不同，不能把鲜碱面短煮直接换成米粉温泡。"
+    ],
+    "reasonsEn": [
+      "Home burners have limited power. Excess surface water makes noodles harder to separate and dry quickly; draining and coating lightly with oil help reduce sticking.",
+      "These noodle products hydrate and precook differently; brief boiling for fresh alkaline noodles is not interchangeable with warm soaking for vermicelli."
+    ],
+    "mistakes": ["只沥一下就把湿面团倒入锅，或把不同品种统一按同一时间煮。"],
+    "mistakesEn": [
+      "Adding wet clumps after only a brief drain, or assigning the same cooking time to different noodle products."
+    ],
+    "boundary": "时间仅对应这里两种面粉制品。蒸炒面、凉拌面和其他米粉仍应按各自做法处理。",
+    "boundaryEn": "Timings concern these two noodle products. Steamed yakisoba, cold noodles and other rice noodles retain their own preparation methods.",
+    "recipeIds": ["liuyi-stir-fried-noodles", "feng-night-market-vermicelli"],
+    "sources": [
+      "https://www.youtube.com/watch?v=gN1QkOQuT7E",
+      "https://www.youtube.com/watch?v=Dv160Sma57w"
+    ],
+    "tags": ["炒面", "米粉", "沥水", "防粘", "noodles", "drain"]
+  },
+  {
+    "id": "drain-shrimp-before-eggs",
+    "category": "heat",
+    "title": "虾仁沥水后再合蛋液",
+    "titleEn": "Draining shrimp before combining with eggs",
+    "summary": "虾先炒、先沥水，最后再合蛋液，快速推折并用余温完成。",
+    "summaryEn": "Cook and drain shrimp first, combine with the eggs at the last moment, then fold quickly and finish with residual heat.",
+    "scope": "杰少滑蛋虾仁的分蛋与快炒流程。",
+    "scopeEn": "Remus’s separated-egg and quick-folding method for shrimp with silky eggs.",
+    "steps": [
+      "虾仁加盐、胡椒、生粉和麻油拌匀，先炒至接近熟透，盛入漏篮沥去油水。",
+      "蛋黄先拌少许生抽，临下锅前加葱花，再合蛋白略拌，最后放虾仁。",
+      "锅里补油，倒入混合蛋液快速推折，开始凝固就关火，继续用余温将蛋液和虾仁煮熟，立即装盘。"
+    ],
+    "stepsEn": [
+      "Season shrimp with salt, pepper, starch and sesame oil. Stir-fry until nearly cooked through and drain oil and liquid in a strainer.",
+      "Mix a little light soy sauce into the yolks first. Just before cooking, add scallion, briefly combine with the whites and finally add the shrimp.",
+      "Replenish the wok oil, pour in the mixture and fold quickly. Turn off the heat as the eggs begin setting, continue with residual heat until the eggs and shrimp are cooked, then plate immediately."
+    ],
+    "reasons": [
+      "虾炒后还会释出水分，先沥干能减少带入蛋液的油水。",
+      "鸡蛋吸油，合炒前补油；关火后仍可用热锅余温完成凝固，做好立即吃能减少放置出水。"
+    ],
+    "reasonsEn": [
+      "Shrimp release liquid after frying; draining reduces oil and water carried into the eggs.",
+      "Eggs absorb oil, so replenish it before combining. The hot wok continues setting the eggs off heat; serving immediately reduces liquid released during standing."
+    ],
+    "mistakes": [
+      "虾仁连油水直接倒入蛋液，或开始就把蛋白和蛋黄长时间打成完全均匀。"
+    ],
+    "mistakesEn": [
+      "Pouring shrimp and their liquid into the eggs, or thoroughly beating whites and yolks together from the start."
+    ],
+    "boundary": "这是此款分蛋滑蛋的流程；不要与先把全蛋打匀的其他炒蛋做法混成同一顺序。",
+    "boundaryEn": "This sequence belongs to this separated-egg preparation; keep it distinct from recipes that beat whole eggs together first.",
+    "recipeIds": ["remus-shrimp-eggs"],
+    "sources": ["https://www.youtube.com/watch?v=MzPWOE45YcQ"],
+    "tags": ["虾仁", "滑蛋", "沥水", "余温", "shrimp", "eggs"]
+  },
+  {
+    "id": "rice-cooker-meal-liquid",
+    "category": "heat",
+    "title": "电饭锅焖饭先算汤水",
+    "titleEn": "Counting liquid in rice-cooker meals",
+    "summary": "先煸香配料，再把汤汁计入煮饭水量；每款独立烹煮。",
+    "summaryEn": "Brown the ingredients first and count their broth as rice-cooking liquid; cook each variation separately.",
+    "scope": "阿伟六款电饭锅焖饭中，连汤入锅的做法。",
+    "scopeEn": "Awei’s rice-cooker variations that transfer ingredients together with their broth.",
+    "steps": [
+      "先按平常相同米量煮饭的水量作参照，再准备配料和汤汁。",
+      "配料煸香、调味并把汤烧开，连汤倒入淘好米的电饭锅，用筷子把食材拨匀。",
+      "汤汁本身计入煮饭液体，咖喱鸡腿饭的牛奶也在其中；不要倒入汤后再盲目补一整份煮饭水。"
+    ],
+    "stepsEn": [
+      "Use the amount of water normally used for the same quantity of rice as the starting reference, then prepare the ingredients and broth.",
+      "Brown and season the ingredients, bring the broth to a boil, transfer everything over the rinsed rice and distribute with chopsticks.",
+      "Count the broth as cooking liquid, including the milk in the curry chicken variation; do not blindly add a full separate portion of rice water after the broth."
+    ],
+    "reasons": [
+      "不同配料会带入汤汁、牛奶或油脂；水量掌握不好，成品容易过湿。",
+      "腊肠与五花肉自身出油，最初只需少量油煸香。"
+    ],
+    "reasonsEn": [
+      "Ingredients bring broth, milk or fat; poor liquid control can leave the finished rice too wet.",
+      "Chinese sausage and pork belly render their own fat, so start frying them with only a little oil."
+    ],
+    "mistakes": [
+      "把示范中的碗数当成所有米量都适用的固定比例，或把六款独立做法依次叠加。"
+    ],
+    "mistakesEn": [
+      "Treating the demonstrated bowl measures as a fixed ratio for every rice quantity, or stacking all six independent preparations into one batch."
+    ],
+    "boundary": "按实际米量、电饭锅和所选配方调整；腊肠窝蛋饭中途加料的流程另行保留。",
+    "boundaryEn": "Adjust for the actual rice quantity, cooker and chosen preparation. Retain the separate midway-topping sequence for sausage-and-egg rice.",
+    "recipeIds": ["awei-one-pot-rice"],
+    "sources": ["https://www.youtube.com/watch?v=vq3_Clzyg2E"],
+    "tags": ["焖饭", "电饭锅", "水量", "汤汁", "rice", "liquid"]
   }
 ]

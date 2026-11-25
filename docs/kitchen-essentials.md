@@ -4,9 +4,9 @@ Kitchen essentials is a separate bilingual reference collection at `#essentials`
 
 ## Organization
 
-The collection contains twenty-one references in four populated categories: Ingredient preparation, Heat & doneness, Seasoning & aroma, and Storage & meal preparation. The nine-video expansion adds nine references, including explicitly sourced caramelized-onion storage. Japanese chef series is the source collection, independent of the task-oriented categories.
+The collection contains thirty-one references in four populated categories: Ingredient preparation, Heat & doneness, Seasoning & aroma, and Storage & meal preparation. The nine-video expansion adds nine references, including explicitly sourced caramelized-onion storage. The coconut sago addition contributes cooking and storage references from Ali Kitchen. The eleven-video expansion adds seven references, including three standalone vegetable-cutting entries whose video source is sufficient without an invented recipe association. The potato julienne addition places Wang Gang’s standalone knife lesson alongside the existing vegetable preparation references. Source collections remain independent of task-oriented categories; the renderer must not attribute every reference to SAMUKICHI.
 
-Content lives in `src/kitchen-essentials.json`; category metadata and recipe association helpers live in `src/kitchen-essentials.ts`. Routes use stable reference IDs, for example `#essentials/soy-sauce-pan`. Existing recipe IDs, favorites and notes are unchanged. Reference pages link to associated recipes; recipes expose Related kitchen essentials.
+Content lives in `src/kitchen-essentials.json`; category metadata and recipe association helpers live in `src/kitchen-essentials.ts`. Routes use stable reference IDs, for example `#essentials/soy-sauce-pan`. Existing recipe IDs, favorites and notes are unchanged. Reference pages link to associated recipes when present; recipes expose Related kitchen essentials. Standalone references use their own original YouTube sources for video playback and labels, and omit the empty related-recipes section.
 
 ## Editorial rules
 

@@ -15,7 +15,7 @@ test("search focuses without losing the input and browser Back leaves search mod
   await expect(page.locator(".search-results-count")).toContainText("找到");
   await page.goBack();
   await expect(page.locator(".app-shell")).not.toHaveClass(/search-active/);
-  await expect(page.locator(".intro")).toBeVisible();
+  await expect(page.locator(".discovery-page-heading")).toBeVisible();
 });
 test("long pages expose a working floating back-to-top control", async ({
   page,

@@ -1,0 +1,53 @@
+# Eleven-video source review
+
+The initial cover notes below are historical. The user subsequently requested photographic regeneration; see [Cover fidelity refresh](cover-fidelity-refresh.md) and the current [Visual direction](visual-style.md).
+
+Reviewed on 2026-11-25. Ten dish entries and one standalone vegetable-cutting source were added using the existing curation and visual standards. The previous local coconut sago and three-category changes are retained. Canonical YouTube links are the only reader-facing reference URLs.
+
+## Source mapping
+
+| Source                                      | Entry                                            | Evidence                                                                                                |
+| ------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| https://www.youtube.com/watch?v=vq3_Clzyg2E | Awei's six rice-cooker meals                     | Full Chinese caption track and creator description; own thumbnail                                       |
+| https://www.youtube.com/watch?v=QttPBfho4_Q | Rosalina's tomato beef                           | Full en-US caption track and complete original recipe description; own thumbnail                        |
+| https://www.youtube.com/watch?v=2VRRTq7FhEA | Gao's lamb pilaf and basic rice                  | Full Chinese and English tracks plus original description; own thumbnail                                |
+| https://www.youtube.com/watch?v=Qz9Z0L8hHE4 | Ali's layered scallion meat pancakes             | Full English track, bilingual description and original storyboard shaping/finished frames               |
+| https://www.youtube.com/watch?v=Plhq-Asxfg4 | Scallion-scented cold noodles                    | All 14 original storyboard sheets, embedded-caption OCR and focused visual checks; description          |
+| https://www.youtube.com/watch?v=gN1QkOQuT7E | LiuYi's home-style stir-fried noodles            | Full zh-TW caption track and description; own thumbnail                                                 |
+| https://www.youtube.com/watch?v=Dv160Sma57w | Feng's beef rice vermicelli                      | Full zh-HK track and description; own thumbnail                                                         |
+| https://www.youtube.com/watch?v=kOI8NGf8K6c | Ting's soy-sauce fried noodles                   | All 16 original storyboard sheets, ingredient card and visible operations; no speech captions           |
+| https://www.youtube.com/watch?v=MzPWOE45YcQ | Remus's silky shrimp eggs                        | All 15 original storyboard sheets with embedded-caption OCR, focused frames and creator ingredient list |
+| https://www.youtube.com/watch?v=0hDfXBQhiZg | Ajian's scallion-salt pork chops                 | Full zh-CN track and description; own thumbnail                                                         |
+| https://www.youtube.com/watch?v=W5GM33NabB0 | Three Kitchen essentials: onion, carrot, peppers | Full original English track and creator description; no finished dish invented                          |
+
+Eight sources expose usable caption tracks. Three expose none. Full media for those three and for the pancake visual check returned HTTP 403; the TVB audio request also returned 403. No repeated attempts at the blocked media were made. Public original storyboard sheets remained accessible and provided the visual evidence recorded above. This review does not claim uninterrupted footage or original-audio review. Metadata, tracks, OCR, original sheets and generated PNGs remain outside version control.
+
+## Content decisions
+
+Awei's six independent preparations are retained in one entry with six method sections, not combined into one rice batch. The water-measuring explanation is represented by the normal same-rice-quantity cooking baseline, without recommending dirty rinse water. Milk and broth count toward cooking liquid. Source bowls, spoonfuls and curry roux pieces are not converted to invented weights. A blanching suggestion is not presented as a way to salvage spoiled pork.
+
+Rosalina's approximately 35 g garlic comes from the description rather than converting the caption's approximate clove count. Rendered beef fat is distinguished from dairy butter. Garlic shoots remain garlic shoots. Pasta is a serving accompaniment because a pasta-boiling procedure is not supplied. Tomato sauce, smoked paprika and Worcestershire sauce retain their actual identities. With the user-approved three practical browse shelves, this home-cooking entry is assigned Chinese; that browse assignment is not a historical cuisine-origin claim or a reason to introduce another category.
+
+Gao's rice amounts are measured by volume, not converted to grams. Count remaining lamb broth toward the 1000 ml total liquid; the demonstrated 100 ml remainder is not extra liquid. The basic rice and lamb pilaf have different cooking times. Raisins appear in captions and are included despite their omission from the description. The basmati reference is scoped to this rice and preparation.
+
+The pancake description's stated 200 ml cup conflicts with its boiling-water parenthetical volume. Weight measures take precedence and contradictory cup equivalents are omitted. Five-spice is not allspice despite the description's English mistranslation. The caption's 5–6 minute frying range is retained separately from dough resting and shaping. Original storyboard sheets around 446–535 seconds show rolling the filled sheet into a log, coiling into a round and pressing; this was checked visually and added in both languages. Freezing flattened raw pancakes and preparing dough/filling the night before are source-supported; no storage duration or thawing procedure is invented.
+
+LiuYi's actual captioned recipe does not substantiate the promotional description's chapter times or overnight-noodle claims. Fresh alkaline noodles are parboiled briefly, cooled, drained, coated with oil and dark soy and later stir-fried. Approximate 40 seconds and partial doneness are specific to that demonstration. Mala seasoning 5 g and light soy 10 g are retained. Garlic is split between the aromatic base and final stage. The author is 留意美食, not an inferred person's name.
+
+Feng uses beef with cabbage, carrots, sprouts and eggs. The cover depicts the principal beef version rather than importing ham from a possible thumbnail interpretation. Hsinchu vermicelli soaks in warm water for 10 minutes, is rinsed, squeezed and oiled. A large spoonful of salt and half a spoonful of oyster sauce remain unspecified spoon measures. The market cut name diaolong is retained without asserting anatomy. Pork, ham and shrimp are alternatives, not simultaneous additions.
+
+Ajian's title and actual preparation use scallions and garlic despite spoken references to onion pork chops. No onion is invented. Sweet potato starch is two large handfuls, not converted to grams. Sugar is included, so low-sugar and child-health promotional claims are omitted. One and a half jin is preserved without an unsupported unit conversion. Sesame oil has no inferred spoon amount. Medium-low frying and cooking through remain distinct from subsequent low-heat seasoning.
+
+The cold noodle recipe was resolved from original embedded captions and focused sheets. It contains cucumber, cilantro, peanuts, hot scallion oil and soy dressing, not meat and not an invented vinegar addition. Original spoonfuls remain unspecified. The cooked noodles cool in boiled-and-cooled water. The cover was corrected to remove the initial mistaken interpretation of peanuts as meat.
+
+Remus's original list supplies 14 shrimp, 6 eggs and 1 scallion. Captions and frames establish separate yolks and whites, light soy in the yolks, nearly cooked shrimp drained before combination, fresh wok oil and brief final mixing followed by folding and residual-heat completion. No oil quantity, heat setting or cooking timer is invented. The reason for separating eggs is not expanded into an unsupported protein mechanism. The recipe and reference require completing cooking and serving promptly.
+
+The TVB source has no usable speech captions. Its original ingredient card establishes 4 noodle cakes, half a jin each of chives and trimmed sprouts, half a red onion, dark/light soy, salt and sesame garnish. Visible order is sprouts, chives, red onion, vegetables removed; noodles separated and fried with long chopsticks; dark soy, returned vegetables and final seasoning. Spoken heat, timings and the pre-camera preparation of raw noodles remain unavailable. The recipe therefore takes cooked, drained, separated stir-fry noodles as its explicit starting ingredient, without inventing a blanching duration. A superficially similar [official myTV SUPER recipe](https://www.mytvsuper.com/tc/hkrecipes/recipe/nNdGheIP) has different episode attribution, quantities and vegetable order, plus an AI-assisted-content footer; its raw-noodle treatment and measurements were not imported. Do not describe this as complete speech verification.
+
+SAMUKICHI's vegetable video supplies practical knife preparation rather than a dish. Three standalone references cover onions along the fibers, carrot thin-slice julienne and the distinct bell/green pepper methods. The description's katsuramuki characterization and extra green-pepper claims are not substituted for the actual captioned method. Brief soaking is not converted to preservation advice. Standalone references have no fabricated recipe association, use their direct source video and omit an empty related-recipes section.
+
+## Reusable references and illustrations
+
+Seven new references cover basmati liquid/steam, the three vegetable preparations, noodle draining, shrimp draining before egg combination and rice-cooker liquid management. Existing narrowly scoped references are not broadly reassigned simply because they share an ingredient.
+
+Ten inspected 1536 × 1024 watercolor/gouache covers follow the established style and responsive pipeline. Each uses its own thumbnail or original finished-dish storyboard reference. Comparison text, logos, people and hands are removed. The rice collection is represented by its sausage-potato variation, served in an interpreted simple bowl. Beef, rice, noodle and pork covers retain their recognizable source presentation; the pancake and shrimp-egg covers use inspected finished-food frames. Generated illustrations are editorial interpretations, not documentary quantity evidence.

@@ -24,9 +24,9 @@ export function RecipeImage({ src, kind }: Props) {
   const local = src.startsWith("./recipes/") && src.endsWith(".jpg");
   const variant = (width: number) => src.replace(/\.jpg$/, `.${width}.jpg`);
   const mobileSizes =
-    "(max-width:450px) calc(100vw - 40px), calc((100vw - 54px)/2)";
+    "(max-width:350px) calc(100vw - 40px), calc((100vw - 52px)/2)";
   const cardSizes =
-    "(min-width:1450px) 250px, (min-width:1100px) calc((100vw - 340px)/3), calc((100vw - 316px)/2)";
+    "(min-width:1450px) 360px, (min-width:1100px) calc((100vw - 360px)/3), calc((100vw - 320px)/2)";
   return (
     <picture>
       {local && (

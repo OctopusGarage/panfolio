@@ -1,3 +1,4 @@
+import { recipeCategories } from "./recipe-categories";
 export interface Recipe {
   id: string;
   title: string;
@@ -9,6 +10,7 @@ export interface Recipe {
   image?: string;
   source?: string;
   collection?: string;
+  category?: string;
 }
 export function validateRecipes(recipes: Recipe[]) {
   const ids = new Set<string>();
@@ -16,6 +18,13 @@ export function validateRecipes(recipes: Recipe[]) {
     if (!recipe.id.trim() || ids.has(recipe.id))
       throw new Error("Recipe IDs must be nonempty and unique");
     ids.add(recipe.id);
+    if (
+      recipe.category !== undefined &&
+      !recipeCategories.some(
+        (category) => category.id !== "all" && category.id === recipe.category,
+      )
+    )
+      throw new Error(`Invalid recipe category: ${recipe.id}`);
     if (!recipe.title.trim() || !recipe.body.trim())
       throw new Error(`Missing recipe content: ${recipe.id}`);
     if (recipe.titleEn !== undefined && !recipe.titleEn.trim())

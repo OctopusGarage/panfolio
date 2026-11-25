@@ -1,0 +1,483 @@
+[
+  {
+    "id": "wash-broccoli",
+    "facets": {
+      "task": ["task:prep"],
+      "stage": ["stage:preparation"],
+      "ingredient": ["ingredient:broccoli", "ingredient:vegetables"],
+      "topic": ["topic:cleaning", "topic:slicing"],
+      "source": ["source:samukichi"]
+    },
+    "aliases": ["西兰花", "清洗", "切分", "broccoli", "wash"]
+  },
+  {
+    "id": "peel-asparagus",
+    "facets": {
+      "task": ["task:prep"],
+      "stage": ["stage:preparation"],
+      "ingredient": ["ingredient:asparagus", "ingredient:vegetables"],
+      "topic": ["topic:peeling", "topic:slicing"],
+      "source": ["source:samukichi"]
+    },
+    "aliases": ["芦笋", "削皮", "斜切", "asparagus"]
+  },
+  {
+    "id": "trim-chicken",
+    "facets": {
+      "task": ["task:prep"],
+      "stage": ["stage:preparation"],
+      "ingredient": ["ingredient:chicken-thigh", "ingredient:meat"],
+      "topic": ["topic:trimming", "topic:even-thickness"],
+      "source": ["source:samukichi"]
+    },
+    "aliases": ["鸡腿", "鸡肉", "修整", "chicken"]
+  },
+  {
+    "id": "dry-before-searing",
+    "facets": {
+      "task": ["task:prep"],
+      "stage": ["stage:preparation"],
+      "ingredient": [
+        "ingredient:salmon",
+        "ingredient:chicken-thigh",
+        "ingredient:asparagus",
+        "ingredient:shrimp",
+        "ingredient:beef",
+        "ingredient:chicken-breast",
+        "ingredient:vegetables",
+        "ingredient:meat",
+        "ingredient:seafood"
+      ],
+      "topic": ["topic:moisture", "topic:browning"],
+      "source": ["source:samukichi"],
+      "method": ["method:pan-fry"]
+    },
+    "aliases": ["擦干", "脆皮", "煎鱼", "水分", "dry", "sear"]
+  },
+  {
+    "id": "salt-salmon",
+    "facets": {
+      "task": ["task:prep"],
+      "stage": ["stage:preparation"],
+      "ingredient": ["ingredient:salmon", "ingredient:seafood"],
+      "topic": ["topic:salting", "topic:moisture"],
+      "source": ["source:samukichi"]
+    },
+    "aliases": ["三文鱼", "盐渍", "腌制", "salmon", "salt"]
+  },
+  {
+    "id": "cold-or-hot-pan",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:cooking"],
+      "ingredient": [
+        "ingredient:chicken-thigh",
+        "ingredient:salmon",
+        "ingredient:asparagus",
+        "ingredient:vegetables",
+        "ingredient:meat",
+        "ingredient:seafood"
+      ],
+      "topic": ["topic:pan-temperature", "topic:rendering"],
+      "source": ["source:samukichi"],
+      "method": ["method:pan-fry"]
+    },
+    "aliases": ["冷锅", "热锅", "预热", "逼油", "pan", "heat"]
+  },
+  {
+    "id": "contact-and-turning",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:cooking"],
+      "ingredient": [
+        "ingredient:salmon",
+        "ingredient:chicken-thigh",
+        "ingredient:beef",
+        "ingredient:meat",
+        "ingredient:seafood"
+      ],
+      "topic": ["topic:pan-contact", "topic:turning", "topic:sticking"],
+      "source": ["source:samukichi"],
+      "method": ["method:pan-fry"]
+    },
+    "aliases": ["粘锅", "翻面", "脆皮", "贴锅", "turn", "stick"]
+  },
+  {
+    "id": "blanch-chill-drain",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:preparation"],
+      "ingredient": ["ingredient:broccoli", "ingredient:vegetables"],
+      "topic": ["topic:blanching", "topic:chilling", "topic:draining"],
+      "source": ["source:samukichi"],
+      "method": ["method:boil"]
+    },
+    "aliases": ["西兰花", "焯水", "冰水", "沥干", "blanch", "broccoli"]
+  },
+  {
+    "id": "sear-then-steam",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:cooking"],
+      "ingredient": ["ingredient:asparagus", "ingredient:vegetables"],
+      "topic": ["topic:browning", "topic:doneness"],
+      "source": ["source:samukichi"],
+      "method": ["method:pan-fry", "method:steam"]
+    },
+    "aliases": ["芦笋", "短蒸", "煎", "asparagus", "steam"]
+  },
+  {
+    "id": "soy-sauce-pan",
+    "facets": {
+      "task": ["task:season"],
+      "stage": ["stage:cooking"],
+      "ingredient": [
+        "ingredient:soy-sauce",
+        "ingredient:broccoli",
+        "ingredient:asparagus",
+        "ingredient:mushroom",
+        "ingredient:rice",
+        "ingredient:vegetables",
+        "ingredient:grains"
+      ],
+      "topic": ["topic:seasoning", "topic:aromatics"],
+      "source": ["source:samukichi"]
+    },
+    "aliases": ["酱油", "锅边", "淋边", "增香", "soy sauce"]
+  },
+  {
+    "id": "butter-timing",
+    "facets": {
+      "task": ["task:season"],
+      "stage": ["stage:cooking"],
+      "ingredient": [
+        "ingredient:butter",
+        "ingredient:salmon",
+        "ingredient:asparagus",
+        "ingredient:chicken-thigh",
+        "ingredient:beef",
+        "ingredient:chicken-breast",
+        "ingredient:vegetables",
+        "ingredient:meat",
+        "ingredient:seafood"
+      ],
+      "topic": ["topic:basting", "topic:finishing"],
+      "source": ["source:samukichi"]
+    },
+    "aliases": ["黄油", "淋浇", "脆皮", "butter", "baste"]
+  },
+  {
+    "id": "garlic-oil",
+    "facets": {
+      "task": ["task:season"],
+      "stage": ["stage:cooking"],
+      "ingredient": [
+        "ingredient:garlic",
+        "ingredient:oil",
+        "ingredient:broccoli",
+        "ingredient:asparagus",
+        "ingredient:onion",
+        "ingredient:rice",
+        "ingredient:vegetables",
+        "ingredient:grains"
+      ],
+      "topic": ["topic:aromatics"],
+      "source": ["source:samukichi"]
+    },
+    "aliases": ["蒜油", "大蒜", "增香", "garlic", "oil"]
+  },
+  {
+    "id": "roast-cauliflower-browning",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:cooking"],
+      "ingredient": ["ingredient:cauliflower", "ingredient:vegetables"],
+      "topic": ["topic:browning", "topic:moisture", "topic:spacing"],
+      "source": ["source:samukichi"],
+      "method": ["method:roast"]
+    },
+    "aliases": ["花椰菜", "烤箱", "上色", "水分", "cauliflower", "roast"]
+  },
+  {
+    "id": "yakisoba-moisture-order",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:preparation", "stage:cooking"],
+      "ingredient": ["ingredient:noodles", "ingredient:grains"],
+      "topic": [
+        "topic:separation",
+        "topic:moisture",
+        "topic:browning",
+        "topic:sticking"
+      ],
+      "source": ["source:samukichi"],
+      "method": ["method:stir-fry"]
+    },
+    "aliases": ["炒面", "粘锅", "水分", "顺序", "yakisoba", "noodles"]
+  },
+  {
+    "id": "mushrooms-water-before-oil",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:cooking"],
+      "ingredient": ["ingredient:mushroom", "ingredient:vegetables"],
+      "topic": ["topic:moisture", "topic:browning"],
+      "source": ["source:samukichi"],
+      "method": ["method:pan-fry"]
+    },
+    "aliases": ["蘑菇", "水分", "上色", "煎制", "mushrooms", "browning"]
+  },
+  {
+    "id": "canned-tuna-oil-and-heat",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:preparation", "stage:cooking"],
+      "ingredient": ["ingredient:tuna", "ingredient:seafood"],
+      "topic": ["topic:oil-retention", "topic:heating"],
+      "source": ["source:samukichi"]
+    },
+    "aliases": ["金枪鱼", "罐头", "留油", "加热", "tuna", "canned", "oil"]
+  },
+  {
+    "id": "devein-shrimp",
+    "facets": {
+      "task": ["task:prep"],
+      "stage": ["stage:preparation"],
+      "ingredient": ["ingredient:shrimp", "ingredient:seafood"],
+      "topic": ["topic:deveining", "topic:cleaning"],
+      "source": ["source:samukichi"]
+    },
+    "aliases": ["虾", "去虾线", "清洗", "shrimp", "devein"]
+  },
+  {
+    "id": "caramelize-onions",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:cooking"],
+      "ingredient": ["ingredient:onion", "ingredient:vegetables"],
+      "topic": ["topic:caramelizing", "topic:deglazing", "topic:browning"],
+      "source": ["source:samukichi"],
+      "method": ["method:pan-fry"]
+    },
+    "aliases": ["洋葱", "焦糖化", "去焦", "onion", "caramelize", "deglaze"]
+  },
+  {
+    "id": "store-caramelized-onions",
+    "facets": {
+      "task": ["task:storage"],
+      "stage": ["stage:after-cooking"],
+      "ingredient": ["ingredient:onion", "ingredient:vegetables"],
+      "topic": [
+        "topic:storage",
+        "topic:portioning",
+        "topic:refrigeration",
+        "topic:freezing"
+      ],
+      "source": ["source:samukichi"]
+    },
+    "aliases": ["洋葱", "储存", "分装", "冷冻", "onion", "storage", "freeze"]
+  },
+  {
+    "id": "chicken-poaching-temperature",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:preparation", "stage:cooking"],
+      "ingredient": ["ingredient:chicken-breast", "ingredient:meat"],
+      "topic": ["topic:temperature", "topic:doneness"],
+      "source": ["source:samukichi"],
+      "method": ["method:boil", "method:pan-fry"]
+    },
+    "aliases": [
+      "鸡胸肉",
+      "水煮",
+      "温度计",
+      "chicken breast",
+      "poaching",
+      "thermometer"
+    ]
+  },
+  {
+    "id": "loosen-and-sear-fried-rice",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:cooking"],
+      "ingredient": [
+        "ingredient:rice",
+        "ingredient:egg",
+        "ingredient:eggs",
+        "ingredient:grains"
+      ],
+      "topic": ["topic:separation", "topic:moisture", "topic:browning"],
+      "source": ["source:samukichi"],
+      "method": ["method:stir-fry"]
+    },
+    "aliases": ["炒饭", "米饭", "打散", "fried rice", "rice", "pan contact"]
+  },
+  {
+    "id": "cook-sago-pearls",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:preparation", "stage:cooking"],
+      "ingredient": ["ingredient:sago"],
+      "topic": ["topic:doneness", "topic:resting"],
+      "source": ["source:ali-sago"],
+      "method": ["method:boil"]
+    },
+    "aliases": ["西米", "木薯淀粉", "透心", "白心", "sago", "tapioca"]
+  },
+  {
+    "id": "store-cooked-sago",
+    "facets": {
+      "task": ["task:storage"],
+      "stage": ["stage:after-cooking"],
+      "ingredient": ["ingredient:sago"],
+      "topic": [
+        "topic:storage",
+        "topic:cleaning",
+        "topic:separation",
+        "topic:refrigeration"
+      ],
+      "source": ["source:ali-sago"]
+    },
+    "aliases": ["西米", "冷藏", "拌糖", "黏连", "sago", "storage"]
+  },
+  {
+    "id": "basmati-broth-liquid",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:cooking"],
+      "ingredient": [
+        "ingredient:rice",
+        "ingredient:broth",
+        "ingredient:grains"
+      ],
+      "topic": [
+        "topic:liquid-measurement",
+        "topic:resting",
+        "topic:steam-release"
+      ],
+      "source": ["source:magic-ingredients"],
+      "method": ["method:boil"]
+    },
+    "aliases": ["印度香米", "焖饭", "汤汁", "basmati", "broth"]
+  },
+  {
+    "id": "onion-along-fibers",
+    "facets": {
+      "task": ["task:prep"],
+      "stage": ["stage:preparation"],
+      "ingredient": ["ingredient:onion", "ingredient:vegetables"],
+      "topic": ["topic:knife-skills", "topic:slicing"],
+      "source": ["source:samukichi"]
+    },
+    "aliases": ["洋葱", "刀工", "onion", "slicing"]
+  },
+  {
+    "id": "carrot-fine-julienne",
+    "facets": {
+      "task": ["task:prep"],
+      "stage": ["stage:preparation"],
+      "ingredient": ["ingredient:carrot", "ingredient:vegetables"],
+      "topic": ["topic:knife-skills", "topic:slicing", "topic:julienne"],
+      "source": ["source:samukichi"]
+    },
+    "aliases": ["胡萝卜", "切丝", "carrot", "julienne"]
+  },
+  {
+    "id": "potato-julienne",
+    "facets": {
+      "task": ["task:prep"],
+      "stage": ["stage:preparation"],
+      "ingredient": ["ingredient:potato", "ingredient:vegetables"],
+      "topic": [
+        "topic:knife-skills",
+        "topic:slicing",
+        "topic:julienne",
+        "topic:starch-rinsing"
+      ],
+      "source": ["source:wang-gang"]
+    },
+    "aliases": [
+      "土豆",
+      "土豆丝",
+      "切丝",
+      "刀工",
+      "薄片",
+      "粘刀",
+      "王刚",
+      "potato",
+      "julienne",
+      "knife skills",
+      "starch"
+    ]
+  },
+  {
+    "id": "peppers-fine-slices",
+    "facets": {
+      "task": ["task:prep"],
+      "stage": ["stage:preparation"],
+      "ingredient": [
+        "ingredient:bell-pepper",
+        "ingredient:green-pepper",
+        "ingredient:vegetables"
+      ],
+      "topic": ["topic:knife-skills", "topic:slicing", "topic:trimming"],
+      "source": ["source:samukichi"]
+    },
+    "aliases": ["甜椒", "青椒", "刀工", "pepper", "slicing"]
+  },
+  {
+    "id": "drain-noodles-before-stir-frying",
+    "facets": {
+      "task": ["task:prep"],
+      "stage": ["stage:preparation"],
+      "ingredient": [
+        "ingredient:noodles",
+        "ingredient:rice-vermicelli",
+        "ingredient:grains"
+      ],
+      "topic": [
+        "topic:draining",
+        "topic:soaking",
+        "topic:moisture",
+        "topic:sticking"
+      ],
+      "source": ["source:liuyi", "source:feng"],
+      "method": ["method:boil", "method:stir-fry"]
+    },
+    "aliases": ["炒面", "米粉", "沥水", "防粘", "noodles", "drain"]
+  },
+  {
+    "id": "drain-shrimp-before-eggs",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:preparation", "stage:cooking"],
+      "ingredient": [
+        "ingredient:shrimp",
+        "ingredient:egg",
+        "ingredient:seafood",
+        "ingredient:eggs"
+      ],
+      "topic": ["topic:draining", "topic:residual-heat", "topic:doneness"],
+      "source": ["source:remus"],
+      "method": ["method:stir-fry"]
+    },
+    "aliases": ["虾仁", "滑蛋", "沥水", "余温", "shrimp", "eggs"]
+  },
+  {
+    "id": "rice-cooker-meal-liquid",
+    "facets": {
+      "task": ["task:heat"],
+      "stage": ["stage:preparation", "stage:cooking"],
+      "ingredient": [
+        "ingredient:rice",
+        "ingredient:broth",
+        "ingredient:milk",
+        "ingredient:grains"
+      ],
+      "topic": ["topic:liquid-measurement", "topic:moisture"],
+      "source": ["source:awei"]
+    },
+    "aliases": ["焖饭", "电饭锅", "水量", "汤汁", "rice", "liquid"]
+  }
+]

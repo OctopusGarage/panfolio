@@ -56,8 +56,16 @@ test("all nine additions expose covers, translated methods, techniques and both 
     await page.getByRole("button", { name: "中文", exact: true }).click();
   }
   await page.goto("/#essentials");
-  await page.getByRole("button", { name: "保存与备餐", exact: true }).click();
-  await expect(page.locator(".essential-card")).toHaveCount(1);
+  const mobile = (page.viewportSize()?.width || 0) <= 760;
+  if (mobile)
+    await page.getByRole("button", { name: "筛选", exact: true }).click();
+  await (mobile ? page.getByRole("dialog") : page.locator(".discovery-sidebar"))
+    .locator("fieldset")
+    .filter({ has: page.getByText("任务", { exact: true }) })
+    .getByRole("checkbox", { name: /^保存 / })
+    .check();
+  if (mobile) await page.getByRole("button", { name: /^显示结果/ }).click();
+  await expect(page.locator(".essential-card")).toHaveCount(2);
   await page.locator(".essential-card a").first().click();
   await expect(page.locator(".essential-detail")).toContainText("3～4");
 });

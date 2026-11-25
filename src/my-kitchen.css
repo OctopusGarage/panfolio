@@ -1,0 +1,111 @@
+.my-kitchen nav,
+.my-kitchen footer {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-block: 1rem;
+}
+.my-kitchen nav button[aria-pressed="true"] {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+.my-kitchen .card > button {
+  width: 100%;
+  text-align: start;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+}
+.my-kitchen .card img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+.my-kitchen .card label {
+  display: grid;
+  gap: 0.4rem;
+  padding: 1rem;
+}
+.my-kitchen input {
+  min-width: 0;
+  width: 100%;
+}
+.kitchen-note {
+  white-space: pre-wrap;
+  padding-inline: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.my-kitchen > h2 {
+  margin: 10px 0;
+  font-size: 28px;
+}
+.my-kitchen > p {
+  color: var(--muted);
+  font-size: 14px;
+}
+.my-kitchen button {
+  font: inherit;
+  cursor: pointer;
+}
+.my-kitchen nav {
+  gap: 8px;
+  margin-block: 20px;
+}
+.my-kitchen nav button,
+.my-kitchen > div:not(.grid) button {
+  min-height: 44px;
+  border: 1px solid var(--border);
+  color: var(--ink);
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 8px 14px;
+}
+.my-kitchen nav button[aria-pressed="true"] {
+  background: var(--accent-soft);
+  border-color: var(--green);
+  text-decoration: none;
+  font-weight: 600;
+}
+.my-kitchen input {
+  min-height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+  background: var(--surface);
+  color: var(--ink);
+}
+.my-kitchen > input {
+  font-size: 16px;
+}
+.my-kitchen .card label {
+  font-size: 12px;
+  color: var(--muted);
+}
+.my-kitchen .kitchen-note {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.6;
+  font-size: 13px;
+}
+.my-kitchen > div:not(.grid) > div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 12px;
+}
+.my-kitchen footer {
+  justify-content: flex-start;
+  padding: 20px 0;
+  font-size: 13px;
+  gap: 20px;
+}
+.my-kitchen .grid {
+  align-items: start;
+}

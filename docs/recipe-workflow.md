@@ -6,6 +6,7 @@ This is the entry point for adding or revising Panfolio recipes, organizing vide
 
 - Always read [Recipe content guide](content-guide.md) for recipe structure, detail, bilingual fidelity and reference treatment.
 - Read [Kitchen essentials](kitchen-essentials.md) when assessing or extracting reusable knowledge.
+- Read [Discovery maintenance](discovery-guide.md) when adding or revising preparations, tags, aliases, filters or reference discovery metadata.
 - Read [Visual direction](visual-style.md) when adding or changing covers or their presentation.
 - Use [Japanese chef series](japanese-chef-series.md) as an example of source evidence and limitations, not as a fixed recipe count or universal cooking authority.
 
