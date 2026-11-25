@@ -19,3 +19,15 @@ The initial content is based on the reviewed SAMUKICHI captions and descriptions
 ## Verification
 
 Unit checks cover bilingual field completeness, unique IDs, populated categories, valid recipe associations, YouTube source domains and measured-value parity. Browser coverage verifies search, filtering, direct detail routes, English content, recipe round trips, empty results and mobile layout. Existing recipe and application checks continue to apply.
+
+## Ongoing extraction
+
+Whenever new recipe material is organized, review it for reusable knowledge. Preserve full instructions and contextual tips in the recipe; additionally create or improve a reference when the knowledge is useful independently. Search existing entries first and add relevant recipe associations instead of creating duplicates for the same technique.
+
+Choose titles based on everyday lookup questions or tasks. Each reference must stand alone without requiring the video to be opened. Keep concrete methods, reasons, common errors and scope limits clear. Do not create every possible section when it would be empty or repetitive.
+
+Classify by task: preparation; heat and doneness; seasoning and aroma; storage and meal preparation when sourced content exists. Food and technique search tags provide a separate lookup dimension. Source series are another dimension, not competing task categories. Do not freeze the collection at twelve entries or display empty categories for symmetry.
+
+A shared reference may combine several source examples, but must preserve their different conditions. Cold-pan thighs do not establish a cold-pan rule for all food; off-heat salmon butter does not override near-doneness chicken basting. Soy sauce contacting a hot pan for aroma is a technique for a desired result, not a universal requirement for soy sauce. Recipe-specific amounts and timings retain their food and preparation context.
+
+Never derive storage temperatures, durations, thawing or preservation procedures from a video that only demonstrates immediate cooking. Populate storage content only from appropriate evidence. Use the existing bilingual schema and recipe associations, and keep external references to the corresponding original YouTube videos for this video-derived collection.

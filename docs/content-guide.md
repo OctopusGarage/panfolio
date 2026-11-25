@@ -29,8 +29,20 @@ Use this Markdown structure:
 
 Use short action titles and complete sentences. Keep step numbering sequential. Use spaces between Arabic numbers and units, `～` for ranges, and Chinese punctuation. Omit unneeded tips and reference sections rather than adding empty headings. Collections may omit a shared ingredient list and use one numbered third-level heading per preparation.
 
-Do not repeat the dish title or embed its cover photo in the body; the detail layout renders both. Preserve supplied quantities, timing and actual methods. Remove conversational filler, decorative emojis, unsupported claims and duplicate descriptions. Keep useful video links in an optional `## 参考链接` section.
+Do not repeat the dish title or embed its cover photo in the body; the detail layout renders both. Preserve supplied quantities, timing and actual methods. Remove conversational filler, decorative emojis, unsupported claims and duplicate descriptions. For video-derived recipes with an original YouTube source, the `## 参考链接` section contains only that corresponding YouTube video. Do not add Bilibili chapter links, timestamp lists or duplicate source links. If an original YouTube source cannot be established, preserve the supplied source and resolve the reference treatment rather than inventing a YouTube URL. Older non-video sources need not be rewritten solely to conform to this workflow.
 
 ## English fidelity
 
 Translate the complete ingredient, method, tip and reference sections. Use `Ingredients`, `Method`, `Tips` and `References` headings with matching step numbering. Preserve numeric quantities, ranges, timing and units. Keep unspecified spoonfuls unspecified. Do not convert qualitative doneness into percentages, shacha into satay, or ambiguous market names into asserted species. Record source ambiguities in the evaluation report rather than inventing instructions. Run `pnpm eval` and refresh `pnpm eval:report` after the actual bilingual review and corrections.
+
+## Detail, explanations and reader-facing copy
+
+The goal is clear, complete cooking instructions, not the shortest possible text. Keep the practical sequence, heat level, timing where given, sensory cues, doneness checks and necessary operational explanations in the method. Retain useful counterexamples and the reasons behind techniques in the closing Tips section. Necessary explanations may remain beside their steps; avoid duplicating the same paragraph merely to fill a section.
+
+Remove editing-process statements such as “adapted from English subtitles,” “the video does not specify a weight” or “no alternative was provided.” An ingredient may simply be named when no quantity is supplied. Do not replace absent quantities with invented measurements or add a stock disclaimer to each line. Record meaningful source gaps, conflicts and the evidence actually reviewed in an English editorial document, such as a series source record. If a missing instruction makes a preparation unusable, resolve it from the source or keep it clearly as a serving idea rather than fabricating a complete recipe.
+
+Preserve the video's useful mistakes-and-corrections material: what goes wrong, the visible result, what to do instead and the relevant reason. Do not repeat promotional claims or treat a chef's explanation as permission to invent scientific mechanisms. For example, describe surface drying as helping browning; do not assert that searing creates an impermeable seal.
+
+Keep alternative preparations distinguishable. A bonus roll preparation may start from raw asparagus even when the main preparation uses already-seared asparagus. A serving suggestion without a sauce recipe remains a serving suggestion. Do not imply that every numbered variation must be performed in succession.
+
+Collections group recipes by a meaningful theme or source; categories group them by food or use. A fixed count from a previous task is not a collection limit. When ingesting new material, also assess whether it contributes reusable Kitchen essentials entries under [their content rules](kitchen-essentials.md).
