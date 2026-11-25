@@ -1,0 +1,13 @@
+{
+  "name": "panfolio",
+  "version": "0.1.0",
+  "description": "Read Panfolio recipes and kitchen techniques with original quantities, explanations and sources.",
+  "author": {
+    "name": "OctopusGarage",
+    "url": "https://github.com/OctopusGarage"
+  },
+  "homepage": "https://github.com/OctopusGarage/panfolio",
+  "repository": "https://github.com/OctopusGarage/panfolio",
+  "license": "MIT",
+  "keywords": ["cooking", "recipes", "kitchen", "panfolio"]
+}

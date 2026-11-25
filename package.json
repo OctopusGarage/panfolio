@@ -1,0 +1,68 @@
+{
+  "name": "panfolio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm images:build && vite --host 0.0.0.0",
+    "build": "pnpm images:build && pnpm content:check && pnpm distribution:check && pnpm ai:build && tsc --noEmit && vite build",
+    "test": "tsx --test tests/*.test.ts",
+    "test:e2e": "playwright test",
+    "preview": "vite preview",
+    "eval": "tsx scripts/eval.ts",
+    "typecheck": "tsc --noEmit",
+    "test:webkit": "playwright test --project=webkit",
+    "format": "prettier --write src tests scripts skills mcp distribution docs *.ts *.json *.html *.md .github/**/*.yml",
+    "format:check": "prettier --check src tests scripts skills mcp distribution docs *.ts *.json *.html *.md .github/**/*.yml",
+    "images:build": "tsx scripts/recipe-images.ts",
+    "eval:report": "tsx scripts/eval.ts --report",
+    "ai:build": "tsx scripts/build-ai.ts && python3 scripts/package-skill.py",
+    "content:build": "tsx scripts/build-markdown.ts",
+    "content:check": "tsx scripts/build-markdown.ts --check",
+    "mcp:prepare": "tsx scripts/build-mcp.ts",
+    "mcp:test": "pnpm distribution:check && pnpm mcp:prepare && pnpm --dir mcp test && pnpm --dir mcp typecheck",
+    "mcp:build": "pnpm mcp:prepare && pnpm --dir mcp build",
+    "mcp:dev": "pnpm mcp:prepare && pnpm --dir mcp exec cf dev",
+    "mcp:smoke": "pnpm --dir mcp exec tsx scripts/smoke.ts",
+    "mcp:icon": "tsx scripts/mcp-icon.ts",
+    "distribution:sync": "tsx scripts/sync-distribution.ts",
+    "distribution:check": "tsx scripts/sync-distribution.ts --check",
+    "sync": "pnpm content:build && pnpm mcp:icon && pnpm distribution:sync",
+    "release:prepare": "tsx scripts/prepare-release.ts",
+    "release:preflight": "tsx scripts/release.ts preflight",
+    "release:publish": "tsx scripts/release.ts publish",
+    "docs:check": "tsx scripts/check-docs.ts"
+  },
+  "dependencies": {
+    "@octopusgarage/s": "https://github.com/OctopusGarage/s/releases/download/sdk-v1.0.0/octopusgarage-s-1.0.0.tgz",
+    "qrcode": "^1.5.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.0.0",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "jsqr": "^1.4.0",
+    "prettier": "^3.10.1",
+    "sharp": "^0.35.5",
+    "tsx": "^4.20.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=22.12.0",
+    "pnpm": ">=10"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

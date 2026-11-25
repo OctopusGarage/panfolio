@@ -1,0 +1,1721 @@
+[
+  {
+    "id": "01.-ri-shi-ma-ling-shu-dun-rou",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "日式土豆炖肉",
+        "titleEn": "Japanese beef and potato stew (Nikujaga)",
+        "kind": "dish",
+        "searchTerms": [
+          "肉类",
+          "Meat",
+          "meat",
+          "牛肉",
+          "Beef",
+          "beef",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "土豆",
+          "Potato",
+          "马铃薯",
+          "馬鈴薯",
+          "potatoes",
+          "potato",
+          "洋葱",
+          "Onion",
+          "onion"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "02.ajian-ban-dan-chao-fan",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "阿见版蛋炒饭",
+        "titleEn": "Ajian-style egg fried rice",
+        "kind": "dish",
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "肉类",
+          "Meat",
+          "meat",
+          "香肠",
+          "Sausage",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "黄瓜",
+          "Cucumber",
+          "玉米",
+          "Corn",
+          "青豆",
+          "Peas"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "03.-xia-ren-dan-chao-fan",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "虾仁蛋炒饭",
+        "titleEn": "Shrimp and egg fried rice",
+        "kind": "dish",
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "虾",
+          "Shrimp",
+          "shrimp",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "04.-ji-dan-chao-mi-fen",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "鸡蛋炒米粉",
+        "titleEn": "Egg-fried rice vermicelli",
+        "kind": "dish",
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米粉",
+          "Rice vermicelli",
+          "rice vermicelli",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "豆芽",
+          "Bean sprouts"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "05.-shao-jiao-pi-dan-chao-fan",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "烧椒皮蛋炒饭",
+        "titleEn": "Charred pepper and century egg fried rice",
+        "kind": "dish",
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "皮蛋",
+          "Century egg",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "青椒",
+          "Green pepper",
+          "green pepper"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "06.-hong-shao-qie-zi",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "红烧茄子",
+        "titleEn": "Braised eggplant",
+        "kind": "dish",
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "茄子",
+          "Eggplant",
+          "肉类",
+          "Meat",
+          "meat",
+          "青椒",
+          "Green pepper",
+          "green pepper"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "07.-xing-zhou-chao-mi-fen",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "星洲炒米粉",
+        "titleEn": "Singapore-style fried rice vermicelli",
+        "kind": "dish",
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米粉",
+          "Rice vermicelli",
+          "rice vermicelli",
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork",
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "虾",
+          "Shrimp",
+          "shrimp",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "豆芽",
+          "Bean sprouts",
+          "洋葱",
+          "Onion",
+          "onion",
+          "青椒",
+          "Green pepper",
+          "green pepper"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "08.-hai-xian-fen-si-bao",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "海鲜粉丝煲",
+        "titleEn": "Seafood glass noodle casserole",
+        "kind": "dish",
+        "searchTerms": [
+          "粉丝",
+          "Glass noodles",
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "虾",
+          "Shrimp",
+          "shrimp",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "09.-qie-zi-chao-ji-dan",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "茄子炒鸡蛋",
+        "titleEn": "Eggplant and scrambled eggs",
+        "kind": "dish",
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "茄子",
+          "Eggplant",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "番茄",
+          "Tomato",
+          "青椒",
+          "Green pepper",
+          "green pepper"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10.-rang-pao-mian-hao-chi-fan-bei-de-10-zhong-zuo-fa",
+    "preparations": [
+      {
+        "id": "beef-ball",
+        "title": "牛肉丸泡面",
+        "titleEn": "Beef-ball noodle soup",
+        "kind": "dish",
+        "methodSteps": [1],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "肉类",
+          "Meat",
+          "meat",
+          "牛肉",
+          "Beef",
+          "beef"
+        ]
+      },
+      {
+        "id": "shacha-milk",
+        "title": "沙茶花生牛奶泡面",
+        "titleEn": "Shacha, peanut and milk noodles",
+        "kind": "dish",
+        "methodSteps": [2],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "牛奶",
+          "Milk",
+          "milk"
+        ]
+      },
+      {
+        "id": "ginger-scallion",
+        "title": "广式姜葱拌面",
+        "titleEn": "Cantonese ginger-scallion tossed noodles",
+        "kind": "dish",
+        "methodSteps": [3],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles"
+        ]
+      },
+      {
+        "id": "egg-custard",
+        "title": "鸡蛋羹泡面",
+        "titleEn": "Egg custard with noodle broth",
+        "kind": "dish",
+        "methodSteps": [4],
+        "searchTerms": ["蛋类", "Eggs", "eggs", "鸡蛋", "Egg", "egg"]
+      },
+      {
+        "id": "fried-egg-ham",
+        "title": "煎蛋火腿香辣泡面",
+        "titleEn": "Fried egg and ham spicy noodles",
+        "kind": "dish",
+        "methodSteps": [5],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "肉类",
+          "Meat",
+          "meat"
+        ]
+      },
+      {
+        "id": "poached-egg",
+        "title": "旋涡荷包蛋泡面",
+        "titleEn": "Swirled poached-egg noodles",
+        "kind": "dish",
+        "methodSteps": [6],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
+      },
+      {
+        "id": "salted-yolk-ham",
+        "title": "咸蛋黄火腿汤泡面",
+        "titleEn": "Salted egg yolk and ham noodle soup",
+        "kind": "dish",
+        "methodSteps": [7],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "咸蛋黄",
+          "Salted egg yolk",
+          "肉类",
+          "Meat",
+          "meat"
+        ]
+      },
+      {
+        "id": "century-egg",
+        "title": "皮蛋香菜泡面",
+        "titleEn": "Century egg and cilantro noodles",
+        "kind": "dish",
+        "methodSteps": [8],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "皮蛋",
+          "Century egg",
+          "肉类",
+          "Meat",
+          "meat"
+        ]
+      },
+      {
+        "id": "curry-potato",
+        "title": "咖喱土豆泡面",
+        "titleEn": "Curry and potato noodles",
+        "kind": "dish",
+        "methodSteps": [9],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "土豆",
+          "Potato",
+          "马铃薯",
+          "馬鈴薯",
+          "potatoes",
+          "potato"
+        ]
+      },
+      {
+        "id": "tomato",
+        "title": "番茄炒泡面",
+        "titleEn": "Tomato stir-fried instant noodles",
+        "kind": "dish",
+        "methodSteps": [10],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "番茄",
+          "Tomato",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11.-qing-zheng-huang-hua-yu",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "清蒸黄花鱼",
+        "titleEn": "Steamed yellow croaker",
+        "kind": "dish",
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "鱼",
+          "Fish",
+          "黄花鱼",
+          "Yellow croaker"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "12.-liang-ban-zhe-er-gen",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "凉拌折耳根",
+        "titleEn": "Cold houttuynia salad",
+        "kind": "dish",
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "折耳根",
+          "Houttuynia roots"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "13.-dou-chi-zheng-pai-gu",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "豆豉蒸排骨",
+        "titleEn": "Steamed pork ribs with black bean sauce",
+        "kind": "dish",
+        "searchTerms": [
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "土豆",
+          "Potato",
+          "马铃薯",
+          "馬鈴薯",
+          "potatoes",
+          "potato"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "14.-bo-cai-chao-ji-dan",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "菠菜炒鸡蛋",
+        "titleEn": "Spinach and scrambled eggs",
+        "kind": "dish",
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "菠菜",
+          "Spinach",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "15.-xia-ren-hua-dan",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "虾仁滑蛋",
+        "titleEn": "Silky scrambled eggs with shrimp",
+        "kind": "dish",
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "虾",
+          "Shrimp",
+          "shrimp",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "16.-suan-xiang-zi-ran-pai-gu",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "蒜香孜然排骨",
+        "titleEn": "Garlic and cumin ribs",
+        "kind": "dish",
+        "searchTerms": [
+          "肉类",
+          "Meat",
+          "meat",
+          "排骨",
+          "Ribs",
+          "猪肉",
+          "Pork",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "洋葱",
+          "Onion",
+          "onion"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "17.-xia-ren-chao-xi-lan-hua",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "虾仁炒西兰花",
+        "titleEn": "Stir-fried shrimp and broccoli",
+        "kind": "dish",
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "西兰花",
+          "Broccoli",
+          "broccoli",
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "虾",
+          "Shrimp",
+          "shrimp"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "18.-xiang-jian-yin-xue-yu",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "香煎银鳕鱼",
+        "titleEn": "Pan-seared yin xue yu",
+        "kind": "dish",
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "鱼",
+          "Fish",
+          "银鳕鱼",
+          "Yin xue yu fish"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "19.-wan-neng-tiao-liao-zhi-pai-huang-gua",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "万能料汁拍黄瓜",
+        "titleEn": "Smashed cucumber with all-purpose sauce",
+        "kind": "dish",
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "黄瓜",
+          "Cucumber",
+          "花生",
+          "Peanut"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "20.-jiao-si-fu-ru-chao-kong-xin-cai",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "椒丝腐乳炒空心菜",
+        "titleEn": "Water spinach with fermented bean curd and chili",
+        "kind": "dish",
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "空心菜",
+          "Water spinach"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samukichi-salmon",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "脆皮香煎三文鱼",
+        "titleEn": "Crispy-skin salmon",
+        "kind": "dish",
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "鱼",
+          "Fish",
+          "三文鱼",
+          "Salmon",
+          "salmon"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samukichi-broccoli",
+    "preparations": [
+      {
+        "id": "garlic",
+        "title": "蒜香西兰花",
+        "titleEn": "Garlic broccoli",
+        "kind": "dish",
+        "methodSteps": [1, 2, 3, 4, 5],
+        "ingredientLines": [0, 1, 2, 3],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "西兰花",
+          "Broccoli",
+          "broccoli"
+        ]
+      },
+      {
+        "id": "miso-cheese",
+        "title": "味噌芝士西兰花",
+        "titleEn": "Miso-cheese broccoli",
+        "kind": "dish",
+        "methodSteps": [1, 2, 3, 4, 6, 7],
+        "ingredientLines": [0, 1, 2, 4],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "西兰花",
+          "Broccoli",
+          "broccoli",
+          "甜椒",
+          "Bell pepper",
+          "bell pepper",
+          "芝士",
+          "Cheese"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samukichi-chicken",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "冷锅脆皮鸡腿",
+        "titleEn": "Cold-pan crispy chicken thigh",
+        "kind": "dish",
+        "searchTerms": ["肉类", "Meat", "meat", "鸡肉", "Chicken"]
+      }
+    ]
+  },
+  {
+    "id": "samukichi-asparagus",
+    "preparations": [
+      {
+        "id": "basic",
+        "title": "香煎芦笋",
+        "titleEn": "Seared asparagus",
+        "kind": "dish",
+        "methodSteps": [1, 2, 3, 4, 5],
+        "ingredientLines": [0],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "芦笋",
+          "Asparagus",
+          "asparagus"
+        ]
+      },
+      {
+        "id": "pork-rolls",
+        "title": "芦笋五花肉卷",
+        "titleEn": "Asparagus pork rolls",
+        "kind": "dish",
+        "methodSteps": [1, 6, 7, 8],
+        "ingredientLines": [1, 2, 3],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "芦笋",
+          "Asparagus",
+          "asparagus",
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samukichi-cauliflower",
+    "preparations": [
+      {
+        "id": "basic",
+        "title": "焦香烤花椰菜",
+        "titleEn": "Browned roasted cauliflower",
+        "kind": "dish",
+        "methodSteps": [1, 2, 3, 4, 5],
+        "ingredientLines": [0, 1, 2, 3, 4],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "花椰菜",
+          "Cauliflower",
+          "cauliflower"
+        ]
+      },
+      {
+        "id": "cheese",
+        "title": "奶酪烤花椰菜",
+        "titleEn": "Cheese roasted cauliflower",
+        "kind": "finish",
+        "methodSteps": [1, 2, 3, 4, 5, 6],
+        "ingredientLines": [0, 1, 2, 3, 4, 5],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "花椰菜",
+          "Cauliflower",
+          "cauliflower",
+          "芝士",
+          "Cheese"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samukichi-yakisoba",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "焦香猪肉蔬菜炒面",
+        "titleEn": "Toasty pork and vegetable yakisoba",
+        "kind": "dish",
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "面条",
+          "Noodles",
+          "noodles",
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "卷心菜",
+          "Cabbage",
+          "洋葱",
+          "Onion",
+          "onion",
+          "胡萝卜",
+          "Carrot",
+          "carrot"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samukichi-mushrooms",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "蒜香黄油酱油煎蘑菇",
+        "titleEn": "Golden mushrooms with garlic, butter and soy",
+        "kind": "dish",
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "蘑菇",
+          "Mushrooms",
+          "mushroom",
+          "mushrooms",
+          "香菇",
+          "shiitake"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samukichi-tuna",
+    "preparations": [
+      {
+        "id": "soft-eggs",
+        "title": "金枪鱼嫩蛋",
+        "titleEn": "Tuna soft eggs",
+        "kind": "dish",
+        "methodSteps": [1],
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "金枪鱼",
+          "Tuna",
+          "tuna",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
+      },
+      {
+        "id": "tomato-toast",
+        "title": "金枪鱼番茄蒜香吐司",
+        "titleEn": "Tuna tomato toast",
+        "kind": "dish",
+        "methodSteps": [2],
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "金枪鱼",
+          "Tuna",
+          "tuna",
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "面包",
+          "Bread",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "番茄",
+          "Tomato"
+        ]
+      },
+      {
+        "id": "fried-rice",
+        "title": "金枪鱼酱油炒饭",
+        "titleEn": "Tuna soy sauce fried rice",
+        "kind": "dish",
+        "methodSteps": [3],
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "金枪鱼",
+          "Tuna",
+          "tuna",
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samukichi-garlic-shrimp",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "去虾线与蒜香黄油虾",
+        "titleEn": "Deveining shrimp and garlic butter shrimp",
+        "kind": "dish",
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "虾",
+          "Shrimp",
+          "shrimp"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samukichi-caramelized-onions",
+    "preparations": [
+      {
+        "id": "onions",
+        "title": "深色焦糖洋葱",
+        "titleEn": "Deep caramelized onions",
+        "kind": "component",
+        "ingredientParagraphs": [0],
+        "methodSteps": [1, 2, 3, 4, 5, 7],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "洋葱",
+          "Onion",
+          "onion"
+        ]
+      },
+      {
+        "id": "soup",
+        "title": "浓郁洋葱汤",
+        "titleEn": "Rich onion soup",
+        "kind": "dish",
+        "methodSteps": [1, 2, 3, 4, 5, 6],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "洋葱",
+          "Onion",
+          "onion"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samukichi-steak",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "芥末奶油酱煎牛排",
+        "titleEn": "Pan-seared steak with mustard cream sauce",
+        "kind": "dish",
+        "searchTerms": [
+          "肉类",
+          "Meat",
+          "meat",
+          "牛肉",
+          "Beef",
+          "beef",
+          "淡奶油",
+          "Cream"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "samukichi-chicken-breast",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "糖盐腌低温鸡胸肉",
+        "titleEn": "Gently poached salt-and-sugar chicken breast",
+        "kind": "dish",
+        "searchTerms": ["肉类", "Meat", "meat", "鸡肉", "Chicken"]
+      }
+    ]
+  },
+  {
+    "id": "samukichi-fried-rice",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "蒜香彩椒蛋炒饭",
+        "titleEn": "Garlic, pepper and egg fried rice",
+        "kind": "dish",
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "甜椒",
+          "Bell pepper",
+          "bell pepper",
+          "青椒",
+          "Green pepper",
+          "green pepper"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ali-coconut-sago",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "椰汁西米露",
+        "titleEn": "Coconut milk sago dessert",
+        "kind": "dish",
+        "searchTerms": [
+          "西米",
+          "Sago",
+          "sago",
+          "椰浆",
+          "Coconut milk",
+          "牛奶",
+          "Milk",
+          "milk",
+          "水果",
+          "Fruit"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "awei-one-pot-rice",
+    "preparations": [
+      {
+        "id": "chestnut-pork",
+        "title": "板栗排骨焖饭",
+        "titleEn": "Chestnut pork rib rice",
+        "kind": "dish",
+        "methodSteps": [1],
+        "ingredientLines": [0],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "蘑菇",
+          "Mushrooms",
+          "mushroom",
+          "mushrooms",
+          "香菇",
+          "shiitake",
+          "胡萝卜",
+          "Carrot",
+          "carrot",
+          "板栗",
+          "Chestnut"
+        ]
+      },
+      {
+        "id": "sausage-potato",
+        "title": "腊肠土豆焖饭",
+        "titleEn": "Sausage potato rice",
+        "kind": "dish",
+        "methodSteps": [2],
+        "ingredientLines": [0],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "肉类",
+          "Meat",
+          "meat",
+          "香肠",
+          "Sausage",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "土豆",
+          "Potato",
+          "马铃薯",
+          "馬鈴薯",
+          "potatoes",
+          "potato",
+          "玉米",
+          "Corn",
+          "青豆",
+          "Peas",
+          "胡萝卜",
+          "Carrot",
+          "carrot"
+        ]
+      },
+      {
+        "id": "taro-chestnut",
+        "title": "香芋板栗焖饭",
+        "titleEn": "Taro chestnut pork rice",
+        "kind": "dish",
+        "methodSteps": [3],
+        "ingredientLines": [0],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "芋头",
+          "Taro",
+          "蘑菇",
+          "Mushrooms",
+          "mushroom",
+          "mushrooms",
+          "香菇",
+          "shiitake",
+          "板栗",
+          "Chestnut",
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜"
+        ]
+      },
+      {
+        "id": "pumpkin-beef",
+        "title": "南瓜牛肉焖饭",
+        "titleEn": "Pumpkin beef rice",
+        "kind": "dish",
+        "methodSteps": [4],
+        "ingredientLines": [0],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "肉类",
+          "Meat",
+          "meat",
+          "牛肉",
+          "Beef",
+          "beef",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "南瓜",
+          "Pumpkin",
+          "蘑菇",
+          "Mushrooms",
+          "mushroom",
+          "mushrooms",
+          "香菇",
+          "shiitake",
+          "胡萝卜",
+          "Carrot",
+          "carrot",
+          "青豆",
+          "Peas"
+        ]
+      },
+      {
+        "id": "sausage-egg",
+        "title": "腊肠窝蛋时蔬饭",
+        "titleEn": "Sausage egg vegetable rice",
+        "kind": "dish",
+        "methodSteps": [5],
+        "ingredientLines": [0],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "肉类",
+          "Meat",
+          "meat",
+          "香肠",
+          "Sausage",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "胡萝卜",
+          "Carrot",
+          "carrot",
+          "青菜",
+          "Leafy greens",
+          "玉米",
+          "Corn"
+        ]
+      },
+      {
+        "id": "curry-chicken",
+        "title": "咖喱鸡腿焖饭",
+        "titleEn": "Curry chicken rice",
+        "kind": "dish",
+        "methodSteps": [6],
+        "ingredientLines": [0],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "肉类",
+          "Meat",
+          "meat",
+          "鸡肉",
+          "Chicken",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "洋葱",
+          "Onion",
+          "onion",
+          "胡萝卜",
+          "Carrot",
+          "carrot",
+          "土豆",
+          "Potato",
+          "马铃薯",
+          "馬鈴薯",
+          "potatoes",
+          "potato",
+          "蘑菇",
+          "Mushrooms",
+          "mushroom",
+          "mushrooms",
+          "香菇",
+          "shiitake",
+          "牛奶",
+          "Milk",
+          "milk"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rosalina-tomato-beef",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "萝洁塔的番茄炖牛肉与意面",
+        "titleEn": "Rosalina’s tomato beef stew with pasta",
+        "kind": "dish",
+        "searchTerms": [
+          "肉类",
+          "Meat",
+          "meat",
+          "牛肉",
+          "Beef",
+          "beef",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "洋葱",
+          "Onion",
+          "onion",
+          "番茄",
+          "Tomato",
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "magic-lamb-pilaf",
+    "preparations": [
+      {
+        "id": "white-rice",
+        "title": "基础白饭",
+        "titleEn": "Basic basmati rice",
+        "kind": "dish",
+        "methodSteps": [1],
+        "ingredientLines": [0],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice"
+        ]
+      },
+      {
+        "id": "lamb-pilaf",
+        "title": "羊肉手抓饭",
+        "titleEn": "Lamb pilaf",
+        "kind": "dish",
+        "methodSteps": [2, 3, 4],
+        "ingredientLines": [1],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "肉类",
+          "Meat",
+          "meat",
+          "羊肉",
+          "Lamb",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "洋葱",
+          "Onion",
+          "onion",
+          "胡萝卜",
+          "Carrot",
+          "carrot",
+          "葡萄干",
+          "Raisins"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ali-scallion-meat-pancakes",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "阿栗葱香千层肉饼",
+        "titleEn": "Ali’s layered scallion meat pancakes",
+        "kind": "dish",
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "面粉",
+          "Flour",
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork",
+          "牛肉",
+          "Beef",
+          "beef",
+          "小葱",
+          "Scallion"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "liuyi-stir-fried-noodles",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "留意美食家常炒面",
+        "titleEn": "LiuYi’s home-style stir-fried noodles",
+        "kind": "dish",
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "面条",
+          "Noodles",
+          "noodles",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "青菜",
+          "Leafy greens",
+          "胡萝卜",
+          "Carrot",
+          "carrot",
+          "肉类",
+          "Meat",
+          "meat",
+          "香肠",
+          "Sausage",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "洋葱",
+          "Onion",
+          "onion"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "feng-night-market-vermicelli",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "冯小厨牛肉炒米粉",
+        "titleEn": "Feng’s beef rice vermicelli",
+        "kind": "dish",
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米粉",
+          "Rice vermicelli",
+          "rice vermicelli",
+          "肉类",
+          "Meat",
+          "meat",
+          "牛肉",
+          "Beef",
+          "beef",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "卷心菜",
+          "Cabbage",
+          "胡萝卜",
+          "Carrot",
+          "carrot",
+          "豆芽",
+          "Bean sprouts",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "洋葱",
+          "Onion",
+          "onion"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ajian-scallion-pork-chops",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "阿见葱盐猪排",
+        "titleEn": "Ajian’s scallion-salt pork chops",
+        "kind": "dish",
+        "searchTerms": [
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork",
+          "小葱",
+          "Scallion"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ali-sauced-noodles",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "葱香凉拌面",
+        "titleEn": "Scallion-scented cold noodles",
+        "kind": "dish",
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "面条",
+          "Noodles",
+          "noodles",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "黄瓜",
+          "Cucumber",
+          "花生",
+          "Peanut"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "remus-shrimp-eggs",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "杰少滑蛋虾仁",
+        "titleEn": "Remus’s silky eggs with shrimp",
+        "kind": "dish",
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "虾",
+          "Shrimp",
+          "shrimp",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ting-soy-sauce-noodles",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "鼎爷豉油王炒面",
+        "titleEn": "Ting’s soy-sauce fried noodles",
+        "kind": "dish",
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "面条",
+          "Noodles",
+          "noodles",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "韭菜",
+          "Chinese chives",
+          "豆芽",
+          "Bean sprouts",
+          "洋葱",
+          "Onion",
+          "onion"
+        ]
+      }
+    ]
+  }
+]

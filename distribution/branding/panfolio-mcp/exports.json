@@ -1,0 +1,7 @@
+{
+  "sourceSha256": "c042a3722cb06bc4b32347ac47704495c9bea96f000ca703c654bcd299717dc8",
+  "exports": {
+    "public/branding/panfolio-mcp-icon.png": "ff14619f3176955cf78073d1b6ac9444d0962cf58a6451d084d964b5dcb714bc",
+    "public/branding/panfolio-mcp-icon-128.png": "068eea7c4c85b10f272cfb5cd2e7de6a5fd6616f17ef9c2978c7a9392f673e97"
+  }
+}

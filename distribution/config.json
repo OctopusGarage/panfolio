@@ -1,0 +1,19 @@
+{
+  "name": "panfolio",
+  "displayName": "Panfolio",
+  "version": "0.1.0",
+  "publisher": "OctopusGarage",
+  "repository": "https://github.com/OctopusGarage/panfolio",
+  "contentBase": "https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/",
+  "mcpEndpoint": "https://panfolio-mcp.octopusgarage.workers.dev/mcp",
+  "workerName": "panfolio-mcp",
+  "cloudflareAccountId": "057df7c08e1457f236e308a5d14c9934",
+  "icon": "public/branding/panfolio-mcp-icon.png",
+  "description": "Read Panfolio recipes and kitchen techniques with original quantities, explanations and sources.",
+  "shortDescription": "Recipes and kitchen guidance",
+  "packages": {
+    "skill": "panfolio-skill.zip",
+    "plugin": "panfolio-plugin-chatgpt.zip",
+    "claudePlugin": "panfolio-plugin-claude.zip"
+  }
+}

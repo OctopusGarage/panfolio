@@ -1,0 +1,34 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "panfolio",
+  "version": "0.1.0",
+  "description": "Read Panfolio recipes and kitchen techniques with original quantities, explanations and sources.",
+  "author": {
+    "name": "OctopusGarage",
+    "url": "https://github.com/OctopusGarage"
+  },
+  "homepage": "https://github.com/OctopusGarage/panfolio",
+  "repository": "https://github.com/OctopusGarage/panfolio",
+  "license": "MIT",
+  "keywords": ["cooking", "recipes", "kitchen", "panfolio"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Panfolio",
+        "shortDescription": "Recipes and kitchen guidance",
+        "longDescription": "Read Panfolio recipes and kitchen techniques with original quantities, explanations and sources. Uses public GitHub Markdown or an already connected Panfolio MCP, with no terminal, Python, app login or API key. Requires one of those reading capabilities in the host; this package does not connect MCP automatically. Does not access private app data.",
+        "developerName": "OctopusGarage",
+        "category": "Productivity",
+        "capabilities": ["Read"],
+        "websiteURL": "https://github.com/OctopusGarage/panfolio",
+        "defaultPrompt": [
+          "Use Panfolio to guide me through asparagus pork rolls.",
+          "Explain when to pour soy sauce around a hot pan using Panfolio.",
+          "Create a shopping checklist for my selected Panfolio dishes."
+        ],
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

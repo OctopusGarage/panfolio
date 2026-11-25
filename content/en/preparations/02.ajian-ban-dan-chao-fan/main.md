@@ -1,0 +1,53 @@
+# Ajian-style egg fried rice
+
+Chinese · Preparation type: dish
+
+ID: 02.ajian-ban-dan-chao-fan / main
+
+Use the selected ingredients and method below. Shared tips apply only when their food and conditions match this preparation.
+
+## Ingredients
+
+- Freshly cooked rice, loosened in advance
+- 3 eggs, yolks and whites separated
+- Ham sausage, cucumber and bacon, diced; remove the cucumber seeds
+- Corn kernels, sweet peas and scallions
+- Salt, white pepper and cooking oil
+
+## Method
+
+### 1. Prepare the rice and eggs
+
+Loosen the rice. Beat the yolks, then mix them into the rice until the grains are evenly coated. Beat the whites separately and set aside.
+
+### 2. Prepare the other ingredients
+
+Dice the ham sausage, cucumber and bacon. Chop the scallions. Blanch the corn and sweet peas in boiling water with salt and oil until they float, then drain.
+
+### 3. Stir-fry the ham and corn
+
+Heat oil in a pan. Stir-fry the ham sausage and corn until fragrant, then remove.
+
+### 4. Cook the egg whites
+
+Leave a little oil in the pan. Cook the egg whites over low heat until set, breaking them into small pieces.
+
+### 5. Fry the rice
+
+Add the yolk-coated rice and stir-fry over high heat until the grains are dry, separate and no longer stick to the pan.
+
+### 6. Combine and season
+
+Add the ham sausage, cucumber, corn, peas and bacon. Stir-fry together, season lightly with salt and white pepper, then add scallions and toss before serving.
+
+## Tips
+
+- Rice cooked slightly firm separates more easily when fried.
+- Keep the seasoning light to suit the variety of ingredients.
+
+## References
+
+- [Watch video](https://www.youtube.com/watch?v=VCELAeG3lyI)
+
+
+

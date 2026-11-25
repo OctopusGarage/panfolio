@@ -1,0 +1,1214 @@
+import {
+  useState,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useMemo,
+  lazy,
+  Suspense,
+} from "react";
+import Markdown from "react-markdown";
+import { recipeBody, recipeDescription } from "./recipe-language";
+import { usePwaGestures } from "./usePwaGestures";
+import { RecipeImage } from "./RecipeImage";
+import { SourceVideo } from "./SourceVideo";
+import { videosForRecipe } from "./recipe-videos";
+import { KitchenEssentials } from "./KitchenEssentials";
+import { essentials, essentialsForRecipe } from "./kitchen-essentials";
+import { recipeCategories } from "./recipe-categories";
+import { DiscoveryBrowser } from "./DiscoveryBrowser";
+import { MyKitchen } from "./MyKitchen";
+import {
+  emptyDiscoveryState,
+  recipeDiscovery,
+  preparationFor,
+} from "./discovery";
+import { bodyForPreparation } from "./preparation-content";
+import type { DiscoveryState } from "./discovery-types";
+import "./discovery-app.css";
+import { RecipeContent } from "./RecipeContent";
+import { cookingSections } from "./recipe-content";
+import recipeData from "./recipes.json";
+import type { Recipe } from "./recipe-validation";
+const recipes: Recipe[] = recipeData;
+import { parseBackup } from "./core";
+import { useLocale } from "./i18n";
+import { useSavedRecipes } from "./useSavedRecipes";
+import { useAppUpdate } from "./useAppUpdate";
+import { UpdateBanner } from "./UpdateBanner";
+import { useAppFrame } from "./useAppFrame";
+import { useRightEdgeBack } from "./useRightEdgeBack";
+import { createClipboardWriter } from "./clipboard-writer";
+import { createShareUrl } from "./protected-share";
+import { ShareInbox } from "./ShareInbox";
+import { AppShare } from "./AppShare";
+import { Settings } from "./Settings";
+import { InfoDialog } from "./InfoDialog";
+import { Icon, type IconName } from "./Icon";
+const AiGuide = lazy(() => import("./AiGuide"));
+interface InstallEvent extends Event {
+  prompt: () => Promise<void>;
+}
+function readRecent() {
+  try {
+    const v: unknown = JSON.parse(
+      localStorage.getItem("panfolio:recent") || "[]",
+    );
+    return Array.isArray(v)
+      ? v
+          .filter(
+            (id): id is string =>
+              typeof id === "string" && recipes.some((r) => r.id === id),
+          )
+          .slice(0, 12)
+      : [];
+  } catch {
+    return [];
+  }
+}
+function readHash() {
+  try {
+    return decodeURIComponent(location.hash.slice(1));
+  } catch {
+    return "";
+  }
+}
+export default function App() {
+  const { locale, setLocale, s } = useLocale();
+  const [hash, setHash] = useState(readHash),
+    [message, setMessage] = useState(""),
+    [cooking, setCooking] = useState(false),
+    [step, setStep] = useState(0),
+    [recent, setRecent] = useState(readRecent),
+    [online, setOnline] = useState(navigator.onLine),
+    [installed, setInstalled] = useState(
+      matchMedia("(display-mode: standalone)").matches ||
+        !!(navigator as Navigator & { standalone?: boolean }).standalone,
+    ),
+    [checking, setChecking] = useState(false),
+    [copying, setCopying] = useState(false),
+    [recipeShare, setRecipeShare] = useState<{
+      id: string;
+      url: string;
+    } | null>(null),
+    [searchActive, setSearchActive] = useState(false),
+    [showTop, setShowTop] = useState(false);
+  const [myKitchenQuery, setMyKitchenQuery] = useState("");
+  const aiTrigger = useRef<HTMLElement | null>(null);
+  const wasAi = useRef(false);
+  const pointerInteraction = useRef(false);
+  const [discoveryStates, setDiscoveryStates] = useState({
+    library: emptyDiscoveryState("recipes"),
+    series: emptyDiscoveryState("recipes"),
+    references: emptyDiscoveryState("references"),
+  });
+  const [preparationId, setPreparationId] = useState<string | undefined>(
+    () => history.state?.panfolioPreparation || undefined,
+  );
+  const cookingPositions = useRef(new Map<string, number>());
+  const install = useRef<InstallEvent | null>(null),
+    file = useRef<HTMLInputElement>(null),
+    lastList = useRef("library"),
+    detailTrigger = useRef<HTMLElement | null>(null);
+  const saved = useSavedRecipes(() =>
+    setMessage(
+      s(
+        "保存未完成，当前改动仍在此窗口。请导出备份并稍后重试。",
+        "Saving did not finish. Changes remain in this window. Export a backup and try again later.",
+      ),
+    ),
+  );
+  const { data } = saved;
+  const update = useAppUpdate();
+  const recipe = recipes.find((r) => r.id === hash);
+  const series = hash === "japanese-chef";
+  const essentialId = hash.startsWith("essentials/")
+    ? hash.slice("essentials/".length)
+    : undefined;
+  const essential = essentials.find((item) => item.id === essentialId);
+  const isEssentials = hash === "essentials" || essentialId !== undefined;
+  const page =
+    hash === "ai"
+      ? "ai"
+      : hash === "settings"
+        ? "settings"
+        : hash === "guides"
+          ? "guides"
+          : hash === "saved" || hash === "mine"
+            ? "saved"
+            : "library";
+  useLayoutEffect(() => {
+    if (wasAi.current && page !== "ai" && !pointerInteraction.current) {
+      const trigger = aiTrigger.current;
+      const target = trigger?.isConnected
+        ? trigger
+        : document.querySelector<HTMLElement>('.app-nav a[href="#ai"]');
+      target?.focus({ preventScroll: true });
+    }
+    wasAi.current = page === "ai";
+  }, [page]);
+  const dialog = hash.endsWith("?info=install")
+    ? "install"
+    : hash.endsWith("?info=about")
+      ? "about"
+      : null;
+  const frame = useAppFrame(
+    recipe
+      ? `recipe:${recipe.id}`
+      : isEssentials
+        ? hash
+        : series
+          ? "japanese-chef"
+          : page,
+  );
+  usePwaGestures(installed);
+  const searchInput = useRef<HTMLInputElement>(null);
+  const searchScroll = useRef(0);
+  const searching = useRef(false);
+  const searchOrigin = useRef<HTMLElement | null>(null);
+  const topFrame = useRef(0);
+  function closeSearch() {
+    if (!searching.current) return;
+    searching.current = false;
+    setSearchActive(false);
+    searchInput.current?.blur();
+    requestAnimationFrame(() => {
+      if (frame.scrollRef.current)
+        frame.scrollRef.current.scrollTop = searchScroll.current;
+      searchOrigin.current?.focus({ preventScroll: true });
+    });
+  }
+  function cancelSearch() {
+    if (history.state?.panfolioSearch) history.back();
+    else closeSearch();
+  }
+  function beginSearch() {
+    if (searching.current) return;
+    searching.current = true;
+    setSearchActive(true);
+    searchScroll.current = frame.scrollRef.current?.scrollTop || 0;
+    searchOrigin.current = document.getElementById("content-heading");
+    history.pushState(
+      { ...history.state, panfolioSearch: true },
+      "",
+      location.href,
+    );
+    requestAnimationFrame(() =>
+      frame.scrollRef.current?.scrollTo({
+        top: 0,
+        behavior: "instant" as ScrollBehavior,
+      }),
+    );
+  }
+  useEffect(() => {
+    const pop = () => {
+      if (history.state?.panfolioSearch) {
+        searching.current = true;
+        setSearchActive(true);
+      } else closeSearch();
+    };
+    window.addEventListener("popstate", pop);
+    return () => window.removeEventListener("popstate", pop);
+  }, []);
+  useEffect(() => {
+    if (
+      recipe ||
+      dialog ||
+      isEssentials ||
+      page === "saved" ||
+      page === "settings" ||
+      page === "guides" ||
+      page === "ai"
+    ) {
+      searching.current = false;
+      setSearchActive(false);
+      searchInput.current?.blur();
+    }
+    setShowTop(false);
+  }, [hash]);
+  useEffect(() => {
+    if (!searchActive) return;
+    const escape = (event: KeyboardEvent) => {
+      if (
+        event.key === "Escape" &&
+        !event.defaultPrevented &&
+        !document.querySelector("dialog[open]")
+      ) {
+        event.preventDefault();
+        cancelSearch();
+      }
+    };
+    window.addEventListener("keydown", escape);
+    return () => window.removeEventListener("keydown", escape);
+  }, [searchActive]);
+  function onPageScroll() {
+    frame.onScroll();
+    cancelAnimationFrame(topFrame.current);
+    topFrame.current = requestAnimationFrame(() =>
+      setShowTop((frame.scrollRef.current?.scrollTop || 0) > 500),
+    );
+  }
+  useEffect(() => () => cancelAnimationFrame(topFrame.current), []);
+
+  const context = useRef("");
+  context.current = hash + ":" + locale;
+  const writer = useMemo(
+    () =>
+      createClipboardWriter(
+        (text) => navigator.clipboard.writeText(text),
+        () => context.current,
+        setCopying,
+      ),
+    [],
+  );
+  const title = (r: (typeof recipes)[number]) =>
+    locale === "en" ? r.titleEn || r.title : r.title;
+  const categoryLabel = (id: string | undefined) => {
+    const category = recipeCategories.find((category) => category.id === id);
+    return category ? s(category.zh, category.en) : "";
+  };
+  const listKey = isEssentials ? "references" : series ? "series" : "library";
+  const discoveryState = discoveryStates[listKey];
+  const updateDiscovery = (next: DiscoveryState) => {
+    if (series && next.category !== "japanese") {
+      setDiscoveryStates((previous) => ({ ...previous, library: next }));
+      location.hash = "library";
+    } else setDiscoveryStates((previous) => ({ ...previous, [listKey]: next }));
+  };
+  const preparations =
+    recipeDiscovery.find((entry) => entry.id === recipe?.id)?.preparations ||
+    [];
+  const selectedPreparation =
+    recipe && preparationId
+      ? preparationFor(recipe.id, preparationId)
+      : undefined;
+  const readingBody = recipe
+    ? bodyForPreparation(recipe, selectedPreparation, locale)
+    : "";
+  const steps = recipe ? cookingSections(readingBody) : [];
+  const choosePreparation = (id: string | undefined) => {
+    setPreparationId(id);
+    setCooking(false);
+    setStep(0);
+    history.replaceState(
+      { ...history.state, panfolioPreparation: id || null },
+      "",
+      location.href,
+    );
+  };
+  useEffect(() => {
+    const fn = () => {
+      const next = readHash();
+      setHash(next);
+      setCooking(false);
+      setStep(0);
+      setPreparationId(history.state?.panfolioPreparation || undefined);
+      setMessage("");
+      writer.invalidate();
+    };
+    window.addEventListener("hashchange", fn);
+    // A fragment navigation can occur between initial render and effect registration.
+    if (readHash() !== hash) fn();
+    return () => window.removeEventListener("hashchange", fn);
+  }, [writer]);
+  useEffect(() => {
+    if (
+      !recipe &&
+      !dialog &&
+      !isEssentials &&
+      (page === "library" || page === "saved")
+    )
+      lastList.current = series ? "japanese-chef" : page;
+  }, [recipe, dialog, page, series, isEssentials]);
+  useEffect(() => {
+    if (!recipe) return;
+    const next = [
+      recipe.id,
+      ...readRecent().filter((id) => id !== recipe.id),
+    ].slice(0, 12);
+    setRecent(next);
+    try {
+      localStorage.setItem("panfolio:recent", JSON.stringify(next));
+    } catch {}
+  }, [recipe?.id]);
+  useEffect(() => {
+    const sync = (e: StorageEvent) => {
+      if (e.key === "panfolio:recent" || e.key === null)
+        setRecent(readRecent());
+    };
+    window.addEventListener("storage", sync);
+    return () => window.removeEventListener("storage", sync);
+  }, []);
+  useEffect(() => {
+    if (recipe || dialog || essentialId || page === "ai") return;
+    const trigger = detailTrigger.current;
+    if (trigger) {
+      const href = trigger.getAttribute("href");
+      const cardId =
+        trigger.closest<HTMLElement>("[data-recipe-id]")?.dataset.recipeId;
+      const restored = trigger.isConnected
+        ? trigger
+        : Array.from(
+            document.querySelectorAll<HTMLElement>(
+              ".card a, .essential-card a, .my-kitchen .card > button",
+            ),
+          ).find((element) =>
+            href
+              ? element.getAttribute("href") === href &&
+                element.textContent === trigger.textContent
+              : cardId ===
+                element.closest<HTMLElement>("[data-recipe-id]")?.dataset
+                  .recipeId,
+          );
+      restored?.focus({ preventScroll: true });
+      detailTrigger.current = null;
+    }
+  }, [hash]);
+  useLayoutEffect(() => {
+    if (!recipe) return;
+    const close = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && !document.querySelector("dialog[open]")) {
+        e.preventDefault();
+        back();
+      }
+    };
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
+  }, [recipe]);
+  useEffect(() => {
+    const connection = () => setOnline(navigator.onLine);
+    const prompt = (e: Event) => {
+      e.preventDefault();
+      install.current = e as InstallEvent;
+    };
+    const added = () => {
+      setInstalled(true);
+      install.current = null;
+    };
+    window.addEventListener("online", connection);
+    window.addEventListener("offline", connection);
+    window.addEventListener("beforeinstallprompt", prompt);
+    window.addEventListener("appinstalled", added);
+    return () => {
+      window.removeEventListener("online", connection);
+      window.removeEventListener("offline", connection);
+      window.removeEventListener("beforeinstallprompt", prompt);
+      window.removeEventListener("appinstalled", added);
+    };
+  }, []);
+  function back() {
+    if (
+      (recipe && history.state?.panfolioRecipe === recipe.id) ||
+      (dialog && history.state?.panfolioInfo === dialog) ||
+      (essentialId !== undefined &&
+        history.state?.panfolioReference === essentialId)
+    )
+      history.back();
+    else location.hash = lastList.current;
+  }
+  useRightEdgeBack(
+    recipe || dialog || essentialId
+      ? () => {
+          if (document.querySelector("dialog[open]")) return;
+          back();
+        }
+      : null,
+    hash,
+  );
+  function openRecipe(
+    r: (typeof recipes)[number],
+    trigger: HTMLElement,
+    selected?: string,
+  ) {
+    detailTrigger.current = trigger;
+    history.replaceState(history.state, "", location.href);
+    location.hash = encodeURIComponent(r.id);
+    history.replaceState(
+      { panfolioRecipe: r.id, panfolioPreparation: selected || null },
+      "",
+      location.href,
+    );
+    setPreparationId(selected);
+  }
+  function info(kind: "install" | "about") {
+    location.hash = `${page}?info=${kind}`;
+    history.replaceState({ panfolioInfo: kind }, "", location.href);
+  }
+  async function doInstall() {
+    if (install.current) {
+      try {
+        await install.current.prompt();
+        install.current = null;
+      } catch {
+        info("install");
+      }
+    } else info("install");
+  }
+  async function check() {
+    if (checking) return;
+    setChecking(true);
+    try {
+      const available = await update.checkForUpdates();
+      setMessage(
+        available
+          ? s(
+              "新版本已就绪，请选择立即更新。",
+              "An update is ready. Select Update now.",
+            )
+          : s(
+              "检查完成，目前没有可用的新版本。",
+              "Check complete. No new version is available.",
+            ),
+      );
+    } catch {
+      setMessage(
+        s(
+          "暂时无法检查更新，请联网后重试。",
+          "Could not check for updates. Connect and try again.",
+        ),
+      );
+    } finally {
+      setChecking(false);
+    }
+  }
+  async function exportData() {
+    const latest = await saved.settled();
+    const url = URL.createObjectURL(
+      new Blob([JSON.stringify(latest, null, 2)], { type: "application/json" }),
+    );
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "panfolio-backup.json";
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+  async function importData(f: File) {
+    try {
+      if (f.size > 2_000_000) throw Error();
+      const next = parseBackup(await f.text());
+      const ids = new Set(recipes.map((r) => r.id));
+      if (
+        next.favorites.some((x) => !ids.has(x)) ||
+        Object.keys(next.notes).some((x) => !ids.has(x)) ||
+        [
+          ...(next.kitchen?.tried || []),
+          ...(next.kitchen?.repeat || []),
+          ...Object.keys(next.kitchen?.tags || {}),
+        ].some((x) => !ids.has(x))
+      )
+        throw Error();
+      saved.merge(next);
+      await saved.settled();
+      setMessage(
+        s(
+          "备份已合并，现有笔记优先保留。",
+          "Backup merged. Existing notes were preserved.",
+        ),
+      );
+    } catch {
+      setMessage(
+        s(
+          "无法导入：请选择有效的 Panfolio JSON 备份。",
+          "Could not import. Choose a valid Panfolio JSON backup.",
+        ),
+      );
+    }
+  }
+  async function shareRecipe() {
+    if (!recipe) return;
+    const id = recipe.id;
+    const pageUrl = location.href;
+    let url: string;
+    try {
+      url = recipeShare?.id === id ? recipeShare.url : await createShareUrl(id);
+    } catch {
+      if (location.href === pageUrl)
+        setMessage(s("无法生成分享链接。", "Could not create the share link."));
+      return;
+    }
+    if (location.href !== pageUrl) return;
+    setRecipeShare({ id, url });
+    void writer.write({
+      text: url,
+      onSuccess: () =>
+        setMessage(
+          s(
+            "菜谱链接已复制，不包含个人笔记。",
+            "Recipe link copied. Personal notes are excluded.",
+          ),
+        ),
+      onFailure: () =>
+        setMessage(
+          s(
+            "请手动复制下方菜谱链接。",
+            "Select and copy the recipe link below.",
+          ),
+        ),
+    });
+  }
+  const share = (placement: "header" | "settings") => (
+    <AppShare
+      locale={locale}
+      writer={writer}
+      copying={copying}
+      onMessage={setMessage}
+      placement={placement}
+    />
+  );
+  const heading = recipe
+    ? title(recipe)
+    : isEssentials
+      ? essential
+        ? locale === "en"
+          ? essential.titleEn
+          : essential.title
+        : s("厨房基础", "Kitchen essentials")
+      : page === "ai"
+        ? s("AI 使用", "Use with AI")
+        : page === "settings"
+          ? s("设置", "Settings")
+          : page === "guides"
+            ? s("使用指南", "User guide")
+            : page === "saved"
+              ? s("我的厨房", "My kitchen")
+              : series
+                ? s("日厨系列", "Japanese chef series")
+                : s("全部菜谱", "Recipes");
+  return (
+    <div
+      onPointerDownCapture={() => {
+        pointerInteraction.current = true;
+      }}
+      onKeyDownCapture={() => {
+        pointerInteraction.current = false;
+      }}
+      onClickCapture={(event) => {
+        const trigger =
+          event.target instanceof Element
+            ? event.target.closest<HTMLElement>('a[href="#ai"]')
+            : null;
+        if (trigger) aiTrigger.current = trigger;
+      }}
+      className={`app-shell discovery-app${frame.keyboardOpen ? " keyboard-open" : ""}${searchActive ? " search-active" : ""}`}
+    >
+      <a
+        className="skip"
+        href="#content-heading"
+        onClick={(e) => {
+          e.preventDefault();
+          document.getElementById("content-heading")?.focus();
+        }}
+      >
+        {s("跳到内容", "Skip to content")}
+      </a>
+      <aside className="app-sidebar">
+        <a className="brand" href="#library">
+          Panfolio<span>{s("厨房手记", "KITCHEN NOTES")}</span>
+        </a>
+        <nav className="app-nav" aria-label={s("主导航", "Primary navigation")}>
+          {(
+            [
+              { key: "library", icon: "book", label: s("全部菜谱", "Recipes") },
+              {
+                key: "essentials",
+                icon: "help",
+                label: s("厨房基础", "Kitchen essentials"),
+              },
+              {
+                key: "saved",
+                icon: "heart",
+                label: s("我的厨房", "My kitchen"),
+              },
+              { key: "ai", icon: "ai", label: "AI" },
+            ] as { key: string; icon: IconName; label: string }[]
+          ).map((item) => (
+            <a
+              href={"#" + item.key}
+              key={item.key}
+              aria-current={
+                (
+                  isEssentials
+                    ? item.key === "essentials"
+                    : page === "guides"
+                      ? item.key === "essentials"
+                      : page === item.key
+                )
+                  ? "page"
+                  : undefined
+              }
+            >
+              <Icon name={item.icon} />
+              <span>{item.label}</span>
+            </a>
+          ))}
+        </nav>
+        <p className="sidebar-note">
+          {s("慢慢做饭，好好吃饭。", "Good recipes, made your own.")}
+        </p>
+      </aside>
+      <div className="app-main">
+        <header className="app-header">
+          <div>
+            <p className="eyebrow">PANFOLIO</p>
+            <h1 id="content-heading" tabIndex={-1}>
+              {heading}
+            </h1>
+          </div>
+          <span className="connection">
+            {online
+              ? s("随时翻开你的菜谱", "Your kitchen, close at hand")
+              : s("离线模式", "Offline mode")}
+          </span>
+          <ShareInbox
+            installed={installed}
+            locale={locale}
+            recipes={recipes}
+            onMessage={setMessage}
+            onOpen={(id) => {
+              if (!id) {
+                location.hash = "library";
+                return;
+              }
+              if (recipe?.id === id) return;
+              location.hash = encodeURIComponent(id);
+              history.replaceState({ panfolioRecipe: id }, "", location.href);
+            }}
+          />
+          <a
+            className="icon-button header-settings"
+            href="#settings"
+            aria-label={s("设置", "Settings")}
+          >
+            <Icon name="settings" />
+          </a>
+          {share("header")}
+          <button
+            className="icon-button"
+            aria-label={locale === "en" ? "中文" : "English"}
+            onClick={() => {
+              setLocale(locale === "en" ? "zh" : "en");
+              setMessage("");
+            }}
+          >
+            <Icon name="language" />
+          </button>
+        </header>
+        <UpdateBanner
+          snapshot={update.snapshot}
+          completed={update.completed}
+          locale={locale}
+          onUpdate={update.requestUpdate}
+        />
+        <main
+          className="page-scroll"
+          data-testid="page-scroll"
+          ref={frame.scrollRef}
+          onScroll={onPageScroll}
+          aria-label={s("页面内容", "Page content")}
+          tabIndex={0}
+        >
+          <div className="workspace">
+            {hash &&
+            !recipe &&
+            !dialog &&
+            !isEssentials &&
+            ![
+              "library",
+              "saved",
+              "mine",
+              "guides",
+              "settings",
+              "japanese-chef",
+              "ai",
+            ].includes(hash) ? (
+              <section>
+                <h2>{s("没有找到这道菜", "Recipe not found")}</h2>
+                <a href="#library">{s("返回菜谱", "Back to recipes")}</a>
+              </section>
+            ) : isEssentials && essentialId ? (
+              <KitchenEssentials
+                id={essentialId}
+                locale={locale}
+                onBack={history.state?.panfolioReference ? back : undefined}
+              />
+            ) : recipe ? (
+              <article>
+                <button className="back" onClick={back}>
+                  ← {s("返回菜谱", "Back to recipes")}
+                </button>
+                {recipe.image && (
+                  <figure className="recipe-cover">
+                    <RecipeImage src={recipe.image} kind="cover" />
+                    <figcaption>{categoryLabel(recipe.category)}</figcaption>
+                  </figure>
+                )}
+                {recipe.collection === "japanese-chef" && (
+                  <a className="series-breadcrumb" href="#japanese-chef">
+                    {s("日厨系列", "Japanese chef series")} · SAMUKICHI ↗
+                  </a>
+                )}
+                <div className="detail-title">
+                  <div>
+                    <p className="eyebrow">{categoryLabel(recipe.category)}</p>
+                    <h2>{title(recipe)}</h2>
+                    <p className="recipe-description">
+                      {recipeDescription(recipe, locale)}
+                    </p>
+                  </div>
+                  <button
+                    onClick={() => saved.favorite(recipe.id)}
+                    aria-pressed={data.favorites.includes(recipe.id)}
+                  >
+                    {data.favorites.includes(recipe.id)
+                      ? s("★ 已收藏", "★ Saved")
+                      : s("☆ 收藏", "☆ Save")}
+                  </button>
+                </div>
+                {preparations.length > 1 && (
+                  <div className="preparation-chooser">
+                    <label htmlFor="preparation-choice">
+                      {s("选择这次要做的做法", "Choose a preparation")}
+                    </label>
+                    <select
+                      id="preparation-choice"
+                      value={preparationId || ""}
+                      onChange={(event) =>
+                        choosePreparation(event.target.value || undefined)
+                      }
+                    >
+                      <option value="">
+                        {s("查看全部做法", "View all preparations")}
+                      </option>
+                      {preparations.map((prep) => (
+                        <option key={prep.id} value={prep.id}>
+                          {locale === "en" ? prep.titleEn : prep.title}
+                        </option>
+                      ))}
+                    </select>
+                    {selectedPreparation && (
+                      <button onClick={() => choosePreparation(undefined)}>
+                        {s("查看完整菜谱", "View the complete recipe")}
+                      </button>
+                    )}
+                  </div>
+                )}
+                <div className="actions">
+                  <button
+                    className="primary"
+                    disabled={preparations.length > 1 && !selectedPreparation}
+                    onClick={() => {
+                      setCooking(!cooking);
+                      setStep(
+                        cookingPositions.current.get(
+                          `${recipe.id}:${preparationId || "main"}`,
+                        ) || 0,
+                      );
+                    }}
+                  >
+                    {cooking
+                      ? s("退出烹饪模式", "Exit cooking mode")
+                      : preparations.length > 1 && !selectedPreparation
+                        ? s("选择做法后开始", "Choose a preparation to start")
+                        : s("开始做这道菜 →", "Start cooking →")}
+                  </button>
+                  <button disabled={copying} onClick={shareRecipe}>
+                    {s("分享菜谱链接", "Copy recipe link")}
+                  </button>
+                </div>
+                {recipeShare?.id === recipe.id && (
+                  <div className="recipe-share">
+                    <input
+                      readOnly
+                      aria-label={s("菜谱链接", "Recipe link")}
+                      value={recipeShare.url}
+                      onFocus={(e) => e.target.select()}
+                    />
+                  </div>
+                )}
+                <SourceVideo
+                  key={recipe.id}
+                  videos={videosForRecipe(recipe.id)}
+                  locale={locale}
+                />
+                {cooking ? (
+                  <section className="cooking">
+                    <p className="eyebrow">
+                      {s("烹饪阅读", "COOKING READER")} · {step + 1} /{" "}
+                      {steps.length}
+                    </p>
+                    <div lang={locale === "en" ? "en" : "zh-CN"}>
+                      <Markdown>{steps[step]}</Markdown>
+                    </div>
+                    <div className="actions">
+                      <button
+                        disabled={step === 0}
+                        onClick={() => {
+                          setStep(step - 1);
+                          cookingPositions.current.set(
+                            `${recipe.id}:${preparationId || "main"}`,
+                            step - 1,
+                          );
+                        }}
+                      >
+                        {s("上一段", "Previous section")}
+                      </button>
+                      <button
+                        disabled={step === steps.length - 1}
+                        onClick={() => {
+                          setStep(step + 1);
+                          cookingPositions.current.set(
+                            `${recipe.id}:${preparationId || "main"}`,
+                            step + 1,
+                          );
+                        }}
+                      >
+                        {s("下一段 →", "Next section →")}
+                      </button>
+                    </div>
+                    <p className="hint">
+                      {s(
+                        "按步骤完成，再继续下一步。",
+                        "Finish each section before moving on.",
+                      )}
+                    </p>
+                  </section>
+                ) : (
+                  <div
+                    className="recipe-body"
+                    lang={locale === "en" ? "en" : "zh-CN"}
+                  >
+                    <RecipeContent body={readingBody} />
+                  </div>
+                )}
+                {essentialsForRecipe(recipe.id).length > 0 && (
+                  <section className="recipe-techniques">
+                    <h2>{s("相关厨房基础", "Related kitchen essentials")}</h2>
+                    <div className="recent-links">
+                      {essentialsForRecipe(recipe.id).map((item) => (
+                        <a
+                          key={item.id}
+                          href={`#essentials/${item.id}`}
+                          onClick={(event) => {
+                            event.preventDefault();
+                            location.hash = `essentials/${item.id}`;
+                            history.replaceState(
+                              { panfolioReference: item.id },
+                              "",
+                              location.href,
+                            );
+                          }}
+                        >
+                          {locale === "en" ? item.titleEn : item.title}
+                        </a>
+                      ))}
+                    </div>
+                  </section>
+                )}
+                <section
+                  className="recipe-personal-actions"
+                  aria-label={s("我的做菜记录", "My cooking record")}
+                >
+                  <button
+                    aria-pressed={
+                      data.kitchen?.tried.includes(recipe.id) || false
+                    }
+                    onClick={() => saved.toggleTried(recipe.id)}
+                  >
+                    {s("做过这道菜", "I've made this")}
+                  </button>
+                  <button
+                    aria-pressed={
+                      data.kitchen?.repeat.includes(recipe.id) || false
+                    }
+                    onClick={() => saved.toggleRepeat(recipe.id)}
+                  >
+                    {s("加入常做", "Make again")}
+                  </button>
+                </section>
+                <section className="notes">
+                  <h2>{s("我的厨房笔记", "My cooking notes")}</h2>
+                  <label htmlFor="note">
+                    {s(
+                      "这次的调整，下次的灵感",
+                      "What to change or try next time",
+                    )}
+                  </label>
+                  <textarea
+                    id="note"
+                    placeholder={s(
+                      "比如：下次少放一点盐，土豆切大块……",
+                      "For example: less salt next time; cut larger potato pieces…",
+                    )}
+                    value={data.notes[recipe.id] || ""}
+                    onChange={(e) => saved.note(recipe.id, e.target.value)}
+                  />
+                  <p className="hint">
+                    {s(
+                      "自动保存在此设备。清除浏览器数据会删除笔记，请定期导出。",
+                      "Saved on this device. Export backups before clearing browser data.",
+                    )}
+                  </p>
+                </section>
+              </article>
+            ) : page === "ai" ? (
+              <Suspense
+                fallback={
+                  <p role="status">
+                    {s("正在打开 AI 指引…", "Opening AI guide…")}
+                  </p>
+                }
+              >
+                <AiGuide
+                  locale={locale}
+                  writer={writer}
+                  copying={copying}
+                  online={online}
+                />
+              </Suspense>
+            ) : page === "settings" ? (
+              <Settings
+                locale={locale}
+                onLocale={setLocale}
+                online={online}
+                installed={installed}
+                offlineStatus={update.offlineStatus}
+                onInstall={() => void doInstall()}
+                onAbout={() => info("about")}
+                onCheck={() => void check()}
+                checking={checking}
+                shareAction={share("settings")}
+                onExport={() => void exportData()}
+                onImport={() => file.current?.click()}
+              />
+            ) : page === "guides" ? (
+              <section className="guides">
+                <h2>{s("从收藏到上桌", "From saved recipe to dinner")}</h2>
+                <details open>
+                  <summary>{s("找到想做的菜", "Find a recipe")}</summary>
+                  <p>
+                    {s(
+                      "搜索菜名或食材，使用分类缩小范围。点星标收藏，打开菜谱后进入烹饪阅读。",
+                      "Search names or ingredients and filter by category. Save recipes with the star and open cooking mode for section-by-section reading.",
+                    )}
+                  </p>
+                </details>
+                <details>
+                  <summary>{s("做出自己的版本", "Make it your own")}</summary>
+                  <p>
+                    {s(
+                      "用厨房笔记记录实际用量、口味调整和下次想试的做法。原始菜谱不会被修改。",
+                      "Use notes for quantities you used, seasoning changes and ideas for next time. The original recipe stays intact.",
+                    )}
+                  </p>
+                </details>
+                <details>
+                  <summary>
+                    {s("离线、安装与更新", "Offline, installation and updates")}
+                  </summary>
+                  <p>
+                    {s(
+                      "在设置查看离线就绪状态，按设备指引安装。联网回到应用时会检查更新，也可手动检查；新版本需要确认后才启用。",
+                      "Check offline readiness in Settings and follow installation instructions. Returning online checks for updates; you can also check manually. Confirm an available update to activate it.",
+                    )}
+                  </p>
+                  <button onClick={() => info("install")}>
+                    {s("安装指引", "Installation help")}
+                  </button>
+                </details>
+                <details>
+                  <summary>{s("备份你的记录", "Back up your notes")}</summary>
+                  <p>
+                    {s(
+                      "定期在设置导出 JSON。换设备时导入备份，收藏会合并，已有笔记优先保留。没有云同步。",
+                      "Export JSON regularly in Settings. Import on another device to merge favorites while preserving existing notes. There is no cloud sync.",
+                    )}
+                  </p>
+                </details>
+              </section>
+            ) : (
+              <>
+                {page === "saved" ? (
+                  <MyKitchen
+                    locale={locale}
+                    saved={saved}
+                    recentIds={recent}
+                    query={myKitchenQuery}
+                    onQueryChange={setMyKitchenQuery}
+                    onOpenRecipe={(id, trigger) => {
+                      const entry = recipes.find((recipe) => recipe.id === id);
+                      if (entry) openRecipe(entry, trigger);
+                    }}
+                  />
+                ) : (
+                  <section
+                    className={`discovery-page${isEssentials ? " essentials-index" : ""}`}
+                  >
+                    <div className="discovery-page-heading">
+                      <h2>
+                        {isEssentials
+                          ? s("需要时，随手查。", "Know what to do next.")
+                          : series
+                            ? s("日厨系列", "Japanese chef series")
+                            : s(
+                                "今天，做点喜欢的。",
+                                "Something good to cook.",
+                              )}
+                      </h2>
+                      <p>
+                        {isEssentials
+                          ? s(
+                              "食材处理、火候、调味与保存。",
+                              "Preparation, heat, seasoning and storage.",
+                            )
+                          : s(
+                              "中餐、日厨系列、甜品，简单找菜。",
+                              "Chinese dishes, Japanese chef recipes and desserts.",
+                            )}
+                      </p>
+                      {isEssentials && (
+                        <a href="#guides">
+                          {s(
+                            "使用指南：收藏、离线与备份",
+                            "User guide: saving, offline use and backups",
+                          )}{" "}
+                          ↗
+                        </a>
+                      )}
+                    </div>
+                    <DiscoveryBrowser
+                      key={listKey}
+                      defaultScope={isEssentials ? "references" : "recipes"}
+                      locale={locale}
+                      state={discoveryState}
+                      onChange={updateDiscovery}
+                      defaultCategory={series ? "japanese" : undefined}
+                      favorites={data.favorites}
+                      onFavorite={saved.favorite}
+                      onOpenRecipe={(id, selected, trigger) => {
+                        const entry = recipes.find(
+                          (recipe) => recipe.id === id,
+                        );
+                        if (entry) openRecipe(entry, trigger, selected);
+                      }}
+                      onOpenReference={(id, trigger) => {
+                        detailTrigger.current = trigger;
+                        location.hash = `essentials/${id}`;
+                        history.replaceState(
+                          { panfolioReference: id },
+                          "",
+                          location.href,
+                        );
+                      }}
+                      inputRef={searchInput}
+                      searchActive={searchActive}
+                      onSearchFocus={beginSearch}
+                      onSearchCancel={cancelSearch}
+                    />
+                  </section>
+                )}
+              </>
+            )}
+            <footer>
+              <strong>Panfolio</strong>
+              <span>
+                {s(
+                  "不需要账号 · 数据留在你的设备",
+                  "No account · Data stays on your device",
+                )}
+              </span>
+            </footer>
+          </div>
+        </main>
+      </div>
+      <input
+        hidden
+        ref={file}
+        type="file"
+        accept="application/json,.json"
+        onChange={(e) => {
+          const f = e.target.files?.[0];
+          if (f) void importData(f);
+          e.target.value = "";
+        }}
+      />
+      {showTop && !dialog && !frame.keyboardOpen && (
+        <button
+          className="back-to-top"
+          aria-label={s("回到顶部", "Back to top")}
+          onClick={() => {
+            frame.scrollRef.current?.scrollTo({
+              top: 0,
+              behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
+                ? "auto"
+                : "smooth",
+            });
+          }}
+        >
+          <span aria-hidden="true">↑</span>
+          <span>{s("顶部", "Top")}</span>
+        </button>
+      )}
+      {message && (
+        <div className="toast" role="status">
+          {message}
+          <button onClick={() => setMessage("")}>{s("关闭", "Close")}</button>
+        </div>
+      )}
+      {dialog && (
+        <InfoDialog
+          title={
+            dialog === "install"
+              ? s("随身带着你的厨房", "Take your kitchen with you")
+              : s("使用说明", "Instructions")
+          }
+          closeLabel={s("关闭", "Close")}
+          onClose={back}
+        >
+          {dialog === "install" ? (
+            <>
+              <p>
+                {s(
+                  "iPhone 和 iPad：在 Safari 点“分享”，选择“添加到主屏幕”。",
+                  "iPhone and iPad: in Safari, choose Share → Add to Home Screen.",
+                )}
+              </p>
+              <p>
+                {s(
+                  "Android：浏览器菜单选择“安装应用”或“添加到主屏幕”。桌面：使用地址栏的安装图标。",
+                  "Android: choose Install app or Add to Home Screen in the browser menu. Desktop: use the install icon in the address bar.",
+                )}
+              </p>
+              <p>
+                {s(
+                  "首次完整联网加载并确认缓存就绪后，可离线查看菜谱正文。",
+                  "After a full online visit and confirmed caching, recipe text works offline.",
+                )}
+              </p>
+            </>
+          ) : (
+            <>
+              <p>
+                {s(
+                  "浏览菜谱 → 收藏喜欢的菜 → 开始烹饪 → 留下个人笔记。",
+                  "Browse recipes → save favorites → start cooking → keep personal notes.",
+                )}
+              </p>
+              <p>
+                {s(
+                  "菜谱与操作界面支持中英文，可随时切换。",
+                  "Recipes and the interface support Chinese and English. Switch languages at any time.",
+                )}
+              </p>
+              <p>
+                {s(
+                  "收藏和笔记保存在此设备，分享链接不包含笔记。请定期在设置导出备份。",
+                  "Favorites and notes stay on this device. Shared links exclude notes. Export backups regularly in Settings.",
+                )}
+              </p>
+            </>
+          )}
+        </InfoDialog>
+      )}
+    </div>
+  );
+}

@@ -1,0 +1,235 @@
+{
+  "sourceSha256": "ca70bcf6ce585712688c916fda4f8176f8650e46988244a732ea958251124491",
+  "checks": [
+    "bilingual completeness",
+    "section parity",
+    "step numbering",
+    "numeric parity",
+    "measured-unit parity",
+    "reference parity",
+    "English-only body",
+    "source-specific terminology regressions"
+  ],
+  "cases": [
+    {
+      "id": "01.-ri-shi-ma-ling-shu-dun-rou",
+      "title": "日式土豆炖肉",
+      "issues": []
+    },
+    {
+      "id": "02.ajian-ban-dan-chao-fan",
+      "title": "阿见版蛋炒饭",
+      "issues": []
+    },
+    {
+      "id": "03.-xia-ren-dan-chao-fan",
+      "title": "虾仁蛋炒饭",
+      "issues": []
+    },
+    {
+      "id": "04.-ji-dan-chao-mi-fen",
+      "title": "鸡蛋炒米粉",
+      "issues": []
+    },
+    {
+      "id": "05.-shao-jiao-pi-dan-chao-fan",
+      "title": "烧椒皮蛋炒饭",
+      "issues": []
+    },
+    {
+      "id": "06.-hong-shao-qie-zi",
+      "title": "红烧茄子",
+      "issues": []
+    },
+    {
+      "id": "07.-xing-zhou-chao-mi-fen",
+      "title": "星洲炒米粉",
+      "issues": []
+    },
+    {
+      "id": "08.-hai-xian-fen-si-bao",
+      "title": "海鲜粉丝煲",
+      "issues": []
+    },
+    {
+      "id": "09.-qie-zi-chao-ji-dan",
+      "title": "茄子炒鸡蛋",
+      "issues": []
+    },
+    {
+      "id": "10.-rang-pao-mian-hao-chi-fan-bei-de-10-zhong-zuo-fa",
+      "title": "泡面的 10 种做法",
+      "issues": []
+    },
+    {
+      "id": "11.-qing-zheng-huang-hua-yu",
+      "title": "清蒸黄花鱼",
+      "issues": []
+    },
+    {
+      "id": "12.-liang-ban-zhe-er-gen",
+      "title": "凉拌折耳根",
+      "issues": []
+    },
+    {
+      "id": "13.-dou-chi-zheng-pai-gu",
+      "title": "豆豉蒸排骨",
+      "issues": []
+    },
+    {
+      "id": "14.-bo-cai-chao-ji-dan",
+      "title": "菠菜炒鸡蛋",
+      "issues": []
+    },
+    {
+      "id": "15.-xia-ren-hua-dan",
+      "title": "虾仁滑蛋",
+      "issues": []
+    },
+    {
+      "id": "16.-suan-xiang-zi-ran-pai-gu",
+      "title": "蒜香孜然排骨",
+      "issues": []
+    },
+    {
+      "id": "17.-xia-ren-chao-xi-lan-hua",
+      "title": "虾仁炒西兰花",
+      "issues": []
+    },
+    {
+      "id": "18.-xiang-jian-yin-xue-yu",
+      "title": "香煎银鳕鱼",
+      "issues": []
+    },
+    {
+      "id": "19.-wan-neng-tiao-liao-zhi-pai-huang-gua",
+      "title": "万能料汁拍黄瓜",
+      "issues": []
+    },
+    {
+      "id": "20.-jiao-si-fu-ru-chao-kong-xin-cai",
+      "title": "椒丝腐乳炒空心菜",
+      "issues": []
+    },
+    {
+      "id": "samukichi-salmon",
+      "title": "脆皮香煎三文鱼",
+      "issues": []
+    },
+    {
+      "id": "samukichi-broccoli",
+      "title": "脆嫩西兰花与两种风味",
+      "issues": []
+    },
+    {
+      "id": "samukichi-chicken",
+      "title": "冷锅脆皮鸡腿",
+      "issues": []
+    },
+    {
+      "id": "samukichi-asparagus",
+      "title": "香煎芦笋与五花肉卷",
+      "issues": []
+    },
+    {
+      "id": "samukichi-cauliflower",
+      "title": "焦香烤花椰菜与奶酪变化",
+      "issues": []
+    },
+    {
+      "id": "samukichi-yakisoba",
+      "title": "焦香猪肉蔬菜炒面",
+      "issues": []
+    },
+    {
+      "id": "samukichi-mushrooms",
+      "title": "蒜香黄油酱油煎蘑菇",
+      "issues": []
+    },
+    {
+      "id": "samukichi-tuna",
+      "title": "金枪鱼罐头三吃：嫩蛋、番茄吐司与酱油炒饭",
+      "issues": []
+    },
+    {
+      "id": "samukichi-garlic-shrimp",
+      "title": "去虾线与蒜香黄油虾",
+      "issues": []
+    },
+    {
+      "id": "samukichi-caramelized-onions",
+      "title": "深色焦糖洋葱与浓郁洋葱汤",
+      "issues": []
+    },
+    {
+      "id": "samukichi-steak",
+      "title": "芥末奶油酱煎牛排",
+      "issues": []
+    },
+    {
+      "id": "samukichi-chicken-breast",
+      "title": "糖盐腌低温鸡胸肉",
+      "issues": []
+    },
+    {
+      "id": "samukichi-fried-rice",
+      "title": "蒜香彩椒蛋炒饭",
+      "issues": []
+    },
+    {
+      "id": "ali-coconut-sago",
+      "title": "椰汁西米露",
+      "issues": []
+    },
+    {
+      "id": "awei-one-pot-rice",
+      "title": "阿伟的六款电饭锅焖饭",
+      "issues": []
+    },
+    {
+      "id": "rosalina-tomato-beef",
+      "title": "萝洁塔的番茄炖牛肉与意面",
+      "issues": []
+    },
+    {
+      "id": "magic-lamb-pilaf",
+      "title": "小高姐羊肉手抓饭与基础白饭",
+      "issues": []
+    },
+    {
+      "id": "ali-scallion-meat-pancakes",
+      "title": "阿栗葱香千层肉饼",
+      "issues": []
+    },
+    {
+      "id": "liuyi-stir-fried-noodles",
+      "title": "留意美食家常炒面",
+      "issues": []
+    },
+    {
+      "id": "feng-night-market-vermicelli",
+      "title": "冯小厨牛肉炒米粉",
+      "issues": []
+    },
+    {
+      "id": "ajian-scallion-pork-chops",
+      "title": "阿见葱盐猪排",
+      "issues": []
+    },
+    {
+      "id": "ali-sauced-noodles",
+      "title": "葱香凉拌面",
+      "issues": []
+    },
+    {
+      "id": "remus-shrimp-eggs",
+      "title": "杰少滑蛋虾仁",
+      "issues": []
+    },
+    {
+      "id": "ting-soy-sauce-noodles",
+      "title": "鼎爷豉油王炒面",
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+
+# Responsive derivatives are generated from committed originals.
+public/recipes/*.480.jpg
+public/recipes/*.768.jpg
+public/recipes/*.1200.jpg
+
+# Generated AI content and portable consumer archive.
+public/ai/
+public/downloads/panfolio-skill.zip
+__pycache__/
+*.pyc
+
+public/downloads/panfolio-chatgpt-plugin.zip
+
+# Generated MCP deployment snapshot and Cloudflare build output.
+mcp/generated/
+mcp/.cloudflare/
+mcp/.wrangler/
+mcp/.cf/
+
+# Generated release evidence and local credentials.
+public/downloads/release-manifest.json
+public/downloads/SHA256SUMS
+.env
+.env.*
+!.env.example
+
+# Current cross-host plugin archives.
+public/downloads/panfolio-plugin.zip
+public/downloads/panfolio-plugin-claude.zip
