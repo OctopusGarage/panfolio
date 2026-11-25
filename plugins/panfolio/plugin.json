@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "panfolio",
-  "version": "0.1.0",
-  "description": "Find Panfolio recipes and kitchen techniques, follow a selected preparation, and create source-based shopping checklists using the public cookbook feed.",
+  "version": "0.2.0",
+  "description": "Read Panfolio recipes and kitchen techniques directly from public GitHub Markdown files.",
   "author": {
     "name": "OctopusGarage",
     "url": "https://github.com/OctopusGarage"
@@ -16,7 +16,7 @@
       "interface": {
         "displayName": "Panfolio",
         "shortDescription": "Recipes and kitchen guidance",
-        "longDescription": "Look up Chinese dishes, Japanese chef recipes, desserts and kitchen references from Panfolio. Follow one selected preparation with its original quantities, explanations and source links, or build a shopping checklist. Retrieves public content on demand; requires HTTPS retrieval in the host. No Panfolio account, API key or app installation is required. Does not access personal app notes or favorites.",
+        "longDescription": "Read Chinese dishes, Japanese chef recipes, desserts and kitchen references directly from public GitHub Markdown files. Follow one selected preparation with its original quantities, explanations and source links, or build a shopping checklist. Requires a host that can read public HTTPS text. No terminal, Python, Panfolio account, API key or app installation is required. Does not access personal app notes or favorites.",
         "developerName": "OctopusGarage",
         "category": "Productivity",
         "capabilities": ["Read"],

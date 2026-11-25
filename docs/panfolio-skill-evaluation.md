@@ -1,5 +1,23 @@
 # Panfolio skill implementation and evaluation
 
+## Current v0.2.0 Markdown workflow
+
+The v0.2.0 implementation is verified locally. See [GitHub Releases](https://github.com/OctopusGarage/panfolio/releases/tag/panfolio-ai-v0.2.0) and its linked deployment workflow for publication status. Existing installed plugins retain their previous package until explicitly updated. Actual target-account ChatGPT retrieval remains a separate validation step.
+
+The shared skill reads public GitHub Markdown indexes and individual preparation/reference documents, with one rendered-file fallback. It no longer distributes a Python helper or requires manifest/catalog parsing. The author-side Python ZIP packager is not installed consumer code. The legacy JSON feed remains for already released clients.
+
+The generated tree contains 285 files: one landing index, four language indexes, 88 bilingual parent documents, 130 preparation documents and 62 kitchen-reference documents. Tests verify every reviewed recipe and preparation body, every reference's operations/reasons/mistakes/scope/limits, its comparison note and sources, and every generated Raw link target. Checked-in content must match the generator byte for byte; the build/CI inventory check also rejects missing or extra Markdown files.
+
+The reported asparagus request resolves to `en/preparations/samukichi-asparagus/pork-rolls.md`. The test checks its real quantities, original YouTube URL and absence of the basic-version ingredient line. The Chinese salmon request resolves directly to `zh/preparations/samukichi-salmon/main.md`; full source-body parity preserves its salting/drying and off-heat finish. The soy-sauce reference preserves its salmon comparison and limits. Both queries are documented as direct examples in the skill.
+
+Verification: 63 project unit tests and 142 Chromium/WebKit browser tests passed, as did all 44 recipe evaluations, the production TypeScript/build checks, current Markdown checks, formatting and whitespace checks. The plugin manifest passed the canonical Agent Plugins JSON Schema. Repeated archive builds are byte-identical; shared skill bytes match the package, and neither archive contains a consumer script. The new indexes and detail files were verified locally; no new remote Markdown availability or actual ChatGPT cooking conversation is claimed.
+
+The previous evaluation below is retained as historical evidence. Its helper-based consumer tests did not establish ChatGPT compatibility; the user's subsequent failures and the runtime audit motivated this replacement.
+
+---
+
+# Historical v0.1.0 evaluation
+
 Status: locally implemented and evaluated; not yet pushed or deployed. Hosted feed/archive URLs and repository installation become available only after publication and successful Pages deployment.
 
 ## Implemented artifacts

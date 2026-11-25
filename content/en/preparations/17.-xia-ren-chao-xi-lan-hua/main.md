@@ -1,0 +1,46 @@
+# Stir-fried shrimp and broccoli
+
+Chinese · Preparation type: dish
+
+ID: 17.-xia-ren-chao-xi-lan-hua / main
+
+Use the selected ingredients and method below. Shared tips apply only when their food and conditions match this preparation.
+
+## Ingredients
+
+- Broccoli, shrimp and garlic
+- Soy sauce, starch, chicken bouillon seasoning, salt and cooking oil
+- Cherry tomatoes and Hainan chili sauce, optional
+
+## Method
+
+### 1. Prepare the broccoli
+
+Wash the broccoli and soak crown-side down in lightly salted water for 30 minutes. Rinse again and cut into florets.
+
+### 2. Marinate the shrimp
+
+Thaw and devein the shrimp. Mix with soy sauce and starch and leave for about 10 minutes.
+
+### 3. Blanch the broccoli
+
+Blanch the broccoli in salted boiling water until mostly cooked, then drain.
+
+### 4. Stir-fry the shrimp
+
+Crush the garlic. Heat a little oil, fry the garlic until fragrant, then add the shrimp and fry until they change color.
+
+### 5. Combine and serve
+
+Add the broccoli and stir-fry together. Season with a little chicken seasoning and salt, cook through and serve.
+
+## Tips
+
+- Garnish with cherry tomatoes and serve with Hainan chili sauce if desired.
+
+## References
+
+- [View recipe](https://www.xiachufang.com/recipe/100551182/)
+
+
+

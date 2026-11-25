@@ -134,8 +134,7 @@ test("skill distribution is deterministic and independent of source recipe files
       ),
     ) as string[];
     assert.ok(files.includes("panfolio/SKILL.md"));
-    assert.ok(files.includes("panfolio/scripts/panfolio.py"));
-    assert.ok(files.includes("panfolio/references/content-contract.md"));
+    assert.ok(!files.some((path) => /\.py$|scripts\//.test(path)));
     assert.ok(
       files.every(
         (path) =>
@@ -214,6 +213,7 @@ print(json.dumps({'files':z.namelist(),'manifest':json.loads(z.read('plugin.json
         (path: string) =>
           !path.includes("..") &&
           !path.startsWith("/") &&
+          !path.endsWith(".py") &&
           !/recipes|\.app\.json|mcp\.json|__pycache__|node_modules/.test(path),
       ),
     );
