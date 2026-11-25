@@ -15,16 +15,9 @@ console.log(
   `${recipes.length} recipes validated: bilingual sections, steps, numeric quantities, measured units, reference links and source-specific translation terminology.`,
 );
 if (process.argv.includes("--report")) {
-  const review = readFileSync("docs/english-ai-review.md", "utf8");
   const sha = (text: string) => createHash("sha256").update(text).digest("hex");
   const report = {
     sourceSha256: sha(readFileSync("src/recipes.json", "utf8")),
-    independentAiReview: {
-      path: "docs/english-ai-review.md",
-      sha256: sha(review),
-      reviewedSnapshotSha256: review.match(/SHA256: `([a-f0-9]+)`/)?.[1],
-      kind: "Independent native AI-agent review; corrections subsequently applied by implementing agent; no live API benchmark claimed",
-    },
     checks: [
       "bilingual completeness",
       "section parity",

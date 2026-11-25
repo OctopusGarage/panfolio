@@ -1,11 +1,5 @@
 {
   "sourceSha256": "7288dcdc9f64d19815eb7391e16e025e9638543a3405c0e4f6aaf4bfea60d4be",
-  "independentAiReview": {
-    "path": "docs/english-ai-review.md",
-    "sha256": "65fb661e8dc15e4d0eea5a67b0e06aab951771266781ea7682ece24432b160fe",
-    "reviewedSnapshotSha256": "9c7371f7061393614b38f8c055cb3e9fb7556b9cf27df48e87cc8618206b0294",
-    "kind": "Independent native AI-agent review; corrections subsequently applied by implementing agent; no live API benchmark claimed"
-  },
   "checks": [
     "bilingual completeness",
     "section parity",
