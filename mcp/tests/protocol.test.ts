@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { createMcpHandler } from "agents/mcp/server";
 import { createServer } from "../src/server";
+import cookbook from "../generated/cookbook.json" with { type: "json" };
 const handler = createMcpHandler(createServer, {
   responseMode: "json",
   legacy: "stateless",
@@ -71,6 +72,7 @@ async function rpc(
       tools?: { name: string }[];
       content?: { text: string }[];
       isError?: boolean;
+      structuredContent?: Record<string, unknown>;
     };
     error?: unknown;
   };
@@ -126,4 +128,35 @@ test("2026 stateless client works without initialization and preserves concurren
   );
   for (const result of results)
     assert.match(result.content![0].text, /salmon/i);
+});
+
+// Complete transport coverage; this is not a score for model answers.
+test("every bundled document survives the actual MCP tool boundary with its identity", async () => {
+  let id = 100;
+  for (const [path, expected] of Object.entries(cookbook.files)) {
+    const result = await rpc(
+      id++,
+      "tools/call",
+      {
+        name: "read_document",
+        arguments: { path },
+      },
+      "2026-07-28",
+    );
+    assert.ok(!result.isError, path);
+    assert.equal(result.content?.[0].text, expected, path);
+    assert.equal(result.structuredContent?.path, path);
+    for (const key of [
+      "version",
+      "contentVersion",
+      "guidanceVersion",
+      "sourceRevision",
+      "fingerprint",
+    ] as const)
+      assert.equal(
+        result.structuredContent?.[key],
+        cookbook[key],
+        `${path}: ${key}`,
+      );
+  }
 });

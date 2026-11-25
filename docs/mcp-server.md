@@ -6,13 +6,13 @@ The read-only Cloudflare Worker exposes `/mcp` through Streamable HTTP. Its curr
 https://panfolio-mcp.octopusgarage.workers.dev/mcp
 ```
 
-The service is deployed in the standalone Free Cloudflare account **OctopusGarage** (`057df7c08e1457f236e308a5d14c9934`), managed by the existing login identity `kingson4wu@gmail.com`. Cloudflare user identities and resource accounts are separate: one login can manage multiple accounts with independent Workers prefixes. The original `kingson4wu` account prefix and existing services were preserved. The temporary MCP Worker in the original account was removed after the new endpoint passed verification.
+The service is deployed in the dedicated **OctopusGarage** Cloudflare resource account selected in `distribution/config.json`. A login can administer multiple resource accounts; the account ID, rather than the login email, selects this deployment. Account boundaries and credentials are documented in [distribution maintenance](distribution-maintenance.md).
 
 ## Connect
 
 In an AI client that supports custom remote MCP, add the complete endpoint URL, select Streamable HTTP if asked, and select no authentication. This public cookbook requires no API key, login or local software installation. Availability depends on the specific client, plan, region and workspace. ChatGPT, Gemini Apps/CLI and Doubao Work have different connection interfaces; successful SDK tests do not certify an individual account's installation.
 
-A client accepting JSON configuration can use:
+For clients that document a Streamable HTTP `mcpServers.<name>.url` field, the configuration is below. This is not a universal schema; use the target client’s documented field names:
 
 ```json
 {
@@ -30,7 +30,7 @@ Try “Use Panfolio to guide me through asparagus pork rolls” or “看看三�
 
 ## Configuration icon
 
-Upload [the 512×512 Panfolio MCP PNG](../public/branding/panfolio-mcp-icon.png) when a client asks for an icon or logo. A [128×128 variant](../public/branding/panfolio-mcp-icon-128.png) and the [tracked source and export instructions](../assets/branding/panfolio-mcp/README.md) are also available. These local files are ready for upload; a Raw or Pages URL requires publishing this revision first. The current Worker advertises the same icon and serves it at `/icon.png`; repository-based image URLs require the corresponding revision to be published.
+Upload [the 512×512 Panfolio MCP PNG](../public/branding/panfolio-mcp-icon.png) when a client asks for an icon or logo. A [128×128 variant](../public/branding/panfolio-mcp-icon-128.png) and the [tracked source and export instructions](../assets/branding/panfolio-mcp/README.md) are also available. The published icon is also available at <https://panfolio-mcp.octopusgarage.workers.dev/icon.png>. The Worker advertises an immutable hash URL for the same bytes. A candidate artwork change is available publicly only after its deployment; see the release manifest for the matching version.
 
 ## Tools and content
 
@@ -70,4 +70,4 @@ An operator can repeat the public test with:
 pnpm mcp:smoke https://panfolio-mcp.octopusgarage.workers.dev/mcp
 ```
 
-This is a maintenance verification command, not required for people adding the MCP URL to their AI client. Existing app checks also passed: 63 unit tests, 142 Chromium/WebKit browser tests, all 44 recipe evaluations, production build and formatting. Actual installed-account ChatGPT/Gemini/Doubao conversations remain separate tests; no such account-side success is claimed.
+This is a maintenance verification command, not required for people adding the MCP URL to their AI client. See the [AI quality evaluation](ai-quality-evaluation.md) for dated model-consumer results and regression evidence. The suite now exercises every bundled document through the MCP protocol boundary, in addition to targeted scenarios. Actual installed-account ChatGPT/Gemini/Doubao conversations remain separate tests; no such account-side success is claimed.

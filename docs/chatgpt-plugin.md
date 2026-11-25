@@ -11,7 +11,7 @@ Current versions and release status are defined by [the distribution configurati
 | `public/downloads/panfolio-skill.zip`          | Compatible skill importers; eligible ChatGPT Skills upload | `panfolio/SKILL.md`, license and UI metadata             |
 | `public/downloads/panfolio-chatgpt-plugin.zip` | OpenAI plugin ZIP portal                                   | Root `plugin.json`, `skills/panfolio/`, icon and license |
 
-Neither archive includes consumer scripts, an MCP server or a second copy of the cookbook. Skills instruct the assistant to read repository Markdown with its existing HTTPS text-reading tool. They do not grant network access. No terminal, Python, account, API key or app installation is required by the cooking workflow. Python remains only a maintainer-side archive build dependency.
+Neither archive includes consumer scripts, an MCP server or a second copy of the cookbook. Skills use an already connected Panfolio MCP when available; otherwise they read repository Markdown with the host’s HTTPS text-reading tool. Neither archive grants network access or connects MCP automatically. Keep one retrieval route and content identity for each task. No terminal, Python, account, API key or app installation is required by the cooking workflow. Python remains only a maintainer-side archive build dependency.
 
 ## Install a skill
 
@@ -36,7 +36,9 @@ The GitHub workflow publishes checked-in `content/` and pins release archive lin
 
 Ask “Use Panfolio to guide me through asparagus pork rolls.” It should retrieve the selected preparation and begin cooking guidance, retaining its actual quantities and source. Ask “看看三文鱼怎么煎”. It should read the salmon method in Chinese, including its drying, heat control and off-heat finish, rather than generic advice.
 
-If Raw cannot be read, the skill tries the same file once using `https://github.com/OctopusGarage/panfolio/blob/main/content/...`. It does not search repository metadata or use shell commands. Both routes still require host networking. A failed read is not evidence that a recipe is missing. Actual ChatGPT installation and runtime tests remain separate from local archive/content checks.
+If Raw cannot be read, the skill tries the same file once using `https://github.com/OctopusGarage/panfolio/blob/main/content/...`. It does not search repository metadata or use shell commands. The web route requires host networking. A connected MCP uses its own document tools instead. Release archive instructions rebase every linked cookbook document onto the installed content-base revision; original video URLs are unchanged. A failed read is not evidence that a recipe is missing. Actual ChatGPT installation and runtime tests remain separate from local archive/content checks.
+
+The [AI quality evaluation](ai-quality-evaluation.md) records actual consumer traces, known source limitations, controlled simulations and unverified account-side checks. Passing package-schema tests alone does not establish recipe-answer quality.
 
 ## Maintainer workflow
 

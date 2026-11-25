@@ -5,6 +5,7 @@
 - [Distribution maintenance](distribution-maintenance.md): canonical AI sources, version rules, automatic GitHub releases, MCP deployment and credential rotation.
 - [MCP connection](mcp-server.md): endpoint, tools, icon and client requirements.
 - [ChatGPT installation](chatgpt-plugin.md): different Skill/plugin entry points and account-side checks.
+- [AI quality evaluation](ai-quality-evaluation.md): observed model-consumer traces, scenario rubrics, corrections and verification limits.
 - [AI distribution design](panfolio-skill-design.md): shared content and transport boundaries.
 - [Content guide](content-guide.md) and [recipe workflow](recipe-workflow.md): source-faithful editorial requirements.
 - [Discovery guide](discovery-guide.md) and [kitchen essentials](kitchen-essentials.md): current three-category browsing and reference behavior.

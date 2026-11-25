@@ -2,6 +2,8 @@
 
 ## Current unified distribution
 
+The [current AI quality evaluation](ai-quality-evaluation.md) reports the 2026-11-25 blind-consumer runs and candidate corrections. Historical test counts below apply only to their original revisions.
+
 The [maintenance contract](distribution-maintenance.md) and generated [identity](../distribution/identity.json) define the current implementation and publication mechanism. CI checks exact generated Skill/plugin/MCP metadata, shared bilingual rules, source-faithful Markdown, common icon bytes, immutable release versioning, archive commit pins, artifact checksums, SDK protocol compatibility and the deployed health/tool identities. Workflow checks and actual client-account conversations remain distinct. The historical evidence below records earlier test runs and must not be read as the current release checklist.
 
 ## Historical v0.2.0 Markdown workflow
