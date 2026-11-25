@@ -1,0 +1,115 @@
+{
+  "sourceSha256": "7288dcdc9f64d19815eb7391e16e025e9638543a3405c0e4f6aaf4bfea60d4be",
+  "checks": [
+    "bilingual completeness",
+    "section parity",
+    "step numbering",
+    "numeric parity",
+    "measured-unit parity",
+    "reference parity",
+    "English-only body",
+    "source-specific terminology regressions"
+  ],
+  "cases": [
+    {
+      "id": "01.-ri-shi-ma-ling-shu-dun-rou",
+      "title": "日式土豆炖肉",
+      "issues": []
+    },
+    {
+      "id": "02.ajian-ban-dan-chao-fan",
+      "title": "阿见版蛋炒饭",
+      "issues": []
+    },
+    {
+      "id": "03.-xia-ren-dan-chao-fan",
+      "title": "虾仁蛋炒饭",
+      "issues": []
+    },
+    {
+      "id": "04.-ji-dan-chao-mi-fen",
+      "title": "鸡蛋炒米粉",
+      "issues": []
+    },
+    {
+      "id": "05.-shao-jiao-pi-dan-chao-fan",
+      "title": "烧椒皮蛋炒饭",
+      "issues": []
+    },
+    {
+      "id": "06.-hong-shao-qie-zi",
+      "title": "红烧茄子",
+      "issues": []
+    },
+    {
+      "id": "07.-xing-zhou-chao-mi-fen",
+      "title": "星洲炒米粉",
+      "issues": []
+    },
+    {
+      "id": "08.-hai-xian-fen-si-bao",
+      "title": "海鲜粉丝煲",
+      "issues": []
+    },
+    {
+      "id": "09.-qie-zi-chao-ji-dan",
+      "title": "茄子炒鸡蛋",
+      "issues": []
+    },
+    {
+      "id": "10.-rang-pao-mian-hao-chi-fan-bei-de-10-zhong-zuo-fa",
+      "title": "泡面的 10 种做法",
+      "issues": []
+    },
+    {
+      "id": "11.-qing-zheng-huang-hua-yu",
+      "title": "清蒸黄花鱼",
+      "issues": []
+    },
+    {
+      "id": "12.-liang-ban-zhe-er-gen",
+      "title": "凉拌折耳根",
+      "issues": []
+    },
+    {
+      "id": "13.-dou-chi-zheng-pai-gu",
+      "title": "豆豉蒸排骨",
+      "issues": []
+    },
+    {
+      "id": "14.-bo-cai-chao-ji-dan",
+      "title": "菠菜炒鸡蛋",
+      "issues": []
+    },
+    {
+      "id": "15.-xia-ren-hua-dan",
+      "title": "虾仁滑蛋",
+      "issues": []
+    },
+    {
+      "id": "16.-suan-xiang-zi-ran-pai-gu",
+      "title": "蒜香孜然排骨",
+      "issues": []
+    },
+    {
+      "id": "17.-xia-ren-chao-xi-lan-hua",
+      "title": "虾仁炒西兰花",
+      "issues": []
+    },
+    {
+      "id": "18.-xiang-jian-yin-xue-yu",
+      "title": "香煎银鳕鱼",
+      "issues": []
+    },
+    {
+      "id": "19.-wan-neng-tiao-liao-zhi-pai-huang-gua",
+      "title": "万能料汁拍黄瓜",
+      "issues": []
+    },
+    {
+      "id": "20.-jiao-si-fu-ru-chao-kong-xin-cai",
+      "title": "椒丝腐乳炒空心菜",
+      "issues": []
+    }
+  ]
+}
