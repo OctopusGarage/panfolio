@@ -7,3 +7,11 @@ playwright-report/
 public/recipes/*.480.jpg
 public/recipes/*.768.jpg
 public/recipes/*.1200.jpg
+
+# Generated AI content and portable consumer archive.
+public/ai/
+public/downloads/panfolio-skill.zip
+__pycache__/
+*.pyc
+
+public/downloads/panfolio-chatgpt-plugin.zip

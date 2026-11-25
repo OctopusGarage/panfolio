@@ -1,0 +1,4 @@
+interface:
+  display_name: "Panfolio"
+  short_description: "Cook from curated recipes and kitchen references"
+  default_prompt: "Use $panfolio to find a dish and guide me through its preparation."

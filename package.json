@@ -5,17 +5,19 @@
   "type": "module",
   "scripts": {
     "dev": "pnpm images:build && vite --host 0.0.0.0",
-    "build": "pnpm images:build && tsc --noEmit && vite build",
+    "build": "pnpm images:build && pnpm ai:build && tsc --noEmit && vite build",
     "test": "tsx --test tests/*.test.ts",
     "test:e2e": "playwright test",
     "preview": "vite preview",
     "eval": "tsx scripts/eval.ts",
     "typecheck": "tsc --noEmit",
     "test:webkit": "playwright test --project=webkit",
-    "format": "prettier --write src tests scripts *.ts *.json *.html *.md .github/workflows/*.yml",
-    "format:check": "prettier --check src tests scripts *.ts *.json *.html *.md .github/workflows/*.yml",
+    "format": "prettier --write src tests scripts skills plugins *.ts *.json *.html *.md .github/workflows/*.yml",
+    "format:check": "prettier --check src tests scripts skills plugins *.ts *.json *.html *.md .github/workflows/*.yml",
     "images:build": "tsx scripts/recipe-images.ts",
-    "eval:report": "tsx scripts/eval.ts --report"
+    "eval:report": "tsx scripts/eval.ts --report",
+    "ai:build": "tsx scripts/build-ai.ts && python3 scripts/package-skill.py",
+    "test:skill": "python3 -m unittest discover -s tests -p 'skill_helper_test.py'"
   },
   "dependencies": {
     "@octopusgarage/s": "https://github.com/OctopusGarage/s/releases/download/sdk-v1.0.0/octopusgarage-s-1.0.0.tgz",
