@@ -64,72 +64,6 @@ for (const width of [320, 390, 768, 1280]) {
   }
 }
 
-test("filter sheet keeps background controls inert, returns focus and supports both languages", async ({
-  page,
-}) => {
-  await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto("/");
-  const filter = page.locator(".discovery-mobile-filter");
-  await filter.click();
-  const sheet = page.getByRole("dialog", { name: "筛选", exact: true });
-  await expect(sheet).toBeVisible();
-  for (let i = 0; i < 12; i++) {
-    await page.keyboard.press("Tab");
-    const active = await page.evaluate(
-      () =>
-        document.activeElement?.tagName +
-        ":" +
-        document.activeElement?.getAttribute("aria-label"),
-    );
-    expect(
-      await sheet.evaluate(
-        (element) =>
-          element.contains(document.activeElement) ||
-          document.activeElement === document.body,
-      ),
-      active,
-    ).toBe(true);
-  }
-  expect(
-    (await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze())
-      .violations,
-  ).toEqual([]);
-  await page.keyboard.press("Escape");
-  await expect(sheet).not.toBeVisible();
-  await expect(filter).toBeFocused();
-  await page.getByRole("button", { name: "English", exact: true }).click();
-  await filter.click();
-  await expect(
-    page.getByRole("dialog", { name: "Filters", exact: true }),
-  ).toBeVisible();
-  expect(
-    (await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze())
-      .violations,
-  ).toEqual([]);
-});
-
-test("mixed-search sheet counts all result types and Clear all restores destination", async ({
-  page,
-}) => {
-  await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto("/");
-  await page.getByRole("searchbox").fill("土豆");
-  const count = Number(
-    (await page.locator(".search-results-count").innerText()).match(/\d+/)![0],
-  );
-  await expect(page.locator(".essential-card").first()).toBeVisible();
-  await page.locator(".discovery-mobile-filter").click();
-  const sheet = page.getByRole("dialog", { name: "筛选", exact: true });
-  await expect(sheet.getByRole("button", { name: /^显示结果/ })).toHaveText(
-    `显示结果 (${count})`,
-  );
-  await sheet.getByRole("button", { name: "清除全部", exact: true }).click();
-  await sheet.getByRole("button", { name: /^显示结果/ }).click();
-  await expect(page.getByRole("searchbox")).toHaveValue("");
-  await expect(page.locator(".essential-card")).toHaveCount(0);
-  await expect(page.locator(".discovery-scopes")).toHaveCount(0);
-});
-
 test("My kitchen query and focused recipe survive a detail round trip", async ({
   page,
 }) => {
@@ -145,42 +79,23 @@ test("My kitchen query and focused recipe survive a detail round trip", async ({
   await expect(card).toBeFocused();
 });
 
-test("saved chef-series searches preserve their collection restriction", async ({
+test("chef category search stays within its category and survives a detail round trip", async ({
   page,
 }) => {
   await page.goto("/#japanese-chef");
+  await expect(page.locator(".grid .card")).toHaveCount(14);
   await page.getByRole("searchbox").fill("鸡");
-  const expected = await page
-    .locator(".card[data-recipe-id]")
-    .evaluateAll((cards) =>
-      cards.map((card) => (card as HTMLElement).dataset.recipeId).sort(),
-    );
-  expect(expected.length).toBeGreaterThan(0);
-  await page.getByRole("button", { name: "保存搜索", exact: true }).click();
-  await expect
-    .poll(() =>
-      page.evaluate(
-        () =>
-          JSON.parse(localStorage.getItem("panfolio-data") || "{}").kitchen
-            ?.searches.length,
-      ),
-    )
-    .toBe(1);
-  await page.locator('a[href="#saved"]').click();
-  await page.getByRole("button", { name: "筛选", exact: true }).click();
-  await page
-    .locator(".my-kitchen")
-    .getByRole("button", { name: "鸡", exact: true })
-    .click();
-  await expect(page.locator(".card[data-recipe-id]")).toHaveCount(
-    expected.length,
+  const cards = page.locator(".card[data-recipe-id]");
+  const ids = await cards.evaluateAll((items) =>
+    items.map((item) => (item as HTMLElement).dataset.recipeId).sort(),
   );
+  expect(ids.length).toBeGreaterThan(0);
+  await cards.locator("h3 a").first().click();
+  await page.getByRole("button", { name: /返回菜谱/ }).click();
+  await expect(page.getByRole("searchbox")).toHaveValue("鸡");
   expect(
-    await page
-      .locator(".card[data-recipe-id]")
-      .evaluateAll((cards) =>
-        cards.map((card) => (card as HTMLElement).dataset.recipeId).sort(),
-      ),
-  ).toEqual(expected);
-  await expect(page).toHaveURL(/#japanese-chef$/);
+    await cards.evaluateAll((items) =>
+      items.map((item) => (item as HTMLElement).dataset.recipeId).sort(),
+    ),
+  ).toEqual(ids);
 });

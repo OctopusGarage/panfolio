@@ -1,5 +1,7 @@
 # Application release evaluation — 2026-11-25
 
+Historical record: the later three-category simplification supersedes facet and tag recommendations here. Follow [the current maintenance guide](discovery-guide.md).
+
 ## Method and release gate
 
 This evaluation combines two independent AI source reviews, AI inspection of actual desktop and phone pages, deterministic content/model evaluation, accessibility checks and browser scenarios. A release is allowed only after all defined gates pass and confirmed defects are fixed and retested. AI judgment is recorded as findings and evidence, not a fabricated numeric quality score.

@@ -1,3 +1,4 @@
+import type { RecipeCategory } from "./recipe-categories";
 import type { Recipe } from "./recipe-validation";
 import type { essentials } from "./kitchen-essentials";
 export type DiscoveryFacet =
@@ -14,26 +15,18 @@ export type DiscoveryFacet =
 export type DiscoveryScope = "recipes" | "references" | "all";
 export interface DiscoveryState {
   query: string;
+  category?: RecipeCategory;
+  /** Legacy backup fields; no longer used for discovery. */
   selected: Partial<Record<DiscoveryFacet, string[]>>;
   ingredientMode: "any" | "all";
   scope: DiscoveryScope;
-}
-export interface DiscoveryTag {
-  id: string;
-  facet: DiscoveryFacet;
-  label: string;
-  labelEn: string;
-  aliases?: string[];
 }
 export interface DiscoveryPreparation {
   id: string;
   title: string;
   titleEn: string;
   kind: "dish" | "finish" | "component";
-  facets: Partial<Record<DiscoveryFacet, string[]>>;
-  optionalIngredientIds?: string[];
-  /** Mutually exclusive ingredient alternatives within the same preparation. */
-  ingredientChoices?: string[][];
+  searchTerms?: string[];
   /** One-based source method section indices. Omit to retain all steps. */
   methodSteps?: number[];
   /** Zero-based ingredient bullet indices. Omit to retain the original list. */
@@ -47,7 +40,6 @@ export interface RecipeDiscovery {
 }
 export interface ReferenceDiscovery {
   id: string;
-  facets: Partial<Record<DiscoveryFacet, string[]>>;
   aliases?: string[];
 }
 export interface RecipeMatch {
@@ -61,5 +53,4 @@ export interface ReferenceMatch {
 }
 export interface DiscoveryOptions {
   recipeIds?: string[];
-  favorites?: string[];
 }

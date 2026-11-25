@@ -1,5 +1,7 @@
 # Recipe discovery: independent evidence review
 
+Historical record: the later three-category simplification supersedes facet and tag recommendations here. Follow [the current maintenance guide](discovery-guide.md).
+
 Reviewed 2026-11-25 against the proposal and primary sources. This report verifies external claims, not the underlying 75-entry content audit. No production implementation or conformance testing was performed.
 
 ## Filtering: supported convention, explicit exception

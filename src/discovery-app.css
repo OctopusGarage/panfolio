@@ -1,4 +1,4 @@
-/* Compact shared navigation; content facets live with their own results. */
+/* Compact shared navigation and three-category recipe browsing. */
 .discovery-app.app-shell {
   grid-template-columns: 1fr;
   grid-template-rows: 76px minmax(0, 1fr);
@@ -94,19 +94,6 @@
   padding: 8px 12px;
   color: var(--ink);
   font: inherit;
-}
-.recipe-discovery-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  margin: 12px 0;
-}
-.recipe-discovery-tags span {
-  background: var(--accent-soft);
-  color: var(--muted);
-  border-radius: 6px;
-  padding: 4px 8px;
-  font-size: 12px;
 }
 .recipe-personal-actions {
   display: flex;

@@ -3,20 +3,8 @@ import { readFileSync } from "node:fs";
 const recipes: { category: string }[] = JSON.parse(
   readFileSync(new URL("../src/recipes.json", import.meta.url), "utf8"),
 );
-const metadata = JSON.parse(
-  readFileSync(
-    new URL("../src/recipe-discovery.json", import.meta.url),
-    "utf8",
-  ),
-) as {
-  preparations: { facets: { style?: string[]; occasion?: string[] } }[];
-}[];
 const count = (category: string) =>
-  metadata.filter((record) =>
-    record.preparations.some((prep) =>
-      prep.facets.style?.includes(`style:${category}`),
-    ),
-  ).length;
+  recipes.filter((recipe) => recipe.category === category).length;
 
 test("three explicit categories filter independently of source collections and survive recipe round trips", async ({
   page,
@@ -25,19 +13,18 @@ test("three explicit categories filter independently of source collections and s
   await page.goto("/");
   await expect(page.locator(".discovery-presets button")).toHaveText([
     "中餐",
-    "日式",
+    "日厨系列",
     "甜品",
-    "早餐",
   ]);
   await expect(page.locator(".grid .card")).toHaveCount(recipes.length);
   await page.getByRole("button", { name: "中餐", exact: true }).click();
   await expect(page.locator(".grid .card")).toHaveCount(count("chinese"));
   await expect(page.locator(".grid")).not.toContainText("日式土豆炖肉");
   await page.getByRole("button", { name: "中餐", exact: true }).click();
-  await page.getByRole("button", { name: "日式", exact: true }).click();
+  await page.getByRole("button", { name: "日厨系列", exact: true }).click();
   await expect(page.locator(".grid .card")).toHaveCount(count("japanese"));
   await expect(page.locator(".grid")).toContainText("日式土豆炖肉");
-  await page.getByRole("button", { name: "日式", exact: true }).click();
+  await page.getByRole("button", { name: "日厨系列", exact: true }).click();
   await page.getByRole("button", { name: "甜品", exact: true }).click();
   await expect(page.locator(".grid .card")).toHaveCount(1);
   await expect(
@@ -72,12 +59,13 @@ test("three explicit categories filter independently of source collections and s
   await page.getByRole("button", { name: "English", exact: true }).click();
   await expect(page.locator(".discovery-presets button")).toHaveText([
     "Chinese",
-    "Japanese",
+    "Japanese chef series",
     "Desserts",
-    "Breakfast",
   ]);
-  await page.getByRole("link", { name: "Explore the chef series" }).click();
-  await expect(page.locator(".grid .card")).toHaveCount(13);
+  await page
+    .getByRole("button", { name: "Japanese chef series", exact: true })
+    .click();
+  await expect(page.locator(".grid .card")).toHaveCount(14);
 });
 
 test("coconut sago supports translated cooking, source video and correctly attributed kitchen references", async ({

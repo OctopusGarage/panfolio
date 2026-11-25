@@ -4,9 +4,9 @@ Kitchen essentials is a separate bilingual reference collection at `#essentials`
 
 ## Organization
 
-The collection contains thirty-one references in four populated categories: Ingredient preparation, Heat & doneness, Seasoning & aroma, and Storage & meal preparation. The nine-video expansion adds nine references, including explicitly sourced caramelized-onion storage. The coconut sago addition contributes cooking and storage references from Ali Kitchen. The eleven-video expansion adds seven references, including three standalone vegetable-cutting entries whose video source is sufficient without an invented recipe association. The potato julienne addition places Wang Gang’s standalone knife lesson alongside the existing vegetable preparation references. Source collections remain independent of task-oriented categories; the renderer must not attribute every reference to SAMUKICHI.
+The collection contains thirty-one independently useful references. It has keyword search and no category or tag filters. Titles, summaries and a visible first step support everyday lookup; each card links clearly to complete instructions. Detail pages prioritize the written operations before video playback.
 
-Content lives in `src/kitchen-essentials.json`; category metadata and recipe association helpers live in `src/kitchen-essentials.ts`. Routes use stable reference IDs, for example `#essentials/soy-sauce-pan`. Existing recipe IDs, favorites and notes are unchanged. Reference pages link to associated recipes when present; recipes expose Related kitchen essentials. Standalone references use their own original YouTube sources for video playback and labels, and omit the empty related-recipes section.
+Content lives in `src/kitchen-essentials.json`; recipe association helpers live in `src/kitchen-essentials.ts`. Routes use stable reference IDs, for example `#essentials/soy-sauce-pan`. Existing recipe IDs, favorites and notes are unchanged. Reference pages link to associated recipes when present; recipes expose Related kitchen essentials. Standalone references use their own original YouTube sources for video playback and labels, and omit the empty related-recipes section.
 
 ## Editorial rules
 
@@ -18,7 +18,7 @@ The initial content is based on the reviewed SAMUKICHI captions and descriptions
 
 ## Verification
 
-Unit checks cover bilingual field completeness, unique IDs, populated categories, valid recipe associations, YouTube source domains and measured-value parity. Browser coverage verifies search, filtering, direct detail routes, English content, recipe round trips, empty results and mobile layout. Existing recipe and application checks continue to apply.
+Unit checks cover bilingual field completeness, unique IDs, absence of removed categories/tags, valid recipe associations, YouTube source domains, measured-value parity and critical conditional boundaries. Browser coverage visits every reference in both languages, verifies visible complete steps and limits, plain search, recipe round trips, empty results, accessibility and mobile layout. Existing recipe and application checks continue to apply.
 
 ## Ongoing extraction
 
@@ -26,8 +26,10 @@ Whenever new recipe material is organized, review it for reusable knowledge. Pre
 
 Choose titles based on everyday lookup questions or tasks. Each reference must stand alone without requiring the video to be opened. Keep concrete methods, reasons, common errors and scope limits clear. Do not create every possible section when it would be empty or repetitive.
 
-Classify by task: preparation; heat and doneness; seasoning and aroma; storage and meal preparation when sourced content exists. Food and technique search tags provide a separate lookup dimension. Source series are another dimension, not competing task categories. Do not freeze the collection at twelve entries or display empty categories for symmetry.
+Use positive ingredient and technique synonyms for keyword lookup. Do not recreate task, occasion, season, source or equipment filter groups. A phrase such as preparing ingredients ahead belongs in the relevant procedure, not a meal-occasion category.
 
 A shared reference may combine several source examples, but must preserve their different conditions. Cold-pan thighs do not establish a cold-pan rule for all food; off-heat salmon butter does not override near-doneness chicken basting. Soy sauce contacting a hot pan for aroma is a technique for a desired result, not a universal requirement for soy sauce. Recipe-specific amounts and timings retain their food and preparation context.
 
 Never derive storage temperatures, durations, thawing or preservation procedures from a video that only demonstrates immediate cooking. Populate storage content only from appropriate evidence. Use the existing bilingual schema and recipe associations, and keep external references to the corresponding original YouTube videos for this video-derived collection.
+
+Related recipes may include comparisons. Use the neutral heading “Related recipes” and explicitly explain a contrasting association when needed, as in the salmon off-heat soy/butter example. Do not imply that every linked recipe uses the same technique.

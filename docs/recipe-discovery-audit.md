@@ -1,5 +1,7 @@
 # Per-entry discovery audit
 
+Historical record: the later three-category simplification supersedes facet and tag recommendations here. Follow [the current maintenance guide](discovery-guide.md).
+
 Reviewed against the current complete recipe and reference texts on 2026-11-25. All 44 recipe IDs and 31 reference IDs are covered. This is a proposed discovery mapping, not applied application metadata. The [structured audit](recipe-discovery-audit.json) records individual ingredients, methods, equipment, occasions, partial timing evidence, unknowns and constraints. It is not an exhaustive dietary/allergen index or a repeat full-video audit.
 
 ## Recipes

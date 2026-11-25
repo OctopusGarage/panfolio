@@ -11,7 +11,6 @@ test("choosing a preparation keeps shared operations but excludes sibling ingred
     title: "肉卷",
     titleEn: "Rolls",
     kind: "dish",
-    facets: {},
     methodSteps: [1, 6, 7, 8],
     ingredientLines: [1, 2, 3],
   };
@@ -37,7 +36,6 @@ test("a component can select prose ingredients without including its soup siblin
     title: "洋葱",
     titleEn: "Onions",
     kind: "component",
-    facets: {},
     ingredientParagraphs: [0],
     methodSteps: [1, 2, 3, 4, 5, 7],
   };

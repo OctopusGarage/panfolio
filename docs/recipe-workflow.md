@@ -6,7 +6,7 @@ This is the entry point for adding or revising Panfolio recipes, organizing vide
 
 - Always read [Recipe content guide](content-guide.md) for recipe structure, detail, bilingual fidelity and reference treatment.
 - Read [Kitchen essentials](kitchen-essentials.md) when assessing or extracting reusable knowledge.
-- Read [Discovery maintenance](discovery-guide.md) when adding or revising preparations, tags, aliases, filters or reference discovery metadata.
+- Read [Discovery maintenance](discovery-guide.md) when adding or revising categories, preparations, aliases or kitchen-reference discovery.
 - Read [Visual direction](visual-style.md) when adding or changing covers or their presentation.
 - Use [Japanese chef series](japanese-chef-series.md) as an example of source evidence and limitations, not as a fixed recipe count or universal cooking authority.
 
@@ -34,7 +34,7 @@ Translate the complete content into English, preserving technical meaning, quant
 
 ## 4. Extract reusable knowledge
 
-Assess every curated source for independently useful preparation or cooking knowledge. Keep the recipe intact while creating or updating relevant Kitchen essentials entries. Check for duplicates, preserve scope and exceptions, and link recipes and references in both directions through the existing associations. Use task categories and search tags rather than creating a new category for every video.
+Assess every curated source for independently useful preparation or cooking knowledge. Keep the recipe intact while creating or updating relevant Kitchen essentials entries. Check for duplicates, preserve scope and exceptions, and link recipes and references in both directions through the existing associations. Use clear titles and positive search aliases rather than adding filter categories for each video.
 
 ## 5. Complete the visual presentation
 

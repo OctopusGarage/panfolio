@@ -20,9 +20,7 @@ export function validateRecipes(recipes: Recipe[]) {
     ids.add(recipe.id);
     if (
       recipe.category !== undefined &&
-      !recipeCategories.some(
-        (category) => category.id !== "all" && category.id === recipe.category,
-      )
+      !recipeCategories.some((category) => category.id === recipe.category)
     )
       throw new Error(`Invalid recipe category: ${recipe.id}`);
     if (!recipe.title.trim() || !recipe.body.trim())

@@ -94,6 +94,8 @@ function validateKitchen(value: unknown): KitchenData {
     const state = search.state;
     if (
       typeof state.query !== "string" ||
+      (state.category !== undefined &&
+        !["chinese", "japanese", "dessert"].includes(String(state.category))) ||
       !["any", "all"].includes(String(state.ingredientMode)) ||
       !["recipes", "references", "all"].includes(String(state.scope)) ||
       !object(state.selected) ||

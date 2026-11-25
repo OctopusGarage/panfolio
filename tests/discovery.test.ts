@@ -3,64 +3,102 @@ import assert from "node:assert/strict";
 import recipes from "../src/recipes.json";
 import { essentials } from "../src/kitchen-essentials";
 import {
-  discoveryTags,
   recipeDiscovery,
   referenceDiscovery,
   emptyDiscoveryState,
   findRecipes,
   findReferences,
-  facetOptions,
 } from "../src/discovery";
-test("reviewed discovery covers every entry with valid canonical tags", () => {
-  assert.deepEqual(
-    recipeDiscovery.map((r) => r.id).sort(),
-    recipes.map((r) => r.id).sort(),
-  );
-  assert.deepEqual(
-    referenceDiscovery.map((r) => r.id).sort(),
-    essentials.map((r) => r.id).sort(),
-  );
-  const ids = new Set(discoveryTags.map((t) => t.id));
-  assert.equal(ids.size, discoveryTags.length);
-  for (const record of [
-    ...recipeDiscovery.flatMap((r) => r.preparations),
-    ...referenceDiscovery,
-  ]) {
-    for (const [facet, values] of Object.entries(record.facets))
-      for (const id of values ?? []) {
-        assert.ok(ids.has(id), `Unknown tag ${id}`);
-        assert.equal(discoveryTags.find((t) => t.id === id)?.facet, facet);
-      }
-  }
-});
-test("all ingredients must occur within one rice-cooker preparation", () => {
-  const state = emptyDiscoveryState();
-  state.ingredientMode = "all";
-  state.selected.ingredient = ["ingredient:egg", "ingredient:potato"];
-  assert.ok(
-    !findRecipes(state).some((r) => r.recipe.id === "awei-one-pot-rice"),
-  );
-});
-test("potato aliases find recipes and standalone knife guidance", () => {
-  const state = { ...emptyDiscoveryState(), query: "马铃薯" };
-  assert.ok(findRecipes(state).length > 0);
-  assert.ok(
-    findReferences(state).some((r) => r.entry.id === "potato-julienne"),
-  );
-});
-test("references do not index counterexamples as positive search evidence", () => {
-  const state = { ...emptyDiscoveryState("references"), query: "salmon" };
-  assert.ok(!findReferences(state).some((r) => r.entry.id === "soy-sauce-pan"));
-});
-test("facet counts deduplicate parent collections", () => {
-  const state = emptyDiscoveryState();
-  for (const option of facetOptions(state, "ingredient", "recipes")) {
-    const selected = { ...state, selected: { ingredient: [option.tag.id] } };
-    const matches = findRecipes(selected);
-    assert.equal(option.count, new Set(matches.map((r) => r.recipe.id)).size);
-  }
-});
+import { recipeCategories } from "../src/recipe-categories";
 
+test("only three exhaustive exclusive recipe categories remain", () => {
+  assert.deepEqual(
+    recipeCategories.map((category) => category.zh),
+    ["中餐", "日厨系列", "甜品"],
+  );
+  const seen = new Set<string>();
+  for (const category of recipeCategories) {
+    const state = { ...emptyDiscoveryState(), category: category.id };
+    const expected = recipes
+      .filter((recipe) => recipe.category === category.id)
+      .map((recipe) => recipe.id)
+      .sort();
+    const matches = findRecipes(state);
+    assert.deepEqual(matches.map((match) => match.recipe.id).sort(), expected);
+    for (const match of matches) {
+      assert.ok(!seen.has(match.recipe.id));
+      seen.add(match.recipe.id);
+    }
+  }
+  assert.equal(seen.size, recipes.length);
+});
+test("chef category retains all thirteen SAMUKICHI recipes and every preparation", () => {
+  const matches = findRecipes({
+    ...emptyDiscoveryState(),
+    category: "japanese",
+  });
+  assert.equal(matches.length, 14);
+  for (const recipe of recipes.filter(
+    (recipe) => recipe.collection === "japanese-chef",
+  )) {
+    const match = matches.find((match) => match.recipe.id === recipe.id)!;
+    assert.ok(match, recipe.id);
+    assert.deepEqual(
+      match.preparationIds,
+      recipeDiscovery
+        .find((record) => record.id === recipe.id)!
+        .preparations.map((preparation) => preparation.id),
+    );
+  }
+});
+test("removed legacy facets do not silently hide recipes or kitchen references", () => {
+  const state = emptyDiscoveryState();
+  state.selected = {
+    season: ["season:winter"],
+    ingredient: ["ingredient:potato"],
+  };
+  state.ingredientMode = "all";
+  assert.equal(findRecipes(state).length, recipes.length);
+  assert.equal(
+    findReferences({ ...state, scope: "references" }).length,
+    essentials.length,
+  );
+});
+test("search remains within the chosen category and preserves ingredient aliases", () => {
+  assert.equal(
+    findRecipes({
+      ...emptyDiscoveryState(),
+      category: "dessert",
+      query: "beef",
+    }).length,
+    0,
+  );
+  assert.ok(
+    findRecipes({ ...emptyDiscoveryState(), query: "马铃薯" }).length > 0,
+  );
+  assert.ok(
+    findReferences({
+      ...emptyDiscoveryState("references"),
+      query: "马铃薯",
+    }).some((match) => match.entry.id === "potato-julienne"),
+  );
+});
+test("references index positive guidance and metadata covers every entry", () => {
+  assert.deepEqual(
+    recipeDiscovery.map((record) => record.id).sort(),
+    recipes.map((recipe) => recipe.id).sort(),
+  );
+  assert.deepEqual(
+    referenceDiscovery.map((record) => record.id).sort(),
+    essentials.map((entry) => entry.id).sort(),
+  );
+  assert.ok(
+    !findReferences({
+      ...emptyDiscoveryState("references"),
+      query: "salmon",
+    }).some((match) => match.entry.id === "soy-sauce-pan"),
+  );
+});
 test("preparation selectors resolve bilingual source sections", () => {
   for (const record of recipeDiscovery) {
     const recipe = recipes.find((entry) => entry.id === record.id)!;
@@ -115,50 +153,5 @@ test("component onions exclude soup ingredient paragraphs", () => {
     rice.preparations.find((entry) => entry.id === "lamb-pilaf")
       ?.ingredientLines,
     [1],
-  );
-});
-
-test("breakfast tuna locates only its two suitable preparations", () => {
-  const state = emptyDiscoveryState();
-  state.selected = {
-    occasion: ["occasion:breakfast"],
-    ingredient: ["ingredient:tuna"],
-  };
-  const tuna = findRecipes(state).find(
-    (match) => match.recipe.id === "samukichi-tuna",
-  );
-  assert.equal(tuna?.preparationIds.length, 2);
-});
-
-test("optional complete cheese finish can be found without combining alternative meats", () => {
-  const state = emptyDiscoveryState();
-  state.selected.ingredient = ["ingredient:cheese"];
-  assert.ok(
-    findRecipes(state).some(
-      (match) => match.recipe.id === "samukichi-cauliflower",
-    ),
-  );
-  state.ingredientMode = "all";
-  state.selected.ingredient = ["ingredient:pork", "ingredient:beef"];
-  assert.ok(
-    !findRecipes(state).some(
-      (match) => match.recipe.id === "ali-scallion-meat-pancakes",
-    ),
-  );
-});
-
-test("All-ingredients facet counts include the existing ingredient intersection", () => {
-  const state = emptyDiscoveryState();
-  state.ingredientMode = "all";
-  state.selected.ingredient = ["ingredient:potato"];
-  const egg = facetOptions(state, "ingredient", "recipes").find(
-    (option) => option.tag.id === "ingredient:egg",
-  )!;
-  assert.equal(
-    egg.count,
-    findRecipes({
-      ...state,
-      selected: { ingredient: ["ingredient:potato", "ingredient:egg"] },
-    }).length,
   );
 });

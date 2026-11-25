@@ -1,22 +1,18 @@
 import recipes from "./recipes.json";
 import { essentials } from "./kitchen-essentials";
-import tags from "./discovery-tags.json";
 import recipeMetadata from "./recipe-discovery.json";
 import referenceMetadata from "./reference-discovery.json";
 import type {
-  DiscoveryTag,
   RecipeDiscovery,
   ReferenceDiscovery,
   DiscoveryState,
   DiscoveryScope,
   DiscoveryOptions,
-  DiscoveryFacet,
   DiscoveryPreparation,
   RecipeMatch,
   ReferenceMatch,
 } from "./discovery-types";
 export type * from "./discovery-types";
-export const discoveryTags = tags as DiscoveryTag[];
 export const recipeDiscovery = recipeMetadata as RecipeDiscovery[];
 export const referenceDiscovery = referenceMetadata as ReferenceDiscovery[];
 export function emptyDiscoveryState(
@@ -24,27 +20,10 @@ export function emptyDiscoveryState(
 ): DiscoveryState {
   return { query: "", selected: {}, ingredientMode: "any", scope };
 }
-const tagById = new Map(discoveryTags.map((tag) => [tag.id, tag]));
 const recipeById = new Map(recipes.map((recipe) => [recipe.id, recipe]));
 const referenceById = new Map(essentials.map((entry) => [entry.id, entry]));
 const normalize = (text: string) =>
   text.toLowerCase().normalize("NFKC").replace(/[’']/g, "").trim();
-const tagText = (id: string) => {
-  const tag = tagById.get(id);
-  return tag ? [tag.label, tag.labelEn, ...(tag.aliases ?? [])].join(" ") : "";
-};
-function facetsMatch(
-  facets: DiscoveryPreparation["facets"],
-  state: DiscoveryState,
-) {
-  return Object.entries(state.selected).every(
-    ([facet, ids]) =>
-      !ids?.length ||
-      (facet === "ingredient" && state.ingredientMode === "all"
-        ? ids.every((id) => facets[facet as DiscoveryFacet]?.includes(id))
-        : ids.some((id) => facets[facet as DiscoveryFacet]?.includes(id))),
-  );
-}
 function queryScore(
   query: string,
   titles: string[],
@@ -92,18 +71,13 @@ export function findRecipes(
   const matches: RecipeMatch[] = [];
   for (const record of recipeDiscovery) {
     const recipe = recipeById.get(record.id);
-    if (!recipe || (allowed && !allowed.has(recipe.id))) continue;
+    if (
+      !recipe ||
+      (allowed && !allowed.has(recipe.id)) ||
+      (state.category && recipe.category !== state.category)
+    )
+      continue;
     const hits = record.preparations
-      .filter(
-        (p) =>
-          facetsMatch(p.facets, state) &&
-          (state.ingredientMode !== "all" ||
-            !(p.ingredientChoices || []).some(
-              (group) =>
-                group.filter((id) => state.selected.ingredient?.includes(id))
-                  .length > 1,
-            )),
-      )
       .map((p) => ({
         p,
         score: [recipe.title, recipe.titleEn ?? ""].some(
@@ -120,7 +94,7 @@ export function findRecipes(
                   ? [recipe.title, recipe.titleEn ?? ""]
                   : []),
               ],
-              Object.values(p.facets).flat().map(tagText).join(" "),
+              (p.searchTerms || []).join(" "),
               [recipe.body, recipe.bodyEn || ""]
                 .map((body) =>
                   preparationText(body, p, record.preparations.length > 1),
@@ -143,49 +117,16 @@ export function findReferences(state: DiscoveryState): ReferenceMatch[] {
   return referenceDiscovery
     .flatMap((record) => {
       const entry = referenceById.get(record.id);
-      const referenceState =
-        state.scope === "all" ? { ...state, selected: {} } : state;
-      if (!entry || !facetsMatch(record.facets, referenceState)) return [];
+      if (!entry) return [];
       const score = queryScore(
         state.query,
         [entry.title, entry.titleEn],
-        [
-          ...Object.values(record.facets).flat().map(tagText),
-          ...(record.aliases ?? []),
-        ].join(" "),
+        (record.aliases || []).join(" "),
         `${entry.summary} ${entry.summaryEn}`,
       );
       return score ? [{ entry, score }] : [];
     })
     .sort((a, b) => b.score - a.score);
-}
-export function facetOptions(
-  state: DiscoveryState,
-  facet: DiscoveryFacet,
-  kind: "recipes" | "references",
-  options?: DiscoveryOptions,
-) {
-  return discoveryTags
-    .filter((tag) => tag.facet === facet)
-    .map((tag) => {
-      const candidate = {
-        ...state,
-        selected: {
-          ...state.selected,
-          [facet]:
-            facet === "ingredient" && state.ingredientMode === "all"
-              ? [...new Set([...(state.selected.ingredient || []), tag.id])]
-              : [tag.id],
-        },
-      };
-      return {
-        tag,
-        count:
-          kind === "recipes"
-            ? findRecipes(candidate, options).length
-            : findReferences(candidate).length,
-      };
-    });
 }
 export function preparationFor(recipeId: string, pid?: string) {
   const record = recipeDiscovery.find((r) => r.id === recipeId);

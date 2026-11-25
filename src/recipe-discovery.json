@@ -7,21 +7,26 @@
         "title": "日式土豆炖肉",
         "titleEn": "Japanese beef and potato stew (Nikujaga)",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:meat",
-            "ingredient:beef",
-            "ingredient:vegetables",
-            "ingredient:potato",
-            "ingredient:onion"
-          ],
-          "method": ["method:stir-fry", "method:braise"],
-          "equipment": ["equipment:pot"],
-          "occasion": ["occasion:main"],
-          "style": ["style:japanese"],
-          "season": ["season:autumn", "season:winter"],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "肉类",
+          "Meat",
+          "meat",
+          "牛肉",
+          "Beef",
+          "beef",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "土豆",
+          "Potato",
+          "马铃薯",
+          "馬鈴薯",
+          "potatoes",
+          "potato",
+          "洋葱",
+          "Onion",
+          "onion"
+        ]
       }
     ]
   },
@@ -33,31 +38,35 @@
         "title": "阿见版蛋炒饭",
         "titleEn": "Ajian-style egg fried rice",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:rice",
-            "ingredient:eggs",
-            "ingredient:egg",
-            "ingredient:meat",
-            "ingredient:sausage",
-            "ingredient:vegetables",
-            "ingredient:cucumber",
-            "ingredient:corn",
-            "ingredient:peas"
-          ],
-          "method": ["method:stir-fry"],
-          "equipment": ["equipment:wok"],
-          "occasion": ["occasion:main", "occasion:breakfast"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "肉类",
+          "Meat",
+          "meat",
+          "香肠",
+          "Sausage",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "黄瓜",
+          "Cucumber",
+          "玉米",
+          "Corn",
+          "青豆",
+          "Peas"
+        ]
       }
     ]
   },
@@ -69,27 +78,28 @@
         "title": "虾仁蛋炒饭",
         "titleEn": "Shrimp and egg fried rice",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:rice",
-            "ingredient:seafood",
-            "ingredient:shrimp",
-            "ingredient:eggs",
-            "ingredient:egg"
-          ],
-          "method": ["method:stir-fry", "method:boil"],
-          "equipment": ["equipment:wok", "equipment:pot"],
-          "occasion": ["occasion:main", "occasion:breakfast"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "虾",
+          "Shrimp",
+          "shrimp",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
       }
     ]
   },
@@ -101,27 +111,26 @@
         "title": "鸡蛋炒米粉",
         "titleEn": "Egg-fried rice vermicelli",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:rice-vermicelli",
-            "ingredient:eggs",
-            "ingredient:egg",
-            "ingredient:vegetables",
-            "ingredient:bean-sprouts"
-          ],
-          "method": ["method:boil", "method:stir-fry"],
-          "equipment": ["equipment:wok", "equipment:pot"],
-          "occasion": ["occasion:main", "occasion:breakfast"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米粉",
+          "Rice vermicelli",
+          "rice vermicelli",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "豆芽",
+          "Bean sprouts"
+        ]
       }
     ]
   },
@@ -133,28 +142,29 @@
         "title": "烧椒皮蛋炒饭",
         "titleEn": "Charred pepper and century egg fried rice",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:rice",
-            "ingredient:eggs",
-            "ingredient:egg",
-            "ingredient:century-egg",
-            "ingredient:vegetables",
-            "ingredient:green-pepper"
-          ],
-          "method": ["method:roast", "method:stir-fry"],
-          "equipment": ["equipment:wok"],
-          "occasion": ["occasion:main", "occasion:breakfast"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "皮蛋",
+          "Century egg",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "青椒",
+          "Green pepper",
+          "green pepper"
+        ]
       }
     ]
   },
@@ -166,25 +176,19 @@
         "title": "红烧茄子",
         "titleEn": "Braised eggplant",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:vegetables",
-            "ingredient:eggplant",
-            "ingredient:meat",
-            "ingredient:green-pepper"
-          ],
-          "method": ["method:stir-fry"],
-          "equipment": ["equipment:wok"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "茄子",
+          "Eggplant",
+          "肉类",
+          "Meat",
+          "meat",
+          "青椒",
+          "Green pepper",
+          "green pepper"
+        ]
       }
     ]
   },
@@ -196,33 +200,44 @@
         "title": "星洲炒米粉",
         "titleEn": "Singapore-style fried rice vermicelli",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:rice-vermicelli",
-            "ingredient:meat",
-            "ingredient:pork",
-            "ingredient:seafood",
-            "ingredient:shrimp",
-            "ingredient:eggs",
-            "ingredient:egg",
-            "ingredient:vegetables",
-            "ingredient:bean-sprouts",
-            "ingredient:onion",
-            "ingredient:green-pepper"
-          ],
-          "method": ["method:boil", "method:stir-fry"],
-          "equipment": ["equipment:wok", "equipment:pot"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米粉",
+          "Rice vermicelli",
+          "rice vermicelli",
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork",
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "虾",
+          "Shrimp",
+          "shrimp",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "豆芽",
+          "Bean sprouts",
+          "洋葱",
+          "Onion",
+          "onion",
+          "青椒",
+          "Green pepper",
+          "green pepper"
+        ]
       }
     ]
   },
@@ -234,26 +249,23 @@
         "title": "海鲜粉丝煲",
         "titleEn": "Seafood glass noodle casserole",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:glass-noodles",
-            "ingredient:seafood",
-            "ingredient:shrimp",
-            "ingredient:eggs",
-            "ingredient:egg"
-          ],
-          "method": ["method:pan-fry", "method:stir-fry"],
-          "equipment": ["equipment:wok"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "粉丝",
+          "Glass noodles",
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "虾",
+          "Shrimp",
+          "shrimp",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
       }
     ]
   },
@@ -265,27 +277,24 @@
         "title": "茄子炒鸡蛋",
         "titleEn": "Eggplant and scrambled eggs",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:vegetables",
-            "ingredient:eggplant",
-            "ingredient:eggs",
-            "ingredient:egg",
-            "ingredient:tomato",
-            "ingredient:green-pepper"
-          ],
-          "method": ["method:stir-fry"],
-          "equipment": ["equipment:wok"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "茄子",
+          "Eggplant",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "番茄",
+          "Tomato",
+          "青椒",
+          "Green pepper",
+          "green pepper"
+        ]
       }
     ]
   },
@@ -297,176 +306,129 @@
         "title": "牛肉丸泡面",
         "titleEn": "Beef-ball noodle soup",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:instant-noodles",
-            "ingredient:meat",
-            "ingredient:beef"
-          ],
-          "method": ["method:boil"],
-          "equipment": ["equipment:pot"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        },
-        "methodSteps": [1]
+        "methodSteps": [1],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "肉类",
+          "Meat",
+          "meat",
+          "牛肉",
+          "Beef",
+          "beef"
+        ]
       },
       {
         "id": "shacha-milk",
         "title": "沙茶花生牛奶泡面",
         "titleEn": "Shacha, peanut and milk noodles",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:instant-noodles",
-            "ingredient:milk"
-          ],
-          "method": ["method:boil"],
-          "equipment": ["equipment:pot"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        },
-        "methodSteps": [2]
+        "methodSteps": [2],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "牛奶",
+          "Milk",
+          "milk"
+        ]
       },
       {
         "id": "ginger-scallion",
         "title": "广式姜葱拌面",
         "titleEn": "Cantonese ginger-scallion tossed noodles",
         "kind": "dish",
-        "facets": {
-          "ingredient": ["ingredient:grains", "ingredient:instant-noodles"],
-          "method": ["method:boil"],
-          "equipment": ["equipment:pot"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        },
-        "methodSteps": [3]
+        "methodSteps": [3],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles"
+        ]
       },
       {
         "id": "egg-custard",
         "title": "鸡蛋羹泡面",
         "titleEn": "Egg custard with noodle broth",
         "kind": "dish",
-        "facets": {
-          "ingredient": ["ingredient:eggs", "ingredient:egg"],
-          "method": ["method:microwave"],
-          "equipment": ["equipment:microwave"],
-          "occasion": ["occasion:side", "occasion:breakfast"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        },
-        "methodSteps": [4]
+        "methodSteps": [4],
+        "searchTerms": ["蛋类", "Eggs", "eggs", "鸡蛋", "Egg", "egg"]
       },
       {
         "id": "fried-egg-ham",
         "title": "煎蛋火腿香辣泡面",
         "titleEn": "Fried egg and ham spicy noodles",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:instant-noodles",
-            "ingredient:eggs",
-            "ingredient:egg",
-            "ingredient:meat"
-          ],
-          "method": ["method:pan-fry", "method:boil"],
-          "equipment": ["equipment:pan"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        },
-        "methodSteps": [5]
+        "methodSteps": [5],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "肉类",
+          "Meat",
+          "meat"
+        ]
       },
       {
         "id": "poached-egg",
         "title": "旋涡荷包蛋泡面",
         "titleEn": "Swirled poached-egg noodles",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:instant-noodles",
-            "ingredient:eggs",
-            "ingredient:egg"
-          ],
-          "method": ["method:boil"],
-          "equipment": ["equipment:pot"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        },
-        "methodSteps": [6]
+        "methodSteps": [6],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
       },
       {
         "id": "salted-yolk-ham",
         "title": "咸蛋黄火腿汤泡面",
         "titleEn": "Salted egg yolk and ham noodle soup",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:instant-noodles",
-            "ingredient:eggs",
-            "ingredient:salted-egg-yolk",
-            "ingredient:meat"
-          ],
-          "method": ["method:stir-fry", "method:boil"],
-          "equipment": ["equipment:pot"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        },
         "methodSteps": [7],
-        "optionalIngredientIds": [
-          "ingredient:tofu",
-          "ingredient:chinese-cabbage"
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "咸蛋黄",
+          "Salted egg yolk",
+          "肉类",
+          "Meat",
+          "meat"
         ]
       },
       {
@@ -474,82 +436,73 @@
         "title": "皮蛋香菜泡面",
         "titleEn": "Century egg and cilantro noodles",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:instant-noodles",
-            "ingredient:eggs",
-            "ingredient:century-egg",
-            "ingredient:meat"
-          ],
-          "method": ["method:stir-fry", "method:boil"],
-          "equipment": ["equipment:pot"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        },
-        "methodSteps": [8]
+        "methodSteps": [8],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "皮蛋",
+          "Century egg",
+          "肉类",
+          "Meat",
+          "meat"
+        ]
       },
       {
         "id": "curry-potato",
         "title": "咖喱土豆泡面",
         "titleEn": "Curry and potato noodles",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:instant-noodles",
-            "ingredient:vegetables",
-            "ingredient:potato"
-          ],
-          "method": ["method:pan-fry", "method:boil"],
-          "equipment": ["equipment:pan"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        },
-        "methodSteps": [9]
+        "methodSteps": [9],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "土豆",
+          "Potato",
+          "马铃薯",
+          "馬鈴薯",
+          "potatoes",
+          "potato"
+        ]
       },
       {
         "id": "tomato",
         "title": "番茄炒泡面",
         "titleEn": "Tomato stir-fried instant noodles",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:instant-noodles",
-            "ingredient:vegetables",
-            "ingredient:tomato",
-            "ingredient:eggs",
-            "ingredient:egg"
-          ],
-          "method": ["method:stir-fry", "method:boil"],
-          "equipment": ["equipment:pan"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        },
         "methodSteps": [10],
-        "optionalIngredientIds": ["ingredient:tofu", "ingredient:cured-sausage"]
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "泡面",
+          "Instant noodles",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "番茄",
+          "Tomato",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
       }
     ]
   },
@@ -561,24 +514,16 @@
         "title": "清蒸黄花鱼",
         "titleEn": "Steamed yellow croaker",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:seafood",
-            "ingredient:fish",
-            "ingredient:yellow-croaker"
-          ],
-          "method": ["method:steam"],
-          "equipment": ["equipment:steamer"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "鱼",
+          "Fish",
+          "黄花鱼",
+          "Yellow croaker"
+        ]
       }
     ]
   },
@@ -590,15 +535,13 @@
         "title": "凉拌折耳根",
         "titleEn": "Cold houttuynia salad",
         "kind": "dish",
-        "facets": {
-          "ingredient": ["ingredient:vegetables", "ingredient:houttuynia"],
-          "method": ["method:cold-toss"],
-          "equipment": [],
-          "occasion": ["occasion:side"],
-          "style": ["style:chinese"],
-          "season": ["season:spring", "season:summer"],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "折耳根",
+          "Houttuynia roots"
+        ]
       }
     ]
   },
@@ -610,25 +553,22 @@
         "title": "豆豉蒸排骨",
         "titleEn": "Steamed pork ribs with black bean sauce",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:meat",
-            "ingredient:pork",
-            "ingredient:vegetables",
-            "ingredient:potato"
-          ],
-          "method": ["method:steam"],
-          "equipment": ["equipment:steamer"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "土豆",
+          "Potato",
+          "马铃薯",
+          "馬鈴薯",
+          "potatoes",
+          "potato"
+        ]
       }
     ]
   },
@@ -640,25 +580,19 @@
         "title": "菠菜炒鸡蛋",
         "titleEn": "Spinach and scrambled eggs",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:vegetables",
-            "ingredient:spinach",
-            "ingredient:eggs",
-            "ingredient:egg"
-          ],
-          "method": ["method:boil", "method:stir-fry"],
-          "equipment": ["equipment:wok", "equipment:pot"],
-          "occasion": ["occasion:side"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "菠菜",
+          "Spinach",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
       }
     ]
   },
@@ -670,25 +604,21 @@
         "title": "虾仁滑蛋",
         "titleEn": "Silky scrambled eggs with shrimp",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:seafood",
-            "ingredient:shrimp",
-            "ingredient:eggs",
-            "ingredient:egg"
-          ],
-          "method": ["method:stir-fry"],
-          "equipment": ["equipment:wok"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "虾",
+          "Shrimp",
+          "shrimp",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
       }
     ]
   },
@@ -700,26 +630,21 @@
         "title": "蒜香孜然排骨",
         "titleEn": "Garlic and cumin ribs",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:meat",
-            "ingredient:ribs",
-            "ingredient:pork",
-            "ingredient:vegetables",
-            "ingredient:onion"
-          ],
-          "method": ["method:boil", "method:deep-fry", "method:stir-fry"],
-          "equipment": ["equipment:pot", "equipment:wok"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "肉类",
+          "Meat",
+          "meat",
+          "排骨",
+          "Ribs",
+          "猪肉",
+          "Pork",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "洋葱",
+          "Onion",
+          "onion"
+        ]
       }
     ]
   },
@@ -731,25 +656,21 @@
         "title": "虾仁炒西兰花",
         "titleEn": "Stir-fried shrimp and broccoli",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:vegetables",
-            "ingredient:broccoli",
-            "ingredient:seafood",
-            "ingredient:shrimp"
-          ],
-          "method": ["method:boil", "method:stir-fry"],
-          "equipment": ["equipment:wok", "equipment:pot"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "西兰花",
+          "Broccoli",
+          "broccoli",
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "虾",
+          "Shrimp",
+          "shrimp"
+        ]
       }
     ]
   },
@@ -761,24 +682,16 @@
         "title": "香煎银鳕鱼",
         "titleEn": "Pan-seared yin xue yu",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:seafood",
-            "ingredient:fish",
-            "ingredient:yin-xue-yu"
-          ],
-          "method": ["method:pan-fry"],
-          "equipment": ["equipment:pan"],
-          "occasion": ["occasion:main"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "鱼",
+          "Fish",
+          "银鳕鱼",
+          "Yin xue yu fish"
+        ]
       }
     ]
   },
@@ -790,19 +703,15 @@
         "title": "万能料汁拍黄瓜",
         "titleEn": "Smashed cucumber with all-purpose sauce",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:vegetables",
-            "ingredient:cucumber",
-            "ingredient:peanut"
-          ],
-          "method": ["method:cold-toss"],
-          "equipment": [],
-          "occasion": ["occasion:side"],
-          "style": ["style:chinese"],
-          "season": ["season:spring", "season:summer"],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "黄瓜",
+          "Cucumber",
+          "花生",
+          "Peanut"
+        ]
       }
     ]
   },
@@ -814,20 +723,13 @@
         "title": "椒丝腐乳炒空心菜",
         "titleEn": "Water spinach with fermented bean curd and chili",
         "kind": "dish",
-        "facets": {
-          "ingredient": ["ingredient:vegetables", "ingredient:water-spinach"],
-          "method": ["method:boil", "method:stir-fry"],
-          "equipment": ["equipment:wok", "equipment:pot"],
-          "occasion": ["occasion:side"],
-          "style": ["style:chinese"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:original-collection"]
-        }
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "空心菜",
+          "Water spinach"
+        ]
       }
     ]
   },
@@ -839,24 +741,17 @@
         "title": "脆皮香煎三文鱼",
         "titleEn": "Crispy-skin salmon",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:seafood",
-            "ingredient:fish",
-            "ingredient:salmon"
-          ],
-          "method": ["method:pan-fry"],
-          "equipment": ["equipment:pan"],
-          "occasion": ["occasion:main"],
-          "style": ["style:mixed"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:samukichi"]
-        }
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "鱼",
+          "Fish",
+          "三文鱼",
+          "Salmon",
+          "salmon"
+        ]
       }
     ]
   },
@@ -868,49 +763,37 @@
         "title": "蒜香西兰花",
         "titleEn": "Garlic broccoli",
         "kind": "dish",
-        "facets": {
-          "ingredient": ["ingredient:vegetables", "ingredient:broccoli"],
-          "method": ["method:boil", "method:pan-fry"],
-          "equipment": ["equipment:pot", "equipment:pan"],
-          "occasion": ["occasion:side"],
-          "style": ["style:mixed"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:samukichi"]
-        },
         "methodSteps": [1, 2, 3, 4, 5],
-        "ingredientLines": [0, 1, 2, 3]
+        "ingredientLines": [0, 1, 2, 3],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "西兰花",
+          "Broccoli",
+          "broccoli"
+        ]
       },
       {
         "id": "miso-cheese",
         "title": "味噌芝士西兰花",
         "titleEn": "Miso-cheese broccoli",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:vegetables",
-            "ingredient:broccoli",
-            "ingredient:bell-pepper",
-            "ingredient:cheese"
-          ],
-          "method": ["method:boil", "method:roast"],
-          "equipment": ["equipment:pot", "equipment:oven", "equipment:torch"],
-          "occasion": ["occasion:side"],
-          "style": ["style:mixed"],
-          "season": [
-            "season:spring",
-            "season:summer",
-            "season:autumn",
-            "season:winter"
-          ],
-          "source": ["source:samukichi"]
-        },
         "methodSteps": [1, 2, 3, 4, 6, 7],
-        "ingredientLines": [0, 1, 2, 4]
+        "ingredientLines": [0, 1, 2, 4],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "西兰花",
+          "Broccoli",
+          "broccoli",
+          "甜椒",
+          "Bell pepper",
+          "bell pepper",
+          "芝士",
+          "Cheese"
+        ]
       }
     ]
   },
@@ -922,14 +805,7 @@
         "title": "冷锅脆皮鸡腿",
         "titleEn": "Cold-pan crispy chicken thigh",
         "kind": "dish",
-        "facets": {
-          "ingredient": ["ingredient:meat", "ingredient:chicken"],
-          "occasion": ["occasion:main", "occasion:prep-ahead"],
-          "method": ["method:pan-fry"],
-          "equipment": ["equipment:pan", "equipment:thermometer"],
-          "style": ["style:mixed"],
-          "source": ["source:samukichi"]
-        }
+        "searchTerms": ["肉类", "Meat", "meat", "鸡肉", "Chicken"]
       }
     ]
   },
@@ -941,39 +817,37 @@
         "title": "香煎芦笋",
         "titleEn": "Seared asparagus",
         "kind": "dish",
-        "facets": {
-          "ingredient": ["ingredient:vegetables", "ingredient:asparagus"],
-          "occasion": ["occasion:side"],
-          "method": ["method:pan-fry", "method:steam"],
-          "equipment": ["equipment:pan"],
-          "style": ["style:mixed"],
-          "season": ["season:spring"],
-          "source": ["source:samukichi"]
-        },
         "methodSteps": [1, 2, 3, 4, 5],
-        "ingredientLines": [0]
+        "ingredientLines": [0],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "芦笋",
+          "Asparagus",
+          "asparagus"
+        ]
       },
       {
         "id": "pork-rolls",
         "title": "芦笋五花肉卷",
         "titleEn": "Asparagus pork rolls",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:vegetables",
-            "ingredient:asparagus",
-            "ingredient:meat",
-            "ingredient:pork"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:pan-fry"],
-          "equipment": ["equipment:pan"],
-          "style": ["style:mixed"],
-          "season": ["season:spring"],
-          "source": ["source:samukichi"]
-        },
         "methodSteps": [1, 6, 7, 8],
-        "ingredientLines": [1, 2, 3]
+        "ingredientLines": [1, 2, 3],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "芦笋",
+          "Asparagus",
+          "asparagus",
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork"
+        ]
       }
     ]
   },
@@ -985,36 +859,34 @@
         "title": "焦香烤花椰菜",
         "titleEn": "Browned roasted cauliflower",
         "kind": "dish",
-        "facets": {
-          "ingredient": ["ingredient:vegetables", "ingredient:cauliflower"],
-          "occasion": ["occasion:side"],
-          "method": ["method:roast"],
-          "equipment": ["equipment:oven"],
-          "style": ["style:western"],
-          "source": ["source:samukichi"]
-        },
         "methodSteps": [1, 2, 3, 4, 5],
-        "ingredientLines": [0, 1, 2, 3, 4]
+        "ingredientLines": [0, 1, 2, 3, 4],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "花椰菜",
+          "Cauliflower",
+          "cauliflower"
+        ]
       },
       {
         "id": "cheese",
         "title": "奶酪烤花椰菜",
         "titleEn": "Cheese roasted cauliflower",
         "kind": "finish",
-        "facets": {
-          "ingredient": [
-            "ingredient:vegetables",
-            "ingredient:cauliflower",
-            "ingredient:cheese"
-          ],
-          "occasion": ["occasion:side"],
-          "method": ["method:roast"],
-          "equipment": ["equipment:oven"],
-          "style": ["style:western"],
-          "source": ["source:samukichi"]
-        },
         "methodSteps": [1, 2, 3, 4, 5, 6],
-        "ingredientLines": [0, 1, 2, 3, 4, 5]
+        "ingredientLines": [0, 1, 2, 3, 4, 5],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "花椰菜",
+          "Cauliflower",
+          "cauliflower",
+          "芝士",
+          "Cheese"
+        ]
       }
     ]
   },
@@ -1026,23 +898,31 @@
         "title": "焦香猪肉蔬菜炒面",
         "titleEn": "Toasty pork and vegetable yakisoba",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:noodles",
-            "ingredient:meat",
-            "ingredient:pork",
-            "ingredient:vegetables",
-            "ingredient:cabbage",
-            "ingredient:onion",
-            "ingredient:carrot"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:pan-fry", "method:stir-fry"],
-          "equipment": ["equipment:wok"],
-          "style": ["style:japanese"],
-          "source": ["source:samukichi"]
-        }
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "面条",
+          "Noodles",
+          "noodles",
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "卷心菜",
+          "Cabbage",
+          "洋葱",
+          "Onion",
+          "onion",
+          "胡萝卜",
+          "Carrot",
+          "carrot"
+        ]
       }
     ]
   },
@@ -1054,14 +934,17 @@
         "title": "蒜香黄油酱油煎蘑菇",
         "titleEn": "Golden mushrooms with garlic, butter and soy",
         "kind": "dish",
-        "facets": {
-          "ingredient": ["ingredient:vegetables", "ingredient:mushroom"],
-          "occasion": ["occasion:side"],
-          "method": ["method:pan-fry"],
-          "equipment": ["equipment:pan"],
-          "style": ["style:mixed"],
-          "source": ["source:samukichi"]
-        }
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "蘑菇",
+          "Mushrooms",
+          "mushroom",
+          "mushrooms",
+          "香菇",
+          "shiitake"
+        ]
       }
     ]
   },
@@ -1073,62 +956,72 @@
         "title": "金枪鱼嫩蛋",
         "titleEn": "Tuna soft eggs",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:seafood",
-            "ingredient:tuna",
-            "ingredient:eggs",
-            "ingredient:egg"
-          ],
-          "occasion": ["occasion:breakfast", "occasion:main"],
-          "method": ["method:pan-fry"],
-          "equipment": ["equipment:pan"],
-          "style": ["style:mixed"],
-          "source": ["source:samukichi"]
-        },
-        "methodSteps": [1]
+        "methodSteps": [1],
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "金枪鱼",
+          "Tuna",
+          "tuna",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
       },
       {
         "id": "tomato-toast",
         "title": "金枪鱼番茄蒜香吐司",
         "titleEn": "Tuna tomato toast",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:seafood",
-            "ingredient:tuna",
-            "ingredient:grains",
-            "ingredient:bread",
-            "ingredient:vegetables",
-            "ingredient:tomato"
-          ],
-          "occasion": ["occasion:breakfast", "occasion:snack"],
-          "method": ["method:roast"],
-          "equipment": ["equipment:oven"],
-          "style": ["style:mixed"],
-          "source": ["source:samukichi"]
-        },
-        "methodSteps": [2]
+        "methodSteps": [2],
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "金枪鱼",
+          "Tuna",
+          "tuna",
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "面包",
+          "Bread",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "番茄",
+          "Tomato"
+        ]
       },
       {
         "id": "fried-rice",
         "title": "金枪鱼酱油炒饭",
         "titleEn": "Tuna soy sauce fried rice",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:seafood",
-            "ingredient:tuna",
-            "ingredient:grains",
-            "ingredient:rice"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:stir-fry"],
-          "equipment": ["equipment:wok"],
-          "style": ["style:japanese"],
-          "source": ["source:samukichi"]
-        },
-        "methodSteps": [3]
+        "methodSteps": [3],
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "金枪鱼",
+          "Tuna",
+          "tuna",
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice"
+        ]
       }
     ]
   },
@@ -1140,14 +1033,15 @@
         "title": "去虾线与蒜香黄油虾",
         "titleEn": "Deveining shrimp and garlic butter shrimp",
         "kind": "dish",
-        "facets": {
-          "ingredient": ["ingredient:seafood", "ingredient:shrimp"],
-          "occasion": ["occasion:main"],
-          "method": ["method:pan-fry"],
-          "equipment": ["equipment:pan"],
-          "style": ["style:mixed"],
-          "source": ["source:samukichi"]
-        }
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "虾",
+          "Shrimp",
+          "shrimp"
+        ]
       }
     ]
   },
@@ -1159,33 +1053,31 @@
         "title": "深色焦糖洋葱",
         "titleEn": "Deep caramelized onions",
         "kind": "component",
-        "facets": {
-          "ingredient": ["ingredient:vegetables", "ingredient:onion"],
-          "occasion": ["occasion:prep-ahead"],
-          "method": ["method:pan-fry"],
-          "equipment": ["equipment:pan"],
-          "style": ["style:western"],
-          "source": ["source:samukichi"]
-        },
         "ingredientParagraphs": [0],
-        "methodSteps": [1, 2, 3, 4, 5, 7]
+        "methodSteps": [1, 2, 3, 4, 5, 7],
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "洋葱",
+          "Onion",
+          "onion"
+        ]
       },
       {
         "id": "soup",
         "title": "浓郁洋葱汤",
         "titleEn": "Rich onion soup",
         "kind": "dish",
-        "facets": {
-          "ingredient": ["ingredient:vegetables", "ingredient:onion"],
-          "occasion": ["occasion:side"],
-          "method": ["method:pan-fry", "method:braise"],
-          "equipment": ["equipment:pot"],
-          "style": ["style:western"],
-          "season": ["season:autumn", "season:winter"],
-          "source": ["source:samukichi"]
-        },
         "methodSteps": [1, 2, 3, 4, 5, 6],
-        "optionalIngredientIds": ["ingredient:chicken", "ingredient:asparagus"]
+        "searchTerms": [
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "洋葱",
+          "Onion",
+          "onion"
+        ]
       }
     ]
   },
@@ -1197,18 +1089,16 @@
         "title": "芥末奶油酱煎牛排",
         "titleEn": "Pan-seared steak with mustard cream sauce",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:meat",
-            "ingredient:beef",
-            "ingredient:cream"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:pan-fry"],
-          "equipment": ["equipment:pan", "equipment:thermometer"],
-          "style": ["style:western"],
-          "source": ["source:samukichi"]
-        }
+        "searchTerms": [
+          "肉类",
+          "Meat",
+          "meat",
+          "牛肉",
+          "Beef",
+          "beef",
+          "淡奶油",
+          "Cream"
+        ]
       }
     ]
   },
@@ -1220,18 +1110,7 @@
         "title": "糖盐腌低温鸡胸肉",
         "titleEn": "Gently poached salt-and-sugar chicken breast",
         "kind": "dish",
-        "facets": {
-          "ingredient": ["ingredient:meat", "ingredient:chicken"],
-          "occasion": ["occasion:main"],
-          "method": ["method:boil", "method:pan-fry"],
-          "equipment": [
-            "equipment:pot",
-            "equipment:pan",
-            "equipment:thermometer"
-          ],
-          "style": ["style:mixed"],
-          "source": ["source:samukichi"]
-        }
+        "searchTerms": ["肉类", "Meat", "meat", "鸡肉", "Chicken"]
       }
     ]
   },
@@ -1243,22 +1122,30 @@
         "title": "蒜香彩椒蛋炒饭",
         "titleEn": "Garlic, pepper and egg fried rice",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:rice",
-            "ingredient:eggs",
-            "ingredient:egg",
-            "ingredient:vegetables",
-            "ingredient:bell-pepper",
-            "ingredient:green-pepper"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:stir-fry"],
-          "equipment": ["equipment:wok"],
-          "style": ["style:japanese"],
-          "source": ["source:samukichi"]
-        }
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "甜椒",
+          "Bell pepper",
+          "bell pepper",
+          "青椒",
+          "Green pepper",
+          "green pepper"
+        ]
       }
     ]
   },
@@ -1270,20 +1157,18 @@
         "title": "椰汁西米露",
         "titleEn": "Coconut milk sago dessert",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:sago",
-            "ingredient:coconut-milk",
-            "ingredient:milk",
-            "ingredient:fruit"
-          ],
-          "occasion": ["occasion:dessert"],
-          "method": ["method:boil"],
-          "equipment": ["equipment:pot"],
-          "style": ["style:chinese"],
-          "season": ["season:summer"],
-          "source": ["source:ali-sago"]
-        }
+        "searchTerms": [
+          "西米",
+          "Sago",
+          "sago",
+          "椰浆",
+          "Coconut milk",
+          "牛奶",
+          "Milk",
+          "milk",
+          "水果",
+          "Fruit"
+        ]
       }
     ]
   },
@@ -1295,157 +1180,236 @@
         "title": "板栗排骨焖饭",
         "titleEn": "Chestnut pork rib rice",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:rice",
-            "ingredient:meat",
-            "ingredient:pork",
-            "ingredient:vegetables",
-            "ingredient:mushroom",
-            "ingredient:carrot",
-            "ingredient:chestnut"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:rice-cooker"],
-          "equipment": ["equipment:rice-cooker", "equipment:pan"],
-          "style": ["style:chinese"],
-          "source": ["source:awei"]
-        },
         "methodSteps": [1],
-        "ingredientLines": [0]
+        "ingredientLines": [0],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "蘑菇",
+          "Mushrooms",
+          "mushroom",
+          "mushrooms",
+          "香菇",
+          "shiitake",
+          "胡萝卜",
+          "Carrot",
+          "carrot",
+          "板栗",
+          "Chestnut"
+        ]
       },
       {
         "id": "sausage-potato",
         "title": "腊肠土豆焖饭",
         "titleEn": "Sausage potato rice",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:rice",
-            "ingredient:meat",
-            "ingredient:sausage",
-            "ingredient:vegetables",
-            "ingredient:potato",
-            "ingredient:corn",
-            "ingredient:peas",
-            "ingredient:carrot"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:rice-cooker"],
-          "equipment": ["equipment:rice-cooker", "equipment:pan"],
-          "style": ["style:chinese"],
-          "source": ["source:awei"]
-        },
         "methodSteps": [2],
-        "ingredientLines": [0]
+        "ingredientLines": [0],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "肉类",
+          "Meat",
+          "meat",
+          "香肠",
+          "Sausage",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "土豆",
+          "Potato",
+          "马铃薯",
+          "馬鈴薯",
+          "potatoes",
+          "potato",
+          "玉米",
+          "Corn",
+          "青豆",
+          "Peas",
+          "胡萝卜",
+          "Carrot",
+          "carrot"
+        ]
       },
       {
         "id": "taro-chestnut",
         "title": "香芋板栗焖饭",
         "titleEn": "Taro chestnut pork rice",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:rice",
-            "ingredient:meat",
-            "ingredient:pork",
-            "ingredient:vegetables",
-            "ingredient:taro",
-            "ingredient:mushroom",
-            "ingredient:chestnut",
-            "ingredient:seafood"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:rice-cooker"],
-          "equipment": ["equipment:rice-cooker", "equipment:pan"],
-          "style": ["style:chinese"],
-          "source": ["source:awei"]
-        },
         "methodSteps": [3],
-        "ingredientLines": [0]
+        "ingredientLines": [0],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "芋头",
+          "Taro",
+          "蘑菇",
+          "Mushrooms",
+          "mushroom",
+          "mushrooms",
+          "香菇",
+          "shiitake",
+          "板栗",
+          "Chestnut",
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜"
+        ]
       },
       {
         "id": "pumpkin-beef",
         "title": "南瓜牛肉焖饭",
         "titleEn": "Pumpkin beef rice",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:rice",
-            "ingredient:meat",
-            "ingredient:beef",
-            "ingredient:vegetables",
-            "ingredient:pumpkin",
-            "ingredient:mushroom",
-            "ingredient:carrot",
-            "ingredient:peas"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:rice-cooker"],
-          "equipment": ["equipment:rice-cooker", "equipment:pan"],
-          "style": ["style:chinese"],
-          "source": ["source:awei"]
-        },
         "methodSteps": [4],
-        "ingredientLines": [0]
+        "ingredientLines": [0],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "肉类",
+          "Meat",
+          "meat",
+          "牛肉",
+          "Beef",
+          "beef",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "南瓜",
+          "Pumpkin",
+          "蘑菇",
+          "Mushrooms",
+          "mushroom",
+          "mushrooms",
+          "香菇",
+          "shiitake",
+          "胡萝卜",
+          "Carrot",
+          "carrot",
+          "青豆",
+          "Peas"
+        ]
       },
       {
         "id": "sausage-egg",
         "title": "腊肠窝蛋时蔬饭",
         "titleEn": "Sausage egg vegetable rice",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:rice",
-            "ingredient:meat",
-            "ingredient:sausage",
-            "ingredient:eggs",
-            "ingredient:egg",
-            "ingredient:vegetables",
-            "ingredient:carrot",
-            "ingredient:leafy-greens",
-            "ingredient:corn"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:rice-cooker"],
-          "equipment": ["equipment:rice-cooker", "equipment:pan"],
-          "style": ["style:chinese"],
-          "source": ["source:awei"]
-        },
         "methodSteps": [5],
-        "ingredientLines": [0]
+        "ingredientLines": [0],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "肉类",
+          "Meat",
+          "meat",
+          "香肠",
+          "Sausage",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "胡萝卜",
+          "Carrot",
+          "carrot",
+          "青菜",
+          "Leafy greens",
+          "玉米",
+          "Corn"
+        ]
       },
       {
         "id": "curry-chicken",
         "title": "咖喱鸡腿焖饭",
         "titleEn": "Curry chicken rice",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:rice",
-            "ingredient:meat",
-            "ingredient:chicken",
-            "ingredient:vegetables",
-            "ingredient:onion",
-            "ingredient:carrot",
-            "ingredient:potato",
-            "ingredient:mushroom",
-            "ingredient:milk"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:rice-cooker"],
-          "equipment": ["equipment:rice-cooker", "equipment:pan"],
-          "style": ["style:chinese"],
-          "source": ["source:awei"]
-        },
         "methodSteps": [6],
-        "ingredientLines": [0]
+        "ingredientLines": [0],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "肉类",
+          "Meat",
+          "meat",
+          "鸡肉",
+          "Chicken",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "洋葱",
+          "Onion",
+          "onion",
+          "胡萝卜",
+          "Carrot",
+          "carrot",
+          "土豆",
+          "Potato",
+          "马铃薯",
+          "馬鈴薯",
+          "potatoes",
+          "potato",
+          "蘑菇",
+          "Mushrooms",
+          "mushroom",
+          "mushrooms",
+          "香菇",
+          "shiitake",
+          "牛奶",
+          "Milk",
+          "milk"
+        ]
       }
     ]
   },
@@ -1457,22 +1421,26 @@
         "title": "萝洁塔的番茄炖牛肉与意面",
         "titleEn": "Rosalina’s tomato beef stew with pasta",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:meat",
-            "ingredient:beef",
-            "ingredient:vegetables",
-            "ingredient:onion",
-            "ingredient:tomato",
-            "ingredient:grains"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:pan-fry", "method:braise"],
-          "equipment": ["equipment:pot"],
-          "style": ["style:western"],
-          "source": ["source:rosalina"]
-        },
-        "optionalIngredientIds": ["ingredient:tomato"]
+        "searchTerms": [
+          "肉类",
+          "Meat",
+          "meat",
+          "牛肉",
+          "Beef",
+          "beef",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "洋葱",
+          "Onion",
+          "onion",
+          "番茄",
+          "Tomato",
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物"
+        ]
       }
     ]
   },
@@ -1484,41 +1452,50 @@
         "title": "基础白饭",
         "titleEn": "Basic basmati rice",
         "kind": "dish",
-        "facets": {
-          "ingredient": ["ingredient:grains", "ingredient:rice"],
-          "occasion": ["occasion:main"],
-          "method": ["method:boil"],
-          "equipment": ["equipment:pot"],
-          "style": ["style:mixed"],
-          "source": ["source:magic-ingredients"]
-        },
         "methodSteps": [1],
-        "ingredientLines": [0]
+        "ingredientLines": [0],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice"
+        ]
       },
       {
         "id": "lamb-pilaf",
         "title": "羊肉手抓饭",
         "titleEn": "Lamb pilaf",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:rice",
-            "ingredient:meat",
-            "ingredient:lamb",
-            "ingredient:vegetables",
-            "ingredient:onion",
-            "ingredient:carrot",
-            "ingredient:raisins"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:pan-fry", "method:braise"],
-          "equipment": ["equipment:pot"],
-          "style": ["style:mixed"],
-          "source": ["source:magic-ingredients"]
-        },
         "methodSteps": [2, 3, 4],
-        "ingredientLines": [1]
+        "ingredientLines": [1],
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米饭",
+          "Rice",
+          "rice",
+          "肉类",
+          "Meat",
+          "meat",
+          "羊肉",
+          "Lamb",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "洋葱",
+          "Onion",
+          "onion",
+          "胡萝卜",
+          "Carrot",
+          "carrot",
+          "葡萄干",
+          "Raisins"
+        ]
       }
     ]
   },
@@ -1530,26 +1507,24 @@
         "title": "阿栗葱香千层肉饼",
         "titleEn": "Ali’s layered scallion meat pancakes",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:flour",
-            "ingredient:meat",
-            "ingredient:pork",
-            "ingredient:beef",
-            "ingredient:scallion"
-          ],
-          "occasion": [
-            "occasion:breakfast",
-            "occasion:snack",
-            "occasion:prep-ahead"
-          ],
-          "method": ["method:pan-fry"],
-          "equipment": ["equipment:pan"],
-          "style": ["style:chinese"],
-          "source": ["source:ali-pancakes"]
-        },
-        "ingredientChoices": [["ingredient:pork", "ingredient:beef"]]
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "面粉",
+          "Flour",
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork",
+          "牛肉",
+          "Beef",
+          "beef",
+          "小葱",
+          "Scallion"
+        ]
       }
     ]
   },
@@ -1561,25 +1536,37 @@
         "title": "留意美食家常炒面",
         "titleEn": "LiuYi’s home-style stir-fried noodles",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:noodles",
-            "ingredient:vegetables",
-            "ingredient:leafy-greens",
-            "ingredient:carrot",
-            "ingredient:meat",
-            "ingredient:sausage",
-            "ingredient:eggs",
-            "ingredient:egg",
-            "ingredient:onion"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:boil", "method:stir-fry"],
-          "equipment": ["equipment:pot", "equipment:wok"],
-          "style": ["style:chinese"],
-          "source": ["source:liuyi"]
-        }
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "面条",
+          "Noodles",
+          "noodles",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "青菜",
+          "Leafy greens",
+          "胡萝卜",
+          "Carrot",
+          "carrot",
+          "肉类",
+          "Meat",
+          "meat",
+          "香肠",
+          "Sausage",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "洋葱",
+          "Onion",
+          "onion"
+        ]
       }
     ]
   },
@@ -1591,26 +1578,40 @@
         "title": "冯小厨牛肉炒米粉",
         "titleEn": "Feng’s beef rice vermicelli",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:rice-vermicelli",
-            "ingredient:meat",
-            "ingredient:beef",
-            "ingredient:vegetables",
-            "ingredient:cabbage",
-            "ingredient:carrot",
-            "ingredient:bean-sprouts",
-            "ingredient:eggs",
-            "ingredient:egg",
-            "ingredient:onion"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:stir-fry"],
-          "equipment": ["equipment:wok"],
-          "style": ["style:chinese"],
-          "source": ["source:feng"]
-        }
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "米粉",
+          "Rice vermicelli",
+          "rice vermicelli",
+          "肉类",
+          "Meat",
+          "meat",
+          "牛肉",
+          "Beef",
+          "beef",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "卷心菜",
+          "Cabbage",
+          "胡萝卜",
+          "Carrot",
+          "carrot",
+          "豆芽",
+          "Bean sprouts",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg",
+          "洋葱",
+          "Onion",
+          "onion"
+        ]
       }
     ]
   },
@@ -1622,18 +1623,15 @@
         "title": "阿见葱盐猪排",
         "titleEn": "Ajian’s scallion-salt pork chops",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:meat",
-            "ingredient:pork",
-            "ingredient:scallion"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:pan-fry"],
-          "equipment": ["equipment:pan"],
-          "style": ["style:chinese"],
-          "source": ["source:ajian"]
-        }
+        "searchTerms": [
+          "肉类",
+          "Meat",
+          "meat",
+          "猪肉",
+          "Pork",
+          "小葱",
+          "Scallion"
+        ]
       }
     ]
   },
@@ -1645,21 +1643,22 @@
         "title": "葱香凉拌面",
         "titleEn": "Scallion-scented cold noodles",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:noodles",
-            "ingredient:vegetables",
-            "ingredient:cucumber",
-            "ingredient:peanut"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:boil", "method:cold-toss"],
-          "equipment": ["equipment:pot", "equipment:pan"],
-          "style": ["style:chinese"],
-          "season": ["season:summer"],
-          "source": ["source:ali-recipes"]
-        }
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "面条",
+          "Noodles",
+          "noodles",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "黄瓜",
+          "Cucumber",
+          "花生",
+          "Peanut"
+        ]
       }
     ]
   },
@@ -1671,19 +1670,21 @@
         "title": "杰少滑蛋虾仁",
         "titleEn": "Remus’s silky eggs with shrimp",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:seafood",
-            "ingredient:shrimp",
-            "ingredient:eggs",
-            "ingredient:egg"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:stir-fry"],
-          "equipment": ["equipment:wok"],
-          "style": ["style:chinese"],
-          "source": ["source:remus"]
-        }
+        "searchTerms": [
+          "鱼虾海鲜",
+          "Seafood",
+          "seafood",
+          "海鲜",
+          "虾",
+          "Shrimp",
+          "shrimp",
+          "蛋类",
+          "Eggs",
+          "eggs",
+          "鸡蛋",
+          "Egg",
+          "egg"
+        ]
       }
     ]
   },
@@ -1695,21 +1696,25 @@
         "title": "鼎爷豉油王炒面",
         "titleEn": "Ting’s soy-sauce fried noodles",
         "kind": "dish",
-        "facets": {
-          "ingredient": [
-            "ingredient:grains",
-            "ingredient:noodles",
-            "ingredient:vegetables",
-            "ingredient:chives",
-            "ingredient:bean-sprouts",
-            "ingredient:onion"
-          ],
-          "occasion": ["occasion:main"],
-          "method": ["method:stir-fry"],
-          "equipment": ["equipment:wok"],
-          "style": ["style:chinese"],
-          "source": ["source:ting-tvb"]
-        }
+        "searchTerms": [
+          "谷物与面食",
+          "Grains and noodles",
+          "grains",
+          "谷物",
+          "面条",
+          "Noodles",
+          "noodles",
+          "蔬菜",
+          "Vegetables",
+          "vegetables",
+          "韭菜",
+          "Chinese chives",
+          "豆芽",
+          "Bean sprouts",
+          "洋葱",
+          "Onion",
+          "onion"
+        ]
       }
     ]
   }

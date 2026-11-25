@@ -14,7 +14,6 @@ import {
   emptyDiscoveryState,
   recipeDiscovery,
   preparationFor,
-  discoveryTags,
 } from "./discovery";
 import { bodyForPreparation } from "./preparation-content";
 import type { DiscoveryState } from "./discovery-types";
@@ -245,8 +244,12 @@ export default function App() {
   };
   const listKey = isEssentials ? "references" : series ? "series" : "library";
   const discoveryState = discoveryStates[listKey];
-  const updateDiscovery = (next: DiscoveryState) =>
-    setDiscoveryStates((previous) => ({ ...previous, [listKey]: next }));
+  const updateDiscovery = (next: DiscoveryState) => {
+    if (series && next.category !== "japanese") {
+      setDiscoveryStates((previous) => ({ ...previous, library: next }));
+      location.hash = "library";
+    } else setDiscoveryStates((previous) => ({ ...previous, [listKey]: next }));
+  };
   const preparations =
     recipeDiscovery.find((entry) => entry.id === recipe?.id)?.preparations ||
     [];
@@ -747,21 +750,6 @@ export default function App() {
                     )}
                   </div>
                 )}
-                <div className="recipe-discovery-tags">
-                  {Object.values(
-                    (selectedPreparation || preparations[0])?.facets || {},
-                  )
-                    .flat()
-                    .slice(0, 6)
-                    .map((id) => {
-                      const tag = discoveryTags.find((tag) => tag.id === id);
-                      return tag ? (
-                        <span key={id}>
-                          {locale === "en" ? tag.labelEn : tag.label}
-                        </span>
-                      ) : null;
-                    })}
-                </div>
                 <div className="actions">
                   <button
                     className="primary"
@@ -993,13 +981,6 @@ export default function App() {
                       const entry = recipes.find((recipe) => recipe.id === id);
                       if (entry) openRecipe(entry, trigger);
                     }}
-                    onApplySearch={(state, collection) => {
-                      setDiscoveryStates((previous) => ({
-                        ...previous,
-                        [collection ? "series" : "library"]: state,
-                      }));
-                      location.hash = collection || "library";
-                    }}
                   />
                 ) : (
                   <section
@@ -1023,8 +1004,8 @@ export default function App() {
                               "Preparation, heat, seasoning and storage.",
                             )
                           : s(
-                              "按食材和场景，找到想做的菜。",
-                              "Find a recipe by ingredient or occasion.",
+                              "中餐、日厨系列、甜品，简单找菜。",
+                              "Chinese dishes, Japanese chef recipes and desserts.",
                             )}
                       </p>
                       {isEssentials && (
@@ -1043,16 +1024,7 @@ export default function App() {
                       locale={locale}
                       state={discoveryState}
                       onChange={updateDiscovery}
-                      recipeIds={
-                        series
-                          ? recipes
-                              .filter(
-                                (recipe) =>
-                                  recipe.collection === "japanese-chef",
-                              )
-                              .map((recipe) => recipe.id)
-                          : undefined
-                      }
+                      defaultCategory={series ? "japanese" : undefined}
                       favorites={data.favorites}
                       onFavorite={saved.favorite}
                       onOpenRecipe={(id, selected, trigger) => {
@@ -1068,35 +1040,6 @@ export default function App() {
                           { panfolioReference: id },
                           "",
                           location.href,
-                        );
-                      }}
-                      onSaveSearch={(state) => {
-                        const labels = Object.values(state.selected)
-                          .flat()
-                          .map((id) => {
-                            const tag = discoveryTags.find(
-                              (tag) => tag.id === id,
-                            );
-                            return tag
-                              ? locale === "en"
-                                ? tag.labelEn
-                                : tag.label
-                              : id;
-                          });
-                        const name =
-                          [state.query, ...labels]
-                            .filter(Boolean)
-                            .join(" · ") || s("全部菜谱", "All recipes");
-                        saved.saveSearch(
-                          name,
-                          state,
-                          series ? "japanese-chef" : undefined,
-                        );
-                        setMessage(
-                          s(
-                            "筛选已保存在我的厨房。",
-                            "Search saved in My kitchen.",
-                          ),
                         );
                       }}
                       inputRef={searchInput}

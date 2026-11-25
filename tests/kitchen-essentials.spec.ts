@@ -36,16 +36,12 @@ test("kitchen essentials supports lookup, translation and recipe round trips", a
   await expect(page.locator(".essential-detail")).toBeVisible();
   await page.goto("/#essentials");
   await page.getByRole("searchbox").fill("");
-  const mobile = (page.viewportSize()?.width || 0) <= 760;
-  if (mobile)
-    await page.getByRole("button", { name: "Filters", exact: true }).click();
-  await (mobile ? page.getByRole("dialog") : page.locator(".discovery-sidebar"))
-    .getByRole("checkbox", { name: /^Prep / })
-    .check();
-  if (mobile) await page.getByRole("button", { name: /^Show results/ }).click();
-  await expect(page.locator(".essential-card")).toHaveCount(
-    essentials.filter((entry) => entry.category === "prep").length,
-  );
+  await expect(page.locator(".essential-card")).toHaveCount(essentials.length);
+  await expect(
+    page.locator(
+      ".discovery-sidebar, .discovery-mobile-filter, .discovery-scopes",
+    ),
+  ).toHaveCount(0);
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
@@ -56,10 +52,7 @@ test("kitchen essentials supports lookup, translation and recipe round trips", a
   });
   await page.getByRole("searchbox").fill("zzzzzz");
   await expect(
-    page.getByText(
-      "No results match. Remove a filter or clear all to try again.",
-      { exact: true },
-    ),
+    page.getByText(/No results|Nothing found|No matching/, { exact: true }),
   ).toBeVisible();
 });
 

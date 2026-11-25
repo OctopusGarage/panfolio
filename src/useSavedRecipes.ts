@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { parseBackup, emptyKitchen, mergeKitchen, type Backup } from "./core";
-import type { DiscoveryState } from "./discovery-types";
 import { createSavedSnapshot } from "./saved-snapshot";
 const key = "panfolio-data";
 const empty: Backup = { version: 1, favorites: [], notes: {} };
@@ -145,47 +144,6 @@ export function useSavedRecipes(onError: () => void) {
     },
     toggleRepeat(id: string) {
       toggleStatus("repeat", id);
-    },
-    setPrivateTags(id: string, tags: string[]) {
-      mutate((v) => ({
-        ...v,
-        kitchen: {
-          ...(v.kitchen ?? emptyKitchen()),
-          tags: {
-            ...v.kitchen?.tags,
-            [id]: [...new Set(tags.map((t) => t.trim()).filter(Boolean))],
-          },
-        },
-      }));
-    },
-    saveSearch(
-      name: string,
-      state: DiscoveryState,
-      collection?: "japanese-chef",
-    ) {
-      const entry = {
-        id: crypto.randomUUID(),
-        name: name.trim(),
-        ...(collection ? { collection } : {}),
-        state: structuredClone(state),
-      };
-      if (!entry.name) return;
-      mutate((v) => ({
-        ...v,
-        kitchen: {
-          ...(v.kitchen ?? emptyKitchen()),
-          searches: [...(v.kitchen?.searches ?? []), entry],
-        },
-      }));
-    },
-    removeSearch(id: string) {
-      mutate((v) => ({
-        ...v,
-        kitchen: {
-          ...(v.kitchen ?? emptyKitchen()),
-          searches: (v.kitchen?.searches ?? []).filter((s) => s.id !== id),
-        },
-      }));
     },
     merge(backup: Backup) {
       backup = parseBackup(JSON.stringify(backup));

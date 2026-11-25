@@ -1,5 +1,7 @@
 # Recipe discovery and interaction proposal
 
+Historical record: the later three-category simplification supersedes facet and tag recommendations here. Follow [the current maintenance guide](discovery-guide.md).
+
 Status: approved direction implemented in the working tree; see [the maintenance guide](discovery-guide.md) for the runtime contract. Prepared on 2026-11-25. The user explicitly broadened the earlier three-shelf direction: support tags and filters across occasions, ingredients, seasons and other useful dimensions, and reconsider the overall application layout. The user has no single preferred starting point; ingredient-first, occasion-first, favorites and technique lookup must all work.
 
 ## 1. Findings from the actual collection
@@ -8,7 +10,7 @@ The current working tree contains 44 recipe entries and 31 kitchen references. A
 
 Nineteen recipe entries already link to kitchen references. Four references are deliberately standalone knife lessons. The remaining recipes do not automatically need a reference: add a relationship only when the method actually applies.
 
-The current Chinese/Japanese/Dessert field mixes cuisine with dish role. The practical shelf currently places Western-style tomato beef under Chinese and all SAMUKICHI dishes under Japanese, including steak and onion soup. Source authors, cooking styles and meal roles therefore need independent representation. Keep familiar labels as quick filters rather than making one exclusive field own every recipe.
+The current Chinese/Japanese/Dessert field mixes cuisine with dish role. The practical shelf currently places Western-style tomato beef under Chinese and all SAMUKICHI dishes under Japanese, including steak and onion soup. Source authors, cooking styles and meal roles therefore need independent representation. Following the user's classification clarification, all SAMUKICHI preparations retain Japanese style; Western or mixed labels can coexist and must not exclude them from the Japanese quick filter. Keep familiar labels as quick filters rather than making one exclusive field own every recipe.
 
 Multi-preparation entries are a more serious correctness issue than the number of visible categories. The instant-noodle collection has ten preparations, the rice-cooker collection six, and tuna three. Eggs in one child and potatoes in another must never satisfy a request for both ingredients in one preparation. Optional cheese finishes, actual alternative dishes, components and incomplete serving ideas must also remain distinct. The salmon bowl and pasta accompaniment must not become fabricated complete recipes.
 

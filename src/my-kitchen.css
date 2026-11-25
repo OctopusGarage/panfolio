@@ -23,11 +23,6 @@
   aspect-ratio: 3/2;
   object-fit: contain;
 }
-.my-kitchen .card label {
-  display: grid;
-  gap: 0.4rem;
-  padding: 1rem;
-}
 .my-kitchen input {
   min-width: 0;
   width: 100%;
@@ -80,10 +75,6 @@
 }
 .my-kitchen > input {
   font-size: 16px;
-}
-.my-kitchen .card label {
-  font-size: 12px;
-  color: var(--muted);
 }
 .my-kitchen .kitchen-note {
   display: -webkit-box;

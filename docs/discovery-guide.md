@@ -1,32 +1,25 @@
-# Discovery maintenance guide
+# Browsing and reference maintenance
 
-Panfolio presents three primary destinations: Recipes, Kitchen essentials and My kitchen. Chinese, Japanese, dessert and breakfast are quick filters rather than mutually exclusive shelves. Existing recipe IDs, source URLs, collection links and the legacy `#saved` route remain stable.
+## Current approved scope
 
-## Reviewed metadata
+The cookbook uses exactly three exclusive categories: Chinese (`chinese`, 中餐), Japanese chef series (`japanese`, 日厨系列) and Desserts (`dessert`, 甜品). Every recipe has one explicit category in `src/recipes.json`. The Japanese category includes all 13 SAMUKICHI recipes and the existing Nikujaga recipe. Preserve the separate original collection/source metadata without claiming that Nikujaga came from SAMUKICHI. Chinese remains the existing practical home-cooking grouping, not a claim that every adaptation is a traditional Chinese dish. Do not add cuisine subdivisions, occasions, seasons, ingredient groups, equipment, source filters or tag editors without a new user request.
 
-Keep discovery infrastructure separate from source recipe text:
+The initial view shows the complete cookbook. The three category buttons are mutually exclusive; clicking the active button returns to the complete view without creating a fourth category. Search applies within the chosen category. Kitchen essentials has keyword search only. Recipe text, preparations, video access, favorites, notes, explicit cooking records, recent reading and private backups remain available.
 
-- `src/discovery-tags.json` owns canonical bilingual tag IDs, labels and aliases. Reuse an existing ID before creating another spelling of the same ingredient.
-- `src/recipe-discovery.json` records each recipe's actual preparations and their facets.
-- `src/reference-discovery.json` records positive reference topics, tasks, ingredients and stages. Counterexamples and exclusions remain readable in the reference but are not positive search metadata.
-- `src/discovery.ts` implements local matching, ranking and deduplicated parent counts.
+## Search and preparations
 
-Review every preparation against both language bodies. Ingredients must belong to that preparation; never union siblings to satisfy All ingredients. Use `ingredientChoices` for mutually exclusive source alternatives. Optional ingredients and incomplete serving suggestions must not become a fabricated complete preparation.
+`src/recipe-discovery.json` contains genuine preparation boundaries, ingredient synonyms and source section selectors. `src/reference-discovery.json` contains positive lookup aliases. There is no runtime facet taxonomy. Counterexamples must not become positive ingredient or technique recommendations.
 
-`methodSteps` selects one-based source method sections. `ingredientLines` selects zero-based ingredient bullets; `ingredientParagraphs` selects zero-based blank-line paragraphs when the source uses prose. Shared preparation steps can appear in more than one child. Keep the original complete recipe accessible through View all preparations. Renumber displayed child steps without modifying source content. Retain necessary explanations, failure examples and tips.
+`methodSteps` selects one-based method sections. `ingredientLines` selects zero-based ingredient bullets; `ingredientParagraphs` selects zero-based prose paragraphs. Keep shared preparation steps where needed and preserve the complete original recipe. Incomplete serving suggestions are not independent complete preparations. Keep stable parent IDs, notes, source URLs and legacy recipe/reference routes.
 
-Cuisine style is independent of author or collection. Occasions and seasonal suitability are editorial browsing aids, not claims that a source prescribed a meal or a universal harvest calendar. Vegetable tags do not imply vegetarian suitability. Never derive total cooking time, nutrition, allergens or health claims from partial instructions.
+Old backup fields for tags and saved filters are accepted and preserved solely for data compatibility. They do not drive current search or expose removed controls. Never delete existing personal information merely because a UI feature was removed. Keep all personal data outside public URLs, share cards and telemetry.
 
-## Interaction contract
+## Kitchen-reference clarity
 
-Normal facets use OR within a group and AND across groups. All ingredients uses intersection within one actual preparation. Counts represent distinct parent recipes, not the number of children. Search prioritizes exact titles, preparation names and reviewed aliases before source method text. Related kitchen knowledge in All scope follows the search query independently of recipe occasion filters.
+A reference should answer when to use the method, how to perform it, what visible result to look for, why the operation helps, what commonly goes wrong and where the method does not apply. Explain jargon using concrete actions. Keep source distinctions and counterexamples. Do not expand terse text by inventing timings, temperatures, quantities, storage guarantees or scientific claims.
 
-Desktop filters apply immediately. Mobile filters use a draft: Cancel, Escape and browser Back discard it; Show results commits it. Applied filters are removable, and Clear all restores the original destination scope. Preserve filter state, list position and focus when returning from a detail. Preparation choices live in navigation state and preserve parent recipe IDs.
-
-My kitchen contains favorites, explicit tried/repeat choices, notes, private tags, saved searches and recent reading. Personal information stays in local storage/IndexedDB and exported backups. It must never enter public URLs, share cards or telemetry. Saved searches retain an optional chef-series collection context independently of cuisine and author tags. My kitchen keeps its in-session search query across recipe round trips. Existing version-1 backups without kitchen metadata remain valid; new optional metadata merges without discarding existing notes.
+Cards should identify the technique and provide an actionable starting point, with a clear link to complete instructions. Detail pages prioritize instructions; videos supplement the written reference. Related recipes can include comparisons and exceptions, so do not label every association as an application example. Add an explicit comparison note when needed.
 
 ## Verification
 
-Run `pnpm test`, `pnpm eval`, `pnpm build`, `pnpm test:e2e` and `pnpm format:check`. The discovery tests validate tag coverage, sibling boundaries and bilingual section selectors; browser tests cover mobile drafts, child readers, private persistence and saved scopes. Review actual phone and desktop layouts when changing card sizing or navigation. Retain the offline, scoped cache/recovery, protected sharing and accessibility tests.
-
-The initial design rationale and evidence are recorded in [the proposal](discovery-and-interaction-proposal.md) and [the research review](discovery-research.md). The audit files document discovery review of current recipe text; they do not claim that every original video was rewatched.
+Run `pnpm test`, `pnpm eval`, `pnpm build`, `pnpm test:e2e` and `pnpm format:check`. Confirm three-category coverage, every SAMUKICHI preparation, keyword search, source section selectors, complete bilingual references, legacy data preservation, responsive alignment, accessibility and recipe/reference return state. Historical facet proposals and reports are evidence of earlier work, not current product requirements.

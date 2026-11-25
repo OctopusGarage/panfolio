@@ -2,7 +2,7 @@
 
 - Use pnpm, React and strict TypeScript. Keep shared infrastructure separate from recipe content.
 - Support Chinese and English for every interface action, feedback message and accessibility label. New or substantially revised recipes and kitchen references must provide complete Chinese and English content.
-- Follow [Discovery maintenance](docs/discovery-guide.md) when changing tags, preparations, search or filters.
+- Follow [Discovery maintenance](docs/discovery-guide.md) when changing categories, preparations, search or kitchen references.
 - Preserve stable recipe IDs and source URLs. Never fabricate quantities, nutrition, timing or attribution.
 - Keep personal notes out of URLs, sharing cards and telemetry. No analytics or remote account is required.
 - Scope service workers, recovery and cache cleanup to this deployment. Never remove another app's data or clear local notes during recovery.
