@@ -44,3 +44,45 @@ test("kitchen essentials supports lookup, translation and recipe round trips", a
   await page.getByRole("searchbox").fill("zzzzzz");
   await expect(page.getByRole("status")).toContainText("No matching");
 });
+
+test("all kitchen cards fill aligned grid tracks without inherited article margins", async ({
+  page,
+}) => {
+  for (const width of [390, 768, 1280]) {
+    await page.setViewportSize({ width, height: 844 });
+    await page.goto("/#essentials");
+    for (const locale of ["zh", "en"]) {
+      if (locale === "en")
+        await page
+          .getByRole("button", { name: "English", exact: true })
+          .click();
+      const boxes = await page.locator(".essential-card").evaluateAll((cards) =>
+        cards.map((card) => {
+          const rect = card.getBoundingClientRect();
+          const css = getComputedStyle(card);
+          return {
+            x: rect.x,
+            y: rect.y,
+            width: rect.width,
+            bottom: rect.bottom,
+            margin: css.margin,
+          };
+        }),
+      );
+      const grid = await page.locator(".essential-grid").boundingBox();
+      const columns = width > 760 ? 2 : 1;
+      for (let i = 0; i < boxes.length; i++) {
+        expect(boxes[i].margin).toBe("0px");
+        expect(Math.abs(boxes[i].width - boxes[0].width)).toBeLessThan(1);
+        expect(Math.abs(boxes[i].x - boxes[i % columns].x)).toBeLessThan(1);
+        if (i >= columns)
+          expect(boxes[i].y - boxes[i - columns].bottom).toBeLessThanOrEqual(
+            19,
+          );
+      }
+      expect(Math.abs(boxes[0].x - grid!.x)).toBeLessThan(1);
+      if (locale === "en")
+        await page.getByRole("button", { name: "中文", exact: true }).click();
+    }
+  }
+});
