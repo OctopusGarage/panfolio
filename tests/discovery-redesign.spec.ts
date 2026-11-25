@@ -5,16 +5,17 @@ test.beforeEach(async ({ page }) => {
   await page.goto("/");
 });
 
-test("mobile discovery offers exactly three exclusive categories without advanced filters", async ({
+test("mobile discovery offers exactly four exclusive categories without advanced filters", async ({
   page,
 }) => {
   const categories = page.locator(".discovery-presets button");
-  await expect(categories).toHaveText(["中餐", "日厨系列", "甜品"]);
-  await expect(page.locator(".grid .card")).toHaveCount(44);
+  await expect(categories).toHaveText(["中餐", "日厨系列", "甜品", "饮品"]);
+  await expect(page.locator(".grid .card")).toHaveCount(46);
   for (const [index, count] of [
-    [0, 29],
+    [0, 30],
     [1, 14],
     [2, 1],
+    [3, 1],
   ]) {
     await categories.nth(index).click();
     await expect(page.locator(".grid .card")).toHaveCount(count);
@@ -22,8 +23,8 @@ test("mobile discovery offers exactly three exclusive categories without advance
       page.locator('.discovery-presets [aria-pressed="true"]'),
     ).toHaveCount(1);
   }
-  await categories.nth(2).click();
-  await expect(page.locator(".grid .card")).toHaveCount(44);
+  await categories.nth(3).click();
+  await expect(page.locator(".grid .card")).toHaveCount(46);
   await expect(
     page.locator(
       ".discovery-sidebar, .discovery-mobile-filter, .discovery-scopes, .discovery-applied",

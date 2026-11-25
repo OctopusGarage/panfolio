@@ -34,3 +34,7 @@
 ## 原始来源
 
 - [www.youtube.com](https://www.youtube.com/watch?v=EhyQom5jiTE)
+
+## 关联菜谱
+
+- [家常鸡蛋薄饼卷](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/recipes/soft-egg-crepe-wraps.md)

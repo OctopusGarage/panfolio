@@ -6,7 +6,7 @@ const recipes: { category: string }[] = JSON.parse(
 const count = (category: string) =>
   recipes.filter((recipe) => recipe.category === category).length;
 
-test("three explicit categories filter independently of source collections and survive recipe round trips", async ({
+test("four explicit categories filter independently of source collections and survive recipe round trips", async ({
   page,
   browserName,
 }) => {
@@ -15,6 +15,7 @@ test("three explicit categories filter independently of source collections and s
     "中餐",
     "日厨系列",
     "甜品",
+    "饮品",
   ]);
   await expect(page.locator(".grid .card")).toHaveCount(recipes.length);
   await page.getByRole("button", { name: "中餐", exact: true }).click();
@@ -61,11 +62,20 @@ test("three explicit categories filter independently of source collections and s
     "Chinese",
     "Japanese chef series",
     "Desserts",
+    "Drinks",
   ]);
   await page
     .getByRole("button", { name: "Japanese chef series", exact: true })
     .click();
   await expect(page.locator(".grid .card")).toHaveCount(14);
+  await page.getByRole("button", { name: "Drinks", exact: true }).click();
+  await expect(page.locator(".grid .card")).toHaveCount(count("drinks"));
+  await page
+    .getByRole("link", { name: "Microwave Chocolate Milk Tea" })
+    .click();
+  await expect(page.locator(".detail-title .eyebrow")).toHaveText("Drinks");
+  await expect(page.locator(".recipe-body")).toContainText("2 minutes");
+  await expect(page.locator(".recipe-body")).toContainText("1 minute");
 });
 
 test("coconut sago supports translated cooking, source video and correctly attributed kitchen references", async ({

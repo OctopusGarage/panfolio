@@ -1,3 +1,4 @@
+import { recipeCategories } from "./recipe-categories";
 import type { DiscoveryState } from "./discovery-types";
 export interface SavedSearch {
   id: string;
@@ -95,7 +96,7 @@ function validateKitchen(value: unknown): KitchenData {
     if (
       typeof state.query !== "string" ||
       (state.category !== undefined &&
-        !["chinese", "japanese", "dessert"].includes(String(state.category))) ||
+        !recipeCategories.some(({ id }) => id === state.category)) ||
       !["any", "all"].includes(String(state.ingredientMode)) ||
       !["recipes", "references", "all"].includes(String(state.scope)) ||
       !object(state.selected) ||

@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "ca70bcf6ce585712688c916fda4f8176f8650e46988244a732ea958251124491",
+  "sourceSha256": "52074841ffd3a2d9aaaa3ad6e150a731b9c797524fdb666faa91a5131b452682",
   "checks": [
     "bilingual completeness",
     "section parity",
@@ -229,6 +229,16 @@
     {
       "id": "ting-soy-sauce-noodles",
       "title": "鼎爷豉油王炒面",
+      "issues": []
+    },
+    {
+      "id": "microwave-chocolate-milk-tea",
+      "title": "微波炉巧克力奶茶",
+      "issues": []
+    },
+    {
+      "id": "soft-egg-crepe-wraps",
+      "title": "家常鸡蛋薄饼卷",
       "issues": []
     }
   ]

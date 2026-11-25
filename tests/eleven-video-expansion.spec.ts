@@ -62,7 +62,7 @@ test("all ten dish entries load full illustrations, bilingual methods and the co
   ).toBe(true);
 });
 
-test("standalone vegetable techniques play their own source without an invented dish", async ({
+test("vegetable techniques play their own source and show applicable related recipes", async ({
   page,
 }) => {
   await page.route(/youtube-nocookie\.com/, (route) =>
@@ -79,7 +79,13 @@ test("standalone vegetable techniques play their own source without an invented 
   ]) {
     await page.goto(`/#essentials/${id}`);
     await expect(page.locator(".essential-detail")).toBeVisible();
-    await expect(page.locator(".essential-related")).toHaveCount(0);
+    if (id === "potato-julienne") {
+      await expect(page.locator(".essential-related")).toContainText(
+        "家常鸡蛋薄饼卷",
+      );
+    } else {
+      await expect(page.locator(".essential-related")).toHaveCount(0);
+    }
     await expect(
       page.locator(
         `.essential-detail a[href='https://www.youtube.com/watch?v=${video}']`,

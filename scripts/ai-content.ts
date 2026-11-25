@@ -186,7 +186,7 @@ export function createAiFeed(sourceCommit = "local"): Record<string, string> {
     },
   });
   files["catalog.md"] =
-    `# Panfolio cookbook\n\nContent version: ${contentVersion}\n\nCategories: Chinese / 中餐; Japanese chef series / 日厨系列; Desserts / 甜品.\n\nFetch [the manifest](manifest.json) to identify this version. Each linked JSON contains complete bilingual instructions and original sources. Related recipes may include comparisons; preserve conditions and limits.\n\n` +
+    `# Panfolio cookbook\n\nContent version: ${contentVersion}\n\nCategories: ${recipeCategories.map(({ en, zh }) => `${en} / ${zh}`).join("; ")}.\n\nFetch [the manifest](manifest.json) to identify this version. Each linked JSON contains complete bilingual instructions and original sources. Related recipes may include comparisons; preserve conditions and limits.\n\n` +
     entries
       .map((entry) => {
         const name = entry.title as { zh: string; en: string };

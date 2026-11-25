@@ -193,6 +193,12 @@
 
 - [鼎爷豉油王炒面](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/preparations/ting-soy-sauce-noodles/main.md) — 谷物与面食, 谷物, 面条, 蔬菜, 韭菜, 豆芽, 洋葱
 
+### 家常鸡蛋薄饼卷
+
+用汤勺量面粉和水，调成不用揉面的薄饼糊。煎出柔软的鸡蛋薄饼，卷上生菜和脆爽土豆丝。
+
+- [家常鸡蛋薄饼卷](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/preparations/soft-egg-crepe-wraps/main.md) — 煎饼果子, 鸡蛋饼, 早餐卷饼, 土豆丝卷饼
+
 ## 日厨系列
 
 ### 日式土豆炖肉
@@ -292,5 +298,13 @@
 大小西米分开煮焖至透心，冲凉沥水，再拌入椰浆、牛奶、炼奶和水果。
 
 - [椰汁西米露](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/preparations/ali-coconut-sago/main.md) — 西米, 椰浆, 牛奶, 水果
+
+## 饮品
+
+### 微波炉巧克力奶茶
+
+先用少量温水加热红茶和巧克力，再倒入牛奶搅匀加热，做成一杯带红茶香的热巧克力奶茶。
+
+- [微波炉巧克力奶茶](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/preparations/microwave-chocolate-milk-tea/main.md) — 巧克力烤奶, 热可可红茶, 热巧克力
 
 [厨房基础](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references.md)

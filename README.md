@@ -12,7 +12,7 @@ A bilingual cookbook and personal kitchen notebook, available as a web app and t
 
 ## Cook, learn and keep notes
 
-Browse Chinese recipes, the Japanese chef series and Desserts. Search dishes and ingredients, choose a specific preparation, save favorites and record cooking notes. Kitchen essentials explains reusable handling, storage, knife work, heat and seasoning techniques with their conditions and exceptions.
+Browse Chinese recipes, the Japanese chef series, Desserts and Drinks. Search dishes and ingredients, choose a specific preparation, save favorites and record cooking notes. Kitchen essentials explains reusable handling, storage, knife work, heat and seasoning techniques with their conditions and exceptions.
 
 Chinese and English cover the interface and cookbook. Recipes retain source quantities, necessary explanations and original video links. Source videos load on request and require connectivity. After confirmed caching, bundled recipe text works offline; viewed photos are cached on demand. Favorites and notes stay on your device, with JSON export/import for backups and no account or cloud sync.
 

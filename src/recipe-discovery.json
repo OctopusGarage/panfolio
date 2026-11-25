@@ -1717,5 +1717,43 @@
         ]
       }
     ]
+  },
+  {
+    "id": "microwave-chocolate-milk-tea",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "微波炉巧克力奶茶",
+        "titleEn": "Microwave Chocolate Milk Tea",
+        "kind": "dish",
+        "searchTerms": [
+          "巧克力烤奶",
+          "热可可红茶",
+          "热巧克力",
+          "hot chocolate",
+          "hot cocoa"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "soft-egg-crepe-wraps",
+    "preparations": [
+      {
+        "id": "main",
+        "title": "家常鸡蛋薄饼卷",
+        "titleEn": "Soft Egg Crepe Wraps",
+        "kind": "dish",
+        "searchTerms": [
+          "煎饼果子",
+          "鸡蛋饼",
+          "早餐卷饼",
+          "土豆丝卷饼",
+          "jianbing",
+          "egg crepe",
+          "potato wrap"
+        ]
+      }
+    ]
   }
 ]

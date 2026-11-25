@@ -14,7 +14,7 @@ import { recipeCategories } from "../src/recipe-categories";
 test("only three exhaustive exclusive recipe categories remain", () => {
   assert.deepEqual(
     recipeCategories.map((category) => category.zh),
-    ["中餐", "日厨系列", "甜品"],
+    ["中餐", "日厨系列", "甜品", "饮品"],
   );
   const seen = new Set<string>();
   for (const category of recipeCategories) {

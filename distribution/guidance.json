@@ -6,8 +6,8 @@
   },
   {
     "id": "selection",
-    "en": "Match names and actual ingredient aliases, not the user's entire sentence. Choose the intended preparation before using ingredients or steps. Offer actual alternatives when ambiguous; never combine sibling preparations. A component or finish is not a complete dish. Categories remain Chinese, Japanese chef series and Desserts; kitchen references are separate.",
-    "zh": "按菜名与真实食材别名查找，不要求匹配用户整句话。先选定具体做法，再使用食材和步骤；不明确时给出实际选项，不能混用同一道菜的不同做法。配料或收尾处理不代表完整菜谱。菜谱仅有中餐、日厨系列、甜品三类，厨房基础单独组织。"
+    "en": "Match names and actual ingredient aliases, not the user's entire sentence. Choose the intended preparation before using ingredients or steps. Offer actual alternatives when ambiguous; never combine sibling preparations. A component or finish is not a complete dish. Categories remain Chinese, Japanese chef series, Desserts and Drinks; kitchen references are separate.",
+    "zh": "按菜名与真实食材别名查找，不要求匹配用户整句话。先选定具体做法，再使用食材和步骤；不明确时给出实际选项，不能混用同一道菜的不同做法。配料或收尾处理不代表完整菜谱。菜谱仅有中餐、日厨系列、甜品和饮品四类，厨房基础单独组织。"
   },
   {
     "id": "cooking",

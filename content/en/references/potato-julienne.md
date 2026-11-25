@@ -34,3 +34,7 @@ This covers hand-cutting and water treatment before cooking. Stack portions only
 ## Original sources
 
 - [www.youtube.com](https://www.youtube.com/watch?v=EhyQom5jiTE)
+
+## Related recipes
+
+- [Soft Egg Crepe Wraps](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/recipes/soft-egg-crepe-wraps.md)

@@ -1061,8 +1061,8 @@ export default function App() {
                               "Preparation, heat, seasoning and storage.",
                             )
                           : s(
-                              "中餐、日厨系列、甜品，简单找菜。",
-                              "Chinese dishes, Japanese chef recipes and desserts.",
+                              "中餐、日厨系列、甜品和饮品，简单找菜。",
+                              "Chinese dishes, Japanese chef recipes, desserts and drinks.",
                             )}
                       </p>
                       {isEssentials && (

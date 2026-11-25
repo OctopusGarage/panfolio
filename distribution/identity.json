@@ -1,7 +1,7 @@
 {
-  "version": "0.1.0",
-  "contentVersion": "a99a58b086ea9b82b2580056ecd776d5d0bfee8cfabc36ca4cf8b4ac612dfc66",
-  "guidanceVersion": "737b9ca611bb7d94dc6b5bbf25fcf5825f31eb51f2ec31f69f4ff7828d62ec55",
+  "version": "0.2.0",
+  "contentVersion": "1ff4f539bb19e19758b4f924095e36a09332c5c202379354effc6a55e0a514af",
+  "guidanceVersion": "b6b681d7a328c27755bb3d4c86937bf123a9f645837ccf246cd50590a842c505",
   "iconSha256": "ff14619f3176955cf78073d1b6ac9444d0962cf58a6451d084d964b5dcb714bc",
-  "fingerprint": "b3dfe2ba2c7ed2197ff37c4e077cc3ba41d58fbe2bce8eefddab4c1e010e1830"
+  "fingerprint": "15ed1d8af72e14bf0507720b6f06e8c3b4a382b3698a8609fa1789e51329749c"
 }

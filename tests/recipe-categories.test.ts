@@ -3,8 +3,8 @@ import assert from "node:assert/strict";
 import recipes from "../src/recipes.json";
 import { validateRecipes } from "../src/recipe-validation";
 
-test("every curated recipe has one of the three explicit browse categories", () => {
-  const allowed = ["chinese", "japanese", "dessert"];
+test("every curated recipe has one of the four explicit browse categories", () => {
+  const allowed = ["chinese", "japanese", "dessert", "drinks"];
   for (const recipe of recipes) {
     assert.ok(
       allowed.includes((recipe as { category?: string }).category || ""),

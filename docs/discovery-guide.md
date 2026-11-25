@@ -2,9 +2,9 @@
 
 ## Current approved scope
 
-The cookbook uses exactly three exclusive categories: Chinese (`chinese`, 中餐), Japanese chef series (`japanese`, 日厨系列) and Desserts (`dessert`, 甜品). Every recipe has one explicit category in `src/recipes.json`. The Japanese category includes all 13 SAMUKICHI recipes and the existing Nikujaga recipe. Preserve the separate original collection/source metadata without claiming that Nikujaga came from SAMUKICHI. Chinese remains the existing practical home-cooking grouping, not a claim that every adaptation is a traditional Chinese dish. Do not add cuisine subdivisions, occasions, seasons, ingredient groups, equipment, source filters or tag editors without a new user request.
+The cookbook uses four exclusive categories: Chinese (`chinese`, 中餐), Japanese chef series (`japanese`, 日厨系列), Desserts (`dessert`, 甜品) and Drinks (`drinks`, 饮品). Every recipe has one explicit category in `src/recipes.json`. The Japanese category includes all 13 SAMUKICHI recipes and the existing Nikujaga recipe. Preserve the separate original collection/source metadata without claiming that Nikujaga came from SAMUKICHI. Chinese remains the existing practical home-cooking grouping, not a claim that every adaptation is a traditional Chinese dish. Do not add cuisine subdivisions, occasions, seasons, ingredient groups, equipment, source filters or tag editors without a new user request.
 
-The initial view shows the complete cookbook. The three category buttons are mutually exclusive; clicking the active button returns to the complete view without creating a fourth category. Search applies within the chosen category. Kitchen essentials has keyword search only. Recipe text, preparations, video access, favorites, notes, explicit cooking records, recent reading and private backups remain available.
+The initial view shows the complete cookbook. The four category buttons are mutually exclusive; clicking the active button returns to the complete view without selecting an additional category. Search applies within the chosen category. Kitchen essentials has keyword search only. Recipe text, preparations, video access, favorites, notes, explicit cooking records, recent reading and private backups remain available.
 
 ## Search and preparations
 
@@ -22,4 +22,4 @@ Cards should identify the technique and provide an actionable starting point, wi
 
 ## Verification
 
-Run `pnpm test`, `pnpm eval`, `pnpm build`, `pnpm test:e2e` and `pnpm format:check`. Confirm three-category coverage, every SAMUKICHI preparation, keyword search, source section selectors, complete bilingual references, legacy data preservation, responsive alignment, accessibility and recipe/reference return state. Historical facet proposals and reports are evidence of earlier work, not current product requirements.
+Run `pnpm test`, `pnpm eval`, `pnpm build`, `pnpm test:e2e` and `pnpm format:check`. Confirm four-category coverage, every SAMUKICHI preparation, keyword search, source section selectors, complete bilingual references, legacy data preservation, responsive alignment, accessibility and recipe/reference return state. Historical facet proposals and reports are evidence of earlier work, not current product requirements.

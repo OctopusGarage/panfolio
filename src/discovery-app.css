@@ -1,4 +1,4 @@
-/* Compact shared navigation and three-category recipe browsing. */
+/* Compact shared navigation and recipe category browsing. */
 .discovery-app.app-shell {
   grid-template-columns: 1fr;
   grid-template-rows: 76px minmax(0, 1fr);

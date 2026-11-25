@@ -24,7 +24,7 @@ test("AI feed is deterministic, complete and hash-addressed", () => {
   });
   assert.deepEqual(
     catalog.categories.map((c: { id: string }) => c.id),
-    ["chinese", "japanese", "dessert"],
+    ["chinese", "japanese", "dessert", "drinks"],
   );
   assert.equal(catalog.entries.length, recipes.length + essentials.length);
   for (const entry of catalog.entries) {

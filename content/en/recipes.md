@@ -193,6 +193,12 @@ Cook the vegetables and noodles separately, then combine them while lifting the 
 
 - [Ting’s soy-sauce fried noodles](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/preparations/ting-soy-sauce-noodles/main.md) — Grains and noodles, grains, Noodles, Vegetables, Chinese chives, Bean sprouts, Onion
 
+### Soft Egg Crepe Wraps
+
+Measure flour and water with the same ladle for a no-knead batter. Pan-cook soft egg crepes and wrap them around lettuce and crisp stir-fried potato shreds.
+
+- [Soft Egg Crepe Wraps](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/preparations/soft-egg-crepe-wraps/main.md) — jianbing, egg crepe, potato wrap
+
 ## Japanese chef series
 
 ### Japanese beef and potato stew (Nikujaga)
@@ -292,5 +298,13 @@ Loosen cooled rice with a little water, alternate pan contact with mixing and fi
 Cook and rest small and large sago pearls separately until translucent, rinse cool and mix with coconut milk, milk, condensed milk and fruit.
 
 - [Coconut milk sago dessert](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/preparations/ali-coconut-sago/main.md) — Sago, Coconut milk, Milk, Fruit
+
+## Drinks
+
+### Microwave Chocolate Milk Tea
+
+Heat black tea and chocolate with a little warm water, then stir in milk and heat again for a hot chocolate milk tea.
+
+- [Microwave Chocolate Milk Tea](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/preparations/microwave-chocolate-milk-tea/main.md) — hot chocolate, hot cocoa
 
 [Kitchen references](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references.md)
