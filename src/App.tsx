@@ -542,6 +542,7 @@ export default function App() {
             installed={installed}
             locale={locale}
             recipes={recipes}
+            onMessage={setMessage}
             onOpen={(id) => {
               if (!id) {
                 location.hash = "library";

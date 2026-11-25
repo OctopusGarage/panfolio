@@ -9,21 +9,33 @@ type Props = {
   installed: boolean;
   locale: Locale;
   recipes: readonly Recipe[];
+  onMessage: (message: string) => void;
   onOpen: (id: string) => void;
 };
 
-export function ShareInbox({ installed, locale, recipes, onOpen }: Props) {
+export function ShareInbox({
+  installed,
+  locale,
+  recipes,
+  onOpen,
+  onMessage,
+}: Props) {
   const s = (zh: string, en: string) => (locale === "en" ? en : zh);
   const dialog = useRef<HTMLDialogElement>(null);
   const trigger = useRef<HTMLButtonElement>(null);
   const seen = useRef(new Set<string>());
   const inspection = useRef(0);
   const [candidate, setCandidate] = useState<Recipe | null>(null);
-  const [error, setError] = useState<"read" | "link" | null>(null);
+  const reading = useRef(false);
+
+  useEffect(() => {
+    if (candidate && !dialog.current?.open) dialog.current?.showModal();
+  }, [candidate]);
 
   function close() {
     inspection.current++;
     dialog.current?.close();
+    setCandidate(null);
     trigger.current?.focus({ preventScroll: true });
   }
 
@@ -60,12 +72,14 @@ export function ShareInbox({ installed, locale, recipes, onOpen }: Props) {
         return;
       seen.current.add(link);
       setCandidate(recipe);
-      setError(null);
-      if (!dialog.current?.open) dialog.current?.showModal();
     } catch {
       if (!automatic && request === inspection.current) {
-        setCandidate(null);
-        setError("link");
+        onMessage(
+          s(
+            "剪贴板中没有有效的 Panfolio 分享链接。",
+            "The clipboard does not contain a valid Panfolio share link.",
+          ),
+        );
       }
     }
   }
@@ -82,6 +96,7 @@ export function ShareInbox({ installed, locale, recipes, onOpen }: Props) {
     async function check() {
       if (
         busy ||
+        reading.current ||
         disposed ||
         dialog.current?.open ||
         document.visibilityState !== "visible" ||
@@ -130,11 +145,26 @@ export function ShareInbox({ installed, locale, recipes, onOpen }: Props) {
         className="icon-button"
         aria-label={s("粘贴链接", "Paste link")}
         title={s("粘贴链接", "Paste link")}
-        onClick={() => {
-          inspection.current++;
-          setCandidate(null);
-          setError(null);
-          dialog.current?.showModal();
+        onClick={async () => {
+          if (reading.current) return;
+          reading.current = true;
+          const request = ++inspection.current;
+          onMessage("");
+          try {
+            const value = await navigator.clipboard.readText();
+            if (request === inspection.current)
+              await inspect(value, false, request);
+          } catch {
+            if (request === inspection.current)
+              onMessage(
+                s(
+                  "无法读取剪贴板。请允许粘贴后重试。",
+                  "Could not read the clipboard. Allow pasting and try again.",
+                ),
+              );
+          } finally {
+            reading.current = false;
+          }
         }}
       >
         <Icon name="paste" />
@@ -148,64 +178,41 @@ export function ShareInbox({ installed, locale, recipes, onOpen }: Props) {
           close();
         }}
       >
-        <h2 id="share-inbox-title">
-          {candidate
-            ? candidate.id
-              ? s("打开分享的菜谱？", "Open shared recipe?")
-              : s("打开 Panfolio 首页？", "Open Panfolio home?")
-            : s("粘贴分享链接", "Paste a share link")}
-        </h2>
         {candidate && (
-          <p className="share-inbox-title">
-            {locale === "en"
-              ? candidate.titleEn || candidate.title
-              : candidate.title}
-          </p>
+          <>
+            <h2 id="share-inbox-title">
+              {candidate.id
+                ? s("打开分享的菜谱？", "Open shared recipe?")
+                : s("打开 Panfolio 首页？", "Open Panfolio home?")}
+            </h2>
+            <p className="share-inbox-title">
+              {locale === "en"
+                ? candidate.titleEn || candidate.title
+                : candidate.title}
+            </p>
+            <div className="share-inbox-actions">
+              <button
+                type="button"
+                className="app-share-secondary"
+                onClick={close}
+              >
+                {s("取消", "Cancel")}
+              </button>
+              <button
+                type="button"
+                className="app-share-primary"
+                onClick={() => {
+                  close();
+                  onOpen(candidate.id);
+                }}
+              >
+                {candidate.id
+                  ? s("打开菜谱", "Open recipe")
+                  : s("打开首页", "Open home")}
+              </button>
+            </div>
+          </>
         )}
-        {error && (
-          <p className="share-inbox-feedback" role="status">
-            {error === "read"
-              ? s(
-                  "无法读取剪贴板。请允许粘贴后重试。",
-                  "Could not read the clipboard. Allow pasting and try again.",
-                )
-              : s(
-                  "剪贴板中没有有效的 Panfolio 分享链接。",
-                  "The clipboard does not contain a valid Panfolio share link.",
-                )}
-          </p>
-        )}
-        <div className="share-inbox-actions">
-          <button type="button" className="app-share-secondary" onClick={close}>
-            {s("取消", "Cancel")}
-          </button>
-          <button
-            type="button"
-            className="app-share-primary"
-            onClick={async () => {
-              if (candidate) {
-                close();
-                onOpen(candidate.id);
-                return;
-              }
-              const request = ++inspection.current;
-              setError(null);
-              try {
-                const value = await navigator.clipboard.readText();
-                if (request === inspection.current)
-                  await inspect(value, false, request);
-              } catch {
-                if (request === inspection.current) setError("read");
-              }
-            }}
-          >
-            {candidate
-              ? candidate.id
-                ? s("打开菜谱", "Open recipe")
-                : s("打开首页", "Open home")
-              : s("从剪贴板读取", "Read clipboard")}
-          </button>
-        </div>
       </dialog>
     </>
   );

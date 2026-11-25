@@ -24,11 +24,6 @@ test("manual paste only opens the recipe after confirmation", async ({
   }, shareLink);
   await page.goto("/");
   await page.getByRole("button", { name: "粘贴链接", exact: true }).click();
-  const paste = page.getByRole("dialog", { name: "粘贴分享链接" });
-  await expect(paste.getByRole("textbox")).toHaveCount(0);
-  await paste
-    .getByRole("button", { name: "从剪贴板读取", exact: true })
-    .click();
   const confirmation = page.getByRole("dialog", { name: "打开分享的菜谱？" });
   await expect(confirmation).toContainText("阿见版蛋炒饭");
   expect(new URL(page.url()).hash).toBe("");

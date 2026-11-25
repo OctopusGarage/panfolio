@@ -10,8 +10,7 @@
   line-height: 1.35;
 }
 
-.share-inbox-title,
-.share-inbox-feedback {
+.share-inbox-title {
   margin: 0.65rem 0 0;
   overflow-wrap: anywhere;
 }
