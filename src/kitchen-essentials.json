@@ -1,0 +1,503 @@
+[
+  {
+    "id": "wash-broccoli",
+    "category": "prep",
+    "title": "西兰花清洗与分切",
+    "titleEn": "Washing and cutting broccoli",
+    "summary": "倒置浸洗，沿茎分朵，保留可食用的嫩茎。",
+    "summaryEn": "Wash crown-down, separate at the stems and use the tender stalk.",
+    "scope": "准备焯煮、煎制或烤制的西兰花。",
+    "scopeEn": "Broccoli being prepared for blanching, searing or grilling.",
+    "steps": [
+      "花球朝下浸入清水，轻轻转动，也可覆盖厨房纸短暂浸泡。",
+      "从分枝茎部下刀，再用手掰成大小相近的小朵。",
+      "主茎修去硬底，薄削粗皮，切块使用。"
+    ],
+    "stepsEn": [
+      "Submerge the crown upside down in water and swirl gently; optionally cover with paper towels for a brief soak.",
+      "Score the branching stems, then separate by hand into similarly sized florets.",
+      "Trim the tough stalk base, peel coarse skin and cut the stalk for cooking."
+    ],
+    "reasons": [
+      "花蕾缝隙容易藏杂质，只在水龙头下快速冲洗不够彻底。花球倒置浸水、轻轻转动，有助于洗出里面的杂质。",
+      "小朵大小不均，会出现小块过熟、大块仍硬的情况。先切茎再手掰，既能控制大小，也能保留自然形状。",
+      "茎部也能吃：去掉硬底和粗皮，能减少纤维感，吃到与花球不同的甜味和口感。"
+    ],
+    "reasonsEn": [
+      "Debris can lodge between florets, so a quick rinse may not be enough. Submerge the crown upside down and swirl gently to loosen trapped particles.",
+      "Uneven florets cook unevenly: smaller pieces soften before larger ones. Score the stems and separate by hand for similar sizes and a natural shape.",
+      "The stalk is edible too. Trim the tough base and peel its coarse skin to reduce toughness and enjoy a different sweetness and texture from the florets."
+    ],
+    "mistakes": [
+      "只快速冲洗，容易留下花蕾间的杂质。",
+      "小朵大小差异过大，受热会不均匀。"
+    ],
+    "mistakesEn": [
+      "A quick rinse can leave debris between florets.",
+      "Large differences in floret size lead to uneven cooking."
+    ],
+    "boundary": "这是一种西兰花的处理方法，分切大小仍要配合后续做法。",
+    "boundaryEn": "This preparation is specific to broccoli; choose piece size for the dish you are making.",
+    "tags": ["西兰花", "清洗", "切分", "broccoli", "wash"],
+    "recipeIds": ["samukichi-broccoli"],
+    "sources": ["https://www.youtube.com/watch?v=6WhbB6UGi3c"]
+  },
+  {
+    "id": "peel-asparagus",
+    "category": "prep",
+    "title": "芦笋根部削皮与斜切",
+    "titleEn": "Peeling and cutting asparagus",
+    "summary": "去掉根部硬皮，保留嫩芯，再按做法决定切法。",
+    "summaryEn": "Remove the tough base skin, keep the core and cut for your chosen dish.",
+    "scope": "准备香煎芦笋，或用整根芦笋做肉卷。",
+    "scopeEn": "Asparagus for searing or wrapping in pork.",
+    "steps": [
+      "用削皮器削去根部粗硬外皮。",
+      "香煎版斜切，切好后擦干。",
+      "肉卷版保留整根，缠好肉后再切成一口大小。"
+    ],
+    "stepsEn": [
+      "Peel the tough outer layer at the base.",
+      "For searing, cut diagonally and pat dry.",
+      "For pork rolls, keep the spear whole, wrap it first and then cut into bite-sized pieces."
+    ],
+    "reasons": [
+      "根部粗硬的是外层纤维，削去硬皮即可保留里面可吃的嫩芯。整根削皮或直接切掉很长一段，会损失风味或浪费食材。",
+      "斜切增加切面，也切断部分较硬纤维，有助于热量进入中心。切成普通等长段，尖端和粗根的熟度容易不同。"
+    ],
+    "reasonsEn": [
+      "The tough fibers are concentrated in the outer layer at the base. Peel them to retain the edible core. Peeling the whole spear weakens flavor, while discarding a long base wastes edible asparagus.",
+      "Diagonal cuts expose more surface and cut through some tough fibers, helping heat reach the center. Ordinary equal-length chunks can leave the tips and thick bases cooking at different rates."
+    ],
+    "mistakes": ["整根削皮或固定切掉很长的根部，会损失可用食材。"],
+    "mistakesEn": [
+      "Peeling the entire spear or routinely discarding a long base wastes edible asparagus."
+    ],
+    "boundary": "粗硬外皮和嫩芯要区分处理；肉卷与直接香煎的切分顺序不同。",
+    "boundaryEn": "Distinguish tough skin from the tender core; rolls and plain seared asparagus use different cutting sequences.",
+    "tags": ["芦笋", "削皮", "斜切", "asparagus"],
+    "recipeIds": ["samukichi-asparagus"],
+    "sources": ["https://www.youtube.com/watch?v=4uz0BDXHato"]
+  },
+  {
+    "id": "trim-chicken",
+    "category": "prep",
+    "title": "鸡腿修整与厚度调整",
+    "titleEn": "Trimming and evening chicken thighs",
+    "summary": "去筋、修整厚处，保留风味所需的柔软脂肪。",
+    "summaryEn": "Remove sinew and even thick areas while retaining soft fat for flavor.",
+    "scope": "带皮去骨鸡腿的整块煎制。",
+    "scopeEn": "Whole boneless, skin-on chicken thighs for pan-searing.",
+    "steps": [
+      "去掉硬脂肪、筋和软骨。",
+      "从肉面浅切较厚处并展开，不切穿鸡皮。",
+      "修整后把两面水分擦干。"
+    ],
+    "stepsEn": [
+      "Remove firm fat, sinew and cartilage.",
+      "Open thick areas with shallow cuts from the flesh side without cutting through the skin.",
+      "Pat both sides dry after trimming."
+    ],
+    "reasons": [
+      "只去掉硬脂肪、筋和软骨，保留柔软脂肪增加风味。厚处从肉面展开，使整块厚薄接近，避免薄处已经过熟、厚处仍没熟。"
+    ],
+    "reasonsEn": [
+      "Remove firm fat, sinew and cartilage but keep soft fat for flavor. Open thick areas from the flesh side to even the thickness, so thin areas do not overcook while thick areas remain underdone."
+    ],
+    "mistakes": [
+      "厚薄悬殊时，薄处容易先过熟，厚处仍未熟。",
+      "把脂肪全部去掉，会减少脂肪带来的风味。"
+    ],
+    "mistakesEn": [
+      "Uneven thickness can leave thin areas overcooked and thick areas underdone.",
+      "Removing all fat sacrifices some of its flavor."
+    ],
+    "boundary": "这里针对带皮去骨鸡腿，不是所有肉类都应使用相同修整方式。",
+    "boundaryEn": "This method is for boneless, skin-on thighs, rather than a trimming rule for every cut of meat.",
+    "tags": ["鸡腿", "鸡肉", "修整", "chicken"],
+    "recipeIds": ["samukichi-chicken"],
+    "sources": ["https://www.youtube.com/watch?v=QG_bnywZR5w"]
+  },
+  {
+    "id": "dry-before-searing",
+    "category": "prep",
+    "title": "煎制前擦干水分",
+    "titleEn": "Drying food before searing",
+    "summary": "先处理表面水分，让食材更容易煎香。",
+    "summaryEn": "Remove surface moisture to help food brown rather than steam.",
+    "scope": "香煎三文鱼、带皮鸡腿与芦笋。",
+    "scopeEn": "Pan-seared salmon, skin-on chicken thighs and asparagus.",
+    "steps": [
+      "下锅前用厨房纸吸干食材表面水分。",
+      "三文鱼提前盐渍后，再吸干析出的水分。",
+      "鸡腿腌制后，擦去多余水分和油。"
+    ],
+    "stepsEn": [
+      "Blot surface moisture with paper towels before cooking.",
+      "Blot salmon again after advance salting releases moisture.",
+      "After marinating chicken, wipe away excess moisture and oil."
+    ],
+    "reasons": [
+      "擦干鱼身与盐渍后析出的水分，有助于减轻异味、改善上色；带着水分下锅容易影响煎香。",
+      "包装里的渗出液会让鸡皮偏向蒸熟，也容易带来异味。修整后和腌制后都擦干，能帮助鸡皮煎得酥脆。",
+      "湿芦笋下锅容易变成蒸煮，冷锅下菜则容易在煎香前先出水。表面擦干、油预热后下锅，更容易煎出香气。"
+    ],
+    "reasonsEn": [
+      "Dry the fish and blot away moisture released after salting to reduce unwanted odor and improve browning. Surface water interferes with searing.",
+      "Package juices can steam the skin and contribute unwanted odor. Drying after trimming and again after marinating helps the skin crisp.",
+      "Wet asparagus steams instead of browning; a cold pan lets moisture escape before searing. Dry the surface and preheat the oil for better aroma."
+    ],
+    "mistakes": ["表面带水就下锅，容易偏向蒸煮，影响上色与脆皮。"],
+    "mistakesEn": [
+      "Wet surfaces tend to steam, interfering with browning and crisp skin."
+    ],
+    "boundary": "针对这些煎制做法的表面处理；湿润食材并非在所有烹饪方式里都需要擦干。",
+    "boundaryEn": "This concerns surface preparation for these searing methods; drying is not required for every cooking method.",
+    "tags": ["擦干", "脆皮", "煎鱼", "水分", "dry", "sear"],
+    "recipeIds": [
+      "samukichi-salmon",
+      "samukichi-chicken",
+      "samukichi-asparagus"
+    ],
+    "sources": [
+      "https://www.youtube.com/watch?v=wui_K72jtp8",
+      "https://www.youtube.com/watch?v=QG_bnywZR5w",
+      "https://www.youtube.com/watch?v=4uz0BDXHato"
+    ]
+  },
+  {
+    "id": "salt-salmon",
+    "category": "prep",
+    "title": "三文鱼提前盐渍",
+    "titleEn": "Salting salmon ahead",
+    "summary": "提前撒盐，再擦去析出的水分。",
+    "summaryEn": "Salt ahead, then blot away the released moisture.",
+    "scope": "这份香煎三文鱼的下锅前处理。",
+    "scopeEn": "Preparation for this pan-seared salmon method.",
+    "steps": ["烹饪前 10 分钟撒盐。", "下锅前用厨房纸再次吸干表面。"],
+    "stepsEn": [
+      "Salt 10 minutes before cooking.",
+      "Blot the surface dry again before putting the fish in the pan."
+    ],
+    "reasons": [
+      "提前撒盐，让盐有时间进入鱼肉，同时带出多余水分；只在下锅前撒盐，调味容易停留在表面。"
+    ],
+    "reasonsEn": [
+      "Salting ahead gives seasoning time to penetrate and draws out excess moisture. Salting just before cooking tends to leave seasoning on the surface."
+    ],
+    "mistakes": ["只在下锅前撒盐，盐味容易停留在表面。"],
+    "mistakesEn": [
+      "Salting immediately before cooking tends to leave seasoning on the surface."
+    ],
+    "boundary": "这里的时间来自三文鱼做法，不直接作为所有鱼肉或肉类的盐渍时间。",
+    "boundaryEn": "The timing belongs to this salmon recipe and is not a universal salting time for fish or meat.",
+    "tags": ["三文鱼", "盐渍", "腌制", "salmon", "salt"],
+    "recipeIds": ["samukichi-salmon"],
+    "sources": ["https://www.youtube.com/watch?v=wui_K72jtp8"]
+  },
+  {
+    "id": "cold-or-hot-pan",
+    "category": "heat",
+    "title": "冷锅起煎与预热下锅",
+    "titleEn": "Choosing a cold or preheated pan",
+    "summary": "根据食材和目标选择起锅方式。",
+    "summaryEn": "Choose the pan start for the food and the result you want.",
+    "scope": "比较带皮鸡腿、三文鱼与芦笋的煎制。",
+    "scopeEn": "Comparing pan-seared skin-on thighs, salmon and asparagus.",
+    "steps": [
+      "带皮鸡腿皮朝下放冷锅，再开中小火慢慢逼油。",
+      "三文鱼先预热锅、铺油，再皮朝下中火煎。",
+      "芦笋擦干，油预热后下锅，中火翻煎。"
+    ],
+    "stepsEn": [
+      "Place chicken skin-side down in a cold pan, then use medium-low heat to render fat slowly.",
+      "For salmon, preheat and oil the pan, then sear skin-side down over medium heat.",
+      "Dry asparagus, preheat the oil and sear over medium heat, turning occasionally."
+    ],
+    "reasons": [
+      "热锅下鸡腿，鸡皮容易迅速收缩、翘离锅面，造成上色不均。冷锅中小火起煎，让皮下脂肪慢慢析出，鸡皮逐渐变薄、变脆。",
+      "预热并铺匀油，有助于减少粘锅。带皮鱼从皮面开始煎，起初轻压翘起处，定形后就松开。",
+      "湿芦笋下锅容易变成蒸煮，冷锅下菜则容易在煎香前先出水。表面擦干、油预热后下锅，更容易煎出香气。"
+    ],
+    "reasonsEn": [
+      "A hot pan can make the skin contract and lift, causing uneven browning. Starting cold over medium-low heat slowly renders the fat underneath, thinning and crisping the skin.",
+      "Preheating and coating the pan with oil help reduce sticking. Start skin-on fish on its skin side, gently pressing lifted areas only until the skin sets.",
+      "Wet asparagus steams instead of browning; a cold pan lets moisture escape before searing. Dry the surface and preheat the oil for better aroma."
+    ],
+    "mistakes": ["把“所有食材都要热锅下”或“都要冷锅下”当成统一规则。"],
+    "mistakesEn": [
+      "Treating either a hot-pan start or a cold-pan start as a rule for every food."
+    ],
+    "boundary": "鸡腿的冷锅方法与三文鱼的预热方法各有条件，不能互换成统一步骤。",
+    "boundaryEn": "The cold-pan thigh method and preheated salmon method have different conditions and are not interchangeable defaults.",
+    "tags": ["冷锅", "热锅", "预热", "逼油", "pan", "heat"],
+    "recipeIds": [
+      "samukichi-chicken",
+      "samukichi-salmon",
+      "samukichi-asparagus"
+    ],
+    "sources": [
+      "https://www.youtube.com/watch?v=QG_bnywZR5w",
+      "https://www.youtube.com/watch?v=wui_K72jtp8",
+      "https://www.youtube.com/watch?v=4uz0BDXHato"
+    ]
+  },
+  {
+    "id": "contact-and-turning",
+    "category": "heat",
+    "title": "轻压贴锅与翻面时机",
+    "titleEn": "Pan contact and when to turn",
+    "summary": "定形前轻压，等自然脱锅后再翻面。",
+    "summaryEn": "Press gently to establish contact, then wait for natural release.",
+    "scope": "带皮三文鱼与整块带皮鸡腿。",
+    "scopeEn": "Skin-on salmon and whole skin-on chicken thighs.",
+    "steps": [
+      "下锅初期轻压翘起的部位，让皮接触锅面。",
+      "皮定形后松开，不要急着移动。",
+      "等表面定形、能自然脱锅后再翻面；鸡腿翻面后不要继续压肉。"
+    ],
+    "stepsEn": [
+      "Gently press lifted areas at the start to keep the skin against the pan.",
+      "Release pressure once the skin sets and leave it undisturbed.",
+      "Turn when the surface sets and releases naturally; do not press chicken after turning."
+    ],
+    "reasons": [
+      "刚下锅就移动，鱼皮尚未定形，容易粘住并撕裂。等它自然脱锅再翻面；不带皮的鱼也应等表面定形后再移动。",
+      "轻压是为了让鸡皮贴锅，不是把鸡肉压扁。皮定形后撤去压力，等自然脱锅再翻面，避免撕破鸡皮。",
+      "脆皮靠缓慢逼油，不是靠大火煎黑。频繁翻面和持续大火会让熟度更难控制；翻面后降低火力，也不要再压肉挤出汁水。"
+    ],
+    "reasonsEn": [
+      "Moving the fish before its surface sets can make it stick and tear. Wait for natural release before turning. Skinless fish should also be left until its surface sets.",
+      "Gentle pressure keeps the skin against the pan; it should not flatten the meat. Release the pressure once the skin sets and wait for natural release before turning to avoid tearing.",
+      "Crispness comes from slowly rendering fat, not scorching over high heat. Repeated flipping and sustained high heat make doneness harder to control. Lower the heat after turning and do not press out the juices."
+    ],
+    "mistakes": [
+      "刚下锅就拖动，容易粘住、撕破皮。",
+      "用力压肉或翻面后继续压，会挤出肉汁。"
+    ],
+    "mistakesEn": [
+      "Moving food immediately can make it stick and tear the skin.",
+      "Heavy pressure or pressing after turning chicken can squeeze out juices."
+    ],
+    "boundary": "轻压只为改善接触，不是持续压榨食材；自然脱锅是翻面线索，不是中心熟透的证明。",
+    "boundaryEn": "Pressure establishes contact rather than squeezing the food; natural release cues turning, not proof of center doneness.",
+    "tags": ["粘锅", "翻面", "脆皮", "贴锅", "turn", "stick"],
+    "recipeIds": ["samukichi-salmon", "samukichi-chicken"],
+    "sources": [
+      "https://www.youtube.com/watch?v=wui_K72jtp8",
+      "https://www.youtube.com/watch?v=QG_bnywZR5w"
+    ]
+  },
+  {
+    "id": "blanch-chill-drain",
+    "category": "heat",
+    "title": "西兰花短焯、冷却与沥干",
+    "titleEn": "Blanching, chilling and draining broccoli",
+    "summary": "短时加热后及时降温，最后充分沥水。",
+    "summaryEn": "Blanch briefly, chill promptly and drain thoroughly.",
+    "scope": "后续要做蒜香或味噌芝士西兰花的基础处理。",
+    "scopeEn": "Basic broccoli preparation before the garlic or miso-cheese variations.",
+    "steps": [
+      "沸水中加盐 1 茶匙，西兰花焯 40～60 秒，观察转为鲜绿。",
+      "捞出后立即放入冰水降温。",
+      "再捞出摊在滤篮中，充分沥干。"
+    ],
+    "stepsEn": [
+      "Add 1 teaspoon salt to boiling water and blanch broccoli for 40–60 seconds, watching for vibrant green.",
+      "Transfer immediately to ice water.",
+      "Drain and spread out in a colander to remove excess water."
+    ],
+    "reasons": [
+      "盐水短焯能衬出甜味。长时间猛煮会让西兰花颜色暗淡、口感水软，苦味更明显；水溶性营养也会进入煮水。",
+      "焯好后放着不管，余热会继续加热。立即冰水降温，再充分沥干，能保留脆嫩口感，也避免表面水分稀释调味。"
+    ],
+    "reasonsEn": [
+      "Brief salted blanching brings out sweetness. Prolonged vigorous boiling dulls the color, makes the texture watery and can intensify bitterness; water-soluble nutrients also enter the cooking water.",
+      "Residual heat keeps cooking broccoli left standing after blanching. Chill immediately, then drain thoroughly to retain a crisp bite and avoid diluting the seasoning."
+    ],
+    "mistakes": [
+      "长时间猛煮，会让颜色暗淡、质地水软。",
+      "捞出后堆着不管，余热会继续加热；带水调味会稀释味道。"
+    ],
+    "mistakesEn": [
+      "Prolonged vigorous boiling dulls the color and makes the texture watery.",
+      "Leaving it piled up allows residual cooking; excess water dilutes seasoning."
+    ],
+    "boundary": "时间对应这份西兰花做法，不作为所有蔬菜的焯水时长；盐量也不是固定盐水浓度。",
+    "boundaryEn": "The time belongs to this broccoli preparation, not every vegetable. The salt amount does not define a fixed brine concentration.",
+    "tags": ["西兰花", "焯水", "冰水", "沥干", "blanch", "broccoli"],
+    "recipeIds": ["samukichi-broccoli"],
+    "sources": ["https://www.youtube.com/watch?v=6WhbB6UGi3c"]
+  },
+  {
+    "id": "sear-then-steam",
+    "category": "heat",
+    "title": "芦笋先煎后短蒸",
+    "titleEn": "Searing asparagus before a brief steam",
+    "summary": "先获得煎香，再用少量水帮助中心受热。",
+    "summaryEn": "Develop a seared aroma, then use a splash of water to heat the center.",
+    "scope": "斜切芦笋的平底锅煎制。",
+    "scopeEn": "Pan-searing diagonally cut asparagus.",
+    "steps": [
+      "擦干芦笋，预热油后下锅。",
+      "中火间歇滚动，保持略能弯曲而不软塌的状态。",
+      "最后调味前加少量水，短蒸约 10 秒，再完成调味。"
+    ],
+    "stepsEn": [
+      "Dry the asparagus and add it to preheated oil.",
+      "Sear over medium heat, rolling occasionally, until slightly flexible rather than limp.",
+      "Before final seasoning, add a splash of water and steam for about 10 seconds, then season."
+    ],
+    "reasons": [
+      "大火急煎容易外焦内硬。中火并间歇滚动，让热量均匀传到中心；不要一直煎到软塌，略能弯曲时就准备收尾，兼顾余热。",
+      "短蒸让中心继续受热，也让颜色更鲜亮；先煎后短蒸，兼顾煎香与脆嫩。"
+    ],
+    "reasonsEn": [
+      "High heat can scorch the outside while leaving a tough center. Use medium heat and roll occasionally for even cooking. Finish while slightly flexible rather than limp, allowing for residual heat.",
+      "A brief steam helps heat the center and brightens the color. Searing first and steaming briefly combines aroma with a crisp-tender bite."
+    ],
+    "mistakes": [
+      "只用大火急煎，容易外焦内硬。",
+      "持续煎到完全软塌，会失去脆嫩口感。"
+    ],
+    "mistakesEn": [
+      "High heat alone can scorch the outside while leaving a tough center.",
+      "Cooking until completely limp sacrifices the crisp-tender texture."
+    ],
+    "boundary": "短蒸时长用于这份芦笋做法，不套用到其他蔬菜或肉类。",
+    "boundaryEn": "The brief steaming time belongs to this asparagus method, not other vegetables or meat.",
+    "tags": ["芦笋", "短蒸", "煎", "asparagus", "steam"],
+    "recipeIds": ["samukichi-asparagus"],
+    "sources": ["https://www.youtube.com/watch?v=4uz0BDXHato"]
+  },
+  {
+    "id": "soy-sauce-pan",
+    "category": "season",
+    "title": "酱油接触热锅面增香",
+    "titleEn": "Soy sauce aroma from a hot pan",
+    "summary": "少量酱油先接触热锅面，再与食材拌匀。",
+    "summaryEn": "Let a little soy sauce contact the hot pan before tossing with the food.",
+    "scope": "想增加焦香的蒜香西兰花或香煎芦笋。",
+    "scopeEn": "Garlic broccoli or seared asparagus when a toasted soy aroma is desired.",
+    "steps": [
+      "食材接近完成时，加入少量酱油。",
+      "让酱油沿锅边或空白热锅面接触锅，再与食材拌匀。"
+    ],
+    "stepsEn": [
+      "Add a little soy sauce as the food nears completion.",
+      "Let it contact the hot pan edge or an exposed area, then toss with the food."
+    ],
+    "reasons": [
+      "蒜香版先缓慢煸出蒜香，再让西兰花表面略微上色；锅边少许酱油能增加烘烤般的香气，黑胡椒关火后加入以保留香气。",
+      "盐最后加，保留内部口感。酱油先碰热锅面再拌菜，能增加焦香；黄油容易焦，关火后用余温融化。"
+    ],
+    "reasonsEn": [
+      "For the garlic version, infuse the oil slowly before lightly browning the broccoli. A little soy sauce around the pan edge adds a roasted aroma; add black pepper off the heat to preserve its fragrance.",
+      "Salt at the end to retain the internal texture. Let soy sauce contact the hot pan before tossing for a toasted aroma. Butter burns easily, so melt it with residual heat after turning off the heat."
+    ],
+    "mistakes": ["只把它理解成把酱油倒在菜上，会忽略接触热锅面增香这个目的。"],
+    "mistakesEn": [
+      "Thinking only of pouring soy sauce onto the food misses the purpose of contact with the hot pan."
+    ],
+    "boundary": "并非所有酱油调味都需要淋锅边。三文鱼的黄油酱油收尾采用关火后加入，应保留不同做法。",
+    "boundaryEn": "Not every use of soy sauce calls for a hot pan edge. Salmon uses an off-heat butter-soy finish instead; retain that distinction.",
+    "tags": ["酱油", "锅边", "淋边", "增香", "soy sauce"],
+    "recipeIds": [
+      "samukichi-broccoli",
+      "samukichi-asparagus",
+      "samukichi-salmon"
+    ],
+    "sources": [
+      "https://www.youtube.com/watch?v=6WhbB6UGi3c",
+      "https://www.youtube.com/watch?v=4uz0BDXHato",
+      "https://www.youtube.com/watch?v=wui_K72jtp8"
+    ]
+  },
+  {
+    "id": "butter-timing",
+    "category": "season",
+    "title": "黄油的加入时机与淋浇",
+    "titleEn": "When to add butter and how to baste",
+    "summary": "根据做法选择将熟时或关火后加入。",
+    "summaryEn": "Add butter near doneness or off the heat, depending on the method.",
+    "scope": "三文鱼、芦笋与脆皮鸡腿的黄油收尾。",
+    "scopeEn": "Butter finishes for salmon, asparagus and crispy chicken thighs.",
+    "steps": [
+      "三文鱼和基础版芦笋：煎好关火，用余温融化黄油。",
+      "鸡腿：接近熟透时在锅中空白处融化黄油。",
+      "鸡腿淋浇以肉面和侧边为主，想保脆时把酱汁放在盘边。"
+    ],
+    "stepsEn": [
+      "For salmon and plain asparagus, turn off the heat and melt butter with residual heat.",
+      "For chicken, melt butter in an exposed area of the pan when the meat is nearly cooked.",
+      "Baste chicken mainly on the flesh and edges; serve sauce beside it to preserve crispy skin."
+    ],
+    "reasons": [
+      "黄油和调味料过早入锅容易焦。关火后用余温融化黄油，再加酱油增香；少许柠檬汁能平衡黄油的浓郁。",
+      "黄油等鸡肉接近熟透时再加，减少烧焦风险。主要浇肉面和侧边；酱汁直接浇皮会牺牲部分酥脆感，想保脆就放盘边。"
+    ],
+    "reasonsEn": [
+      "Butter and seasonings can burn if added too early. Melt butter off the heat, then add soy sauce for aroma; a little lemon balances the richness.",
+      "Add butter only when the chicken is nearly cooked to reduce burning. Baste mainly the flesh and edges. Sauce softens crispy skin; serve it beside the chicken to preserve the crunch."
+    ],
+    "mistakes": [
+      "过早加入黄油，可能在食材熟之前就烧焦。",
+      "把酱汁大量浇在脆皮上，会降低酥脆感。"
+    ],
+    "mistakesEn": [
+      "Butter added too early can burn before the food cooks through.",
+      "Sauce poured over crispy skin softens it."
+    ],
+    "boundary": "不是所有黄油都必须关火后加：这几份做法的加入时机不同，应按烹饪过程选择。",
+    "boundaryEn": "Butter does not always need to be added off the heat; these methods deliberately use different timings.",
+    "tags": ["黄油", "淋浇", "脆皮", "butter", "baste"],
+    "recipeIds": [
+      "samukichi-salmon",
+      "samukichi-asparagus",
+      "samukichi-chicken"
+    ],
+    "sources": [
+      "https://www.youtube.com/watch?v=wui_K72jtp8",
+      "https://www.youtube.com/watch?v=4uz0BDXHato",
+      "https://www.youtube.com/watch?v=QG_bnywZR5w"
+    ]
+  },
+  {
+    "id": "garlic-oil",
+    "category": "season",
+    "title": "蒜油缓慢出香",
+    "titleEn": "Slowly infusing garlic oil",
+    "summary": "先缓慢加热蒜与油，再煎香食材。",
+    "summaryEn": "Gently warm garlic in oil before searing the food.",
+    "scope": "蒜香西兰花；芦笋肉卷使用蒜油增香。",
+    "scopeEn": "Garlic broccoli; asparagus pork rolls also use garlic oil.",
+    "steps": [
+      "做蒜香西兰花时，在锅中加入橄榄油与大蒜。",
+      "缓慢加热出香，再加入沥干的西兰花煎制。",
+      "使用已有蒜油做肉卷时，先加热至出香，再下肉卷。"
+    ],
+    "stepsEn": [
+      "For garlic broccoli, put olive oil and garlic in the pan.",
+      "Heat slowly until fragrant, then add drained broccoli for searing.",
+      "When using prepared garlic oil for pork rolls, heat it until fragrant before adding the rolls."
+    ],
+    "reasons": [
+      "蒜香版先缓慢煸出蒜香，再让西兰花表面略微上色；锅边少许酱油能增加烘烤般的香气，黑胡椒关火后加入以保留香气。"
+    ],
+    "reasonsEn": [
+      "For the garlic version, infuse the oil slowly before lightly browning the broccoli. A little soy sauce around the pan edge adds a roasted aroma; add black pepper off the heat to preserve its fragrance."
+    ],
+    "mistakes": ["只顾后续煎制，省略蒜与油缓慢出香的过程。"],
+    "mistakesEn": [
+      "Rushing straight to searing skips the gentle garlic-infusion stage."
+    ],
+    "boundary": "这是一种即时烹饪增香方法，不是蒜油的保存或长期备餐方案。",
+    "boundaryEn": "This is an immediate cooking technique, not a garlic-oil storage or long-term meal-preparation method.",
+    "tags": ["蒜油", "大蒜", "增香", "garlic", "oil"],
+    "recipeIds": ["samukichi-broccoli", "samukichi-asparagus"],
+    "sources": [
+      "https://www.youtube.com/watch?v=6WhbB6UGi3c",
+      "https://www.youtube.com/watch?v=4uz0BDXHato"
+    ]
+  }
+]

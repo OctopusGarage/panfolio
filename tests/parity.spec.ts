@@ -43,7 +43,7 @@ test("English shelves, guides, install help and accessibility", async ({
   for (const name of [
     "Recipes",
     "Saved recipes",
-    "Kitchen guides",
+    "Kitchen essentials",
     "Settings",
   ]) {
     await page.getByRole("link", { name, exact: true }).click();

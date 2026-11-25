@@ -1862,3 +1862,97 @@ html[data-standalone="true"] body {
     color: var(--green);
   }
 }
+
+.essentials-intro {
+  margin: 8px 0 32px;
+  max-width: 64ch;
+}
+.essentials-intro h2 {
+  font-family: "Iowan Old Style", "Songti SC", serif;
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 500;
+  margin: 8px 0 12px;
+}
+.essentials-intro a {
+  font-size: 13px;
+  color: var(--muted);
+}
+.essential-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.essential-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  padding: 24px;
+}
+.essential-card .eyebrow {
+  margin: 0;
+  font-size: 11px;
+}
+.essential-card h3 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 12px 0;
+}
+.essential-card h3 a {
+  text-decoration: none;
+}
+.essential-card p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+.essential-detail {
+  max-width: 800px;
+  margin-inline: auto;
+}
+.essential-detail > h2 {
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 1.4;
+}
+.essential-lead {
+  font-size: 18px;
+  color: var(--muted);
+}
+.essential-sections section,
+.essential-related,
+.recipe-techniques {
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+}
+.essential-sections h3 {
+  margin: 0 0 12px;
+}
+.essential-sections li {
+  padding-left: 4px;
+  margin: 10px 0;
+}
+.essential-sections section:last-child {
+  border-radius: 12px;
+  border: 0;
+  background: var(--accent-soft);
+  padding: 20px 24px;
+  margin-block: 12px;
+}
+.essentials-index input {
+  font-size: 16px;
+}
+@media (max-width: 760px) {
+  .essential-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .essential-card {
+    padding: 20px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .essential-card {
+    transition: border-color 180ms ease;
+  }
+  .essential-card:hover {
+    border-color: var(--green);
+  }
+}

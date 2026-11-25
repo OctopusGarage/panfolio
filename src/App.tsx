@@ -3,6 +3,8 @@ import Markdown from "react-markdown";
 import { recipeBody, recipeDescription } from "./recipe-language";
 import { usePwaGestures } from "./usePwaGestures";
 import { RecipeImage } from "./RecipeImage";
+import { KitchenEssentials } from "./KitchenEssentials";
+import { essentials, essentialsForRecipe } from "./kitchen-essentials";
 import { JapaneseSeries } from "./JapaneseSeries";
 import { RecipeContent } from "./RecipeContent";
 import { cookingSections } from "./recipe-content";
@@ -110,6 +112,11 @@ export default function App() {
   const update = useAppUpdate();
   const recipe = recipes.find((r) => r.id === hash);
   const series = hash === "japanese-chef";
+  const essentialId = hash.startsWith("essentials/")
+    ? hash.slice("essentials/".length)
+    : undefined;
+  const essential = essentials.find((item) => item.id === essentialId);
+  const isEssentials = hash === "essentials" || essentialId !== undefined;
   const page =
     hash === "settings"
       ? "settings"
@@ -124,7 +131,13 @@ export default function App() {
       ? "about"
       : null;
   const frame = useAppFrame(
-    recipe ? `recipe:${recipe.id}` : series ? "japanese-chef" : page,
+    recipe
+      ? `recipe:${recipe.id}`
+      : isEssentials
+        ? hash
+        : series
+          ? "japanese-chef"
+          : page,
   );
   usePwaGestures(installed);
   const searchInput = useRef<HTMLInputElement>(null);
@@ -176,7 +189,13 @@ export default function App() {
     return () => window.removeEventListener("popstate", pop);
   }, []);
   useEffect(() => {
-    if (recipe || dialog || page === "settings" || page === "guides") {
+    if (
+      recipe ||
+      dialog ||
+      isEssentials ||
+      page === "settings" ||
+      page === "guides"
+    ) {
       searching.current = false;
       setSearchActive(false);
       searchInput.current?.blur();
@@ -258,9 +277,14 @@ export default function App() {
     return () => window.removeEventListener("hashchange", fn);
   }, [writer]);
   useEffect(() => {
-    if (!recipe && !dialog && (page === "library" || page === "saved"))
+    if (
+      !recipe &&
+      !dialog &&
+      !isEssentials &&
+      (page === "library" || page === "saved")
+    )
       lastList.current = series ? "japanese-chef" : page;
-  }, [recipe, dialog, page, series]);
+  }, [recipe, dialog, page, series, isEssentials]);
   useEffect(() => {
     if (!recipe) return;
     const next = [
@@ -471,15 +495,21 @@ export default function App() {
   );
   const heading = recipe
     ? title(recipe)
-    : page === "settings"
-      ? s("设置", "Settings")
-      : page === "guides"
-        ? s("厨房指南", "Kitchen guides")
-        : page === "saved"
-          ? s("我的收藏", "Saved recipes")
-          : series
-            ? s("日厨系列", "Japanese chef series")
-            : s("全部菜谱", "Recipes");
+    : isEssentials
+      ? essential
+        ? locale === "en"
+          ? essential.titleEn
+          : essential.title
+        : s("厨房基础", "Kitchen essentials")
+      : page === "settings"
+        ? s("设置", "Settings")
+        : page === "guides"
+          ? s("使用指南", "User guide")
+          : page === "saved"
+            ? s("我的收藏", "Saved recipes")
+            : series
+              ? s("日厨系列", "Japanese chef series")
+              : s("全部菜谱", "Recipes");
   return (
     <div
       className={`app-shell${frame.keyboardOpen ? " keyboard-open" : ""}${searchActive ? " search-active" : ""}`}
@@ -508,9 +538,9 @@ export default function App() {
                 label: s("我的收藏", "Saved recipes"),
               },
               {
-                key: "guides",
+                key: "essentials",
                 icon: "help",
-                label: s("厨房指南", "Kitchen guides"),
+                label: s("厨房基础", "Kitchen essentials"),
               },
               {
                 key: "settings",
@@ -522,7 +552,17 @@ export default function App() {
             <a
               href={"#" + item.key}
               key={item.key}
-              aria-current={page === item.key ? "page" : undefined}
+              aria-current={
+                (
+                  isEssentials
+                    ? item.key === "essentials"
+                    : page === "guides"
+                      ? item.key === "essentials"
+                      : page === item.key
+                )
+                  ? "page"
+                  : undefined
+              }
             >
               <Icon name={item.icon} />
               <span>{item.label}</span>
@@ -591,6 +631,7 @@ export default function App() {
             {hash &&
             !recipe &&
             !dialog &&
+            !isEssentials &&
             ![
               "library",
               "saved",
@@ -602,6 +643,8 @@ export default function App() {
                 <h2>{s("没有找到这道菜", "Recipe not found")}</h2>
                 <a href="#library">{s("返回菜谱", "Back to recipes")}</a>
               </section>
+            ) : isEssentials ? (
+              <KitchenEssentials id={essentialId} locale={locale} />
             ) : recipe ? (
               <article>
                 <button className="back" onClick={back}>
@@ -702,6 +745,18 @@ export default function App() {
                   >
                     <RecipeContent body={recipeBody(recipe, locale)} />
                   </div>
+                )}
+                {essentialsForRecipe(recipe.id).length > 0 && (
+                  <section className="recipe-techniques">
+                    <h2>{s("相关厨房基础", "Related kitchen essentials")}</h2>
+                    <div className="recent-links">
+                      {essentialsForRecipe(recipe.id).map((item) => (
+                        <a key={item.id} href={`#essentials/${item.id}`}>
+                          {locale === "en" ? item.titleEn : item.title}
+                        </a>
+                      ))}
+                    </div>
+                  </section>
                 )}
                 <section className="notes">
                   <h2>{s("我的厨房笔记", "My cooking notes")}</h2>
