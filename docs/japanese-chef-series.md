@@ -4,7 +4,7 @@ The `japanese-chef` collection groups four SAMUKICHI videos under `#japanese-che
 
 ## Source review
 
-Recipe methods were reviewed against the original English caption tracks and original video descriptions. Bilibili chapters link to the corresponding source moments. This review used captions and descriptions, rather than claiming a frame-by-frame visual review.
+Recipe methods were reviewed against the original English caption tracks and original video descriptions. Recipe references contain only the corresponding original YouTube video. Cooking explanations and counterexamples are collected in the tips; editorial provenance and missing-source details stay in this document. This review used captions and descriptions, rather than claiming a frame-by-frame visual review.
 
 | Entry | Original video | Bilibili source |
 | --- | --- | --- |

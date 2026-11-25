@@ -19,8 +19,8 @@ export function JapaneseSeries({ expanded = false }: { expanded?: boolean }) {
         {expanded && (
           <p className="hint">
             {s(
-              "四支视频，四堂厨房练习。按食材阅读基础技巧，再选择附赠风味；步骤附原片时间链接，未说明的用量保留注明。",
-              "Four videos, four kitchen lessons. Learn the core technique, then explore the variations. Timestamped sources accompany each recipe; unspecified quantities stay clearly marked.",
+              "四支视频，四堂厨房练习。跟着步骤掌握火候，在小贴士里了解做法背后的原因，再试试不同风味。",
+              "Four videos, four kitchen lessons. Follow the steps, learn the reasons behind each technique in the tips, then explore the variations.",
             )}
           </p>
         )}
