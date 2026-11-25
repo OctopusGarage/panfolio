@@ -45,7 +45,7 @@ jobs:
         run: pnpm release:preflight
         env:
           GH_TOKEN: ${{ github.token }}
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: failure()
         with:
           name: browser-test-results
@@ -54,14 +54,14 @@ jobs:
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
           path: dist
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
           name: mcp-build
           path: mcp/.cloudflare/output/
           include-hidden-files: true
           if-no-files-found: error
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
           name: ai-release
