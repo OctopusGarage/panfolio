@@ -98,11 +98,11 @@ jobs:
           cache: pnpm
           cache-dependency-path: mcp/pnpm-lock.yaml
       - run: pnpm --dir mcp install --frozen-lockfile
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: mcp-build
           path: mcp/.cloudflare/output/
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: ai-release
           path: release-assets
@@ -128,7 +128,7 @@ jobs:
           node-version: 24
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: ai-release
           path: public
