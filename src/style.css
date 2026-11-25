@@ -1999,3 +1999,27 @@ html[data-standalone="true"] body {
     white-space: normal;
   }
 }
+
+/* Grid entries are tiles, not centered long-form articles. */
+.essential-grid {
+  grid-auto-rows: 1fr;
+  justify-items: stretch;
+}
+.essential-card {
+  text-align: left;
+  justify-self: stretch;
+  display: grid;
+  grid-template-rows: auto minmax(3em, auto) 1fr;
+  align-content: start;
+}
+.essential-card h3 {
+  align-self: start;
+}
+.essential-card p:last-child {
+  margin-top: 0;
+  align-self: start;
+}
+.essentials-index,
+.essential-detail {
+  text-align: left;
+}

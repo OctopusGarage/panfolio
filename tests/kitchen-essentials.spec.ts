@@ -64,6 +64,8 @@ test("all kitchen cards fill aligned grid tracks without inherited article margi
             x: rect.x,
             y: rect.y,
             width: rect.width,
+            height: rect.height,
+            align: css.textAlign,
             bottom: rect.bottom,
             margin: css.margin,
           };
@@ -73,6 +75,8 @@ test("all kitchen cards fill aligned grid tracks without inherited article margi
       const columns = width > 760 ? 2 : 1;
       for (let i = 0; i < boxes.length; i++) {
         expect(boxes[i].margin).toBe("0px");
+        expect(Math.abs(boxes[i].height - boxes[0].height)).toBeLessThan(1);
+        expect(boxes[i].align).toBe("left");
         expect(Math.abs(boxes[i].width - boxes[0].width)).toBeLessThan(1);
         expect(Math.abs(boxes[i].x - boxes[i % columns].x)).toBeLessThan(1);
         if (i >= columns)

@@ -9,6 +9,7 @@ Browse your growing collection of recipes, search names and ingredient text, sav
 - Desktop sidebar and mobile bottom navigation; independent recipe and saved-shelf search/filter state.
 - Recent recipes, dismissible first-use help, a bilingual Kitchen essentials reference collection and device-specific installation instructions.
 - Twelve reusable preparation, heat and seasoning references with search, categories, practical explanations and links back to recipes; application help lives in the User guide.
+- Optional click-to-load source videos in recipe and kitchen-reference details, with YouTube/Bilibili selection where available and original-site fallback. Videos require connectivity and remain outside offline caches.
 - Clean app and recipe sharing links, clipboard fallback, native sharing where supported, and locally generated bilingual PNG QR cards.
 - Version checks on return/reconnect and a manual check in Settings. Updates provide progress, timeout/retry and completion feedback; activation must be confirmed before reload.
 - Complete scoped precache validation, startup failure recovery and a standalone [recovery page](https://octopusgarage.github.io/panfolio/recover.html) that preserves personal data and neighboring deployments.

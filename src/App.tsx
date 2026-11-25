@@ -3,6 +3,8 @@ import Markdown from "react-markdown";
 import { recipeBody, recipeDescription } from "./recipe-language";
 import { usePwaGestures } from "./usePwaGestures";
 import { RecipeImage } from "./RecipeImage";
+import { SourceVideo } from "./SourceVideo";
+import { videosForRecipe } from "./recipe-videos";
 import { KitchenEssentials } from "./KitchenEssentials";
 import { essentials, essentialsForRecipe } from "./kitchen-essentials";
 import { JapaneseSeries } from "./JapaneseSeries";
@@ -708,6 +710,11 @@ export default function App() {
                     />
                   </div>
                 )}
+                <SourceVideo
+                  key={recipe.id}
+                  videos={videosForRecipe(recipe.id)}
+                  locale={locale}
+                />
                 {cooking ? (
                   <section className="cooking">
                     <p className="eyebrow">

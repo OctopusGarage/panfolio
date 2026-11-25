@@ -1,0 +1,144 @@
+[
+  {
+    "recipeId": "01.-ri-shi-ma-ling-shu-dun-rou",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "1UfWOyM6rNc"
+      }
+    ]
+  },
+  {
+    "recipeId": "02.ajian-ban-dan-chao-fan",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "VCELAeG3lyI"
+      }
+    ]
+  },
+  {
+    "recipeId": "03.-xia-ren-dan-chao-fan",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "5SuekA2ucsU"
+      }
+    ]
+  },
+  {
+    "recipeId": "04.-ji-dan-chao-mi-fen",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "uw4tSDT-ElU"
+      }
+    ]
+  },
+  {
+    "recipeId": "05.-shao-jiao-pi-dan-chao-fan",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "kItDG3GaLSk"
+      }
+    ]
+  },
+  {
+    "recipeId": "06.-hong-shao-qie-zi",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "x6Uit9bmN-g"
+      }
+    ]
+  },
+  {
+    "recipeId": "07.-xing-zhou-chao-mi-fen",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "wgZPifWWNmc"
+      }
+    ]
+  },
+  {
+    "recipeId": "08.-hai-xian-fen-si-bao",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "k5ed5oJ7g4w"
+      }
+    ]
+  },
+  {
+    "recipeId": "09.-qie-zi-chao-ji-dan",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "Gw22Gjk4LEI"
+      }
+    ]
+  },
+  {
+    "recipeId": "10.-rang-pao-mian-hao-chi-fan-bei-de-10-zhong-zuo-fa",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "m7adV4qL2KE"
+      }
+    ]
+  },
+  {
+    "recipeId": "samukichi-salmon",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "wui_K72jtp8"
+      },
+      {
+        "platform": "bilibili",
+        "id": "BV1xnnh6QEQB"
+      }
+    ]
+  },
+  {
+    "recipeId": "samukichi-broccoli",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "6WhbB6UGi3c"
+      },
+      {
+        "platform": "bilibili",
+        "id": "BV1VGxu6jEt4"
+      }
+    ]
+  },
+  {
+    "recipeId": "samukichi-chicken",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "QG_bnywZR5w"
+      },
+      {
+        "platform": "bilibili",
+        "id": "BV1wUyGzNEV7"
+      }
+    ]
+  },
+  {
+    "recipeId": "samukichi-asparagus",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "4uz0BDXHato"
+      },
+      {
+        "platform": "bilibili",
+        "id": "BV14XynzYE3T"
+      }
+    ]
+  }
+]

@@ -1,3 +1,5 @@
+import { SourceVideo } from "./SourceVideo";
+import { videosForReference } from "./recipe-videos";
 import { useState } from "react";
 import type { Locale } from "./types";
 import { essentials, essentialCategories } from "./kitchen-essentials";
@@ -63,6 +65,11 @@ export function KitchenEssentials({
         <p className="essential-lead">
           {localized(entry.summary, entry.summaryEn)}
         </p>
+        <SourceVideo
+          key={entry.id}
+          videos={videosForReference(entry.recipeIds, entry.sources)}
+          locale={locale}
+        />
         <div className="essential-sections">
           {blocks.map((block) => (
             <section key={block.title}>
