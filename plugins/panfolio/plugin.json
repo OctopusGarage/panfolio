@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "panfolio",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Read Panfolio recipes and kitchen techniques with original quantities, explanations and sources.",
   "author": {
     "name": "OctopusGarage",
@@ -16,7 +16,7 @@
       "interface": {
         "displayName": "Panfolio",
         "shortDescription": "Recipes and kitchen guidance",
-        "longDescription": "Read Panfolio recipes and kitchen techniques with original quantities, explanations and sources. Uses public GitHub Markdown with no terminal, Python, app login or API key. Requires HTTPS text reading in the host. Does not access private app data.",
+        "longDescription": "Read Panfolio recipes and kitchen techniques with original quantities, explanations and sources. Uses public GitHub Markdown or an already connected Panfolio MCP, with no terminal, Python, app login or API key. Requires one of those reading capabilities in the host; this package does not connect MCP automatically. Does not access private app data.",
         "developerName": "OctopusGarage",
         "category": "Productivity",
         "capabilities": ["Read"],

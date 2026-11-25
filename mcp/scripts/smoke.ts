@@ -14,7 +14,7 @@ const expected = manifestPath
   ? JSON.parse(
       await readFile(
         resolve(
-          fileURLToPath(new URL("../../", import.meta.url)),
+          fileURLToPath(new URL("../../", import.meta.url).href),
           manifestPath,
         ),
         "utf8",
