@@ -5,8 +5,13 @@ export default defineConfig({
   worker: {
     name: distribution.workerName,
     entrypoint: "./src/index.ts",
+    previewUrls: false,
     compatibilityDate: "2026-11-25",
     compatibilityFlags: ["nodejs_compat"],
-    observability: { enabled: true, traces: { enabled: true } },
+    observability: {
+      enabled: true,
+      redactQueryString: true,
+      traces: { enabled: true },
+    },
   },
 });

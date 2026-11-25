@@ -21,8 +21,8 @@
   },
   {
     "id": "quantities",
-    "en": "Build shopping lists from selected preparations only and separate optional alternatives. Scale only when the source provides a usable serving relationship. Do not invent amounts, total cooking time, nutrition, dietary or allergen guarantees. An initial one-minute sago boil is not total cooking time.",
-    "zh": "采购清单只依据选定做法，备选食材单独列出。只有原文提供可用的份量关系时才换算。不能编造用量、总烹饪时间、营养、饮食或过敏保证；西米首次煮一分钟不是总烹饪时间。"
+    "en": "Build shopping lists from selected preparations only and separate optional alternatives and bonus serving suggestions. Include ingredients specified in the selected method even if its ingredient heading is brief. Merge only the same ingredient with compatible explicit units; retain unquantified amounts and do not assume weight/volume conversions. Scale only when the source provides a usable serving relationship. Do not invent amounts, total cooking time, nutrition, dietary or allergen guarantees. An initial one-minute sago boil is not total cooking time. List unquantified ingredients plainly; explain missing source measurements only when they block a requested calculation or timing claim, rather than repeating missing-data disclaimers.",
+    "zh": "采购清单只依据选定做法，备选食材与附赠吃法单独列出。食材标题简略时，也要提取当前做法步骤中明确使用的食材；只合并同一种食材且单位可直接比较的明确用量，保留未量化用量，不自行换算重量与体积。只有原文提供可用的份量关系时才换算。不能编造用量、总烹饪时间、营养、饮食或过敏保证；西米首次煮一分钟不是总烹饪时间。 未量化食材直接列名称；只有缺少原文数据会阻碍用户要求的换算或时间判断时才说明，不反复附加未注明用量等声明。"
   },
   {
     "id": "attribution",
