@@ -15,5 +15,3 @@
 Source audits, batch reviews and translation/cover evaluations record what was actually reviewed and its limitations. Retain these when they explain content choices; they are not new claims that footage or accounts were independently verified.
 
 [Earlier discovery proposal](discovery-and-interaction-proposal.md), [discovery research](discovery-research.md) and [discovery audit](recipe-discovery-audit.md) describe earlier experiments. The current discovery guide supersedes removed filters and taxonomies. [The Skill runtime audit](panfolio-skill-runtime-audit.md), [MCP feasibility research](mcp-static-hosting-research.md) and [evaluation history](panfolio-skill-evaluation.md) explain the move away from the JSON/helper workflow. Their dated status statements describe their original investigation, not current deployment status.
-
-The [implementation plan](superpowers/plans/2026-11-25-unified-distribution.md) records the scope of distribution consolidation; the operational contract above is the maintenance authority.
