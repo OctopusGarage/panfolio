@@ -3,6 +3,7 @@ import Markdown from "react-markdown";
 import { recipeBody, recipeDescription } from "./recipe-language";
 import { usePwaGestures } from "./usePwaGestures";
 import { RecipeImage } from "./RecipeImage";
+import { JapaneseSeries } from "./JapaneseSeries";
 import { RecipeContent } from "./RecipeContent";
 import { cookingSections } from "./recipe-content";
 import recipeData from "./recipes.json";
@@ -32,7 +33,7 @@ function group(title: string): Category {
     ? "staples"
     : /鸡蛋|滑蛋/.test(title)
       ? "eggs"
-      : /菜|茄子|黄瓜|耳根/.test(title)
+      : /菜|茄子|黄瓜|耳根|芦笋/.test(title)
         ? "vegetables"
         : "meat";
 }
@@ -90,6 +91,7 @@ export default function App() {
     [showTop, setShowTop] = useState(false);
   const [filters, setFilters] = useState({
     library: { query: "", category: "all" as Category },
+    series: { query: "", category: "all" as Category },
     saved: { query: "", category: "all" as Category },
   });
   const install = useRef<InstallEvent | null>(null),
@@ -107,6 +109,7 @@ export default function App() {
   const { data } = saved;
   const update = useAppUpdate();
   const recipe = recipes.find((r) => r.id === hash);
+  const series = hash === "japanese-chef";
   const page =
     hash === "settings"
       ? "settings"
@@ -120,7 +123,9 @@ export default function App() {
     : hash.endsWith("?info=about")
       ? "about"
       : null;
-  const frame = useAppFrame(recipe ? `recipe:${recipe.id}` : page);
+  const frame = useAppFrame(
+    recipe ? `recipe:${recipe.id}` : series ? "japanese-chef" : page,
+  );
   usePwaGestures(installed);
   const searchInput = useRef<HTMLInputElement>(null);
   const searchScroll = useRef(0);
@@ -223,7 +228,7 @@ export default function App() {
       eggs: s("蛋类", "Eggs"),
       meat: s("肉与海鲜", "Meat & seafood"),
     })[c];
-  const listKey = page === "saved" ? "saved" : "library";
+  const listKey = series ? "series" : page === "saved" ? "saved" : "library";
   const filter = filters[listKey];
   const list = recipes.filter(
     (r) =>
@@ -235,6 +240,7 @@ export default function App() {
         },
         filter.query,
       ) &&
+      (!series || r.collection === "japanese-chef") &&
       (page !== "saved" || data.favorites.includes(r.id)) &&
       (filter.category === "all" || group(r.title) === filter.category),
   );
@@ -253,8 +259,8 @@ export default function App() {
   }, [writer]);
   useEffect(() => {
     if (!recipe && !dialog && (page === "library" || page === "saved"))
-      lastList.current = page;
-  }, [recipe, dialog, page]);
+      lastList.current = series ? "japanese-chef" : page;
+  }, [recipe, dialog, page, series]);
   useEffect(() => {
     if (!recipe) return;
     const next = [
@@ -471,7 +477,9 @@ export default function App() {
         ? s("厨房指南", "Kitchen guides")
         : page === "saved"
           ? s("我的收藏", "Saved recipes")
-          : s("全部菜谱", "Recipes");
+          : series
+            ? s("日厨系列", "Japanese chef series")
+            : s("全部菜谱", "Recipes");
   return (
     <div
       className={`app-shell${frame.keyboardOpen ? " keyboard-open" : ""}${searchActive ? " search-active" : ""}`}
@@ -583,7 +591,13 @@ export default function App() {
             {hash &&
             !recipe &&
             !dialog &&
-            !["library", "saved", "guides", "settings"].includes(hash) ? (
+            ![
+              "library",
+              "saved",
+              "guides",
+              "settings",
+              "japanese-chef",
+            ].includes(hash) ? (
               <section>
                 <h2>{s("没有找到这道菜", "Recipe not found")}</h2>
                 <a href="#library">{s("返回菜谱", "Back to recipes")}</a>
@@ -600,6 +614,11 @@ export default function App() {
                       {categoryLabel(group(recipe.title))}
                     </figcaption>
                   </figure>
+                )}
+                {recipe.collection === "japanese-chef" && (
+                  <a className="series-breadcrumb" href="#japanese-chef">
+                    {s("日厨系列", "Japanese chef series")} · SAMUKICHI ↗
+                  </a>
                 )}
                 <div className="detail-title">
                   <div>
@@ -771,21 +790,26 @@ export default function App() {
               </section>
             ) : (
               <>
-                <section className="intro">
-                  <p className="eyebrow">THE EVERYDAY COOKBOOK</p>
-                  <h2>
-                    {s("今天想吃什么？", "Something good")}
-                    <br />
-                    {s("从这里开始。", "is on the menu.")}
-                  </h2>
-                  <p>
-                    {s(
-                      "收藏喜欢的菜，记下每一次做饭的灵感。",
-                      "Start with a favorite dish. Build a collection that feels like home.",
-                    )}
-                  </p>
-                </section>
-                {!guideDismissed && (
+                {series ? (
+                  <JapaneseSeries expanded />
+                ) : (
+                  <section className="intro">
+                    <p className="eyebrow">THE EVERYDAY COOKBOOK</p>
+                    <h2>
+                      {s("今天想吃什么？", "Something good")}
+                      <br />
+                      {s("从这里开始。", "is on the menu.")}
+                    </h2>
+                    <p>
+                      {s(
+                        "收藏喜欢的菜，记下每一次做饭的灵感。",
+                        "Start with a favorite dish. Build a collection that feels like home.",
+                      )}
+                    </p>
+                  </section>
+                )}
+                {page === "library" && !series && <JapaneseSeries />}
+                {!guideDismissed && !series && (
                   <section className="first-guide">
                     <h2>
                       {s("你的第一道拿手菜", "Your first signature dish")}
@@ -811,7 +835,7 @@ export default function App() {
                     </button>
                   </section>
                 )}
-                {page === "library" && recent.length > 0 && (
+                {page === "library" && !series && recent.length > 0 && (
                   <section className="recent">
                     <h2>{s("最近浏览", "Recently viewed")}</h2>
                     <div className="recent-links">
@@ -845,7 +869,9 @@ export default function App() {
                     <h2>
                       {page === "saved"
                         ? s("我的收藏", "Saved recipes")
-                        : s("菜谱一览", "Recipe collection")}
+                        : series
+                          ? s("四堂厨房练习", "Four kitchen lessons")
+                          : s("菜谱一览", "Recipe collection")}
                     </h2>
                     <span>
                       {list.length} {s("篇", "recipes")}
@@ -941,7 +967,11 @@ export default function App() {
                           </a>
                         )}
                         <div className="card-top">
-                          <span>{categoryLabel(group(r.title))}</span>
+                          <span>
+                            {r.collection === "japanese-chef"
+                              ? s("日厨系列", "Japanese chef series")
+                              : categoryLabel(group(r.title))}
+                          </span>
                           <button
                             aria-label={`${data.favorites.includes(r.id) ? s("取消收藏", "Unsave") : s("收藏", "Save")} ${title(r)}`}
                             aria-pressed={data.favorites.includes(r.id)}

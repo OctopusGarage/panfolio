@@ -8,6 +8,7 @@ export interface Recipe {
   description?: string;
   image?: string;
   source?: string;
+  collection?: string;
 }
 export function validateRecipes(recipes: Recipe[]) {
   const ids = new Set<string>();

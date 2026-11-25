@@ -1800,3 +1800,65 @@ html[data-standalone="true"] body {
     );
   }
 }
+
+.chef-series {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 32px;
+  margin: 24px 0 32px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--green);
+  border-radius: 16px;
+  background: var(--accent-soft);
+}
+.chef-series h2 {
+  margin: 6px 0 10px;
+  font-family: "Iowan Old Style", "Songti SC", serif;
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.chef-series p {
+  margin: 6px 0;
+  max-width: 60ch;
+}
+.chef-series .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+.chef-series a {
+  flex-shrink: 0;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.chef-series-expanded {
+  margin-top: 0;
+  padding-block: 40px;
+}
+.series-breadcrumb {
+  display: inline-block;
+  margin: 12px 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+.card:has(.card-top):not(:has(.card-image)) {
+  border-top: 3px solid var(--border);
+}
+@media (max-width: 760px) {
+  .chef-series {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .chef-series a {
+    transition: color 180ms ease;
+  }
+  .chef-series a:hover {
+    color: var(--green);
+  }
+}

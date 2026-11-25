@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "7288dcdc9f64d19815eb7391e16e025e9638543a3405c0e4f6aaf4bfea60d4be",
+  "sourceSha256": "b66bac68f55a69d0f801d53170d4c1b8a581ec8ca75552a86e01e1ea8c2d7313",
   "checks": [
     "bilingual completeness",
     "section parity",
@@ -109,6 +109,26 @@
     {
       "id": "20.-jiao-si-fu-ru-chao-kong-xin-cai",
       "title": "椒丝腐乳炒空心菜",
+      "issues": []
+    },
+    {
+      "id": "samukichi-salmon",
+      "title": "脆皮香煎三文鱼",
+      "issues": []
+    },
+    {
+      "id": "samukichi-broccoli",
+      "title": "脆嫩西兰花与两种风味",
+      "issues": []
+    },
+    {
+      "id": "samukichi-chicken",
+      "title": "冷锅脆皮鸡腿",
+      "issues": []
+    },
+    {
+      "id": "samukichi-asparagus",
+      "title": "香煎芦笋与五花肉卷",
       "issues": []
     }
   ]
