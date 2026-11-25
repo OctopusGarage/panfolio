@@ -4,7 +4,7 @@ Kitchen essentials is a separate bilingual reference collection at `#essentials`
 
 ## Organization
 
-The initial collection contains twelve references in three populated categories: Ingredient preparation, Heat & doneness, and Seasoning & aroma. Storage & meal preparation is reserved for future sourced material and is not displayed as an empty category. Japanese chef series is the source collection, independent of the task-oriented categories.
+The collection contains twenty-one references in four populated categories: Ingredient preparation, Heat & doneness, Seasoning & aroma, and Storage & meal preparation. The nine-video expansion adds nine references, including explicitly sourced caramelized-onion storage. Japanese chef series is the source collection, independent of the task-oriented categories.
 
 Content lives in `src/kitchen-essentials.json`; category metadata and recipe association helpers live in `src/kitchen-essentials.ts`. Routes use stable reference IDs, for example `#essentials/soy-sauce-pan`. Existing recipe IDs, favorites and notes are unchanged. Reference pages link to associated recipes; recipes expose Related kitchen essentials.
 

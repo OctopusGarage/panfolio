@@ -33,11 +33,11 @@ interface InstallEvent extends Event {
 const categories = ["all", "staples", "vegetables", "eggs", "meat"] as const;
 type Category = (typeof categories)[number];
 function group(title: string): Category {
-  return /饭|米粉|泡面|粉丝/.test(title)
+  return /饭|米粉|泡面|粉丝|炒面/.test(title)
     ? "staples"
     : /鸡蛋|滑蛋/.test(title)
       ? "eggs"
-      : /菜|茄子|黄瓜|耳根|芦笋/.test(title)
+      : /菜|茄子|黄瓜|耳根|芦笋|蘑菇|洋葱/.test(title)
         ? "vegetables"
         : "meat";
 }
@@ -853,7 +853,7 @@ export default function App() {
             ) : (
               <>
                 {series ? (
-                  <JapaneseSeries expanded />
+                  <JapaneseSeries expanded locale={locale} />
                 ) : (
                   <section className="intro">
                     <p className="eyebrow">THE EVERYDAY COOKBOOK</p>
@@ -870,7 +870,9 @@ export default function App() {
                     </p>
                   </section>
                 )}
-                {page === "library" && !series && <JapaneseSeries />}
+                {page === "library" && !series && (
+                  <JapaneseSeries locale={locale} />
+                )}
                 {!guideDismissed && !series && (
                   <section className="first-guide">
                     <h2>
@@ -932,7 +934,7 @@ export default function App() {
                       {page === "saved"
                         ? s("我的收藏", "Saved recipes")
                         : series
-                          ? s("四堂厨房练习", "Four kitchen lessons")
+                          ? s("日常厨房练习", "Everyday kitchen lessons")
                           : s("菜谱一览", "Recipe collection")}
                     </h2>
                     <span>

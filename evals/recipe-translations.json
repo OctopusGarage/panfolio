@@ -1,5 +1,5 @@
 {
-  "sourceSha256": "f4fe5bcb96b0c2a5ed85280b10eba3949323886036b27cb878994a6687fa8f50",
+  "sourceSha256": "08760c482e6ba4334b9405868e786ab6076beb93d217f34ea5f606c948325f2f",
   "checks": [
     "bilingual completeness",
     "section parity",
@@ -129,6 +129,51 @@
     {
       "id": "samukichi-asparagus",
       "title": "香煎芦笋与五花肉卷",
+      "issues": []
+    },
+    {
+      "id": "samukichi-cauliflower",
+      "title": "焦香烤花椰菜与奶酪变化",
+      "issues": []
+    },
+    {
+      "id": "samukichi-yakisoba",
+      "title": "焦香猪肉蔬菜炒面",
+      "issues": []
+    },
+    {
+      "id": "samukichi-mushrooms",
+      "title": "蒜香黄油酱油煎蘑菇",
+      "issues": []
+    },
+    {
+      "id": "samukichi-tuna",
+      "title": "金枪鱼罐头三吃：嫩蛋、番茄吐司与酱油炒饭",
+      "issues": []
+    },
+    {
+      "id": "samukichi-garlic-shrimp",
+      "title": "去虾线与蒜香黄油虾",
+      "issues": []
+    },
+    {
+      "id": "samukichi-caramelized-onions",
+      "title": "深色焦糖洋葱与浓郁洋葱汤",
+      "issues": []
+    },
+    {
+      "id": "samukichi-steak",
+      "title": "芥末奶油酱煎牛排",
+      "issues": []
+    },
+    {
+      "id": "samukichi-chicken-breast",
+      "title": "糖盐腌低温鸡胸肉",
+      "issues": []
+    },
+    {
+      "id": "samukichi-fried-rice",
+      "title": "蒜香彩椒蛋炒饭",
       "issues": []
     }
   ]

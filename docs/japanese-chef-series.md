@@ -1,8 +1,10 @@
 # Japanese chef series
 
-The `japanese-chef` collection groups four SAMUKICHI videos under `#japanese-chef`. Existing recipe IDs remain unchanged. New recipes use stable `samukichi-` IDs and the normal bilingual renderer, saved recipes, notes and cooking reader.
+The `japanese-chef` collection groups thirteen SAMUKICHI videos under `#japanese-chef`. Existing recipe IDs remain unchanged. New recipes use stable `samukichi-` IDs and the normal bilingual renderer, saved recipes, notes and cooking reader.
 
-## Source review
+The nine-video expansion and its evidence boundaries are documented in [Japanese chef expansion](japanese-chef-expansion.md).
+
+## Initial source review
 
 Recipe methods were reviewed against the original English caption tracks and original video descriptions. Recipe references contain only the corresponding original YouTube video. Cooking explanations and counterexamples are collected in the tips; editorial provenance and missing-source details stay in this document. This review used captions and descriptions, rather than claiming a frame-by-frame visual review.
 

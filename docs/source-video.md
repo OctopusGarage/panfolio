@@ -1,6 +1,6 @@
 # Embedded source video
 
-Recipe and Kitchen essentials detail pages use the shared `SourceVideo` component. Source metadata lives in `src/recipe-videos.json`, keyed by stable recipe ID, independently of recipe Markdown and provenance. Existing original YouTube IDs are copied from reviewed recipe references; the four Japanese chef entries also include their reviewed Bilibili IDs. No chapter positions are inferred.
+Recipe and Kitchen essentials detail pages use the shared `SourceVideo` component. Source metadata lives in `src/recipe-videos.json`, keyed by stable recipe ID, independently of recipe Markdown and provenance. Existing original YouTube IDs are copied from reviewed recipe references; all thirteen Japanese chef entries also include their reviewed Bilibili IDs. No chapter positions are inferred.
 
 ## Behavior
 

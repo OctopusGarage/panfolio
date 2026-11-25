@@ -125,17 +125,19 @@
     "titleEn": "Drying food before searing",
     "summary": "先处理表面水分，让食材更容易煎香。",
     "summaryEn": "Remove surface moisture to help food brown rather than steam.",
-    "scope": "香煎三文鱼、带皮鸡腿与芦笋。",
-    "scopeEn": "Pan-seared salmon, skin-on chicken thighs and asparagus.",
+    "scope": "香煎三文鱼、带皮鸡腿、芦笋、虾与牛排；鸡胸水浴后的煎香收尾。",
+    "scopeEn": "Searing salmon, skin-on chicken thighs, asparagus, shrimp and steak; browning chicken breast after its water bath.",
     "steps": [
       "下锅前用厨房纸吸干食材表面水分。",
       "三文鱼提前盐渍后，再吸干析出的水分。",
-      "鸡腿腌制后，擦去多余水分和油。"
+      "鸡腿腌制后，擦去多余水分和油。",
+      "虾沥干后吸干；牛排下锅前擦干。鸡胸水浴后先擦干，再用黄油煎香。"
     ],
     "stepsEn": [
       "Blot surface moisture with paper towels before cooking.",
       "Blot salmon again after advance salting releases moisture.",
-      "After marinating chicken, wipe away excess moisture and oil."
+      "After marinating chicken, wipe away excess moisture and oil.",
+      "Drain and blot shrimp; pat steak dry before searing. Dry chicken breast after the water bath before browning it in butter."
     ],
     "reasons": [
       "擦干鱼身与盐渍后析出的水分，有助于减轻异味、改善上色；带着水分下锅容易影响煎香。",
@@ -157,12 +159,18 @@
     "recipeIds": [
       "samukichi-salmon",
       "samukichi-chicken",
-      "samukichi-asparagus"
+      "samukichi-asparagus",
+      "samukichi-garlic-shrimp",
+      "samukichi-steak",
+      "samukichi-chicken-breast"
     ],
     "sources": [
       "https://www.youtube.com/watch?v=wui_K72jtp8",
       "https://www.youtube.com/watch?v=QG_bnywZR5w",
-      "https://www.youtube.com/watch?v=4uz0BDXHato"
+      "https://www.youtube.com/watch?v=4uz0BDXHato",
+      "https://www.youtube.com/watch?v=RPSQe3eZ6GA",
+      "https://www.youtube.com/watch?v=5OneMsDQQPM",
+      "https://www.youtube.com/watch?v=2YXtnZybJtI"
     ]
   },
   {
@@ -249,17 +257,19 @@
     "titleEn": "Pan contact and when to turn",
     "summary": "定形前轻压，等自然脱锅后再翻面。",
     "summaryEn": "Press gently to establish contact, then wait for natural release.",
-    "scope": "带皮三文鱼与整块带皮鸡腿。",
-    "scopeEn": "Skin-on salmon and whole skin-on chicken thighs.",
+    "scope": "带皮三文鱼、整块带皮鸡腿与牛排的煎制。",
+    "scopeEn": "Searing skin-on salmon, whole skin-on chicken thighs and steak.",
     "steps": [
       "下锅初期轻压翘起的部位，让皮接触锅面。",
       "皮定形后松开，不要急着移动。",
-      "等表面定形、能自然脱锅后再翻面；鸡腿翻面后不要继续压肉。"
+      "等表面定形、能自然脱锅后再翻面；鸡腿翻面后不要继续压肉。",
+      "牛排先让表面充分上色，再转小火，每隔 30～60 秒翻面控制中心熟度。"
     ],
     "stepsEn": [
       "Gently press lifted areas at the start to keep the skin against the pan.",
       "Release pressure once the skin sets and leave it undisturbed.",
-      "Turn when the surface sets and releases naturally; do not press chicken after turning."
+      "Turn when the surface sets and releases naturally; do not press chicken after turning.",
+      "For steak, brown the surface first, then lower the heat and turn every 30–60 seconds to control center doneness."
     ],
     "reasons": [
       "刚下锅就移动，鱼皮尚未定形，容易粘住并撕裂。等它自然脱锅再翻面；不带皮的鱼也应等表面定形后再移动。",
@@ -279,13 +289,14 @@
       "Moving food immediately can make it stick and tear the skin.",
       "Heavy pressure or pressing after turning chicken can squeeze out juices."
     ],
-    "boundary": "轻压只为改善接触，不是持续压榨食材；自然脱锅是翻面线索，不是中心熟透的证明。",
-    "boundaryEn": "Pressure establishes contact rather than squeezing the food; natural release cues turning, not proof of center doneness.",
+    "boundary": "轻压只为改善接触，不是持续压榨食材；自然脱锅是翻面线索，不是中心熟透的证明。 牛排上色后的规律翻面与最初静置煎色是不同阶段。",
+    "boundaryEn": "Pressure establishes contact rather than squeezing the food; natural release cues turning, not proof of center doneness. Regular turning after steak browns is a different stage from initial undisturbed browning.",
     "tags": ["粘锅", "翻面", "脆皮", "贴锅", "turn", "stick"],
-    "recipeIds": ["samukichi-salmon", "samukichi-chicken"],
+    "recipeIds": ["samukichi-salmon", "samukichi-chicken", "samukichi-steak"],
     "sources": [
       "https://www.youtube.com/watch?v=wui_K72jtp8",
-      "https://www.youtube.com/watch?v=QG_bnywZR5w"
+      "https://www.youtube.com/watch?v=QG_bnywZR5w",
+      "https://www.youtube.com/watch?v=5OneMsDQQPM"
     ]
   },
   {
@@ -377,15 +388,17 @@
     "titleEn": "Soy sauce aroma from a hot pan",
     "summary": "少量酱油先接触热锅面，再与食材拌匀。",
     "summaryEn": "Let a little soy sauce contact the hot pan before tossing with the food.",
-    "scope": "想增加焦香的蒜香西兰花或香煎芦笋。",
-    "scopeEn": "Garlic broccoli or seared asparagus when a toasted soy aroma is desired.",
+    "scope": "蒜香西兰花、香煎芦笋、煎蘑菇与炒饭的锅面增香。",
+    "scopeEn": "Hot-pan soy aroma for garlic broccoli, seared asparagus, mushrooms and fried rice.",
     "steps": [
       "食材接近完成时，加入少量酱油。",
-      "让酱油沿锅边或空白热锅面接触锅，再与食材拌匀。"
+      "让酱油沿锅边或空白热锅面接触锅，再与食材拌匀。",
+      "蘑菇与炒饭接近完成时，让酱油先接触空白热锅面，再迅速拌匀，避免烧焦。"
     ],
     "stepsEn": [
       "Add a little soy sauce as the food nears completion.",
-      "Let it contact the hot pan edge or an exposed area, then toss with the food."
+      "Let it contact the hot pan edge or an exposed area, then toss with the food.",
+      "Near the end of cooking mushrooms or fried rice, let soy sauce touch an exposed hot area, then promptly mix it through without scorching."
     ],
     "reasons": [
       "蒜香版先缓慢煸出蒜香，再让西兰花表面略微上色；锅边少许酱油能增加烘烤般的香气，黑胡椒关火后加入以保留香气。",
@@ -405,12 +418,18 @@
     "recipeIds": [
       "samukichi-broccoli",
       "samukichi-asparagus",
-      "samukichi-salmon"
+      "samukichi-salmon",
+      "samukichi-mushrooms",
+      "samukichi-tuna",
+      "samukichi-fried-rice"
     ],
     "sources": [
       "https://www.youtube.com/watch?v=6WhbB6UGi3c",
       "https://www.youtube.com/watch?v=4uz0BDXHato",
-      "https://www.youtube.com/watch?v=wui_K72jtp8"
+      "https://www.youtube.com/watch?v=wui_K72jtp8",
+      "https://www.youtube.com/watch?v=6Aa3aFccue8",
+      "https://www.youtube.com/watch?v=LWa4RVPltBw",
+      "https://www.youtube.com/watch?v=0loSYanxAfE"
     ]
   },
   {
@@ -418,19 +437,23 @@
     "category": "season",
     "title": "黄油的加入时机与淋浇",
     "titleEn": "When to add butter and how to baste",
-    "summary": "根据做法选择将熟时或关火后加入。",
-    "summaryEn": "Add butter near doneness or off the heat, depending on the method.",
-    "scope": "三文鱼、芦笋与脆皮鸡腿的黄油收尾。",
-    "scopeEn": "Butter finishes for salmon, asparagus and crispy chicken thighs.",
+    "summary": "按菜式和阶段选择黄油的加入时机。",
+    "summaryEn": "Choose butter timing for the dish and cooking stage.",
+    "scope": "三文鱼、芦笋与脆皮鸡腿的黄油收尾。 牛排的煎制与芥末奶油酱；水浴鸡胸的煎香收尾。",
+    "scopeEn": "Butter finishes for salmon, asparagus and crispy chicken thighs. Steak searing and mustard cream sauce; browning water-bath chicken breast.",
     "steps": [
       "三文鱼和基础版芦笋：煎好关火，用余温融化黄油。",
       "鸡腿：接近熟透时在锅中空白处融化黄油。",
-      "鸡腿淋浇以肉面和侧边为主，想保脆时把酱汁放在盘边。"
+      "鸡腿淋浇以肉面和侧边为主，想保脆时把酱汁放在盘边。",
+      "牛排起初用少量黄油煎色，注意调火避免焦黑；芥末奶油酱则关火后拌入黄油。",
+      "鸡胸先完成水浴并确认中心熟度，擦干后用黄油煎香，先煎带皮一面。"
     ],
     "stepsEn": [
       "For salmon and plain asparagus, turn off the heat and melt butter with residual heat.",
       "For chicken, melt butter in an exposed area of the pan when the meat is nearly cooked.",
-      "Baste chicken mainly on the flesh and edges; serve sauce beside it to preserve crispy skin."
+      "Baste chicken mainly on the flesh and edges; serve sauce beside it to preserve crispy skin.",
+      "Steak uses a little butter for initial browning, with heat adjusted to avoid burning; its mustard cream sauce takes butter off the heat.",
+      "Finish the chicken breast water bath and verify center doneness, then dry and brown in butter, skin-side first."
     ],
     "reasons": [
       "黄油和调味料过早入锅容易焦。关火后用余温融化黄油，再加酱油增香；少许柠檬汁能平衡黄油的浓郁。",
@@ -454,12 +477,16 @@
     "recipeIds": [
       "samukichi-salmon",
       "samukichi-asparagus",
-      "samukichi-chicken"
+      "samukichi-chicken",
+      "samukichi-steak",
+      "samukichi-chicken-breast"
     ],
     "sources": [
       "https://www.youtube.com/watch?v=wui_K72jtp8",
       "https://www.youtube.com/watch?v=4uz0BDXHato",
-      "https://www.youtube.com/watch?v=QG_bnywZR5w"
+      "https://www.youtube.com/watch?v=QG_bnywZR5w",
+      "https://www.youtube.com/watch?v=5OneMsDQQPM",
+      "https://www.youtube.com/watch?v=2YXtnZybJtI"
     ]
   },
   {
@@ -469,17 +496,21 @@
     "titleEn": "Slowly infusing garlic oil",
     "summary": "先缓慢加热蒜与油，再煎香食材。",
     "summaryEn": "Gently warm garlic in oil before searing the food.",
-    "scope": "蒜香西兰花；芦笋肉卷使用蒜油增香。",
-    "scopeEn": "Garlic broccoli; asparagus pork rolls also use garlic oil.",
+    "scope": "蒜香西兰花；芦笋肉卷使用蒜油增香。 洋葱汤的蒜香汤底，以及炒饭的低火先炒蒜替代流程。",
+    "scopeEn": "Garlic broccoli; asparagus pork rolls also use garlic oil. The garlic base for onion soup and the alternative garlic-first, low-heat fried-rice sequence.",
     "steps": [
       "做蒜香西兰花时，在锅中加入橄榄油与大蒜。",
       "缓慢加热出香，再加入沥干的西兰花煎制。",
-      "使用已有蒜油做肉卷时，先加热至出香，再下肉卷。"
+      "使用已有蒜油做肉卷时，先加热至出香，再下肉卷。",
+      "洋葱汤用小火加热蒜片与油，出香但不要上色，再加水和鸡汤粉。",
+      "炒饭若选择先炒蒜，用小火出香后再加蛋与米饭；主流程则等米饭水分收干后才加蒜，两种顺序择一。"
     ],
     "stepsEn": [
       "For garlic broccoli, put olive oil and garlic in the pan.",
       "Heat slowly until fragrant, then add drained broccoli for searing.",
-      "When using prepared garlic oil for pork rolls, heat it until fragrant before adding the rolls."
+      "When using prepared garlic oil for pork rolls, heat it until fragrant before adding the rolls.",
+      "For onion soup, gently heat sliced garlic in oil until fragrant without browning, then add water and chicken stock powder.",
+      "If choosing garlic-first fried rice, infuse it over low heat before adding egg and rice. The main method instead adds garlic after the rice dries; choose one sequence."
     ],
     "reasons": [
       "蒜香版先缓慢煸出蒜香，再让西兰花表面略微上色；锅边少许酱油能增加烘烤般的香气，黑胡椒关火后加入以保留香气。"
@@ -494,10 +525,425 @@
     "boundary": "这是一种即时烹饪增香方法，不是蒜油的保存或长期备餐方案。",
     "boundaryEn": "This is an immediate cooking technique, not a garlic-oil storage or long-term meal-preparation method.",
     "tags": ["蒜油", "大蒜", "增香", "garlic", "oil"],
-    "recipeIds": ["samukichi-broccoli", "samukichi-asparagus"],
+    "recipeIds": [
+      "samukichi-broccoli",
+      "samukichi-asparagus",
+      "samukichi-caramelized-onions",
+      "samukichi-fried-rice"
+    ],
     "sources": [
       "https://www.youtube.com/watch?v=6WhbB6UGi3c",
-      "https://www.youtube.com/watch?v=4uz0BDXHato"
+      "https://www.youtube.com/watch?v=4uz0BDXHato",
+      "https://www.youtube.com/watch?v=8IpPp_MSQMI",
+      "https://www.youtube.com/watch?v=0loSYanxAfE"
     ]
+  },
+  {
+    "id": "roast-cauliflower-browning",
+    "category": "heat",
+    "title": "花椰菜怎样烤出焦褐色",
+    "titleEn": "How to brown cauliflower in the oven",
+    "summary": "擦干、薄油、留间隙，让平整切面紧贴热烤盘。",
+    "summaryEn": "Dry, lightly oil and space the florets, with flat cut sides against the tray.",
+    "scope": "家用对流烤箱烤花椰菜；基本烤法与完成后加奶酪的变化。",
+    "scopeEn": "Cauliflower roasted in a home convection oven, including a cheese finish after the basic roast.",
+    "steps": [
+      "大朵花椰菜对半切出平整面，小朵可整朵保留。洗净后彻底擦干，包括小朵之间的水。",
+      "薄薄裹上蒜油或橄榄油，表面微亮即可。300 克花椰菜可用约 2.2 克盐调味。",
+      "单层排放，彼此留空隙，平整切面朝下紧贴烤盘。",
+      "烤箱充分预热至 220°C（425°F），先烤 12 分钟，不翻动。切面仍浅就每次加烤 1～2 分钟。",
+      "切面深褐后只翻一次，再烤约 5 分钟。按烤箱与花朵大小调整，观察切面和花蕾边缘上色及内部柔嫩程度。"
+    ],
+    "stepsEn": [
+      "Halve large florets to create a flat side; small florets may remain whole. Wash and dry thoroughly, including between the florets.",
+      "Lightly coat with garlic oil or olive oil until just shiny. For 300 g of cauliflower, about 2.2 g salt is a useful guideline.",
+      "Arrange in a single layer with space between florets and the flat sides firmly against the tray.",
+      "Fully preheat to 220°C (425°F). Roast for 12 minutes without turning; if the cut side is pale, add 1–2 minutes at a time.",
+      "Once deeply browned, turn just once and roast for about 5 minutes more. Adjust for the oven and floret size, checking browning on the cut surface and edges and tenderness inside."
+    ],
+    "reasons": [
+      "平整切面增大与烤盘直接接触的面积，比整个大花朵更容易上色。",
+      "表面水分和拥挤产生的蒸汽妨碍上色。薄油有助传热；完全不放油则容易表面干却颜色浅。",
+      "充分预热后入炉并静置贴盘，给切面持续受热的时间。"
+    ],
+    "reasonsEn": [
+      "A flat side increases direct tray contact and browns more readily than a large whole floret.",
+      "Surface water and steam trapped by crowding interfere with browning. A thin oil coating helps transfer heat; no oil can leave the surface dry yet pale.",
+      "A fully preheated oven and uninterrupted tray contact give the cut surface time to brown."
+    ],
+    "mistakes": [
+      "带水入炉、互相重叠或挤满烤盘，会让花椰菜偏向蒸熟。",
+      "频繁翻面，或切面还浅就翻，会错过形成深褐焦面的机会。"
+    ],
+    "mistakesEn": [
+      "Roasting wet, overlapping or crowded florets steams them.",
+      "Frequent turning, or turning while the cut side is pale, interrupts deep browning."
+    ],
+    "boundary": "温度和时间来自这份花椰菜做法，不是所有蔬菜的通用烘烤参数。奶酪应在基础烤制完成后再加，炙烤至融化。",
+    "boundaryEn": "These temperatures and times belong to this cauliflower preparation, not every vegetable. Add cheese after the basic roast and broil until melted.",
+    "tags": ["花椰菜", "烤箱", "上色", "水分", "cauliflower", "roast"],
+    "recipeIds": ["samukichi-cauliflower"],
+    "sources": ["https://www.youtube.com/watch?v=_ki3H1gioig"]
+  },
+  {
+    "id": "yakisoba-moisture-order",
+    "category": "heat",
+    "title": "炒面怎样保持焦香不软烂",
+    "titleEn": "Keeping stir-fried noodles toasty rather than soggy",
+    "summary": "温热松面、单独煎香、依次炒配料，水分收干后降火拌酱。",
+    "summaryEn": "Warm and loosen noodles, brown them separately, cook the fillings in order, then reduce moisture before saucing.",
+    "scope": "日式蒸炒面与按包装预处理的其他适合炒制的小麦面条。",
+    "scopeEn": "Steamed yakisoba noodles and other stir-fry wheat noodles prepared according to their packaging.",
+    "steps": [
+      "冷藏结块面条先用微波炉或蒸笼稍微加热，再轻轻松开；其他面条按包装处理并沥干。",
+      "中火左右预热炒锅并涂薄油，按锅材质调整。面条先单独铺在锅底，静置至部分焦香后再翻，煎好盛出。",
+      "另按需用油，中火先炒熟薄切猪肉，再加洋葱与胡萝卜，最后短炒卷心菜。大份量分批炒。",
+      "面条回锅；粘锅时可加极少量水松开，但仍要让多余水分蒸发。",
+      "稍微减火，再加酱汁快速翻匀，保留根根可挑起、内部筋道的口感。"
+    ],
+    "stepsEn": [
+      "Lightly warm cold, clumped noodles in a microwave or steamer before gently loosening. Prepare other noodles according to the package and drain.",
+      "Preheat a wok over roughly medium heat and coat thinly with oil, adjusting for its material. Spread noodles alone across the base, leave until partly browned, turn and remove.",
+      "Add oil separately as needed. Over medium heat, cook thin pork slices through, follow with onion and carrot, then briefly stir-fry cabbage. Work in batches for larger quantities.",
+      "Return the noodles. A tiny splash of water can loosen sticking, but evaporate excess moisture afterward.",
+      "Lower the heat slightly, then add sauce and toss quickly. Keep the noodles chewy inside and able to lift in separate strands."
+    ],
+    "reasons": [
+      "硬拉冷面容易折断；加热后更容易温和分开。",
+      "蔬菜从一开始就和面同炒，会释放水分把面蒸软；不停翻动又减少面与锅的接触时间。",
+      "配料熟得快慢不同，分顺序加入便于控制熟度与水分。酱汁最后加，既减少面条吸水软烂，也避免长时间受热烧焦。"
+    ],
+    "reasonsEn": [
+      "Forcing cold noodles apart can break them; warming makes gentle separation easier.",
+      "Vegetables cooked with noodles from the start release moisture that steams them; constant stirring also limits contact with the wok.",
+      "Fillings cook at different rates, so adding them in order controls doneness and moisture. Sauce added last reduces sogginess and avoids prolonged heating that can burn it."
+    ],
+    "mistakes": [
+      "锅未热或未涂油就下面，容易粘锅。",
+      "把面全煎脆，或任其焦黑；只需部分焦香，快焦就减火，牢牢粘住时要移动处理，不能一直干等。",
+      "锅里还积水就加酱，面条容易吸水结成软烂团块。"
+    ],
+    "mistakesEn": [
+      "Adding noodles before heating and oiling the wok encourages sticking.",
+      "Making every noodle crisp or letting them scorch: brown only some areas, lower the heat if burning threatens, and move firmly stuck noodles rather than simply waiting.",
+      "Saucing while liquid remains can make noodles absorb water and fall in soggy clumps."
+    ],
+    "boundary": "这套顺序针对炒面，不要求把所有面条煎脆。不同面种的煮制或预热方法以包装为准，不能把蒸炒面的处理原样套用于生面。",
+    "boundaryEn": "This sequence is for stir-fried noodles and does not require every strand to become crisp. Follow the package for cooking or warming each noodle type rather than treating raw noodles exactly like steamed yakisoba.",
+    "tags": ["炒面", "粘锅", "水分", "顺序", "yakisoba", "noodles"],
+    "recipeIds": ["samukichi-yakisoba"],
+    "sources": ["https://www.youtube.com/watch?v=U3C2MIUxkjA"]
+  },
+  {
+    "id": "mushrooms-water-before-oil",
+    "category": "heat",
+    "title": "煎蘑菇先出水，再收干加油",
+    "titleEn": "Release mushroom moisture before browning in oil",
+    "summary": "少量水启动出水，收干后再加少量油，静置煎香。",
+    "summaryEn": "Start moisture release with a little water, evaporate it, then add a little oil and leave to brown.",
+    "scope": "大白蘑菇厚切煎制，最后以蒜香黄油和酱油收尾。",
+    "scopeEn": "Thick pieces of white button mushroom browned in a pan and finished with garlic butter and soy sauce.",
+    "steps": [
+      "快速冲洗蘑菇或用湿厨房纸擦净，再彻底擦干，切成厚实的四等份。",
+      "不放油，先把蘑菇放入锅中；这份做法用 3 个大蘑菇，加 10 毫升水，大火加热至蘑菇释放水分。",
+      "继续加热收干水分。水分几乎消失、微沸声转为滋滋声后，确认多余液体已蒸发，再加少许橄榄油并调至中大火。",
+      "摊开静置，贴锅面煎至深金黄再翻。两面上色后加少许盐。",
+      "调至中小火再加入黄油和大蒜出香，拌匀；酱油短暂接触热锅面后再裹匀，最后关火。"
+    ],
+    "stepsEn": [
+      "Quickly wash or wipe mushrooms with a damp paper towel, dry thoroughly and cut into thick quarters.",
+      "Put mushrooms in the pan without oil. This preparation uses 3 large mushrooms and 10 ml water; heat on high until they release moisture.",
+      "Continue heating to evaporate the liquid. When moisture is almost gone and simmering changes to sizzling, confirm excess liquid has cooked off, then add a little olive oil and reduce to medium-high.",
+      "Spread out and leave until the contact surface is deeply golden before turning. Lightly salt after both sides brown.",
+      "Reduce to medium-low before infusing butter with garlic, then toss. Let soy sauce briefly contact the hot pan before coating the mushrooms and turning off the heat."
+    ],
+    "reasons": [
+      "先放很多油容易让蘑菇吸油而用量过多。把出水阶段和上色阶段分开，收干后再加少量油，更容易煎出金黄外表。",
+      "不停翻炒会缩短贴锅时间；黄油和蒜则留到上色后低火加入，避免长时间高温使蒜焦、黄油失去香气。"
+    ],
+    "reasonsEn": [
+      "Starting with plenty of oil can lead to excess absorption and oil use. Separating moisture release from browning lets a little oil brown the mushrooms after liquid has cooked off.",
+      "Constant stirring limits pan contact. Save butter and garlic for a lower-heat finish after browning to avoid burned garlic and loss of butter aroma."
+    ],
+    "mistakes": [
+      "长时间浸泡、表面带很多水，或锅中仍有液体就加油，都会使上色更困难。",
+      "把“先加水”理解成全程水煮，省略彻底收干后煎香的阶段。"
+    ],
+    "mistakesEn": [
+      "Long soaking, excess surface water or oil added while liquid remains make browning harder.",
+      "Treating the initial water as a simmering method throughout and skipping evaporation followed by browning."
+    ],
+    "boundary": "这是白蘑菇厚切煎制的分阶段方法，不是所有蔬菜都应先加水。水分收干是进入上色阶段的条件。",
+    "boundaryEn": "This staged method is for thick white button mushrooms, not a rule to add water to every vegetable. Evaporating liquid is the transition to browning.",
+    "tags": ["蘑菇", "水分", "上色", "煎制", "mushrooms", "browning"],
+    "recipeIds": ["samukichi-mushrooms"],
+    "sources": ["https://www.youtube.com/watch?v=6Aa3aFccue8"]
+  },
+  {
+    "id": "canned-tuna-oil-and-heat",
+    "category": "heat",
+    "title": "金枪鱼罐头留油与短时加热",
+    "titleEn": "Retaining tuna oil and heating briefly",
+    "summary": "油浸金枪鱼保留部分罐头油，接近完成时加入，避免干柴。",
+    "summaryEn": "Retain some oil from oil-packed tuna and add the fish near the end to keep it moist.",
+    "scope": "用油浸金枪鱼罐头制作嫩蛋、吐司或炒饭。",
+    "scopeEn": "Soft eggs, toast and fried rice made with oil-packed canned tuna.",
+    "steps": [
+      "轻轻沥去多余油脂，保留一点罐头油；金枪鱼炒饭可连油使用。",
+      "热菜接近完成时才放金枪鱼，短暂拌热即可；嫩蛋等蛋液半凝固再加入。",
+      "蛋黄酱搭配少量柠檬汁或醋，避免余味厚重；搭配番茄时先撒盐并吸去水分。"
+    ],
+    "stepsEn": [
+      "Drain excess oil gently while retaining some packing oil; tuna fried rice can use the oil too.",
+      "Add tuna near the end of hot dishes and warm briefly; fold it into eggs when they are softly set.",
+      "Balance mayonnaise with a little lemon juice or vinegar. When using tomatoes, salt and blot away moisture first."
+    ],
+    "reasons": [
+      "罐头油带有金枪鱼的香气和鲜味，全部沥干会损失醇厚感。",
+      "长时间加热使鱼肉失水、碎散；蛋液从一开始和鱼肉同煮，也容易使鸡蛋变老。",
+      "少量酸味使蛋黄酱的余味清爽；番茄过多水分会冲淡组合后的味道。"
+    ],
+    "reasonsEn": [
+      "Packing oil carries tuna aroma and savory flavor; draining all of it reduces richness.",
+      "Prolonged heating dries and crumbles the fish; cooking it with eggs from the start also risks tough eggs.",
+      "A little acidity lightens mayonnaise's aftertaste; excess tomato moisture dilutes the assembled dish."
+    ],
+    "mistakes": [
+      "把油浸金枪鱼的油挤得干干净净。",
+      "为炒热金枪鱼而持续久炒，或从蛋液下锅时就加入。"
+    ],
+    "mistakesEn": [
+      "Squeezing oil-packed tuna completely dry.",
+      "Continuing to fry tuna for a long time or adding it as soon as raw eggs enter the pan."
+    ],
+    "boundary": "留油建议适用于油浸罐头；加热方式要结合具体菜肴。这里不涉及罐头开封后的储存方法。",
+    "boundaryEn": "Oil retention applies to oil-packed tuna; match heating to the dish. This reference covers cooking rather than storage after opening.",
+    "tags": ["金枪鱼", "罐头", "留油", "加热", "tuna", "canned", "oil"],
+    "recipeIds": ["samukichi-tuna"],
+    "sources": ["https://www.youtube.com/watch?v=LWa4RVPltBw"]
+  },
+  {
+    "id": "devein-shrimp",
+    "category": "prep",
+    "title": "轻挑虾线与轻柔清洗",
+    "titleEn": "Lifting shrimp veins and rinsing gently",
+    "summary": "弯身张开缝隙，用细工具向上挑线，轻冲后立即吸干。",
+    "summaryEn": "Bend the shrimp to open a gap, lift the vein with a fine tool and rinse and blot promptly.",
+    "scope": "较大、虾线明显的虾，以及后续蒜油煎虾的准备。",
+    "scopeEn": "Larger shrimp with noticeable veins, including shrimp prepared for garlic-oil cooking.",
+    "steps": [
+      "移除背部扎手的尖壳，找靠头部第二、三节附近的缝隙。",
+      "轻弯虾身，用牙签或竹签从虾线下穿过，向上挑起。用手指辅助，垂直缓慢提起整条虾线。",
+      "流水轻冲，立即沥水，用厨房纸轻拍吸干。"
+    ],
+    "stepsEn": [
+      "Remove sharp shell points and find a gap near the second or third segment behind the head.",
+      "Bend gently, slide a toothpick or bamboo skewer under the vein and lift. Support with your fingers and raise it slowly upward in one piece.",
+      "Rinse gently under running water, drain immediately and blot with paper towels."
+    ],
+    "reasons": [
+      "弯身扩大缝隙，可以减少虾线卡住、断裂；轻提比用力拉拽更不易损伤虾肉。",
+      "久泡使口感水淡，揉搓或加盐搓洗可能带走风味。"
+    ],
+    "reasonsEn": [
+      "Bending opens the gap and reduces catching and breakage; lifting gently damages the flesh less than tugging.",
+      "Long soaking makes shrimp watery; rubbing or salt-scrubbing can wash away flavor."
+    ],
+    "mistakes": [
+      "用手硬拽，导致虾线断裂、虾肉受损。",
+      "所有小虾都强行去线，反而破坏外观。"
+    ],
+    "mistakesEn": [
+      "Tugging hard by hand, breaking the vein and damaging the flesh.",
+      "Insisting on deveining every tiny shrimp and damaging its appearance."
+    ],
+    "boundary": "很小的虾虾线细，不必一律去除。此处为轻冲处理法，不推广为所有虾料理的唯一清洗方式。",
+    "boundaryEn": "Very small shrimp have fine veins and need not always be deveined. This gentle-rinse method is specific guidance rather than the sole washing method for every shrimp dish.",
+    "tags": ["虾", "去虾线", "清洗", "shrimp", "devein"],
+    "recipeIds": ["samukichi-garlic-shrimp"],
+    "sources": ["https://www.youtube.com/watch?v=RPSQe3eZ6GA"]
+  },
+  {
+    "id": "caramelize-onions",
+    "category": "heat",
+    "title": "洋葱慢炒与锅底焦香回融",
+    "titleEn": "Caramelizing onions and deglazing browned bits",
+    "summary": "均匀切片，中低火间歇翻拌，以少量水融回锅底焦褐物。",
+    "summaryEn": "Slice evenly, cook over medium-low heat with pauses between stirring and deglaze with a little water.",
+    "scope": "深色、柔软融合的焦糖洋葱。",
+    "scopeEn": "Deeply colored, soft and cohesive caramelized onions.",
+    "steps": [
+      "洋葱均匀切成约 2～3 毫米厚，裹油，中低火炒，加一小撮盐。",
+      "让洋葱接触锅底一会儿再翻拌，反复进行。",
+      "锅底形成棕褐色附着物时加少量水，溶解并拌回洋葱，反复操作，避免烧黑。",
+      "持续至洋葱深焦糖色、柔软融合；浅棕色只是中间阶段。"
+    ],
+    "stepsEn": [
+      "Slice onions evenly about 2～3 mm thick, coat with oil and cook over medium-low heat with a pinch of salt.",
+      "Let the onions contact the pan for a while before stirring, and repeat.",
+      "When brown deposits form, dissolve them with a little water and mix back into the onions; repeat without letting them blacken.",
+      "Continue until deeply caramelized, soft and cohesive; light brown is an intermediate stage."
+    ],
+    "reasons": [
+      "均匀薄片受热更一致；中低火让水分慢慢蒸发，减少提前烧焦。",
+      "一直搅拌使上色更困难；间歇翻拌保留锅底接触时间。",
+      "去焦回融将正常焦褐物的浓郁风味带回洋葱。"
+    ],
+    "reasonsEn": [
+      "Even slices cook consistently; medium-low heat removes moisture gradually and reduces premature burning.",
+      "Constant stirring hinders browning; pauses allow contact with the pan.",
+      "Deglazing returns the rich flavor of properly browned deposits to the onions."
+    ],
+    "mistakes": [
+      "一开始就用大火，表面烧焦发苦。",
+      "怕烧焦而在浅棕色时就停止。",
+      "把烧黑发苦的残渣误当作正常焦褐物。"
+    ],
+    "mistakesEn": [
+      "Starting over high heat and burning the surface bitter.",
+      "Stopping at light brown out of fear of burning.",
+      "Mistaking blackened bitter residue for properly browned deposits."
+    ],
+    "boundary": "适用于追求深色甜味的焦糖洋葱；不要求所有洋葱菜肴都炒到此程度。锅底正常棕褐物与烧黑发苦的残渣必须区别。",
+    "boundaryEn": "For onions intended to develop deep caramelized sweetness; other onion dishes need not reach this stage. Distinguish brown deposits from blackened, bitter residue.",
+    "tags": ["洋葱", "焦糖化", "去焦", "onion", "caramelize", "deglaze"],
+    "recipeIds": ["samukichi-caramelized-onions"],
+    "sources": ["https://www.youtube.com/watch?v=8IpPp_MSQMI"]
+  },
+  {
+    "id": "store-caramelized-onions",
+    "category": "storage",
+    "title": "焦糖洋葱薄层分装备用",
+    "titleEn": "Storing caramelized onions in a thin layer",
+    "summary": "装袋摊薄，方便按需取用，节省反复慢炒的时间。",
+    "summaryEn": "Flatten in a resealable bag for convenient portions and less repeated slow cooking.",
+    "scope": "已经炒好的焦糖洋葱，用于之后制作汤、咖喱或酱汁。",
+    "scopeEn": "Cooked caramelized onions intended for later soups, curries or sauces.",
+    "steps": [
+      "焦糖洋葱放入可密封储存袋，摊成薄层并封好。",
+      "冷藏 3～4 天，或冷冻约 2～3 个月。",
+      "按菜肴所需取用一部分，用于汤、咖喱或酱汁。"
+    ],
+    "stepsEn": [
+      "Put caramelized onions into a resealable storage bag, flatten into a thin layer and seal.",
+      "Refrigerate for 3～4 days or freeze for about 2～3 months.",
+      "Take the portion needed for soups, curries or sauces."
+    ],
+    "reasons": [
+      "焦糖洋葱需要慢炒，一次多做可以减少重复操作。",
+      "薄层分装便于取出所需的量，不必每次用完整袋。"
+    ],
+    "reasonsEn": [
+      "Caramelized onions take time, so a larger batch reduces repeated work.",
+      "A thin layer makes it easier to take the amount needed without using the entire bag."
+    ],
+    "mistakes": ["将整批装成厚块，按需取少量时不方便。"],
+    "mistakesEn": [
+      "Packing the batch into a thick mass makes small portions harder to take."
+    ],
+    "boundary": "这些保存时限针对这份焦糖洋葱，不推广为其他熟食、汤或罐头的保存规则。",
+    "boundaryEn": "These storage periods apply to these caramelized onions, not to other cooked foods, soups or canned foods.",
+    "tags": ["洋葱", "储存", "分装", "冷冻", "onion", "storage", "freeze"],
+    "recipeIds": ["samukichi-caramelized-onions"],
+    "sources": ["https://www.youtube.com/watch?v=8IpPp_MSQMI"]
+  },
+  {
+    "id": "chicken-poaching-temperature",
+    "category": "heat",
+    "title": "鸡胸肉水温与中心温度分开测",
+    "titleEn": "Measure chicken poaching water and center separately",
+    "summary": "温和水煮控制外部热量，中心温度确认鸡肉是否熟透。",
+    "summaryEn": "Gentle water controls the heat around the chicken; center temperature confirms doneness.",
+    "scope": "糖盐腌制的整块带皮鸡胸肉，水煮后再快速煎香。",
+    "scopeEn": "Whole salt-and-sugar-seasoned, skin-on chicken breast poached before brief searing.",
+    "steps": [
+      "修整鸡胸肉筋膜并擦干；300 克鸡胸肉用盐 3 克、糖 1.5 克揉匀，静置 10～20 分钟。",
+      "水烧开关火后，测量确认降至 80～85°C，再加入鸡肉。可直接入水，或用明确适合加热烹饪的耐热食品袋；袋装时排气密封，鸡肉浸水，袋子不碰锅底锅壁。",
+      "23～25 分钟后开始测量最厚处中心，确认至少 74°C（165°F）。若不足，把水重新加热至 80～85°C，继续几分钟后再测至达标。",
+      "取出擦干，用黄油中火快速煎香，先煎皮面再翻面。"
+    ],
+    "stepsEn": [
+      "Trim tendons and pat dry. Rub 300 g chicken breast with 3 g salt and 1.5 g sugar; rest for 10～20 minutes.",
+      "Boil the water and turn off the heat, then measure to confirm it has cooled to 80～85°C before adding chicken. Poach directly or use a heat-resistant food bag explicitly suitable for cooking. Remove bag air and seal, submerge the meat and keep the bag away from the pot bottom and sides.",
+      "Begin checking the thickest center after 23～25 minutes and confirm at least 74°C (165°F). If lower, reheat the water to 80～85°C, cook for a few more minutes and check again until it reaches the target.",
+      "Remove, pat dry and briefly sear in butter over medium heat, skin side first, then turn."
+    ],
+    "reasons": [
+      "水温描述鸡肉外部的加热条件，不能说明最厚处已经达到同样温度。厚度、初始温度和水温变化都会影响中心升温。",
+      "把温和加热与表面上色分开，避免只追求外表焦色却让中心未熟，或为煎熟厚肉而使外层过度加热。"
+    ],
+    "reasonsEn": [
+      "Water temperature describes the heat around the meat, not the temperature already reached at its thickest center. Thickness, initial temperature and changing water temperature affect center heating.",
+      "Separating gentle cooking from browning avoids a browned exterior with an undercooked center, or excessive heating of the outer layers while waiting for thick meat to cook."
+    ],
+    "mistakes": [
+      "把水烧开关火后固定等 30 秒，就认定所有锅的水都降至 80～85°C。",
+      "把水温、浸煮时间或切面颜色当作中心熟透的证明。",
+      "普通密封袋直接加热，或让袋子贴着锅底锅壁。"
+    ],
+    "mistakesEn": [
+      "Assuming every pot cools to 80～85°C exactly 30 seconds after switching off boiling water.",
+      "Treating water temperature, poaching time or cut color as proof that the center is cooked.",
+      "Heating an ordinary resealable bag or letting it touch the bottom or sides of the pot."
+    ],
+    "boundary": "时间用于这份 300 克鸡胸肉的初次检查，不是其他厚度或水量下的固定保证；中心至少 74°C（165°F）的检查不能省略。",
+    "boundaryEn": "The time is a first checking point for this 300 g breast, not a guarantee for other thicknesses or water quantities. The center check of at least 74°C (165°F) remains necessary.",
+    "tags": [
+      "鸡胸肉",
+      "水煮",
+      "温度计",
+      "chicken breast",
+      "poaching",
+      "thermometer"
+    ],
+    "recipeIds": ["samukichi-chicken-breast"],
+    "sources": ["https://www.youtube.com/watch?v=2YXtnZybJtI"]
+  },
+  {
+    "id": "loosen-and-sear-fried-rice",
+    "category": "heat",
+    "title": "炒饭先松散，再摊煎收干",
+    "titleEn": "Loosen fried rice, then let it contact the pan",
+    "summary": "少量水先松开短粒米饭，再交替摊煎与翻拌，把水分炒掉。",
+    "summaryEn": "Loosen short-grain rice with a little water, then alternate pan contact and mixing to cook the moisture off.",
+    "scope": "用冷却或表面稍干的日式短粒米、Calrose 米或寿司米饭做单份炒饭。",
+    "scopeEn": "A single portion of fried rice using cooled or slightly surface-dried Japanese short-grain, Calrose or sushi rice.",
+    "steps": [
+      "米饭和切细的配料提前备齐，锅充分预热后加油，先把蛋轻炒至开始凝固。",
+      "加入 200 克熟米饭立刻打散，再加 30 克水帮助松开饭团。",
+      "以中火为基准，必要时加大火力。把饭摊开接触锅底，表面收干、产生香气后再拌匀，反复进行。",
+      "米饭散开、水分收干后再加蒜和适量配料，炒熟后调味。"
+    ],
+    "stepsEn": [
+      "Prepare the rice and finely cut additions ahead. Preheat the pan, add oil and lightly cook the egg until it begins to set.",
+      "Add 200 g cooked rice and immediately break it apart, then add 30 g water to loosen clumps.",
+      "Start around medium heat and increase as needed. Spread the rice against the pan until the surface dries and becomes aromatic, then mix and repeat.",
+      "Once the rice separates and moisture evaporates, add garlic and moderate additions, cook them through and season."
+    ],
+    "reasons": [
+      "少量水的用途是帮助松开饭团，随后要蒸发掉；不是给已经湿软的饭无限补水。",
+      "不停翻动会减少接触锅底的时间，交替摊煎和翻拌更容易收干并产生焦香；不会颠锅也能操作。",
+      "配料过多带入水分并降低锅温，容易让炒饭变湿重。"
+    ],
+    "reasonsEn": [
+      "A little water helps separate clumps and must then evaporate. It is not a reason to keep adding water to already wet rice.",
+      "Constant movement reduces pan contact. Alternating spreading and mixing helps drying and toasted aroma without requiring pan tossing.",
+      "Too many additions introduce moisture and lower the pan temperature, making the rice heavy and wet."
+    ],
+    "mistakes": [
+      "整团翻炒，内部饭粒始终不散。",
+      "加水后只翻动、不让饭接触热锅收干。",
+      "生蛋先拌饭后直接套用这套操作。"
+    ],
+    "mistakesEn": [
+      "Turning whole clumps without separating their centers.",
+      "Adding water and constantly stirring without allowing hot-pan contact to dry the rice.",
+      "Premixing raw egg and rice while otherwise following this method."
+    ],
+    "boundary": "加水量对应这里的短粒熟米饭，不自动适用于湿饭、长粒米或任意放大份量；其他炒饭流派的生蛋拌饭方法应另行看待。",
+    "boundaryEn": "The water quantity applies to this cooked short-grain rice, not automatically to wet rice, long-grain rice or arbitrarily larger batches. Other fried-rice methods that premix raw egg should be treated separately.",
+    "tags": ["炒饭", "米饭", "打散", "fried rice", "rice", "pan contact"],
+    "recipeIds": ["samukichi-fried-rice"],
+    "sources": ["https://www.youtube.com/watch?v=0loSYanxAfE"]
   }
 ]

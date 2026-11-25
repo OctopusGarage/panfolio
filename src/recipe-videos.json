@@ -140,5 +140,122 @@
         "id": "BV14XynzYE3T"
       }
     ]
+  },
+  {
+    "recipeId": "samukichi-mushrooms",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "6Aa3aFccue8"
+      },
+      {
+        "platform": "bilibili",
+        "id": "BV1LFyszxEg7"
+      }
+    ]
+  },
+  {
+    "recipeId": "samukichi-cauliflower",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "_ki3H1gioig"
+      },
+      {
+        "platform": "bilibili",
+        "id": "BV1qkxE62Eau"
+      }
+    ]
+  },
+  {
+    "recipeId": "samukichi-yakisoba",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "U3C2MIUxkjA"
+      },
+      {
+        "platform": "bilibili",
+        "id": "BV1LQyJzLEa7"
+      }
+    ]
+  },
+  {
+    "recipeId": "samukichi-garlic-shrimp",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "RPSQe3eZ6GA"
+      },
+      {
+        "platform": "bilibili",
+        "id": "BV1Wenv6bE44"
+      }
+    ]
+  },
+  {
+    "recipeId": "samukichi-caramelized-onions",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "8IpPp_MSQMI"
+      },
+      {
+        "platform": "bilibili",
+        "id": "BV1zJyDzqESu"
+      }
+    ]
+  },
+  {
+    "recipeId": "samukichi-tuna",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "LWa4RVPltBw"
+      },
+      {
+        "platform": "bilibili",
+        "id": "BV1dQyQzeEpH"
+      }
+    ]
+  },
+  {
+    "recipeId": "samukichi-chicken-breast",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "2YXtnZybJtI"
+      },
+      {
+        "platform": "bilibili",
+        "id": "BV1CryvzTECp"
+      }
+    ]
+  },
+  {
+    "recipeId": "samukichi-steak",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "5OneMsDQQPM"
+      },
+      {
+        "platform": "bilibili",
+        "id": "BV19CyVzxEsv"
+      }
+    ]
+  },
+  {
+    "recipeId": "samukichi-fried-rice",
+    "videos": [
+      {
+        "platform": "youtube",
+        "id": "0loSYanxAfE"
+      },
+      {
+        "platform": "bilibili",
+        "id": "BV1Pin26oEnV"
+      }
+    ]
   }
 ]

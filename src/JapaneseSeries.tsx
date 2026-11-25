@@ -1,7 +1,13 @@
-import { useLocale } from "./i18n";
+import type { Locale } from "./types";
 
-export function JapaneseSeries({ expanded = false }: { expanded?: boolean }) {
-  const { s } = useLocale();
+export function JapaneseSeries({
+  expanded = false,
+  locale,
+}: {
+  expanded?: boolean;
+  locale: Locale;
+}) {
+  const s = (zh: string, en: string) => (locale === "en" ? en : zh);
   return (
     <section
       className={`chef-series${expanded ? " chef-series-expanded" : ""}`}
@@ -19,8 +25,8 @@ export function JapaneseSeries({ expanded = false }: { expanded?: boolean }) {
         {expanded && (
           <p className="hint">
             {s(
-              "四支视频，四堂厨房练习。跟着步骤掌握火候，在小贴士里了解做法背后的原因，再试试不同风味。",
-              "Four videos, four kitchen lessons. Follow the steps, learn the reasons behind each technique in the tips, then explore the variations.",
+              "从家常食材开始，一起练好厨房基本功。跟着步骤掌握火候，在小贴士里了解做法背后的原因，再试试不同风味。",
+              "Build everyday kitchen skills, one ingredient at a time. Follow the steps, learn the reasons behind each technique in the tips, then explore the variations.",
             )}
           </p>
         )}

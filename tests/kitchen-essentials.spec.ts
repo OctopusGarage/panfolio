@@ -5,7 +5,7 @@ test("kitchen essentials supports lookup, translation and recipe round trips", a
   browserName,
 }) => {
   await page.goto("/#essentials");
-  await expect(page.locator(".essential-card")).toHaveCount(12);
+  await expect(page.locator(".essential-card")).toHaveCount(21);
   await page.getByRole("searchbox", { name: "搜索厨房基础" }).fill("酱油");
   await page
     .getByRole("link", { name: "酱油接触热锅面增香", exact: true })
@@ -32,7 +32,7 @@ test("kitchen essentials supports lookup, translation and recipe round trips", a
   await page
     .getByRole("button", { name: "Ingredient preparation", exact: true })
     .click();
-  await expect(page.locator(".essential-card")).toHaveCount(5);
+  await expect(page.locator(".essential-card")).toHaveCount(6);
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
