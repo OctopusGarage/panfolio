@@ -1,0 +1,30 @@
+.app-share-dialog.share-inbox {
+  width: min(24rem, calc(100% - 2rem));
+  padding: clamp(1rem, 5vw, 1.5rem);
+  box-sizing: border-box;
+}
+
+.share-inbox h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+
+.share-inbox-title,
+.share-inbox-feedback {
+  margin: 0.65rem 0 0;
+  overflow-wrap: anywhere;
+}
+
+.share-inbox-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.65fr);
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.share-inbox-actions button {
+  min-width: 0;
+  min-height: 44px;
+  text-wrap: balance;
+}

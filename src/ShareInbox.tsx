@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { decryptLink } from "@octopusgarage/s";
 import { Icon } from "./Icon";
 import type { Locale } from "./types";
+import "./share-inbox.css";
 
 type Recipe = { id: string; title: string; titleEn?: string };
 type Props = {
@@ -17,9 +18,8 @@ export function ShareInbox({ installed, locale, recipes, onOpen }: Props) {
   const trigger = useRef<HTMLButtonElement>(null);
   const seen = useRef(new Set<string>());
   const inspection = useRef(0);
-  const [text, setText] = useState("");
   const [candidate, setCandidate] = useState<Recipe | null>(null);
-  const [error, setError] = useState(false);
+  const [error, setError] = useState<"read" | "link" | null>(null);
 
   function close() {
     inspection.current++;
@@ -60,12 +60,12 @@ export function ShareInbox({ installed, locale, recipes, onOpen }: Props) {
         return;
       seen.current.add(link);
       setCandidate(recipe);
-      setError(false);
+      setError(null);
       if (!dialog.current?.open) dialog.current?.showModal();
     } catch {
       if (!automatic && request === inspection.current) {
         setCandidate(null);
-        setError(true);
+        setError("link");
       }
     }
   }
@@ -104,7 +104,7 @@ export function ShareInbox({ installed, locale, recipes, onOpen }: Props) {
         if (!disposed && request === inspection.current && document.hasFocus())
           await inspect(value, true, request);
       } catch {
-        // Browsers can refuse automatic reads. The paste form remains available.
+        // Browsers can refuse automatic reads. The paste button remains available.
       } finally {
         busy = false;
       }
@@ -132,9 +132,8 @@ export function ShareInbox({ installed, locale, recipes, onOpen }: Props) {
         title={s("粘贴链接", "Paste link")}
         onClick={() => {
           inspection.current++;
-          setText("");
           setCandidate(null);
-          setError(false);
+          setError(null);
           dialog.current?.showModal();
         }}
       >
@@ -142,7 +141,7 @@ export function ShareInbox({ installed, locale, recipes, onOpen }: Props) {
       </button>
       <dialog
         ref={dialog}
-        className="app-share-dialog"
+        className="app-share-dialog share-inbox"
         aria-labelledby="share-inbox-title"
         onCancel={(event) => {
           event.preventDefault();
@@ -156,87 +155,57 @@ export function ShareInbox({ installed, locale, recipes, onOpen }: Props) {
               : s("打开 Panfolio 首页？", "Open Panfolio home?")
             : s("粘贴分享链接", "Paste a share link")}
         </h2>
-        {candidate ? (
-          <>
-            <p>
-              {locale === "en"
-                ? candidate.titleEn || candidate.title
-                : candidate.title}
-            </p>
-            <button
-              type="button"
-              onClick={() => {
+        {candidate && (
+          <p className="share-inbox-title">
+            {locale === "en"
+              ? candidate.titleEn || candidate.title
+              : candidate.title}
+          </p>
+        )}
+        {error && (
+          <p className="share-inbox-feedback" role="status">
+            {error === "read"
+              ? s(
+                  "无法读取剪贴板。请允许粘贴后重试。",
+                  "Could not read the clipboard. Allow pasting and try again.",
+                )
+              : s(
+                  "剪贴板中没有有效的 Panfolio 分享链接。",
+                  "The clipboard does not contain a valid Panfolio share link.",
+                )}
+          </p>
+        )}
+        <div className="share-inbox-actions">
+          <button type="button" className="app-share-secondary" onClick={close}>
+            {s("取消", "Cancel")}
+          </button>
+          <button
+            type="button"
+            className="app-share-primary"
+            onClick={async () => {
+              if (candidate) {
                 close();
                 onOpen(candidate.id);
-              }}
-            >
-              {candidate.id
-                ? s("打开菜谱", "Open recipe")
-                : s("打开首页", "Open home")}
-            </button>
-          </>
-        ) : (
-          <form
-            onSubmit={(event) => {
-              event.preventDefault();
-              void inspect(text, false);
+                return;
+              }
+              const request = ++inspection.current;
+              setError(null);
+              try {
+                const value = await navigator.clipboard.readText();
+                if (request === inspection.current)
+                  await inspect(value, false, request);
+              } catch {
+                if (request === inspection.current) setError("read");
+              }
             }}
           >
-            <label htmlFor="share-inbox-link">
-              {s("分享链接", "Share link")}
-            </label>
-            <input
-              id="share-inbox-link"
-              value={text}
-              required
-              maxLength={2900}
-              onPaste={(event) => {
-                event.preventDefault();
-                const value = event.clipboardData.getData("text/plain");
-                setText(value.slice(0, 2900));
-                void inspect(value, false);
-              }}
-              onChange={(event) => {
-                inspection.current++;
-                setText(event.target.value);
-                setError(false);
-              }}
-            />
-            {typeof navigator.clipboard?.readText === "function" && (
-              <button
-                type="button"
-                onClick={() => {
-                  const request = ++inspection.current;
-                  void navigator.clipboard
-                    .readText()
-                    .then((value) => {
-                      if (request !== inspection.current) return;
-                      setText(value.slice(0, 2900));
-                      void inspect(value, false, request);
-                    })
-                    .catch(() => {
-                      if (request === inspection.current)
-                        document.getElementById("share-inbox-link")?.focus();
-                    });
-                }}
-              >
-                {s("从剪贴板粘贴", "Paste from clipboard")}
-              </button>
-            )}
-            <button type="submit">{s("识别链接", "Check link")}</button>
-            {error && (
-              <p role="status">
-                {s(
-                  "这不是可打开的 Panfolio 分享链接。",
-                  "This is not a valid Panfolio share link.",
-                )}
-              </p>
-            )}
-          </form>
-        )}
-        <button type="button" onClick={close}>
-          {s("取消", "Cancel")}
-        </button>
+            {candidate
+              ? candidate.id
+                ? s("打开菜谱", "Open recipe")
+                : s("打开首页", "Open home")
+              : s("从剪贴板读取", "Read clipboard")}
+          </button>
+        </div>
       </dialog>
     </>
   );
