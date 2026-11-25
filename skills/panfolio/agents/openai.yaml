@@ -1,4 +1,6 @@
 interface:
   display_name: "Panfolio"
-  short_description: "Cook from curated recipes and kitchen references"
+  short_description: "Recipes and kitchen guidance"
   default_prompt: "Use $panfolio to find a dish and guide me through its preparation."
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/icon.png"

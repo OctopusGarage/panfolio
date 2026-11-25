@@ -15,3 +15,16 @@ __pycache__/
 *.pyc
 
 public/downloads/panfolio-chatgpt-plugin.zip
+
+# Generated MCP deployment snapshot and Cloudflare build output.
+mcp/generated/
+mcp/.cloudflare/
+mcp/.wrangler/
+mcp/.cf/
+
+# Generated release evidence and local credentials.
+public/downloads/release-manifest.json
+public/downloads/SHA256SUMS
+.env
+.env.*
+!.env.example

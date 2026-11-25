@@ -4,12 +4,17 @@ Panfolio is a bilingual, local-first recipe PWA. Keep changes focused and descri
 
 ## Local development
 
-Use Node.js 22.12 or newer and pnpm 10. Run `pnpm install --frozen-lockfile`, then `pnpm dev`. Run `pnpm exec playwright install chromium webkit` before browser tests.
+Use Node.js 24, pnpm 10 and Python 3.9+ for complete repository checks. Install MCP dependencies with `pnpm --dir mcp install --frozen-lockfile`. Run `pnpm install --frozen-lockfile`, then `pnpm dev`. Run `pnpm exec playwright install chromium webkit` before browser tests.
 
 Before submitting a change, run:
 
 ```sh
+pnpm sync
+pnpm docs:check
+pnpm distribution:check
 pnpm test
+pnpm mcp:test
+pnpm mcp:build
 pnpm eval
 pnpm format:check
 pnpm build
@@ -17,6 +22,8 @@ pnpm test:e2e
 ```
 
 Include regression coverage for behavior changes. For installed PWA changes, distinguish desktop browser automation from actual device verification. The native iOS top-edge compositing workaround in `index.html` cannot be visually verified by desktop WebKit alone.
+
+For AI changes, follow [distribution maintenance](docs/distribution-maintenance.md). Increase only the shared distribution version, regenerate derived files and keep immutable releases intact.
 
 ## Content and design
 

@@ -20,3 +20,10 @@ Before adding or revising recipes, extracting cooking knowledge, or generating r
 - Reader-facing references for the video-derived workflow use the corresponding original YouTube videos only. Preserve source provenance and stable IDs in the underlying records.
 - New recipe entries should include a matching source-informed photographic cover with natural food texture, using the existing image pipeline. Reuse suitable existing covers during text-only revisions.
 - Finish authorized implementation and verification without asking users to reconfirm these defaults. Deployment requires authorization from the current task or an already established instruction; do not infer it from content editing alone.
+
+## AI distribution maintenance
+
+- Use `distribution/config.json` for the shared Skill/plugin/MCP version and target account. Edit cooking rules only in `distribution/guidance.json`; generated channel outputs must not be hand-maintained.
+- Run `pnpm sync` after canonical content, guidance, branding or release-input changes, then `pnpm distribution:check`, `pnpm docs:check`, and MCP checks alongside the app release gates.
+- Bump the AI distribution version when published release inputs change. Never overwrite a published release's assets or retag it. Read `docs/distribution-maintenance.md` before changing release/deployment behavior.
+- Preserve the dedicated OctopusGarage Cloudflare account and unrelated account prefixes. Deployment credentials belong only in GitHub Actions secrets or the operator's authorized credential store.

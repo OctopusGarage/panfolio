@@ -1,13 +1,13 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "panfolio",
-  "version": "0.2.0",
-  "description": "Read Panfolio recipes and kitchen techniques directly from public GitHub Markdown files.",
+  "version": "0.3.0",
+  "description": "Read Panfolio recipes and kitchen techniques with original quantities, explanations and sources.",
   "author": {
     "name": "OctopusGarage",
     "url": "https://github.com/OctopusGarage"
   },
-  "homepage": "https://octopusgarage.github.io/panfolio/",
+  "homepage": "https://github.com/OctopusGarage/panfolio",
   "repository": "https://github.com/OctopusGarage/panfolio",
   "license": "MIT",
   "keywords": ["cooking", "recipes", "kitchen", "panfolio"],
@@ -16,11 +16,11 @@
       "interface": {
         "displayName": "Panfolio",
         "shortDescription": "Recipes and kitchen guidance",
-        "longDescription": "Read Chinese dishes, Japanese chef recipes, desserts and kitchen references directly from public GitHub Markdown files. Follow one selected preparation with its original quantities, explanations and source links, or build a shopping checklist. Requires a host that can read public HTTPS text. No terminal, Python, Panfolio account, API key or app installation is required. Does not access personal app notes or favorites.",
+        "longDescription": "Read Panfolio recipes and kitchen techniques with original quantities, explanations and sources. Uses public GitHub Markdown with no terminal, Python, app login or API key. Requires HTTPS text reading in the host. Does not access private app data.",
         "developerName": "OctopusGarage",
         "category": "Productivity",
         "capabilities": ["Read"],
-        "websiteURL": "https://octopusgarage.github.io/panfolio/",
+        "websiteURL": "https://github.com/OctopusGarage/panfolio",
         "defaultPrompt": [
           "Use Panfolio to guide me through asparagus pork rolls.",
           "Explain when to pour soy sauce around a hot pan using Panfolio.",

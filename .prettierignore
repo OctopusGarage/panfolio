@@ -1,0 +1,4 @@
+mcp/generated/
+mcp/.cloudflare/
+mcp/.wrangler/
+mcp/.cf/

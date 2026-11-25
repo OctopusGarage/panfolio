@@ -24,13 +24,17 @@ Install with a compatible installer:
 npx skills add OctopusGarage/panfolio --skill panfolio -g
 ```
 
-The installer has its own Node requirements. Versioned ZIPs are distributed through [GitHub Releases](https://github.com/OctopusGarage/panfolio/releases); check the version, because v0.1.0 uses the older JSON/helper workflow. The revised plugin manifest is v0.2.0. Build both current archives with `pnpm ai:build`.
+The installer has its own Node requirements. Versioned ZIPs are distributed through [GitHub Releases](https://github.com/OctopusGarage/panfolio/releases); check the version, because v0.1.0 uses the older JSON/helper workflow. Current AI versions are defined in [distribution/config.json](distribution/config.json). Both packages and the MCP share one generated identity and cooking guidance; see [distribution maintenance](docs/distribution-maintenance.md).
 
 Eligible ChatGPT accounts can import `panfolio-skill.zip` through **Plugins → Skills → Create → Upload from your computer**. `panfolio-chatgpt-plugin.zip` is a complete plugin package for the separate OpenAI plugin ZIP portal. These entry points and workspace availability differ; attaching a ZIP to an ordinary chat does not install it. See [ChatGPT installation](docs/chatgpt-plugin.md).
 
-Try “Use Panfolio to guide me through asparagus pork rolls” or “看看三文鱼怎么煎”. The skill reads Markdown through GitHub Raw, with GitHub's rendered file as a bounded fallback. It does not depend on GitHub Pages. A host unable to read either public URL cannot complete this online workflow. Actual account-side compatibility must be tested after publication; local package tests do not certify it.
+Try “Use Panfolio to guide me through asparagus pork rolls” or “看看三文鱼怎么煎”. The skill reads Markdown through GitHub Raw, with GitHub's rendered file as a bounded fallback. Release ZIPs pin links to their source commit; repository installs track main. It does not depend on GitHub Pages. A host unable to read either public URL cannot complete this online workflow. Actual account-side compatibility must be tested after publication; local package tests do not certify it.
 
 `pnpm content:build` generates the checked-in `content/` tree from the reviewed application data. Run it after recipe/reference changes and commit the output. `pnpm content:check` rejects stale or extra Markdown files and runs during build and CI. Content is not maintained separately by hand. The previous `/ai/` JSON feed remains available for already released clients; the current skill does not use it.
+
+## Use through MCP
+
+A lightweight read-only Cloudflare MCP server is available at `https://panfolio-mcp.octopusgarage.workers.dev/mcp`. Add it as a remote Streamable HTTP server without authentication in a supported AI client. Its two tools provide a short guide and complete Markdown documents; the assistant can explore the cookbook without a separate browser or terminal. See [MCP connection and maintenance](docs/mcp-server.md) for client differences, deployment and verification. The service runs in the separate OctopusGarage Cloudflare account. Existing account prefixes and services were preserved.
 
 ## Personal data
 
@@ -38,13 +42,19 @@ Favorites and notes stay in this browser. IndexedDB transactions serialize chang
 
 ## Development
 
-Node.js 22.12+, pnpm 10 and Python 3.9+ are required for maintainer builds and archive tests. Python packages are not required. Neither the app nor the installed skill requires Python at runtime.
+Node.js 24, pnpm 10 and Python 3.9+ are required for maintainer builds and archive tests. Python packages are not required. Neither the app nor the installed skill requires Python at runtime.
 
 ```sh
 pnpm install --frozen-lockfile
+pnpm --dir mcp install --frozen-lockfile
+pnpm sync
 pnpm test
 pnpm content:check
+pnpm distribution:check
+pnpm docs:check
 pnpm eval
+pnpm mcp:test
+pnpm mcp:build
 pnpm format:check
 pnpm build
 pnpm exec playwright install chromium webkit
@@ -52,7 +62,7 @@ pnpm test:e2e
 pnpm dev
 ```
 
-Production assets support subdirectory hosting. GitHub Actions validates tests and builds before deploying to GitHub Pages. Updates wait for the user to select the update action.
+Production assets support subdirectory hosting. On main, GitHub Actions validates and builds once, deploys Pages and the same MCP build, verifies live release identities, then publishes both ZIPs and their checksums to GitHub Releases. Changed release inputs require an AI version bump. PR checks receive no deployment secret. See [the maintenance contract](docs/distribution-maintenance.md) for retries and credential rotation. Updates wait for the user to select the update action.
 
 ## Recipe content
 
@@ -66,7 +76,7 @@ Search enters a compact app state without remounting the input; Cancel and brows
 
 ## Contributing and support
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) for setup, validation and review expectations. Report reproducible bugs through GitHub Issues. For vulnerabilities, follow [SECURITY.md](SECURITY.md).
+Start with [the documentation guide](docs/README.md). Read [CONTRIBUTING.md](CONTRIBUTING.md) for setup, validation and review expectations. Report reproducible bugs through GitHub Issues. For vulnerabilities, follow [SECURITY.md](SECURITY.md).
 
 ## License
 

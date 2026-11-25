@@ -1,33 +1,23 @@
-# Panfolio Markdown skill design
+# Panfolio AI distribution design
 
-Source version: 0.2.0. The [runtime audit](panfolio-skill-runtime-audit.md) documents why the v0.1.0 JSON/helper workflow did not satisfy actual ChatGPT cooking requests.
+The [distribution maintenance contract](distribution-maintenance.md) defines current versions, generation commands and publication rules. The [runtime audit](panfolio-skill-runtime-audit.md) explains earlier ChatGPT failures.
 
-## Consumer workflow
+## Shared meaning, separate transports
 
-The skill points directly at public GitHub Raw Markdown indexes. The assistant selects a dish by its name or actual ingredient aliases, reads one preparation document and answers in the conversation language. Kitchen-reference requests use their own index. Follow-up cooking turns reuse the retrieved document. GitHub's rendered view of the same file is the single alternative route; neither route requires GitHub Pages, a shell or Python.
+Canonical reviewed recipe data and preparation selectors produce the same bilingual Markdown used by the app's content export, the repository Skill and the MCP snapshot. Shared bilingual rules in `distribution/guidance.json` generate Skill guidance and MCP guides. `distribution/config.json` owns the AI distribution version, endpoint and publisher identity. Generated outputs and fingerprints are checked in CI.
 
-A specific dish uses an independent preparation file. A broad request can offer existing alternatives. A component or finish is labeled as such. Source quantities, ordering, cooking cues, explanations and real original-source links remain intact. Shared tips apply only to matching food and conditions; related links may be comparisons. No unsupported serving conversion, total time or dietary guarantee is inferred.
+The portable Skill reads public GitHub Markdown through native HTTPS tools. Its release ZIP pins content links to the build commit. The plugin packages that exact Skill and the common icon; it is still skills-only and does not silently acquire MCP access. A separately connected MCP server returns the same Markdown through `get_guide` and `read_document`, so generic web browsing is unnecessary. Consumers require no Python, shell, app installation or Panfolio account.
 
-## Content organization
+The three recipe categories remain Chinese, Japanese chef series and Desserts. Kitchen references have a separate index. Alternative preparations have independent paths using stable IDs; components and finishes are explicitly labeled. Source quantities, conditions, counterexamples and real video links remain intact. Related links can be comparisons rather than universally applicable techniques.
 
-`content/index.md` links to Chinese and English recipe/reference indexes. Each recipe index has exactly the existing Chinese, Japanese chef series and Desserts categories. Kitchen references remain a separate collection. Reviewed discovery aliases aid matching; no removed filter taxonomy is introduced.
+## Derived content and identity
 
-Stable paths use original recipe and preparation IDs:
+`content/index.md` links to Chinese/English indexes. `content/{zh,en}/recipes/` contains parents, `preparations/{recipe-id}/{preparation-id}.md` contains selected methods, and `references/` contains scope, operations, reasons, mistakes and limits. The current content inventory is checked dynamically rather than imposing a future recipe-count limit.
 
-- `content/{zh,en}/recipes/{recipe-id}.md`: parent recipe, choices and complete source text.
-- `content/{zh,en}/preparations/{recipe-id}/{preparation-id}.md`: one selected method.
-- `content/{zh,en}/references/{reference-id}.md`: operations, reasons, mistakes, scope, limits, sources and related recipes.
+The source artwork generates public icon sizes. The same 512 PNG is copied into the Skill, packaged as the plugin icon and served by the Worker. A hash-addressed icon path permits immutable caching.
 
-The current dataset generates 285 Markdown files: one landing index, four language-specific indexes, 88 parent documents, 130 preparation documents and 62 kitchen references. These are cookbook content, distinct from English-only developer documentation.
+Every release manifest and MCP response identifies content, guidance and source revision. Archive metadata carries the same baseline. Old installations can differ from a new live MCP, and deployments are not globally atomic; source identities make these differences inspectable. Reuse retrieved text throughout an active cooking conversation.
 
-## One editorial source
+## Boundaries
 
-`createMarkdownCookbook` derives readable views from the same reviewed exporter records and preparation selector as the app. `pnpm content:build` writes them into the tracked `content/` directory. `pnpm content:check` compares every byte and the full inventory; build and CI fail on stale files. Source and generated content must be committed together. Generation is a maintenance operation, not a requirement imposed on an installed skill user.
-
-Both ZIP formats package the single `skills/panfolio` source, without consumer scripts or cookbook duplication. The plugin manifest is v0.2.0. The existing static JSON feed remains for v0.1.0 clients; it is not a prerequisite for the new skill. The consumer Python helper and its obsolete tests have been removed. Python remains a maintainer archive-build dependency only.
-
-## Limits and verification
-
-Public repository access is still required. An instruction file cannot grant networking. Missing content and failed retrieval must be distinguished; neither justifies inventing a Panfolio recipe. Ordinary lookup never accesses private browser data. The package software license excludes recipe/media ownership.
-
-Local tests establish source parity, preparation boundaries, complete reference fields, stable links, deterministic archives and absence of consumer scripts. App regression tests cover the existing web application. Target-account ChatGPT retrieval and installed-package behavior must be verified separately after repository publication; local checks cannot certify them.
+The static JSON feed is retained for older clients, but current Skill usage does not require its protocol. Python remains a maintenance ZIP dependency only. Private browser notes, favorites and backups are not public content. The software MIT license excludes source recipes/media. Host-specific installation, networking and output behavior require separate real-account verification.

@@ -1,6 +1,10 @@
 # Panfolio skill implementation and evaluation
 
-## Current v0.2.0 Markdown workflow
+## Current unified distribution
+
+The [maintenance contract](distribution-maintenance.md) and generated [identity](../distribution/identity.json) define the current implementation and publication mechanism. CI checks exact generated Skill/plugin/MCP metadata, shared bilingual rules, source-faithful Markdown, common icon bytes, immutable release versioning, archive commit pins, artifact checksums, SDK protocol compatibility and the deployed health/tool identities. Workflow checks and actual client-account conversations remain distinct. The historical evidence below records earlier test runs and must not be read as the current release checklist.
+
+## Historical v0.2.0 Markdown workflow
 
 The v0.2.0 implementation is verified locally. See [GitHub Releases](https://github.com/OctopusGarage/panfolio/releases/tag/panfolio-ai-v0.2.0) and its linked deployment workflow for publication status. Existing installed plugins retain their previous package until explicitly updated. Actual target-account ChatGPT retrieval remains a separate validation step.
 

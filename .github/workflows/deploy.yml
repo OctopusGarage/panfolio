@@ -1,4 +1,4 @@
-name: Validate and deploy
+name: Validate, deploy and release
 on:
   push:
     branches: [main]
@@ -7,8 +7,11 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: pages-${{ github.ref }}
-  cancel-in-progress: true
+  group: distribution-${{ github.ref }}
+  cancel-in-progress: false
+env:
+  CF_SEND_TELEMETRY: "false"
+  DO_NOT_TRACK: "1"
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -19,14 +22,29 @@ jobs:
         with:
           node-version: 24
           cache: pnpm
+          cache-dependency-path: |
+            pnpm-lock.yaml
+            mcp/pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
+      - run: pnpm --dir mcp install --frozen-lockfile
       - run: pnpm format:check
-      - run: pnpm test
+      - run: pnpm distribution:check
       - run: pnpm content:check
+      - run: pnpm docs:check
+      - run: pnpm test
       - run: pnpm eval
+      - run: pnpm mcp:test
+      - run: pnpm mcp:build
+      - run: pnpm --dir mcp exec cf deploy --prebuilt --mode production --dry-run
       - run: pnpm build
+      - run: pnpm release:prepare
       - run: pnpm exec playwright install --with-deps chromium webkit
       - run: pnpm test:e2e
+      - name: Validate immutable release version
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: pnpm release:preflight
+        env:
+          GH_TOKEN: ${{ github.token }}
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
@@ -36,7 +54,25 @@ jobs:
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
           path: dist
-  deploy:
+      - uses: actions/upload-artifact@v4
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        with:
+          name: mcp-build
+          path: mcp/.cloudflare/output/
+          include-hidden-files: true
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        with:
+          name: ai-release
+          path: |
+            public/downloads/panfolio-skill.zip
+            public/downloads/panfolio-chatgpt-plugin.zip
+            public/downloads/release-manifest.json
+            public/downloads/SHA256SUMS
+            public/branding/panfolio-mcp-icon.png
+          if-no-files-found: error
+  deploy-pages:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: check
     runs-on: ubuntu-latest
@@ -49,3 +85,53 @@ jobs:
     steps:
       - uses: actions/deploy-pages@v5
         id: deployment
+  deploy-mcp:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: pnpm
+          cache-dependency-path: mcp/pnpm-lock.yaml
+      - run: pnpm --dir mcp install --frozen-lockfile
+      - uses: actions/download-artifact@v4
+        with:
+          name: mcp-build
+          path: mcp/.cloudflare/output/
+      - uses: actions/download-artifact@v4
+        with:
+          name: ai-release
+          path: release-assets
+      - name: Deploy the tested Worker build
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN" || { echo "Missing CLOUDFLARE_API_TOKEN repository secret"; exit 1; }
+          pnpm --dir mcp exec cf deploy --prebuilt --mode production
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      - name: Verify deployed content, guidance, icon and source revision
+        run: pnpm --dir mcp exec tsx scripts/smoke.ts "$(node -p 'require("./distribution/config.json").mcpEndpoint')" release-assets/downloads/release-manifest.json
+  release:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: [deploy-pages, deploy-mcp]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - uses: actions/download-artifact@v4
+        with:
+          name: ai-release
+          path: public
+      - run: pnpm release:publish
+        env:
+          GH_TOKEN: ${{ github.token }}

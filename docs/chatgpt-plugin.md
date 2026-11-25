@@ -1,6 +1,6 @@
 # ChatGPT skill and plugin installation
 
-Current source version: **0.2.0**. This revision replaces the v0.1.0 JSON-feed/helper workflow with direct reading of public GitHub Markdown files. New repository files and revised archives require publication before remote assistants can read/install them. An older installed plugin is not updated by a local build.
+Current versions and release status are defined by [the distribution configuration](../distribution/config.json) and [GitHub Releases](https://github.com/OctopusGarage/panfolio/releases). The shared [maintenance contract](distribution-maintenance.md) explains generation and automatic GitHub publication. Existing installed plugins require an explicit update; a new GitHub release does not update a host account automatically.
 
 ## Packages and entry points
 
@@ -21,13 +21,13 @@ When replacing v0.1.0, confirm that the installed skill instructions reference `
 
 ## Upload a plugin
 
-Open <https://platform.openai.com/plugins>, choose **Upload new or existing plugin**, select the required developer identity, and upload `panfolio-chatgpt-plugin.zip`. Follow the portal's automated findings and review process. The root portable manifest is v0.2.0; do not wrap it inside another directory. Uploading, review and public publication are distinct stages. No account submission or approval is implied by generating the archive.
+Open <https://platform.openai.com/plugins>, choose **Upload new or existing plugin**, select the required developer identity, and upload `panfolio-chatgpt-plugin.zip`. Follow the portal's automated findings and review process. The root portable manifest carries the shared distribution version; do not wrap it inside another directory. Uploading, review and public publication are distinct stages. No account submission or approval is implied by generating the archive.
 
 This is a skills-only package. Optional policy/contact URLs and MCP fields are omitted rather than invented. Public publication requires the applicable verified identity and attestations. Changes to the skill require uploading a revised ZIP.
 
 ## Verify the actual workflow
 
-First publish the checked-in `content/` files to the public repository. Verify both language indexes and both reported dishes through the target host's URL-reading tool:
+The GitHub workflow publishes checked-in `content/` and pins release archive links to the tested source commit. Repository/main links below follow current content. Verify both language indexes and both reported dishes through the target host's URL-reading tool:
 
 - [Chinese recipe index](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/recipes.md)
 - [English recipe index](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/recipes.md)
@@ -40,7 +40,7 @@ If Raw cannot be read, the skill tries the same file once using `https://github.
 
 ## Maintainer workflow
 
-After changing reviewed content, run `pnpm content:build`, then `pnpm content:check` and the repository release checks. Commit the generated Markdown alongside its source changes so direct Raw URLs exist. Build and upload both revised ZIPs, recording their checksums for a release. The web app's Pages deployment is separate from repository Markdown availability. Retain ownership notices: the package's MIT software license does not relicense recipe content or external media.
+After changing reviewed content, bump the AI distribution version as needed and run `pnpm sync`, then the repository release checks. Commit the generated Markdown alongside its source changes so direct Raw URLs exist. The main-branch workflow builds and publishes both revised ZIPs, their manifest, icon and checksums after successful deployment checks. OpenAI portal upload and approval remain separate. The web app's Pages deployment is separate from repository Markdown availability. Retain ownership notices: the package's MIT software license does not relicense recipe content or external media.
 
 Primary sources, researched on 2026-11-25:
 
