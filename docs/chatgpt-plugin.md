@@ -33,7 +33,7 @@ The root portable manifest carries the shared version; do not wrap it inside ano
 
 ## Verify the actual workflow
 
-The GitHub workflow publishes checked-in `content/` and pins release archive links to the tested source commit. Repository/main links below follow current content. Verify both language indexes and both reported dishes through the target host's URL-reading tool:
+The GitHub workflow publishes checked-in `content/`. Since v0.3.0, installed skills follow stable web guide URLs at runtime, or use the current deployed MCP guide when connected. Verify both language indexes and both reported dishes through the target host's URL-reading tool:
 
 - [Chinese recipe index](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/recipes.md)
 - [English recipe index](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/recipes.md)

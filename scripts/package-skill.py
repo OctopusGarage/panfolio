@@ -50,17 +50,12 @@ def package(target=TARGET, plugin=False, claude=False):
             entry = ZipInfo(name, (1980, 1, 1, 0, 0, 0))
             entry.compress_type = ZIP_DEFLATED
             entry.external_attr = 0o100644 << 16
-            data = path.read_bytes()
-            if path.name == "SKILL.md" and revision != "local":
-                data = data.replace(b"/panfolio/main/content/", f"/panfolio/{revision}/content/".encode())
-                data = data.replace(b"/panfolio/main/", f"/panfolio/{revision}/".encode())
-                data = data.replace(b"/panfolio/blob/main/", f"/panfolio/blob/{revision}/".encode())
-            archive.writestr(entry, data)
+            archive.writestr(entry, path.read_bytes())
         release_path = ("skills/panfolio/" if plugin else "panfolio/") + "references/release.md"
         entry = ZipInfo(release_path, (1980, 1, 1, 0, 0, 0))
         entry.compress_type = ZIP_DEFLATED
         entry.external_attr = 0o100644 << 16
-        release = f"# Panfolio release\n\nVersion: {config['version']}\n\nContent version: {identity['contentVersion']}\n\nGuidance version: {identity['guidanceVersion']}\n\nSource revision: {revision}\n\nCI release archives pin cookbook links to this source revision. Repository installations follow the current main branch. Keep retrieved text during an active cooking conversation.\n"
+        release = f"# Panfolio release\n\nVersion: {config['version']}\n\nContent version: {identity['contentVersion']}\n\nGuidance version: {identity['guidanceVersion']}\n\nSource revision: {revision}\n\nThis is the package build identity. Installed skills read the current remote guide at the start of each new task. Keep retrieved text during an active cooking conversation.\n"
         archive.writestr(entry, release.encode())
     print(f"Packaged {target.name} ({target.stat().st_size} bytes); recipes remain on the public feed.")
 

@@ -176,9 +176,6 @@ z=zipfile.ZipFile(sys.argv[1])
 for path in pathlib.Path('skills/panfolio').rglob('*'):
     if path.is_file() and '__pycache__' not in path.parts and path.suffix != '.pyc':
         data=path.read_bytes()
-        revision=__import__('os').environ.get('GITHUB_SHA')
-        if path.name=='SKILL.md' and revision:
-            data=data.replace(b'/panfolio/main/content/',f'/panfolio/{revision}/content/'.encode()).replace(b'/panfolio/main/',f'/panfolio/{revision}/'.encode()).replace(b'/panfolio/blob/main/',f'/panfolio/blob/{revision}/'.encode())
         assert z.read('skills/panfolio/'+path.relative_to('skills/panfolio').as_posix()) == data
 print(json.dumps({'files':z.namelist(),'manifest':json.loads(z.read('plugin.json'))}))
 `,

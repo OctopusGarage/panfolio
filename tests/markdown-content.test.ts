@@ -17,7 +17,7 @@ test("Markdown cookbook preserves all reviewed bilingual bodies and scoped prepa
     Object.keys(files).length,
     1 +
       2 *
-        (2 +
+        (3 +
           recipes.length +
           essentials.length +
           recipeDiscovery.reduce(
@@ -88,8 +88,8 @@ test("checked-in cookbook is current and skill has no consumer execution path", 
   for (const [path, body] of Object.entries(createMarkdownCookbook()))
     assert.equal(await readFile("content/" + path, "utf8"), body, path);
   const skill = await readFile("skills/panfolio/SKILL.md", "utf8");
-  assert.ok(skill.includes(RAW_CONTENT + "zh/recipes.md"));
-  assert.ok(skill.includes(RAW_CONTENT + "en/recipes.md"));
+  assert.ok(skill.includes(RAW_CONTENT + "zh/guide.md"));
+  assert.ok(skill.includes(RAW_CONTENT + "en/guide.md"));
   assert.ok(
     !/python3|curl |manifest\.json|octopusgarage\.github\.io|panfolio\.py/.test(
       skill,

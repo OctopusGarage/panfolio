@@ -1,8 +1,20 @@
 import { createAiFeed } from "./ai-content";
 import { recipeCategories } from "../src/recipe-categories";
 
-export const RAW_CONTENT =
-  "https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/";
+import config from "../distribution/config.json";
+import rules from "../distribution/guidance.json";
+
+export const RAW_CONTENT = config.contentBase;
+export function cookingGuidance(language: "zh" | "en") {
+  const ids = new Set<string>();
+  for (const rule of rules) {
+    if (ids.has(rule.id) || !rule.en || !rule.zh)
+      throw Error("Invalid bilingual cooking guidance");
+    ids.add(rule.id);
+  }
+  return rules.map((rule) => `- ${rule[language]}`).join("\n");
+}
+
 type Language = "zh" | "en";
 type Localized = Record<Language, string>;
 type Pointer = { path: string };
@@ -157,5 +169,9 @@ export function createMarkdownCookbook(): Record<string, string> {
       referenceIndex +
       `${link(zh ? "菜谱目录" : "Recipe index", `${lang}/recipes.md`)}\n`;
   }
+  files["zh/guide.md"] =
+    `# Panfolio 使用指南\n\n按任务打开[菜谱目录](${RAW_CONTENT}zh/recipes.md)或[厨房基础目录](${RAW_CONTENT}zh/references.md)，然后读取相关条目的完整 Markdown。\n\n${cookingGuidance("zh")}\n`;
+  files["en/guide.md"] =
+    `# Panfolio guide\n\nOpen the [recipe index](${RAW_CONTENT}en/recipes.md) or [kitchen reference index](${RAW_CONTENT}en/references.md), then read the full Markdown for the relevant entry.\n\n${cookingGuidance("en")}\n`;
   return files;
 }

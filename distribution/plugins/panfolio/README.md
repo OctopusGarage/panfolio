@@ -4,4 +4,4 @@ Use Panfolio to read sourced recipes and kitchen techniques, guide a selected pr
 
 Install through your host's supported plugin upload flow, enable the Panfolio skill, then ask it to read the crispy-skin salmon recipe and provide the original video link. Source amounts, method boundaries and explanations must be preserved. Software is MIT licensed; recipe text and media retain their original ownership.
 
-Version: 0.2.0.
+Version: 0.3.0.

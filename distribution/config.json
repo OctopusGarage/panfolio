@@ -1,7 +1,7 @@
 {
   "name": "panfolio",
   "displayName": "Panfolio",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "OctopusGarage",
   "repository": "https://github.com/OctopusGarage/panfolio",
   "contentBase": "https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/",
