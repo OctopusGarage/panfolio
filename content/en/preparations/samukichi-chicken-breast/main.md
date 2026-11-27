@@ -43,6 +43,7 @@ Remove the chicken and pat dry. Add butter to a pan and briefly sear over medium
 - The video waits 30 seconds after boiling and switching off the heat, but the pot, water quantity and surroundings affect cooling. Do not assume this always produces 80～85°C water; measure it.
 - Rub the salt and sugar evenly over the meat first. A bag reduces seasoning loss; the bag-free version also starts with seasoning. Ordinary resealable bags are not automatically suitable for heated cooking.
 - The center check of at least 74°C (165°F) also follows USDA poultry safety guidance. Even water maintained at 80～85°C does not replace measuring the center.
+- This brief salt-and-sugar treatment differs from acid marinating or enzyme tenderising. Do not add acid or tenderising powder, or greatly extend the marinating time, in pursuit of more tenderness. Refrigerate during marinating and continue controlling water temperature and checking the centre separately.
 
 ## References
 

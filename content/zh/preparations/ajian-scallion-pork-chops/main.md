@@ -38,9 +38,16 @@ ID: ajian-scallion-pork-chops / main
 - 薄片容易入味、煎熟；两面拍松或扎孔后再腌制。黑胡椒也可替代白胡椒。
 - 大片猪排不可用最大火急煎，以免外层焦糊而里面未熟。热油下肉有助于避免粘锅；底面定型后再翻。
 - 趁热切、趁热吃，冷后外皮会失去酥脆。这是咸香葱蒜调味，也含少量糖。
+- 薄肉片按配方腌制后再裹薄浆，不能把腌制越久理解为一定越嫩；不自行叠加小苏打或酸性嫩化。腌制期间冷藏，煎熟仍取决于肉片厚度与实际加热。
 
 ## 参考链接
 
 [YouTube](https://www.youtube.com/watch?v=0hDfXBQhiZg)
 
 
+
+## 相关厨房基础
+
+关联条目可能是对比说明，请先阅读适用范围。
+
+- [上浆、挂糊与勾芡：淀粉放在哪里](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/starch-coating-or-slurry.md)

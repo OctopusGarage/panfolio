@@ -101,3 +101,37 @@ test("soy sauce reference clearly marks the salmon comparison", async ({
     "不采用热锅边增香",
   );
 });
+
+for (const language of ["zh", "en"] as const) {
+  test(`editorial explanations distinguish related videos from provenance: ${language}`, async ({
+    page,
+  }) => {
+    await page.addInitScript(
+      (locale) => localStorage.setItem("panfolio:locale", locale),
+      language,
+    );
+    await page.goto("/#essentials/rest-dough-before-stretching");
+    const detail = page.locator(".essential-detail");
+    await expect(
+      detail.getByRole("heading", {
+        name: language === "zh" ? "相关视频" : "Related videos",
+        exact: true,
+      }),
+    ).toBeVisible();
+    await expect(
+      detail.getByRole("link", {
+        name:
+          language === "zh"
+            ? "说明依据与来源记录"
+            : "Explanation evidence and source record",
+        exact: true,
+      }),
+    ).toHaveAttribute(
+      "href",
+      "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md",
+    );
+    await expect(detail.locator(".essential-sections")).toContainText("20");
+    await expect(detail.locator(".essential-sections")).toContainText("60");
+    await expect(detail.locator(".essential-sections")).toContainText("15");
+  });
+}

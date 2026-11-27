@@ -798,5 +798,69 @@
       "Moisture",
       "moisture"
     ]
+  },
+  {
+    "id": "starch-slurry-thickening",
+    "aliases": ["勾芡", "水淀粉", "结块", "thickening", "slurry", "cornflour"]
+  },
+  {
+    "id": "reduce-and-season",
+    "aliases": [
+      "收汁",
+      "加盖",
+      "咸淡",
+      "调味",
+      "reduction",
+      "covered cooking",
+      "seasoning"
+    ]
+  },
+  {
+    "id": "braise-until-tender",
+    "aliases": [
+      "炖肉",
+      "软烂",
+      "牛肋条",
+      "braising",
+      "tenderness",
+      "connective tissue"
+    ]
+  },
+  {
+    "id": "rest-dough-before-stretching",
+    "aliases": [
+      "醒面",
+      "回缩",
+      "肉饼",
+      "resting dough",
+      "spring back",
+      "stretching"
+    ]
+  },
+  {
+    "id": "starch-coating-or-slurry",
+    "aliases": [
+      "上浆",
+      "挂糊",
+      "裹粉",
+      "淀粉",
+      "velveting",
+      "batter",
+      "starch coating"
+    ]
+  },
+  {
+    "id": "bare-cast-iron-care",
+    "aliases": [
+      "铸铁锅",
+      "养锅",
+      "洗锅",
+      "洗洁精",
+      "擦干",
+      "cast iron",
+      "seasoning",
+      "pan care",
+      "cleaning"
+    ]
   }
 ]

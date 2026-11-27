@@ -3,7 +3,7 @@ name: panfolio
 description: Find Panfolio recipes and kitchen techniques, guide a selected preparation, and make recipe-based shopping lists by reading public Markdown documents.
 license: MIT. See LICENSE; recipe content and media are excluded.
 metadata:
-  version: "0.3.0"
+  version: "0.3.1"
   requirements: "Connected Panfolio MCP or public HTTPS text reading"
 ---
 

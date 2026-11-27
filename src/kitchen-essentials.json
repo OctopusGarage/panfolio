@@ -94,10 +94,12 @@
       "Pat both sides dry after trimming."
     ],
     "reasons": [
-      "只去掉硬脂肪、筋和软骨，保留柔软脂肪增加风味。厚处从肉面展开，使整块厚薄接近，避免薄处已经过熟、厚处仍没熟。"
+      "只去掉硬脂肪、筋和软骨，保留柔软脂肪增加风味。厚处从肉面展开，使整块厚薄接近，避免薄处已经过熟、厚处仍没熟。",
+      "中心升温受厚度影响很大。展开厚处是在缩短传热距离，不是把整块肉压得越薄越好；外表已经上色不能说明最厚处熟透。"
     ],
     "reasonsEn": [
-      "Remove firm fat, sinew and cartilage but keep soft fat for flavor. Open thick areas from the flesh side to even the thickness, so thin areas do not overcook while thick areas remain underdone."
+      "Remove firm fat, sinew and cartilage but keep soft fat for flavor. Open thick areas from the flesh side to even the thickness, so thin areas do not overcook while thick areas remain underdone.",
+      "Thickness strongly affects how quickly the centre heats. Opening thick sections shortens the heat path rather than making the whole piece as thin as possible; surface browning does not prove the thickest part is cooked through."
     ],
     "mistakes": [
       "厚薄悬殊时，薄处容易先过熟，厚处仍未熟。",
@@ -110,7 +112,8 @@
     "boundary": "这里针对带皮去骨鸡腿，不是所有肉类都应使用相同修整方式。",
     "boundaryEn": "This method is for boneless, skin-on thighs, rather than a trimming rule for every cut of meat.",
     "recipeIds": ["samukichi-chicken"],
-    "sources": ["https://www.youtube.com/watch?v=QG_bnywZR5w"]
+    "sources": ["https://www.youtube.com/watch?v=QG_bnywZR5w"],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
   },
   {
     "id": "dry-before-searing",
@@ -124,23 +127,27 @@
       "下锅前用厨房纸吸干食材表面水分。",
       "三文鱼提前盐渍后，再吸干析出的水分。",
       "鸡腿腌制后，擦去多余水分和油。",
-      "虾沥干后吸干；牛排下锅前擦干。鸡胸水浴后先擦干，再用黄油煎香。"
+      "虾沥干后吸干；牛排下锅前擦干。鸡胸水浴后先擦干，再用黄油煎香。",
+      "擦干后仍有大量汁水积在锅底时，减少单次下锅量，分批煎；不要靠持续加大火力补救拥挤的锅面。"
     ],
     "stepsEn": [
       "Blot surface moisture with paper towels before cooking.",
       "Blot salmon again after advance salting releases moisture.",
       "After marinating chicken, wipe away excess moisture and oil.",
-      "Drain and blot shrimp; pat steak dry before searing. Dry chicken breast after the water bath before browning it in butter."
+      "Drain and blot shrimp; pat steak dry before searing. Dry chicken breast after the water bath before browning it in butter.",
+      "If liquid still pools after drying, reduce the amount in the pan and sear in batches rather than relying on more heat to overcome crowding."
     ],
     "reasons": [
       "擦干鱼身与盐渍后析出的水分，有助于减轻异味、改善上色；带着水分下锅容易影响煎香。",
       "包装里的渗出液会让鸡皮偏向蒸熟，也容易带来异味。修整后和腌制后都擦干，能帮助鸡皮煎得酥脆。",
-      "湿芦笋下锅容易变成蒸煮，冷锅下菜则容易在煎香前先出水。表面擦干、油预热后下锅，更容易煎出香气。"
+      "湿芦笋下锅容易变成蒸煮，冷锅下菜则容易在煎香前先出水。表面擦干、油预热后下锅，更容易煎出香气。",
+      "表面水分需要先蒸发，食材过密又会妨碍水汽散出。擦干和留出锅面空间要配合，才更容易形成焦香表面；焦壳并不是锁住肉汁的防水层。"
     ],
     "reasonsEn": [
       "Dry the fish and blot away moisture released after salting to reduce unwanted odor and improve browning. Surface water interferes with searing.",
       "Package juices can steam the skin and contribute unwanted odor. Drying after trimming and again after marinating helps the skin crisp.",
-      "Wet asparagus steams instead of browning; a cold pan lets moisture escape before searing. Dry the surface and preheat the oil for better aroma."
+      "Wet asparagus steams instead of browning; a cold pan lets moisture escape before searing. Dry the surface and preheat the oil for better aroma.",
+      "Surface moisture must evaporate, and crowding makes it harder for steam to escape. Drying and leaving room in the pan work together to encourage browning; the crust is not a waterproof seal that locks in juices."
     ],
     "mistakes": ["表面带水就下锅，容易偏向蒸煮，影响上色与脆皮。"],
     "mistakesEn": [
@@ -163,7 +170,8 @@
       "https://www.youtube.com/watch?v=RPSQe3eZ6GA",
       "https://www.youtube.com/watch?v=5OneMsDQQPM",
       "https://www.youtube.com/watch?v=2YXtnZybJtI"
-    ]
+    ],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
   },
   {
     "id": "salt-salmon",
@@ -221,9 +229,13 @@
       "Preheating and coating the pan with oil help reduce sticking. Start skin-on fish on its skin side, gently pressing lifted areas only until the skin sets.",
       "Wet asparagus steams instead of browning; a cold pan lets moisture escape before searing. Dry the surface and preheat the oil for better aroma."
     ],
-    "mistakes": ["把“所有食材都要热锅下”或“都要冷锅下”当成统一规则。"],
+    "mistakes": [
+      "把“所有食材都要热锅下”或“都要冷锅下”当成统一规则。",
+      "把滴水成珠当成所有锅具的必做测试，或让不粘涂层锅长时间空烧。预热方式需服从锅具说明和具体菜式。"
+    ],
     "mistakesEn": [
-      "Treating either a hot-pan start or a cold-pan start as a rule for every food."
+      "Treating either a hot-pan start or a cold-pan start as a rule for every food.",
+      "Treating a skittering water drop as a required test for every pan, or heating an empty nonstick pan for a prolonged period. Follow the cookware instructions and the particular recipe."
     ],
     "boundary": "鸡腿的冷锅方法与三文鱼的预热方法各有条件，不能互换成统一步骤。",
     "boundaryEn": "The cold-pan thigh method and preheated salmon method have different conditions and are not interchangeable defaults.",
@@ -236,7 +248,8 @@
       "https://www.youtube.com/watch?v=QG_bnywZR5w",
       "https://www.youtube.com/watch?v=wui_K72jtp8",
       "https://www.youtube.com/watch?v=4uz0BDXHato"
-    ]
+    ],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
   },
   {
     "id": "contact-and-turning",
@@ -261,20 +274,24 @@
     "reasons": [
       "刚下锅就移动，鱼皮尚未定形，容易粘住并撕裂。等它自然脱锅再翻面；不带皮的鱼也应等表面定形后再移动。",
       "轻压是为了让鸡皮贴锅，不是把鸡肉压扁。皮定形后撤去压力，等自然脱锅再翻面，避免撕破鸡皮。",
-      "鸡腿需要中小火慢慢逼出皮下脂肪，翻面后降低火力且不再压肉。牛排则先完成两面上色，再转小火规律翻面；不能把鸡腿少翻面的要求套到牛排后半程。"
+      "鸡腿需要中小火慢慢逼出皮下脂肪，翻面后降低火力且不再压肉。牛排则先完成两面上色，再转小火规律翻面；不能把鸡腿少翻面的要求套到牛排后半程。",
+      "关火、离锅和静置不是同一件事。关火后的锅仍会继续加热接触面，厚肉离锅后内部温度也可能继续变化；按菜谱完成中心测温后再取出，不凭估计让余温补足熟度。"
     ],
     "reasonsEn": [
       "Moving the fish before its surface sets can make it stick and tear. Wait for natural release before turning. Skinless fish should also be left until its surface sets.",
       "Gentle pressure keeps the skin against the pan; it should not flatten the meat. Release the pressure once the skin sets and wait for natural release before turning to avoid tearing.",
-      "Chicken needs medium-low heat to release fat beneath the skin; lower the heat after turning and stop pressing. Steak instead uses regular turning over low heat after both sides brown. Do not apply the thigh’s limited turning to this later steak stage."
+      "Chicken needs medium-low heat to release fat beneath the skin; lower the heat after turning and stop pressing. Steak instead uses regular turning over low heat after both sides brown. Do not apply the thigh’s limited turning to this later steak stage.",
+      "Turning off the heat, removing food from the pan and resting are different actions. The hot pan continues heating the contact surface, and the interior of thick meat may keep changing temperature after removal. Complete the recipe’s centre-temperature check before removing it rather than guessing that carryover heat will finish the cooking."
     ],
     "mistakes": [
       "刚下锅就拖动，容易粘住、撕破皮。",
-      "用力压肉或翻面后继续压，会挤出肉汁。"
+      "用力压肉或翻面后继续压，会挤出肉汁。",
+      "食材刚粘住就用力铲起，会撕破尚未定形的表面；先观察上色和脱锅状态，不要用猛压代替等待。"
     ],
     "mistakesEn": [
       "Moving food immediately can make it stick and tear the skin.",
-      "Heavy pressure or pressing after turning chicken can squeeze out juices."
+      "Heavy pressure or pressing after turning chicken can squeeze out juices.",
+      "Forcing food off the pan immediately can tear a surface that has not set. Check browning and release rather than pressing harder instead of waiting."
     ],
     "boundary": "轻压只为改善接触，不是持续压榨食材；自然脱锅是翻面线索，不是中心熟透的证明。 牛排上色后的规律翻面与最初静置煎色是不同阶段。",
     "boundaryEn": "Pressure establishes contact rather than squeezing the food; natural release cues turning, not proof of center doneness. Regular turning after steak browns is a different stage from initial undisturbed browning.",
@@ -283,7 +300,8 @@
       "https://www.youtube.com/watch?v=wui_K72jtp8",
       "https://www.youtube.com/watch?v=QG_bnywZR5w",
       "https://www.youtube.com/watch?v=5OneMsDQQPM"
-    ]
+    ],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
   },
   {
     "id": "blanch-chill-drain",
@@ -295,34 +313,41 @@
     "scopeEn": "Basic broccoli preparation before the garlic or miso-cheese variations.",
     "steps": [
       "沸水中加盐 1 茶匙，西兰花焯 40～60 秒，观察转为鲜绿。",
+      "颜色转鲜绿时也检查茎部口感，达到这道菜需要的脆嫩程度便捞出；不要只追求颜色而继续久煮。",
       "捞出后立即放入冰水降温。",
       "再捞出摊在滤篮中，充分沥干。"
     ],
     "stepsEn": [
       "Add 1 teaspoon salt to boiling water and blanch broccoli for 40–60 seconds, watching for vibrant green.",
+      "Check the stem texture as the colour turns vivid green and remove the broccoli when it has the crisp-tender bite needed for this dish; do not keep boiling just to improve the colour.",
       "Transfer immediately to ice water.",
       "Drain and spread out in a colander to remove excess water."
     ],
     "reasons": [
       "盐水短焯能衬出甜味。长时间猛煮会让西兰花颜色暗淡、口感水软，苦味更明显；水溶性营养也会进入煮水。",
-      "焯好后放着不管，余热会继续加热。立即冰水降温，再充分沥干，能保留脆嫩口感，也避免表面水分稀释调味。"
+      "焯好后放着不管，余热会继续加热。立即冰水降温，再充分沥干，能保留脆嫩口感，也避免表面水分稀释调味。",
+      "加热及酸性环境会影响绿色的保持；颜色鲜亮不代表口感一定合适。用缩短不必要的加热、及时降温来控制质地，而不是随意加碱保绿。"
     ],
     "reasonsEn": [
       "Brief salted blanching brings out sweetness. Prolonged vigorous boiling dulls the color, makes the texture watery and can intensify bitterness; water-soluble nutrients also enter the cooking water.",
-      "Residual heat keeps cooking broccoli left standing after blanching. Chill immediately, then drain thoroughly to retain a crisp bite and avoid diluting the seasoning."
+      "Residual heat keeps cooking broccoli left standing after blanching. Chill immediately, then drain thoroughly to retain a crisp bite and avoid diluting the seasoning.",
+      "Heating and acidic conditions affect green colour retention; vivid colour alone does not guarantee the right texture. Limit unnecessary heating and chill promptly to manage texture rather than adding alkali just to preserve colour."
     ],
     "mistakes": [
       "长时间猛煮，会让颜色暗淡、质地水软。",
-      "捞出后堆着不管，余热会继续加热；带水调味会稀释味道。"
+      "捞出后堆着不管，余热会继续加热；带水调味会稀释味道。",
+      "为了保绿加小苏打，可能使组织过软；不要把颜色鲜绿当成营养保存或熟度的证明。"
     ],
     "mistakesEn": [
       "Prolonged vigorous boiling dulls the color and makes the texture watery.",
-      "Leaving it piled up allows residual cooking; excess water dilutes seasoning."
+      "Leaving it piled up allows residual cooking; excess water dilutes seasoning.",
+      "Adding baking soda solely for colour can make the tissue too soft; vivid green is not proof of nutrient retention or doneness."
     ],
     "boundary": "时间对应这份西兰花做法，不作为所有蔬菜的焯水时长；盐量也不是固定盐水浓度。",
     "boundaryEn": "The time belongs to this broccoli preparation, not every vegetable. The salt amount does not define a fixed brine concentration.",
     "recipeIds": ["samukichi-broccoli"],
-    "sources": ["https://www.youtube.com/watch?v=6WhbB6UGi3c"]
+    "sources": ["https://www.youtube.com/watch?v=6WhbB6UGi3c"],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
   },
   {
     "id": "sear-then-steam",
@@ -492,10 +517,12 @@
       "If choosing garlic-first fried rice, infuse it over low heat before adding egg and rice. The main method instead adds garlic after the rice dries; choose one sequence."
     ],
     "reasons": [
-      "蒜香版先缓慢煸出蒜香，再让西兰花表面略微上色；锅边少许酱油能增加烘烤般的香气，黑胡椒关火后加入以保留香气。"
+      "蒜香版先缓慢煸出蒜香，再让西兰花表面略微上色；锅边少许酱油能增加烘烤般的香气，黑胡椒关火后加入以保留香气。",
+      "油把蒜香带到后续食材表面，但出香后继续高温久炒仍会焦苦。需要大火处理其他食材时，按具体流程调整蒜的加入时机，不能把先爆蒜当成唯一顺序。"
     ],
     "reasonsEn": [
-      "For the garlic version, infuse the oil slowly before lightly browning the broccoli. A little soy sauce around the pan edge adds a roasted aroma; add black pepper off the heat to preserve its fragrance."
+      "For the garlic version, infuse the oil slowly before lightly browning the broccoli. A little soy sauce around the pan edge adds a roasted aroma; add black pepper off the heat to preserve its fragrance.",
+      "Oil carries garlic aroma over the ingredients that follow, but prolonged high heat after the garlic becomes fragrant can still make it bitter. Adjust when garlic is added to suit the recipe if other ingredients need high heat; starting with garlic is not the only valid order."
     ],
     "mistakes": ["只顾后续煎制，省略蒜与油缓慢出香的过程。"],
     "mistakesEn": [
@@ -514,7 +541,8 @@
       "https://www.youtube.com/watch?v=4uz0BDXHato",
       "https://www.youtube.com/watch?v=8IpPp_MSQMI",
       "https://www.youtube.com/watch?v=0loSYanxAfE"
-    ]
+    ],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
   },
   {
     "id": "roast-cauliflower-browning",
@@ -550,16 +578,19 @@
     ],
     "mistakes": [
       "带水入炉、互相重叠或挤满烤盘，会让花椰菜偏向蒸熟。",
-      "频繁翻面，或切面还浅就翻，会错过形成深褐焦面的机会。"
+      "频繁翻面，或切面还浅就翻，会错过形成深褐焦面的机会。",
+      "照搬煎锅或空气炸锅的时间；即使设定温度相同，不同设备和食材摆放也会改变上色速度，应继续观察表面状态。"
     ],
     "mistakesEn": [
       "Roasting wet, overlapping or crowded florets steams them.",
-      "Frequent turning, or turning while the cut side is pale, interrupts deep browning."
+      "Frequent turning, or turning while the cut side is pale, interrupts deep browning.",
+      "Copying a frying-pan or air-fryer time. Even at the same temperature setting, equipment and placement change browning speed, so continue checking the surface."
     ],
     "boundary": "温度和时间来自这份花椰菜做法，不是所有蔬菜的通用烘烤参数。奶酪应在基础烤制完成后再加，炙烤至融化。",
     "boundaryEn": "These temperatures and times belong to this cauliflower preparation, not every vegetable. Add cheese after the basic roast and broil until melted.",
     "recipeIds": ["samukichi-cauliflower"],
-    "sources": ["https://www.youtube.com/watch?v=_ki3H1gioig"]
+    "sources": ["https://www.youtube.com/watch?v=_ki3H1gioig"],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
   },
   {
     "id": "yakisoba-moisture-order",
@@ -754,12 +785,14 @@
     "reasons": [
       "均匀薄片受热更一致；中低火让水分慢慢蒸发，减少提前烧焦。",
       "一直搅拌使上色更困难；间歇翻拌保留锅底接触时间。",
-      "去焦回融将正常焦褐物的浓郁风味带回洋葱。"
+      "去焦回融将正常焦褐物的浓郁风味带回洋葱。",
+      "上色需要同时管理水分和火力，不是把火越开越大。用颜色、柔软程度和气味判断进度，不把某一个锅温当成完成标准。"
     ],
     "reasonsEn": [
       "Even slices cook consistently; medium-low heat removes moisture gradually and reduces premature burning.",
       "Constant stirring hinders browning; pauses allow contact with the pan.",
-      "Deglazing returns the rich flavor of properly browned deposits to the onions."
+      "Deglazing returns the rich flavor of properly browned deposits to the onions.",
+      "Browning requires managing moisture as well as heat, rather than simply increasing the flame. Judge progress by colour, softness and aroma instead of treating one pan temperature as the finishing criterion."
     ],
     "mistakes": [
       "一开始就用大火，表面烧焦发苦。",
@@ -774,7 +807,8 @@
     "boundary": "适用于追求深色甜味的焦糖洋葱；不要求所有洋葱菜肴都炒到此程度。锅底正常棕褐物与烧黑发苦的残渣必须区别。",
     "boundaryEn": "For onions intended to develop deep caramelized sweetness; other onion dishes need not reach this stage. Distinguish brown deposits from blackened, bitter residue.",
     "recipeIds": ["samukichi-caramelized-onions"],
-    "sources": ["https://www.youtube.com/watch?v=8IpPp_MSQMI"]
+    "sources": ["https://www.youtube.com/watch?v=8IpPp_MSQMI"],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
   },
   {
     "id": "store-caramelized-onions",
@@ -877,12 +911,14 @@
     "reasons": [
       "少量水的用途是帮助松开饭团，随后要蒸发掉；不是给已经湿软的饭无限补水。",
       "不停翻动会减少接触锅底的时间，交替摊煎和翻拌更容易收干并产生焦香；不会颠锅也能操作。",
-      "配料过多带入水分并降低锅温，容易让炒饭变湿重。"
+      "配料过多带入水分并降低锅温，容易让炒饭变湿重。",
+      "熟饭冷却后的质地变化不只是表面变干，也涉及淀粉回生。这里选择冷却或稍干的饭，是为了便于松散和后续收干；不要求一定隔夜，也不意味着可以把熟饭长时间留在室温。"
     ],
     "reasonsEn": [
       "A little water helps separate clumps and must then evaporate. It is not a reason to keep adding water to already wet rice.",
       "Constant movement reduces pan contact. Alternating spreading and mixing helps drying and toasted aroma without requiring pan tossing.",
-      "Too many additions introduce moisture and lower the pan temperature, making the rice heavy and wet."
+      "Too many additions introduce moisture and lower the pan temperature, making the rice heavy and wet.",
+      "The texture change as cooked rice cools involves starch retrogradation as well as surface drying. Cooled or slightly dry rice is chosen here for easier separation and drying in the pan; it need not be overnight rice, and this is not permission to leave cooked rice at room temperature for an extended period."
     ],
     "mistakes": [
       "整团翻炒，内部饭粒始终不散。",
@@ -897,7 +933,8 @@
     "boundary": "加水量对应这里的短粒熟米饭，不自动适用于湿饭、长粒米或任意放大份量；其他炒饭流派的生蛋拌饭方法应另行看待。",
     "boundaryEn": "The water quantity applies to this cooked short-grain rice, not automatically to wet rice, long-grain rice or arbitrarily larger batches. Other fried-rice methods that premix raw egg should be treated separately.",
     "recipeIds": ["samukichi-fried-rice"],
-    "sources": ["https://www.youtube.com/watch?v=0loSYanxAfE"]
+    "sources": ["https://www.youtube.com/watch?v=0loSYanxAfE"],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
   },
   {
     "id": "cook-sago-pearls",
@@ -1231,11 +1268,13 @@
     ],
     "reasons": [
       "虾炒后还会释出水分，先沥干能减少带入蛋液的油水。",
-      "鸡蛋吸油，合炒前补油；关火后仍可用热锅余温完成凝固，做好立即吃能减少放置出水。"
+      "鸡蛋吸油，合炒前补油；关火后仍可用热锅余温完成凝固，做好立即吃能减少放置出水。",
+      "余温完成是这份做法中的继续烹调阶段，不是关火就算熟。蛋液和虾仁达到所需熟度后应及时离锅，避免持续接触热锅而变老。"
     ],
     "reasonsEn": [
       "Shrimp release liquid after frying; draining reduces oil and water carried into the eggs.",
-      "Eggs absorb oil, so replenish it before combining. The hot wok continues setting the eggs off heat; serving immediately reduces liquid released during standing."
+      "Eggs absorb oil, so replenish it before combining. The hot wok continues setting the eggs off heat; serving immediately reduces liquid released during standing.",
+      "Finishing with residual heat is an active cooking stage in this recipe, not proof of doneness as soon as the heat is switched off. Remove the eggs and shrimp promptly once cooked to avoid overcooking against the hot wok."
     ],
     "mistakes": [
       "虾仁连同漏出的油水直接倒入蛋液，使最后合炒时又要处理多余液体。",
@@ -1250,7 +1289,8 @@
     "boundary": "这是此款分蛋滑蛋的流程；不要与先把全蛋打匀的其他炒蛋做法混成同一顺序。",
     "boundaryEn": "This sequence belongs to this separated-egg preparation; keep it distinct from recipes that beat whole eggs together first.",
     "recipeIds": ["remus-shrimp-eggs"],
-    "sources": ["https://www.youtube.com/watch?v=MzPWOE45YcQ"]
+    "sources": ["https://www.youtube.com/watch?v=MzPWOE45YcQ"],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
   },
   {
     "id": "rice-cooker-meal-liquid",
@@ -1290,5 +1330,261 @@
     "boundaryEn": "Adjust for the actual rice quantity, cooker and chosen preparation. Retain the separate midway-topping sequence for sausage-and-egg rice.",
     "recipeIds": ["awei-one-pot-rice"],
     "sources": ["https://www.youtube.com/watch?v=vq3_Clzyg2E"]
+  },
+  {
+    "id": "starch-slurry-thickening",
+    "title": "水淀粉怎样勾芡，不结块",
+    "titleEn": "Thickening with a starch slurry without lumps",
+    "summary": "先把淀粉分散在水中，加入热汁时推匀，看到汁液均匀挂住食材后收尾。",
+    "summaryEn": "Disperse starch in water first, stir it through the hot sauce, and finish when the sauce coats the ingredients evenly.",
+    "scope": "红烧茄子这类临出锅用水淀粉增稠的菜。",
+    "scopeEn": "Dishes such as braised aubergine thickened with a starch slurry near the end of cooking.",
+    "steps": [
+      "先按菜谱把玉米淀粉与水调匀，不要把干淀粉直接撒入热汁。放置后如有沉淀，加入前重新搅匀。",
+      "食材炒好、料汁烧开后，加入水淀粉并及时推匀，让它分散到整锅汁液中。",
+      "观察汁液由稀变稠、均匀包裹食材后出锅；不要只因倒完水淀粉就立即停止加热，也不要持续猛烈煮搅。"
+    ],
+    "stepsEn": [
+      "Mix the cornflour with water as directed by the recipe; do not sprinkle dry starch directly into the hot sauce. Stir again before adding if it has settled.",
+      "Once the ingredients are cooked and the sauce is boiling, add the slurry and promptly stir it through the sauce.",
+      "Finish when the sauce thickens and coats the ingredients evenly. Do not stop heating merely because the slurry has been added, or continue boiling and stirring vigorously."
+    ],
+    "reasons": [
+      "淀粉在水和热的共同作用下膨胀，使汁液变稠。先分散再加热，可减少外层先糊化、里面仍是干粉的团块。"
+    ],
+    "reasonsEn": [
+      "Starch swells in the presence of water and heat, thickening the sauce. Dispersing it before heating reduces lumps with a gelatinised outside and dry starch inside."
+    ],
+    "mistakes": [
+      "水淀粉沉淀后不再搅匀，容易出现先倒清水、后倒浓浆的情况。",
+      "一次倒在一处而不推散，容易局部结团。"
+    ],
+    "mistakesEn": [
+      "Adding settled slurry without stirring it again can pour off water first and concentrated starch last.",
+      "Pouring into one spot without stirring can create localised lumps."
+    ],
+    "boundary": "淀粉种类、汁液酸度和所需稠度不同，用量与加热表现也不同；这里不提供通用配比，不把勾芡与肉片上浆当成同一操作。",
+    "boundaryEn": "Starch type, sauce acidity and desired thickness affect quantities and heating behaviour. There is no universal ratio here, and sauce thickening is distinct from coating raw meat.",
+    "recipeIds": ["06.-hong-shao-qie-zi"],
+    "sources": ["https://www.youtube.com/watch?v=x6Uit9bmN-g"],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
+  },
+  {
+    "id": "reduce-and-season",
+    "title": "加盖炖还是开盖收汁，怎样校准咸淡",
+    "titleEn": "Covered cooking, reduction and final seasoning",
+    "summary": "先按菜式保留或蒸发水分，再根据最终浓度尝味补盐。",
+    "summaryEn": "Retain or evaporate liquid to suit the dish, then taste at its final concentration before adding more salt.",
+    "scope": "番茄炖牛肉、红烧茄子及牛排酱汁的液量与调味控制。",
+    "scopeEn": "Managing liquid and seasoning in tomato beef stew, braised aubergine and steak sauce.",
+    "steps": [
+      "需要保留炖煮液时，按菜谱加盖；烧开后调低火力，让锅中保持温和冒泡，期间留意液量。若仍剧烈翻滚，继续减火；若停止所需的微沸，再适当调回。",
+      "需要浓缩时开盖，按酱汁状态调整火力并观察稠度；牛排奶油酱继续使用小火，不套用大火猛收。",
+      "接近最终稠度时再尝味补盐；太浓或味道过重时，按菜谱少量加水调整。"
+    ],
+    "stepsEn": [
+      "When retaining braising liquid, cover as directed, then lower the heat after bringing it to a boil to maintain gentle bubbling. Monitor the liquid; lower the heat further if it rolls vigorously, or raise it slightly if the required simmer stops.",
+      "Uncover to reduce, adjust the heat to the sauce and watch its consistency. Keep steak cream sauce over low heat rather than using a fierce boil.",
+      "Taste near the final consistency before adding more salt. If too concentrated or strongly flavoured, adjust with a little water as directed."
+    ],
+    "reasons": [
+      "蒸发减少水量，盐等调味物仍留在锅里。最终校味要考虑收汁后的浓度；加盖则让部分水汽凝回锅中，减慢失水。",
+      "常压下以水为主的炖煮液接近沸腾后，继续加火主要改变翻滚和蒸发的强度，不会让液体温度无限升高。火力仍有作用：要根据保留水分、温和炖煮或收浓的目标调整。"
+    ],
+    "reasonsEn": [
+      "Evaporation reduces water while salt and other seasonings remain. Final seasoning should account for this concentration; a lid returns some condensed vapour and slows water loss.",
+      "Once a water-based braising liquid approaches boiling at atmospheric pressure, extra heat mainly changes bubbling and evaporation rather than raising its temperature without limit. Heat still matters: adjust it to retain liquid, simmer gently or reduce."
+    ],
+    "mistakes": [
+      "一开始把盐放足，再长时间开盖收汁，容易过咸。",
+      "为了收汁对奶油酱一律开大火，会失去原菜谱的温和加热控制。"
+    ],
+    "mistakesEn": [
+      "Fully seasoning at the start and then reducing uncovered for a long time can make a dish too salty.",
+      "Using high heat for every reduction ignores the gentle heating required by the cream sauce."
+    ],
+    "boundary": "最终校味不等于所有盐都必须最后放。牛肉前期调味、洋葱加盐等步骤仍按各自菜谱保留。",
+    "boundaryEn": "Final adjustment does not mean all salt must be added at the end. Keep early meat seasoning and salting onions where their recipes call for them.",
+    "recipeIds": [
+      "rosalina-tomato-beef",
+      "06.-hong-shao-qie-zi",
+      "samukichi-steak"
+    ],
+    "sources": [
+      "https://www.youtube.com/watch?v=QttPBfho4_Q",
+      "https://www.youtube.com/watch?v=x6Uit9bmN-g",
+      "https://www.youtube.com/watch?v=5OneMsDQQPM"
+    ],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
+  },
+  {
+    "id": "braise-until-tender",
+    "title": "肉已熟却不软，炖煮还要看什么",
+    "titleEn": "When cooked meat is not yet tender",
+    "summary": "炖肉要选择合适部位并检查软烂程度；表面上色、中心熟透和结缔组织软化是不同目标。",
+    "summaryEn": "Choose an appropriate cut and check tenderness: surface browning, cooking the centre and softening connective tissue are different goals.",
+    "scope": "番茄炖牛肋条等湿热炖煮；与短时煎牛排作对照。",
+    "scopeEn": "Moist-heat braises such as tomato beef rib fingers, compared with briefly cooked steak.",
+    "steps": [
+      "按炖肉菜谱选择牛肋条等合适部位，擦干后分批煎香。煎色负责风味，不作为炖软的判断。",
+      "加入菜谱中的液体，加盖转小火炖煮，保持锅中有炖煮液，不把所有肉都改成短时快煎。",
+      "到菜谱的检查时间后试取一块，检查是否容易切开、口感软嫩；仍韧时继续温和炖煮并留意液量，再检查。"
+    ],
+    "stepsEn": [
+      "Choose a suitable braising cut such as beef rib fingers, dry it and brown in batches. Browning builds flavour rather than proving tenderness.",
+      "Add the recipe liquid, cover and braise over low heat, keeping liquid in the pot. Do not replace every meat-cooking method with a quick sear.",
+      "At the recipe checking time, test a piece for easy cutting and tenderness. If still tough, continue gentle braising while monitoring the liquid, then check again."
+    ],
+    "reasons": [
+      "富含结缔组织的肉需要时间在湿热中软化；肌肉纤维本身受热变紧与胶原逐渐转化可以同时发生。“熟了”不等于“已经炖软”。"
+    ],
+    "reasonsEn": [
+      "Connective-tissue-rich meat needs time to soften in moist heat. Muscle fibres firming and collagen gradually changing can happen together, so cooked does not necessarily mean braise-tender."
+    ],
+    "mistakes": [
+      "拿牛排避免久煎的原则，要求所有炖肉都缩短时间。",
+      "只看外表颜色或固定时间，不检查部位、液量和实际软嫩程度。"
+    ],
+    "mistakesEn": [
+      "Applying the short cooking approach used for steak to every braising cut.",
+      "Relying only on colour or a fixed time without checking the cut, liquid and actual tenderness."
+    ],
+    "boundary": "这是炖煮质地判断，不是食品安全温度标准。瘦肉与富含结缔组织的肉不能按同一时长处理；不要把菜谱时间变成所有尺寸的保证。",
+    "boundaryEn": "This is a texture check, not a food-safety temperature standard. Lean and connective-tissue-rich cuts need different treatment, and recipe times are not guarantees for every size.",
+    "recipeIds": ["rosalina-tomato-beef"],
+    "sources": ["https://www.youtube.com/watch?v=QttPBfho4_Q"],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
+  },
+  {
+    "id": "rest-dough-before-stretching",
+    "title": "面团一摊就回缩，先检查醒面",
+    "titleEn": "Resting dough that springs back",
+    "summary": "按肉饼配方完成分段醒面，再轻轻摊薄，不靠强拉硬扯获得薄皮。",
+    "summaryEn": "Complete the meat-pancake recipe’s staged rests before gently stretching, rather than forcing a thin sheet.",
+    "scope": "葱香千层肉饼的半烫面整形。",
+    "scopeEn": "Shaping the partially scalded dough for layered scallion meat pancakes.",
+    "steps": [
+      "按半烫面配方混水加油，揉 3～5 分钟，醒 20 分钟，再揉 3～5 分钟至光滑。",
+      "分剂后放入抹油容器，表面刷油，醒 60 分钟，再用手慢慢摊薄。",
+      "摊开时若明显回缩，先让面团继续松弛再轻推；包馅、盘卷后再醒 15 分钟，然后压薄煎制。"
+    ],
+    "stepsEn": [
+      "Mix water and oil into the partially scalded dough as directed, knead for 3–5 minutes, rest for 20 minutes, then knead for another 3–5 minutes until smooth.",
+      "Portion into an oiled container, brush the surfaces with oil and rest for 60 minutes before gently stretching by hand.",
+      "If the dough springs back strongly, let it relax further before gently spreading it. After filling and coiling, rest for another 15 minutes before flattening and frying."
+    ],
+    "reasons": [
+      "水分分布和面团松弛都需要时间。充分醒面后更容易摊薄，强行拉扯则容易厚薄不匀或拉破。"
+    ],
+    "reasonsEn": [
+      "Hydration and relaxation take time. Well-rested dough stretches more easily, while forcing it can leave uneven thickness or tears."
+    ],
+    "mistakes": [
+      "把醒面阶段全部省去，靠反复揉压解决回缩。",
+      "给所有面团统一套用同一个醒面时长，忽略烫面、水量与整形目标的差别。"
+    ],
+    "mistakesEn": [
+      "Skipping all resting stages and repeatedly kneading or pressing to overcome spring-back.",
+      "Applying one resting time to every dough while ignoring scalding, hydration and shaping goals."
+    ],
+    "boundary": "这份半烫面按原配方分段醒面；不把普通面团的解释直接当成所有烫面、发酵面团或饺子皮的统一方法。",
+    "boundaryEn": "Keep the staged rests in this partially scalded dough recipe; this is not a universal method for all scalded doughs, yeasted doughs or dumpling wrappers.",
+    "recipeIds": ["ali-scallion-meat-pancakes"],
+    "sources": ["https://www.youtube.com/watch?v=Qz9Z0L8hHE4"],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
+  },
+  {
+    "id": "starch-coating-or-slurry",
+    "title": "上浆、挂糊与勾芡：淀粉放在哪里",
+    "titleEn": "Starch coatings, batter and sauce thickening",
+    "summary": "先看淀粉是裹在生肉表面，还是加入锅中汁液；薄浆、厚糊与勾芡不能互换。",
+    "summaryEn": "First identify whether starch coats raw meat or thickens liquid in the pan; a thin coating, a thicker batter and a sauce slurry serve different purposes.",
+    "scope": "比较葱盐猪排的薄粉浆、电饭锅焖饭中的肉类淀粉腌制与红烧茄子的水淀粉收尾。",
+    "scopeEn": "Comparing the thin coating on scallion pork chops, starch-marinated meat in rice-cooker meals and the slurry used to finish braised aubergine.",
+    "steps": [
+      "先判断目标：腌好的肉表面薄薄裹浆，是肉的表面处理；给炸物裹较厚的糊，是为了形成外壳；往热汁里加水淀粉，才是勾芡。",
+      "做葱盐猪排时，先按原配方加调味料与清水抓匀、腌制，再拌红薯淀粉，让肉片薄薄裹浆，不另加一层厚糊。",
+      "电饭锅焖饭的牛肉或鸡肉按各自配方加入淀粉与油，再煎香并继续焖熟；不要把这些配方的用量互相套用。",
+      "红烧茄子则另调水淀粉，待食材和料汁合炒后加入并推匀，观察汁液均匀包裹食材。"
+    ],
+    "stepsEn": [
+      "Identify the goal: a thin coating on marinated meat treats its surface, a thicker batter forms an outer shell on fried food, and a starch slurry added to hot liquid thickens the sauce.",
+      "For scallion pork chops, first mix in the prescribed seasonings and water and marinate, then add sweet potato starch for a thin coating rather than a separate thick batter.",
+      "For the beef or chicken in rice-cooker meals, add starch and oil as directed by that preparation, then brown and finish cooking with the rice. Do not transfer quantities between preparations.",
+      "For braised aubergine, prepare a separate starch slurry and stir it in after combining the ingredients with the sauce, watching for an even coating."
+    ],
+    "reasons": [
+      "淀粉与水受热后的变化，可用于表面包覆或汁液增稠，但加入位置、厚度与目标不同。薄浆帮助形成适合菜式的口感，不是锁住全部肉汁的防水膜。",
+      "上浆配方有多种，不一定含蛋清。小苏打改变酸碱环境，与用淀粉包覆不是同一操作，不因菜谱有淀粉就自动补加。"
+    ],
+    "reasonsEn": [
+      "Starch’s behaviour with water and heat can provide a coating or thicken a sauce, but placement, thickness and purpose differ. A thin coating contributes to the intended texture rather than forming a waterproof seal around all meat juices.",
+      "Coating mixtures vary and do not always contain egg white. Baking soda changes the chemical environment and is distinct from starch coating; do not add it automatically whenever a recipe includes starch."
+    ],
+    "mistakes": [
+      "用勾芡汁代替腌肉薄浆，或把薄浆肉片裹成厚糊，都会改变原菜式的质地与加热方式。",
+      "见到淀粉便认定原配方漏了蛋清或小苏打，自行添加。"
+    ],
+    "mistakesEn": [
+      "Replacing a meat coating with sauce slurry, or covering thinly coated meat in thick batter, changes texture and cooking behaviour.",
+      "Assuming a recipe with starch is missing egg white or baking soda and adding them without direction."
+    ],
+    "boundary": "这里用现有菜谱比较淀粉的用途，不提供通用上浆比例或炸物配方；表面定形、上色都不能代替内部熟度判断。",
+    "boundaryEn": "This compares starch uses in existing recipes, not a universal coating ratio or a deep-frying recipe. A set or browned surface does not replace an internal doneness check.",
+    "recipeIds": [
+      "ajian-scallion-pork-chops",
+      "awei-one-pot-rice",
+      "06.-hong-shao-qie-zi"
+    ],
+    "sources": [
+      "https://www.youtube.com/watch?v=0hDfXBQhiZg",
+      "https://www.youtube.com/watch?v=vq3_Clzyg2E",
+      "https://www.youtube.com/watch?v=x6Uit9bmN-g"
+    ],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
+  },
+  {
+    "id": "bare-cast-iron-care",
+    "title": "裸铸铁锅：清洗、擦干与薄油养护",
+    "titleEn": "Bare cast iron: washing, drying and a thin oil film",
+    "summary": "确认是有养锅油膜的裸铸铁，再手洗、及时擦干；需要时薄薄擦油，不留厚重油层。",
+    "summaryEn": "Identify seasoned bare cast iron, then wash by hand and dry promptly; apply a very thin oil film when needed rather than leaving a heavy coating.",
+    "scope": "已有养锅油膜的裸铸铁锅日常清洁；不含除锈翻新或首次开锅。",
+    "scopeEn": "Routine cleaning of seasoned bare cast iron, excluding rust restoration and initial seasoning.",
+    "steps": [
+      "先确认锅具材质，并等锅冷却到可以安全处理；不要把滚烫的锅直接投入冷水。",
+      "用温水和软刷或海绵清掉食物残渣，需要时用少量温和洗洁精，再冲洗干净。不要长时间泡水或放入洗碗机。",
+      "洗后立即用布擦干，包括锅底和把手连接处；不要放着自然滴干。",
+      "需要补油养护时，在干燥锅面擦极薄一层食用油，再用干净布擦去多余油，表面不应留下黏厚油层。"
+    ],
+    "stepsEn": [
+      "Confirm the material and let the pan cool enough to handle safely; do not plunge a very hot pan into cold water.",
+      "Remove food with warm water and a soft brush or sponge. Use a small amount of mild dish soap when needed and rinse well. Do not soak for a long time or put it in a dishwasher.",
+      "Immediately towel-dry after washing, including the base and handle junction; do not leave it to drip-dry.",
+      "When an oil touch-up is needed, wipe an extremely thin film of cooking oil over the dry surface, then wipe off the excess with a clean cloth so it is not thick or sticky."
+    ],
+    "reasons": [
+      "养锅油膜是油经处理形成的附着层，不等于一层未洗净的残油；少量温和洗洁精不必一概禁用。",
+      "长期潮湿容易生锈；厚重残油会黏腻。长时间烹煮酸性食物可能影响油膜与风味，应参考锅具说明选择容器。"
+    ],
+    "reasonsEn": [
+      "Seasoning is an attached layer formed by treating oil, not unwashed cooking grease; a small amount of mild soap need not be categorically avoided.",
+      "Prolonged dampness encourages rust, while excess oil can become sticky. Long cooking with acidic ingredients can affect seasoning and flavour, so choose cookware according to its care instructions."
+    ],
+    "mistakes": [
+      "怕洗掉油膜而保留食物残渣，或洗后长期泡水。",
+      "日常清洗就用钢丝球猛磨，或反复厚涂油烧到大量冒烟。",
+      "把裸铸铁的油膜护理套用到珐琅锅或不粘涂层锅。"
+    ],
+    "mistakesEn": [
+      "Leaving food residue to avoid washing away seasoning, or soaking after use.",
+      "Aggressively scrubbing with steel wool for routine cleaning, or repeatedly heating thick oil layers until they smoke heavily.",
+      "Applying bare-iron seasoning care to enamelled or nonstick-coated cookware."
+    ],
+    "boundary": "遵循具体厂商说明。珐琅、不粘涂层、不锈钢及其他材质另有护理要求；本条不把所有铁锅都视为同一种锅，也不提供除锈、重建油膜的操作。",
+    "boundaryEn": "Follow the specific manufacturer’s instructions. Enamel, nonstick coatings, stainless steel and other materials have different care requirements. This does not treat all iron cookware as identical or cover rust removal and reseasoning.",
+    "recipeIds": [],
+    "sources": ["https://www.youtube.com/watch?v=y-3W2A1W7bE"],
+    "sourceRecord": "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md"
   }
 ]

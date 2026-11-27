@@ -36,6 +36,10 @@ Once the water boils, steam over high heat for 8 minutes, then over low heat for
 
 Add fresh shredded scallion, ginger and finely diced chili. Pour over the hot soy sauce, then drizzle with very hot oil.
 
+## Tips
+
+- The steaming time belongs to this preparation and arrangement. If thickness or quantity changes, do not rely only on the stated minutes. Maintain steam and monitor the water in the pot, checking that the food is cooked through; do not apply this heat sequence to every steamed dish.
+
 ## References
 
 - [View recipe](https://www.xiachufang.com/recipe/128601/)

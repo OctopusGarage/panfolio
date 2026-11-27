@@ -32,6 +32,7 @@ About 100 ml broth remains in the demonstration; measure it in a jug if unsure. 
 
 - The demonstrated basmati volume ratio is 1:2; check the package for other rice varieties and their cooking times. Unsoaked rice may need 1～2 minutes longer. No-wash basmati need not be washed; washing removes surface starch, but this rice is naturally loose.
 - Freshly cooked long grains are fragile; turn gently to release steam rather than stirring repeatedly. Brown onion first so it later softens into the broth. The pilaf cooks longer than plain rice because it contains meat, vegetables and fat.
+- Baking soda is part of this lamb treatment, distinct from salt seasoning or starch coating. Keep the prescribed quantity, brief marinating, rinsing and drying sequence rather than adding more to chase tenderness; excess can produce an alkaline taste and undesirable texture. It does not replace braising until tender.
 
 ## References
 

@@ -41,7 +41,7 @@ When nearly cooked, optionally melt butter in an empty part of the pan. Tilt the
 
 ### 7. Season and rest
 
-Off the heat, optionally add a little soy sauce and lemon to the pan butter, with black pepper if desired. Rest skin-side up for 3–5 minutes before cutting. Serve the sauce beside the chicken to keep the skin crisp; pouring it over the skin softens it.
+Off the heat, optionally add a little soy sauce and lemon to the pan butter, with black pepper if desired. Transfer the chicken to a plate and rest skin-side up for 3–5 minutes before cutting. Serve the sauce beside the chicken to keep the skin crisp; pouring it over the skin softens it.
 
 ## Tips
 
@@ -53,6 +53,8 @@ Off the heat, optionally add a little soy sauce and lemon to the pan butter, wit
 - Crispness comes from slowly rendering fat, not scorching over high heat. Repeated flipping and sustained high heat make doneness harder to control. Lower the heat after turning and do not press out the juices.
 - Add butter only when the chicken is nearly cooked to reduce burning. Baste mainly the flesh and edges. Sauce softens crispy skin; serve it beside the chicken to preserve the crunch.
 - Golden skin does not prove the center is cooked; measure the internal temperature. Rest skin-side up before cutting to let the juices settle and keep the skin crisp.
+- The hot pan continues heating the contact surface after the heat is turned off. Complete the centre-temperature check, then remove and rest skin-side up as directed; carryover heat is not a reason to skip checking doneness.
+- Keep to this recipe’s salt quantity and marinating time rather than extending the time to compensate for uneven thickness or adding acid or tenderising enzymes. Refrigerate while marinating, dry the surface before searing and still check the centre temperature.
 
 ## References
 

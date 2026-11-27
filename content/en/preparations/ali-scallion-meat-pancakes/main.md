@@ -40,3 +40,9 @@ Press by hand on baking paper to about 0.5 cm thick. Add a little oil to a fryin
 - [YouTube](https://www.youtube.com/watch?v=Qz9Z0L8hHE4)
 
 
+
+## Related kitchen references
+
+Related entries may be comparisons; read their applicability first.
+
+- [Resting dough that springs back](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/rest-dough-before-stretching.md)

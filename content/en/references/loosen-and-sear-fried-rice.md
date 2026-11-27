@@ -18,6 +18,7 @@ A single portion of fried rice using cooled or slightly surface-dried Japanese s
 - A little water helps separate clumps and must then evaporate. It is not a reason to keep adding water to already wet rice.
 - Constant movement reduces pan contact. Alternating spreading and mixing helps drying and toasted aroma without requiring pan tossing.
 - Too many additions introduce moisture and lower the pan temperature, making the rice heavy and wet.
+- The texture change as cooked rice cools involves starch retrogradation as well as surface drying. Cooled or slightly dry rice is chosen here for easier separation and drying in the pan; it need not be overnight rice, and this is not permission to leave cooked rice at room temperature for an extended period.
 
 ## Common mistakes
 
@@ -29,9 +30,11 @@ A single portion of fried rice using cooled or slightly surface-dried Japanese s
 
 The water quantity applies to this cooked short-grain rice, not automatically to wet rice, long-grain rice or arbitrarily larger batches. Other fried-rice methods that premix raw egg should be treated separately.
 
-## Original sources
+## Related videos
 
-- [www.youtube.com](https://www.youtube.com/watch?v=0loSYanxAfE)
+- [YouTube](https://www.youtube.com/watch?v=0loSYanxAfE)
+
+[Explanation evidence and source record](https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md)
 
 ## Related recipes
 

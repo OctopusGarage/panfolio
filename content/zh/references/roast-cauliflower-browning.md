@@ -24,14 +24,17 @@
 
 - 带水入炉、互相重叠或挤满烤盘，会让花椰菜偏向蒸熟。
 - 频繁翻面，或切面还浅就翻，会错过形成深褐焦面的机会。
+- 照搬煎锅或空气炸锅的时间；即使设定温度相同，不同设备和食材摆放也会改变上色速度，应继续观察表面状态。
 
 ## 适用边界
 
 温度和时间来自这份花椰菜做法，不是所有蔬菜的通用烘烤参数。奶酪应在基础烤制完成后再加，炙烤至融化。
 
-## 原始来源
+## 相关视频
 
-- [www.youtube.com](https://www.youtube.com/watch?v=_ki3H1gioig)
+- [YouTube](https://www.youtube.com/watch?v=_ki3H1gioig)
+
+[说明依据与来源记录](https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md)
 
 ## 关联菜谱
 

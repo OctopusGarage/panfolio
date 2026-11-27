@@ -36,6 +36,7 @@ type Entry = {
   resource: Pointer;
 };
 type RecordData = {
+  sourceRecord?: string;
   content: Record<Language, string | ReferenceBody>;
   sources: string[];
   related: { kind: string; id: string; title: Localized }[];
@@ -157,7 +158,13 @@ export function createMarkdownCookbook(): Record<string, string> {
             ...(body.relatedNote
               ? [section(zh ? "补充说明" : "Comparison note", body.relatedNote)]
               : []),
-            sources(record.sources, lang),
+            record.sourceRecord
+              ? section(
+                  zh ? "相关视频" : "Related videos",
+                  record.sources.map((url) => `- [YouTube](${url})`).join("\n"),
+                ) +
+                `\n\n[${zh ? "说明依据与来源记录" : "Explanation evidence and source record"}](${record.sourceRecord})`
+              : sources(record.sources, lang),
             ...(related
               ? [section(zh ? "关联菜谱" : "Related recipes", related)]
               : []),

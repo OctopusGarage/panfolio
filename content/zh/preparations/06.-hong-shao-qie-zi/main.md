@@ -50,3 +50,11 @@ ID: 06.-hong-shao-qie-zi / main
 
 
 
+
+## 相关厨房基础
+
+关联条目可能是对比说明，请先阅读适用范围。
+
+- [水淀粉怎样勾芡，不结块](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/starch-slurry-thickening.md)
+- [加盖炖还是开盖收汁，怎样校准咸淡](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/reduce-and-season.md)
+- [上浆、挂糊与勾芡：淀粉放在哪里](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/starch-coating-or-slurry.md)

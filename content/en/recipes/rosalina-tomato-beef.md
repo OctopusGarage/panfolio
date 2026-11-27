@@ -33,6 +33,7 @@ Add tomato pasta sauce. Shake half a jar of water in the empty jar and pour it i
 
 - Finely chopped onion melts into the sauce more readily. Avoid adding all the beef at once: batches limit the temperature drop and allow even browning.
 - Some rib fingers may be replaced with shank, but the creator advises against replacing all of them because some fat contributes flavor. Tomato sauce provides the base without stock or red wine; fresh tomatoes are also optional.
+- Tomatoes supply glutamate, which can act synergistically with inosinate in beef to enhance umami. This helps explain the pairing without requiring extra MSG or implying a fixed increase at every quantity.
 
 ## References
 

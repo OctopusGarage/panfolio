@@ -18,6 +18,7 @@
 - 均匀薄片受热更一致；中低火让水分慢慢蒸发，减少提前烧焦。
 - 一直搅拌使上色更困难；间歇翻拌保留锅底接触时间。
 - 去焦回融将正常焦褐物的浓郁风味带回洋葱。
+- 上色需要同时管理水分和火力，不是把火越开越大。用颜色、柔软程度和气味判断进度，不把某一个锅温当成完成标准。
 
 ## 常见错误
 
@@ -29,9 +30,11 @@
 
 适用于追求深色甜味的焦糖洋葱；不要求所有洋葱菜肴都炒到此程度。锅底正常棕褐物与烧黑发苦的残渣必须区别。
 
-## 原始来源
+## 相关视频
 
-- [www.youtube.com](https://www.youtube.com/watch?v=8IpPp_MSQMI)
+- [YouTube](https://www.youtube.com/watch?v=8IpPp_MSQMI)
+
+[说明依据与来源记录](https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md)
 
 ## 关联菜谱
 

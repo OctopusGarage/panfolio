@@ -59,3 +59,4 @@ ID: samukichi-steak / main
 - [煎制前擦干水分](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/dry-before-searing.md)
 - [煎鱼煎肉：怎样贴锅、什么时候翻面](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/contact-and-turning.md)
 - [黄油什么时候加，怎样舀油淋浇](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/butter-timing.md)
+- [加盖炖还是开盖收汁，怎样校准咸淡](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/reduce-and-season.md)

@@ -16,6 +16,7 @@
 
 - 虾炒后还会释出水分，先沥干能减少带入蛋液的油水。
 - 鸡蛋吸油，合炒前补油；关火后仍可用热锅余温完成凝固，做好立即吃能减少放置出水。
+- 余温完成是这份做法中的继续烹调阶段，不是关火就算熟。蛋液和虾仁达到所需熟度后应及时离锅，避免持续接触热锅而变老。
 
 ## 常见错误
 
@@ -27,9 +28,11 @@
 
 这是此款分蛋滑蛋的流程；不要与先把全蛋打匀的其他炒蛋做法混成同一顺序。
 
-## 原始来源
+## 相关视频
 
-- [www.youtube.com](https://www.youtube.com/watch?v=MzPWOE45YcQ)
+- [YouTube](https://www.youtube.com/watch?v=MzPWOE45YcQ)
+
+[说明依据与来源记录](https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md)
 
 ## 关联菜谱
 

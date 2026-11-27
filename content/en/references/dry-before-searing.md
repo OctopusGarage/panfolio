@@ -12,12 +12,14 @@ Searing salmon, skin-on chicken thighs, asparagus, shrimp and steak; browning ch
 2. Blot salmon again after advance salting releases moisture.
 3. After marinating chicken, wipe away excess moisture and oil.
 4. Drain and blot shrimp; pat steak dry before searing. Dry chicken breast after the water bath before browning it in butter.
+5. If liquid still pools after drying, reduce the amount in the pan and sear in batches rather than relying on more heat to overcome crowding.
 
 ## Reasons
 
 - Dry the fish and blot away moisture released after salting to reduce unwanted odor and improve browning. Surface water interferes with searing.
 - Package juices can steam the skin and contribute unwanted odor. Drying after trimming and again after marinating helps the skin crisp.
 - Wet asparagus steams instead of browning; a cold pan lets moisture escape before searing. Dry the surface and preheat the oil for better aroma.
+- Surface moisture must evaporate, and crowding makes it harder for steam to escape. Drying and leaving room in the pan work together to encourage browning; the crust is not a waterproof seal that locks in juices.
 
 ## Common mistakes
 
@@ -27,14 +29,16 @@ Searing salmon, skin-on chicken thighs, asparagus, shrimp and steak; browning ch
 
 This concerns surface preparation for these searing methods; drying is not required for every cooking method.
 
-## Original sources
+## Related videos
 
-- [www.youtube.com](https://www.youtube.com/watch?v=wui_K72jtp8)
-- [www.youtube.com](https://www.youtube.com/watch?v=QG_bnywZR5w)
-- [www.youtube.com](https://www.youtube.com/watch?v=4uz0BDXHato)
-- [www.youtube.com](https://www.youtube.com/watch?v=RPSQe3eZ6GA)
-- [www.youtube.com](https://www.youtube.com/watch?v=5OneMsDQQPM)
-- [www.youtube.com](https://www.youtube.com/watch?v=2YXtnZybJtI)
+- [YouTube](https://www.youtube.com/watch?v=wui_K72jtp8)
+- [YouTube](https://www.youtube.com/watch?v=QG_bnywZR5w)
+- [YouTube](https://www.youtube.com/watch?v=4uz0BDXHato)
+- [YouTube](https://www.youtube.com/watch?v=RPSQe3eZ6GA)
+- [YouTube](https://www.youtube.com/watch?v=5OneMsDQQPM)
+- [YouTube](https://www.youtube.com/watch?v=2YXtnZybJtI)
+
+[Explanation evidence and source record](https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md)
 
 ## Related recipes
 

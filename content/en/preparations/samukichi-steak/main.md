@@ -59,3 +59,4 @@ Related entries may be comparisons; read their applicability first.
 - [Drying food before searing](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/dry-before-searing.md)
 - [Searing fish and meat: contact and turning](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/contact-and-turning.md)
 - [When to add butter and how to baste](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/butter-timing.md)
+- [Covered cooking, reduction and final seasoning](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/reduce-and-season.md)

@@ -17,6 +17,7 @@
 ## 原因与原理
 
 - 蒜香版先缓慢煸出蒜香，再让西兰花表面略微上色；锅边少许酱油能增加烘烤般的香气，黑胡椒关火后加入以保留香气。
+- 油把蒜香带到后续食材表面，但出香后继续高温久炒仍会焦苦。需要大火处理其他食材时，按具体流程调整蒜的加入时机，不能把先爆蒜当成唯一顺序。
 
 ## 常见错误
 
@@ -26,12 +27,14 @@
 
 这是一种即时烹饪增香方法，不是蒜油的保存或长期备餐方案。
 
-## 原始来源
+## 相关视频
 
-- [www.youtube.com](https://www.youtube.com/watch?v=6WhbB6UGi3c)
-- [www.youtube.com](https://www.youtube.com/watch?v=4uz0BDXHato)
-- [www.youtube.com](https://www.youtube.com/watch?v=8IpPp_MSQMI)
-- [www.youtube.com](https://www.youtube.com/watch?v=0loSYanxAfE)
+- [YouTube](https://www.youtube.com/watch?v=6WhbB6UGi3c)
+- [YouTube](https://www.youtube.com/watch?v=4uz0BDXHato)
+- [YouTube](https://www.youtube.com/watch?v=8IpPp_MSQMI)
+- [YouTube](https://www.youtube.com/watch?v=0loSYanxAfE)
+
+[说明依据与来源记录](https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md)
 
 ## 关联菜谱
 

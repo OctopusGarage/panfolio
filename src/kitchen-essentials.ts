@@ -1,5 +1,6 @@
 import content from "./kitchen-essentials.json";
 export const essentials = content as ((typeof content)[number] & {
+  sourceRecord?: string;
   relatedNote?: string;
   relatedNoteEn?: string;
 })[];

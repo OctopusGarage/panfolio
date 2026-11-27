@@ -38,6 +38,7 @@ Cut the pork into small pieces while hot and return to the pan. Add the scallion
 - Thin slices take seasoning and cook more readily; tenderize or pierce both sides before marinating. Black pepper may replace white pepper.
 - Do not rush large chops over maximum heat: the coating can burn before the inside cooks. Add meat to hot oil to help reduce sticking and let the underside set before turning.
 - Cut and eat while hot; the coating loses crispness as it cools. This is a savory scallion-garlic seasoning that also contains a little sugar.
+- Marinate the thin slices as directed before applying the thin coating; longer marinating does not necessarily mean greater tenderness. Do not automatically add baking soda or an acidic treatment. Refrigerate during marinating; cooking through still depends on thickness and actual heating.
 
 ## References
 

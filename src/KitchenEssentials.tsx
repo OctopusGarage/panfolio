@@ -122,7 +122,21 @@ export function KitchenEssentials({
           </section>
         )}
         <section>
-          <h3>{s("参考链接", "References")}</h3>
+          <h3>
+            {entry.sourceRecord
+              ? s("相关视频", "Related videos")
+              : s("参考链接", "References")}
+          </h3>
+          {entry.sourceRecord && (
+            <p>
+              <a href={entry.sourceRecord}>
+                {s(
+                  "说明依据与来源记录",
+                  "Explanation evidence and source record",
+                )}
+              </a>
+            </p>
+          )}
           <ul>
             {entry.sources.map((url) => (
               <li key={url}>

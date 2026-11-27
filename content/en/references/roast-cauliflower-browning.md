@@ -24,14 +24,17 @@ Cauliflower roasted in a home convection oven, including a cheese finish after t
 
 - Roasting wet, overlapping or crowded florets steams them.
 - Frequent turning, or turning while the cut side is pale, interrupts deep browning.
+- Copying a frying-pan or air-fryer time. Even at the same temperature setting, equipment and placement change browning speed, so continue checking the surface.
 
 ## Limits
 
 These temperatures and times belong to this cauliflower preparation, not every vegetable. Add cheese after the basic roast and broil until melted.
 
-## Original sources
+## Related videos
 
-- [www.youtube.com](https://www.youtube.com/watch?v=_ki3H1gioig)
+- [YouTube](https://www.youtube.com/watch?v=_ki3H1gioig)
+
+[Explanation evidence and source record](https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md)
 
 ## Related recipes
 

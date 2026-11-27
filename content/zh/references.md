@@ -64,4 +64,16 @@
 
 - [电饭锅焖饭先算汤水](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/rice-cooker-meal-liquid.md) — 先煸香配料，再把汤汁计入煮饭水量；每款独立烹煮。 (焖饭, 电饭锅, 水量, 汤汁, 米饭, 牛奶, 谷物与面食, 谷物, 汤水计量, 水分)
 
+- [水淀粉怎样勾芡，不结块](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/starch-slurry-thickening.md) — 先把淀粉分散在水中，加入热汁时推匀，看到汁液均匀挂住食材后收尾。 (勾芡, 水淀粉, 结块)
+
+- [加盖炖还是开盖收汁，怎样校准咸淡](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/reduce-and-season.md) — 先按菜式保留或蒸发水分，再根据最终浓度尝味补盐。 (收汁, 加盖, 咸淡, 调味)
+
+- [肉已熟却不软，炖煮还要看什么](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/braise-until-tender.md) — 炖肉要选择合适部位并检查软烂程度；表面上色、中心熟透和结缔组织软化是不同目标。 (炖肉, 软烂, 牛肋条)
+
+- [面团一摊就回缩，先检查醒面](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/rest-dough-before-stretching.md) — 按肉饼配方完成分段醒面，再轻轻摊薄，不靠强拉硬扯获得薄皮。 (醒面, 回缩, 肉饼)
+
+- [上浆、挂糊与勾芡：淀粉放在哪里](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/starch-coating-or-slurry.md) — 先看淀粉是裹在生肉表面，还是加入锅中汁液；薄浆、厚糊与勾芡不能互换。 (上浆, 挂糊, 裹粉, 淀粉)
+
+- [裸铸铁锅：清洗、擦干与薄油养护](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/bare-cast-iron-care.md) — 确认是有养锅油膜的裸铸铁，再手洗、及时擦干；需要时薄薄擦油，不留厚重油层。 (铸铁锅, 养锅, 洗锅, 洗洁精, 擦干)
+
 [菜谱目录](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/recipes.md)

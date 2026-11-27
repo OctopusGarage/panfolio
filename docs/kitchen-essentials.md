@@ -4,7 +4,7 @@ Kitchen essentials is a separate bilingual reference collection at `#essentials`
 
 ## Organization
 
-The collection contains thirty-one independently useful references. It has keyword search and no category or tag filters. Titles, summaries and a visible first step support everyday lookup; each card links clearly to complete instructions. Detail pages prioritize the written operations before video playback.
+The collection contains thirty-seven independently useful references. It has keyword search and no category or tag filters. Titles, summaries and a visible first step support everyday lookup; each card links clearly to complete instructions. Detail pages prioritize the written operations before video playback.
 
 Content lives in `src/kitchen-essentials.json`; recipe association helpers live in `src/kitchen-essentials.ts`. Routes use stable reference IDs, for example `#essentials/soy-sauce-pan`. Existing recipe IDs, favorites and notes are unchanged. Reference pages link to associated recipes when present; recipes expose Related kitchen essentials. Standalone references use their own original YouTube sources for video playback and labels, and omit the empty related-recipes section.
 
@@ -14,7 +14,7 @@ Each entry has a localized title, summary, scope, practical steps, explanations,
 
 Shared explanations are written once per reference, while recipe tips retain their cooking context. Do not promote a source-specific instruction into a universal rule. In particular, preserve cold-pan chicken versus preheated salmon, off-heat butter versus near-doneness chicken basting, and hot-pan soy sauce aroma versus off-heat butter-soy sauce. Broccoli blanching and salmon salting times remain tied to those preparations.
 
-The initial content is based on the reviewed SAMUKICHI captions and descriptions documented in `japanese-chef-series.md`. Source URLs are YouTube only in the reader-facing reference sections. Storage durations, thawing instructions and garlic-oil preservation guidance are not inferred from immediate cooking methods.
+The initial content is based on the reviewed SAMUKICHI captions and descriptions documented in `japanese-chef-series.md`. Video links remain YouTube-only. References with synthesized explanations label those links Related videos and expose an evidence-record link; Markdown and AI exports preserve this distinction. Storage durations, thawing instructions and garlic-oil preservation guidance are not inferred from immediate cooking methods.
 
 ## Verification
 

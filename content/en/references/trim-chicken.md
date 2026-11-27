@@ -15,6 +15,7 @@ Whole boneless, skin-on chicken thighs for pan-searing.
 ## Reasons
 
 - Remove firm fat, sinew and cartilage but keep soft fat for flavor. Open thick areas from the flesh side to even the thickness, so thin areas do not overcook while thick areas remain underdone.
+- Thickness strongly affects how quickly the centre heats. Opening thick sections shortens the heat path rather than making the whole piece as thin as possible; surface browning does not prove the thickest part is cooked through.
 
 ## Common mistakes
 
@@ -25,9 +26,11 @@ Whole boneless, skin-on chicken thighs for pan-searing.
 
 This method is for boneless, skin-on thighs, rather than a trimming rule for every cut of meat.
 
-## Original sources
+## Related videos
 
-- [www.youtube.com](https://www.youtube.com/watch?v=QG_bnywZR5w)
+- [YouTube](https://www.youtube.com/watch?v=QG_bnywZR5w)
+
+[Explanation evidence and source record](https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md)
 
 ## Related recipes
 

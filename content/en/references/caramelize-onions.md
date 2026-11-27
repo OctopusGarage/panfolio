@@ -18,6 +18,7 @@ Deeply colored, soft and cohesive caramelized onions.
 - Even slices cook consistently; medium-low heat removes moisture gradually and reduces premature burning.
 - Constant stirring hinders browning; pauses allow contact with the pan.
 - Deglazing returns the rich flavor of properly browned deposits to the onions.
+- Browning requires managing moisture as well as heat, rather than simply increasing the flame. Judge progress by colour, softness and aroma instead of treating one pan temperature as the finishing criterion.
 
 ## Common mistakes
 
@@ -29,9 +30,11 @@ Deeply colored, soft and cohesive caramelized onions.
 
 For onions intended to develop deep caramelized sweetness; other onion dishes need not reach this stage. Distinguish brown deposits from blackened, bitter residue.
 
-## Original sources
+## Related videos
 
-- [www.youtube.com](https://www.youtube.com/watch?v=8IpPp_MSQMI)
+- [YouTube](https://www.youtube.com/watch?v=8IpPp_MSQMI)
+
+[Explanation evidence and source record](https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md)
 
 ## Related recipes
 

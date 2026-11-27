@@ -148,6 +148,7 @@ export function createAiFeed(sourceCommit = "local"): Record<string, string> {
         title: title(entry.title, entry.titleEn),
         content: { zh: localized("zh"), en: localized("en") },
         sources: entry.sources,
+        ...(entry.sourceRecord ? { sourceRecord: entry.sourceRecord } : {}),
         appUrl: appLink(entry.id, true),
         related: entry.recipeIds.map((id) => {
           const recipe = recipes.find((recipe) => recipe.id === id);

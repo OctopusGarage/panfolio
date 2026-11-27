@@ -21,16 +21,19 @@ Comparing pan-seared skin-on thighs, salmon and asparagus.
 ## Common mistakes
 
 - Treating either a hot-pan start or a cold-pan start as a rule for every food.
+- Treating a skittering water drop as a required test for every pan, or heating an empty nonstick pan for a prolonged period. Follow the cookware instructions and the particular recipe.
 
 ## Limits
 
 The cold-pan thigh method and preheated salmon method have different conditions and are not interchangeable defaults.
 
-## Original sources
+## Related videos
 
-- [www.youtube.com](https://www.youtube.com/watch?v=QG_bnywZR5w)
-- [www.youtube.com](https://www.youtube.com/watch?v=wui_K72jtp8)
-- [www.youtube.com](https://www.youtube.com/watch?v=4uz0BDXHato)
+- [YouTube](https://www.youtube.com/watch?v=QG_bnywZR5w)
+- [YouTube](https://www.youtube.com/watch?v=wui_K72jtp8)
+- [YouTube](https://www.youtube.com/watch?v=4uz0BDXHato)
+
+[Explanation evidence and source record](https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md)
 
 ## Related recipes
 

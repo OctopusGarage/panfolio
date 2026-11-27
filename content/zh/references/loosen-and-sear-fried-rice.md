@@ -18,6 +18,7 @@
 - 少量水的用途是帮助松开饭团，随后要蒸发掉；不是给已经湿软的饭无限补水。
 - 不停翻动会减少接触锅底的时间，交替摊煎和翻拌更容易收干并产生焦香；不会颠锅也能操作。
 - 配料过多带入水分并降低锅温，容易让炒饭变湿重。
+- 熟饭冷却后的质地变化不只是表面变干，也涉及淀粉回生。这里选择冷却或稍干的饭，是为了便于松散和后续收干；不要求一定隔夜，也不意味着可以把熟饭长时间留在室温。
 
 ## 常见错误
 
@@ -29,9 +30,11 @@
 
 加水量对应这里的短粒熟米饭，不自动适用于湿饭、长粒米或任意放大份量；其他炒饭流派的生蛋拌饭方法应另行看待。
 
-## 原始来源
+## 相关视频
 
-- [www.youtube.com](https://www.youtube.com/watch?v=0loSYanxAfE)
+- [YouTube](https://www.youtube.com/watch?v=0loSYanxAfE)
+
+[说明依据与来源记录](https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md)
 
 ## 关联菜谱
 

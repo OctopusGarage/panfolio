@@ -96,3 +96,21 @@ test("checked-in cookbook is current and skill has no consumer execution path", 
     ),
   );
 });
+
+test("synthesized reference exports identify related videos and explanation provenance", () => {
+  const files = createMarkdownCookbook();
+  for (const lang of ["zh", "en"] as const) {
+    const body = files[`${lang}/references/rest-dough-before-stretching.md`];
+    assert.ok(
+      body.includes(lang === "zh" ? "## 相关视频" : "## Related videos"),
+    );
+    assert.ok(
+      body.includes(
+        "https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md",
+      ),
+    );
+    assert.ok(
+      !body.includes(lang === "zh" ? "## 原始来源" : "## Original sources"),
+    );
+  }
+});

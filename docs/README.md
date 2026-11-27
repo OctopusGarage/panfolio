@@ -18,6 +18,7 @@
 
 These records retain evidence and limitations behind recipe content; they are not deployment instructions.
 
+- [Cooking science source review](cooking-science-source-review.md).
 - [Japanese chef series](japanese-chef-series.md).
 - [Eleven-video source review](eleven-video-source-review.md).
 - [Coconut sago source](coconut-sago-source.md).

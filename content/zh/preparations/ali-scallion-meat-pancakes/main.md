@@ -40,3 +40,9 @@ ID: ali-scallion-meat-pancakes / main
 - [YouTube](https://www.youtube.com/watch?v=Qz9Z0L8hHE4)
 
 
+
+## 相关厨房基础
+
+关联条目可能是对比说明，请先阅读适用范围。
+
+- [面团一摊就回缩，先检查醒面](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/rest-dough-before-stretching.md)

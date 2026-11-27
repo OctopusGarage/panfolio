@@ -50,3 +50,11 @@ Add the peppers and sauce and bring to a boil over high heat. Return the eggplan
 
 
 
+
+## Related kitchen references
+
+Related entries may be comparisons; read their applicability first.
+
+- [Thickening with a starch slurry without lumps](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/starch-slurry-thickening.md)
+- [Covered cooking, reduction and final seasoning](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/reduce-and-season.md)
+- [Starch coatings, batter and sauce thickening](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/starch-coating-or-slurry.md)

@@ -21,6 +21,7 @@ ID: awei-one-pot-rice / pumpkin-beef
 - 排骨可直接煸炒，也可按需要先焯水再炒。腊肠和五花肉会出油，起锅油不宜多。
 - 香芋选熟后粉糯、轻压易碎的品种，先煎更香。牛肉先煎更香，赶时间也可直接焖。
 - 咖喱饭可用椰浆代替牛奶，成品宜略湿润，喜欢干一些可少加水。各款肉和蔬菜可按需要替换。
+- 配方中的干香菇与肉类可共同增加鲜味，但干香菇涉及的鸟苷酸与肉类的肌苷酸不是同一种物质；鲜香菇也不能直接按干香菇的呈味特点理解。不必为此增加原配方以外的调味料。
 
 ## 参考链接
 
@@ -34,3 +35,4 @@ ID: awei-one-pot-rice / pumpkin-beef
 关联条目可能是对比说明，请先阅读适用范围。
 
 - [电饭锅焖饭先算汤水](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/rice-cooker-meal-liquid.md)
+- [上浆、挂糊与勾芡：淀粉放在哪里](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/zh/references/starch-coating-or-slurry.md)

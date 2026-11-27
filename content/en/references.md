@@ -64,4 +64,16 @@ Ingredient handling, storage, knife work, heat and seasoning. Read each method�
 
 - [Counting liquid in rice-cooker meals](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/rice-cooker-meal-liquid.md) — Brown the ingredients first and count their broth as rice-cooking liquid; cook each variation separately. (rice, liquid, Broth, Milk, Grains and noodles, grains, Liquid Measurement, Moisture)
 
+- [Thickening with a starch slurry without lumps](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/starch-slurry-thickening.md) — Disperse starch in water first, stir it through the hot sauce, and finish when the sauce coats the ingredients evenly. (thickening, slurry, cornflour)
+
+- [Covered cooking, reduction and final seasoning](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/reduce-and-season.md) — Retain or evaporate liquid to suit the dish, then taste at its final concentration before adding more salt. (reduction, covered cooking, seasoning)
+
+- [When cooked meat is not yet tender](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/braise-until-tender.md) — Choose an appropriate cut and check tenderness: surface browning, cooking the centre and softening connective tissue are different goals. (braising, tenderness, connective tissue)
+
+- [Resting dough that springs back](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/rest-dough-before-stretching.md) — Complete the meat-pancake recipe’s staged rests before gently stretching, rather than forcing a thin sheet. (resting dough, spring back, stretching)
+
+- [Starch coatings, batter and sauce thickening](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/starch-coating-or-slurry.md) — First identify whether starch coats raw meat or thickens liquid in the pan; a thin coating, a thicker batter and a sauce slurry serve different purposes. (velveting, batter, starch coating)
+
+- [Bare cast iron: washing, drying and a thin oil film](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/references/bare-cast-iron-care.md) — Identify seasoned bare cast iron, then wash by hand and dry promptly; apply a very thin oil film when needed rather than leaving a heavy coating. (cast iron, seasoning, pan care, cleaning)
+
 [Recipe index](https://raw.githubusercontent.com/OctopusGarage/panfolio/main/content/en/recipes.md)

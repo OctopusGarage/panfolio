@@ -16,6 +16,7 @@ Remus’s separated-egg and quick-folding method for shrimp with silky eggs.
 
 - Shrimp release liquid after frying; draining reduces oil and water carried into the eggs.
 - Eggs absorb oil, so replenish it before combining. The hot wok continues setting the eggs off heat; serving immediately reduces liquid released during standing.
+- Finishing with residual heat is an active cooking stage in this recipe, not proof of doneness as soon as the heat is switched off. Remove the eggs and shrimp promptly once cooked to avoid overcooking against the hot wok.
 
 ## Common mistakes
 
@@ -27,9 +28,11 @@ Remus’s separated-egg and quick-folding method for shrimp with silky eggs.
 
 This sequence belongs to this separated-egg preparation; keep it distinct from recipes that beat whole eggs together first.
 
-## Original sources
+## Related videos
 
-- [www.youtube.com](https://www.youtube.com/watch?v=MzPWOE45YcQ)
+- [YouTube](https://www.youtube.com/watch?v=MzPWOE45YcQ)
+
+[Explanation evidence and source record](https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md)
 
 ## Related recipes
 

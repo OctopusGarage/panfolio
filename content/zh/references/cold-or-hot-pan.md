@@ -21,16 +21,19 @@
 ## 常见错误
 
 - 把“所有食材都要热锅下”或“都要冷锅下”当成统一规则。
+- 把滴水成珠当成所有锅具的必做测试，或让不粘涂层锅长时间空烧。预热方式需服从锅具说明和具体菜式。
 
 ## 适用边界
 
 鸡腿的冷锅方法与三文鱼的预热方法各有条件，不能互换成统一步骤。
 
-## 原始来源
+## 相关视频
 
-- [www.youtube.com](https://www.youtube.com/watch?v=QG_bnywZR5w)
-- [www.youtube.com](https://www.youtube.com/watch?v=wui_K72jtp8)
-- [www.youtube.com](https://www.youtube.com/watch?v=4uz0BDXHato)
+- [YouTube](https://www.youtube.com/watch?v=QG_bnywZR5w)
+- [YouTube](https://www.youtube.com/watch?v=wui_K72jtp8)
+- [YouTube](https://www.youtube.com/watch?v=4uz0BDXHato)
+
+[说明依据与来源记录](https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md)
 
 ## 关联菜谱
 

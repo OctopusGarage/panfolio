@@ -17,6 +17,7 @@ Garlic broccoli; asparagus pork rolls also use garlic oil. The garlic base for o
 ## Reasons
 
 - For the garlic version, infuse the oil slowly before lightly browning the broccoli. A little soy sauce around the pan edge adds a roasted aroma; add black pepper off the heat to preserve its fragrance.
+- Oil carries garlic aroma over the ingredients that follow, but prolonged high heat after the garlic becomes fragrant can still make it bitter. Adjust when garlic is added to suit the recipe if other ingredients need high heat; starting with garlic is not the only valid order.
 
 ## Common mistakes
 
@@ -26,12 +27,14 @@ Garlic broccoli; asparagus pork rolls also use garlic oil. The garlic base for o
 
 This is an immediate cooking technique, not a garlic-oil storage or long-term meal-preparation method.
 
-## Original sources
+## Related videos
 
-- [www.youtube.com](https://www.youtube.com/watch?v=6WhbB6UGi3c)
-- [www.youtube.com](https://www.youtube.com/watch?v=4uz0BDXHato)
-- [www.youtube.com](https://www.youtube.com/watch?v=8IpPp_MSQMI)
-- [www.youtube.com](https://www.youtube.com/watch?v=0loSYanxAfE)
+- [YouTube](https://www.youtube.com/watch?v=6WhbB6UGi3c)
+- [YouTube](https://www.youtube.com/watch?v=4uz0BDXHato)
+- [YouTube](https://www.youtube.com/watch?v=8IpPp_MSQMI)
+- [YouTube](https://www.youtube.com/watch?v=0loSYanxAfE)
+
+[Explanation evidence and source record](https://github.com/OctopusGarage/panfolio/blob/main/docs/cooking-science-source-review.md)
 
 ## Related recipes
 
